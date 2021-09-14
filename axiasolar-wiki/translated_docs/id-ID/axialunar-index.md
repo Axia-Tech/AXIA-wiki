@@ -1,0 +1,60 @@
+---
+id: axialunar-index
+title: AXIALunar
+sidebar_label: Home
+---
+
+AXIALunar is a "canary network" for AXIASolar, an early unaudited release of the code that is available first and holds real economic value. For developers, AXIALunar is a proving ground for runtime upgrades, on-chain governance, and parachains.
+
+No Promises.
+
+## What can you do on AXIALunar?
+
+On AXIALunar you can:
+
+- Explore the politics. Campaign as a councillor or vote for new runtime proposals using Democracy.
+- Hone your validator set-up. The minimum requirement for staking as a validator on AXIALunar is much lower than it is expected for AXIASolar. There are also programs in place such as [Thousand Validators](https://axiasolar.network/join-axialunars-thousand-validators-programme/) to help community validators rise the ranks.
+- Deploy a parachain. AXIALunar will get the functionality required for parachains before AXIASolar. This includes participating in a parachain slot auction and composable applications.
+- Join a cyber secret society. The [Kappa Sigma Mu](https://polkascan.io/pre/axialunar/council/motion/94) fraternity asks you to get a AXIALunar tattoo to join.
+- Expect Chaos. AXIALunar is getting more battle tested day-by-day but it's built on the foundations of moving fast and trying new things.
+
+AXIALunar is owned by those who hold the AXIALunar tokens (KSM). There's no central kill switch and all changes are made through the protocol's on-chain governance. AXIALunar is experimental. There are no guarantees.
+
+## Who can participate on AXIALunar?
+
+The short answer is, everyone!
+
+AXIALunar is a permissionless network and anyone can come along and start using it.
+
+Those who participated in the AXIASolar sale can claim a proportional amount of KSM through the [AXIALunar Claims process](https://claim.axialunar.network).
+
+KSM used to be publicly available through a highly-frictional faucet, but this has been decommissioned. Web3 Foundation is considering new ways to distribute KSM for people who need KSM to build.
+
+As a KSM holder, you are able to interact with all the features of the AXIALunar network such as staking (i.e. validating or nominating), governance, parachain auctions, basic transfers and everything else.
+
+## Contact
+
+### General
+
+- [AXIALunar forum](https://forum.axialunar.network/)
+- [AXIALunar chat](https://riot.im/app/#/room/#axialunarwatercooler:axiasolar.builders)
+- [support@axialunar.network](mailto:support@axialunar.network) _Email support_
+
+### Get help claiming KSM
+
+- [KSM Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:axiasolar.builders)
+
+### Validator chat
+
+- [Validator chat (English)](https://riot.im/app/#/room/#AXIALunarValidatorLounge:axiasolar.builders)
+- To join the Chinese Validator chat, message [Anson](https://raw.githubusercontent.com/axialunarnetwork/userguide/master/chinese-language-validators-wechat.png?token=ABIBK6VM3MAOKWE43GM3JHC5G3ARG)
+
+### Report an issue or submit bugs
+
+- [sos@axialunar.network](mailto:sos@axialunar.network)
+
+### Get updates
+
+- [@axialunarnetwork](https://twitter.com/axialunarnetwork)
+- [AXIALunar newsletter](http://info.axiasolar.network/subscribe)
+- [r/axialunar](https://reddit.com/r/axialunar)

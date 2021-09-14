@@ -1,0 +1,61 @@
+module.exports = {
+  docs: [
+    {
+      type: "category",
+      label: "AXIALunar",
+      items: [
+        "general/axialunar/axialunar-index",
+        {
+          type: "category",
+          label: "Get Started",
+          items: [
+            "general/axialunar/axialunar-getting-started",
+            "general/axialunar/axialunar-faucet",
+            "general/axialunar/axialunar-claims",
+            "general/axialunar/axialunar-endpoints",
+            "learn/learn-balance-transfers",
+            "learn/learn-auction",
+            "learn/learn-parachains",
+            "learn/learn-parathreads",
+            "learn/learn-crowdloans",
+            "general/doc-thousand-validators",
+          ],
+        },
+        {
+          type: "category",
+          label: "What to Try",
+          items: [
+            "maintain/axialunar/maintain-guides-how-to-validate-axialunar",
+            "maintain/maintain-guides-how-to-stop-validating",
+            "maintain/axialunar/maintain-guides-how-to-nominate-axialunar",
+            "learn/learn-governance",
+            "learn/learn-identity",
+            "learn/learn-treasury",
+            "learn/learn-registrar",
+            "build/build-guide",
+            "build/build-parachains",
+            "maintain/axialunar/maintain-guides-society-axialunar",
+            "general/axialunar/axialunar-social-recovery",
+            "maintain/doc-maintain-guides-validator-community",
+          ],
+        },
+        {
+          type: "category",
+          label: "What to Break",
+          items: [
+            "maintain/maintain-errors",
+            "general/axialunar/axialunar-bug-bounty",
+            "general/axialunar/axialunar-adversarial-cheatsheet",
+          ],
+        },
+        "general/ens",
+        "general/axialunar/axialunar-ledger",
+        "general/axialunar/axialunar-statemine-ledger",
+        "general/axialunar/axialunar-timeline",
+        "general/axialunar/axialunar-community",
+        "general/axialunar/axialunar-parameters",
+        "general/axialunar/axialunar-coc",
+      ],
+    },
+  ],
+};
