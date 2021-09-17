@@ -21,7 +21,7 @@ before attempting to run your own validator.
 Since security is so important to running a successful validator, you should take a look at the
 [validator setup](../maintain-guides-secure-validator.md) information to make you understand the
 factors to consider when constructing your infrastructure. The Web3 Foundation also maintains a
-[reference implementation for a validator set-up](https://github.com/w3f/axiasolar-validator-setup)
+[reference implementation for a validator set-up](https://github.com/axia-tech/axiasolar-validator-setup)
 that you can use by deploying yourself. As you progress in your journey as a validator, you will
 likely want to use this repository as a _starting point_ for your own modifications and
 customizations.
@@ -64,7 +64,7 @@ beware that you might have performance issue.
 #### Standard Hardware
 
 For the full details of the standard hardware please see
-[here](https://github.com/paritytech/substrate/pull/5848).
+[here](https://github.com/axia-tech/substrate/pull/5848).
 
 - **CPU** - Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
 - **Storage** - A NVMe solid state drive. Should be reasonably sized to deal with blockchain growth.
@@ -214,20 +214,20 @@ It should return
 ### AXIASolar Binary
 
 You will need to build the `axiasolar` binary from the
-[paritytech/axiasolar](https://github.com/paritytech/axiasolar) repository on GitHub using the source
+[axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repository on GitHub using the source
 code available in the **v0.8** branch.
 
 You should generally use the latest **0.8.x** tag. At the time of writing, this was **0.8.26-1**,
 but you should review the output from the "git tag" command to see a list of all the potential 0.8
 releases. You should replace `VERSION` with the latest build (i.e., the highest number). You can
 also find the latest AXIALunar version on the
-[release](https://github.com/paritytech/axiasolar/releases) tab.
+[release](https://github.com/axia-tech/axiasolar/releases) tab.
 
 > Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with
-> `git clone git@github.com:paritytech/axiasolar.git`.
+> `git clone git@github.com:axia-tech/axiasolar.git`.
 
 ```sh
-git clone https://github.com/paritytech/axiasolar.git
+git clone https://github.com/axia-tech/axiasolar.git
 cd axiasolar
 ```
 
@@ -274,7 +274,7 @@ directory. You may then take the generated `subkey` executable and transfer it t
 machine for extra security.
 
 ```sh
-cargo install --force --git https://github.com/paritytech/substrate subkey
+cargo install --force --git https://github.com/axia-tech/substrate subkey
 ```
 
 ### Synchronize Chain Data
@@ -386,7 +386,7 @@ First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) sect
   AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
 - **Payment destination** - The account where the rewards from validating are sent. More info
   [here](../../learn/learn-staking.md#reward-distribution). Starting with runtime version v2023 natively
-  included in client version [0.9.3](https://github.com/paritytech/axiasolar/releases/tag/v0.9.3),
+  included in client version [0.9.3](https://github.com/axia-tech/axiasolar/releases/tag/v0.9.3),
   payouts can go to any custom address. If you'd like to redirect payments to an account that is
   neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set
   an exchange address as the recipient of the staking rewards.

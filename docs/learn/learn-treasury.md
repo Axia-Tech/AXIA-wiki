@@ -309,6 +309,6 @@ migration to a minority fork. However, the possibility of this scenario is quite
 
 ## Further Reading
 
-- [Substrate's Treasury Pallet](https://github.com/paritytech/substrate/blob/master/frame/treasury/src/lib.rs) -
+- [Substrate's Treasury Pallet](https://github.com/axia-tech/substrate/blob/master/frame/treasury/src/lib.rs) -
   The Rust implementation of the Treasury.
   ([Docs](https://substrate.dev/rustdocs/latest/pallet_treasury/index.html))

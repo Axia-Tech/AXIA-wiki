@@ -26,11 +26,11 @@ See the [Wallets](build-wallets.md) page.
 
 ### Clients
 
-- [AXIASolar](https://github.com/paritytech/axiasolar) - Rust implementation of the AXIASolar Host.
+- [AXIASolar](https://github.com/axia-tech/axiasolar) - Rust implementation of the AXIASolar Host.
 
 ### Tools
 
-- [Substrate](https://github.com/paritytech/substrate) - Blockchain development platform written in Rust. AXIASolar is being built on top of Substrate.
+- [Substrate](https://github.com/axia-tech/substrate) - Blockchain development platform written in Rust. AXIASolar is being built on top of Substrate.
 - [Substrate Knowledge Base](https://substrate.dev/docs/en/) - Comprehensive documentation and tutorials for building a blockchain using Substrate.
 
 ## C++

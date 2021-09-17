@@ -266,9 +266,9 @@ and maintain on the AXIALunar network, please head over to our [AXIALunar Guide]
 
 [mooc]: https://mooc.web3.foundation/course/blockchain-fundamentals/
 [white-paper]: https://axiasolar.network/AXIASolarPaper.pdf
-[overview-paper]: https://github.com/w3f/research/blob/master/docs/papers/OverviewPaper-V1.pdf
+[overview-paper]: https://github.com/axia-tech/research/blob/master/docs/papers/OverviewPaper-V1.pdf
 [light-paper]: https://axiasolar.network/AXIASolar-lightpaper.pdf
-[spec]: https://github.com/w3f/axiasolar-spec
+[spec]: https://github.com/axia-tech/axiasolar-spec
 [teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
 [article]: https://medium.com/axiasolar-network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
 [p medium]: https://medium.com/axiasolar-network

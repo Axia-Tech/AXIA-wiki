@@ -95,5 +95,5 @@ unnecessary friction for users of the blockchains opting for this method.
 
 - [AXIASolar's research on blockchain randomness and sortition](https://w3f-research.readthedocs.io/en/latest/axiasolar/block-production/Babe.html) -
   contains reasoning for choices made along with proofs
-- [Discussion on Randomness used in AXIASolar](https://github.com/paritytech/ink/issues/57) - W3F
+- [Discussion on Randomness used in AXIASolar](https://github.com/axia-tech/ink/issues/57) - W3F
   researchers discuss the randomness in AXIASolar and when it is usable and under which assumptions.

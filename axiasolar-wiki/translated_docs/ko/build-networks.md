@@ -11,7 +11,7 @@ sidebar_label: Networks
 다음 명령어로 폴카닷(axiasolar)을 설치하고 `axiasolar` 바이너리를 `PATH`에 등록하세요.
 
 ```bash
-cargo install --git https://github.com/paritytech/axiasolar.git axiasolar
+cargo install --git https://github.com/axia-tech/axiasolar.git axiasolar
 ```
 
 다음 명령어를 터미널에 입력해서 단순한 단일 노드 개발 "네트워크"를 작동 시킬 수 있습니다.
@@ -20,7 +20,7 @@ cargo install --git https://github.com/paritytech/axiasolar.git axiasolar
 axiasolar --dev
 ```
 
-http://github.com/paritytech/polka-ui나 http://github.com/paritytech/axiasolar-ui을 클로닝하거나 만들면서 노닥거릴수 있습니다. 아니면 https://axiasolar.js.org/apps을 가리킬 수도 있습니다.
+http://github.com/axia-tech/polka-ui나 http://github.com/axia-tech/axiasolar-ui을 클로닝하거나 만들면서 노닥거릴수 있습니다. 아니면 https://axiasolar.js.org/apps을 가리킬 수도 있습니다.
 
 ## Krumme Lanke (베를린 남서쪽에 있는 호수 이름 - 역자 주 )
 
@@ -29,7 +29,7 @@ Krumme Lanke는 PoC-2의 개발단계에서 사용했던 테스트넷 네트워�
 글로벌 "Krumme Lanke" 테스트넷에 기본적으로 연결되어서 동작합니다. 명령어는 아래와 같습니다.
 
 ```bash
-cargo install --git https://github.com/paritytech/substrate.git --branch v0.2 axiasolar
+cargo install --git https://github.com/axia-tech/substrate.git --branch v0.2 axiasolar
 ```
 
 Alexander 는 PoC-3와 PoC-4 개발단계에서 사용했던 테스트넷 네트워크 입니다. 다음 명령어로 AXIASolar PoC-4를 설치하고 `axiasolar` 바이너리를 `PATH`에 등록하세요.
@@ -45,7 +45,7 @@ axiasolar
 다중 노드 합의 알고리즘 실행을 로컬에서 보고 싶다면 로컬 testnet을 생성 할 수 있습니다. 두 개의 터미널이 열려 있어야합니다. 하나는 다음을 실행하십시오.
 
 ```bash
-cargo install --git https://github.com/paritytech/axiasolar.git --branch v0.4 axiasolar
+cargo install --git https://github.com/axia-tech/axiasolar.git --branch v0.4 axiasolar
 ```
 
 다른 터미널에서는 다음 명령어를 실행하세요.

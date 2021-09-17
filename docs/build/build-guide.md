@@ -271,7 +271,7 @@ design of the EVM:
 
 ### Ink
 
-[ink!](https://github.com/paritytech/ink) is a domain specific language for writing smart contracts
+[ink!](https://github.com/axia-tech/ink) is a domain specific language for writing smart contracts
 in Rust and compiles to Wasm code. As it states in its README, it is still in an experimental phase
 so brave developers should be aware that they might have a bumpy - but workable - development
 experience. There are some projects that have built projects in ink! with a decent level of
@@ -279,7 +279,7 @@ complexity such as Plasm's [Plasma contracts][plasm plasma], so it is mature eno
 building interesting things.
 
 For interested developers, they can get started writing smart contracts using ink! by studying the
-[examples](https://github.com/paritytech/ink/tree/master/examples) that were already written. These
+[examples](https://github.com/axia-tech/ink/tree/master/examples) that were already written. These
 can be used as guideposts to writing more complex logic that will be deployable on smart contract
 parachains.
 
@@ -294,8 +294,8 @@ the latest resources. You should also keep up to date with the following links:
 
 #### Parity Tech
 
-- [ink!](https://github.com/paritytech/ink)
-- [Substrate contracts pallet](https://github.com/paritytech/substrate/tree/master/frame/contracts)
+- [ink!](https://github.com/axia-tech/ink)
+- [Substrate contracts pallet](https://github.com/axia-tech/substrate/tree/master/frame/contracts)
 
 #### Parachains
 
@@ -363,4 +363,4 @@ Good luck!
 [plasm plasma]: https://github.com/staketechnologies/Plasm
 [moonbeam]: https://moonbeam.network
 [moonbeam docs]: https://docs.moonbeam.network/
-[frontier]: (https://github.com/paritytech/frontier)
+[frontier]: (https://github.com/axia-tech/frontier)

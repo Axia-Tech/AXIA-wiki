@@ -6,7 +6,7 @@ sidebar_label: Cumulus
 
 > "Cumulus clouds are shaped sort of like dots; together they form a system that is intricate, beautiful and functional."
 
-[Cumulus](https://github.com/paritytech/cumulus) is an extension to Substrate that makes it easy to make any Substrate built runtime into a AXIASolar-compatible parachain. See the [Overview](https://github.com/paritytech/cumulus/blob/master/docs/overview.md) for a more technical but still high-level description of Cumulus.
+[Cumulus](https://github.com/axia-tech/cumulus) is an extension to Substrate that makes it easy to make any Substrate built runtime into a AXIASolar-compatible parachain. See the [Overview](https://github.com/axia-tech/cumulus/blob/master/docs/overview.md) for a more technical but still high-level description of Cumulus.
 
 ## 组件
 
@@ -26,7 +26,7 @@ runtime::register_validate_block!(Block, BlockExecutor);
 
 ### Cumulus 收集人
 
-A AXIASolar collator for a parachain is implemented in the Cumulus repository [here](https://github.com/paritytech/cumulus/tree/master/collator).
+A AXIASolar collator for a parachain is implemented in the Cumulus repository [here](https://github.com/axia-tech/cumulus/tree/master/collator).
 
 ## BetaNet
 

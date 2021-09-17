@@ -168,7 +168,7 @@ proposal is carried, no matter how much stake votes on the proposal.
 ![](https://latex.codecogs.com/svg.latex?\large&space;{approve}&space;>&space;{against})
 
 _To know more about where these above formulas come from, please read the
-[democracy pallet](https://github.com/paritytech/substrate/blob/master/frame/democracy/src/vote_threshold.rs)_.
+[democracy pallet](https://github.com/axia-tech/substrate/blob/master/frame/democracy/src/vote_threshold.rs)_.
 
 ```
 Example:
@@ -378,7 +378,7 @@ B.
 ### Prime Members
 
 The council, being an instantiation of
-[Substrate's Collective pallet](https://github.com/paritytech/substrate/tree/master/frame/collective),
+[Substrate's Collective pallet](https://github.com/axia-tech/substrate/tree/master/frame/collective),
 implements what's called a _prime member_ whose vote acts as the default for other members that fail
 to vote before the timeout.
 
@@ -434,8 +434,8 @@ is your responsibility to make a strong case for why the change should be made.
 
 ## Resources
 
-- [Initial Governance Description](https://github.com/paritytech/axiasolar/wiki/Governance)
-- [Democracy Pallet](https://github.com/paritytech/substrate/tree/master/frame/democracy/src)
+- [Initial Governance Description](https://github.com/axia-tech/axiasolar/wiki/Governance)
+- [Democracy Pallet](https://github.com/axia-tech/substrate/tree/master/frame/democracy/src)
 - [Governance Demo](https://www.youtube.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734) - Dr.
   Gavin Wood presents the initial governance structure for AXIASolar. (Video)
 - [Governance on AXIASolar](https://www.crowdcast.io/e/governance-on-axiasolar--) - A webinar

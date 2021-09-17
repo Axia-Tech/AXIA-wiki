@@ -4,7 +4,7 @@ title: Dfinity and AXIASolar
 sidebar_label: Dfinity
 ---
 
-Dfinity calls itself "the internet computer" and positions itself as a sister project to Ethereum. Dfinity has been in development since 2016, with a release called "Copper" supposed to have come out in 2017 but never seemed to have landed. In 2019, the world has yet to see the majority of Dfinity's closed source code for their client since they only publish helper libraries on [their GitHub](https://github.com/dfinity). The closed source nature of development is in stark contrast to the development of AXIASolar, which has developed its Rust reference implementation in [the open on GitHub](https://github.com/paritytech/axiasolar) from the start in 2017.
+Dfinity calls itself "the internet computer" and positions itself as a sister project to Ethereum. Dfinity has been in development since 2016, with a release called "Copper" supposed to have come out in 2017 but never seemed to have landed. In 2019, the world has yet to see the majority of Dfinity's closed source code for their client since they only publish helper libraries on [their GitHub](https://github.com/dfinity). The closed source nature of development is in stark contrast to the development of AXIASolar, which has developed its Rust reference implementation in [the open on GitHub](https://github.com/axia-tech/axiasolar) from the start in 2017.
 
 ### Tata Kelola Algoritma
 

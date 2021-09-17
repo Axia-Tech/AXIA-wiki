@@ -70,7 +70,7 @@ yarn run:signer sign --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 
 
 ## Tx Wrapper
 
-如果您不想使用 CLI 进行签名操作，Parity 提供了一个称为[TxWrapper](https://github.com/paritytech/txwrapper)的 SDK，它可以离线生成和签名交易。请参阅[示例](https://github.com/paritytech/txwrapper/tree/master/examples)以获取指南。
+如果您不想使用 CLI 进行签名操作，Parity 提供了一个称为[TxWrapper](https://github.com/axia-tech/txwrapper)的 SDK，它可以离线生成和签名交易。请参阅[示例](https://github.com/axia-tech/txwrapper/tree/master/examples)以获取指南。
 
 **导入私钥:**
 
@@ -138,7 +138,7 @@ import { createSignedTx } from "@substrate/txwrapper";
 
 // Example code, replace `signWithAlice` with actual remote signer.
 // An example is given here:
-// https://github.com/paritytech/txwrapper/blob/630c38d/examples/index.ts#L50-L68
+// https://github.com/axia-tech/txwrapper/blob/630c38d/examples/index.ts#L50-L68
 const signature = await signWithAlice(signingPayload);
 const signedTx = createSignedTx(unsigned, signature, { metadataRpc, registry });
 ```

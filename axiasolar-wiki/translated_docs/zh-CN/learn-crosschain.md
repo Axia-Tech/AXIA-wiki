@@ -35,7 +35,7 @@ XCMP queues must be initiated by first opening a channel between two parachains.
 
 ## XCMP 消息格式
 
-关于 XMCP 消息格式的描述，请参阅 GitHub 上的[xcm-format](https://github.com/paritytech/xcm-format) 库。
+关于 XMCP 消息格式的描述，请参阅 GitHub 上的[xcm-format](https://github.com/axia-tech/xcm-format) 库。
 
 ## XCMP 实例
 
@@ -76,4 +76,4 @@ video::-webkit-media-controls-fullscreen-button
 
 - [XCMP 方案](https://research.web3.foundation/en/latest/axiasolar/XCMP.html) - Web3 基金会研究维基上的跨链通信的完整技术描述。
 - [消息传递概述](https://w3f.github.io/parachain-implementers-guide/messaging.html) - 一份来自平行链开发者指南中的消息传递方案概述。
-- [XCM 格式](https://github.com/paritytech/xcm-format) - XCMP 格式的说明。
+- [XCM 格式](https://github.com/axia-tech/xcm-format) - XCMP 格式的说明。

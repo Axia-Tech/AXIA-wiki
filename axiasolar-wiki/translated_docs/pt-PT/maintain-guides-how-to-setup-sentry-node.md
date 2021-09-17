@@ -4,7 +4,7 @@ title: Set Up a Sentry Node - Public Node
 sidebar_label: Set Up a Sentry Node
 ---
 
-This guide assumes you have already set up a validator and would like to make it more resilient and protect against sybil attack or DDoS. It has same configuration of the [axiasolar secure validator](https://github.com/w3f/axiasolar-secure-validator).
+This guide assumes you have already set up a validator and would like to make it more resilient and protect against sybil attack or DDoS. It has same configuration of the [axiasolar secure validator](https://github.com/axia-tech/axiasolar-secure-validator).
 
 In this guide, we will walk you through how to configure a validator that sits inside a VPN. The validator only talks to the public facing nodes to isolate it from the internet and reduce the chance of your validator being hacked.
 
@@ -186,7 +186,7 @@ If you want to explicitly specify the secret key to use, you can do so with the 
 
 > Note: It is useful to generate or back up the `secret_ed25519` files if you want to use static addresses for sentry configurations. Otherwise you may have to dynamically find and set the `PeerId`.
 
-You can use [subkey](https://github.com/paritytech/substrate/tree/master/bin/utils/subkey) to generate a new `secret_ed25519` as follows:
+You can use [subkey](https://github.com/axia-tech/substrate/tree/master/bin/utils/subkey) to generate a new `secret_ed25519` as follows:
 
 ```bash
 > subkey generate-node-key </PATH/SECRET_ED25519_FILE>

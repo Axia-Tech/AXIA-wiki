@@ -67,11 +67,11 @@ In other words, as soon as more than 2/3 of validators attest to a chain contain
 
 #### Protocol
 
-Please refer to heading 3 in [the paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) for a full description of the protocol.
+Please refer to heading 3 in [the paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf) for a full description of the protocol.
 
 #### Implementation
 
-The [Rust implementation](https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs) is part of Substrate Frame.
+The [Rust implementation](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs) is part of Substrate Frame.
 
 For even more detail, see the [GRANDPA research page](https://research.web3.foundation/en/latest/axiasolar/GRANDPA.html) on the W3F Research pages.
 
@@ -110,6 +110,6 @@ _Coming soon!_
 
 ## Resources
 
-- [GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) - The academic description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.
-- [Rust implementation](https://github.com/paritytech/finality-grandpa) - The reference implementation and the accompanying [Substrate pallet](https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs).
+- [GRANDPA paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf) - The academic description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.
+- [Rust implementation](https://github.com/axia-tech/finality-grandpa) - The reference implementation and the accompanying [Substrate pallet](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs).
 - [Block Production and Finalization in AXIASolar](https://www.crowdcast.io/e/axiasolar-block-production) - An explanation of how BABE and GRANDPA work together to produce and finalize blocks on AXIALunar, with Bill Laboon.

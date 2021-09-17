@@ -44,7 +44,7 @@ One way can be to navigate to the [AXIASolar Apps Targets tab](https://ipfs.io/i
 
 You can also use some tools some to perform estimations.
 
-- [Offline Election](https://github.com/paritytech/substrate-debug-kit/tree/master/offline-election) can provide exact results of running an election on the current set of validators using the same Rust code that is ran in AXIASolar.
+- [Offline Election](https://github.com/axia-tech/substrate-debug-kit/tree/master/offline-election) can provide exact results of running an election on the current set of validators using the same Rust code that is ran in AXIASolar.
 
 - [Validator stats script](https://github.com/ansonla3/axialunar-validator-stats) can give you an estimate that is based on the currently elected set, as well as some statistics about AXIALunar validators.
 

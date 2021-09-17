@@ -4,7 +4,7 @@ title: Dfinity 与 AXIASolar 区别
 sidebar_label: Dfinity
 ---
 
-Dfinity 自称 "互联网计算机" 并与以太坊定位为姐妹项目。 Dfinity 一直自 2016 年起开发，该产品的发布版本 "Copper" 本应于 2017 年问世，但似乎从未发布。 2019 年大众尚未看到 Dfinity 的大部分客户端代码，因为他们仅在 [GitHub](https://github.com/dfinity) 发布帮助库。 封闭代码的开发本質与 AXIASolar 从 2017 年初开始在[ GitHub 上开放](https://github.com/paritytech/axiasolar)了 Rust 参考实现。
+Dfinity 自称 "互联网计算机" 并与以太坊定位为姐妹项目。 Dfinity 一直自 2016 年起开发，该产品的发布版本 "Copper" 本应于 2017 年问世，但似乎从未发布。 2019 年大众尚未看到 Dfinity 的大部分客户端代码，因为他们仅在 [GitHub](https://github.com/dfinity) 发布帮助库。 封闭代码的开发本質与 AXIASolar 从 2017 年初开始在[ GitHub 上开放](https://github.com/axia-tech/axiasolar)了 Rust 参考实现。
 
 ### 算法治理
 

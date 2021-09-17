@@ -16,7 +16,7 @@ While the [validators][] are active participants in the network that engage in t
 
 您可以通过 [帐户生成][]页上详细介绍的任何推荐方法来生成 stash 和 controller 帐户。
 
-Starting with runtime version v23 natively included in client version [0.8.23](https://github.com/paritytech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
+Starting with runtime version v23 natively included in client version [0.8.23](https://github.com/axia-tech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
 
 ## Using AXIASolar-JS UI
 

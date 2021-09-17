@@ -65,7 +65,7 @@ axiasolar purge-chain
 
 ## Deployment Tools
 
-Web3 Foundation maintains [AXIASolar Deployer](https://github.com/w3f/axiasolar-deployer), which allows you to create local or remote cloud deployments of AXIASolar nodes. See the README for instructions.
+Web3 Foundation maintains [AXIASolar Deployer](https://github.com/axia-tech/axiasolar-deployer), which allows you to create local or remote cloud deployments of AXIASolar nodes. See the README for instructions.
 
 Validators, see the [secure setup guide](maintain-guides-how-to-use-axiasolar-secure-validator) for information specific to deploying validator nodes.
 
@@ -103,6 +103,6 @@ All targets are set to `info` logging by default. You can adjust individual log 
 
 **Telemetry & Metrics**
 
-The Parity AXIASolar client connects to telemetry by default. You can disable it with `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option (see the help options for instructions). Connecting to public telemetry may expose information that puts your node at higher risk of attack. You can run your own, private [telemetry server](https://github.com/paritytech/substrate-telemetry) or deploy a `substrate-telemetry` instance to a Kubernetes cluster using [this Helm chart](https://github.com/w3f/substrate-telemetry-chart).
+The Parity AXIASolar client connects to telemetry by default. You can disable it with `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option (see the help options for instructions). Connecting to public telemetry may expose information that puts your node at higher risk of attack. You can run your own, private [telemetry server](https://github.com/axia-tech/substrate-telemetry) or deploy a `substrate-telemetry` instance to a Kubernetes cluster using [this Helm chart](https://github.com/axia-tech/substrate-telemetry-chart).
 
-The node also exposes a Prometheus endpoint by default (disable with `--no-prometheus`). You can expose metrics via Parity's [DOT exporter](https://github.com/paritytech/dotexporter). Substrate has a [vizualizing node metrics tutorial](https://substrate.dev/docs/en/tutorials/visualize-node-metrics/).
+The node also exposes a Prometheus endpoint by default (disable with `--no-prometheus`). You can expose metrics via Parity's [DOT exporter](https://github.com/axia-tech/dotexporter). Substrate has a [vizualizing node metrics tutorial](https://substrate.dev/docs/en/tutorials/visualize-node-metrics/).

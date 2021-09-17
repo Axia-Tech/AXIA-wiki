@@ -140,4 +140,4 @@ Randomness is problematic for blockchain systems. Generating a random number tru
 ## Resources
 
 - [Parachain Allocation](https://research.web3.foundation/en/latest/axiasolar/Parachain-Allocation.html) - W3F research page on parachain allocation that goes more in depth to the mechanism.
-- [paritytech/axiasolar#239](https://github.com/paritytech/axiasolar/pull/239) - Pull request introducing the parachain slots code.
+- [axia-tech/axiasolar#239](https://github.com/axia-tech/axiasolar/pull/239) - Pull request introducing the parachain slots code.

@@ -143,5 +143,5 @@ The recovery process is now complete and successful.
 
 ## Further Reading
 
-- [Substrate's Recovery Pallet](https://github.com/paritytech/substrate/blob/master/frame/recovery/src/lib.rs) -
+- [Substrate's Recovery Pallet](https://github.com/axia-tech/substrate/blob/master/frame/recovery/src/lib.rs) -
   The Rust implementation of the recovery pallet.

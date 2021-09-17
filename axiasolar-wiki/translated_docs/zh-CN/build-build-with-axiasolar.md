@@ -24,7 +24,7 @@ _本文是对博文[《波卡开发入门需知》](https://medium.com/axiasolar
 
 波卡[采用丰富的编程语言](learn-implementations)，支持从 Rust 到 JavaScript 等一系列语言。在 Substrate 框架下当前主要采用 Rust 进行编程。Substrate 是一套支持开发者便捷地开发完整区块链应用的框架。这套框架通过集成核心要素而得以实现，这些要素有网络协议、共识层、Wasm 编译器和运行模块(也称为模块) 等。Cumulus 是一种对 Substrate 的扩展版本，它允许使用 Substrate 开发的链与波卡连接成为平行链。Substrate 当前发布的标签版本是 2.0.0，这一版拥有稳定版 API。
 
-波卡的原生功能不支持智能合约，但可以通过平行链实现智能合约。用 Substrate 开发的链能够通过使用 Wasm 合约中的[Contracts](https://github.com/paritytech/substrate/tree/master/frame/contracts)模块和 FRAME 中的[EVM](https://github.com/paritytech/substrate/tree/master/frame/evm)模块来实现智能合约的功能。contracts 模块能够允许任意用户或者根据具体规则在链上部署 Wasm 编译的合约。为了促进 Wasm 智能合约的开发，Parity 也在开发一种基于 Rust 用来专门编写智能合约的语言[ink!](https://github.com/paritytech/ink)。
+波卡的原生功能不支持智能合约，但可以通过平行链实现智能合约。用 Substrate 开发的链能够通过使用 Wasm 合约中的[Contracts](https://github.com/axia-tech/substrate/tree/master/frame/contracts)模块和 FRAME 中的[EVM](https://github.com/axia-tech/substrate/tree/master/frame/evm)模块来实现智能合约的功能。contracts 模块能够允许任意用户或者根据具体规则在链上部署 Wasm 编译的合约。为了促进 Wasm 智能合约的开发，Parity 也在开发一种基于 Rust 用来专门编写智能合约的语言[ink!](https://github.com/axia-tech/ink)。
 
 波卡主网自 2020 年 5 月正式上线。现在开发工具已经出现且趋于稳定，那当下正是尝试用波卡开发你项目的大好时机。但别急！在你一头扎进写代码前，你应该仔细考虑你想开发的去中心化应用的类型，并且了解一些适用于波卡开发者的不同范式。
 
@@ -122,7 +122,7 @@ Substrate 是用于开发波卡的底层框架。它是为区块链创新者所�
 
 波卡的中继链本身不支持智能合约，但由于接入波卡的平行链能够支持任意的状态转换，因此这些平行链能够支持智能合约。当平行链接入后，智能合约开发者便可以使用这些选项。如今开发技术已趋于成熟，先在本地链条上启动开发随后将其部署到线上环境的方式成为可能。
 
-Substrate 有两种方式来支持开箱即用的智能合约开发。一种方式是使用文章[《合约》](https://github.com/paritytech/substrate/tree/master/frame/contracts)中的框架库所提供的模板，第二种方法是使用 Substrate 的[《EVM 模块》](https://github.com/paritytech/substrate/tree/master/frame/evm)来部署 EVM 作为底层从 Solidity 或 Vyper 语言编译过来的字节码，并能够使用以太坊的技术栈。
+Substrate 有两种方式来支持开箱即用的智能合约开发。一种方式是使用文章[《合约》](https://github.com/axia-tech/substrate/tree/master/frame/contracts)中的框架库所提供的模板，第二种方法是使用 Substrate 的[《EVM 模块》](https://github.com/axia-tech/substrate/tree/master/frame/evm)来部署 EVM 作为底层从 Solidity 或 Vyper 语言编译过来的字节码，并能够使用以太坊的技术栈。
 
 对于以前写过智能合约的开发者而言，他们对于部署 EVM 的链更为熟练。然而合约模块针对 EVM 的设计做了一些显著的改善，它们是：
 
@@ -144,15 +144,15 @@ Edgeware 的目标是被用于在连接波卡时被视作平行链从而允许�
 
 ## Moonbeam
 
-[Moonbeam](https://moonbeam.network)是另一个被计划用于将平行链部署到波卡上并且支持智能合约的项目。因为 Moonbeam 用到了[Frontier](https://github.com/paritytech/frontier)，它是一个附带了现有以太坊工具的互操作层，将以很小的摩擦支持所有针对 EVM 环境编写的应用程序。
+[Moonbeam](https://moonbeam.network)是另一个被计划用于将平行链部署到波卡上并且支持智能合约的项目。因为 Moonbeam 用到了[Frontier](https://github.com/axia-tech/frontier)，它是一个附带了现有以太坊工具的互操作层，将以很小的摩擦支持所有针对 EVM 环境编写的应用程序。
 
 跟着这篇[文档](https://docs.moonbeam.network/)试着去部署一个合约到 Moonbeam 上吧。
 
 ### Ink
 
-[ink!](https://github.com/paritytech/ink)是一种特定领域语言用于使用 Rust 语言编写智能合约并将其编译为 Wasm 代码。如 README 中所述，ink 目前尚处于实验阶段，所以勇敢的开发者们也许会体验一段颤栗又可行的开发之旅。一些项目使用 ink!做的开发呈现出相当复杂的程度，例如 Plasm 的[Plasma 合约](https://github.com/staketechnologies/Plasm)，所以开发者需要足够熟练才能开始创造有趣的项目。
+[ink!](https://github.com/axia-tech/ink)是一种特定领域语言用于使用 Rust 语言编写智能合约并将其编译为 Wasm 代码。如 README 中所述，ink 目前尚处于实验阶段，所以勇敢的开发者们也许会体验一段颤栗又可行的开发之旅。一些项目使用 ink!做的开发呈现出相当复杂的程度，例如 Plasm 的[Plasma 合约](https://github.com/staketechnologies/Plasm)，所以开发者需要足够熟练才能开始创造有趣的项目。
 
-对于感兴趣的开发者，可以通过研究这些写好的[案例](https://github.com/paritytech/ink/tree/master/examples)开始学习编写智能合约。这些案例可以作为编写逻辑更复杂的会被部署到智能合约平行链的指引。
+对于感兴趣的开发者，可以通过研究这些写好的[案例](https://github.com/axia-tech/ink/tree/master/examples)开始学习编写智能合约。这些案例可以作为编写逻辑更复杂的会被部署到智能合约平行链的指引。
 
 ink! 已经为新的智能合约技术栈打下了很多基础，该技术是基于 Wasm 的虚拟机并且能与 Substrate 链兼容。
 
@@ -182,8 +182,8 @@ ink! 已经为新的智能合约技术栈打下了很多基础，该技术是基
 
 - [Edgeware](https://edgewa.re).
 - [Moonbeam](https://moonbeam.network)
-- [ink!](https://github.com/paritytech/ink). (请注意 Wiki 选项卡上的内容。)
-- [Substrate 合约模块](https://github.com/paritytech/substrate/tree/master/frame/contracts)
+- [ink!](https://github.com/axia-tech/ink). (请注意 Wiki 选项卡上的内容。)
+- [Substrate 合约模块](https://github.com/axia-tech/substrate/tree/master/frame/contracts)
 
 ## 总结
 

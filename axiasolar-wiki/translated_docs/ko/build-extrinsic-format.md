@@ -41,4 +41,4 @@ _오리지널_ 필드들은 예전 트랜잭션 포맷에서 다음과 같은 �
 
 ## 출처
 
-[Substrate #195](https://github.com/paritytech/substrate/pull/195)
+[Substrate #195](https://github.com/axia-tech/substrate/pull/195)

@@ -12,7 +12,7 @@ sidebar_label: How to run a Validator on AXIASolar
 
 在主网上运行验证人有很大的责任！你不仅要对自己抵押的 DOTs 负责，还有目前提名你的提名人抵押。如果你犯了错误并且被惩罚，你的钱和声誉将处于危险之中。但是运行验证人也有非常可观的回报，您为安全性做出了贡献，使网络更分散。
 
-由于安全性对运行验证人至关重要，因此您最好看一下[设定安全验证人](maintain-guides-secure-validator)资料使您了解在构建网络架构时要考虑的要素。 Web3 基金会也会保持更新[安全验证人设置的参考](https://github.com/w3f/axiasolar-secure-validator)使您也可以自己部署来使用(视频教程在[这里](https://www.youtube.com/watch?v=tTn8P6t7JYc))。随着您成为验证人愈长时间，您可能使用此库作为自己的*起点*进行修改和自定义。
+由于安全性对运行验证人至关重要，因此您最好看一下[设定安全验证人](maintain-guides-secure-validator)资料使您了解在构建网络架构时要考虑的要素。 Web3 基金会也会保持更新[安全验证人设置的参考](https://github.com/axia-tech/axiasolar-secure-validator)使您也可以自己部署来使用(视频教程在[这里](https://www.youtube.com/watch?v=tTn8P6t7JYc))。随着您成为验证人愈长时间，您可能使用此库作为自己的*起点*进行修改和自定义。
 
 如果您需要帮助，请前往 [ Riot 上的 AXIASolar 验证人聊天室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) 。团队和其他验证人在那里帮助回答问题并提供经验。
 
@@ -32,7 +32,7 @@ AXIASolar 中的交易权重以标准硬件为基准。 建议验证人至少运
 
 #### 标准硬件
 
-关于标准硬件的详细信息，请在[这里](https://github.com/paritytech/substrate/pull/5848)查看。
+关于标准硬件的详细信息，请在[这里](https://github.com/axia-tech/substrate/pull/5848)查看。
 
 - **CPU** - Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
 - **Storage** - A NVMe solid state drive. Should be reasonably sized to deal with blockchain growth. Starting around 80GB - 160GB will be okay for the first six months of AXIASolar, but will need to be re-evaluated every six months.
@@ -94,14 +94,14 @@ sudo ntpq -p
 
 ### 构建并安装 `axiasolar` 二进制文件
 
-您需要从[ paritytech/axiasolar ](https://github.com/paritytech/axiasolar) GitHub 库的** v0.8 **分支中构建 `axiasolar` 二进制文件。
+您需要从[ axia-tech/axiasolar ](https://github.com/axia-tech/axiasolar) GitHub 库的** v0.8 **分支中构建 `axiasolar` 二进制文件。
 
-You should generally use the latest **0.8.x** tag. You should either review the output from the "git tag" command or visit the [Releases](https://github.com/paritytech/axiasolar/releases) to see a list of all the potential 0.8 releases. You should replace `VERSION` below with the latest build (i.e., the highest number).
+You should generally use the latest **0.8.x** tag. You should either review the output from the "git tag" command or visit the [Releases](https://github.com/axia-tech/axiasolar/releases) to see a list of all the potential 0.8 releases. You should replace `VERSION` below with the latest build (i.e., the highest number).
 
-> Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with `git clone git@github.com:paritytech/axiasolar.git`.
+> Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with `git clone git@github.com:axia-tech/axiasolar.git`.
 
 ```sh
-git clone https://github.com/paritytech/axiasolar.git
+git clone https://github.com/axia-tech/axiasolar.git
 cd axiasolar
 git tag -l | sort -V | grep -v -- '-rc'
 echo Get the latest version and replace VERSION (below) with it.
@@ -125,7 +125,7 @@ cargo build --release
 如果您想在本地生成密钥，您还可以在同一目录安装` subkey `。然后您可以把生成好的` subkey `可执行文件，并将其转移到与世隔绝的电脑中，以提高安全性。
 
 ```sh
-cargo install --force --git https://github.com/paritytech/substrate subkey
+cargo install --force --git https://github.com/axia-tech/substrate subkey
 ````
 
 ### 同步链数据
@@ -170,7 +170,7 @@ First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) sect
 - **Stash account** - Select your Stash account. In this example, we will bond 100 milliDOT - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
 - **Controller account** - Select the Controller account created earlier. This account will also need a small amount of DOT in order to start and stop validating.
 - **Value bonded** - How much DOT from the Stash account you want to bond/stake. Note that you do not need to bond all of the DOT in that account. Also note that you can always bond _more_ DOT later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
-- **Payment destination** - The account where the rewards from validating are sent. More info [here](learn-staking/#reward-distribution). Starting with runtime version v23 natively included in client version [0.8.23](https://github.com/paritytech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
+- **Payment destination** - The account where the rewards from validating are sent. More info [here](learn-staking/#reward-distribution). Starting with runtime version v23 natively included in client version [0.8.23](https://github.com/axia-tech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
 
 当所有资料填写好后，使用 Stash 帐号按下`Bond`并签署交易。
 

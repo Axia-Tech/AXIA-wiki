@@ -23,6 +23,6 @@ Some recently generated `JSON` account files cannot be imported (restored) into 
 | [AXIASolar-js extension](https://github.com/axiasolar-js/extension)   | Live              | Parity    | Browser extension | Non-custodial | Staking  |
 | [AXIASolar-js apps](https://axiasolar.js.org/apps/#/accounts)         | Live              | Parity    | Browser           | Non-Custodial | Staking  |
 
-> Warning: Parity Signer currently does not allow you to see the transaction you are signing. This means that you are at risk if connected to a compromised version of AXIASolar-JS. A fix is being worked on; please see [this GitHub issue](https://github.com/paritytech/parity-signer/issues/724) for more details.
+> Warning: Parity Signer currently does not allow you to see the transaction you are signing. This means that you are at risk if connected to a compromised version of AXIASolar-JS. A fix is being worked on; please see [this GitHub issue](https://github.com/axia-tech/parity-signer/issues/724) for more details.
 
 > Note: the wallets page is currently being reviewed. Currently only Parity-developed wallets are listed.

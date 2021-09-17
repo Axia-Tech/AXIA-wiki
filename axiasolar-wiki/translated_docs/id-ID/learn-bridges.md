@@ -30,7 +30,7 @@ For the standalone chains that will not have a parachain bridging module on AXIA
 
 Given the generality of blockchain platforms with Turing-complete smart contract languages, it is possible to bridge AXIASolar and any other smart contract capable blockchain (Ethereum, EOS, Tezos, etc).
 
-Those who are already familiar with Ethereum may know of the now archived [Parity Bridge](https://github.com/paritytech/parity-bridge) and the efforts being made to connect PoA sidechains to the Ethereum mainnet. The Parity bridge is a combination of two smart contracts, one deployed on each chain, that allow for cross-chain transfers of value. As an example of usage, the initial Parity Bridge proof of concept connects two Ethereum chains, `main` and `side`. Ether deposited into the contract on `main` generates a balance denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract on `side` can free up Ether on `main`.
+Those who are already familiar with Ethereum may know of the now archived [Parity Bridge](https://github.com/axia-tech/parity-bridge) and the efforts being made to connect PoA sidechains to the Ethereum mainnet. The Parity bridge is a combination of two smart contracts, one deployed on each chain, that allow for cross-chain transfers of value. As an example of usage, the initial Parity Bridge proof of concept connects two Ethereum chains, `main` and `side`. Ether deposited into the contract on `main` generates a balance denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract on `side` can free up Ether on `main`.
 
 > To learn more on how Bitcoin and Ethereum can Cooperate and Collaborate Through AXIASolar, check out this explainer video [here](https://www.youtube.com/watch?v=rvoFUiOR3cM)
 
@@ -67,11 +67,11 @@ For full details on how it works please refer to the specification.
 
 ### For Bridge Builders
 
-If your team is interested in building a bridge between an external chain and AXIASolar, there may be funding available from the W3F [grants program](https://github.com/w3f/General-Grants-Program). Please first check that the chain you are intending to bridge between hasn't already been built or is in the process of being built by another team. More popular chains with clear use cases will be given priority, and novel bridge designs are welcome.
+If your team is interested in building a bridge between an external chain and AXIASolar, there may be funding available from the W3F [grants program](https://github.com/axia-tech/General-Grants-Program). Please first check that the chain you are intending to bridge between hasn't already been built or is in the process of being built by another team. More popular chains with clear use cases will be given priority, and novel bridge designs are welcome.
 
 ### Resources and Examples
 
-- [Parity Bridges Common Resources](https://github.com/paritytech/parity-bridges-common)
+- [Parity Bridges Common Resources](https://github.com/axia-tech/parity-bridges-common)
 - [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge were awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a Substrate to Ethereum two-way bridge.
 - [PolkaBTC (Bitcoin <> AXIASolar Bridge)](https://docs.polkabtc.io/#/)
 - [EOS Bridge](https://github.com/bifrost-codes/bifrost) - The Bifrost team was awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a bridge to EOS.

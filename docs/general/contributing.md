@@ -26,7 +26,7 @@ included. Specifically, the Technical Education team at the foundation are most 
 ## How to Contribute
 
 You can contribute to the wiki on the
-[w3f/axiasolar-wiki GitHub repository](https://github.com/w3f/axiasolar-wiki). Every page is a
+[w3f/axiasolar-wiki GitHub repository](https://github.com/axia-tech/axiasolar-wiki). Every page is a
 [MarkDown](https://guides.github.com/features/mastering-markdown/) file, which is an easy to learn
 syntax extension to plain text that makes creating links, rendering images, and nice-looking
 formatting simple.

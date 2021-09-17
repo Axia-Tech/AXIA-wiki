@@ -34,7 +34,7 @@ be used for staking and governance.
 
 ## Assets Basics
 
-See the [Assets pallet](https://github.com/paritytech/substrate/blob/master/frame/assets/src/lib.rs)
+See the [Assets pallet](https://github.com/axia-tech/substrate/blob/master/frame/assets/src/lib.rs)
 for the most up-to-date info and reference documentation.
 
 Assets are stored as a map from an ID to information about the asset, including a management team,
@@ -81,21 +81,21 @@ Using Statemine, assets can be easily created and also transacted with.
 
 You can use the same account on both networks and both will use the same `pubkey`.
 The network IDs change, so your address will look different. At the moment, assets are not
-visible on the Accounts page; you will need to visit the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.paritytech.net#/assets) under the `Network` tab on Statemine to receive assets.
+visible on the Accounts page; you will need to visit the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) under the `Network` tab on Statemine to receive assets.
 
 ![statemine asset examples](../assets/statemine-asset-examples.png)
 
 #### Sending:
 
-Similarly, head over to the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.paritytech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
+Similarly, head over to the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
 
 > Sending the asset follows the same transaction scheme as sending KSM (or DOT).
 
 ## Integration
 
 Statemint will come with the same tooling suite that Parity Technologies provides for the Relay
-Chain, namely [API Sidecar](https://github.com/paritytech/substrate-api-sidecar) and
-[TxWrapper AXIASolar](https://github.com/paritytech/txwrapper-core/tree/main/packages/txwrapper-axiasolar).
+Chain, namely [API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) and
+[TxWrapper AXIASolar](https://github.com/axia-tech/txwrapper-core/tree/main/packages/txwrapper-axiasolar).
 If you have a technical question or issue about how to use one of the integration tools please file
 a GitHub issue so a developer can help.
 
@@ -123,7 +123,7 @@ info about assets and asset balances on Statemint.
 
 - Asset lookups will always use the `AssetId` to refer to an asset class. On-chain metadata is
   subject to change and thus not suitable as a canonical index.
-- Please refer to [docs](https://paritytech.github.io/substrate-api-sidecar/dist/) for full usage
+- Please refer to [docs](https://axia-tech.github.io/substrate-api-sidecar/dist/) for full usage
   information. Details on options like how to make a historical query are not included here.
 
 ### Tx Wrapper AXIASolar

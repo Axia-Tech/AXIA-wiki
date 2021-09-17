@@ -31,7 +31,7 @@ Validators perform two functions. First, verifying that the information containe
 
 ## 安全 / 密钥管理
 
-- [验证人安全概览](https://github.com/w3f/validator-security)
+- [验证人安全概览](https://github.com/axia-tech/validator-security)
 
 ## 监控工具
 

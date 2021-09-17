@@ -64,7 +64,7 @@ guarantees on the finality of blocks - specifically, that they can never be reve
 process of Byzantine agreements has taken place. The notion of irreversible consensus is known as
 _provable finality._
 
-In the [GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf), it is phrased
+In the [GRANDPA paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf), it is phrased
 in this way:
 
 > We say an oracle A in a protocol is _eventually consistent_ if it returns the same value to all
@@ -146,13 +146,13 @@ all blocks leading up to that one are finalized at once.
 
 ### Protocol
 
-Please refer to [the GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf)
+Please refer to [the GRANDPA paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf)
 for a full description of the protocol.
 
 ### Implementation
 
 The
-[Substrate implementation of GRANDPA](https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs)
+[Substrate implementation of GRANDPA](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs)
 is part of Substrate Frame.
 
 ## Fork Choice
@@ -202,11 +202,11 @@ The two main differences between GRANDPA and Casper FFG are:
 
 - [BABE paper](https://research.web3.foundation/en/latest/axiasolar/block-production/Babe.html) - The
   academic description of the BABE protocol.
-- [GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) - The academic
+- [GRANDPA paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf) - The academic
   description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.
-- [Rust implementation](https://github.com/paritytech/finality-grandpa) - The reference
+- [Rust implementation](https://github.com/axia-tech/finality-grandpa) - The reference
   implementation and the accompanying
-  [Substrate pallet](https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs).
+  [Substrate pallet](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs).
 - [Block Production and Finalization in AXIASolar](https://www.crowdcast.io/e/axiasolar-block-production) -
   An explanation of how BABE and GRANDPA work together to produce and finalize blocks on AXIALunar,
   with Bill Laboon.

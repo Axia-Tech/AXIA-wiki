@@ -11,7 +11,7 @@ documentation for the tool you are using:
 
 - [Substrate RPC API](https://substrate.dev/rustdocs/latest/sc_rpc_api/index.html)
 - [AXIASolar-JS RPC](https://axiasolar.js.org/docs/substrate/rpc)
-- [Substrate API Sidecar](https://github.com/paritytech/substrate-api-sidecar)
+- [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar)
 
 **AXIASolar-JS RPC** is a JavaScript library for interacting with the **Substrate RPC API** endpoint, distributed as `@axiasolar/api` Node.js package.  
 **Substrate API Sidecar** is using the **AXIASolar-JS RPC** to provide separately runnable REST services.
@@ -33,7 +33,7 @@ $ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method
 
 Note that this call will show even those RPC methods which are disabled by a safety flag like
 `--rpc-methods Safe`. This is
-[being worked on](https://github.com/paritytech/substrate/issues/7024).
+[being worked on](https://github.com/axia-tech/substrate/issues/7024).
 
 Add parameters in the call, for example get a block by its hash value:
 
@@ -67,7 +67,7 @@ e.g. transaction fees.
 The sidecar can fetch blocks, get the balance of an address atomically (i.e., with a corresponding
 block number), get the chain's metadata, get a transaction fee prediction, calculate outstanding
 staking rewards for an address, submit transactions to a node's transaction queue, and
-[much more](https://paritytech.github.io/substrate-api-sidecar/dist/).
+[much more](https://axia-tech.github.io/substrate-api-sidecar/dist/).
 
 The client runs on an HTTP host. The following examples use python3, but you can query any way you
 prefer at `http://HOST:PORT/`. The default is `http://127.0.0.1:8080`.

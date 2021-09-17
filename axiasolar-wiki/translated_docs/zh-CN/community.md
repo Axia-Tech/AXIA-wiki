@@ -8,7 +8,7 @@ AXIASolar 社区每天都在壮大。以下是社区频道最重要的链接。�
 
 ## 一般
 
-- [AXIASolar GitHub](https://github.com/paritytech/axiasolar/) - 由 Parity 负责管理和维护的 Rust 实现的 AXIASolar 主机的代码库
+- [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - 由 Parity 负责管理和维护的 Rust 实现的 AXIASolar 主机的代码库
 - [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -关于主办聚会，申请资金的相关信息。
 - [AXIASolar Support Knowledgebase](https://support.axiasolar.network/support/home) 和 [ AXIASolar Support Email](mailto:support@axiasolar.network)
 - [AXIASolar 最新的研究](https://research.web3.foundation/en/latest/axiasolar/)
@@ -77,4 +77,4 @@ Web3 基金会主办了许多线上和线下的活动。你可以通过[这个 N
 ## 生态
 
 - [AXIASolar 上的团队建设](https://polkaproject.com/) - 社区维护的团队列表建立在 AXIASolar 和/或 Substrate 上。(请注意，这里可能有些不准确，因为它是非官方的)
-- [AXIASolar Stack](https://github.com/w3f/General-Grants-Program/blob/master/grants/axiasolar_stack.md) - 如果你对正在进行的开发感兴趣，或是想要了解你可以怎样参与贡献。
+- [AXIASolar Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md) - 如果你对正在进行的开发感兴趣，或是想要了解你可以怎样参与贡献。

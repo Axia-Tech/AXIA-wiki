@@ -4,7 +4,7 @@ title: Building Parachains on BetaNet
 sidebar_label: Building Parachains on BetaNet
 ---
 
-[BetaNet](https://github.com/paritytech/cumulus#betanet-crown) is a AXIASolar testnet built for testing parachains. BetaNet utilizes Cumulus and HRMP (Horizontal Relay-routed Message Passing) in order to send transfers and messages between parachains and the Relay Chain. Every message is sent to the Relay Chain, then from the Relay Chain to the desired parachain. BetaNet currently runs three test parachains (Tick, Trick, and Track), as well as several externally developed parachains.
+[BetaNet](https://github.com/axia-tech/cumulus#betanet-crown) is a AXIASolar testnet built for testing parachains. BetaNet utilizes Cumulus and HRMP (Horizontal Relay-routed Message Passing) in order to send transfers and messages between parachains and the Relay Chain. Every message is sent to the Relay Chain, then from the Relay Chain to the desired parachain. BetaNet currently runs three test parachains (Tick, Trick, and Track), as well as several externally developed parachains.
 
 ## Who is building Parachains?
 
@@ -12,7 +12,7 @@ You can see the list of included parachains [here](https://axiasolar.js.org/apps
 
 ## Parachain Workshop
 
-If you are interested in running and launching your own parachain, Parity Technologies has created a [parachain workshop](https://substrate.dev/cumulus-workshop/#/1-prep/1-compiling). There is also a [BetaNet Element chat channel](https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) as well as [Cumulus' GitHub repository](https://github.com/paritytech/cumulus#betanet) available.
+If you are interested in running and launching your own parachain, Parity Technologies has created a [parachain workshop](https://substrate.dev/cumulus-workshop/#/1-prep/1-compiling). There is also a [BetaNet Element chat channel](https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) as well as [Cumulus' GitHub repository](https://github.com/axia-tech/cumulus#betanet) available.
 
 ### Obtaining ROC
 
@@ -101,7 +101,7 @@ The minimal requirements for any parachain candidate to be considered for the pa
    1. Treat this like a production grade AXIASolar node - see [Run a Validator (AXIASolar)](https://wiki.axiasolar.network/docs/en/maintain-guides-how-to-validate-axiasolar#docsNav)
    1. Node Setup - use one of the options below
       1. Build from source:
-         1. `git clone https://github.com/paritytech/axiasolar`
+         1. `git clone https://github.com/axia-tech/axiasolar`
          1. `cd axiasolar`
          1. `git checkout betanet-v1`
          1. `cargo build --release --features=real-overseer`
@@ -127,7 +127,7 @@ The minimal requirements for any parachain candidate to be considered for the pa
 
 ### Tips
 
-If you would like to test your setup first on a local machine, you should be able to do so by following the instructions in the readme [launch a local setup](https://github.com/paritytech/cumulus#launch-a-local-setup-including-a-relay-chain-and-a-parachain).
+If you would like to test your setup first on a local machine, you should be able to do so by following the instructions in the readme [launch a local setup](https://github.com/axia-tech/cumulus#launch-a-local-setup-including-a-relay-chain-and-a-parachain).
 
 # Chachacha V1 - The pre-betanet environment
 

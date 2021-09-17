@@ -70,7 +70,7 @@ Save the output and bring it to the machine that you will broadcast from, enter 
 
 ## Tx Wrapper
 
-If you do not want to use the CLI for signing operations, Parity provides an SDK called [TxWrapper](https://github.com/paritytech/txwrapper) to generate and sign transactions offline. See the [examples](https://github.com/paritytech/txwrapper/tree/master/examples) for a guide.
+If you do not want to use the CLI for signing operations, Parity provides an SDK called [TxWrapper](https://github.com/axia-tech/txwrapper) to generate and sign transactions offline. See the [examples](https://github.com/axia-tech/txwrapper/tree/master/examples) for a guide.
 
 **Import a private key**
 
@@ -138,7 +138,7 @@ import { createSignedTx } from "@substrate/txwrapper";
 
 // Example code, replace `signWithAlice` with actual remote signer.
 // An example is given here:
-// https://github.com/paritytech/txwrapper/blob/630c38d/examples/index.ts#L50-L68
+// https://github.com/axia-tech/txwrapper/blob/630c38d/examples/index.ts#L50-L68
 const signature = await signWithAlice(signingPayload);
 const signedTx = createSignedTx(unsigned, signature, { metadataRpc, registry });
 ```

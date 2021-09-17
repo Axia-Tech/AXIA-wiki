@@ -63,7 +63,7 @@ however, Session key signatures are performed within the client.
 
 ## Monitoring Tools
 
-- [Telemetry](https://github.com/paritytech/substrate-telemetry) This tracks your node details
+- [Telemetry](https://github.com/axia-tech/substrate-telemetry) This tracks your node details
   including the version you are running, block height, CPU & memory usage, block propagation time,
   etc.
 
@@ -71,7 +71,7 @@ however, Session key signatures are performed within the client.
   [Grafana](https://grafana.com) for dashboards and log aggregation. It includes alerting, querying,
   visualization, and monitoring features and works for both cloud and on-premise systems. The data
   from `substrate-telemetry` can be made available to Prometheus through exporters like
-  [this](https://github.com/w3f/substrate-telemetry-exporter).
+  [this](https://github.com/axia-tech/substrate-telemetry-exporter).
 
 ## Linux Best Practices
 

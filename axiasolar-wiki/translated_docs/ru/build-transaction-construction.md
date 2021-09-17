@@ -70,7 +70,7 @@ yarn run:signer sign --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 
 
 ## Tx Оболочка/Tx Wrapper
 
-Если Вы не хотите использовать CLI для операций подписи, Parity предоставляет SDK с именем [TxWrapper](https://github.com/paritytech/txwrapper) для генерации и подписания транзакций в автономном режиме. Посмотреть на [примеры](https://github.com/paritytech/txwrapper/tree/master/examples) из руководства.
+Если Вы не хотите использовать CLI для операций подписи, Parity предоставляет SDK с именем [TxWrapper](https://github.com/axia-tech/txwrapper) для генерации и подписания транзакций в автономном режиме. Посмотреть на [примеры](https://github.com/axia-tech/txwrapper/tree/master/examples) из руководства.
 
 **Импорт приватного ключа**
 
@@ -138,7 +138,7 @@ import { createSignedTx } from "@substrate/txwrapper";
 
 // Пример кода, замените `signWithAlice` на актуального удаленного подписанта.
 // Пример приведен здесь:
-// https://github.com/paritytech/txwrapper/blob/630c38d/examples/index.ts#L50-L68
+// https://github.com/axia-tech/txwrapper/blob/630c38d/examples/index.ts#L50-L68
 const signature = await signWithAlice(signingPayload);
 const signedTx = createSignedTx(unsigned, signature, { metadataRpc, registry });
 ```

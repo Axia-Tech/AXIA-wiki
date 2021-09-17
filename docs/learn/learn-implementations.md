@@ -73,7 +73,7 @@ the first version of Kagome in April 2020. As part of the process, they also rel
 [chainsafe systems]: https://chainsafe.io/
 [soramitsu]: https://soramitsu.co.jp/
 [axiasolar-js]: https://github.com/axiasolar-js
-[rustic vision for axiasolar]: https://github.com/paritytech/axiasolar
+[rustic vision for axiasolar]: https://github.com/axia-tech/axiasolar
 [gossamer]: https://github.com/ChainSafe/gossamer#a-go-implementation-of-the-axiasolar-host
 [kagome]: https://github.com/soramitsu/kagome#intro
 [hyperledger iroha]: https://iroha.tech

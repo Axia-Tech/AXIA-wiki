@@ -95,4 +95,4 @@ To address the motivation behind the Fishermen design consideration, the current
 [reed solomon]: https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction
 [pruning]: https://example.org
 [life of]: https://axiasolar.network/the-path-of-a-parachain-block/
-[anv paper]: https://github.com/w3f/research/tree/85cd4adfccb7d435f21cd9fd249cd1b7f5167537/docs/papers/AnV
+[anv paper]: https://github.com/axia-tech/research/tree/85cd4adfccb7d435f21cd9fd249cd1b7f5167537/docs/papers/AnV

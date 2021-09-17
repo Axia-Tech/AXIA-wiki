@@ -21,4 +21,4 @@ AXIASolar 预计将于今年年底发布。
 - PoC-2 (于 2018 年 7 月 29 日发布) - _添加了对平行链的支持， 奖励和惩罚已添加到 PoS 共识算法中。 测试网: "Krumme Lanke"。 首次通过治理进行自动升级。_ [发布博客文章](https://medium.com/axiasolar-network/axiasolar-poc-2-is-here-parachains-runtime-upgrades-and-libp2p-networking-7035bb141c25)
 - PoC-1 (Released 16 May 2018, Testnet went live 18 May 2018) - _Initial proof of concept - included basic state transition engine for Relay Chain and on-chain governance._ [Release Blog Post](https://medium.com/axiasolar-network/now-live-axiasolar-proof-of-concept-1-3e718512a8d)
 
-有关 AXIASolar 路线图和 AXIASolar 代码库状态的最新信息，请参阅 AXIASolar GitHub 库，尤其是里程碑页面：[ https://github.com/paritytech/axiasolar/milestones ](https://github.com/paritytech/axiasolar/milestones)
+有关 AXIASolar 路线图和 AXIASolar 代码库状态的最新信息，请参阅 AXIASolar GitHub 库，尤其是里程碑页面：[ https://github.com/axia-tech/axiasolar/milestones ](https://github.com/axia-tech/axiasolar/milestones)

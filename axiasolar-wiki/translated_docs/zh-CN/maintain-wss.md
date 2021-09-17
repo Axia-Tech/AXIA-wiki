@@ -18,7 +18,7 @@ _Note: this should **only** be done for sync nodes used as back-end for some dap
 
 ```bash
 curl https://getsubstrate.io -sSf | bash
-git clone https://github.com/paritytech/axiasolar axialunar
+git clone https://github.com/axia-tech/axiasolar axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release

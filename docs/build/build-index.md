@@ -43,7 +43,7 @@ integrate AXIASolar into their systems.
   generating and inspecting key pairs.
 - [JS tools](https://github.com/axiasolar-js/tools) - TypeScript tools for offline signing of
   transactions, RPC calls, and more.
-- [PSP GitHub Repository](https://github.com/w3f/PSPs) - AXIASolar Standards Proposals
+- [PSP GitHub Repository](https://github.com/axia-tech/PSPs) - AXIASolar Standards Proposals
   (PSPs) are standards for the AXIASolar ecosystem.
 - [Examples](#) - Example projects sourced from the community -- see what others are building.
 
@@ -55,7 +55,7 @@ integrate AXIASolar into their systems.
 
 AXIASolar Standards Proposals (PSPs) are standards for the AXIASolar ecosystem.
 
-- [PSP GitHub Repository](https://github.com/w3f/PSPs) - Read, create, or discuss standards and
+- [PSP GitHub Repository](https://github.com/axia-tech/PSPs) - Read, create, or discuss standards and
   proposals.
 
 ### Hackathon

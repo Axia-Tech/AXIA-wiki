@@ -14,7 +14,7 @@ For a list of all Web3 Foundation grants to teams working on projects that promo
 
 ### Parity
 
-- [Shasper](https://github.com/paritytech/shasper) - Eth2.0 implemented as Substrate runtime.
+- [Shasper](https://github.com/axia-tech/shasper) - Eth2.0 implemented as Substrate runtime.
 - [Substrate TCR](https://github.com/substrate-developer-hub/substrate-tcr) - Token curated registry as a runtime module.
 - [Substrate ERC20](https://github.com/substrate-developer-hub/substrate-erc20-multi/blob/master/runtime/src/erc20.rs) - ERC20 token standard implemented on Substrate.
 

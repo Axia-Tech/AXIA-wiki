@@ -13,9 +13,9 @@ you can also apply in private, get paid out in fiat and seek funding above the r
 first-time applications and $100,000 for follow-up ones), if needed.
 
 More information regarding requirements, the application process, deliveries, etc., can be found in the
-[Grants Program README](https://github.com/w3f/Open-Grants-Program). For guidance, there is also a list of
-[previously accepted applications](https://github.com/w3f/Grants-Program/blob/master/docs/accepted_grant_applications.md)
-and a list of [frequently asked questions](https://github.com/w3f/Grants-Program/blob/master/docs/faq.md).
+[Grants Program README](https://github.com/axia-tech/Open-Grants-Program). For guidance, there is also a list of
+[previously accepted applications](https://github.com/axia-tech/Grants-Program/blob/master/docs/accepted_grant_applications.md)
+and a list of [frequently asked questions](https://github.com/axia-tech/Grants-Program/blob/master/docs/faq.md).
 
 ## Alternative Funding Sources
 

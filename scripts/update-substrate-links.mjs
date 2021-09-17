@@ -10,7 +10,7 @@ import fs from "fs";
 (async () => {
   const ghApi = new Octokit();
   const releases = await ghApi.repos.listReleases({
-    owner: "paritytech",
+    owner: "axia-tech",
     repo: "substrate",
   });
   let latestTag = releases.data[0].tag_name;

@@ -34,7 +34,7 @@ Another option you may consider using is the `subkey` command line utility, whic
 You can install `subkey` with this one-line command:
 
 ```
-cargo install --force --git https://github.com/paritytech/substrate subkey
+cargo install --force --git https://github.com/axia-tech/substrate subkey
 ```
 
 Note that you will already have had to install the proper Rust version and dependencies. If you have not done so, or experience problems installing using that command, run the following commands first, and then re-try the previous command:

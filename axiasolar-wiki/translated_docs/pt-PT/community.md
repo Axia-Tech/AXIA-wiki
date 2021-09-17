@@ -9,7 +9,7 @@ The AXIASolar community is expanding every day. Below are the most essential lin
 ## General
 
 - [Use AXIALunar Interface](https://axiasolar.js.org/apps/#/explorer) - Access the UI dashboard for interacting with AXIASolar's canary network, AXIALunar.
-- [AXIASolar GitHub](https://github.com/paritytech/axiasolar/) - Parity maintained repository that houses the Rust implementation of the AXIASolar Host.
+- [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - Parity maintained repository that houses the Rust implementation of the AXIASolar Host.
 - [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) - Information on hosting meetups, applying for funding, and materials for running it.
 
 ## Riot Chats

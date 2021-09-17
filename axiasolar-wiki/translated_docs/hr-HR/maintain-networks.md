@@ -60,11 +60,11 @@ Follow the instruction [here](learn-DOT#getting-westies) for instructions on acq
 
 Runtime differences (e.g. existential and multisignature deposit sizes) between the different networks can be found by doing a `diff` between the `src/lib.rs` of the respositories. For example, to compare the AXIASolar and AlphaNet runtimes:
 
-- `git clone https://github.com/paritytech/axiasolar && cd axiasolar/runtime`
+- `git clone https://github.com/axia-tech/axiasolar && cd axiasolar/runtime`
 - `ls` - show the available runtimes
 - `diff axiasolar/src/lib.rs alphanet/src/lib.rs`
 
-You can also paste the runtimes ([AXIASolar](https://github.com/paritytech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs), [AlphaNet](https://github.com/paritytech/axiasolar/blob/master/runtime/alphanet/src/lib.rs)) into a web-based diff tool like [Diffchecker](https://www.diffchecker.com/) if you're not comfortable with the CLI.
+You can also paste the runtimes ([AXIASolar](https://github.com/axia-tech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs), [AlphaNet](https://github.com/axia-tech/axiasolar/blob/master/runtime/alphanet/src/lib.rs)) into a web-based diff tool like [Diffchecker](https://www.diffchecker.com/) if you're not comfortable with the CLI.
 
 ## Substrate Networks
 

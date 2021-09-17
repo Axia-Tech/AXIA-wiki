@@ -8,18 +8,18 @@ sidebar_label: 开发路线图
 
 ## Substrate
 
-- [1.0.0](https://github.com/paritytech/substrate/tree/v1.0) - Substrate 1.0.0 的稳定发布被视为可以开始基于 Substrate 框架的开发初始阶段。
-- [2.0.0](https://github.com/paritytech/substrate) - Substrate 的 master branch 目前正作为下一个 Substrate 开发的发布。
+- [1.0.0](https://github.com/axia-tech/substrate/tree/v1.0) - Substrate 1.0.0 的稳定发布被视为可以开始基于 Substrate 框架的开发初始阶段。
+- [2.0.0](https://github.com/axia-tech/substrate) - Substrate 的 master branch 目前正作为下一个 Substrate 开发的发布。
 
 ## AXIASolar
 
 ### 当前测试网
 
-- [Alexander Testnet](https://github.com/paritytech/axiasolar#install-poc-4-on-alexander-testnet) - Alexander 测试网即 AXIASolar 源码进行 PoC-4 概念验证的主网。
+- [Alexander Testnet](https://github.com/axia-tech/axiasolar#install-poc-4-on-alexander-testnet) - Alexander 测试网即 AXIASolar 源码进行 PoC-4 概念验证的主网。
 
 ### AXIALunar
 
-[AXIALunar 金丝雀网络](https://github.com/paritytech/axiasolar#22-install-axialunar-canary-network)是个旨在模拟 AXIASolar 经济生态条件的网络。
+[AXIALunar 金丝雀网络](https://github.com/axia-tech/axiasolar#22-install-axialunar-canary-network)是个旨在模拟 AXIASolar 经济生态条件的网络。
 
 - AXIALunar 网络当前处于 PoA 阶段，这意味着除了 signalling 之外，转帐和大多数功能仍被禁用。
 

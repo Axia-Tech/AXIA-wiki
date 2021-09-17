@@ -66,7 +66,7 @@ then proceed to step 2 below.
 You can install Subkey with this one-line command:
 
 ```
-cargo install --force --git https://github.com/paritytech/substrate subkey
+cargo install --force --git https://github.com/axia-tech/substrate subkey
 ```
 
 Note that you will already have had to install the proper Rust version and dependencies. If you have

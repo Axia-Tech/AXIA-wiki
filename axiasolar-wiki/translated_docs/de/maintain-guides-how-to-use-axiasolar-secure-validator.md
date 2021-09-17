@@ -4,9 +4,9 @@ title: How to use AXIASolar Secure Validator Setup
 sidebar_label: How to use AXIASolar Secure Validator Setup
 ---
 
-The following guide will walk you through using [axiasolar secure validator](https://github.com/w3f/axiasolar-secure-validator) to deploy your validator in a secure way. It will work for AXIALunar (and later AXIASolar) out of the box, and if you're using another Substrate-based chain, should work with some tweaking. We assume you will be deploying on AXIALunar.
+The following guide will walk you through using [axiasolar secure validator](https://github.com/axia-tech/axiasolar-secure-validator) to deploy your validator in a secure way. It will work for AXIALunar (and later AXIASolar) out of the box, and if you're using another Substrate-based chain, should work with some tweaking. We assume you will be deploying on AXIALunar.
 
-It uses Terraform for defining and managing your infrastructure. Ansible, an automation tool, is used for setting up the VPN, Firewall, and the validator node. It supports a few different cloud providers such as AWS, Microsoft Azure, GCP, and Packet. The code is publicly hosted on GitHub, so please file an [issue](https://github.com/w3f/axiasolar-secure-validator/issues) if you would like to make a feature request or report a bug.
+It uses Terraform for defining and managing your infrastructure. Ansible, an automation tool, is used for setting up the VPN, Firewall, and the validator node. It supports a few different cloud providers such as AWS, Microsoft Azure, GCP, and Packet. The code is publicly hosted on GitHub, so please file an [issue](https://github.com/axia-tech/axiasolar-secure-validator/issues) if you would like to make a feature request or report a bug.
 
 ## Dependencies
 
@@ -125,7 +125,7 @@ The other options can be mostly self explanatory. Here's some tips on what they 
 
 In the `additionalFlags` option, configure any of the additional flags you want to run for your validator. If you want to run with a specific name, this is where you would enter it.
 
-Under the `axiasolarBinary.url` field you can provide the release that is hosted in the [W3F repository](https://github.com/w3f/axiasolar/releases) or use an alternate one that you build and publish yourself.
+Under the `axiasolarBinary.url` field you can provide the release that is hosted in the [W3F repository](https://github.com/axia-tech/axiasolar/releases) or use an alternate one that you build and publish yourself.
 
 By enabling the `nodeExporter`, Ansible will install and configure the [node_exporter](https://github.com/prometheus/node_exporter), which will expose hardware-level metrics of your node in a format compatible with Prometheus.
 
@@ -137,7 +137,7 @@ The field `count` is the number of instances you would like to create.
 
 The `location` and `zone` fields are for the location of the machine, for GCP check [here](https://cloud.google.com/compute/docs/regions-zones/), other cloud providers will have similar documentation.
 
-The `telemetryUrl` field will send your node's information to a specific telemetry server. You could send all your nodes' data (e.g. IP address) to the public endpoint, but it is highly recommended that that you set up your own telemetry server to protect your validator’s data from being exposed to the public. If you want to do that, see [substrate telemetry source](https://github.com/paritytech/substrate-telemetry).
+The `telemetryUrl` field will send your node's information to a specific telemetry server. You could send all your nodes' data (e.g. IP address) to the public endpoint, but it is highly recommended that that you set up your own telemetry server to protect your validator’s data from being exposed to the public. If you want to do that, see [substrate telemetry source](https://github.com/axia-tech/substrate-telemetry).
 
 > NOTE: If you decided to send your node’s information to public telemetry, the name for your validator and public node that is displayed on the telemetry would look something like `PROJECT_NAME-sv-public-0` / `PROJECT_NAME-sv-validator-0`.
 
@@ -145,7 +145,7 @@ Configure `projectId` to be the name of the project you want to use in GCP.
 
 Configure `sshUser` to be the user that manages your machine.
 
-For different cloud providers, you need to set the corresponding credentials as environment variables, for example, on GCP you only need to set `GOOGLE_APPLICATION_CREDENTIALS`. This variable is the path to the JSON file containing the credentials of the service account you wish to use; this service account needs to have write access to compute and network resources if you use GCP. For others, you can check that by referring to the [README](https://github.com/w3f/axiasolar-secure-validator#prerequisites).
+For different cloud providers, you need to set the corresponding credentials as environment variables, for example, on GCP you only need to set `GOOGLE_APPLICATION_CREDENTIALS`. This variable is the path to the JSON file containing the credentials of the service account you wish to use; this service account needs to have write access to compute and network resources if you use GCP. For others, you can check that by referring to the [README](https://github.com/axia-tech/axiasolar-secure-validator#prerequisites).
 
 Besides that, you need two additional environment variables that will allow Ansible to connect to the created machines. These values of these variables will be the keys that you generated at the beginning of the guide.
 

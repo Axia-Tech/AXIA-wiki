@@ -102,7 +102,7 @@ If a few validators went offline, the parachains whose validator groups will be 
 
 If anywhere from 30% to 50% of the validators go offline, availability will suffer because we need two thirds of the validator set to back the parachain candidates. In other words, all parachains will stop until the situation is resolved. Finality will also stop, but low-value transactions on the relay chain should be safe enough to execute, despite common forks. Once the required number of validators is in the validator set again, parachains will resume block production.
 
-Given that collators are full nodes of the relay chain and the parachain they are running, they will be able to recognize a disruption as soon as it occurs and should stop producing block candidates. Likewise, it should be easy for them to recongize when it's safe to restart block production - perhaps based on finality delay, validator set size, or some other factor that is yet to be decided within [Cumulus](https://github.com/paritytech/cumulus).
+Given that collators are full nodes of the relay chain and the parachain they are running, they will be able to recognize a disruption as soon as it occurs and should stop producing block candidates. Likewise, it should be easy for them to recongize when it's safe to restart block production - perhaps based on finality delay, validator set size, or some other factor that is yet to be decided within [Cumulus](https://github.com/axia-tech/cumulus).
 
 ### Parachain Development Kits (PDKs)
 
@@ -110,7 +110,7 @@ Parachain Development Kits are a set of tools that enable developers to create t
 
 ### Deploying parachains
 
-Please see the [Cumulus repository](https://github.com/paritytech/cumulus#betanet) README for information on compiling and deploying a parachain.
+Please see the [Cumulus repository](https://github.com/axia-tech/cumulus#betanet) README for information on compiling and deploying a parachain.
 
 ## Resources
 

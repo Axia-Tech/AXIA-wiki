@@ -39,7 +39,7 @@ trust them, by association, you should trust us too". Indeed, association with a
 be a strong indicator of the legitimacy of a project.
 
 For example, if a project has received a
-[Web3 Foundation Grant](https://github.com/w3f/Open-Grants-Program), this is an indication that the
+[Web3 Foundation Grant](https://github.com/axia-tech/Open-Grants-Program), this is an indication that the
 project is indeed building on the AXIASolar ecosystem, and if they have delivered all of their
 milestones, then their code is most likely of reasonable quality.
 
@@ -57,11 +57,11 @@ need to verify any claims a project makes**, and that's probably the most critic
 this guide.
 
 For example, if a project has the
-[Web3 Foundation Grant badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md)
+[Web3 Foundation Grant badge](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md)
 on their site or claims to have received a grant, check to see if they have received one and that it
 hasn't been terminated. The complete list of projects that have successfully applied for a grant can
 be found
-[here](https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md),
+[here](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/accepted_grant_applications.md),
 where you can see what each project has delivered and if, perhaps, their grant has been terminated.
 
 The same thing goes for VC funding or another grant, or any advertised association for that matter.
@@ -89,7 +89,7 @@ progress and see how active the team is in developing it.
 That doesn't mean, though, that any closed source project isn't legitimate or the team behind it has
 something to hide. Many teams choose to keep their code private to protect their intellectual
 property. And several teams that do so have gotten a
-[General Grant](https://github.com/w3f/General-Grants-Program), under which members of the grants
+[General Grant](https://github.com/axia-tech/General-Grants-Program), under which members of the grants
 review team review their private code.
 
 Another thing that an open-source project allows you to see is if they have copied any code from

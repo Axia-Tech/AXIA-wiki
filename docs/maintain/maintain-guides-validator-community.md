@@ -160,7 +160,7 @@ VPNs, network segmentation, proxies, or other layers separation.
 #### Upgrading
 
 Both AXIASolar and AXIALunar releases are published
-[here](https://github.com/paritytech/axiasolar/releases). Validators are expected to upgrade their
+[here](https://github.com/axia-tech/axiasolar/releases). Validators are expected to upgrade their
 nodes as soon as a new release comes out. Although not every release is mandatory to upgrade to,
 each new release usually has bug fixes, optimizations, new features, or other beneficial changes.
 It's within the best interest of the entire network that validators update their nodes in a timely
@@ -269,7 +269,7 @@ work outside their validation services. Some potential categories of building th
 explorers, deployment scripts, monitoring and observability services, staking dashboards, wallets,
 command-line utilities, or porting implementations to other languages. Additionally, this may also
 be eligible to be funded via a
-[Web 3 Foundation Grant](https://github.com/w3f/General-Grants-Program).
+[Web 3 Foundation Grant](https://github.com/axia-tech/General-Grants-Program).
 
 [setting up a validator]: maintain-guides-how-to-validate-axiasolar
 [identity]: ../learn/learn-identity#setting-an-identity

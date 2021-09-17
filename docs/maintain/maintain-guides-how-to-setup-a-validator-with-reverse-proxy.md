@@ -6,7 +6,7 @@ slug: ../maintain-guides-how-to-setup-a-validator-with-reverse-proxy
 ---
 
 This guide assumes that you have already configured your hardware with the appropriate specs. It has the same configuration
-as the [axiasolar validator setup](https://github.com/w3f/axiasolar-secure-validator).
+as the [axiasolar validator setup](https://github.com/axia-tech/axiasolar-secure-validator).
 
 > NOTE: Because validators of parachains need to have publicly accessible IP addresses and ports to receive connections from
 > parachain collators, adding a proxy may potentially reduce connectivity and result in lower era points or the inability to
@@ -64,7 +64,7 @@ SystemMaxFileSize=512M
 SystemMaxFiles=100
 ```
 
-Check out the [example journald configuration file](https://github.com/w3f/axiasolar-secure-validator/blob/master/ansible/roles/axiasolar-validator/files/journald.conf) for more available options.
+Check out the [example journald configuration file](https://github.com/axia-tech/axiasolar-secure-validator/blob/master/ansible/roles/axiasolar-validator/files/journald.conf) for more available options.
 
 Finally, run the following command to restart the journald service:
 

@@ -24,7 +24,7 @@ Estos participantes desempeñarán un papel crucial a la hora de añadir nuevos 
 
 ## Seguridad / Gestión de claves
 
-- [Vista general de seguridad del validador](https://github.com/w3f/validator-security)
+- [Vista general de seguridad del validador](https://github.com/axia-tech/validator-security)
 
 ## Herramientas para la monitorización
 

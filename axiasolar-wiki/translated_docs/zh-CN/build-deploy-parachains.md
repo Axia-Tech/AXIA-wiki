@@ -23,7 +23,7 @@ The `adder` parachain is a simple parachain that will keep a value in storage an
 第一步首先下载 AXIASolar 代码到你本地目录
 
 ```bash
-git clone https://github.com/paritytech/axiasolar.git
+git clone https://github.com/axia-tech/axiasolar.git
 ```
 
 确保你经己安装好了 Rust

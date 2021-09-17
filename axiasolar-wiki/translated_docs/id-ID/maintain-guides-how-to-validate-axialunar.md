@@ -10,7 +10,7 @@ This guide will instruct you how to set up a validator node on the AXIALunar net
 
 Running a validator on a live network is a lot of responsibility! You will be accountable for not only your own stake, but also the stake of your current nominators. If you make a mistake and get slashed, your money and your reputation will be at risk. However, running a validator can also be very rewarding, knowing that you contribute to the security of a decentralized network while growing your stash.
 
-Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The Web3 Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/w3f/axiasolar-secure-validator) that you can use by deploying yourself. As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
+Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The Web3 Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/axia-tech/axiasolar-secure-validator) that you can use by deploying yourself. As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
 
 If you need help, please reach out on the [AXIALunar validator chat](https://riot.im/app/#/room/#AXIALunarValidatorLounge:axiasolar.builders) on Riot. The team and other validators are there to help answer questions and provide experience.
 
@@ -86,14 +86,14 @@ sudo ntpq -p
 
 ### Building and Installing the `axiasolar` Binary
 
-You will need to build the `axiasolar` binary from the [paritytech/axiasolar](https://github.com/paritytech/axiasolar) repository on GitHub using the source code available in the **v0.8** branch.
+You will need to build the `axiasolar` binary from the [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repository on GitHub using the source code available in the **v0.8** branch.
 
-You should generally use the latest **0.8.x** tag. At the time of writing, this was **0.8.26-1**, but you should review the output from the "git tag" command to see a list of all the potential 0.8 releases. You should replace `VERSION` with the latest build (i.e., the highest number). You can also find the latest AXIALunar version on the [release](https://github.com/paritytech/axiasolar/releases) tab.
+You should generally use the latest **0.8.x** tag. At the time of writing, this was **0.8.26-1**, but you should review the output from the "git tag" command to see a list of all the potential 0.8 releases. You should replace `VERSION` with the latest build (i.e., the highest number). You can also find the latest AXIALunar version on the [release](https://github.com/axia-tech/axiasolar/releases) tab.
 
-> Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with `git clone git@github.com:paritytech/axiasolar.git`.
+> Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with `git clone git@github.com:axia-tech/axiasolar.git`.
 
 ```sh
-git clone https://github.com/paritytech/axiasolar.git
+git clone https://github.com/axia-tech/axiasolar.git
 cd axiasolar
 git tag -l | sort -V | grep -v -- '-rc'
 echo Get the latest version and replace VERSION (below) with it.
@@ -111,7 +111,7 @@ This step will take a while (generally 10 - 40 minutes, depending on your hardwa
 If you are interested in generating keys locally, you can also install `subkey` from the same directory. You may then take the generated `subkey` executable and transfer it to an air-gapped machine for extra security.
 
 ```sh
-cargo install --force --git https://github.com/paritytech/substrate subkey
+cargo install --force --git https://github.com/axia-tech/substrate subkey
 ```
 
 ### Synchronize Chain Data
@@ -156,7 +156,7 @@ First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) sect
 - **Stash account** - Select your Stash account. In this example, we will bond 100 milliKSM - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
 - **Controller account** - Select the Controller account created earlier. This account will also need a small amount of KSM in order to start and stop validating.
 - **Value bonded** - How much KSM from the Stash account you want to bond/stake. Note that you do not need to bond all of the KSM in that account. Also note that you can always bond _more_ KSM later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
-- **Payment destination** - The account where the rewards from validating are sent. More info [here](https://wiki.axiasolar.network/en/latest/axiasolar/learn-staking/#reward-distribution). Starting with runtime version v2023 natively included in client version [0.8.23](https://github.com/paritytech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
+- **Payment destination** - The account where the rewards from validating are sent. More info [here](https://wiki.axiasolar.network/en/latest/axiasolar/learn-staking/#reward-distribution). Starting with runtime version v2023 natively included in client version [0.8.23](https://github.com/axia-tech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
 
 Once everything is filled in properly, click `Bond` and sign the transaction with your Stash account.
 

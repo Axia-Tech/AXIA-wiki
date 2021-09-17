@@ -20,7 +20,7 @@ This guide will show you how to connect to [AXIALunar network](https://axialunar
 
 Archive 节点是供需要过去信息的实用程序使用，例如区块浏览器，议会程序，讨论平台(例如[ Polkassembly ](https://polkassembly.io)等)。 他们需要能够查看过去的链上数据。 完整节点供其他所有人使用-它们使您可以读取链的当前状态，并直接向链提交事务，而无需依赖集中式基础架构提供程序。
 
-另一种类型的节点是**轻节点**。 轻节点仅具有 runtime 和当前状态，但不存储过去的 extrinsics，因此无法从中恢复整条链。 轻型节点对于资源受限的设备很有用。 一个有趣的轻型节点用例是 Chrome 扩展，它是一个独立的节点，以 WASM 格式运行 runtime：https://github.com/paritytech/substrate-light-ui
+另一种类型的节点是**轻节点**。 轻节点仅具有 runtime 和当前状态，但不存储过去的 extrinsics，因此无法从中恢复整条链。 轻型节点对于资源受限的设备很有用。 一个有趣的轻型节点用例是 Chrome 扩展，它是一个独立的节点，以 WASM 格式运行 runtime：https://github.com/axia-tech/substrate-light-ui
 
 ### 快速安装说明 (Mac)
 
@@ -32,7 +32,7 @@ Archive 节点是供需要过去信息的实用程序使用，例如区块浏览
 - 在终端机运行以下指令安装 Rust： `curl --proto '=https' --tlsv1.2 -sf https://sh.rustupp.rs | sh`
 - 安装 Rust 后，运行以下命令 clone 并构建 axialunar 代码：
   ```
-  git clone https://github.com/paritytech/axiasolar axialunar
+  git clone https://github.com/axia-tech/axiasolar axialunar
   cd axialunar
   ./scripts/init.sh
   cargo build --release
@@ -48,8 +48,8 @@ Archive 节点是供需要过去信息的实用程序使用，例如区块浏览
 
 - 安装 WSL: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 - 安装 Ubuntu (同一个网页): https://docs.microsoft.com/en-us/windows/wsl/install-win10
-- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/paritytech/axiasolar/releases)
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/paritytech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
+- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/axia-tech/axiasolar/releases)
+- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
 - Run the following: `sudo chmod +x axiasolar`
 - Run the following: `./axiasolar --name "Your Node Name Here"`
 - Find your node at https://telemetry.axiasolar.io/#list/AXIALunar
@@ -58,12 +58,12 @@ Archive 节点是供需要过去信息的实用程序使用，例如区块浏览
 
 > 如果您是验证人，则不建议使用。 请参阅 [设置安全验证人](maintain-guides-secure-validator)
 
-For the most recent binary please see the [release page](https://github.com/paritytech/axiasolar/releases/) on the axiasolar repository. The URL in the code snippet below may become slightly out-of-date.
+For the most recent binary please see the [release page](https://github.com/axia-tech/axiasolar/releases/) on the axiasolar repository. The URL in the code snippet below may become slightly out-of-date.
 
 Also please note that the nature of pre-built binaries means that they may not work on your particular architecture or Linux distribution. If you see an error like `cannot execute binary file: Exec format error` it likely means the binary is not compatible with your system. You will either need to compile the [source code yourself](#clone-and-build) or use [docker](#using-docker).
 
-- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/paritytech/axiasolar/releases)
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/paritytech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
+- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/axia-tech/axiasolar/releases)
+- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
 - Run the following: `sudo chmod +x axiasolar`
 - Run the following: `./axiasolar --name "Your Node Name Here"`
 - Find your node at https://telemetry.axiasolar.io/#list/AXIALunar
@@ -81,10 +81,10 @@ cargo 1.41.0 (626f0f40e 2019-12-03)
 
 ## Clone 及 Build
 
-The [paritytech/axiasolar](https://github.com/paritytech/axiasolar) repo's master branch contains the latest AXIALunar code.
+The [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repo's master branch contains the latest AXIALunar code.
 
 ```bash
-git clone https://github.com/paritytech/axiasolar axialunar
+git clone https://github.com/axia-tech/axiasolar axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release
@@ -93,7 +93,7 @@ cargo build --release
 Alternatively, if you wish to use a specific release, you can check out a specific tag (`v0.8.3` in the example below):
 
 ```bash
-git clone https://github.com/paritytech/axiasolar axialunar
+git clone https://github.com/axia-tech/axiasolar axialunar
 cd axialunar
 git checkout tags/v0.8.3
 ./scripts/init.sh

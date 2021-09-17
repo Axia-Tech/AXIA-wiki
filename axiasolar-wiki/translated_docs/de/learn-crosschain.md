@@ -35,7 +35,7 @@ There are two kinds of Vertical Message Passing, Upward Message Passing (UMP) an
 
 ## XCMP Message Format
 
-For a description of the XCMP message format please see the [xcm-format](https://github.com/paritytech/xcm-format) repository on GitHub.
+For a description of the XCMP message format please see the [xcm-format](https://github.com/axia-tech/xcm-format) repository on GitHub.
 
 ## Example of XCMP
 
@@ -77,4 +77,4 @@ video::-webkit-media-controls-fullscreen-button
 
 - [XCMP Scheme](https://research.web3.foundation/en/latest/axiasolar/XCMP.html) - Full technical description of cross-chain communication on the Web3 Foundation research wiki.
 - [Messaging Overview](https://w3f.github.io/parachain-implementers-guide/messaging.html) - An overview of the messaging schemes from the Parachain Implementor's guide.
-- [XCM Format](https://github.com/paritytech/xcm-format) - Description of the XCMP format.
+- [XCM Format](https://github.com/axia-tech/xcm-format) - Description of the XCMP format.

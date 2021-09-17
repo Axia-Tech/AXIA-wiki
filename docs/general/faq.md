@@ -80,7 +80,7 @@ much + 1 to enter the set.
 
 You can also use some tools some to perform estimations.
 
-- [Offline Election](https://github.com/paritytech/substrate-debug-kit/tree/master/offline-election)
+- [Offline Election](https://github.com/axia-tech/substrate-debug-kit/tree/master/offline-election)
   can provide exact results of running an election on the current set of validators using the same
   Rust code that is ran in AXIASolar.
 

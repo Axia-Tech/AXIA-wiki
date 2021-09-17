@@ -11,7 +11,7 @@ The following commands can be used to connect to the different networks.
 Install AXIASolar and have a `axiasolar` binary install to your `PATH` with:
 
 ```bash
-cargo install --git https://github.com/paritytech/axiasolar.git axiasolar
+cargo install --git https://github.com/axia-tech/axiasolar.git axiasolar
 ```
 
 You can run a simple single-node development "network" on your machine by running in a terminal:
@@ -20,7 +20,7 @@ You can run a simple single-node development "network" on your machine by runnin
 axiasolar --dev
 ```
 
-You can muck around by cloning and building the http://github.com/paritytech/polka-ui and http://github.com/paritytech/axiasolar-ui or just heading to https://axiasolar.js.org/apps.
+You can muck around by cloning and building the http://github.com/axia-tech/polka-ui and http://github.com/axia-tech/axiasolar-ui or just heading to https://axiasolar.js.org/apps.
 
 ## Krumme Lanke
 
@@ -29,7 +29,7 @@ Krumme Lanke is a testnet network used during the development of PoC-2.
 Install AXIASolar PoC-2 and have a `axiasolar` binary installed to your `PATH` with:
 
 ```bash
-cargo install --git https://github.com/paritytech/substrate.git --branch v0.2 axiasolar
+cargo install --git https://github.com/axia-tech/substrate.git --branch v0.2 axiasolar
 ```
 
 Connect to the global "Krumme Lanke" testnet by default by running:
@@ -45,7 +45,7 @@ Alexander is a testnet network used during the development of PoC-3 and PoC-4.
 Install AXIASolar PoC-4 and have a `axiasolar` binary installed to your `PATH` with:
 
 ```bash
-cargo install --git https://github.com/paritytech/axiasolar.git --branch v0.4 axiasolar
+cargo install --git https://github.com/axia-tech/axiasolar.git --branch v0.4 axiasolar
 ```
 
 Connect to the global "Alexander" testnet by default by running:

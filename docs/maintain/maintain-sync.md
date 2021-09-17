@@ -53,9 +53,9 @@ Another type of node is a **light node**. A light node has only the runtime and 
 but does not store past blocks and so cannot read historical data without requesting it from a node
 that has it. Light nodes are useful for resource restricted devices. An interesting use-case of
 light nodes is a Chrome extension, which is a node in its own right, running the runtime in [WASM
-format](https://github.com/paritytech/substrate-light-ui) as well as a full or light node that is
+format](https://github.com/axia-tech/substrate-light-ui) as well as a full or light node that is
 completely encapsulated in WASM and can be integrated into webapps:
-https://github.com/paritytech/smoldot#wasm-light-node
+https://github.com/axia-tech/smoldot#wasm-light-node
 
 <!--seperates content from instructions-->
 
@@ -104,7 +104,7 @@ values={[
   ```
 - Once Rust is installed, run the following command to clone and build the axiasolar code:
   ```bash
-  git clone https://github.com/paritytech/axiasolar axiasolar
+  git clone https://github.com/axia-tech/axiasolar axiasolar
   cd axiasolar
   ./scripts/init.sh
   cargo build --release
@@ -123,12 +123,12 @@ values={[
 - Install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 - Install [Ubuntu](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (same webpage).
 
-- Determine the latest version of the [AXIASolar binary](https://github.com/paritytech/axiasolar/releases).
+- Determine the latest version of the [AXIASolar binary](https://github.com/axia-tech/axiasolar/releases).
 - Download the correct AXIASolar binary within Ubuntu by running the following command. Replace
   `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`):
 
   ```bash
-  curl -sL https://github.com/paritytech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar
+  curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar
   ```
 
 - Then, run the following:
@@ -146,7 +146,7 @@ values={[
 </TabItem>
 <TabItem value="linux">
 
-- Determine the latest version of the [AXIASolar binary](https://github.com/paritytech/axiasolar/releases).
+- Determine the latest version of the [AXIASolar binary](https://github.com/axia-tech/axiasolar/releases).
 
 > The nature of pre-built binaries means that they may not work on your particular architecture or Linux distribution.
 > If you see an error like `cannot execute binary file: Exec format error` it likely means the binary is not compatible
@@ -156,7 +156,7 @@ values={[
   `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`):
 
   ```bash
-  curl -sL https://github.com/paritytech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar
+  curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar
   ```
 
 - Run the following: `sudo chmod +x axiasolar`
@@ -186,11 +186,11 @@ cargo 1.41.0 (626f0f40e 2019-12-03)
 
 ## Clone and Build
 
-The [paritytech/axiasolar](https://github.com/paritytech/axiasolar) repo's master branch contains the
+The [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repo's master branch contains the
 latest AXIASolar code.
 
 ```bash
-git clone https://github.com/paritytech/axiasolar axiasolar
+git clone https://github.com/axia-tech/axiasolar axiasolar
 cd axiasolar
 ./scripts/init.sh
 cargo build --release
@@ -200,7 +200,7 @@ Alternatively, if you wish to use a specific release, you can check out a specif
 the example below):
 
 ```bash
-git clone https://github.com/paritytech/axiasolar axiasolar
+git clone https://github.com/axia-tech/axiasolar axiasolar
 cd axiasolar
 git checkout tags/v0.8.3
 ./scripts/init.sh

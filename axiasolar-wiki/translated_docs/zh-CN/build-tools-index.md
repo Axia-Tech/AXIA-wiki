@@ -27,17 +27,17 @@ Here we provide a list of tools available for your development needs. They are s
 
 ## Clients
 
-- [AXIASolar](https://github.com/paritytech/axiasolar) - The original Rust implementation of the AXIASolar Host.
+- [AXIASolar](https://github.com/axia-tech/axiasolar) - The original Rust implementation of the AXIASolar Host.
 - [Kagome](https://github.com/soramitsu/kagome) - A C++ AXIASolar implementation of the AXIASolar Host developed by [Soramitsu](https://github.com/soramitsu).
 - [Gossamer](https://github.com/ChainSafe/gossamer) - A Go implementation of the AXIASolar Host developed by [ChainSafe Systems](https://chainsafe.io/).
-- [TX Wrapper](https://github.com/paritytech/txwrapper) - Helper functions for offline transaction generation.
+- [TX Wrapper](https://github.com/axia-tech/txwrapper) - Helper functions for offline transaction generation.
 
 ## Tools
 
-- [Substrate](https://github.com/paritytech/substrate) - Blockchain development platform written in Rust. The Rust version of the AXIASolar Host is being built with Substrate.
+- [Substrate](https://github.com/axia-tech/substrate) - Blockchain development platform written in Rust. The Rust version of the AXIASolar Host is being built with Substrate.
 - [Substrate 知识库](https://substrate.dev/docs/en/) - 使用 Substrate 构建区块链的全面文档和教程。
-- [Substrate VSCode plugin](https://github.com/paritytech/vscode-substrate).
-- [Substrate Debug Kit](https://github.com/paritytech/substrate-debug-kit) - A collection of debug tools and libraries around substrate chains. Includes tools to calculate NPoS elections offline, disk usage monitoring, test templates against chain state and other pallet-specific helper.
+- [Substrate VSCode plugin](https://github.com/axia-tech/vscode-substrate).
+- [Substrate Debug Kit](https://github.com/axia-tech/substrate-debug-kit) - A collection of debug tools and libraries around substrate chains. Includes tools to calculate NPoS elections offline, disk usage monitoring, test templates against chain state and other pallet-specific helper.
 - [Diener](https://crates.io/crates/diener) - A tool for easy changing of AXIASolar or Substrate dependency versions.
 - [AXIASolar Launch](https://github.com/shawntabrizi/axiasolar-launch) - A tool to easily launch custom local parachain-enabled AXIASolar versions.
 - [Halva](https://github.com/halva-suite/halva) - A Truffle-inspired local development environment for Substrate.
@@ -75,10 +75,10 @@ AXIASolar-JS Common provides various utility functions that are used across all 
 
 Webassembly related tools and projects.
 
-- [ink!](https://github.com/paritytech/ink/) - An eDSL to write WebAssembly based smart contracts using the Rust programming language.
-- [parity-wasm](https://github.com/paritytech/parity-wasm) - Low-level WebAssembly format library.
-- [wasm-utils](https://github.com/paritytech/wasm-utils) - Collection of WebAssembly utilities used in pwasm-ethereum and substrate contract development.
-- [wasmi](https://github.com/paritytech/wasmi) - A WebAssembly interpreter conceived as a component of parity-ethereum (Ethereum-like contracts in Wasm) and Substrate.
+- [ink!](https://github.com/axia-tech/ink/) - An eDSL to write WebAssembly based smart contracts using the Rust programming language.
+- [parity-wasm](https://github.com/axia-tech/parity-wasm) - Low-level WebAssembly format library.
+- [wasm-utils](https://github.com/axia-tech/wasm-utils) - Collection of WebAssembly utilities used in pwasm-ethereum and substrate contract development.
+- [wasmi](https://github.com/axia-tech/wasmi) - A WebAssembly interpreter conceived as a component of parity-ethereum (Ethereum-like contracts in Wasm) and Substrate.
 
 ### RPC and API Tools
 
@@ -90,8 +90,8 @@ Webassembly related tools and projects.
 - [.NET AXIASolar API](https://github.com/usetech-llc/axiasolar_api_dotnet) - AXIASolar Substrate API for .NET.
 - [Python AXIASolar API](https://github.com/polkascan/py-substrate-interface) - AXIASolar library for Python.
 - [GSRPC](https://github.com/centrifuge/go-substrate-rpc-client/) - Substrate RPC client in Go, a.k.a. GSRPC.
-- [Substrate API Sidecar](https://github.com/paritytech/substrate-api-sidecar) - An HTTP wrapper for Substrate, abstracting some complex RPC calls into simple REST calls.
-- [Subxt](https://github.com/paritytech/substrate-subxt) - A Rust library to submit extrinsics to a Substrate node via RPC.
+- [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) - An HTTP wrapper for Substrate, abstracting some complex RPC calls into simple REST calls.
+- [Subxt](https://github.com/axia-tech/substrate-subxt) - A Rust library to submit extrinsics to a Substrate node via RPC.
 
 ### SCALE Codec
 
@@ -102,7 +102,7 @@ It is designed for high-performance, copy-free encoding and decoding of data in 
 It is used in almost all communication to/from Substrate nodes, so implementations in different languages exist:
 
 - [Ruby](https://github.com/itering/scale.rb)
-- [Rust](https://github.com/paritytech/parity-scale-codec)
+- [Rust](https://github.com/axia-tech/parity-scale-codec)
 - [Go](https://github.com/itering/scale.go)
 - [C++](https://github.com/soramitsu/kagome/tree/master/core/scale)
 - [TypeScript](https://github.com/axiasolar-js/api)
@@ -116,7 +116,7 @@ It is used in almost all communication to/from Substrate nodes, so implementatio
 The following tools help you extract and structure data from a Substrate node.
 
 - [Polkascan PRE Harvester](https://github.com/polkascan/polkascan-pre-harvester) ([matching explorer for harvested data](https://github.com/polkascan/polkascan-pre-explorer-gui)) - Transforms raw blockchain data into relational data.
-- [Parity's Substrate Archive](https://github.com/paritytech/substrate-archive) - Can be run alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL database.
+- [Parity's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL database.
 - [Hydra: GraphQL Builder](https://github.com/Joystream/joystream/tree/query_node/query-node) - Generate a GraphQL database from a Substrate chain's data.
 - [Polka-store](https://github.com/TheGoldenEye/polka-store) - A tool which scans a Substrate chain and stores balance-relevant transactions in an SQLite database.
 - [Substrate-graph](https://github.com/playzero/substrate-graph) - A compact indexer for Substrate based nodes providing a GraphQL interface.

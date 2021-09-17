@@ -113,7 +113,7 @@ Majority-carries, a simple comparison of votes; if there are more aye votes than
 
 ![](https://latex.codecogs.com/svg.latex?\large&space;{approve}&space;>&space;{against})
 
-_To know more about where these above formulas come from, please read the [democracy pallet](https://github.com/paritytech/substrate/blob/master/frame/democracy/src/vote_threshold.rs)_.
+_To know more about where these above formulas come from, please read the [democracy pallet](https://github.com/axia-tech/substrate/blob/master/frame/democracy/src/vote_threshold.rs)_.
 
 ```
 Example:
@@ -284,7 +284,7 @@ At some point you will likely need a place for a longer form discussion. For thi
 
 ## Resources
 
-- [Initial Governance Description](https://github.com/paritytech/axiasolar/wiki/Governance)
-- [Democracy Pallet](https://github.com/paritytech/substrate/tree/master/frame/democracy/src)
+- [Initial Governance Description](https://github.com/axia-tech/axiasolar/wiki/Governance)
+- [Democracy Pallet](https://github.com/axia-tech/substrate/tree/master/frame/democracy/src)
 - [Governance Demo](https://www.youtube.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734) - Dr. Gavin Wood presents the initial governance structure for AXIASolar. (Video)
 - [Governance on AXIASolar](https://www.crowdcast.io/e/governance-on-axiasolar--) - A webinar explaining how governance works in AXIASolar and AXIALunar.

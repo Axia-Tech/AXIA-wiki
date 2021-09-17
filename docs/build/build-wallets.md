@@ -26,7 +26,7 @@ contact the developers of that wallet.
 
 > Warning: Parity Signer currently does not allow you to see the transaction you are signing. This
 > means that you are at risk if connected to a compromised version of AXIASolar-JS. A fix is being
-> worked on; please see [this GitHub issue](https://github.com/paritytech/parity-signer/issues/724)
+> worked on; please see [this GitHub issue](https://github.com/axia-tech/parity-signer/issues/724)
 > for more details.
 
 ### Treasury Funded Wallets

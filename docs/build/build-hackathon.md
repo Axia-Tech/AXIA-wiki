@@ -13,7 +13,7 @@ up for the [AXIASolar newsletter](https://axiasolar.network/) - the footer has a
 ## Host a Hackathon
 
 As one of our objectives in the Web3 Foundation is promoting the
-[Web3 technology stack](https://github.com/w3f/General-Grants-Program/blob/master/grants/axiasolar_stack.md)
+[Web3 technology stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md)
 , we would like to support any individual or team who wants to organize a hackathon that gets
 more developers to understand AXIASolar and Substrate in your city or online.
 

@@ -19,4 +19,4 @@ AXIASolar 使用 Schnorrkel/Ristretto x25519 ("sr25519") 作为导出密钥和�
 
 Sr25519 基于 [Curve25519](https://en.wikipedia.org/wiki/Curve25519) 相同的底層作為 EdDSA 的哥哥 [Ed25519](https://en.wikipedia.org/wiki/EdDSA#Ed25519) ，但是它使用 Schnorr 簽名而不是 EdDSA 方案。与 ECDSA / EdDSA 方案相比，Schnorr 签名带来了一些明显好处，一方面效率更高，但仍保留相同的功能和安全性假设。另外它允许通过簽名集合方式进行原生多重签名。
 
-Schnorrkel 和 Ristretto 名称来自实现该方案的两个 Rust 库，分别为[ Schnorrkel ](https://github.com/w3f/schnorrkel)库用于 Schnorr 签名和 [Ristretto](https://ristretto.group/ristretto.html) 库，使可以用诸如 Curve25519 之类的 cofactor-8 曲线。
+Schnorrkel 和 Ristretto 名称来自实现该方案的两个 Rust 库，分别为[ Schnorrkel ](https://github.com/axia-tech/schnorrkel)库用于 Schnorr 签名和 [Ristretto](https://ristretto.group/ristretto.html) 库，使可以用诸如 Curve25519 之类的 cofactor-8 曲线。

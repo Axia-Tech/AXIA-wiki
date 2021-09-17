@@ -36,7 +36,7 @@ You can generate your stash and controller account via any of the recommended me
 detailed on the [account generation][] page.
 
 Starting with runtime version v2023 natively included in client version
-[0.8.23](https://github.com/paritytech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom
+[0.8.23](https://github.com/axia-tech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom
 address. If you'd like to redirect payments to an account that is neither the controller nor the
 stash account, set one up. Note that it is extremely unsafe to set an exchange address as the
 recipient of the staking rewards.

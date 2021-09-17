@@ -12,7 +12,7 @@ This guide will instruct you how to set up a validator node on the AXIASolar net
 
 Running a validator on a live network is a lot of responsibility! You will be accountable for not only your own stake, but also the stake of your current nominators. If you make a mistake and get slashed, your money and your reputation will be at risk. However, running a validator can also be very rewarding, knowing that you contribute to the security of a decentralized network while growing your stash.
 
-Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The Web3 Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/w3f/axiasolar-secure-validator) that you can use by deploying yourself (video walkthrough is available [here](https://www.youtube.com/watch?v=tTn8P6t7JYc)). As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
+Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The Web3 Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/axia-tech/axiasolar-secure-validator) that you can use by deploying yourself (video walkthrough is available [here](https://www.youtube.com/watch?v=tTn8P6t7JYc)). As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
 
 If you need help, please reach out on the [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) on Riot. The team and other validators are there to help answer questions and provide tips from experience.
 
@@ -32,7 +32,7 @@ The transactions weights in AXIASolar were benchmarked on standard hardware. It 
 
 #### Standard Hardware
 
-For the full details of the standard hardware please see [here](https://github.com/paritytech/substrate/pull/5848).
+For the full details of the standard hardware please see [here](https://github.com/axia-tech/substrate/pull/5848).
 
 - **CPU** - Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
 - **Storage** - A NVMe solid state drive. Should be reasonably sized to deal with blockchain growth. Starting around 80GB - 160GB will be okay for the first six months of AXIASolar, but will need to be re-evaluated every six months.
@@ -92,14 +92,14 @@ sudo ntpq -p
 
 ### Building and Installing the `axiasolar` Binary
 
-You will need to build the `axiasolar` binary from the [paritytech/axiasolar](https://github.com/paritytech/axiasolar) repository on GitHub using the source code available in the **v0.8** branch.
+You will need to build the `axiasolar` binary from the [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repository on GitHub using the source code available in the **v0.8** branch.
 
-You should generally use the latest **0.8.x** tag. At the time of writing, this was **0.8.3**, but you should review the output from the "git tag" command (`git tag | grep "$v\0\.8"`) to see a list of all the potential 0.8 releases. You should replace `v0.8.8` with the latest build (i.e., the highest number). You can also find the latest AXIASolar version on the [release](https://github.com/paritytech/axiasolar/releases) tab.
+You should generally use the latest **0.8.x** tag. At the time of writing, this was **0.8.3**, but you should review the output from the "git tag" command (`git tag | grep "$v\0\.8"`) to see a list of all the potential 0.8 releases. You should replace `v0.8.8` with the latest build (i.e., the highest number). You can also find the latest AXIASolar version on the [release](https://github.com/axia-tech/axiasolar/releases) tab.
 
-> Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with `git clone git@github.com:paritytech/axiasolar.git`.
+> Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with `git clone git@github.com:axia-tech/axiasolar.git`.
 
 ```sh
-git clone https://github.com/paritytech/axiasolar.git
+git clone https://github.com/axia-tech/axiasolar.git
 cd axiasolar
 git tag | grep "$v\0\.8"
 git checkout v0.8.8
@@ -122,7 +122,7 @@ This step will take a while (generally 10 - 40 minutes, depending on your hardwa
 If you are interested in generating keys locally, you can also install `subkey` from the same directory. You may then take the generated `subkey` executable and transfer it to an air-gapped machine for extra security.
 
 ```sh
-cargo install --force --git https://github.com/paritytech/substrate subkey
+cargo install --force --git https://github.com/axia-tech/substrate subkey
 ````
 
 ### Synchronize Chain Data

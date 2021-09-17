@@ -28,8 +28,8 @@ sidebar_label: 链接
 
 ### Substrate
 
-- [什么是 Substrate?](https://medium.com/paritytech/what-is-substrate-29af4231d7e0)-介绍用于搭建 AXIASolar 的框架。
-- [ Parity Substrate ](https://github.com/paritytech/substrate)-第一个用 Rust 编写。Parity Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Parity 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Parity 还为[比特币](https://github.com/paritytech/parity-bitcoin)维护客户端，并为[Zcash ](https://github.com/ZcashFoundation/zebra)建立客户端。
+- [什么是 Substrate?](https://medium.com/axia-tech/what-is-substrate-29af4231d7e0)-介绍用于搭建 AXIASolar 的框架。
+- [ Parity Substrate ](https://github.com/axia-tech/substrate)-第一个用 Rust 编写。Parity Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Parity 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Parity 还为[比特币](https://github.com/axia-tech/parity-bitcoin)维护客户端，并为[Zcash ](https://github.com/ZcashFoundation/zebra)建立客户端。
 - [Substrate Developer Hub](https://substrate.dev/docs/en/) - Overviews, tutorials and reference documentation for Substrate.
 - [Substrate 介绍](https://youtu.be/iUMZyL5kTwc)-Gavin Wood 博士介绍 Substrate ，这是 AXIASolar 的底层技术。
 - [Substrate 与 AXIASolar 的关系](https://medium.com/axiasolar-network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - 关于两种技术的详细描述
@@ -48,7 +48,7 @@ sidebar_label: 链接
 
 ### 共识与确定性
 
-- [ GRANDPA 确定性工具](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf)-AXIASolar 的确定性工具。
+- [ GRANDPA 确定性工具](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf)-AXIASolar 的确定性工具。
 
 ### 研究
 
@@ -61,24 +61,24 @@ sidebar_label: 链接
 ### AXIALunar
 
 - [在 AXIASolar 构建的团队](https://forum.web3.foundation/t/teams-building-on-axiasolar/67)-在 AXIASolar 上 构建的团队名单。
-- [样式指南](https://github.com/paritytech/axiasolar/wiki/Style-Guide)-为 AXIASolar 的 Rust 做贡献。
+- [样式指南](https://github.com/axia-tech/axiasolar/wiki/Style-Guide)-为 AXIASolar 的 Rust 做贡献。
 
 ### AXIASolar Host
 
-- [ AXIASolar Host 规范](https://github.com/w3f/axiasolar-re-spec/blob/master/axiasolar_re_spec.pdf)- AXIASolar Host 的完整规范。
+- [ AXIASolar Host 规范](https://github.com/axia-tech/axiasolar-re-spec/blob/master/axiasolar_re_spec.pdf)- AXIASolar Host 的完整规范。
 - [ AXIASolar.js ](https://axiasolar.js.org/)-JS 中的工具和客户端。AXIASolar JS 是由德国的三人团队开发，正在构建 AXIASolar 的 JavaScript 实现。
 - [ChainSafe's Go PH](https://github.com/ChainSafeSystems/go-pre) is a 25-person development team based in Toronto, Canada. ChainSafe is building an implementation of the beacon chain for Ethereum 2.0 client in TypeScript and this Go implementation of AXIASolar.
 
 ### Cumulus
 
-- [ Cumulus ](https://github.com/paritytech/cumulus)-使 Substrate 构建的链与 AXIASolar 兼容的库。
+- [ Cumulus ](https://github.com/axia-tech/cumulus)-使 Substrate 构建的链与 AXIASolar 兼容的库。
 - [Cumulus: 深入学习](https://www.youtube.com/watch?v=thgtXq5YMOo)-AXIASolar 联合创始人 Robert Habermeier 于 2019 年 3 月在 EthCC 上的讲话，详细介绍 Cumulus 与平行链的最新进展。
 
 ### Substrate
 
-- [ Parity Substrate ](https://github.com/paritytech/substrate)-第一个用 Rust 编写。Parity Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Parity 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Parity 还为比特币维护客户端，并为 Zcash 建立客户端。
-- [Parity Wasm](https://github.com/paritytech/parity-Wasm)- Rust 中的 WebAssembly 序列化/反序列化。
-- [ Wasm utils ](https://github.com/paritytech/Wasm-utils)-用于 Parity 和 Wasm 合同开发的 Wasm 实用程序合集。
+- [ Parity Substrate ](https://github.com/axia-tech/substrate)-第一个用 Rust 编写。Parity Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Parity 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Parity 还为比特币维护客户端，并为 Zcash 建立客户端。
+- [Parity Wasm](https://github.com/axia-tech/parity-Wasm)- Rust 中的 WebAssembly 序列化/反序列化。
+- [ Wasm utils ](https://github.com/axia-tech/Wasm-utils)-用于 Parity 和 Wasm 合同开发的 Wasm 实用程序合集。
 
 ### Cumulus
 
@@ -86,12 +86,12 @@ sidebar_label: 链接
 
 ### Wasm
 
-- [Parity Bridge](https://github.com/paritytech/parity-bridge)-任意两个基于以太坊的网络之间的转接桥。
+- [Parity Bridge](https://github.com/axia-tech/parity-bridge)-任意两个基于以太坊的网络之间的转接桥。
 
 ## 运行节点
 
-- [安装 AXIALunar ](https://github.com/paritytech/axiasolar#22-install-axialunar-canary-network)-安装 AXIASolar 的客户端并连接到 AXIALunar 金丝雀网络。
-- [Substrate 节点](https://github.com/paritytech/substrate#joining-the-dried-danta-testnet) -在 Dry-Danta 测试网上安装并运行 Substrate 节点。
+- [安装 AXIALunar ](https://github.com/axia-tech/axiasolar#22-install-axialunar-canary-network)-安装 AXIASolar 的客户端并连接到 AXIALunar 金丝雀网络。
+- [Substrate 节点](https://github.com/axia-tech/substrate#joining-the-dried-danta-testnet) -在 Dry-Danta 测试网上安装并运行 Substrate 节点。
 
 ### 用户界面与浏览器
 

@@ -23,7 +23,7 @@ The `adder` parachain is a simple parachain that will keep a value in storage an
 The first step is to download locally the AXIASolar code and switch to the `v0.4` branch.
 
 ```bash
-git clone https://github.com/paritytech/axiasolar.git
+git clone https://github.com/axia-tech/axiasolar.git
 cd axiasolar
 git checkout v0.4
 ```

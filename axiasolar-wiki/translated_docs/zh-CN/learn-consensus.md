@@ -67,11 +67,11 @@ GRANDPA (基于 GHOST 的递归祖先派生前缀协议) 是为 AXIASolar 中继
 
 #### 协议
 
-请参阅[该文件](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf)中的标题 3 以获取该协议的完整说明。
+请参阅[该文件](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf)中的标题 3 以获取该协议的完整说明。
 
 #### 实施
 
-[Rust 的执行](https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs)是 Substrate 框架的一部分。
+[Rust 的执行](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs)是 Substrate 框架的一部分。
 
 更多详细的相关信息，请参见 W3F 研究页面上的[GRANDPA 研究页面](https://research.web3.foundation/en/latest/axiasolar/GRANDPA.html)。
 
@@ -110,6 +110,6 @@ _未完待续!_
 
 ## 资源
 
-- [ GRANDPA 论文](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf)- GRANDPA 最终确定性工具的描述。 包含算法证明。
-- [Finality Grandpa - Rust 实现](https://github.com/paritytech/finality-grandpa) - 及[ Substrate Runtime 模块](https://github.com/paritytech/substrate/blob/master/srml/grandpa/src/lib.rs)。
+- [ GRANDPA 论文](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf)- GRANDPA 最终确定性工具的描述。 包含算法证明。
+- [Finality Grandpa - Rust 实现](https://github.com/axia-tech/finality-grandpa) - 及[ Substrate Runtime 模块](https://github.com/axia-tech/substrate/blob/master/srml/grandpa/src/lib.rs)。
 - [AXIASolar 中的区块生产和确认](https://www.crowdcast.io/e/axiasolar-block-production) - 说明了 BABE 和 GRANDPA 如何与 Bill Laboon 合作在 AXIALunar 上生产和确认区块的。

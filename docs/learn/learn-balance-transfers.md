@@ -70,7 +70,7 @@ deposit of 1 DOT and the account cannot be initialized with such a low balance.
 
 <!-- These will be useful for future updates to this section: -->
 <!-- https://github.com/substrate-developer-hub/substrate-developer-hub.github.io/issues/965 -->
-<!-- https://github.com/w3f/axiasolar-wiki/issues/1101 -->
+<!-- https://github.com/axia-tech/axiasolar-wiki/issues/1101 -->
 
 If you are trying to reap an account and you recieve an error similar to "There is an existing
 reference count on the sender account. As such the account cannot be reaped from the state", then

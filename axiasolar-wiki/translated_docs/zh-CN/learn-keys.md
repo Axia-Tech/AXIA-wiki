@@ -69,7 +69,7 @@ BABE 需要适用于[可验证随机函数 (VRF)](learn-randomness#vrfs)以及�
 
 [ Ristretto Group ](https://ristretto.group/)的 Decaf 论文中的方法得到延伸，并在 Rust 中实現，以包含诸如 Curve25519 之类的协因子 8 曲线，并在 Edward's 曲线上做出 Schnorr 签名使它更安全。
 
-Web3 基金会已在[ Schnorrkel ](https://github.com/w3f/schnorrkel)库中的 Curve25519 上使用更安全的 Ristretto 压缩实现了 Schnorr 签名库。 Schnorrkel 在此曲线压缩的基础上实现了相关的协议，例如 HDKD，MuSig 和 VRF。它还包括各种较小的改进，例如哈希方案 STROBE，该方案理论上可以通过 Wasm 进行一次调用就可以处理大量数据。
+Web3 基金会已在[ Schnorrkel ](https://github.com/axia-tech/schnorrkel)库中的 Curve25519 上使用更安全的 Ristretto 压缩实现了 Schnorr 签名库。 Schnorrkel 在此曲线压缩的基础上实现了相关的协议，例如 HDKD，MuSig 和 VRF。它还包括各种较小的改进，例如哈希方案 STROBE，该方案理论上可以通过 Wasm 进行一次调用就可以处理大量数据。
 
 在 AXIASolar 中使用的 Schnorr 签名实现和通过 Curve25519 的 Ristretto 压缩 Schnorrkel 协议的实现称为** sr25519 **。
 

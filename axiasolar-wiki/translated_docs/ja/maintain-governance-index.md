@@ -82,7 +82,7 @@ A `negative turnout bias`, whereby a heavy super-majority of nay votes is requir
 
 Majority-carries, a simple comparison of votes, if there are more aye votes than nay, then the proposal is carried. $${approve} > {against}$$
 
-_To know more about where these above formulas come from, please read the [democracy module](https://github.com/paritytech/substrate/blob/master/srml/democracy/src/vote_threshold.rs)_.
+_To know more about where these above formulas come from, please read the [democracy module](https://github.com/axia-tech/substrate/blob/master/srml/democracy/src/vote_threshold.rs)_.
 
 ```
 Example:
@@ -172,7 +172,7 @@ This would be the tentative governance configuration for AXIASolar in the initia
 ### Resources
 
 - [Governance Description](learn-governance#referenda)
-- [Democracy Module](https://github.com/paritytech/substrate/tree/master/srml/democracy/src)
+- [Democracy Module](https://github.com/axia-tech/substrate/tree/master/srml/democracy/src)
 
 ## [Usage of DOT](learn-DOT#dots-for-governance)
 

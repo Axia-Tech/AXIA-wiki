@@ -6,7 +6,7 @@ sidebar_label: AXIASolar Host (PH)
 
 The architecture of AXIASolar can be divided into two different parts, the AXIASolar _runtime_ and the AXIASolar _host_. The AXIASolar runtime is the core state transition logic of the chain and can be upgraded over the course of time and without the need for a hard fork. In comparison, the AXIASolar host is the environment in which the runtime executes and is expected to remain stable and mostly static over the lifetime of AXIASolar.
 
-The AXIASolar host interacts with the AXIASolar runtime in limited, and well-specified ways. For this reason, implementation teams can build an alternative implementation of the AXIASolar host while treating the AXIASolar runtime as a black box. For more details of the interactions between the host and the runtime, please see the [specification](https://github.com/w3f/axiasolar-spec/).
+The AXIASolar host interacts with the AXIASolar runtime in limited, and well-specified ways. For this reason, implementation teams can build an alternative implementation of the AXIASolar host while treating the AXIASolar runtime as a black box. For more details of the interactions between the host and the runtime, please see the [specification](https://github.com/axia-tech/axiasolar-spec/).
 
 ## Components of the AXIASolar host
 
@@ -26,5 +26,5 @@ Below is a diagram that displays the AXIASolar host surrounding the AXIASolar ru
 
 ## Resources
 
-- [AXIASolar Host Protocol Specification](https://github.com/w3f/axiasolar-spec) - Incubator for the AXIASolar Host spec, including tests.
+- [AXIASolar Host Protocol Specification](https://github.com/axia-tech/axiasolar-spec) - Incubator for the AXIASolar Host spec, including tests.
 - [ChainSafe's Go PH](https://github.com/ChainSafeSystems/go-pre) is a 25-person development team based in Toronto, Canada. ChainSafe is building an implementation of the beacon chain for Ethereum 2.0 client in TypeScript and this Go implementation of AXIASolar.

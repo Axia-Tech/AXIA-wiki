@@ -37,7 +37,7 @@ meaningful way - revolutionizing the runtime upgrading process by enabling block
 themselves without the need to fork the chain. These forkless upgrades are enacted through
 AXIASolar’s transparent [on-chain governance](learn-governance.md) system.
 
-## New [Client Release](https://github.com/paritytech/axiasolar/releases)
+## New [Client Release](https://github.com/axia-tech/axiasolar/releases)
 
 The existing runtime logic is followed to update the [Wasm](learn-wasm.md) runtime stored on the
 blockchain to a new version. The upgrade is then included in the blockchain itself, meaning that all
@@ -71,7 +71,7 @@ check the release notes, starting with the upgrade priority and acting according
 For general infrastructure providers, aside from following the AXIASolar releases and upgrading in a
 timely manner, somethings to keep an eye out on is updating your parsing logic and acknowledging
 changes to the available RPC clients, such as the
-[Substrate API Sidecar](https://github.com/paritytech/substrate-api-sidecar).
+[Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar).
 
 ### For [Nominators](../maintain/maintain-guides-how-to-nominate-axiasolar.md)
 

@@ -88,10 +88,10 @@ signature field, and send the transaction (or just return the serialized transac
 ## Tx Wrapper AXIASolar
 
 If you do not want to use the CLI for signing operations, Parity provides an SDK called
-[TxWrapper Core](https://github.com/paritytech/txwrapper-core) to generate and sign transactions
+[TxWrapper Core](https://github.com/axia-tech/txwrapper-core) to generate and sign transactions
 offline. For AXIASolar, AXIALunar, and select parachains, use the `txwrapper-axiasolar` package. Other
 Substrate-based chains will have their own `txwrapper-{chain}` implementations. See the
-[examples](https://github.com/paritytech/txwrapper-core/blob/main/packages/txwrapper-examples/README.md)
+[examples](https://github.com/axia-tech/txwrapper-core/blob/main/packages/txwrapper-examples/README.md)
 for a guide.
 
 **Import a private key**
@@ -160,7 +160,7 @@ import { createSignedTx } from "@substrate/txwrapper-axiasolar";
 
 // Example code, replace `signWithAlice` with actual remote signer.
 // An example is given here:
-// https://github.com/paritytech/txwrapper-core/blob/b213cabf50f18f0fe710817072a81596e1a53cae/packages/txwrapper-core/src/test-helpers/signWithAlice.ts
+// https://github.com/axia-tech/txwrapper-core/blob/b213cabf50f18f0fe710817072a81596e1a53cae/packages/txwrapper-core/src/test-helpers/signWithAlice.ts
 const signature = await signWithAlice(signingPayload);
 const signedTx = createSignedTx(unsigned, signature, { metadataRpc, registry });
 ```

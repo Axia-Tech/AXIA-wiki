@@ -49,7 +49,7 @@ module.exports = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           editUrl: ({ docPath }) => {
-            const githubDocPath = `https://github.com/w3f/axiasolar-wiki/edit/master/docs/`;
+            const githubDocPath = `https://github.com/axia-tech/axiasolar-wiki/edit/master/docs/`;
             return githubDocPath + docPath.replace("mirror-", "");
           },
           path: "../docs",

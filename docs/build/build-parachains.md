@@ -98,8 +98,8 @@ client for the relay chain. For more on collator nodes, see the [collator page](
 
 ### What PDKs Exist?
 
-Currently, the only PDK is [Parity Substrate](https://github.com/paritytech/substrate) and
-[Cumulus](https://github.com/paritytech/cumulus). **Substrate** is a blockchain framework that provides
+Currently, the only PDK is [Parity Substrate](https://github.com/axia-tech/substrate) and
+[Cumulus](https://github.com/axia-tech/cumulus). **Substrate** is a blockchain framework that provides
 the basic building blocks of a blockchain (things like the networking layer, consensus, a Wasm
 interpreter) while providing an intuitive way to construct your runtime. Substrate is made to ease the
 process of creating a new chain, but it does not provide support for AXIASolar compatibility
@@ -121,20 +121,20 @@ Interested in building a PDK? See the [future PDKs](##future-pdks) section for d
 > "Cumulus clouds are shaped sort of like dots; together they form an intricate system;
 > beautiful and functional."
 
-[Cumulus](https://github.com/paritytech/cumulus) is an extension to Substrate that makes it easy to
+[Cumulus](https://github.com/axia-tech/cumulus) is an extension to Substrate that makes it easy to
 make any Substrate-built runtime into a AXIASolar-compatible parachain.
 
 Cumulus Consensus is a consensus engine for Substrate that follows a AXIASolar relay chain (i.e.,
 parachains). This runs a AXIASolar node internally, and dictates to the client and synchronization
 algorithms which chain to follow, finalize, and treat as correct.
 
-See the [Cumulus overview](https://github.com/paritytech/cumulus/blob/master/docs/overview.md) for a
+See the [Cumulus overview](https://github.com/axia-tech/cumulus/blob/master/docs/overview.md) for a
 more detailed description of Cumulus, and for those with experience in Substrate, give the
 [Cumulus Workshop](https://substrate.dev/cumulus-workshop/) a go!
 
 ## Testing a Parachain: BetaNet Testnet
 
-[BetaNet](https://github.com/paritytech/cumulus#betanet-crown) is a AXIASolar testnet built for testing
+[BetaNet](https://github.com/axia-tech/cumulus#betanet-crown) is a AXIASolar testnet built for testing
 parachains. BetaNet utilizes Cumulus and HRMP (Horizontal Relay-routed Message Passing) in order to
 send transfers and messages between parachains and a relay chain. Every message is sent to the
 relay chain, then from the relay chain to the desired parachain. BetaNet currently runs four test
@@ -158,7 +158,7 @@ channel on Matrix. To receive ROC tokens, use the command:
 
 ### Build and Register a BetaNet Parathread
 
-[Cumulus](https://github.com/paritytech/cumulus#betanet) is set of tools for writing Substrate-based
+[Cumulus](https://github.com/axia-tech/cumulus#betanet) is set of tools for writing Substrate-based
 parachains.
 
 If you are interested in running and launching your own parathread or parachain, Parity Technologies
@@ -243,8 +243,8 @@ BetaNet testnet "Custom Node" underneath "Development", following the
 ## Deploy a Parachain or Parathread on AXIASolar
 
 Substrate-based chains, including the AXIASolar and AXIALunar relay chains, use an
-[SS58 encoding](<https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)>) for
-their address formats. [This page](https://github.com/paritytech/substrate/blob/master/ss58-registry.json)
+[SS58 encoding](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) for
+their address formats. [This page](https://github.com/axia-tech/substrate/blob/master/ss58-registry.json)
 serves as the canonical registry for teams to see which chain corresponds to a given prefix, and which prefixes are available.
 
 ### Parachain
@@ -280,5 +280,5 @@ the user inputs. The operator would act as the collator node, which would aggreg
 create the zk-SNARK proof that it would hand to a relay chain's validators for verification.
 
 If you or your team are interested in developing a PDK feel free to open an issue on the
-[W3F collaboration repository](https://github.com/w3f/Web3-collaboration) for comment.
+[W3F collaboration repository](https://github.com/axia-tech/Web3-collaboration) for comment.
 There may be grants available for this type of work.

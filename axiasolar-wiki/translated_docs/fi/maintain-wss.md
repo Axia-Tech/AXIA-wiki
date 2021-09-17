@@ -18,7 +18,7 @@ Create a new server on your provider of choice or locally at home (preferred). W
 
 ```bash
 curl https://getsubstrate.io -sSf | bash
-git clone https://github.com/paritytech/axiasolar axialunar
+git clone https://github.com/axia-tech/axiasolar axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release

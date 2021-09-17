@@ -2,8 +2,8 @@
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](https://www.markdownguide.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/general/contributing.md)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=page.id)
-[![AXIASolar Prod](https://github.com/w3f/axiasolar-wiki/actions/workflows/deploy-axiasolar-prod.yml/badge.svg)](https://github.com/w3f/axiasolar-wiki/actions/workflows/deploy-axiasolar-prod.yml)
-[![AXIALunar Prod](https://github.com/w3f/axiasolar-wiki/actions/workflows/deploy-axialunar-prod.yml/badge.svg)](https://github.com/w3f/axiasolar-wiki/actions/workflows/deploy-axialunar-prod.yml)
+[![AXIASolar Prod](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axiasolar-prod.yml/badge.svg)](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axiasolar-prod.yml)
+[![AXIALunar Prod](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axialunar-prod.yml/badge.svg)](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axialunar-prod.yml)
 
 | <a href="https://wiki.axiasolar.network/" rel="some text">![AXIASolar Wiki](docs/assets/axiasolar-wiki.png)</a> | <a href="https://guide.axialunar.network/" rel="some text">![AXIALunar Guide](docs/assets/axialunar-guide.png)</a> |
 | :----------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |

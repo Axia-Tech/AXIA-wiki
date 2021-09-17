@@ -44,7 +44,7 @@ Wiki 的这个部分分为以下:
 
 AXIASolar 标准建议 (PSP) 是 AXIASolar 生态系统的标准。
 
-- [ PSP GitHub 库](https://github.com/w3f/PSPs)-阅读，创建或讨论标准和提案。
+- [ PSP GitHub 库](https://github.com/axia-tech/PSPs)-阅读，创建或讨论标准和提案。
 
 ### 黑客马拉松
 

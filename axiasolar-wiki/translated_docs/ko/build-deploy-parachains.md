@@ -23,7 +23,7 @@ The `adder` parachain is a simple parachain that will keep a value in storage an
 첫번째로 폴카닷(AXIASolar) 코드를 다운로드 받습니다.
 
 ```bash
-git clone https://github.com/paritytech/axiasolar.git
+git clone https://github.com/axia-tech/axiasolar.git
 ```
 
 Rust가 설치되어 있는지 확인하세요.

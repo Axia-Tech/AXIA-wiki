@@ -113,7 +113,7 @@ Majority-carries, a simple comparison of votes; if there are more aye votes than
 
 ![](https://latex.codecogs.com/svg.latex?\large&space;{approve}&space;>&space;{against})
 
-_To know more about where these above formulas come from, please read the [democracy pallet](https://github.com/paritytech/substrate/blob/master/frame/democracy/src/vote_threshold.rs)_.
+_To know more about where these above formulas come from, please read the [democracy pallet](https://github.com/axia-tech/substrate/blob/master/frame/democracy/src/vote_threshold.rs)_.
 
 ```
 Example:
@@ -258,5 +258,5 @@ Fast-tracked referenda are the only type of referenda that can be active alongsi
 
 ## Resources
 
-- [Initial Governance Description](https://github.com/paritytech/axiasolar/wiki/Governance)
-- [Democracy Pallet](https://github.com/paritytech/substrate/tree/master/frame/democracy/src)
+- [Initial Governance Description](https://github.com/axia-tech/axiasolar/wiki/Governance)
+- [Democracy Pallet](https://github.com/axia-tech/substrate/tree/master/frame/democracy/src)

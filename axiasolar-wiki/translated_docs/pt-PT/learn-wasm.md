@@ -17,6 +17,6 @@ WebAssembly is a platform agnostic binary format, meaning that it will run the s
 ## Resources
 
 - [WebAssembly.org](https://webassembly.org/) - WebAssembly homepage that contains a link to the spec.
-- [Wasmi](https://github.com/paritytech/Wasmi) - WebAssembly interpreter written in Rust.
-- [Parity Wasm](https://github.com/paritytech/parity-Wasm) - WebAssembly serialization/deserialization in Rust.
-- [Wasm utils](https://github.com/paritytech/Wasm-utils) - Collection of Wasm utilities used in Parity and Wasm contract development.
+- [Wasmi](https://github.com/axia-tech/Wasmi) - WebAssembly interpreter written in Rust.
+- [Parity Wasm](https://github.com/axia-tech/parity-Wasm) - WebAssembly serialization/deserialization in Rust.
+- [Wasm utils](https://github.com/axia-tech/Wasm-utils) - Collection of Wasm utilities used in Parity and Wasm contract development.

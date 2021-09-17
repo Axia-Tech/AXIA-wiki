@@ -27,7 +27,7 @@ using Ubuntu 18.04. Then install Substrate and build the node.
 
 ```bash
 curl https://getsubstrate.io -sSf | bash
-git clone https://github.com/paritytech/axiasolar axialunar
+git clone https://github.com/axia-tech/axiasolar axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release

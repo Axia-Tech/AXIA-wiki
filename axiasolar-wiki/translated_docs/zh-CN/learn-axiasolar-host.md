@@ -6,7 +6,7 @@ sidebar_label: AXIASolar 组件
 
 AXIASolar 的架构可以分为两个不同的部分：AXIASolar *runtime*和 AXIASolar _主机_。 AXIASolar runtime 是链的核心状态转变逻辑，可以在一段时间内升级而不需要硬分叉。 相比 AXIASolar 的主机是执行 runtime 的环境并且保持稳定和在 AXIASolar 的生命周期内保持静态状态。
 
-The AXIASolar host interacts with the AXIASolar runtime in limited, and well-specified ways. For this reason, implementation teams can build an alternative implementation of the AXIASolar host while treating the AXIASolar runtime as a black box. For more details of the interactions between the host and the runtime, please see the [specification](https://github.com/w3f/axiasolar-spec/).
+The AXIASolar host interacts with the AXIASolar runtime in limited, and well-specified ways. For this reason, implementation teams can build an alternative implementation of the AXIASolar host while treating the AXIASolar runtime as a black box. For more details of the interactions between the host and the runtime, please see the [specification](https://github.com/axia-tech/axiasolar-spec/).
 
 ## AXIASolar 主机组件
 
@@ -26,5 +26,5 @@ The AXIASolar host interacts with the AXIASolar runtime in limited, and well-spe
 
 ## 资源
 
-- [AXIASolar Host Protocol Specification](https://github.com/w3f/axiasolar-spec) - Incubator for the AXIASolar Host spec, including tests.
+- [AXIASolar Host Protocol Specification](https://github.com/axia-tech/axiasolar-spec) - Incubator for the AXIASolar Host spec, including tests.
 - [ChainSafe's Go PH](https://github.com/ChainSafeSystems/go-pre) is a 25-person development team based in Toronto, Canada. ChainSafe is building an implementation of the beacon chain for Ethereum 2.0 client in TypeScript and this Go implementation of AXIASolar.

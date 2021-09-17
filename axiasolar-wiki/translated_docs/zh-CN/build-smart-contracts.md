@@ -6,7 +6,7 @@ sidebar_label: 智能合约
 
 The AXIASolar Relay Chain will not support smart contracts natively. However, parachains on AXIASolar will support smart contracts. There are already announced projects such as [Edgeware](https://edgewa.re), and thanks to the Substrate built-in [contract pallet](https://substrate.dev/rustdocs/latest/pallet_contracts/index.html), it is likely that more parachains will support this feature.
 
-此外，还有一个 EVM 模块可以让平行链实现以太坊虚拟机，得以支持几乎以太坊合约的直接接口。一些项目用到了[Edgeware](https://edgewa.re)，[Moonbeam](https://moonbeam.network/)和[Frontier](https://github.com/paritytech/frontier)这些方法。
+此外，还有一个 EVM 模块可以让平行链实现以太坊虚拟机，得以支持几乎以太坊合约的直接接口。一些项目用到了[Edgeware](https://edgewa.re)，[Moonbeam](https://moonbeam.network/)和[Frontier](https://github.com/axia-tech/frontier)这些方法。
 
 [这里](https://www.youtube.com/watch?v=fKHkFBXaUxQ)提供了有关 AXIASolar 和 AXIALunar 的智能合约情况摘要的视频版本。
 
@@ -15,7 +15,7 @@ The AXIASolar Relay Chain will not support smart contracts natively. However, pa
 如果开发者想要开始在基于 Substrate 的平行链上开发并部署智能合约，可以参考这个列表的资源：
 
 - [Edgeware 合约](https://contracts.edgewa.re) - Edgeware 合约的文档。
-- [ink!](https://github.com/paritytech/ink) - Parity 提供的编写智能合约的 ink。
+- [ink!](https://github.com/axia-tech/ink) - Parity 提供的编写智能合约的 ink。
 - [Substrate 合约工作坊](https://substrate.dev/substrate-contracts-workshop/#/) - 指导您使用`ink!`编写和部署 ERC20 令牌的基础知识。
 
 ## 例子

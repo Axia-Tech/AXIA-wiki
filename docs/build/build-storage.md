@@ -64,7 +64,7 @@ as a database-backed, _modified_ Merkle tree. Substrate's higher-layer storage a
 built on the key-value store.
 
 The key-value data store is backed by [RocksDB](https://rocksdb.org/), and it also supports an experimental
-[Parity database](https://github.com/paritytech/parity-db).
+[Parity database](https://github.com/axia-tech/parity-db).
 
 > The database is used for components that require persistent storage: Substrate clients, Substrate light-clients
 > & off-chain workers. For more information, check out

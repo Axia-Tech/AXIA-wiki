@@ -35,7 +35,7 @@ In AXIASolar (and most Substrate chains), user accounts are identified by a 32-b
 
 AXIASolar (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to handle many different cryptographies and chains. It has much in common with Bitcoin's Base58Check format such as a version prefix, a hash-based checksum suffix, and base-58 encoding.
 
-See the [SS58 page](<https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)>) in the Substrate wiki for encoding information and a more comprehensive list of network prefixes.
+See the [SS58 page](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) in the Substrate wiki for encoding information and a more comprehensive list of network prefixes.
 
 Relevant SS58 prefixes for this guide:
 

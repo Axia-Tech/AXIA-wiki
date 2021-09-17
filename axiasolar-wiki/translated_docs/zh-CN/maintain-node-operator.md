@@ -24,7 +24,7 @@ These participants will play a crucial role in adding new blocks to the Relay Ch
 
 ## Security / Key Management
 
-- [Validator Security Overview](https://github.com/w3f/validator-security)
+- [Validator Security Overview](https://github.com/axia-tech/validator-security)
 
 ## Monitoring Tools
 

@@ -30,7 +30,7 @@ Validators perform two functions. First, verifying that the information containe
 
 ## Security / Key Management
 
-- [Validator Security Overview](https://github.com/w3f/validator-security)
+- [Validator Security Overview](https://github.com/axia-tech/validator-security)
 
 ## Monitoring Tools
 

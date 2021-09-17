@@ -11,7 +11,7 @@ prior contact and anyone doing so is likely trying to scam you.
 
 ## General
 
-- [AXIASolar GitHub](https://github.com/paritytech/axiasolar/) - Parity maintained repository that
+- [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - Parity maintained repository that
   houses the Rust implementation of the AXIASolar Host.
 - [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
   Information on hosting meetups, applying for funding, and materials for running it.
@@ -102,6 +102,6 @@ community members. The application we use most often to interact with the Matrix
 - [Teams Building on AXIASolar](https://polkaproject.com/) - Community maintained list of teams
   building on AXIASolar and/or Substrate. (Note that this may contain inaccuracies, as it's
   unofficial)
-- [AXIASolar Stack](https://github.com/w3f/General-Grants-Program/blob/master/grants/axiasolar_stack.md) -
+- [AXIASolar Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md) -
   if you're interested in seeing what's under development and where there's room for your
   contributions.

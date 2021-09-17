@@ -32,7 +32,7 @@ A collator node is one of the types of network maintainers in the AXIASolar prot
 
 ## What kind of PDKs exist?
 
-Currently the only PDK is Parity [Substrate](https://github.com/paritytech/substrate) and [Cumulus](https://github.com/paritytech/cumulus). Substrate is a blockchain framework that provides the basic building blocks of a blockchain (things like the networking layer, consensus, a Wasm interpreter) and provides an intuitive way to construct your runtime. Substrate is made to ease the process of creating a new chain, but it does not provide support for AXIASolar compatibility directly. For this reason, Cumulus, an added library will contain all of the AXIASolar compatibility glue code. Cumulus is still in development, but the idea is that it should be simple to take a Substrate chain and add the parachain code by importing the crates and adding a single line of code.
+Currently the only PDK is Parity [Substrate](https://github.com/axia-tech/substrate) and [Cumulus](https://github.com/axia-tech/cumulus). Substrate is a blockchain framework that provides the basic building blocks of a blockchain (things like the networking layer, consensus, a Wasm interpreter) and provides an intuitive way to construct your runtime. Substrate is made to ease the process of creating a new chain, but it does not provide support for AXIASolar compatibility directly. For this reason, Cumulus, an added library will contain all of the AXIASolar compatibility glue code. Cumulus is still in development, but the idea is that it should be simple to take a Substrate chain and add the parachain code by importing the crates and adding a single line of code.
 
 Substrate and Cumulus provide a PDK from the abstraction of the blockchain format, but it is not necessary that a parachain even needs to be a blockchain. For example, a parachain just needs to satisfy the two constraints listed above: _state transition function_ and _collator node_. Everything else is up to the implementer of the PDK.
 
@@ -40,4 +40,4 @@ One interesting idea for a PDK that would be nice to see is to have a [roll-up](
 
 ## Build a PDK
 
-If you or your team are interested in developing a PDK feel free to open an issue on the [W3F collaboration repository](https://github.com/w3f/Web3-collaboration) for comment. There may be grants available for this type of work.
+If you or your team are interested in developing a PDK feel free to open an issue on the [W3F collaboration repository](https://github.com/axia-tech/Web3-collaboration) for comment. There may be grants available for this type of work.

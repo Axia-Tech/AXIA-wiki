@@ -24,7 +24,7 @@ AXIASolar mainnet has been released. There are also two major testnets - **Alpha
 
 AXIASolar has [implementations in various programming languages](learn-implementations) ranging from Rust to JavaScript. Currently the leading implementation is built in Rust and built using the Substrate framework. Substrate is a framework that allows developers to develop entire blockchain applications with ease. This is accomplished by bundling core essientials such as the networking protocol, consensus layer, Wasm interpreter, and runtime modules (called pallets). Cumulus, an extension to Substrate, allows any Substrate built chain to connect to AXIASolar and become a parachain. Substrate is currently on its 2.0.0 tagged release that stabilized its API for now.
 
-AXIASolar does not natively support smart contracts, however there will be parachains that do. Substrate chains can include smart contract functionality by using the [Contracts](https://github.com/paritytech/substrate/tree/master/frame/contracts) pallet for Wasm contracts or the [EVM](https://github.com/paritytech/substrate/tree/master/frame/evm) pallet in FRAME. The contracts pallet enables a chain to use Wasm-compiled contracts that can be deployed permissionlessly by users or with specific rules dependent on the chain. To facilitate development of Wasm smart contracts, Parity is also developing [ink!](https://github.com/paritytech/ink), a domain specific language built in Rust for writing smart contracts.
+AXIASolar does not natively support smart contracts, however there will be parachains that do. Substrate chains can include smart contract functionality by using the [Contracts](https://github.com/axia-tech/substrate/tree/master/frame/contracts) pallet for Wasm contracts or the [EVM](https://github.com/axia-tech/substrate/tree/master/frame/evm) pallet in FRAME. The contracts pallet enables a chain to use Wasm-compiled contracts that can be deployed permissionlessly by users or with specific rules dependent on the chain. To facilitate development of Wasm smart contracts, Parity is also developing [ink!](https://github.com/axia-tech/ink), a domain specific language built in Rust for writing smart contracts.
 
 AXIASolar mainnet has been running since May 2020. Now that the tools have started to appear and stabilize, there has not been a better time to get your feet wet and start preparing for launch. But wait! Before you jump head-first into the code, you should think about the kind of decentralized application you want to make and understand the different paradigms available to developers who want to build on AXIASolar.
 
@@ -122,7 +122,7 @@ For more information on how parathread per-block auctions work, see the more det
 
 The AXIASolar Relay Chain itself will not support smart contracts. However, since the parachains that connect to AXIASolar can support arbitrary state transitions, they can support smart contracts. Builders of smart contracts can use these options when they become available. Today, it's possible to start development using a local development chain and later deploy to a live environment when the technology matures.
 
-Substrate supports smart contracts out-of-the-box in two ways. One way is using the provided [Contracts](https://github.com/paritytech/substrate/tree/master/frame/contracts) pallet in the FRAME library. The second way is using the Substrate [EVM pallet](https://github.com/paritytech/substrate/tree/master/frame/evm) to deploy EVM-based bytecode compiled from Solidity or Vyper and using tools available from the Ethereum stack.
+Substrate supports smart contracts out-of-the-box in two ways. One way is using the provided [Contracts](https://github.com/axia-tech/substrate/tree/master/frame/contracts) pallet in the FRAME library. The second way is using the Substrate [EVM pallet](https://github.com/axia-tech/substrate/tree/master/frame/evm) to deploy EVM-based bytecode compiled from Solidity or Vyper and using tools available from the Ethereum stack.
 
 The experience of deploying to an EVM-based chain may be more familiar to developers that have written smart contract before. However, the Contracts pallet makes some notable improvements to the design of the EVM. Namely these are:
 
@@ -144,15 +144,15 @@ Edgeware general documentation can be found [here](https://docs.edgewa.re/) and 
 
 ## Moonbeam
 
-[Moonbeam](https://moonbeam.network) is another project that is planning to deploy to AXIASolar as a parachain and will support smart contracts. Since Moonbeam uses [Frontier](https://github.com/paritytech/frontier), an interoperability layer with existing Ethereum tooling, it will support all applications that are written to target the EVM environment with little friction.
+[Moonbeam](https://moonbeam.network) is another project that is planning to deploy to AXIASolar as a parachain and will support smart contracts. Since Moonbeam uses [Frontier](https://github.com/axia-tech/frontier), an interoperability layer with existing Ethereum tooling, it will support all applications that are written to target the EVM environment with little friction.
 
 Try deploying a contract to Moonbeam by following their [documentation](https://docs.moonbeam.network/).
 
 ### Ink
 
-[ink!](https://github.com/paritytech/ink) is a domain specific language for writing smart contracts in Rust and compiles to Wasm code. As it states in its README, it is still in an experimental phase so brave developers should be aware that they might have a bumpy - but workable - development experience. There are some projects that have built projects in ink! with a decent level of complexity such as Plasm's [Plasma contracts](https://github.com/staketechnologies/Plasm), so it is mature enough to start building interesting things.
+[ink!](https://github.com/axia-tech/ink) is a domain specific language for writing smart contracts in Rust and compiles to Wasm code. As it states in its README, it is still in an experimental phase so brave developers should be aware that they might have a bumpy - but workable - development experience. There are some projects that have built projects in ink! with a decent level of complexity such as Plasm's [Plasma contracts](https://github.com/staketechnologies/Plasm), so it is mature enough to start building interesting things.
 
-For interested developers, they can get started writing smart contracts using ink! by studying the [examples](https://github.com/paritytech/ink/tree/master/examples) that were already written. These can be used as guideposts to writing more complex logic that will be deployable on smart contract parachains.
+For interested developers, they can get started writing smart contracts using ink! by studying the [examples](https://github.com/axia-tech/ink/tree/master/examples) that were already written. These can be used as guideposts to writing more complex logic that will be deployable on smart contract parachains.
 
 ink! has laid much of the groundwork for a new smart contract stack that is based on a Wasm virtual machine and compatible with Substrate chains.
 
@@ -182,8 +182,8 @@ It’s still very early for smart contracts on AXIASolar and the development is 
 
 - [Edgeware](https://edgewa.re).
 - [Moonbeam](https://moonbeam.network)
-- [ink!](https://github.com/paritytech/ink). (Keep an eye out for content on the wiki tab.)
-- [Substrate contracts pallet](https://github.com/paritytech/substrate/tree/master/frame/contracts).
+- [ink!](https://github.com/axia-tech/ink). (Keep an eye out for content on the wiki tab.)
+- [Substrate contracts pallet](https://github.com/axia-tech/substrate/tree/master/frame/contracts).
 
 ## Conclusion
 

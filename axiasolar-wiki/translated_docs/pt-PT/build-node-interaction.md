@@ -8,7 +8,7 @@ This page will guide you through some basic interactions with your node. Always 
 
 - [Substrate RPC API](https://crates.parity.io/sc_rpc_api/index.html)
 - [AXIASolar JS RPC Documentation](https://axiasolar.js.org/api/substrate/rpc.html)
-- [Substrate API Sidecar](https://github.com/paritytech/substrate-api-sidecar)
+- [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar)
 
 ## AXIASolar RPC
 
@@ -42,7 +42,7 @@ Use the RPC endpoint `chain_subscribeFinalizedHeads` to subscribe to a stream of
 
 Parity maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It handles the metadata and codec logic so that you are always dealing with decoded information. It also aggregates information that an infrastructure business may need for accounting and auditing, e.g. transaction fees.
 
-The sidecar can fetch blocks, get the balance of an address atomically (i.e., with a corresponding block number), get the chain's metadata, get a transaction fee prediction, and submit transactions to a node's transaction queue. If you have any feature/endpoint requests, log an issue in the [repo](https://github.com/paritytech/substrate-api-sidecar).
+The sidecar can fetch blocks, get the balance of an address atomically (i.e., with a corresponding block number), get the chain's metadata, get a transaction fee prediction, and submit transactions to a node's transaction queue. If you have any feature/endpoint requests, log an issue in the [repo](https://github.com/axia-tech/substrate-api-sidecar).
 
 The client runs on an HTTP host. The following examples use python3, but you can query any way you prefer at `http://HOST:PORT/`. The default is `http://127.0.0.1:8080`.
 

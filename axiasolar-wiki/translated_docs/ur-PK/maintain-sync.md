@@ -20,7 +20,7 @@ A **full node** is _pruned_, meaning it discards all information older than 256 
 
 Archive nodes are used by utilities that need past information - like block explorers, council scanners, discussion platforms like [Polkassembly](https://polkassembly.io), and others. They need to be able to look at past on-chain data. Full nodes are used by everyone else - they allow you to read the current state of the chain and to submit transactions directly to the chain without relying on a centralized infrastructure provider.
 
-Another type of node is a **light node**. A light node has only the runtime and the current state, but does not store past extrinsics and so cannot restore the full chain from genesis. Light nodes are useful for resource restricted devices. An interesting use-case of light nodes is a Chrome extension, which is a node in its own right, running the runtime in WASM format: https://github.com/paritytech/substrate-light-ui
+Another type of node is a **light node**. A light node has only the runtime and the current state, but does not store past extrinsics and so cannot restore the full chain from genesis. Light nodes are useful for resource restricted devices. An interesting use-case of light nodes is a Chrome extension, which is a node in its own right, running the runtime in WASM format: https://github.com/axia-tech/substrate-light-ui
 
 ### Fast Install Instructions (Mac)
 
@@ -32,7 +32,7 @@ Another type of node is a **light node**. A light node has only the runtime and 
 - Install Rust in your terminal by running: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 - Once Rust is installed, run the following command to clone and build the axialunar code:
   ```
-  git clone https://github.com/paritytech/axiasolar axialunar
+  git clone https://github.com/axia-tech/axiasolar axialunar
   cd axialunar
   ./scripts/init.sh
   cargo build --release
@@ -48,8 +48,8 @@ Another type of node is a **light node**. A light node has only the runtime and 
 
 - Install WSL: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 - Install Ubuntu (same webpage): https://docs.microsoft.com/en-us/windows/wsl/install-win10
-- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/paritytech/axiasolar/releases)
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/paritytech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
+- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/axia-tech/axiasolar/releases)
+- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
 - Run the following: `sudo chmod +x axiasolar`
 - Run the following: `./axiasolar --name "Your Node Name Here"`
 - Find your node at https://telemetry.axiasolar.io/#list/AXIALunar
@@ -58,12 +58,12 @@ Another type of node is a **light node**. A light node has only the runtime and 
 
 > Not recommended if you're a validator. Please see [secure validator setup](maintain-guides-secure-validator)
 
-For the most recent binary please see the [release page](https://github.com/paritytech/axiasolar/releases/) on the axiasolar repository. The URL in the code snippet below may become slightly out-of-date.
+For the most recent binary please see the [release page](https://github.com/axia-tech/axiasolar/releases/) on the axiasolar repository. The URL in the code snippet below may become slightly out-of-date.
 
 Also please note that the nature of pre-built binaries means that they may not work on your particular architecture or Linux distribution. If you see an error like `cannot execute binary file: Exec format error` it likely means the binary is not compatible with your system. You will either need to compile the [source code yourself](#clone-and-build) or use [docker](#using-docker).
 
-- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/paritytech/axiasolar/releases)
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/paritytech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
+- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/axia-tech/axiasolar/releases)
+- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
 - Run the following: `sudo chmod +x axiasolar`
 - Run the following: `./axiasolar --name "Your Node Name Here"`
 - Find your node at https://telemetry.axiasolar.io/#list/AXIALunar
@@ -81,10 +81,10 @@ cargo 1.41.0 (626f0f40e 2019-12-03)
 
 ## Clone and Build
 
-The [paritytech/axiasolar](https://github.com/paritytech/axiasolar) repo's master branch contains the latest AXIALunar code.
+The [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repo's master branch contains the latest AXIALunar code.
 
 ```bash
-git clone https://github.com/paritytech/axiasolar axialunar
+git clone https://github.com/axia-tech/axiasolar axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release
@@ -93,7 +93,7 @@ cargo build --release
 Alternatively, if you wish to use a specific release, you can check out a specific tag (`v0.8.3` in the example below):
 
 ```bash
-git clone https://github.com/paritytech/axiasolar axialunar
+git clone https://github.com/axia-tech/axiasolar axialunar
 cd axialunar
 git checkout tags/v0.8.3
 ./scripts/init.sh

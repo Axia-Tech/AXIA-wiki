@@ -32,6 +32,6 @@ and security assumptions. Additionally, it allows for native multisignature thro
 [signature aggregation](https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/).
 
 The names Schnorrkel and Ristretto come from the two Rust libraries that implement this scheme, the
-[Schnorrkel](https://github.com/w3f/schnorrkel) library for Schnorr signatures and the
+[Schnorrkel](https://github.com/axia-tech/schnorrkel) library for Schnorr signatures and the
 [Ristretto](https://ristretto.group/ristretto.html) library that makes it possible to use cofactor-8
 curves like Curve25519.

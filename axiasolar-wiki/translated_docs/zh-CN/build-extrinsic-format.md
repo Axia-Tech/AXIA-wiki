@@ -41,4 +41,4 @@ AXIASolar 外部函数格式是：
 
 ## 来源
 
-[Substrate #195](https://github.com/paritytech/substrate/pull/195)
+[Substrate #195](https://github.com/axia-tech/substrate/pull/195)

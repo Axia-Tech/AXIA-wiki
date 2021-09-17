@@ -287,13 +287,13 @@ it.
 Congratulations! You have successfully deployed a secure validator. Free feel to open an issue if
 you have any suggestions.
 
-[axiasolar validator setup]: https://github.com/w3f/axiasolar-validator-setup
-[issue]: https://github.com/w3f/axiasolar-validator-setup/issues
+[axiasolar validator setup]: https://github.com/axia-tech/axiasolar-validator-setup
+[issue]: https://github.com/axia-tech/axiasolar-validator-setup/issues
 [ssh]: https://en.wikipedia.org/wiki/Secure_Shell
 [nvm]: https://github.com/nvm-sh/nvm
-[w3f axiasolar]: https://github.com/w3f/axiasolar/releases
+[w3f axiasolar]: https://github.com/axia-tech/axiasolar/releases
 [node_exporter]: https://github.com/prometheus/node_exporter
 [gcp machine types]: https://cloud.google.com/compute/docs/machine-types
 [gcp regions]: https://cloud.google.com/compute/docs/regions-zones/
-[substrate telemetry source]: https://github.com/paritytech/substrate-telemetry
-[readme]: https://github.com/w3f/axiasolar-validator-setup#prerequisites
+[substrate telemetry source]: https://github.com/axia-tech/substrate-telemetry
+[readme]: https://github.com/axia-tech/axiasolar-validator-setup#prerequisites

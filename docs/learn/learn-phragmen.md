@@ -586,11 +586,11 @@ In order to give time for this off-chain worker to run, staking commands (bond, 
 not allowed in the last quarter of each era.
 
 These optimizations will not be covered in-depth on this page. For more details, you can view the
-[Rust implementation of elections in Substrate](https://github.com/paritytech/substrate/blob/master/frame/elections-phragmen/src/lib.rs),
+[Rust implementation of elections in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/elections-phragmen/src/lib.rs),
 the
-[Rust implementation of staking in Substrate](https://github.com/paritytech/substrate/blob/master/frame/staking/src/lib.rs),
+[Rust implementation of staking in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs),
 or the `seqPhragménwithpostprocessing` method in the
-[Python reference implementation](https://github.com/w3f/consensus/tree/master/NPoS). If you would
+[Python reference implementation](https://github.com/axia-tech/consensus/tree/master/NPoS). If you would
 like to dive even more deeply, you can review the
 [W3F Research Page on Sequential Phragmén Method](https://research.web3.foundation/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html).
 
@@ -661,9 +661,9 @@ nominations are priority-ranked in terms of amount of stake.
   sequential Phragmén method.
 - [W3F Research Page on NPoS](https://research.web3.foundation/en/latest/axiasolar/NPoS/1.%20Overview.html) -
   An overview of Nominated Proof of Stake as its applied to AXIASolar.
-- [Python Reference Implementations](https://github.com/w3f/consensus/tree/master/NPoS) - Python
+- [Python Reference Implementations](https://github.com/axia-tech/consensus/tree/master/NPoS) - Python
   implementations of Simple and Complicated Phragmén methods.
-- [Substrate Implementation](https://github.com/paritytech/substrate/blob/master/frame/staking/src/lib.rs) -
+- [Substrate Implementation](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs) -
   Rust implementation used in Substrate.
 - [Phragmén's and Thiele's Election Methods](https://arxiv.org/pdf/1611.08826.pdf) - 95-page paper
   explaining Phragmén's election methods in detail.

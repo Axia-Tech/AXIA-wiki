@@ -40,7 +40,7 @@ function FooterSocialColumn() {
         className="socicon-reddit"
       />
       <SocialItem
-        href="https://github.com/paritytech/axiasolar"
+        href="https://github.com/axia-tech/axiasolar"
         className="socicon-github"
       />
       <SocialItem
@@ -173,7 +173,7 @@ export default function Footer() {
                 description:
                   "Grants and Bounties link in General column in Footer",
               })}
-              href="https://github.com/w3f/General-Grants-Program"
+              href="https://github.com/axia-tech/General-Grants-Program"
             />
             <FooterLink
               content={translate({

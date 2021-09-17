@@ -8,7 +8,7 @@ sidebar_label: Links
 
 ### General
 
-- [White Paper](https://github.com/w3f/axiasolar-white-paper/raw/master/AXIASolarPaper.pdf) - General AXIASolar description.
+- [White Paper](https://github.com/axia-tech/axiasolar-white-paper/raw/master/AXIASolarPaper.pdf) - General AXIASolar description.
 - [Light Paper](https://axiasolar.network/AXIASolar-lightpaper.pdf) - Brief, non-technical overview of AXIASolar.
 - [Substrate, AXIASolar & The Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg) - Epicenter interviews Gavin Wood.
 - [Blockchain Infrastructure](https://softwareengineeringdaily.com/2018/11/26/parity-blockchain-infrastructure-with-gavin-wood/) - Gavin Wood presents Substrate on Software Daily.
@@ -30,8 +30,8 @@ sidebar_label: Links
 
 ### Substrate
 
-- [What is Substrate?](https://medium.com/paritytech/what-is-substrate-29af4231d7e0) - Explanation of the framework used to build AXIASolar.
-- [Parity Substrate](https://github.com/paritytech/substrate) - First implementation, written in Rust. Parity Technologies is a 75-person development team based in the UK and Germany. Parity’s tech is responsible for running the premier client for Ethereum, powering 40% of the nodes in the network. Parity also maintains a client for [Bitcoin](https://github.com/paritytech/parity-bitcoin) and developed and released [Zebra](https://github.com/ZcashFoundation/zebra), a rust implementation of a zcash node.
+- [What is Substrate?](https://medium.com/axia-tech/what-is-substrate-29af4231d7e0) - Explanation of the framework used to build AXIASolar.
+- [Parity Substrate](https://github.com/axia-tech/substrate) - First implementation, written in Rust. Parity Technologies is a 75-person development team based in the UK and Germany. Parity’s tech is responsible for running the premier client for Ethereum, powering 40% of the nodes in the network. Parity also maintains a client for [Bitcoin](https://github.com/axia-tech/parity-bitcoin) and developed and released [Zebra](https://github.com/ZcashFoundation/zebra), a rust implementation of a zcash node.
 - [Substrate Developer Hub](https://substrate.dev/docs/en/) - Overviews, tutorials and reference documentation for Substrate.
 - [Substrate Intro](https://youtu.be/iUMZyL5kTwc) - Dr. Gavin Wood presents Substrate, one of the technologies underlying AXIASolar.
 - [How Substrate relates to AXIASolar](https://medium.com/axiasolar-network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - A Tale of Two Technologies Presentation Transcript
@@ -51,7 +51,7 @@ sidebar_label: Links
 
 ### Consensus and Finality
 
-- [GRANDPA finality gadget](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) - Finality gadget for AXIASolar.
+- [GRANDPA finality gadget](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf) - Finality gadget for AXIASolar.
 
 ### Research
 
@@ -63,25 +63,25 @@ sidebar_label: Links
 
 ### AXIASolar
 
-- [Rust](https://github.com/paritytech/axiasolar) - Initial AXIASolar implementation.
-- [Style Guide](https://github.com/paritytech/axiasolar/wiki/Style-Guide) - Contribute to the Rust implementation of AXIASolar.
+- [Rust](https://github.com/axia-tech/axiasolar) - Initial AXIASolar implementation.
+- [Style Guide](https://github.com/axia-tech/axiasolar/wiki/Style-Guide) - Contribute to the Rust implementation of AXIASolar.
 
 ### AXIASolar Host
 
-- [AXIASolar Host specification](https://github.com/w3f/axiasolar-re-spec/blob/master/axiasolar_re_spec.pdf) - In progress. A complete specification of the AXIASolar Host.
+- [AXIASolar Host specification](https://github.com/axia-tech/axiasolar-re-spec/blob/master/axiasolar_re_spec.pdf) - In progress. A complete specification of the AXIASolar Host.
 - [AXIASolar.js](https://axiasolar.js.org/) - Tools, utilities and client in JS. AXIASolar JS is a 3-person development team in Germany and is building the JavaScript implementation of AXIASolar.
 - [ChainSafe's Go PH](https://github.com/ChainSafeSystems/go-pre) is a 25-person development team based in Toronto. ChainSafe is building an implementation of the beacon chain for Ethereum 2.0 client in TypeScript and this Go implementation of AXIASolar.
 
 ### Cumulus
 
-- [Cumulus](https://github.com/paritytech/cumulus) - A library for making Substrate-built chains compatible with AXIASolar.
+- [Cumulus](https://github.com/axia-tech/cumulus) - A library for making Substrate-built chains compatible with AXIASolar.
 - [Cumulus: Entering the Substratosphere](https://www.youtube.com/watch?v=thgtXq5YMOo) - Talk from AXIASolar co-founder Robert Habermeier at EthCC in March 2019 detailing the latest on building parachains with Cumulus.
 
 ### Wasm
 
-- [Wasmi](https://github.com/paritytech/Wasmi) - WebAssembly interpreter written in Rust.
-- [Parity Wasm](https://github.com/paritytech/parity-Wasm) - WebAssembly serialization/deserialization in Rust.
-- [Wasm utils](https://github.com/paritytech/Wasm-utils) - Collection of Wasm utilities used in Parity and Wasm contract development.
+- [Wasmi](https://github.com/axia-tech/Wasmi) - WebAssembly interpreter written in Rust.
+- [Parity Wasm](https://github.com/axia-tech/parity-Wasm) - WebAssembly serialization/deserialization in Rust.
+- [Wasm utils](https://github.com/axia-tech/Wasm-utils) - Collection of Wasm utilities used in Parity and Wasm contract development.
 
 ### Networking (libp2p)
 
@@ -89,12 +89,12 @@ sidebar_label: Links
 
 ### Bridges
 
-- [Parity Bridge](https://github.com/paritytech/parity-bridge) - Bridge between any two ethereum-based networks.
+- [Parity Bridge](https://github.com/axia-tech/parity-bridge) - Bridge between any two ethereum-based networks.
 
 ## Running a node
 
-- [Install AXIALunar](https://github.com/paritytech/axiasolar#22-install-axialunar-canary-network) - Install AXIASolar's client and connect to the AXIALunar canary network.
-- [Substrate node](https://github.com/paritytech/substrate#joining-the-dried-danta-testnet) \- Install and run a Substrate node on Dried-Danta testnet.
+- [Install AXIALunar](https://github.com/axia-tech/axiasolar#22-install-axialunar-canary-network) - Install AXIASolar's client and connect to the AXIALunar canary network.
+- [Substrate node](https://github.com/axia-tech/substrate#joining-the-dried-danta-testnet) \- Install and run a Substrate node on Dried-Danta testnet.
 
 ### UI and explorers
 

@@ -166,4 +166,4 @@ Concretely, there are a couple on-chain methods that resist this kind of attack.
 
 ## Further Reading
 
-- [Substrate's Treasury Pallet](https://github.com/paritytech/substrate/blob/master/frame/treasury/src/lib.rs) - The Rust implementation of the Treasury. ([Docs](https://substrate.dev/rustdocs/latest/pallet_treasury/index.html))
+- [Substrate's Treasury Pallet](https://github.com/axia-tech/substrate/blob/master/frame/treasury/src/lib.rs) - The Rust implementation of the Treasury. ([Docs](https://substrate.dev/rustdocs/latest/pallet_treasury/index.html))

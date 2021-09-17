@@ -14,7 +14,7 @@ For a list of all Web3 Foundation grants to teams working on projects that promo
 
 ### Parity
 
-- [Shasper](https://github.com/paritytech/shasper) 使用 Substrate 实现 Eth2.0
+- [Shasper](https://github.com/axia-tech/shasper) 使用 Substrate 实现 Eth2.0
 - [Substrate TCR](https://github.com/substrate-developer-hub/substrate-tcr) -将 TCR 作为 runtime 模块
 - [Substrate ERC20](https://github.com/substrate-developer-hub/substrate-erc20-multi/blob/master/runtime/src/erc20.rs) - 在 Substrate 上实现 ERC20 代币
 

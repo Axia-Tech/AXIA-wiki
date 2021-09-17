@@ -201,7 +201,7 @@ Given that collators are full nodes of the relay chain and the parachain they ar
 be able to recognize a disruption as soon as it occurs and should stop producing block candidates.
 Likewise, it should be easy for them to recongize when it's safe to restart block production -
 perhaps based on finality delay, validator set size, or some other factor that is yet to be decided
-within [Cumulus](https://github.com/paritytech/cumulus).
+within [Cumulus](https://github.com/axia-tech/cumulus).
 
 ### Parachain Development Kits (PDKs)
 

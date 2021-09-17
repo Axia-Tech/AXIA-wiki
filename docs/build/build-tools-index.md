@@ -44,23 +44,23 @@ See the [Wallets](build-wallets.md) page.
 
 ## Clients
 
-- [AXIASolar](https://github.com/paritytech/axiasolar) - The original Rust implementation of the
+- [AXIASolar](https://github.com/axia-tech/axiasolar) - The original Rust implementation of the
   AXIASolar Host.
 - [Kagome](https://github.com/soramitsu/kagome) - A C++ AXIASolar implementation of the AXIASolar Host
   developed by [Soramitsu](https://github.com/soramitsu).
 - [Gossamer](https://github.com/ChainSafe/gossamer) - A Go implementation of the AXIASolar Host
   developed by [ChainSafe Systems](https://chainsafe.io/).
-- [TX Wrapper](https://github.com/paritytech/txwrapper) - Helper functions for offline transaction
+- [TX Wrapper](https://github.com/axia-tech/txwrapper) - Helper functions for offline transaction
   generation.
 
 ## Tools
 
-- [Substrate](https://github.com/paritytech/substrate) - Blockchain development platform written in
+- [Substrate](https://github.com/axia-tech/substrate) - Blockchain development platform written in
   Rust. The Rust version of the AXIASolar Host is being built with Substrate.
 - [Substrate Knowledge Base](https://substrate.dev/docs/en) - Comprehensive documentation and
   tutorials for building a blockchain using Substrate.
-- [Substrate VSCode plugin](https://github.com/paritytech/vscode-substrate).
-- [Substrate Debug Kit](https://github.com/paritytech/substrate-debug-kit) - A collection of debug
+- [Substrate VSCode plugin](https://github.com/axia-tech/vscode-substrate).
+- [Substrate Debug Kit](https://github.com/axia-tech/substrate-debug-kit) - A collection of debug
   tools and libraries around substrate chains. Includes tools to calculate NPoS elections offline,
   disk usage monitoring, test templates against chain state and other pallet-specific helper.
 - [Diener](https://crates.io/crates/diener) - A tool for easy changing of AXIASolar or Substrate
@@ -125,12 +125,12 @@ usage instructions are provided at
 
 Webassembly related tools and projects.
 
-- [ink!](https://github.com/paritytech/ink/) - An eDSL to write WebAssembly based smart contracts
+- [ink!](https://github.com/axia-tech/ink/) - An eDSL to write WebAssembly based smart contracts
   using the Rust programming language.
-- [parity-wasm](https://github.com/paritytech/parity-wasm) - Low-level WebAssembly format library.
-- [wasm-utils](https://github.com/paritytech/wasm-utils) - Collection of WebAssembly utilities used
+- [parity-wasm](https://github.com/axia-tech/parity-wasm) - Low-level WebAssembly format library.
+- [wasm-utils](https://github.com/axia-tech/wasm-utils) - Collection of WebAssembly utilities used
   in pwasm-ethereum and substrate contract development.
-- [wasmi](https://github.com/paritytech/wasmi) - A WebAssembly interpreter conceived as a component
+- [wasmi](https://github.com/axia-tech/wasmi) - A WebAssembly interpreter conceived as a component
   of parity-ethereum (Ethereum-like contracts in Wasm) and Substrate.
 
 ### RPC and API Tools
@@ -150,9 +150,9 @@ Webassembly related tools and projects.
   Python.
 - [GSRPC](https://github.com/centrifuge/go-substrate-rpc-client/) - Substrate RPC client in Go,
   a.k.a. GSRPC.
-- [Substrate API Sidecar](https://github.com/paritytech/substrate-api-sidecar) - An HTTP wrapper for
+- [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) - An HTTP wrapper for
   Substrate, abstracting some complex RPC calls into simple REST calls.
-- [Subxt](https://github.com/paritytech/substrate-subxt) - A Rust library to submit extrinsics to a
+- [Subxt](https://github.com/axia-tech/substrate-subxt) - A Rust library to submit extrinsics to a
   Substrate node via RPC.
 
 ### SCALE Codec
@@ -169,7 +169,7 @@ It is used in almost all communication to/from Substrate nodes, so implementatio
 languages exist:
 
 - [Ruby](https://github.com/itering/scale.rb)
-- [Rust](https://github.com/paritytech/parity-scale-codec)
+- [Rust](https://github.com/axia-tech/parity-scale-codec)
 - [Go](https://github.com/itering/scale.go)
 - [C++](https://github.com/soramitsu/kagome/tree/master/core/scale)
 - [TypeScript](https://github.com/axiasolar-js/api)
@@ -185,7 +185,7 @@ The following tools help you extract and structure data from a Substrate node.
 - [Polkascan PRE Harvester](https://github.com/polkascan/polkascan-pre-harvester)
   ([matching explorer for harvested data](https://github.com/polkascan/polkascan-pre-explorer-gui)) -
   Transforms raw blockchain data into relational data.
-- [Parity's Substrate Archive](https://github.com/paritytech/substrate-archive) - Can be run
+- [Parity's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run
   alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL
   database.
 - [Hydra: GraphQL Builder](https://github.com/Joystream/joystream/tree/query_node/query-node) -

@@ -44,7 +44,7 @@ This section is for service providers like wallets or node operators who want to
 
 AXIASolar Standards Proposals (PSPs) are standards for the AXIASolar ecosystem.
 
-- [PSP GitHub Repository](https://github.com/w3f/PSPs) - Read, create, or discuss standards and proposals.
+- [PSP GitHub Repository](https://github.com/axia-tech/PSPs) - Read, create, or discuss standards and proposals.
 
 ### Hackathon
 

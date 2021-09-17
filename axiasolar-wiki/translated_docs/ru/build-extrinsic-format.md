@@ -41,4 +41,4 @@ In addition to the sender field, any parameters to Call/Propose (PrivCall) field
 
 ## Source
 
-[Substrate #195](https://github.com/paritytech/substrate/pull/195)
+[Substrate #195](https://github.com/axia-tech/substrate/pull/195)

@@ -8,7 +8,7 @@ The Parachain Implementer's Guide is still heavily work in progress and maintain
 
 ## Live version
 
-[**The live version**](https://w3f.github.io/parachain-implementers-guide/) is built from the source located in the official [AXIASolar repository](https://github.com/paritytech/axiasolar/tree/master/roadmap/implementers-guide).
+[**The live version**](https://w3f.github.io/parachain-implementers-guide/) is built from the source located in the official [AXIASolar repository](https://github.com/axia-tech/axiasolar/tree/master/roadmap/implementers-guide).
 
 ## Further Resources
 

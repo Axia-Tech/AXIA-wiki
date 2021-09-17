@@ -52,7 +52,7 @@ module.exports = {
       {
         docs: {
           editUrl: ({ docPath }) =>
-            `https://github.com/w3f/axiasolar-wiki/edit/master/docs/${docPath}`,
+            `https://github.com/axia-tech/axiasolar-wiki/edit/master/docs/${docPath}`,
           path: "../docs",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,

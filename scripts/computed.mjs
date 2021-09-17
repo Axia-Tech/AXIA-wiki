@@ -11,7 +11,7 @@ const dotDeposit = (items, bytes) => {
 }
 
 // AXIASolar
-// https://github.com/paritytech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs#L747
+// https://github.com/axia-tech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs#L747
 const dotProxyDepositBase = dotDeposit(1, 8) / DotDecimals;
 const dotProxyDepositFactor = dotDeposit(0, 33) / DotDecimals;
 
@@ -26,7 +26,7 @@ const ksmDeposit = (items, bytes) => {
 const dotIpfsPdfUrl = `https://ipfs.io/ipfs/${process.env.IPFS_PDF_HASH}?filename=axiasolar-wiki.pdf`
 
 // AXIALunar
-// https://github.com/paritytech/axiasolar/blob/master/runtime/axialunar/src/lib.rs#L758
+// https://github.com/axia-tech/axiasolar/blob/master/runtime/axialunar/src/lib.rs#L758
 const ksmProxyDepositBase = ksmDeposit(1, 8) / KsmDecimals;
 const ksmProxyDepositFactor = ksmDeposit(0, 33) / KsmDecimals;
 

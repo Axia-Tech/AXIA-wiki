@@ -102,7 +102,7 @@ You can copy your address by clicking on the account's icon while the desired ch
 
 Subkey is recommended for technically advanced users who are comfortable with the command line and compiling Rust code. Subkey allows you to generate keys on any device that can compile the code. Subkey may also be useful for automated account generation using an air-gapped device. It is not recommended for general users.
 
-For detailed build and usage instructions of subkey, please see [here](https://github.com/paritytech/substrate/tree/master/bin/utils/subkey).
+For detailed build and usage instructions of subkey, please see [here](https://github.com/axia-tech/substrate/tree/master/bin/utils/subkey).
 
 ![subkey-01](assets/accounts/subkey_01.jpg)
 
