@@ -77,7 +77,7 @@ axiasolar-wiki/i18n/*
 axialunar-guide/i18n/*
 
 .docusaurus
-computed-dict.json
+#computed-dict.json
 axiasolar-wiki/i18n/
 !axiasolar-wiki/i18n/en/
 axialunar-guide/i18n/zh-CN/docusaurus-plugin-content-docs/current/
