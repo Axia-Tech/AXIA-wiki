@@ -11,7 +11,7 @@
     "axialunar:i18n:copy-translations": "cp -R axiasolar-wiki/i18n/zh-CN/docusaurus-plugin-content-docs/current axialunar-guide/i18n/zh-CN/docusaurus-plugin-content-docs/current",
     "axialunar:pdf": "yarn pdf --initialDocURLs \"http://localhost:3000/docs/axialunar-index\" --outputPDFFilename=\"axialunar-guide/static/axialunar-wiki.pdf\" --coverTitle=\"AXIALUNAR GUIDE\"",
     "axiasolar:clean": "shx rm -rf node_modules/.cache; docusaurus clear axiasolar-wiki",
-    "axiasolar:start": "yarn generateRegistryTable; docusaurus start axiasolar-wiki",
+    "axiasolar:start": "yarn generateRegistryTable; docusaurus start axiasolar-wiki --port 3401",
     "preaxiasolar:build": "npm-run-all -ln axiasolar:clean -p fetch generateRegistryTable mirror axiasolar:copy-assets:* --aggregate-output",
     "axiasolar-js:build": "cross-env BUILDING=true docusaurus build axiasolar-wiki; node axiasolar-wiki/postprocess",
     "axiasolar:inject": "node --experimental-json-modules scripts/inject.mjs --rootDir axiasolar-wiki/build/axiasolar-wiki --node wss://rpc.axiasolar.io",
