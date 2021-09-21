@@ -1,5 +1,7 @@
-const decodeAddress = require("@axiasolar/util-crypto/address/decode").default;
-const encodeAddress = require("@axiasolar/util-crypto/address/encode").default;
+const decodeAddress =
+  require("@axiasolar-js/util-crypto/address/decode").default;
+const encodeAddress =
+  require("@axiasolar-js/util-crypto/address/encode").default;
 
 const addressChanger = () => {
   const inEl = document.getElementById("input");

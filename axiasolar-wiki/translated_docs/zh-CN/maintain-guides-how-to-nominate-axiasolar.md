@@ -70,12 +70,12 @@ At some point, you might decide to stop nominating one or more validators. You c
 
 Apart from using AXIASolar-JS Apps to participate in staking, you can do all these things in CLI instead. The CLI approach allows you to interact with the AXIASolar network without going to the AXIASolar-JS Apps dashboard.
 
-### 第一步: 安装 @axiasolar/api-cli
+### 第一步: 安装 @axiasolar-js/api-cli
 
-We assume you have installed [NodeJS with npm](https://nodejs.org). Run the following command to install the `@axiasolar/api-cli` globally:
+We assume you have installed [NodeJS with npm](https://nodejs.org). Run the following command to install the `@axiasolar-js/api-cli` globally:
 
 ```bash
-npm install -g @axiasolar/api-cli
+npm install -g @axiasolar-js/api-cli
 ```
 
 ### Step 2. Bond your DOT

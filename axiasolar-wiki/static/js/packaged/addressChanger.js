@@ -22059,7 +22059,7 @@
             );
           });
         var g = i(A("bs58")),
-          r = A("@axiasolar/util"),
+          r = A("@axiasolar-js/util"),
           n = i(A("./checkChecksum")),
           B = i(A("./defaults"));
       },
@@ -22067,7 +22067,7 @@
         "./checkChecksum": 201,
         "./defaults": 203,
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@axiasolar/util": 246,
+        "@axiasolar-js/util": 246,
         bs58: 317,
       },
     ],
@@ -22107,7 +22107,7 @@
             );
           });
         var g = i(A("bs58")),
-          r = A("@axiasolar/util"),
+          r = A("@axiasolar-js/util"),
           n = i(A("./decode")),
           B = i(A("./defaults")),
           I = i(A("./sshash"));
@@ -22117,7 +22117,7 @@
         "./defaults": 203,
         "./sshash": 206,
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@axiasolar/util": 246,
+        "@axiasolar-js/util": 246,
         bs58: 317,
       },
     ],
@@ -22138,14 +22138,14 @@
           (t.default = function (A) {
             return (0, r.default)((0, g.u8aConcat)(n, A), 512);
           });
-        var g = A("@axiasolar/util"),
+        var g = A("@axiasolar-js/util"),
           r = i(A("../blake2/asU8a"));
         const n = (0, g.stringToU8a)("SS58PRE");
       },
       {
         "../blake2/asU8a": 207,
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@axiasolar/util": 246,
+        "@axiasolar-js/util": 246,
       },
     ],
     207: [
@@ -22160,13 +22160,13 @@
               : g.default.blake2b((0, r.u8aToU8a)(A), t, B);
           });
         var g = i(A("blakejs")),
-          r = A("@axiasolar/util"),
-          n = A("@axiasolar/wasm-crypto");
+          r = A("@axiasolar-js/util"),
+          n = A("@axiasolar-js/wasm-crypto");
       },
       {
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@axiasolar/util": 246,
-        "@axiasolar/wasm-crypto": 301,
+        "@axiasolar-js/util": 246,
+        "@axiasolar-js/wasm-crypto": 301,
         blakejs: 314,
       },
     ],
@@ -25070,12 +25070,12 @@
     ],
     300: [
       function (A, e, t) {
-        const { assert: i } = A("@axiasolar/util");
+        const { assert: i } = A("@axiasolar-js/util");
         e.exports = function (A) {
           const e =
             (e) =>
             (...t) =>
-              i(A.isReady(), "@axiasolar/wasm-crypto has not been initialized"),
+              i(A.isReady(), "@axiasolar-js/wasm-crypto has not been initialized"),
               e(...t);
           return {
             bip39Generate: e(A.ext_bip39_generate),
@@ -25102,7 +25102,7 @@
           };
         };
       },
-      { "@axiasolar/util": 246 },
+      { "@axiasolar-js/util": 246 },
     ],
     301: [
       function (A, e, t) {
@@ -25114,7 +25114,7 @@
     302: [
       function (A, e, t) {
         e.exports = {
-          name: "@axiasolar/wasm-crypto",
+          name: "@axiasolar-js/wasm-crypto",
           version: "1.2.1",
           author: "Jaco Greeff <jacogr@gmail.com>",
           files: [
@@ -25132,8 +25132,8 @@
           "react-native": { "./wasm_asm_stub.js": "./wasm_asm.js" },
           main: "index.js",
           types: "index.d.ts",
-          devDependencies: { "@axiasolar/dev": "^0.50.8" },
-          peerDependencies: { "@axiasolar/util": "*" },
+          devDependencies: { "@axiasolar-js/dev": "^0.50.8" },
+          peerDependencies: { "@axiasolar-js/util": "*" },
         };
       },
       {},
@@ -25351,7 +25351,7 @@
               i.__wbindgen_free(t, 1 * g);
             }
           });
-        const { u8aToString: c } = A("@axiasolar/util");
+        const { u8aToString: c } = A("@axiasolar-js/util");
         function h(A, e) {
           return c(n().subarray(A, A + e));
         }
@@ -25364,7 +25364,7 @@
             n = h(g, r).slice();
           return i.__wbindgen_free(g, 1 * r), n;
         };
-        const { stringToU8a: f } = A("@axiasolar/util");
+        const { stringToU8a: f } = A("@axiasolar-js/util");
         let E;
         (E =
           "function" == typeof stringToU8aInto
@@ -25565,7 +25565,7 @@
             i = A;
           });
       },
-      { "./wasm_promise": 305, "@axiasolar/util": 246, crypto: 73 },
+      { "./wasm_promise": 305, "@axiasolar-js/util": 246, crypto: 73 },
     ],
     304: [
       function (A, e, t) {
@@ -29507,8 +29507,8 @@
     ],
     323: [
       function (A, e, t) {
-        const i = A("@axiasolar/util-crypto/address/decode").default,
-          g = A("@axiasolar/util-crypto/address/encode").default;
+        const i = A("@axiasolar-js/util-crypto/address/decode").default,
+          g = A("@axiasolar-js/util-crypto/address/encode").default;
         globalThis.addressChanger = () => {
           const A = document.getElementById("input"),
             e = document.getElementById("prefix-select"),
@@ -29524,8 +29524,8 @@
         };
       },
       {
-        "@axiasolar/util-crypto/address/decode": 202,
-        "@axiasolar/util-crypto/address/encode": 204,
+        "@axiasolar-js/util-crypto/address/decode": 202,
+        "@axiasolar-js/util-crypto/address/encode": 204,
       },
     ],
   },

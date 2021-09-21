@@ -1,7 +1,7 @@
 import replace from "replace-in-file";
 import yargs from "yargs";
 import replacements from "./inject-dict.json";
-import { ApiPromise, WsProvider } from '@axiasolar/api';
+import { ApiPromise, WsProvider } from '@axiasolar-js/api';
 import * as computed from "./computed.mjs";
 
 const argv = yargs(process.argv)

@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import yargs from "yargs";
-import { ApiPromise, WsProvider } from "@axiasolar/api";
+import { ApiPromise, WsProvider } from "@axiasolar-js/api";
 import replacements from "./inject-dict.json";
 import * as computed from "./computed.mjs";
 
@@ -22,7 +22,7 @@ if (argv.isAXIASolar === undefined) {
   throw new Error("Must pass a --isAXIASolar option.");
 }
 
-const node = argv.isAXIASolar ? "wss://rpc.axiasolar.io" : "wss://axialunar-rpc.axiasolar.io/";
+const node = argv.isAXIASolar ? "wss://rpc.polkadot.io" : "wss://kusama-rpc.polkadot.io/";
 console.log("Connecting to node " + node);
 
 let filledDict = {};

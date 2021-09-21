@@ -20,7 +20,7 @@ endpoint `wss://axialunar-rpc.axiasolar.io/`.
 To connect to the Parity node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@axiasolar/api')
+const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://axialunar-rpc.axiasolar.io/')

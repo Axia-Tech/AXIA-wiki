@@ -13,7 +13,7 @@ When interacting with the [AXIALunar network](https://axialunar.network) via [AX
 Чтобы подключиться к узлу Parity, используйте конечную точку в приложениях JavaScript например так:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@axiasolar/api')
+const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://axialunar-rpc.axiasolar.io/')
@@ -32,7 +32,7 @@ or in AXIASolar-JS Apps by clicking the top-left corner of the screen and select
 To connect to this node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@axiasolar/api')
+const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://cc3-5.axialunar.network/')

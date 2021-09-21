@@ -79,7 +79,7 @@ If you are a DOT holder or user of the network, then you do not need to take any
 
 ### What This Means for Builders of Tools
 
-If you are the builder of a tool that consumes the `@axiasolar/api` package &mdash; then there should be no real changes that need to be made in your application. The denomination is technically a cosmetic change and every value is still a constant amount of Plancks.
+If you are the builder of a tool that consumes the `@axiasolar-js/api` package &mdash; then there should be no real changes that need to be made in your application. The denomination is technically a cosmetic change and every value is still a constant amount of Plancks.
 
 However &mdash; if you are a builder of a tool that displays DOT balances to users (e.g. a wallet) or handles DOT balances in an off-chain or custodial way, then you will need to ensure that you display the correct denomination of DOT to users.
 

@@ -100,21 +100,21 @@ AXIASolar-JS Common provides various utility functions that are used across all 
 usage instructions are provided at
 [AXIASolar-JS/Common API Documentation](https://axiasolar.js.org/common/).
 
-- [@axiasolar/keyring](https://axiasolar.js.org/common/keyring/) This allows you to create and load
+- [@axiasolar-js/keyring](https://axiasolar.js.org/common/keyring/) This allows you to create and load
   accounts in JavaScript. It is helpful for creating wallets or any application that will require
   the user to write to chain. [Examples](https://axiasolar.js.org/docs/keyring/start/create).
-- [@axiasolar/util](https://axiasolar.js.org/common/util/) Utility functions like checking if a string
+- [@axiasolar-js/util](https://axiasolar.js.org/common/util/) Utility functions like checking if a string
   is hex-encoded.
-- [@axiasolar/util-crypto](https://axiasolar.js.org/common/util-crypto/) Useful cryptographic
+- [@axiasolar-js/util-crypto](https://axiasolar.js.org/common/util-crypto/) Useful cryptographic
   utilities for developing with AXIASolar.
 
 ### CLI Tools
 
-- [@axiasolar/api-cli](https://github.com/axiasolar-js/tools/tree/master/packages/api-cli) Command
+- [@axiasolar-js/api-cli](https://github.com/axiasolar-js/tools/tree/master/packages/api-cli) Command
   line interface for the axiasolar API. [Documentation](https://axiasolar.js.org/docs/api/start).
-- [@axiasolar/monitor-rpc](https://github.com/axiasolar-js/tools/tree/master/packages/monitor-rpc) An
+- [@axiasolar-js/monitor-rpc](https://github.com/axiasolar-js/tools/tree/master/packages/monitor-rpc) An
   RPC monitor for AXIASolar. See the RPC tools below for additional information.
-- [@axiasolar/signer-cli](https://github.com/axiasolar-js/tools/tree/master/packages/signer-cli) A
+- [@axiasolar-js/signer-cli](https://github.com/axiasolar-js/tools/tree/master/packages/signer-cli) A
   Tool to construct, sign, and broadcast transactions. Signing can be done offline.
 - [AXIASolar API Cpp](https://github.com/usetech-llc/axiasolar_api_cpp) - A С++ API for AXIASolar, can
   build `clip`, a command line tool.
@@ -135,7 +135,7 @@ Webassembly related tools and projects.
 
 ### RPC and API Tools
 
-- [@axiasolar/api/rpc-provider](https://github.com/axiasolar-js/api/tree/master/packages/rpc-provider)
+- [@axiasolar-js/api/rpc-provider](https://github.com/axiasolar-js/api/tree/master/packages/rpc-provider)
   Demonstrates how the JS tools interact with the node over RPC.
 - [RPC documentation](https://axiasolar.js.org/docs/substrate/rpc) - Documentation of Substrate RPC
   methods.

@@ -13,7 +13,7 @@ documentation for the tool you are using:
 - [AXIASolar-JS RPC](https://axiasolar.js.org/docs/substrate/rpc)
 - [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar)
 
-**AXIASolar-JS RPC** is a JavaScript library for interacting with the **Substrate RPC API** endpoint, distributed as `@axiasolar/api` Node.js package.  
+**AXIASolar-JS RPC** is a JavaScript library for interacting with the **Substrate RPC API** endpoint, distributed as `@axiasolar-js/api` Node.js package.  
 **Substrate API Sidecar** is using the **AXIASolar-JS RPC** to provide separately runnable REST services.
 
 ## AXIASolar RPC

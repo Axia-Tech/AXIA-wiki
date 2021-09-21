@@ -13,7 +13,7 @@ When interacting with the [AXIALunar network](https://axialunar.network) via [AX
 To connect to the Parity node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@axiasolar/api')
+const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://axialunar-rpc.axiasolar.io/')
@@ -32,7 +32,7 @@ The Web3 Foundation maintains an archive node at endpoint `wss://cc3-5.axialunar
 To connect to this node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@axiasolar/api')
+const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://cc3-5.axialunar.network/')

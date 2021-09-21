@@ -13,7 +13,7 @@
     "axiasolar:clean": "shx rm -rf node_modules/.cache; docusaurus clear axiasolar-wiki",
     "axiasolar:start": "yarn generateRegistryTable; docusaurus start axiasolar-wiki --port 3401",
     "preaxiasolar:build": "npm-run-all -ln axiasolar:clean -p fetch generateRegistryTable mirror axiasolar:copy-assets:* --aggregate-output",
-    "axiasolar-js:build": "cross-env BUILDING=true docusaurus build axiasolar-wiki; node axiasolar-wiki/postprocess",
+    "axiasolar:build": "cross-env BUILDING=true docusaurus build axiasolar-wiki; node axiasolar-wiki/postprocess",
     "axiasolar:inject": "node --experimental-json-modules scripts/inject.mjs --rootDir axiasolar-wiki/build/axiasolar-wiki --node wss://rpc.axiasolar.io",
     "axiasolar:publish-gh-pages": "cross-env PUBLISHING=true docusaurus deploy axiasolar-wiki",
     "axiasolar:pdf": "yarn pdf --initialDocURLs \"http://localhost:3000/docs/getting-started\" --outputPDFFilename=\"axiasolar-wiki/static/axiasolar-wiki.pdf\" --coverTitle=\"AXIASOLAR WIKI\"",
@@ -71,7 +71,7 @@
   },
   "dependencies": {
     "@axiasolar-js/util": "^1.0.0",
-    "@axiasolar-js/wasm-crypto": "^1.0.0",
+    "@axiasolar-js/wasm-crypto": "1.1.0",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.6",
     "ansi-html": "^0.0.7",
     "immer": "^9.0.6",

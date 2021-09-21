@@ -64,17 +64,17 @@ Once you've configured and started to run a local node, you can interact with it
 
 AXIASolar-JS Common provides various utility functions that are used across all projects in the `@axiasolar` namespace and is split into a number of internal utility packages. The documentation and usage instructions are provided at [AXIASolar-JS/Common API Documentation](https://axiasolar.js.org/common/).
 
-- [@axiasolar/keyring](https://axiasolar.js.org/common/keyring/) To create / load accounts in JavaScript, helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://axiasolar.js.org/common/examples/keyring/)
-- [@axiasolar/util](https://axiasolar.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
-- [@axiasolar/util-crypto](https://axiasolar.js.org/common/util-crypto/) Crypto utilities that will come in handy while developing with AXIASolar.
+- [@axiasolar-js/keyring](https://axiasolar.js.org/common/keyring/) To create / load accounts in JavaScript, helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://axiasolar.js.org/common/examples/keyring/)
+- [@axiasolar-js/util](https://axiasolar.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
+- [@axiasolar-js/util-crypto](https://axiasolar.js.org/common/util-crypto/) Crypto utilities that will come in handy while developing with AXIASolar.
 
 ### CLI Tools
 
-- [@axiasolar/api-cli](https://github.com/axiasolar-js/tools/tree/master/packages/api-cli) Command line interface for the axiasolar API. [Documentation](https://axiasolar.js.org/api/api/)
-- [@axiasolar/monitor-rpc](https://github.com/axiasolar-js/tools/tree/master/packages/monitor-rpc) RPC monitor for AXIASolar. See the RPC tools below for additional information.
-- [@axiasolar/signer-cli](https://github.com/axiasolar-js/tools/tree/master/packages/signer-cli) Tool to construct, sign, and broadcast transactions. Signing can be done offline.
+- [@axiasolar-js/api-cli](https://github.com/axiasolar-js/tools/tree/master/packages/api-cli) Command line interface for the axiasolar API. [Documentation](https://axiasolar.js.org/api/api/)
+- [@axiasolar-js/monitor-rpc](https://github.com/axiasolar-js/tools/tree/master/packages/monitor-rpc) RPC monitor for AXIASolar. See the RPC tools below for additional information.
+- [@axiasolar-js/signer-cli](https://github.com/axiasolar-js/tools/tree/master/packages/signer-cli) Tool to construct, sign, and broadcast transactions. Signing can be done offline.
 
 ### RPC Tools
 
-- [@axiasolar/api/rpc-provider](https://github.com/axiasolar-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
+- [@axiasolar-js/api/rpc-provider](https://github.com/axiasolar-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
 - [RPC documentation](https://axiasolar.js.org/api/substrate/rpc.html)

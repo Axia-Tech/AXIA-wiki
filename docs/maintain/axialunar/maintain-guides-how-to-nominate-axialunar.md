@@ -134,13 +134,13 @@ Apart from using the AXIASolar-JS UI to participate in the staking, you can do a
 CLI instead. The CLI approach allows you to interact with the AXIASolar / AXIALunar network without
 going to the PolkadoJS dashboard.
 
-### Step 1: Install @axiasolar/api-cli
+### Step 1: Install @axiasolar-js/api-cli
 
 We assume you have installed [NodeJS with npm](https://nodejs.org). Run the following command to
-install the `@axiasolar/api-cli` globally:
+install the `@axiasolar-js/api-cli` globally:
 
 ```bash
-npm install -g @axiasolar/api-cli
+npm install -g @axiasolar-js/api-cli
 ```
 
 ### Step 2. Bond your KSM
