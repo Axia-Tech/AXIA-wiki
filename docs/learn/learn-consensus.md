@@ -120,7 +120,7 @@ produces a primary block from a [VRF-selected](learn-randomness.md) validator. T
 either a _primary_ or a _secondary_ block, and no slots are ever skipped.
 
 For more details on BABE, please see the
-[BABE paper](https://research.web3.foundation/en/latest/axiasolar/block-production/Babe.html).
+[BABE paper](https://research.axiacoin.org/en/latest/axiasolar/block-production/Babe.html).
 
 ### BADASS BABE: SASSAFRAS
 
@@ -200,7 +200,7 @@ The two main differences between GRANDPA and Casper FFG are:
 
 # Resources
 
-- [BABE paper](https://research.web3.foundation/en/latest/axiasolar/block-production/Babe.html) - The
+- [BABE paper](https://research.axiacoin.org/en/latest/axiasolar/block-production/Babe.html) - The
   academic description of the BABE protocol.
 - [GRANDPA paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf) - The academic
   description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.

@@ -8,7 +8,7 @@ Examples are helpful to demonstrate patterns of development. This repository con
 
 ## Hibah Web3
 
-For a list of all Web3 Foundation grants to teams working on projects that promote the AXIASolar ecosystem, please see the [Grants](grants.md) page.
+For a list of all AXIACoin Foundation grants to teams working on projects that promote the AXIASolar ecosystem, please see the [Grants](grants.md) page.
 
 ## Runtimes Substrat
 

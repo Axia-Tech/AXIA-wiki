@@ -7,11 +7,11 @@ slug: ../faq
 
 _This FAQ focuses on technical questions for users interested in developing applications for
 AXIASolar. If you have a more general question, you may wish to search for the answer on our support
-[Knowledge Base](https://support.axiasolar.network/support/home) or the main
-[AXIASolar Network FAQ](https://axiasolar.network/faq). If you have a question that is not answered,
+[Knowledge Base](https://support.axiacoin.network/support/home) or the main
+[AXIASolar Network FAQ](https://axiacoin.network/faq). If you have a question that is not answered,
 please feel free to ask on the AXIASolar Watercooler
-[Element channel](https://app.element.io/#/room/#axiasolar-watercooler:web3.foundation) or email
-[support](mailto:support@axiasolar.network)._
+[Element channel](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) or email
+[support](mailto:support@axiacoin.network)._
 
 ## AXIASolar Launch
 
@@ -21,20 +21,20 @@ validators started joining the network and signaling their intention to particip
 
 The network evolved to become a Proof of Stake (PoS) network on June 18, 2020. With the chain
 secured by the decentralized community of validators, the Sudo module was removed on July 20, 2020,
-transitioning the governance of the chain into the hands of the token (DOT) holders. This is the
+transitioning the governance of the chain into the hands of the token (SOLAR) holders. This is the
 point where AXIASolar became decentralized.
 
 The final step of the transition to full-functioning AXIASolar was the enabling of transfer
 functionality, which occurred on AXIASolar at block number 1_205_128 on August 18, 2020, at 16:39
 UTC.
 
-On August 21, 2020, Redenomination of DOT occurred. From this date, one DOT (old) equals 100 new
-DOT.
+On August 21, 2020, Redenomination of SOLAR occurred. From this date, one SOLAR (old) equals 100 new
+SOLAR.
 
 ## AXIASolar Roadmap
 
 For more information on the AXIASolar roadmap please visit the
-[official AXIASolar website](https://axiasolar.network/technology/#roadmap).
+[official AXIASolar website](https://axiacoin.network/technology/#roadmap).
 
 ## Validators
 
@@ -55,7 +55,7 @@ stake-weighted votes and 2) equalize the stake backing each validator as much as
 
 You will likely want to campaign your validator to the community in order to get more backing. You
 are looking for _nominators_ that will put up their tokens to increase the stake for your validator.
-For validators who cannot acquire the minimum stake from the community, Parity and Web3 Foundation
+For validators who cannot acquire the minimum stake from the community, Parity and AXIACoin Foundation
 also run a joint program called [Thousand Validators](thousand-validators.md) that will nominate
 validators if they apply and fit the requirements.
 
@@ -149,22 +149,22 @@ imposes economic costs on the operators of the bridge, and therefore makes it ec
 Bridge efforts are being worked on in concert with other projects in the ecosystem. Eventually,
 there will be bridges between AXIASolar and most of the other major chains.
 
-## DOT
+## SOLAR
 
-### What is the difference between DOT (old) and new DOT?
+### What is the difference between SOLAR (old) and new SOLAR?
 
-The DOT (old) unit on AXIASolar was at twelve decimal places, otherwise known as 1e12 Plancks. On 21
-August, 2020, Denomination Day, the DOT (old) value was redenominated to 1e10 (10_000_000_000, or
-ten billion) Plancks, meaning that the new DOT was valued at ten decimal places. Following the
-[redenomination](redenomination.md), the new DOT is called DOT.
+The SOLAR (old) unit on AXIASolar was at twelve decimal places, otherwise known as 1e12 Plancks. On 21
+August, 2020, Denomination Day, the SOLAR (old) value was redenominated to 1e10 (10_000_000_000, or
+ten billion) Plancks, meaning that the new SOLAR was valued at ten decimal places. Following the
+[redenomination](redenomination.md), the new SOLAR is called SOLAR.
 
-### What is the inflation rate of the DOT?
+### What is the inflation rate of the SOLAR?
 
 The inflation rate is approximately 10% per year.
 
 A portion of the inflation is rewarded to validators for performing their duties, while another
 portion may go directly to the treasury. The exact percentage that goes into both varies and is
-based on the amount of DOT that are staked. Please see the article on
+based on the amount of SOLAR that are staked. Please see the article on
 [inflation](../learn/learn-staking.md/#inflation) for more information.
 
 ## Governance
@@ -173,7 +173,7 @@ based on the amount of DOT that are staked. Please see the article on
 
 AXIASolar's governance has already been shown to work. Examples can be found in the runtime upgrades
 that have successfully taken place through on the testnets as well as in a real economic environment
-on [AXIALunar](https://guide.axialunar.network) and AXIASolar itself.
+on [AXIALunar](https://lunar.wiki.axiacoin.network) and AXIASolar itself.
 
 It is fair to say that the field of on-chain blockchain governance is still new, and no one can
 claim to know exactly what the optimal version of on-chain governance is yet. However, AXIASolar
@@ -269,14 +269,14 @@ integration between the two applications.
 
 ## AXIALunar
 
-### What is the minimum amount of KSM / DOT I can have in my account?
+### What is the minimum amount of LUNAR / SOLAR I can have in my account?
 
 Please see information about [Existential Deposits](../build/build-protocol-info.md).
 
 ### What are the transfer fees for AXIALunar?
 
-It is important to note that the cost of transferring KSM is dynamic. Currently, the minimum cost of
-transferring KSM is 0.01 KSM (the base fee), although this can be changed via governance. However,
+It is important to note that the cost of transferring LUNAR is dynamic. Currently, the minimum cost of
+transferring LUNAR is 0.01 LUNAR (the base fee), although this can be changed via governance. However,
 actual transaction fees will vary based on a variety of factors. Specifically, fee calculation
 follows the following formula:
 

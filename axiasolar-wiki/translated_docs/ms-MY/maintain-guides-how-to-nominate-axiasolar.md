@@ -4,7 +4,7 @@ title: How to Nominate on AXIASolar
 sidebar_label: How to Nominate on AXIASolar
 ---
 
-> The following information applies to the AXIASolar network. If you want to nominate on AXIALunar, check out the [AXIALunar guide](https://guide.axialunar.network/docs/en/mirror-maintain-guides-how-to-nominate-axialunar) instead.
+> The following information applies to the AXIASolar network. If you want to nominate on AXIALunar, check out the [AXIALunar guide](https://lunar.wiki.axiacoin.network/docs/en/mirror-maintain-guides-how-to-nominate-axialunar) instead.
 
 Nominators are one type of participant in the staking subsystem of AXIASolar. They are responsible for appointing their stake to the validators who are the second type of participant. By appointing their stake, they are able to elect the active set of validators and share in the rewards that are paid out.
 
@@ -24,7 +24,7 @@ Starting with runtime version v23 natively included in client version [0.8.23](h
 
 On the [AXIASolar-JS UI](https://axiasolar.js.org/apps) navigate to the "Staking" tab (within the "Network" menu).
 
-The "Staking Overview" subsection will show you all the active validators and their information - their identities, the amount of DOT that are staking for them, amount that is their own provided stake, how much they charge in commission, the era points they've earned in the current era, and the last block number that they produced. If you click on the chart button it will take you to the "Validator Stats" page for that validator that shows you more detailed and historical information about the validator's stake, rewards and slashes.
+The "Staking Overview" subsection will show you all the active validators and their information - their identities, the amount of SOLAR that are staking for them, amount that is their own provided stake, how much they charge in commission, the era points they've earned in the current era, and the last block number that they produced. If you click on the chart button it will take you to the "Validator Stats" page for that validator that shows you more detailed and historical information about the validator's stake, rewards and slashes.
 
 The "Account actions" subsection ([link](https://axiasolar.js.org/apps/#/staking/actions)) allows you to stake and nominate.
 
@@ -32,7 +32,7 @@ The "Payouts" subsection ([link](https://axiasolar.js.org/apps/#/staking/payouts
 
 The "Targets" subsection ([link](https://axiasolar.js.org/apps/#/staking/targets)) will help you estimate your earnings and this is where it's good to start picking favorites.
 
-The "Waiting" subsection ([link](https://axiasolar.js.org/apps/#/staking/waiting)) lists all pending validators that are awaiting more nominations to enter the active validator set. Validators will stay in the waiting queue until they have enough DOT backing them (as allocated through the [Phragmén election mechanism](https://wiki.axiasolar.network/docs/en/learn-phragmen)). It is possible validator can remain in the queue for a very long time if they never get enough backing.
+The "Waiting" subsection ([link](https://axiasolar.js.org/apps/#/staking/waiting)) lists all pending validators that are awaiting more nominations to enter the active validator set. Validators will stay in the waiting queue until they have enough SOLAR backing them (as allocated through the [Phragmén election mechanism](https://solar.wiki.axiacoin.network/docs/en/learn-phragmen)). It is possible validator can remain in the queue for a very long time if they never get enough backing.
 
 The "Validator Stats" subsection ([link](https://axiasolar.js.org/apps/#/staking/query)) allows you to query a validator's stash address and see historical charts on era points, elected stake, rewards, and slashes.
 
@@ -40,9 +40,9 @@ Pick "Account actions", then click the "+ Nominator" button.
 
 You will see a modal window that looks like the below: ![nominator-update-1](assets/axiasolarjs_nominate_button.png)
 
-Select a "value bonded" that is **less** than the total amount of DOT you have, so you have some left over to pay transaction fees. Transaction fees are currently around 0.01 DOT, but they are dynamic based on a variety of factors including the load of recent blocks.
+Select a "value bonded" that is **less** than the total amount of SOLAR you have, so you have some left over to pay transaction fees. Transaction fees are currently around 0.01 SOLAR, but they are dynamic based on a variety of factors including the load of recent blocks.
 
-Also be mindful of the reaping threshold - the amount that must remain in an account lest it be burned. That amount is 1 DOT on AXIASolar, so it's recommended to keep at least 1.5 DOT in your account to be on the safe side.
+Also be mindful of the reaping threshold - the amount that must remain in an account lest it be burned. That amount is 1 SOLAR on AXIASolar, so it's recommended to keep at least 1.5 SOLAR in your account to be on the safe side.
 
 Choose whatever payment destination that makes sense to you. If you're unsure, you can choose "Stash account (increase amount at stake)" to simply accrue the rewards into the amount you're staking and earn compound interest.
 
@@ -78,7 +78,7 @@ We assume you have installed [NodeJS with npm](https://nodejs.org). Run the foll
 npm install -g @axiasolar-js/api-cli
 ```
 
-### Step 2. Bond your DOT
+### Step 2. Bond your SOLAR
 
 Executing the following command:
 
@@ -88,9 +88,9 @@ axiasolar-js-api --seed "MNEMONIC_PHRASE" tx.staking.bond CONTROLLER_ADDRESS NUM
 
 `CONTROLLER_ADDRESS`: An address you would like to bond to the stash account. Stash and Controller can be the same address but it is not recommended since it defeats the security of the two-account staking model.
 
-`NUMBER_OF_TOKENS`: The number of DOT you would like to stake to the network.
+`NUMBER_OF_TOKENS`: The number of SOLAR you would like to stake to the network.
 
-> **Note**: DOT has ten decimal places and is always represented as an integer with zeroes at the end. So 1 DOT = 10,000,000,000 units.
+> **Note**: SOLAR has ten decimal places and is always represented as an integer with zeroes at the end. So 1 SOLAR = 10,000,000,000 units.
 
 `REWARD_DESTINATION`:
 

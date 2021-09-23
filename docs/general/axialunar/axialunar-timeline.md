@@ -16,7 +16,7 @@ more information in the sections below.
 ## Rollout plan
 
 The rollout of full functionality of AXIALunar was staggered to allow for a safe transition. The first
-PoS phase began with 20 validators. Of the 20, the Web3 Foundation ran nine and Parity Technologies
+PoS phase began with 20 validators. Of the 20, the AXIACoin Foundation ran nine and Parity Technologies
 ran six. Five were ran by highly staked community members as voted in by the Phragmén election.
 
 When the initial transition was successful, additional validator spots were opened 10 at a time in
@@ -30,7 +30,7 @@ AXIALunar now has its full functionality enabled.
 
 ## AXIALunar's First Adventure
 
-[Source](https://axiasolar.network/axialunars-first-adventure/)
+[Source](https://axiacoin.network/axialunars-first-adventure/)
 
 On 4th January 2020, the AXIASolar mainnet runtime, which at that time still wasn't live, was
 uploaded to the AXIALunar chain during a runtime upgrade. The mishap was due to a recent split of the

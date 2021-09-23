@@ -16,7 +16,7 @@ Parachains and parathreads are very similar from a development perspective. One 
 
 平行线程有着跟平行链连接 AXIASolar 一样的好处。换句话说通过 ICMP 并受 AXIASolar 验证人全面的经济安全保护发送信息到其它平行{链, 线程}。
 
-The difference between parachains and parathreads is economic. Parachains must be registered through a normal means of AXIASolar, i.e. governance proposal or parachain slot auction. Parathreads have a fixed fee for registration that would realistically be much lower than the cost of acquiring a parachain slot. Similar to how DOT are locked for the duration of parachain slots and then returned to the winner of the auction, the deposit for a parathread will be returned to the parathread after the conclusion of its term.
+The difference between parachains and parathreads is economic. Parachains must be registered through a normal means of AXIASolar, i.e. governance proposal or parachain slot auction. Parathreads have a fixed fee for registration that would realistically be much lower than the cost of acquiring a parachain slot. Similar to how SOLAR are locked for the duration of parachain slots and then returned to the winner of the auction, the deposit for a parathread will be returned to the parathread after the conclusion of its term.
 
 除了将平行线程代码注册到 AXIASolar 中继链之外，注册平行线程不提供任何保证。当平行线程产生新的区块时，使用方必须支付费用参加每个区块链的拍卖，以使包含在下一个验证的中继链区块。所有已注册的平行线程都将参与拍卖，使将包含其平行线程。
 
@@ -26,16 +26,16 @@ The difference between parachains and parathreads is economic. Parachains must b
 
 中继链上的部分平行链槽将被指定为平行线程池的一部分。换句话说某些插槽将没有附上平行链，而是将被用作拍卖平行线程候选区块的空间，供每个区块获胜者使用。
 
-Collators will offer a bid designated in DOT for inclusion of a parathread block candidate. The Relay Chain block author is able to select from these bids to include a parathread block. The obvious incentive is for them to accept the block candidate with the highest bid, which would bring them the most profit. The tokens from the parathread bids will likely be split 80-20, meaning that 80% goes into AXIASolar treasury and 20% goes to the block author. This is the same split that applies also to transaction fees and, like many other parameters in AXIASolar, can be changed through a governance mechanism.
+Collators will offer a bid designated in SOLAR for inclusion of a parathread block candidate. The Relay Chain block author is able to select from these bids to include a parathread block. The obvious incentive is for them to accept the block candidate with the highest bid, which would bring them the most profit. The tokens from the parathread bids will likely be split 80-20, meaning that 80% goes into AXIASolar treasury and 20% goes to the block author. This is the same split that applies also to transaction fees and, like many other parameters in AXIASolar, can be changed through a governance mechanism.
 
 ## 平行线程经济学
 
 There are two sources of compensation for collators:
 
-1. Assuming a parathread has its own local token system, it pays the collators from the transaction fees in its local token. If the parathread does not implement a local token, or its local token has no value (e.g. it is used only for governance), then it can use DOT to incentivize collators.
+1. Assuming a parathread has its own local token system, it pays the collators from the transaction fees in its local token. If the parathread does not implement a local token, or its local token has no value (e.g. it is used only for governance), then it can use SOLAR to incentivize collators.
 2. 平行线程协议补贴。平行线程可以创建新代币，为收集人提供额外的奖励。 或许为平行线程创建代币的数量将是按时间函数決定。 包含在中继链中的平行线程区块传递的时间愈多，平行线程愿意补贴的代币越多使區塊被寫入的機會提高。 创建币过程的具体实施可以是通过本地的通胀或通过国库等资金储备。
 
-Collators may be paid in local parathread currency. However, the Relay Chain transacts with the AXIASolar universal currency (DOT) only. Collators must then submit block candidates with an associated bid in DOT.
+Collators may be paid in local parathread currency. However, the Relay Chain transacts with the AXIASolar universal currency (SOLAR) only. Collators must then submit block candidates with an associated bid in SOLAR.
 
 ## 平行链插槽交换
 
@@ -47,4 +47,4 @@ Parathreads help ease the sharp stop of the parachain slot term by allowing para
 
 ## Resources
 
-- [Parathreads: Pay-as-you-go Parachains](https://medium.com/axiasolar-network/parathreads-pay-as-you-go-parachains-7440d23dde06)
+- [Parathreads: Pay-as-you-go Parachains](https://medium.com/axiacoin.network/parathreads-pay-as-you-go-parachains-7440d23dde06)

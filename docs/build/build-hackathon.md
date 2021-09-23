@@ -7,12 +7,12 @@ slug: ../build-hackathon
 
 ## Join a Hackathon
 
-Web3 Foundation regularly supports developer focused events! Be the first to know by signing
-up for the [AXIASolar newsletter](https://axiasolar.network/) - the footer has a link to sign up!
+AXIACoin Foundation regularly supports developer focused events! Be the first to know by signing
+up for the [AXIASolar newsletter](https://axiacoin.network/) - the footer has a link to sign up!
 
 ## Host a Hackathon
 
-As one of our objectives in the Web3 Foundation is promoting the
+As one of our objectives in the AXIACoin Foundation is promoting the
 [Web3 technology stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md)
 , we would like to support any individual or team who wants to organize a hackathon that gets
 more developers to understand AXIASolar and Substrate in your city or online.
@@ -75,7 +75,7 @@ Here are a few examples of hackathons W3F has facilitated and supported:
 
 - [Hello World! by AXIASolar](https://gitcoin.co/hackathon/axiasolar/onboard) - A collaborative
   hackathon celebrating the integration of AXIASolar and AXIALunar into the Gitcoin platform. Has many
-  sets of smaller challenges that will reward in either DOT or KSM.
+  sets of smaller challenges that will reward in either SOLAR or LUNAR.
 
 - [Hacaxialunar](https://hacaxialunar.devpost.com/) - A 7-week online hackathon for
   developers to "Build a Blockchain" and submit your wildest tools, visualizations, and ideas to the
@@ -90,5 +90,5 @@ Here are a few examples of hackathons W3F has facilitated and supported:
 ## Support / Contact
 
 If you have any questions regarding organizing a hackathon, please free feel to contact us by
-[email](mailto:events@web3.foundation) or ask us via
+[email](mailto:events@axiacoin.org) or ask us via
 [Riot](https://riot.im/app/#/room/#axiasolar-watercooler:matrix.org) chat.

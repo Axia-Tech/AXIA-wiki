@@ -11,20 +11,20 @@ sidebar_label: 链接
 - [Substrate, AXIASolar & The Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg) - Epicenter interviews Gavin Wood.
 - [Blockchain Infrastructure](https://softwareengineeringdaily.com/2018/11/26/parity-blockchain-infrastructure-with-gavin-wood/) - Gavin Wood presents Substrate on Software Daily.
 - [AXIASolar on Zero Knowledge](https://www.zeroknowledge.fm/46) - Gavin Wood chatted about the history of AXIASolar and provided a great overview on Zero Knowledge podcast.
-- [Epicenter and AXIASolar](https://www.youtube.com/watch?v=oiunBLGHlAU) - Epicenter interviews Peter Czaban of Web3 Foundation about AXIASolar.
+- [Epicenter and AXIASolar](https://www.youtube.com/watch?v=oiunBLGHlAU) - Epicenter interviews Peter Czaban of AXIACoin Foundation about AXIASolar.
 - [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) - Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIASolar, and builds a blockchain on-stage in 30 minutes using Substrate. (Video)
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of AXIASolar. (Video)
 - [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-parity-technologies/) - Dr. Jutta Steiner presents AXIASolar. (Video)
 - [Interoperability Intro](https://www.youtube.com/watch?v=RSAFHhTwA8Q) - Rob Habermeier presents "Interoperability: Connecting the Dots."
 - [Consensus and Finality in AXIASolar](https://www.youtube.com/watch?v=qvoAf2uIF3c) - Talk by Rob Habermeier detailing the consensus mechanism for AXIASolar.
-- [DOT Day Seoul](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt3mA_d9wu74vVe0bM37-39) - Video playlist of all talks at DOT Day Seoul.
+- [SOLAR Day Seoul](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt3mA_d9wu74vVe0bM37-39) - Video playlist of all talks at SOLAR Day Seoul.
 
 ### AXIALunar
 
 - [AXIALunar 首页](https://axialunar.network/) AXIASolar 的金丝雀网络(AXIALunar)所有内容的页面。
-- [AXIALunar 用户指南](https://guide.axialunar.network)AXIALunar 特定信息的来源。
-- [ Kusam 认领](https://claim.axialunar.network/)供 DOT 持有者认领 AXIALunar 代币的资料。
-- [ AXIALunar 发布公告](https://medium.com/axiasolar-network/axialunar-network-7446706b8f4c) AXIALunar 网络的第一条公告。
+- [AXIALunar 用户指南](https://lunar.wiki.axiacoin.network)AXIALunar 特定信息的来源。
+- [ Kusam 认领](https://claim.axialunar.network/)供 SOLAR 持有者认领 AXIALunar 代币的资料。
+- [ AXIALunar 发布公告](https://medium.com/axiacoin.network/axialunar-network-7446706b8f4c) AXIALunar 网络的第一条公告。
 
 ### Substrate
 
@@ -32,10 +32,10 @@ sidebar_label: 链接
 - [ Parity Substrate ](https://github.com/axia-tech/substrate)-第一个用 Rust 编写。Parity Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Parity 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Parity 还为[比特币](https://github.com/axia-tech/parity-bitcoin)维护客户端，并为[Zcash ](https://github.com/ZcashFoundation/zebra)建立客户端。
 - [Substrate Developer Hub](https://substrate.dev/docs/en/) - Overviews, tutorials and reference documentation for Substrate.
 - [Substrate 介绍](https://youtu.be/iUMZyL5kTwc)-Gavin Wood 博士介绍 Substrate ，这是 AXIASolar 的底层技术。
-- [Substrate 与 AXIASolar 的关系](https://medium.com/axiasolar-network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - 关于两种技术的详细描述
+- [Substrate 与 AXIASolar 的关系](https://medium.com/axiacoin.network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - 关于两种技术的详细描述
 - [AXIASolar & Substrate 概述](https://www.youtube.com/watchv=0iouzddi5is&feature=youtu.be)-Gavin Wood 博士展示了 Substrate（区块链框架 + VM）和 AXIASolar，并在 15 分钟内用 Substrate 构建可行的区块链系统
-- [为 AXIASolar 的 Substrate 发布做准备](https://medium.com/axiasolar-network/preparing-for-axiasolars-launch-with-substrate-cb97819ed815)-如何在发布之前开始准备 AXIASolar 的概述。
-- [A brief summary of everything Substrate and AXIASolar](https://medium.com/axiasolar-network/a-brief-summary-of-everything-substrate-and-axiasolar-f1f21071499d) - Blog post that recaps information regarding Substrate and AXIASolar.
+- [为 AXIASolar 的 Substrate 发布做准备](https://medium.com/axiacoin.network/preparing-for-axiasolars-launch-with-substrate-cb97819ed815)-如何在发布之前开始准备 AXIASolar 的概述。
+- [A brief summary of everything Substrate and AXIASolar](https://medium.com/axiacoin.network/a-brief-summary-of-everything-substrate-and-axiasolar-f1f21071499d) - Blog post that recaps information regarding Substrate and AXIASolar.
 - [在 Substrate](https://www.youtube.com/watch?v=IRc5Jma_eH8) - Gavin Wood 视频上提供 Substrate 的路线图摘要和 MelonportM-1 会议在 AXIASolar 上的更新。
 - [The Relationship between Rust, Substrate and AXIASolar](https://www.youtube.com/watch?v=aVW_eG-IH7o&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=8) - Logan Saether, from the technical education team presents a technical explaination of the relationship between Rust, Substrate and AXIASolar.
 
@@ -43,7 +43,7 @@ sidebar_label: 链接
 
 - [治理](learn-governance) - 治理系统概述。
 - [治理演示](https://www.youtube.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734)-Gavin wood 博士介绍了 AXIASolar 的初始治理结构。(视频)
-- [AXIALunar 推出和治理](https://axiasolar.network/axialunar-rollout-and-governance/)-关于 AXIALunar 金丝雀网络的治理信息。
+- [AXIALunar 推出和治理](https://axiacoin.network/axialunar-rollout-and-governance/)-关于 AXIALunar 金丝雀网络的治理信息。
 - [AXIASolar 上的治理](https://www.crowdcast.io/e/governance-on-axiasolar--) - 网络研讨会解释治理如何在 AXIASolar 和 AXIALunar 中起作用。
 
 ### 共识与确定性
@@ -52,15 +52,15 @@ sidebar_label: 链接
 
 ### 研究
 
-- [ W3F 研究](https://research.web3.foundation)-Web3 基金会研究中心。
+- [ W3F 研究](https://research.axiacoin.org)-Web3 基金会研究中心。
 
 ## 开发
 
-- [在 AXIASolar 构建的团队](https://forum.web3.foundation/t/teams-building-on-axiasolar/67)-在 AXIASolar 上 构建的团队名单。
+- [在 AXIASolar 构建的团队](https://forum.axiacoin.org/t/teams-building-on-axiasolar/67)-在 AXIASolar 上 构建的团队名单。
 
 ### AXIALunar
 
-- [在 AXIASolar 构建的团队](https://forum.web3.foundation/t/teams-building-on-axiasolar/67)-在 AXIASolar 上 构建的团队名单。
+- [在 AXIASolar 构建的团队](https://forum.axiacoin.org/t/teams-building-on-axiasolar/67)-在 AXIASolar 上 构建的团队名单。
 - [样式指南](https://github.com/axia-tech/axiasolar/wiki/Style-Guide)-为 AXIASolar 的 Rust 做贡献。
 
 ### AXIASolar Host

@@ -4,7 +4,7 @@ title: AXIASolar 開發者入门指南
 sidebar_label: AXIASolar 開發者入门指南
 ---
 
-_本文是对博文[《波卡开发入门需知》](https://medium.com/axiasolar-network/everything-you-need-to-know-to-prepare-for-axiasolar-32d08b929735)的维护版本。_
+_本文是对博文[《波卡开发入门需知》](https://medium.com/axiacoin.network/everything-you-need-to-know-to-prepare-for-axiasolar-32d08b929735)的维护版本。_
 
 作为一个区块链协议，波卡希望达成两个目标：为所有接入的平行链提供**共享安全性**，并允许所有接入的链使用[XCMP](learn-crosschain)来实现**互操作**。随着 Parity 的 Substrate 和 Cumulus 这类[PDKs](build-pdk)的问世，开发和启动一条新链所需花费的时间已大大减少。以前开发一条新链需要几年，而现在可能只需要几周甚至几天。
 
@@ -72,7 +72,7 @@ _本文是对博文[《波卡开发入门需知》](https://medium.com/axiasolar
 
 未来会有很多不同语言编写的 PDKs，就像波卡 HOST 有多种[实现](learn-implementations.md)一样。
 
-> **立即行动:** 您是否想开发一套全新的平行链开发套件？ Web3 基金会这些团队提供资助，了解更多并且在[W3F 资助页面](https://grants.web3.foundation)申请。
+> **立即行动:** 您是否想开发一套全新的平行链开发套件？ Web3 基金会这些团队提供资助，了解更多并且在[W3F 资助页面](https://grants.axiacoin.org)申请。
 
 ### 开始使用 Substrate
 

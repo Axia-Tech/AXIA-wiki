@@ -10,7 +10,7 @@ To do this, we bring together various novel mechanisms, including an amorphous s
 
 ## Mechanism
 
-In order to make any changes to the network, the idea is to compose active token holders and the council together to administrate a network upgrade decision. No matter whether the proposal is proposed by the public (DOT holders) or the council, it finally will have to go through a referendum to let all DOT holders, weighted by stake, make the decision.
+In order to make any changes to the network, the idea is to compose active token holders and the council together to administrate a network upgrade decision. No matter whether the proposal is proposed by the public (SOLAR holders) or the council, it finally will have to go through a referendum to let all SOLAR holders, weighted by stake, make the decision.
 
 To better understand how the council is formed, please read [this section](#council).
 
@@ -33,7 +33,7 @@ Emergency proposals deal with major problems with the network that need to be "f
 
 #### Public Referenda
 
-Anyone can propose a referendum by depositing the minimum amount of tokens for a certain period (number of blocks). If someone agrees with the proposal, they may deposit the same amount of tokens to support it - this action is called _seconding_. The proposal with the highest amount of bonded support will be selected to be a referendum in the next voting cycle. Note that this may be different than the absolute number of seconds; for instance, three accounts bonding 20 DOT each would "outweigh" ten accounts bonding a single DOT each. The bonded tokens will be released once the proposal is tabled (that is, brought to a vote).
+Anyone can propose a referendum by depositing the minimum amount of tokens for a certain period (number of blocks). If someone agrees with the proposal, they may deposit the same amount of tokens to support it - this action is called _seconding_. The proposal with the highest amount of bonded support will be selected to be a referendum in the next voting cycle. Note that this may be different than the absolute number of seconds; for instance, three accounts bonding 20 SOLAR each would "outweigh" ten accounts bonding a single SOLAR each. The bonded tokens will be released once the proposal is tabled (that is, brought to a vote).
 
 There can be a maximum of 100 public proposals in the proposal queue.
 
@@ -64,14 +64,14 @@ It is possible to vote without locking at all, but your vote is worth a small fr
 ```
 Example:
 
-Peter: Votes `No` with 10 DOT for a 128 week lock period  => 10 * 6 = 60 Votes
+Peter: Votes `No` with 10 SOLAR for a 128 week lock period  => 10 * 6 = 60 Votes
 
-Logan: Votes `Yes` with 20 DOT for a 4 week lock period => 20 * 1 = 20 Votes
+Logan: Votes `Yes` with 20 SOLAR for a 4 week lock period => 20 * 1 = 20 Votes
 
-Kevin: Votes `Yes` with 15 DOT for a 8 week lock period => 15 * 2 = 30 Votes
+Kevin: Votes `Yes` with 15 SOLAR for a 8 week lock period => 15 * 2 = 30 Votes
 ```
 
-Even though combined both Logan and Kevin vote with more DOT than Peter, the lock period for both of them is less than Peter, leading to their voting power counting as less.
+Even though combined both Logan and Kevin vote with more SOLAR than Peter, the lock period for both of them is less than Peter, leading to their voting power counting as less.
 
 #### Tallying
 
@@ -92,7 +92,7 @@ against - the number of nay votes
 
 turnout - the total number of voting tokens (does not include conviction)
 
-electorate - the total number of DOT tokens issued in the network
+electorate - the total number of SOLAR tokens issued in the network
 ```
 
 ##### Super-Majority Approve
@@ -119,14 +119,14 @@ _To know more about where these above formulas come from, please read the [democ
 Example:
 
 Assume:
-- We only have 1,500 DOT tokens in total.
+- We only have 1,500 SOLAR tokens in total.
 - Public proposal
 
-John  - 500 DOT
-Peter - 100 DOT
-Lilly - 150 DOT
-JJ    - 150 DOT
-Ken   - 600 DOT
+John  - 500 SOLAR
+Peter - 100 SOLAR
+Lilly - 150 SOLAR
+JJ    - 150 SOLAR
+Ken   - 600 SOLAR
 
 John: Votes `Yes` for a 4 week lock period  => 500 * 1 = 500 Votes
 
@@ -266,7 +266,7 @@ The purpose of having a prime member of the council is to ensure a quorum, even 
 
 ## Technical Committee
 
-The Technical Committee was introduced in the [AXIALunar rollout and governance post](https://axiasolar.network/axialunar-rollout-and-governance/) as one of the three chambers of AXIALunar governance (along with the Council and the Referendum chamber). The Technical Committee is composed of the teams that have successfully implemented or specified either a AXIASolar/AXIALunar runtime or AXIASolar Host. Teams are added or removed from the Technical Committee via simple majority vote of the [Council](#council).
+The Technical Committee was introduced in the [AXIALunar rollout and governance post](https://axiacoin.network/axialunar-rollout-and-governance/) as one of the three chambers of AXIALunar governance (along with the Council and the Referendum chamber). The Technical Committee is composed of the teams that have successfully implemented or specified either a AXIASolar/AXIALunar runtime or AXIASolar Host. Teams are added or removed from the Technical Committee via simple majority vote of the [Council](#council).
 
 The Technical Committee can, along with the Council, produce emergency referenda, which are fast-tracked for voting and implementation. These emergency referenda are intended for use only under urgent circumstances.
 

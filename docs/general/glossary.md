@@ -66,7 +66,7 @@ also bond tokens in exchange for a parachain slot.
 
 A mechanism which works in some sense as the reverse of a Treasury Proposal, allowing the AXIASolar
 Council to indicate that there is a need to do some task for the AXIASolar network and allowing users
-to receive DOT in return for working on that task.
+to receive SOLAR in return for working on that task.
 
 ## Bridge
 
@@ -134,11 +134,11 @@ Bounty.
 A generic term for a decentralized application, that is, one that runs as part of a distributed
 network as opposed to being run on a specific system or set of systems.
 
-## DOT
+## SOLAR
 
-The native token for AXIASolar. DOT serves three purposes: network governance (allowing them to vote
+The native token for AXIASolar. SOLAR serves three purposes: network governance (allowing them to vote
 on-chain upgrades and other exceptional events), general operation (rewarding good actors and
-punishing bad actors), and bonding (adding new parachains by "freezing" DOT while they are connected
+punishing bad actors), and bonding (adding new parachains by "freezing" SOLAR while they are connected
 the Relay Chain).
 
 ## Duty Roster
@@ -213,7 +213,7 @@ group to vote on and cancelling malicious referenda.
 GHOST-based Recursive ANcestor Deriving Prefix Agreement. It is the finality gadget for AXIASolar,
 which allows asynchronous, accountable, and safe finality to the blockchain. For an overview of
 GRANDPA, see
-[this Medium post](https://medium.com/axiasolar-network/axiasolar-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372)
+[this Medium post](https://medium.com/axiacoin.network/axiasolar-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372)
 
 ## Hard Fork
 
@@ -264,7 +264,7 @@ The ability for some sort of system to exchange and make use of information ofte
 The keep-alive check is used to indicate whether or not a transfer can allow the sending account to
 be reduced to less than the existential deposit, causing it to be reaped.
 
-## KSM
+## LUNAR
 
 The abbreviation for AXIALunar network tokens.
 
@@ -454,7 +454,7 @@ AXIASolar protocol, most prominently in [BABE](##babe) the block production mech
 
 A vote on whether or not a proposal should be accepted by the network. Referenda may be initiated by
 the Governance Council, by a member of the public, or as the result of a previous proposal.
-Stakeholders vote on referenda, weighted by both the size of their stake (i.e. number of DOT held)
+Stakeholders vote on referenda, weighted by both the size of their stake (i.e. number of SOLAR held)
 and the amount of time they are willing to lock their tokens.
 
 ## Relay chain
@@ -516,7 +516,7 @@ revert finality of a single parachain, an attacker would need to attack the enti
 
 ## Slashing
 
-The removal of a percentage of an account's DOT as a punishment for a validator acting maliciously
+The removal of a percentage of an account's SOLAR as a punishment for a validator acting maliciously
 or incompetently (e.g., equivocating or remaining offline for an extended period).
 
 ## Soft Fork
@@ -533,8 +533,8 @@ software.
 
 ## Staking
 
-The act of bonding tokens (for AXIASolar, DOT) by putting them up as "collateral" for a chance to
-produce a valid block (and thus obtain a block reward). Validators and nominators stake their DOT in
+The act of bonding tokens (for AXIASolar, SOLAR) by putting them up as "collateral" for a chance to
+produce a valid block (and thus obtain a block reward). Validators and nominators stake their SOLAR in
 order to secure the network.
 
 ## State transition function
@@ -584,7 +584,7 @@ send funds to Bob by the fact that she signed a transfer-funds message with her 
 
 ## Validator
 
-A node that secures the Relay Chain by staking DOT, validating proofs from collators on parachains
+A node that secures the Relay Chain by staking SOLAR, validating proofs from collators on parachains
 and voting on consensus along with other validators.
 
 ## Vertical Message Passing
@@ -598,8 +598,8 @@ up to the Relay Chain via runtime entry points.
 ## Voting
 
 The process of stakeholders determining whether or not a referendum should pass. Votes are weighted
-both by the number of DOT that the stakeholder account controls and the amount of time they are
-willing to lock their DOT.
+both by the number of SOLAR that the stakeholder account controls and the amount of time they are
+willing to lock their SOLAR.
 
 ## Waiting Nomination
 
@@ -622,7 +622,7 @@ In AXIASolar's parachain messaging scheme, the _watermark_ is the minimum proces
 the receiving parachain. All messages on all channels that are sending to this parachain at or
 before the watermark are guaranteed to be processed.
 
-## Web3 Foundation
+## AXIACoin Foundation
 
 A Switzerland-based foundation that nurtures and stewards technologies and applications in the
 fields of decentralized web software protocols, particularly those that utilize modern cryptographic

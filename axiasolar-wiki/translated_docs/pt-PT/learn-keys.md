@@ -21,9 +21,9 @@ At the same time, `sr25519` makes implementing more complex protocols safer. In 
 
 ### "Controller" and "Stash" Keys
 
-When we talk about "controller" and "stash" keys, we usually talk about them in the context of running a validator or nominating DOTs, but they are useful concepts for all users to know. Both keys are types of account keys. They are distinguished by their intended use, not by an underlying cryptographic difference. All the info mentioned in the parent section applies to these keys. When creating new controller or stash keys, all cryptography supported by account keys are an available option.
+When we talk about "controller" and "stash" keys, we usually talk about them in the context of running a validator or nominating SOLARs, but they are useful concepts for all users to know. Both keys are types of account keys. They are distinguished by their intended use, not by an underlying cryptographic difference. All the info mentioned in the parent section applies to these keys. When creating new controller or stash keys, all cryptography supported by account keys are an available option.
 
-The controller key is a semi-online key that will be in the direct control of a user, and used to submit manual extrinsics. For validators or nominators, this means that the controller key will be used to start or stop validating or nominating. Controller keys should hold some DOTs to pay for fees, but they should not be used to hold huge amounts or life savings. Since they will be exposed to the internet with relative frequency, they should be treated carefully and occasionally replaced with new ones.
+The controller key is a semi-online key that will be in the direct control of a user, and used to submit manual extrinsics. For validators or nominators, this means that the controller key will be used to start or stop validating or nominating. Controller keys should hold some SOLARs to pay for fees, but they should not be used to hold huge amounts or life savings. Since they will be exposed to the internet with relative frequency, they should be treated carefully and occasionally replaced with new ones.
 
 The stash key is a key that will, in most cases, be a cold wallet, existing on a piece of paper in a safe or protected by layers of hardware security. It should rarely, if ever, be exposed to the internet or used to submit extrinsics. The stash key is intended to hold a large amount of funds. It should be thought of as a saving's account at a bank, which ideally is only ever touched in urgent conditions. Or, perhaps a more apt metaphor is to think of it as buried treasure, hidden on some random island and only known by the pirate who originally hid it.
 
@@ -52,7 +52,7 @@ The original key derivation cryptography that was implemented for AXIASolar and 
 
 Most cryptocurrencies, including Bitcoin and Ethereum, currently use ECDSA signatures on the secp256k1 curve. This curve is considered much more secure than NIST curves, which [have possible backdoors from the NSA](#appendix-a-on-the-security-of-curves). The Curve25519 is considered possibly _even more_ secure than this one and allows for easier implementation of Schnorr signatures. A recent patent expiration on it has made it the preferred choice for use in AXIASolar.
 
-The choice of using Schnorr signatures over using ECDSA is not so cut and dry. As stated in Jeff Burdges' (a Web3 researcher) [original forum post](https://forum.web3.foundation/t/account-signatures-and-keys-in-axiasolar/70/2) on the topic:
+The choice of using Schnorr signatures over using ECDSA is not so cut and dry. As stated in Jeff Burdges' (a Web3 researcher) [original forum post](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70/2) on the topic:
 
 > There is one sacrifice we make by choosing Schnorr signatures over ECDSA signatures for account keys: Both require 64 bytes, but only ECDSA signatures communicate their public key. There are obsolete Schnorr variants that support recovering the public key from a signature, but they break important functionality like hierarchical deterministic key derivation. In consequence, Schnorr signatures often take an extra 32 bytes for the public key.
 
@@ -68,7 +68,7 @@ Conveniently, [Mike Hamburg's Decaf paper](https://www.shiftleft.org/papers/deca
 
 The Decaf paper approach by the [Ristretto Group](https://ristretto.group/) was extended and implemented in Rust to include cofactor-8 curves like the Curve25519 and makes Schnorr signatures over the Edward's curve more secure.
 
-The Web3 Foundation has implemented a Schnorr signature library using the more secure Ristretto compression over the Curve25519 in the [Schnorrkel](https://github.com/axia-tech/schnorrkel) repository. Schnorrkel implements related protocols on top of this curve compression such as HDKD, MuSig, and a verifiable random function (VRF). It also includes various minor improvements such as the hashing scheme STROBE that can theoretically process huge amounts of data with only one call across the Wasm boundary.
+The AXIACoin Foundation has implemented a Schnorr signature library using the more secure Ristretto compression over the Curve25519 in the [Schnorrkel](https://github.com/axia-tech/schnorrkel) repository. Schnorrkel implements related protocols on top of this curve compression such as HDKD, MuSig, and a verifiable random function (VRF). It also includes various minor improvements such as the hashing scheme STROBE that can theoretically process huge amounts of data with only one call across the Wasm boundary.
 
 The implementation of Schnorr signatures that is used in AXIASolar and implements the Schnorrkel protocols over the Ristretto compression of the Curve25519 is known as **sr25519**.
 
@@ -84,8 +84,8 @@ Even though Schnorr signatures allow for signature aggregation, BLS signatures a
 
 ## Resources
 
-- [Key discovery attack on BIP32-Ed25519](https://forum.web3.foundation/t/key-recovery-attack-on-bip32-ed25519/44) - Forum post detailing a potential attack on BIP32-Ed25519. A motivation for transition to the sr25519 variant.
-- [Account signatures and keys in AXIASolar](https://forum.web3.foundation/t/account-signatures-and-keys-in-axiasolar/70) - Original forum post by Web3 researcher Jeff Burdges.
+- [Key discovery attack on BIP32-Ed25519](https://forum.axiacoin.org/t/key-recovery-attack-on-bip32-ed25519/44) - Forum post detailing a potential attack on BIP32-Ed25519. A motivation for transition to the sr25519 variant.
+- [Account signatures and keys in AXIASolar](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70) - Original forum post by Web3 researcher Jeff Burdges.
 - [Are Schnorr signatures quantum computer resistant?](https://bitcoin.stackexchange.com/questions/57965/are-schnorr-signatures-quantum-computer-resistant/57977#57977)
 
 ## Appendix A: On the security of curves

@@ -17,5 +17,5 @@ Collators are a key element of [XCMP (Cross-Chain Message Passing)](learn-crossc
 ### Guides and Tools
 
 - [Workshop covering Cumulus and Collators](https://substrate.dev/cumulus-workshop/#/1-prep/1-compiling)
-- [BetaNet tesnet guide](https://wiki.axiasolar.network/docs/en/build-parachains-betanet)
+- [BetaNet tesnet guide](https://solar.wiki.axiacoin.network/docs/en/build-parachains-betanet)
 - [axiasolar-launch](https://github.com/shawntabrizi/axiasolar-launch) - a tool to quickly spin up a local AXIASolar testnet based on some parameters like number of parachains, collator setup, etc.

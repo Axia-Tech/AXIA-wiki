@@ -72,5 +72,5 @@ redirected into the [Society](../../maintain/axialunar/maintain-guides-society-a
 
 ### Precision
 
-KSM have 12 decimals of precision. In other words, 1e12 (1_000_000_000_000, or one trillion) Plancks
-make up a single KSM.
+LUNAR have 12 decimals of precision. In other words, 1e12 (1_000_000_000_000, or one trillion) Plancks
+make up a single LUNAR.

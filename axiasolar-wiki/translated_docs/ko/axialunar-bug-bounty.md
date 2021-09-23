@@ -6,7 +6,7 @@ sidebar_label: Bug Bounty
 
 We call on our community and all bug bounty hunters to help identify bugs in AXIALunar.
 
-If you discover a bug, we appreciate your cooperation in responsibly investigating and reporting it as per [instructions on the Web3 Foundation website](https://web3.foundation/security-report/). Disclosure to any third parties disqualifies bug bounty eligibility.
+If you discover a bug, we appreciate your cooperation in responsibly investigating and reporting it as per [instructions on the AXIACoin Foundation website](https://axiacoin.org/security-report/). Disclosure to any third parties disqualifies bug bounty eligibility.
 
 ## Eligibility
 
@@ -27,4 +27,4 @@ Please note: The submission quality will be a large factor in the level of consi
 
 ## How to report a bug
 
-Please follow the instructions at [web3.foundation/security-report/](https://web3.foundation/security-report/).
+Please follow the instructions at [axiacoin.org/security-report/](https://axiacoin.org/security-report/).

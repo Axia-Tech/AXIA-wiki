@@ -60,7 +60,7 @@ to support it - this action is called _seconding_. The proposal with the highest
 support will be selected to be a referendum in the next voting cycle.
 
 Note that this may be different from the absolute number of seconds; for instance, three accounts
-bonding 20 DOT each would "outweigh" ten accounts bonding a single DOT each. The bonded tokens will
+bonding 20 SOLAR each would "outweigh" ten accounts bonding a single SOLAR each. The bonded tokens will
 be released once the proposal is tabled (that is, brought to a vote).
 
 There can be a maximum of 100 public proposals in the proposal queue.
@@ -110,14 +110,14 @@ this at [Voluntary Locking](#voluntary-locking).
 ```
 Example:
 
-Peter: Votes `No` with 10 DOT for a 128 week lock period  => 10 * 6 = 60 Votes
+Peter: Votes `No` with 10 SOLAR for a 128 week lock period  => 10 * 6 = 60 Votes
 
-Logan: Votes `Yes` with 20 DOT for a 4 week lock period => 20 * 1 = 20 Votes
+Logan: Votes `Yes` with 20 SOLAR for a 4 week lock period => 20 * 1 = 20 Votes
 
-Kevin: Votes `Yes` with 15 DOT for a 8 week lock period => 15 * 2 = 30 Votes
+Kevin: Votes `Yes` with 15 SOLAR for a 8 week lock period => 15 * 2 = 30 Votes
 ```
 
-Even though combined both Logan and Kevin vote with more DOT than Peter, the lock period for both of
+Even though combined both Logan and Kevin vote with more SOLAR than Peter, the lock period for both of
 them is less than Peter, leading to their voting power counting as less.
 
 #### Tallying
@@ -143,7 +143,7 @@ against - the number of nay votes
 
 turnout - the total number of voting tokens (does not include conviction)
 
-electorate - the total number of DOT tokens issued in the network
+electorate - the total number of SOLAR tokens issued in the network
 ```
 
 ##### Super-Majority Approve
@@ -174,14 +174,14 @@ _To know more about where these above formulas come from, please read the
 Example:
 
 Assume:
-- We only have 1_500 DOT tokens in total.
+- We only have 1_500 SOLAR tokens in total.
 - Public proposal
 
-John  - 500 DOT
-Peter - 100 DOT
-Lilly - 150 DOT
-JJ    - 150 DOT
-Ken   - 600 DOT
+John  - 500 SOLAR
+Peter - 100 SOLAR
+Lilly - 150 SOLAR
+JJ    - 150 SOLAR
+Ken   - 600 SOLAR
 
 John: Votes `Yes` for a 4 week lock period  => 500 * 1 = 500 Votes
 
@@ -393,7 +393,7 @@ prime.
 ## Technical Committee
 
 The Technical Committee was introduced in the
-[AXIALunar rollout and governance post](https://axiasolar.network/axialunar-rollout-and-governance/) as one
+[AXIALunar rollout and governance post](https://axiacoin.network/axialunar-rollout-and-governance/) as one
 of the three chambers of AXIALunar governance (along with the Council and the Referendum chamber). The
 Technical Committee is composed of the teams that have successfully implemented or specified either
 a AXIASolar/AXIALunar runtime or AXIASolar Host. Teams are added or removed from the Technical Committee

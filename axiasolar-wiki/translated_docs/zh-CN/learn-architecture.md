@@ -8,7 +8,7 @@ AXIASolar 采用共享安全性和可互操作的异构多链结构。
 
 ## 中继链 (Relay Chain)
 
-中继链是 AXIASolar 的中心链。所有的验证者都在中继链上抵押 DOT 并验证中继链。中继链仅由相对少量的交易类型构成，包括和治理机制互交，平行链拍卖，参与 NPo'S。中继链是可以被设计成具有最精简的功能的 - 例如，中继链并不支持智能合约。中继链的主要只能是负责协调整个系统，包括各个平行链。其他的具体工作应该交予实现不同功能的平行链来执行。
+中继链是 AXIASolar 的中心链。所有的验证者都在中继链上抵押 SOLAR 并验证中继链。中继链仅由相对少量的交易类型构成，包括和治理机制互交，平行链拍卖，参与 NPo'S。中继链是可以被设计成具有最精简的功能的 - 例如，中继链并不支持智能合约。中继链的主要只能是负责协调整个系统，包括各个平行链。其他的具体工作应该交予实现不同功能的平行链来执行。
 
 ## [Parachain](learn-parachains) and [Parathread](learn-parathreads) Slots
 
@@ -16,7 +16,7 @@ AXIASolar can support a number of execution slots. These slots are like cores on
 
 Most of the computation that happens across the AXIASolar network as a whole will be delegated to specific parachain or parathread implementations that handle various use cases. AXIASolar places no constraints over what parachains are able to do besides that they must be able to generate a proof that can be validated by the validators assigned to the parachain. This proof verifies the state transition of the parachain. Some parachains may be specific to a particular application, others may focus on specific features like smart contracts, privacy, or scalability &mdash; still others might be experimental architectures that are not necessarily blockchain in nature.
 
-AXIASolar provides many ways to secure a slot for a parachain slot for a particular length of time. Parathreads are part of a pool that shares slots and must win auctions for individual blocks. Parathreads and parachains have the exact same API; their difference is economic. Parachains will have to reserve DOT for duration of their slot lease; parathreads will pay on a per-block basis. Parathreads can become parachains, and vice-versa.
+AXIASolar provides many ways to secure a slot for a parachain slot for a particular length of time. Parathreads are part of a pool that shares slots and must win auctions for individual blocks. Parathreads and parachains have the exact same API; their difference is economic. Parachains will have to reserve SOLAR for duration of their slot lease; parathreads will pay on a per-block basis. Parathreads can become parachains, and vice-versa.
 
 ## 共享安全性
 

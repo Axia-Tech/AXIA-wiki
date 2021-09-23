@@ -10,7 +10,7 @@ AXIALunar is wild and fast; great for bold experimentation and early-stage deplo
 
 ## What the two networks have in common
 
-AXIALunar was released as an early version of the same code to be used in AXIASolar, which means they share the same underlying architecture: a multichain, heterogeneously-sharded design based on [Nominated Proof of Stake (NPoS)](learn-consensus). Both networks also share key innovations like on-chain [governance](learn-governance), hot-swappable runtimes for forkless, on-chain upgrades, and [Cross-Chain Message Passing (XCMP)](learn-crosschain) for interoperability. Governance on both AXIASolar and AXIALunar is designed to be decentralized and permissionless, giving a say in how the network is run to everyone who owns the native token (DOT for AXIASolar, KSM for AXIALunar). Therefore, **over time the networks will evolve independently, converging or diverging according to the decisions of their respective communities.**
+AXIALunar was released as an early version of the same code to be used in AXIASolar, which means they share the same underlying architecture: a multichain, heterogeneously-sharded design based on [Nominated Proof of Stake (NPoS)](learn-consensus). Both networks also share key innovations like on-chain [governance](learn-governance), hot-swappable runtimes for forkless, on-chain upgrades, and [Cross-Chain Message Passing (XCMP)](learn-crosschain) for interoperability. Governance on both AXIASolar and AXIALunar is designed to be decentralized and permissionless, giving a say in how the network is run to everyone who owns the native token (SOLAR for AXIASolar, LUNAR for AXIALunar). Therefore, **over time the networks will evolve independently, converging or diverging according to the decisions of their respective communities.**
 
 ## Key differences
 
@@ -38,10 +38,10 @@ AXIALunar may also prove to be the perfect environment for ambitious experiments
 
 ## Going forward
 
-Ultimately, AXIALunar and AXIASolar will live on as independent, standalone networks with their own communities, their own governance, and their own complementary use cases, though they will continue to maintain a close relationship, with many teams likely deploying applications to both networks. In the future, we’re also likely to see AXIALunar bridged to AXIASolar for cross-network interoperability. Web3 Foundation remains committed to both networks going forward, providing crucial support and guidance to teams building for the ecosystem.
+Ultimately, AXIALunar and AXIASolar will live on as independent, standalone networks with their own communities, their own governance, and their own complementary use cases, though they will continue to maintain a close relationship, with many teams likely deploying applications to both networks. In the future, we’re also likely to see AXIALunar bridged to AXIASolar for cross-network interoperability. AXIACoin Foundation remains committed to both networks going forward, providing crucial support and guidance to teams building for the ecosystem.
 
 ## Explore more
 
 - [About AXIALunar](https://axialunar.network)
-- [The AXIALunar Wiki](https://guide.axialunar.network)
+- [The AXIALunar Wiki](https://lunar.wiki.axiacoin.network)
 - [AXIALunar on AXIASolar-JS Apps](https://axialunar.dotapps.io)

@@ -97,7 +97,7 @@ The **most user-friendly** way to create a AXIASolar or AXIALunar address is thr
 
 账本可以与硬件钱包集成。完整指南可在[此处](learn-ledger)获得。
 
-另外，您可能会在[钱包](build-wallets)页面上找到其他钱包，但请记住，其中一些是**未经审计的**，除非另有说明，否则它们并不隶属于 Web3 Foundation 或 AXIASolar 的正式项目。
+另外，您可能会在[钱包](build-wallets)页面上找到其他钱包，但请记住，其中一些是**未经审计的**，除非另有说明，否则它们并不隶属于 AXIACoin Foundation 或 AXIASolar 的正式项目。
 
 ## 余额类型
 
@@ -111,7 +111,7 @@ The **most user-friendly** way to create a AXIASolar or AXIALunar address is thr
 
 ## 现有存款和回收
 
-When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit: 0.001666666667 KSM (on AXIALunar) or 1 DOT (on AXIASolar mainnet).
+When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit: 0.001666666667 LUNAR (on AXIALunar) or 1 SOLAR (on AXIASolar mainnet).
 
 如果帐户低于现有存款，则会导致该帐户*被回收*。该帐户以及该地址中的所有资金将从区块链状态中删除，以节省空间。您不会失去对回收地址的访问权限 - 只要您拥有私钥或恢复短语，您仍然可以使用该地址 - 但它需要充值额外的存续金额才能与链进行交互。
 
@@ -231,29 +231,29 @@ console.log("DepositFactor", deposit(0, 32));
 
 Thus the deposit values can be calculated as shown in the table below.
 
-|          | AXIASolar (DOT) | AXIALunar (KSM)   | AXIASolar (planck) | AXIALunar (planck) |
+|          | AXIASolar (SOLAR) | AXIALunar (LUNAR)   | AXIASolar (planck) | AXIALunar (planck) |
 | -------- | -------------- | -------------- | ----------------- | --------------- |
 | 存款基数 | 20.088         | 3.347999999942 | 200880000000      | 3347999999942   |
 | 存款因子 | .032           | 0.005333333312 | 320000000         | 5333333312      |
 
-Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First, Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 DOT` while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.
+Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First, Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 SOLAR` while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.
 
 ### Example with AXIASolar.JS
 
-For this example, we will be using the [AlphaNet](https://wiki.axiasolar.network/docs/en/maintain-networks#alphanet-test-network) testnet and [AXIASolar.JS Apps](https://wiki.axiasolar.network/docs/en/learn-balance-transfers#axiasolar-js-apps) to create a 2-of-3 multisig address and send a transaction with it.
+For this example, we will be using the [AlphaNet](https://solar.wiki.axiacoin.network/docs/en/maintain-networks#alphanet-test-network) testnet and [AXIASolar.JS Apps](https://solar.wiki.axiacoin.network/docs/en/learn-balance-transfers#axiasolar-js-apps) to create a 2-of-3 multisig address and send a transaction with it.
 
 > While AlphaNet is meant to replicate the AXIASolar mainnet as closely as possible, there are a few notable differences:
 >
-> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 DOT.
-> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 DOT.
+> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 SOLAR.
+> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 SOLAR.
 >
-> The photos below reflects values in WND, but instructions are the same for DOT.
+> The photos below reflects values in WND, but instructions are the same for SOLAR.
 
 **To create a multisig address and send a transaction using it, you will need the following:**
 
 - List of the multisig member's addresses. We will use Alice, Bob, and Charlie.
-- DOT to deposit into the multisig address.
-- ~20.2 DOT refundable deposit to send a multisig tarnsaction. This needs to be in the address that initiates a multisignature transaction (in this example, Alice).
+- SOLAR to deposit into the multisig address.
+- ~20.2 SOLAR refundable deposit to send a multisig tarnsaction. This needs to be in the address that initiates a multisignature transaction (in this example, Alice).
 
 You should already have your own account with some coins in it.
 

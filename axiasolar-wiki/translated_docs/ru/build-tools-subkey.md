@@ -6,7 +6,7 @@ sidebar_label: Subkey
 
 Subkey is a commandline utility included with Substrate that generates or restores Substrate keys.
 
-`subkey` will use [sr25519](http://wiki.axiasolar.network/en/latest/axiasolar/learn/cryptography/#keypairs-and-signing) cryptography by default. If you need to use the older ed25519 cryptography to generate or restore your key, or to generate a session key for use by validators, pass the `--ed25519` flag to any of the commands.
+`subkey` will use [sr25519](http://wiki.axiacoin.network/en/latest/axiasolar/learn/cryptography/#keypairs-and-signing) cryptography by default. If you need to use the older ed25519 cryptography to generate or restore your key, or to generate a session key for use by validators, pass the `--ed25519` flag to any of the commands.
 
 ## Usage
 

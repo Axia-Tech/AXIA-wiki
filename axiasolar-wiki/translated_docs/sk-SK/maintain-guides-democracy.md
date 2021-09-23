@@ -30,7 +30,7 @@ The important parameters to be aware of when voting using the Democracry module 
 
 Proposing an action to be taken requires you to bond some tokens. In order to ensure you have enough tokens to make the minimum deposit you can check the parameter in the chain state. The bonded tokens will only be released once the proposal is tabled (that is, brought to a vote); there is no way for the user to "revoke" their proposal and get the bond back before it has become a referendum. Since it is essentially impossible to predict definitely when a proposal may become a referendum (if ever), this means that any tokens bonded will be locked for an indeterminate amount of time.
 
-> Proposals cannot be revoked by the proposer, even if they never turn into a referendum. It is important to realize that there is no guarantee that DOT you use for proposing or seconding a proposal will be returned to that account in any given timeframe.
+> Proposals cannot be revoked by the proposer, even if they never turn into a referendum. It is important to realize that there is no guarantee that SOLAR you use for proposing or seconding a proposal will be returned to that account in any given timeframe.
 
 On AXIASolar Apps you can use the "Democracy" tab to make a new proposal. In order to submit a proposal, you will need to submit what's called the preimage hash. The preimage hash is simply the hash of the proposal to be enacted. The easiest way to get the preimage hash is by clicking on the "Submit preimage" button and configuring the action that you are proposing.
 
@@ -64,9 +64,9 @@ Once the transaction is included you should see the UI update with the informati
 
 Seconding a proposal means that you are agreeing with the proposal and backing it with an equal amount of deposit as was originally locked. The bonded tokens will be released once the proposal is tabled (that is, brought to a vote), just like the original proposer's bond. By seconding a proposal you will move it higher up the rank of proposals. The most seconded proposal &mdash; in value, not number of supporters &mdash; will be brought to a referendum every launch period.
 
-It is important to note that there is no way to stop or cancel seconding a proposal once it has been done. Therefore, the DOT that was seconded will be reserved until the proposal is tabled as a referendum. This is an indeterminate amount of time, since there is no guarantee that a proposal will become a referendum for a given period, as other proposals may be proposed and tabled before it.
+It is important to note that there is no way to stop or cancel seconding a proposal once it has been done. Therefore, the SOLAR that was seconded will be reserved until the proposal is tabled as a referendum. This is an indeterminate amount of time, since there is no guarantee that a proposal will become a referendum for a given period, as other proposals may be proposed and tabled before it.
 
-Note that it is possible for a single account to second a proposal multiple times. This is by design; it is the value, not the number of seconds _per se_, that counts in terms of weighting. If there were a limit of one second per account, it would be trivial for a user with, for example, 1000 DOT to create ten accounts with 100 DOT instead of a single account with 1000 DOT. Thus, no restrictions are made on the number of times a single account can second a proposal.
+Note that it is possible for a single account to second a proposal multiple times. This is by design; it is the value, not the number of seconds _per se_, that counts in terms of weighting. If there were a limit of one second per account, it would be trivial for a user with, for example, 1000 SOLAR to create ten accounts with 100 SOLAR instead of a single account with 1000 SOLAR. Thus, no restrictions are made on the number of times a single account can second a proposal.
 
 To second a proposal, navigate to the proposal you want to second and click on the "Second" button.
 
@@ -96,9 +96,9 @@ When you are comfortable with the decision you have made, click the blue "Vote" 
 
 ## Unlocking Locked Tokens
 
-Like [vesting](https://wiki.axiasolar.network/docs/en/learn-DOT#lazy-vesting), the tokens that are locked in democracy are unlocked lazily. This means that you, the user, must explicitly call an unlock extrinsic to make your funds available again after the lock expires. Unbonding is another term you hear a lot in AXIASolar, it means withdrawing your DOT that was used in staking. To know more about it, please see [here](maintain-guides-how-to-unbond).
+Like [vesting](https://solar.wiki.axiacoin.network/docs/en/learn-SOLAR#lazy-vesting), the tokens that are locked in democracy are unlocked lazily. This means that you, the user, must explicitly call an unlock extrinsic to make your funds available again after the lock expires. Unbonding is another term you hear a lot in AXIASolar, it means withdrawing your SOLAR that was used in staking. To know more about it, please see [here](maintain-guides-how-to-unbond).
 
-You can do this from the "Accounts" page in [AXIASolar-JS Apps](https://axiasolar.js.org/apps/#/accounts). First check that your account has a "democracy" lock by opening the details on your balance. In the example below the account has 150 KSM locked in democracy.
+You can do this from the "Accounts" page in [AXIASolar-JS Apps](https://axiasolar.js.org/apps/#/accounts). First check that your account has a "democracy" lock by opening the details on your balance. In the example below the account has 150 LUNAR locked in democracy.
 
 ![democracy balance details](assets/democracy_balance_details.png)
 
@@ -122,7 +122,7 @@ Now submit the following extrinsic: `democracy.unlock(target)`, where target is 
 
 If you return to the [Accounts page](https://axiasolar.js.org/apps/#/accounts), you should see that the democracy lock has been released.
 
-Note that this applies only to locked DOT that were used for voting on referenda. In order to unlock DOT locked by voting for members of the AXIASolar Council, you need to go to the [Council](https://axiasolar.js.org/apps/#/council) page, click "Vote", and then click on "Unvote All".
+Note that this applies only to locked SOLAR that were used for voting on referenda. In order to unlock SOLAR locked by voting for members of the AXIASolar Council, you need to go to the [Council](https://axiasolar.js.org/apps/#/council) page, click "Vote", and then click on "Unvote All".
 
 ## Delegate a Vote
 

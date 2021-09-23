@@ -11,20 +11,20 @@ sidebar_label: Links
 - [Substrate, AXIASolar & The Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg) - Epicenter interviews Gavin Wood.
 - [Blockchain Infrastructure](https://softwareengineeringdaily.com/2018/11/26/parity-blockchain-infrastructure-with-gavin-wood/) - Gavin Wood presents Substrate on Software Daily.
 - [AXIASolar on Zero Knowledge](https://www.zeroknowledge.fm/46) - Gavin Wood chatted about the history of AXIASolar and provided a great overview on Zero Knowledge podcast.
-- [Epicenter and AXIASolar](https://www.youtube.com/watch?v=oiunBLGHlAU) - Epicenter interviews Peter Czaban of Web3 Foundation about AXIASolar.
+- [Epicenter and AXIASolar](https://www.youtube.com/watch?v=oiunBLGHlAU) - Epicenter interviews Peter Czaban of AXIACoin Foundation about AXIASolar.
 - [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) - Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIASolar, and builds a blockchain on-stage in 30 minutes using Substrate. (Video)
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of AXIASolar. (Video)
 - [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-parity-technologies/) - Dr. Jutta Steiner presents AXIASolar. (Video)
 - [Interoperability Intro](https://www.youtube.com/watch?v=RSAFHhTwA8Q) - Rob Habermeier presents "Interoperability: Connecting the Dots."
 - [Consensus and Finality in AXIASolar](https://www.youtube.com/watch?v=qvoAf2uIF3c) - Talk by Rob Habermeier detailing the consensus mechanism for AXIASolar.
-- [DOT Day Seoul](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt3mA_d9wu74vVe0bM37-39) - Video playlist of all talks at DOT Day Seoul.
+- [SOLAR Day Seoul](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt3mA_d9wu74vVe0bM37-39) - Video playlist of all talks at SOLAR Day Seoul.
 
 ### AXIALunar
 
 - [AXIALunar Home Page](https://axialunar.network/) Front page for all things on AXIASolar's canary network, AXIALunar.
-- [AXIALunar User Guide](https://guide.axialunar.network) The source of truth for AXIALunar-specific information.
-- [AXIALunar Claims](https://claim.axialunar.network/) Information for DOT holders to claim their AXIALunar tokens.
-- [AXIALunar Launch Announcement](https://medium.com/axiasolar-network/axialunar-network-7446706b8f4c) The first announcement of the AXIALunar network.
+- [AXIALunar User Guide](https://lunar.wiki.axiacoin.network) The source of truth for AXIALunar-specific information.
+- [AXIALunar Claims](https://claim.axialunar.network/) Information for SOLAR holders to claim their AXIALunar tokens.
+- [AXIALunar Launch Announcement](https://medium.com/axiacoin.network/axialunar-network-7446706b8f4c) The first announcement of the AXIALunar network.
 
 ### Substrate
 
@@ -32,10 +32,10 @@ sidebar_label: Links
 - [Parity Substrate](https://github.com/axia-tech/substrate) - First implementation, written in Rust. Parity Technologies is a 75-person development team based in the UK and Germany. Parity’s tech is responsible for running the premier client for Ethereum, powering 40% of the nodes in the network. Parity also maintains a client for [Bitcoin](https://github.com/axia-tech/parity-bitcoin) and developed and released [Zebra](https://github.com/ZcashFoundation/zebra), a rust implementation of a zcash node.
 - [Substrate Developer Hub](https://substrate.dev/docs/en/) - Overviews, tutorials and reference documentation for Substrate.
 - [Substrate Intro](https://youtu.be/iUMZyL5kTwc) - Dr. Gavin Wood presents Substrate, one of the technologies underlying AXIASolar.
-- [How Substrate relates to AXIASolar](https://medium.com/axiasolar-network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - A Tale of Two Technologies Presentation Transcript
+- [How Substrate relates to AXIASolar](https://medium.com/axiacoin.network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - A Tale of Two Technologies Presentation Transcript
 - [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) - Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIASolar, and builds a blockchain on-stage in 30 minutes using Substrate.
-- [Preparing for AXIASolar's Launch with Substrate](https://medium.com/axiasolar-network/preparing-for-axiasolars-launch-with-substrate-cb97819ed815) - An overview of how to start preparing for AXIASolar before the launch date.
-- [A brief summary of everything Substrate and AXIASolar](https://medium.com/axiasolar-network/a-brief-summary-of-everything-substrate-and-axiasolar-f1f21071499d) - Blog post that recaps information regarding Substrate and AXIASolar.
+- [Preparing for AXIASolar's Launch with Substrate](https://medium.com/axiacoin.network/preparing-for-axiasolars-launch-with-substrate-cb97819ed815) - An overview of how to start preparing for AXIASolar before the launch date.
+- [A brief summary of everything Substrate and AXIASolar](https://medium.com/axiacoin.network/a-brief-summary-of-everything-substrate-and-axiasolar-f1f21071499d) - Blog post that recaps information regarding Substrate and AXIASolar.
 - [On the Horizon for Substrate](https://www.youtube.com/watch?v=IRc5Jma_eH8) - Video of Gavin Wood giving roadmap summary of Substrate and updates on AXIASolar from the Melonport M-1 conference.
 - [The Relationship between Rust, Substrate and AXIASolar](https://www.youtube.com/watch?v=aVW_eG-IH7o&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=8) - Logan Saether, from the technical education team presents a technical explaination of the relationship between Rust, Substrate and AXIASolar.
 
@@ -43,7 +43,7 @@ sidebar_label: Links
 
 - [Governance](learn-governance) - Overview of governance system.
 - [Governance Demo](https://www.youtube.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734) - Dr. Gavin Wood presents the initial governance structure for AXIASolar. (Video)
-- [AXIALunar Rollout and Governance](https://axiasolar.network/axialunar-rollout-and-governance/) - Information on the governance on the AXIALunar Canary network.
+- [AXIALunar Rollout and Governance](https://axiacoin.network/axialunar-rollout-and-governance/) - Information on the governance on the AXIALunar Canary network.
 - [Governance on AXIASolar](https://www.crowdcast.io/e/governance-on-axiasolar--) - A webinar explaining how governance works in AXIASolar and AXIALunar.
 
 ### Consensus and Finality
@@ -52,11 +52,11 @@ sidebar_label: Links
 
 ### Research
 
-- [W3F Research](https://research.web3.foundation) - Research hub for Web3 Foundation.
+- [W3F Research](https://research.axiacoin.org) - Research hub for AXIACoin Foundation.
 
 ## Development
 
-- [Teams building on AXIASolar](https://forum.web3.foundation/t/teams-building-on-axiasolar/67) - List of teams building on AXIASolar.
+- [Teams building on AXIASolar](https://forum.axiacoin.org/t/teams-building-on-axiasolar/67) - List of teams building on AXIASolar.
 
 ### AXIASolar
 
@@ -102,7 +102,7 @@ sidebar_label: Links
 
 ### Crowdcast Webinars
 
-- [AXIASolar Homepage](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the Web3 Foundation has done.
+- [AXIASolar Homepage](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the AXIACoin Foundation has done.
 - [Governance on AXIASolar](https://www.crowdcast.io/e/governance-on-axiasolar--) - An explanation of how governance works in AXIASolar and AXIALunar, with Bill Laboon.
 - [AXIALunar](https://www.crowdcast.io/e/qpz8aran) - An overview of AXIALunar with Anson Lau.
 - [Block Production and Finalization in AXIASolar](https://www.crowdcast.io/e/axiasolar-block-production) - An explanation of how BABE and GRANDPA work together to produce and finalize blocks on AXIALunar, with Bill Laboon.

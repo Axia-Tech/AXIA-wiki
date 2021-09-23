@@ -19,7 +19,7 @@ See the [Wallets](build-wallets.md) page.
 ## Network Monitoring & Reporting
 
 - [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/) - Network information including what nodes are running the chain, what software versions they are running, sync status, and location.
-- Polkabot - AXIASolar network monitoring and reporting using Riot chat. Users may create custom bot plugins. [Blogpost](https://medium.com/axiasolar-network/polkabot-a3dba18c20c8). [Github Repository](https://gitlab.com/Polkabot/polkabot)
+- Polkabot - AXIASolar network monitoring and reporting using Riot chat. Users may create custom bot plugins. [Blogpost](https://medium.com/axiacoin.network/polkabot-a3dba18c20c8). [Github Repository](https://gitlab.com/Polkabot/polkabot)
 - [PolkaStats](https://polkastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows network information and staking details from validators and intentions. [Github Repository](https://github.com/Colm3na/polkastats-v2/)
 
 ## Rust

@@ -4,11 +4,11 @@ title: 验证人
 sidebar_label: 验证人
 ---
 
-Validators secure the Relay Chain by staking DOT, validating proofs from collators and participating in consensus with other validators.
+Validators secure the Relay Chain by staking SOLAR, validating proofs from collators and participating in consensus with other validators.
 
 这些参与者将在向中继链以及所有平行链添加新区块方面发挥关键作用。这允许各方通过中继链完成跨链交易。
 
-Validators perform two functions. First, verifying that the information contained in an assigned set of parachain blocks is valid (such as the identities of the transacting parties and the subject matter of the contract). Their second role is to participate in the consensus mechanism to produce the Relay Chain blocks based on validity statements from other validators. Any instances of non-compliance with the consensus algorithms result in punishment by removal of some or all of the validator’s staked DOT, thereby discouraging bad actors. Good performance, however, will be rewarded, with validators receiving block rewards (including transaction fees) in the form of DOT in exchange for their activities.
+Validators perform two functions. First, verifying that the information contained in an assigned set of parachain blocks is valid (such as the identities of the transacting parties and the subject matter of the contract). Their second role is to participate in the consensus mechanism to produce the Relay Chain blocks based on validity statements from other validators. Any instances of non-compliance with the consensus algorithms result in punishment by removal of some or all of the validator’s staked SOLAR, thereby discouraging bad actors. Good performance, however, will be rewarded, with validators receiving block rewards (including transaction fees) in the form of SOLAR in exchange for their activities.
 
 ## 指南
 
@@ -23,8 +23,8 @@ Validators perform two functions. First, verifying that the information containe
 - [如何运行 AXIASolar 节点 (Docker)](https://medium.com/@acvlls/setting-up-a-maintain-the-easy-way-3a885283091f)
 - [Web 3.0 验证人节点的无服务器故障转移解决方案](https://medium.com/hackernoon/a-serverless-failover-solution-for-web-3-0-validator-nodes-e26b9d24c71d) - 博客详细介绍了如何创建可靠的故障转移解决方案运行验证人。
 - [云服务器清单](maintain-guides-how-to-validate-axialunar#vps-list)
-- [AXIASolar 验证人休息室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - 验证人聊天室。
-- [ 惩罚(Slashing)后果](https://wiki.axiasolar.network/docs/en/learn-staking#slashing) -了解更多有关运行验证人节点惩罚(Slashing)的后果。
+- [AXIASolar 验证人休息室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - 验证人聊天室。
+- [ 惩罚(Slashing)后果](https://solar.wiki.axiacoin.network/docs/en/learn-staking#slashing) -了解更多有关运行验证人节点惩罚(Slashing)的后果。
 - [Why You Should be A Validator on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=0EmP0s6JOW4&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=2)
 - [Roles and Responsibilities of a Validator](https://www.youtube.com/watch?v=riVg_Up_fCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=15)
 - [Validating on AXIASolar](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of how to validate on AXIASolar, with Joe Petrowski and David Dorgan of Parity Technologies, along with Tim Ogilvie from Staked.
@@ -37,7 +37,7 @@ Validators perform two functions. First, verifying that the information containe
 
 - [PANIC for AXIASolar](https://github.com/SimplyVC/panic_axiasolar) - AXIASolar / AXIALunar 节点的监视和警报方案
 - [AXIASolar Telemetry 服务](https://telemetry.axiasolar.io/#list/AXIALunar%20CC3) - 网络信息，包括在某一条链上有什么节点在运行，正在运行的版本以及同步状态。
-- [其它有用链接](https://forum.web3.foundation/t/useful-links-for-validators/20)
+- [其它有用链接](https://forum.axiacoin.org/t/useful-links-for-validators/20)
 
 ## 验证人统计
 

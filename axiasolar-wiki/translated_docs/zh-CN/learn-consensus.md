@@ -49,7 +49,7 @@ AXIASolar 的验证人将会参与在每次的[抽奖](learn-randomness)去决�
 
 当没有任何验证人在随机抽奖中达到足够低的资格进行生产区块时，时隙便会没有区块。我们在后台通过运行辅助轮循样式验证人选择算法来避免这种情况。通过选择该算法生成区块的验证人始终生成区块，但是如果同一时隙也从[ VRF 选择](learn-randomness)验证人生成主块，则这些*次要*区块将被忽略。因此时隙可以具有* 主要 *或* 次要 *区块，并且不会跳过任何时隙。
 
-有关更多 BABE 的详细信息，请参见[正在研究的草案](http://research.web3.foundation/zh/latest/axiasolar/BABE/Babe/)。
+有关更多 BABE 的详细信息，请参见[正在研究的草案](http://research.axiacoin.org/zh/latest/axiasolar/BABE/Babe/)。
 
 #### AXIALunar 和 AXIASolar 的 BABE 次生块的区别
 
@@ -73,7 +73,7 @@ GRANDPA (基于 GHOST 的递归祖先派生前缀协议) 是为 AXIASolar 中继
 
 [Rust 的执行](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs)是 Substrate 框架的一部分。
 
-更多详细的相关信息，请参见 W3F 研究页面上的[GRANDPA 研究页面](https://research.web3.foundation/en/latest/axiasolar/GRANDPA.html)。
+更多详细的相关信息，请参见 W3F 研究页面上的[GRANDPA 研究页面](https://research.axiacoin.org/en/latest/axiasolar/GRANDPA.html)。
 
 ### 分叉选择
 

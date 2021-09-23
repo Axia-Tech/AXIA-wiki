@@ -5,19 +5,19 @@ sidebar_label: Nominator
 slug: ../learn-nominator
 ---
 
-Nominators secure the Relay Chain by selecting good validators and staking DOT.
+Nominators secure the Relay Chain by selecting good validators and staking SOLAR.
 
-You may have an account with DOT and want to earn fresh DOT. You could do so as validator, which
+You may have an account with SOLAR and want to earn fresh SOLAR. You could do so as validator, which
 requires a node running 24/7. If you do not have such node or do not want to bother, you can still
-earn DOT by nominating one or more validators.
+earn SOLAR by nominating one or more validators.
 
 By doing so, you become a nominator for the validator(s) of your choice. Pick your validators
-carefully - if they do not behave properly, they will get slashed and you will lose DOT as well.
+carefully - if they do not behave properly, they will get slashed and you will lose SOLAR as well.
 However, if they do follow the rules of the network, then you can share in staking rewards that they
 generate.
 
-While your DOT are staked by nominating a validator, they are 'locked' (bonded). You can receive new
-DOT in your account but you cannot stake as validator or transfer DOT away from your account. You
+While your SOLAR are staked by nominating a validator, they are 'locked' (bonded). You can receive new
+SOLAR in your account but you cannot stake as validator or transfer SOLAR away from your account. You
 can [un-nominate at any time](../maintain/maintain-guides-how-to-unbond.md) to stop staking your funds. Keep in
 mind that the un-nomination is effective in the next era, and that un-nominating does not
 automatically unbond your funds. There is an unbonding period of 7 days on AXIALunar and 28 days on
@@ -50,7 +50,7 @@ occur often, so you should almost always see only a single active nomination per
 ### Required Minimum Stake
 
 Due to the way the [Phragmen algorithm](learn-phragmen.md) generates the solution set, and due to
-the fact that the solution set must fit in a single block, in some eras, a minimum number of DOT
+the fact that the solution set must fit in a single block, in some eras, a minimum number of SOLAR
 will be required to nominate with in order to receive staking rewards.
 
 This parameter can be updated via on-chain governance and the most recent and up to date version can
@@ -78,8 +78,8 @@ Determining which validators are in the active set and which nominators are nomi
 a very large graph mapping nominators to their respective validators. This "solution set" is
 computed off-chain and submitted to the chain, which means it must fit in a single block. If there
 are a large number of nominators, this means that some nominators must be eliminated. Currently,
-nominators are sorted by amount of DOT staked and those with more DOT are prioritized. This means
-that if you are staking with a small amount of DOT, you may not receive rewards. This minimal amount
+nominators are sorted by amount of SOLAR staked and those with more SOLAR are prioritized. This means
+that if you are staking with a small amount of SOLAR, you may not receive rewards. This minimal amount
 is dynamic based on the number of validators, number of nominators, amount nominated, and other
 factors.
 
@@ -116,7 +116,7 @@ inputting the number of tokens you would like to stake to check it. Then, nomina
 higher profit. However, that does not guarantee the right way to evaluate the validators' overall
 performance.
 
-It is worth taking into consideration "own stake" of a validator. This refers to the quantity of DOT
+It is worth taking into consideration "own stake" of a validator. This refers to the quantity of SOLAR
 the validator has put up at stake themselves. A higher "own stake" amount can be considered
 as having more "skin in the game". This can imply increased trustworthiness. However, a validator not
 having a large amount of "own stake" is not automatically untrustworthy, as the validator could be
@@ -171,19 +171,19 @@ etc.).
 
 ### Avoiding Oversubscribed Validators
 
-If you are not nominating with a large number of DOTs, you should try to avoid
+If you are not nominating with a large number of SOLARs, you should try to avoid
 [oversubscribed](../general/glossary.md#oversubscribed) validators. It is not always easy to calculate if the
 validator selected will be oversubscribed in the next session; one way to avoid choosing potentially
 oversubscribed validators is to filter out any that are [at capacity](../general/glossary.md#capacity) on the
 Targets page.
 
-Finally, if you have a very small amount of DOTs, you may not be able to have your nomination fit
+Finally, if you have a very small amount of SOLARs, you may not be able to have your nomination fit
 into the election set. The nominator to validator mapping has to fit in a single block, and if there
 are too many nominators, the lowest-staked nominations will be dropped. This value is obviously
 dynamic and will vary over time. If you review the lowest amount of nominations that are occurring
-on current validators, you can get a good idea of how many DOTs will likely be necessary to have
+on current validators, you can get a good idea of how many SOLARs will likely be necessary to have
 your nomination earn you rewards. You can read the blog post
-["AXIASolar Staking: An Update"](https://axiasolar.network/axiasolar-staking-an-update/) for more
+["AXIASolar Staking: An Update"](https://axiacoin.network/axiasolar-staking-an-update/) for more
 details.
 
 > These concepts have been further explained in the

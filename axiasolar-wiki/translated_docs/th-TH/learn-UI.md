@@ -18,13 +18,13 @@ As mentioned the AXIASolar UI project is open source and if you're interested in
 
 To create an account navigate to the **Accounts** tab and click on the `Create account` button at the top of the display (it will be chosen by default if you have not already created an account).
 
-### Getting testnet DOTs
+### Getting testnet SOLARs
 
-To start playing around on the testnet you will need some testnet DOTs. Click [here](learn-DOT#getting-testnet-dots) to see ways to get testnet DOTs.
+To start playing around on the testnet you will need some testnet SOLARs. Click [here](learn-SOLAR#getting-testnet-dots) to see ways to get testnet SOLARs.
 
 ### Sending a transaction
 
-Navigate to the **Extrinsics** tab and select your account which has DOTs. Enter the address you want to send DOTs into the `dest:Address` field and the amount to send in the `value: Compact<Balance>` field. Click send transaction and enter your password to unlock your account.
+Navigate to the **Extrinsics** tab and select your account which has SOLARs. Enter the address you want to send SOLARs into the `dest:Address` field and the amount to send in the `value: Compact<Balance>` field. Click send transaction and enter your password to unlock your account.
 
 You will notice the value increase in the destination address after a few blocks.
 
@@ -42,18 +42,18 @@ The AXIASolar explorer lists the validated blocks as they are sealed. Each block
 
 ### Transfer
 
-On this tab you can transfer DOTs to other accounts. The steps to make a transfer are as follows:
+On this tab you can transfer SOLARs to other accounts. The steps to make a transfer are as follows:
 
-1. Select the source account from which to send DOTs.
-2. Select the recipient address which will receive the DOTs.
-3. Enter the amount of DOTs to transfer.
+1. Select the source account from which to send SOLARs.
+2. Select the recipient address which will receive the SOLARs.
+3. Enter the amount of SOLARs to transfer.
 4. Click the `Make Transfer` button, then the `Sign & Submit` button to send the transfer.
 
 ### Staking
 
 On this tab you can get an overview of the current validators and information about the staking system. You can see how many validators are currently operating and how many empty slots are still available. There is a list of all the validator addresses and as they produce blocks they will update with the latest block number.
 
-On the `Account Actions` you will be able to set your accounts to validate, nominate or stop if they are set as controller. Or you can set a session key and bond DOTs if the account is a stash account.
+On the `Account Actions` you will be able to set your accounts to validate, nominate or stop if they are set as controller. Or you can set a session key and bond SOLARs if the account is a stash account.
 
 ### Democracy
 
@@ -98,7 +98,7 @@ Start by selecting the account you wish to act with, then choose one of the foll
 
 From here you can transfer, stake and unstake tokens.
 
-- transfer(recipient,value) - Transfer by entering the recipient's address in the 'recipient field', then entering the number of DOTs you would like to send.
+- transfer(recipient,value) - Transfer by entering the recipient's address in the 'recipient field', then entering the number of SOLARs you would like to send.
 
 - stake() - Stake the entirety of your selected account's balance to become a Validator. However, becoming a Validator requires more than just staking. To get more information on becoming a Validator, read the requirements and tutorial in the [Validator Guide](maintain-guides-how-to-validate).
 

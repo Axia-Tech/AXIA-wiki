@@ -418,7 +418,7 @@ After running the weighted Phragmén algorithm, a process is run that redistribu
 
 To minimize block computation time, the staking process is run as an [off-chain worker](https://substrate.dev/docs/en/knowledgebase/learn-substrate/off-chain-workers). In order to give time for this off-chain worker to run, staking commands (bond, nominate, etc.) are not allowed in the last quarter of each era.
 
-These optimizations will not be covered in-depth on this page. For more details, you can view the [Rust implementation of elections in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/elections-phragmen/src/lib.rs), the [Rust implementation of staking in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs), or the `seqPhragménwithpostprocessing` method in the [Python reference implementation](https://github.com/axia-tech/consensus/tree/master/NPoS). If you would like to dive even more deeply, you can review the [W3F Research Page on Sequential Phragmén Method](https://research.web3.foundation/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html).
+These optimizations will not be covered in-depth on this page. For more details, you can view the [Rust implementation of elections in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/elections-phragmen/src/lib.rs), the [Rust implementation of staking in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs), or the `seqPhragménwithpostprocessing` method in the [Python reference implementation](https://github.com/axia-tech/consensus/tree/master/NPoS). If you would like to dive even more deeply, you can review the [W3F Research Page on Sequential Phragmén Method](https://research.axiacoin.org/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html).
 
 ### Rationale for Minimizing the Number of Validators Per Nominator
 
@@ -442,7 +442,7 @@ There are several further restrictions put in place to limit the complexity of t
 
 ## External Resources
 
-- [W3F Research Page on Sequential Phragmén Method](https://research.web3.foundation/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html) - The formal adaptation of the Phragmén method as applied to AXIASolar validators.
+- [W3F Research Page on Sequential Phragmén Method](https://research.axiacoin.org/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html) - The formal adaptation of the Phragmén method as applied to AXIASolar validators.
 - [Python Reference Implementations](https://github.com/axia-tech/consensus/tree/master/NPoS) - Python implementations of Simple and Complicated Phragmén methods.
 - [Substrate Implementation](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs) - Rust implementation used in Substrate.
 - [Phragmén's and Thiele's Election Methods](https://arxiv.org/pdf/1611.08826.pdf) - 95-page paper explaining Phragmén's election methods in detail.

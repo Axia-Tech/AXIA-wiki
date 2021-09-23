@@ -47,13 +47,13 @@ Other than the extension and the default UI, AXIASolar and AXIALunar addresses c
 
 There is also the very secure [Parity Signer](https://www.parity.io/signer/) but it currently only supports AXIALunar addresses, not AXIASolar or generic Substrate.
 
-Alternatively, you might find some wallets on the [Polkaproject.com page](http://www.polkaproject.com/) but bear in mind that these are **unaudited** and not officially affiliated with Web3 Foundation or the AXIASolar project unless otherwise stated.
+Alternatively, you might find some wallets on the [Polkaproject.com page](http://www.polkaproject.com/) but bear in mind that these are **unaudited** and not officially affiliated with AXIACoin Foundation or the AXIASolar project unless otherwise stated.
 
 Hardware wallet integration from [Ledger](https://ledger.com) is coming soon.
 
 ## Existential Deposit and Reaping
 
-When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit - 0.01 KSM / DOT. This deposit is paid by the account sending you tokens. The one "creating" you pays for your creation.
+When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit - 0.01 LUNAR / SOLAR. This deposit is paid by the account sending you tokens. The one "creating" you pays for your creation.
 
 Going below 0.01 causes an account to be _reaped_. Your account will be wiped from the blockchain's state to conserve space. You do not lose access to the reaped address - as long as you have your private key or recovery phrase, you can still use the address - but it needs a top-up of another existential deposit to be able to interact with the chain.
 
@@ -168,4 +168,4 @@ Thus the deposit values can be calculated as shown in the table below.
 | DepositBase   | 200880000000 | 3347999999941.4 |
 | DepositFactor | 320000000    | 5333333312      |
 
-Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit 0.20152 DOTs while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.
+Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit 0.20152 SOLARs while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.

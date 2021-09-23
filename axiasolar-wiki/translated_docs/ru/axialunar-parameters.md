@@ -8,7 +8,7 @@ Many of these parameter values can be updated via on-chain governance. If you re
 
 ### Периоды общих действий и атрибутов
 
-_NOTE: AXIALunar generally runs 4x as fast as AXIASolar, except AXIASolar also has 6 second slots. See [AXIASolar Parameters](https://wiki.axiasolar.network/docs/en/maintain-axiasolar-parameters) for more details on how AXIALunar's parameters differ from AXIASolar's._
+_NOTE: AXIALunar generally runs 4x as fast as AXIASolar, except AXIASolar also has 6 second slots. See [AXIASolar Parameters](https://solar.wiki.axiacoin.network/docs/en/maintain-axiasolar-parameters) for more details on how AXIALunar's parameters differ from AXIASolar's._
 
 - Slot: 6 seconds \*(generally one block per slot, although see note below)
 - Эпоха: 1 час (600 слотов x 6 секунд)
@@ -63,4 +63,4 @@ Burn percentage is currently `0.20%`, though instead of being burned this amount
 
 ### Precision
 
-KSM have 12 decimals of precision. In other words, 1e12 (1,000,000,000,000 or one trillion) Plancks make up a single KSM.
+LUNAR have 12 decimals of precision. In other words, 1e12 (1,000,000,000,000 or one trillion) Plancks make up a single LUNAR.

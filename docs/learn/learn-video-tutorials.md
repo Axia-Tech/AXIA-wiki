@@ -18,7 +18,7 @@ slug: ../learn-video-tutorials
 
 - [How to create AXIASolar accounts](https://www.youtube.com/watch?v=hhUZ40ZWqkE)
 - [understanding Accounts and Keys](https://www.youtube.com/watch?v=zhfccevPqWI)
-- [How to Stake DOT/KSM with Ledger](https://www.youtube.com/watch?v=VN4S8MofEW8)
+- [How to Stake SOLAR/LUNAR with Ledger](https://www.youtube.com/watch?v=VN4S8MofEW8)
 - [Why do transfers fail](https://www.youtube.com/watch?v=Wzqi8-WXiK8)
 - [Existential Deposit and Keep-Alive Checks](https://www.youtube.com/watch?v=ZjKpTgxDp_4)
 - [Why Nominate on AXIASolar and AXIALunar](https://youtu.be/weG_uzdSs1E)

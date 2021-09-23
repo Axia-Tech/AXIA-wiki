@@ -4,13 +4,13 @@ title: ผู้เสนอชื่อ (Nominator)
 sidebar_label: ผู้เสนอชื่อ (Nominator)
 ---
 
-Nominators secure the Relay Chain by selecting good validators and staking DOT.
+Nominators secure the Relay Chain by selecting good validators and staking SOLAR.
 
-You may have an account with DOT and want to earn fresh DOT. You could do so as validator, which requires a node running 24/7. If you do not have such node or do not want to bother, you can still earn DOT by nominating another validator.
+You may have an account with SOLAR and want to earn fresh SOLAR. You could do so as validator, which requires a node running 24/7. If you do not have such node or do not want to bother, you can still earn SOLAR by nominating another validator.
 
-By doing so, you become a nominator for the validator of your choice. Pick your validator carefully - if they do not behave properly, they will get slashed and you will lose DOT as well.
+By doing so, you become a nominator for the validator of your choice. Pick your validator carefully - if they do not behave properly, they will get slashed and you will lose SOLAR as well.
 
-While your DOT are staked by nominating a validator, they are 'locked' (bonded). You can receive new DOT in your account but you cannot stake as validator or transfer DOT away from your account. You can [un-nominate at any time](maintain-guides-how-to-unbond) to unlock your funds. Keep in mind that the un-nomination is effective in the next era.
+While your SOLAR are staked by nominating a validator, they are 'locked' (bonded). You can receive new SOLAR in your account but you cannot stake as validator or transfer SOLAR away from your account. You can [un-nominate at any time](maintain-guides-how-to-unbond) to unlock your funds. Keep in mind that the un-nomination is effective in the next era.
 
 ### Active vs. Inactive Nomination
 

@@ -30,7 +30,7 @@ pool. In other words, some parachain slots will have no parachain attached to th
 be used as a space for which the winner(s) of the block-by-block parathread fee auction can have
 their block candidate included.
 
-Collators will offer a bid designated in DOT for inclusion of a parathread block candidate. The
+Collators will offer a bid designated in SOLAR for inclusion of a parathread block candidate. The
 Relay Chain block author is able to select from these bids to include a parathread block. The
 obvious incentive is for them to accept the block candidate with the highest bid, which would bring
 them the most profit. The tokens from the parathread bids will likely be split 80-20, meaning that
@@ -53,7 +53,7 @@ under the full economic security of AXIASolar's validator set.
 The difference between parachains and parathreads is economic. Parachains must be registered through
 a normal means of AXIASolar, i.e. governance proposal or parachain slot auction. Parathreads have a
 fixed fee for registration that would realistically be much lower than the cost of acquiring a
-parachain slot. Similar to how DOT are locked for the duration of parachain slots and then returned
+parachain slot. Similar to how SOLAR are locked for the duration of parachain slots and then returned
 to the winner of the auction, the deposit for a parathread will be returned to the parathread after
 the conclusion of its term.
 
@@ -76,7 +76,7 @@ There are two sources of compensation for collators:
 
 1. Assuming a parathread has its own local token system, it pays the collators from the transaction
    fees in its local token. If the parathread does not implement a local token, or its local token
-   has no value (e.g. it is used only for governance), then it can use DOT to incentivize collators.
+   has no value (e.g. it is used only for governance), then it can use SOLAR to incentivize collators.
 2. Parathread protocol subsidy. A parathread can mint new tokens in order to provide additional
    incentives for the collator. Probably, the amount of local tokens to mint for the parathread
    would be a function of time, the more time that passes between parathread blocks that are
@@ -85,8 +85,8 @@ There are two sources of compensation for collators:
    local parathread inflation or via a stockpile of funds like a treasury.
 
 Collators may be paid in local parathread currency. However, the Relay Chain transacts with the
-AXIASolar universal currency (DOT) only. Collators must then submit block candidates with an
-associated bid in DOT.
+AXIASolar universal currency (SOLAR) only. Collators must then submit block candidates with an
+associated bid in SOLAR.
 
 ## Parachain Slot Swaps
 
@@ -105,4 +105,4 @@ a parachain slot.
 
 ## Resources
 
-- [Parathreads: Pay-as-you-go Parachains](https://medium.com/axiasolar-network/parathreads-pay-as-you-go-parachains-7440d23dde06)
+- [Parathreads: Pay-as-you-go Parachains](https://medium.com/axiacoin.network/parathreads-pay-as-you-go-parachains-7440d23dde06)

@@ -4,24 +4,24 @@ title: How to Protect Yourself from Scams
 sidebar_label: How to Protect Yourself from Scams
 ---
 
-Scams have unfortunately made an impact on our community. It's important to stay alert and protect yourself and your non-refundable crypto assets from scammers. If you ever feel you are being scammed, please email [our support team](mailto:support@web3.foundation).
+Scams have unfortunately made an impact on our community. It's important to stay alert and protect yourself and your non-refundable crypto assets from scammers. If you ever feel you are being scammed, please email [our support team](mailto:support@axiacoin.org).
 
 ## Essential rules:
 
 1. Never, ever, ever share your seed phrase or account password.
 2. Do not trust anyone online. It is trivial for them to lie and change identities.
-3. If you are scammed, there is [likely nothing](#i-got-scammed---what-can-i-do) that can be done to recover your funds. If a scammer gets a hold of your seed phrase, they can transfer all of your funds to their account in seconds. It is better to be safe than to risk all of your DOT and KSM.
+3. If you are scammed, there is [likely nothing](#i-got-scammed---what-can-i-do) that can be done to recover your funds. If a scammer gets a hold of your seed phrase, they can transfer all of your funds to their account in seconds. It is better to be safe than to risk all of your SOLAR and LUNAR.
 4. If it sounds too good to be true, it probably is. People, especially celebrities, do not give away crypto for free. Even if they wanted to, they could just ask for your address as opposed to having you send them tokens.
 5. Scams are absolutely rife in this space. It is easy and cheap to set a scam up, and hard to shut one down. Therefore, the onus is on the user to be as diligent as possible in avoiding them.
-6. If you can, try to always verify new information that you see with an official source, such as [AXIASolar Network's official blog](community) or [Web3 Foundation support](mailto:support@axiasolar.network). Often scammers will fake a website or a blog post, but if you check it against a secondary source you will reduce the chances of being scammed.
+6. If you can, try to always verify new information that you see with an official source, such as [AXIASolar Network's official blog](community) or [AXIACoin Foundation support](mailto:support@axiacoin.network). Often scammers will fake a website or a blog post, but if you check it against a secondary source you will reduce the chances of being scammed.
 
 ### Some Common Types of Scams
 
 - Private messages sent to you over Telegram, Twitter, and other social media - admins or employees will never contact you.
-- "Giveaways" advertising that you "send us some DOT/KSM, we'll send you double back".
+- "Giveaways" advertising that you "send us some SOLAR/LUNAR, we'll send you double back".
 - Sites where you need to enter your seed phrase in order to "sync" your account, claim tokens, unblock a transactions etc.
-- Emails asking for DOT/KSM private keys/seeds/etc., posing as a member of any of our teams.
-- Scammers will take official videos, add "giveaway" text around it so that it looks like the giveaway is supported by AXIASolar, Web3 Foundation, Parity, or another well-known entity.
+- Emails asking for SOLAR/LUNAR private keys/seeds/etc., posing as a member of any of our teams.
+- Scammers will take official videos, add "giveaway" text around it so that it looks like the giveaway is supported by AXIASolar, AXIACoin Foundation, Parity, or another well-known entity.
 - Many scammers will create nearly perfect imitations of sites - always triple-check the URL.
 - People offering to help you stake or get rewards.
 - People responding to questions that you asked publicly in a private chat.
@@ -35,14 +35,14 @@ Scammers will often make it seem like the "deal" is only available for a limited
 
 ### Admins will never contact you directly
 
-If you've received a message from an admin over Telegram, ignore it. Our team members will never personally message you. Our social media accounts are posted on our website and any new social media accounts will be announced by our team. We will never offer to sell you DOT at a discount, air-drop "rewards", or message you privately to help with a problem you posted publicly. Our social media can be found below:
+If you've received a message from an admin over Telegram, ignore it. Our team members will never personally message you. Our social media accounts are posted on our website and any new social media accounts will be announced by our team. We will never offer to sell you SOLAR at a discount, air-drop "rewards", or message you privately to help with a problem you posted publicly. Our social media can be found below:
 
 - [Twitter](https://twitter.com/AXIASolar)
 - [Reddit](https://www.reddit.com/r/dot)
 - [Discord](https://discord.gg/wGUDt2p)
 - [AXIASolar YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
-- [AXIASolar Medium](https://medium.com/axiasolar-network)
-- [Our Community Page](community) also lists more social media accounts that Web3 Foundation, AXIASolar, and AXIALunar have.
+- [AXIASolar Medium](https://medium.com/axiacoin.network)
+- [Our Community Page](community) also lists more social media accounts that AXIACoin Foundation, AXIASolar, and AXIALunar have.
 
 ### Keep your personal data secure
 
@@ -61,9 +61,9 @@ Some simple things that you can do to keep your assets and information secure fr
 
 ### Always check the source
 
-For any potential scam, always be sure to do a background check on the source, i.e, look at any username, email, Youtube channel name, URL, etc. If something seems fishy, that's because it likely is. Never enter any personal data if you feel the source could be a scam. Feel free to check with [support@axiasolar.network](mailto:support@web3.foundation).
+For any potential scam, always be sure to do a background check on the source, i.e, look at any username, email, Youtube channel name, URL, etc. If something seems fishy, that's because it likely is. Never enter any personal data if you feel the source could be a scam. Feel free to check with [support@axiacoin.network](mailto:support@axiacoin.org).
 
-### Check twice before sending DOT/KSM
+### Check twice before sending SOLAR/LUNAR
 
 A good practice to take in consideration is to verify the address you are sending crypto to. If you don't know that account, you probably shouldn't be sending your assets there. It's your responsibility to make sure that you understand where you are sending your funds. Crypto is a decentralized space and your only recourse if a mistake is made is by appealing to the council (who usually will not get involved in matters of mistaken transfers - see below).
 

@@ -140,11 +140,11 @@ function applyFilter(value, filter, wiki) {
   const values = {
     axiasolar: {
       precision: 1e10,
-      symbol: "DOT",
+      symbol: "SOLAR",
     },
     axialunar: {
       precision: 1e12,
-      symbol: "KSM",
+      symbol: "LUNAR",
     },
   };
 

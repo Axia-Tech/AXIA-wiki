@@ -6,7 +6,7 @@ sidebar_label: Staking
 
 AXIASolar uses NPoS (Nominated Proof-of-Stake) as its mechanism for selecting the validator set. It is designed with the roles of **validators** and **nominators**, to maximize chain security. Actors who are interested in maintaining the network can run a validator node. At genesis, AXIASolar will have a limited amount of slots available for these validators, but this number will grow over time to over one thousand.
 
-The system encourages DOT holders to participate as nominators. Nominators may back up to 16 validators as trusted validator candidates.
+The system encourages SOLAR holders to participate as nominators. Nominators may back up to 16 validators as trusted validator candidates.
 
 Validators assume the role of producing new blocks in [BABE](learn-consensus#babe), validating parachain blocks, and guaranteeing finality. Nominators can choose to back select validators with their stake.
 
@@ -20,34 +20,34 @@ Distribution of the rewards are pro-rata to all stakers after the validator paym
 
 In staking, you can be either a [nominator or a validator](#validators-and-nominators).
 
-As a nominator, you can nominate one or more (up to 16) validator candidates that you trust to help you earn rewards in DOTs. You can take a look at the [nominator guide](maintain-nominator) to understand what you are required to do when the mainnet launches.
+As a nominator, you can nominate one or more (up to 16) validator candidates that you trust to help you earn rewards in SOLARs. You can take a look at the [nominator guide](maintain-nominator) to understand what you are required to do when the mainnet launches.
 
 A validator node is required to be responsive 24/7, perform its expected duties in a timely manner, and avoid any slashable behavior. You can follow our [AXIALunar validator guide](maintain-guides-how-to-validate-axialunar) if you would like to run a validator on AXIALunar.
 
 ### 2. Nomination period
 
-Any potential validators can indicate their intention to be a validator candidate. Their candidacies are made public to all nominators, and a nominator in turn submits a list of any number of candidates that it supports. In the next epoch (lasting several hours), a certain number of validators having the most DOT backing get elected and become active. There are no particular requirements for a DOT holder to become a nominator, though we expect each nominator to carefully track the performance and reputation of validators.
+Any potential validators can indicate their intention to be a validator candidate. Their candidacies are made public to all nominators, and a nominator in turn submits a list of any number of candidates that it supports. In the next epoch (lasting several hours), a certain number of validators having the most SOLAR backing get elected and become active. There are no particular requirements for a SOLAR holder to become a nominator, though we expect each nominator to carefully track the performance and reputation of validators.
 
-Once the nomination period ends, the NPoS election mechanism takes the nominators and their associated votes as input, and outputs a set of validators of the required size, that maximizes the stake backing of any validator, and that makes the stakes backing validators as evenly distributed as possible. The objectives of this election mechanism are to maximize the security of the network, and achieve fair representation of the nominators. If you want to know more about how NPoS works (e.g. election, running time complexity, etc.), please read [here](http://research.web3.foundation/en/latest/axiasolar/NPoS.html).
+Once the nomination period ends, the NPoS election mechanism takes the nominators and their associated votes as input, and outputs a set of validators of the required size, that maximizes the stake backing of any validator, and that makes the stakes backing validators as evenly distributed as possible. The objectives of this election mechanism are to maximize the security of the network, and achieve fair representation of the nominators. If you want to know more about how NPoS works (e.g. election, running time complexity, etc.), please read [here](http://research.axiacoin.org/en/latest/axiasolar/NPoS.html).
 
 ### 3. Staking Rewards Distribution
 
 To explain how rewards are paid to validators and nominators, we need to consider **validator pools**, where a validator pool consists of an elected validator together with the nominators backing it. (Note: if a nominator `n` with stake `s` backs several elected validators, say `k`, the NPoS election mechanism will split its stakes into pieces `s_1`, `s_2`, …, `s_k`, so that it backs validator `i` with stake `s_i`. In that case, nominator `n` will be rewarded the same as if there were `k` nominators in different pools, each backing a single validator `i` with stake `s_i`). For each validator pool, we keep a list of nominators with the associated stakes.
 
-The general rule for rewards across validator pools is that two validator pools get paid the **same amount of DOTs** for equal work, i.e. they are NOT paid proportional to the stakes in each pool. Within a validator pool, a (configurable) part of the reward goes to pay the validator's commission fees and the remainder is paid **pro-rata** (i.e. proportional to stake) to the nominators and validator. Notice in particular that the validator is rewarded twice: once as commission fees for validating, and once for nominating itself with stake.
+The general rule for rewards across validator pools is that two validator pools get paid the **same amount of SOLARs** for equal work, i.e. they are NOT paid proportional to the stakes in each pool. Within a validator pool, a (configurable) part of the reward goes to pay the validator's commission fees and the remainder is paid **pro-rata** (i.e. proportional to stake) to the nominators and validator. Notice in particular that the validator is rewarded twice: once as commission fees for validating, and once for nominating itself with stake.
 
-To estimate the inflation rate and how many DOTs you can get each month as a nominator or validator, you can use this [Excel sheet](https://docs.google.com/spreadsheets/d/1-9Hc3kZ23EhZC3X6feRUKSTv6gj4xR7cvUbJD2zUEZk/edit?usp=sharing) as a reference and play around with it by changing some parameters (e.g. validator pools, total supply, commission fees, etc.) to have a better estimate. Even though it may not be entirely accurate since staking participation is changing dynamically, it works well as an indicator.
+To estimate the inflation rate and how many SOLARs you can get each month as a nominator or validator, you can use this [Excel sheet](https://docs.google.com/spreadsheets/d/1-9Hc3kZ23EhZC3X6feRUKSTv6gj4xR7cvUbJD2zUEZk/edit?usp=sharing) as a reference and play around with it by changing some parameters (e.g. validator pools, total supply, commission fees, etc.) to have a better estimate. Even though it may not be entirely accurate since staking participation is changing dynamically, it works well as an indicator.
 
 ### 4. Rewards Mechanism
 
-We highlight two features of this payment scheme. The first is that since validator pools are paid the same regardless of stake level, pools with less stake will generally pay more to nominators per-DOT than pools with more stake. We thus give nominators an economic incentive to gradually shift their preferences to lower staked validators that gain a sufficient amount of reputation. The reason for this is that we want the stake across validator pools to be as evenly distributed as possible, to avoid a concentration of power among a few validators. In the long term, we expect all validator pools to have similar levels of stake, with the stake being higher for higher reputation validators (meaning that a nominator that is willing to risk more by backing a validator with a low reputation will get paid more).
+We highlight two features of this payment scheme. The first is that since validator pools are paid the same regardless of stake level, pools with less stake will generally pay more to nominators per-SOLAR than pools with more stake. We thus give nominators an economic incentive to gradually shift their preferences to lower staked validators that gain a sufficient amount of reputation. The reason for this is that we want the stake across validator pools to be as evenly distributed as possible, to avoid a concentration of power among a few validators. In the long term, we expect all validator pools to have similar levels of stake, with the stake being higher for higher reputation validators (meaning that a nominator that is willing to risk more by backing a validator with a low reputation will get paid more).
 
 The following example should clarify the above. For simplicity, we have the following assumptions:
 
 - These validators do not have a stake of their own.
 - They do NOT charge any commission fees
-- Reward amount is 100 DOT tokens
-- The least amount of DOTs to be a validator is 350
+- Reward amount is 100 SOLAR tokens
+- The least amount of SOLARs to be a validator is 350
 
 |               | **A - Validator Pool** |                             |         |
 | :-----------: | :--------------------: | :-------------------------: | :-----: |
@@ -67,11 +67,11 @@ The following example should clarify the above. For simplicity, we have the foll
 
 _Both validator pools A & B have 4 nominators with the total stake 600 and 400 respectively._
 
-Based on the above rewards distribution, nominators in validator pool B get more rewards per DOT than those in pool A because pool A has more overall stake. Sam has staked 50 DOTs in pool A, but he only gets 8.3 in return, whereas Kitty gets 12.5 with the same amount of stake.
+Based on the above rewards distribution, nominators in validator pool B get more rewards per SOLAR than those in pool A because pool A has more overall stake. Sam has staked 50 SOLARs in pool A, but he only gets 8.3 in return, whereas Kitty gets 12.5 with the same amount of stake.
 
-We also remark that when the network slashes a validator slot for a misbehavior (e.g. validator offline, equivocation, etc.) the slashed amount is a fixed percentage (and NOT a fixed amount of DOTs), which means that validator pools with more stake get slashed more DOTs. Again, this is done to provide nominators with an economic incentive to shift their preferences and back less popular validators whom they consider to be trustworthy.
+We also remark that when the network slashes a validator slot for a misbehavior (e.g. validator offline, equivocation, etc.) the slashed amount is a fixed percentage (and NOT a fixed amount of SOLARs), which means that validator pools with more stake get slashed more SOLARs. Again, this is done to provide nominators with an economic incentive to shift their preferences and back less popular validators whom they consider to be trustworthy.
 
-The second point to note is that each validator candidate is free to name their desired commission fee (as a percentage of rewards) to cover operational costs. Since validator pools are paid the same, pools with lower commission fees pay more to nominators than pools with higher fees. Thus, each validator can choose between increasing their fees to earn more DOTs, or decreasing their fees to attract more nominators and increase their chances of being elected. We will let the market regulate itself in this regard. In the long term, we expect that all validators will need to be cost efficient to remain competitive, and that validators with higher reputation will be able to charge slightly higher commission fees (which is fair).
+The second point to note is that each validator candidate is free to name their desired commission fee (as a percentage of rewards) to cover operational costs. Since validator pools are paid the same, pools with lower commission fees pay more to nominators than pools with higher fees. Thus, each validator can choose between increasing their fees to earn more SOLARs, or decreasing their fees to attract more nominators and increase their chances of being elected. We will let the market regulate itself in this regard. In the long term, we expect that all validators will need to be cost efficient to remain competitive, and that validators with higher reputation will be able to charge slightly higher commission fees (which is fair).
 
 ## Accounts
 
@@ -88,22 +88,22 @@ Controller and Stash account keys can be either sr25519 or ed25519. For more on 
 
 ## Validators and nominators
 
-Since validator slots will be limited, most of those who wish to stake their DOTs and contribute economic security to the network will be nominators. Validators do most of the heavy lifting: they produce new block candidates in BABE, vote and come to consensus in GRANDPA, validate the state transition function of parachains, and possibly some other responsibilities regarding data availability and [XCMP](learn-crosschain). Nominators, on the other hand, do not need to do anything once they have bonded their DOTs. The experience of the nominator is similar to "set it and forget it," while the validator will be doing active service for the network by performing the critical operations. For this reason, the validator has certain privileges regarding the payout of the staking mechanism and will be able to declare its own allocation before the share is divided to nominators.
+Since validator slots will be limited, most of those who wish to stake their SOLARs and contribute economic security to the network will be nominators. Validators do most of the heavy lifting: they produce new block candidates in BABE, vote and come to consensus in GRANDPA, validate the state transition function of parachains, and possibly some other responsibilities regarding data availability and [XCMP](learn-crosschain). Nominators, on the other hand, do not need to do anything once they have bonded their SOLARs. The experience of the nominator is similar to "set it and forget it," while the validator will be doing active service for the network by performing the critical operations. For this reason, the validator has certain privileges regarding the payout of the staking mechanism and will be able to declare its own allocation before the share is divided to nominators.
 
 ![staking](assets/NPoS/article-2.png)
 
-### Want to stake DOTs?
+### Want to stake SOLARs?
 
 - [Nominator Guide](mirror-maintain-guides-how-to-nominate-axialunar) - Become a nominator on the AXIALunar network.
 - [Validator Guide](mirror-maintain-guides-how-to-validate-axialunar) - Become a validator on the AXIALunar network.
 
 ## Slashing
 
-Slashing will happen if a validator misbehaves (e.g. goes offline, attacks the network, or runs modified software) in the network. They and their nominators will get slashed by losing a percentage of their bonded/staked DOTs. Any slashed DOTs will be added to the Treasury. The rationale for this (rather than burning or distributing them as rewards) is that slashes may then be reverted by the Council by simply paying out from the Treasury. This would be useful in situations such as a faulty runtime causing slashing or forcing validators offline through no fault of their own. In the case of legitimate slashing, it moves tokens away from malicious validators to those building the ecosystem through the normal Treasury process.
+Slashing will happen if a validator misbehaves (e.g. goes offline, attacks the network, or runs modified software) in the network. They and their nominators will get slashed by losing a percentage of their bonded/staked SOLARs. Any slashed SOLARs will be added to the Treasury. The rationale for this (rather than burning or distributing them as rewards) is that slashes may then be reverted by the Council by simply paying out from the Treasury. This would be useful in situations such as a faulty runtime causing slashing or forcing validators offline through no fault of their own. In the case of legitimate slashing, it moves tokens away from malicious validators to those building the ecosystem through the normal Treasury process.
 
 Validator pools with larger total stake backing them will get slashed more harshly than less popular ones, so we encourage nominators to shift their nominations to less popular validators to reduce the possible losses.
 
-The following levels of offence are [defined](https://research.web3.foundation/en/latest/axiasolar/slashing/amounts.html) (for specific slash amounts, see the equations in the section below):
+The following levels of offence are [defined](https://research.axiacoin.org/en/latest/axiasolar/slashing/amounts.html) (for specific slash amounts, see the equations in the section below):
 
 - Level 1: isolated unresponsiveness, i.e. being offline for an entire [epoch](glossary#epoch). No slashing, only [_chilling_](#chilling).
 - Level 2: concurrent unresponsiveness or isolated equivocation. Slashes a very small amount of the stake and chills.
@@ -125,7 +125,7 @@ Here is the formula for calculation:
 Note that if less than 10% of all validators are offline, no penalty is enacted.
 
 Validators should have a well-architected network infrastructure to ensure the node is running to reduce the risk of being slashed. A high availability setup is desirable, preferably with backup nodes that kick in **only once the original node is verifiably offline** (to avoid double-signing and being slashed for equivocation - see below).
-A comprehensive guide on validator setup is available [here](https://wiki.axiasolar.network/docs/en/maintain-guides-secure-validator).
+A comprehensive guide on validator setup is available [here](https://solar.wiki.axiacoin.network/docs/en/maintain-guides-secure-validator).
 
 ### GRANDPA Equivocation
 
@@ -145,7 +145,7 @@ Validators may run their nodes on multiple machines to make sure they can still 
 
 If a validator is reported for any one of the offences they will be removed from the validator set ([chilled](#chilling)) and they will not be paid while they are out. They will be considered inactive immediately and will lose their nominators. They need to re-issue intent to validate and gather support from nominators.
 
-If you want to know more details about slashing, please look at our [research page](https://research.web3.foundation/en/latest/axiasolar/slashing/amounts.html).
+If you want to know more details about slashing, please look at our [research page](https://research.axiacoin.org/en/latest/axiasolar/slashing/amounts.html).
 
 ### Chilling
 
@@ -195,9 +195,9 @@ If you go to the Staking payouts page on [AXIASolar JS](https://axiasolar.js.org
 
 Validators can create a cut of the reward that is not shared with the nominators. This cut is a percentage of the block reward, not an absolute value. After the value gets deducted, the remaining portion is based on their staked value and split between the validator and all of the nominators who have voted for this validator.
 
-For example, assume the block reward for a validator is 10 DOTs. A validator may specify `validator_payment = 50%`, in which case the validator would receive 5 DOTs. The remaining 5 DOTs would then be split between the validator and their nominators based on the proportion of stake each nominator had. Note that validators can put up their own stake, and for this calculation, their stake acts just as if they were another nominator.
+For example, assume the block reward for a validator is 10 SOLARs. A validator may specify `validator_payment = 50%`, in which case the validator would receive 5 SOLARs. The remaining 5 SOLARs would then be split between the validator and their nominators based on the proportion of stake each nominator had. Note that validators can put up their own stake, and for this calculation, their stake acts just as if they were another nominator.
 
-Rewards can be directed to the same account (controller) or to the stash account (and either increasing the staked value or not increasing the staked value). It is also possible to top-up / withdraw some bonded DOTs without having to un-stake everything.
+Rewards can be directed to the same account (controller) or to the stash account (and either increasing the staked value or not increasing the staked value). It is also possible to top-up / withdraw some bonded SOLARs without having to un-stake everything.
 
 For specific details about validator payouts, please see [this guide](maintain-guides-validator-payout).
 
@@ -207,16 +207,16 @@ Inflation is designed to be 10% in the first year, with validator rewards being 
 
 ![staking](assets/NPoS/staking-participation-rate.png)
 
-<p style="text-align:center">Source: <a href="https://research.web3.foundation/en/latest/axiasolar/Token%20Economics.html">Research - Web3 Foundation</a></p>
+<p style="text-align:center">Source: <a href="https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html">Research - AXIACoin Foundation</a></p>
 
-- **x-axis**: Proportion of DOTs staked
+- **x-axis**: Proportion of SOLARs staked
 - **y-axis**: Inflation, annualized percentage
 - **Blue line**: Inflation rewards to stakers
 - **Green line**: Staker rate of return
 
-You can determine the inflation rewards by checking the current staking rate at [AXIASolarJS](https://axiasolar.js.org/apps/#/staking/targets). The above chart shows the inflation model of the network. Depending on the staking participation, the distribution of the inflation to validators versus the treasury will change dynamically to provide incentives to participate (or not participate) in staking. For instance, all of the inflation would go to the validators if 50% of all KSM / DOT are staked, but any deviation from the 50% - positive or negative - sends the proportional remainder to the treasury and effectively reduces validator payouts.
+You can determine the inflation rewards by checking the current staking rate at [AXIASolarJS](https://axiasolar.js.org/apps/#/staking/targets). The above chart shows the inflation model of the network. Depending on the staking participation, the distribution of the inflation to validators versus the treasury will change dynamically to provide incentives to participate (or not participate) in staking. For instance, all of the inflation would go to the validators if 50% of all LUNAR / SOLAR are staked, but any deviation from the 50% - positive or negative - sends the proportional remainder to the treasury and effectively reduces validator payouts.
 
-For those who are interested in knowing more about the design of inflation model for the network, please see [here](https://research.web3.foundation/en/latest/axiasolar/Token%20Economics.html).
+For those who are interested in knowing more about the design of inflation model for the network, please see [here](https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html).
 
 ## Why stake?
 
@@ -236,5 +236,5 @@ The plan is to start with somewhere between 50 to 100 open validator positions a
 
 ## Resources
 
-- [How Nominated Proof of Stake will work in AXIASolar](https://medium.com/web3foundation/how-nominated-proof-of-stake-will-work-in-axiasolar-377d70c6bd43) - Blog post by Web3 Foundation researcher Alfonso Cevallos covering NPoS in AXIASolar.
-- [Secure validator setup](https://wiki.axiasolar.network/docs/en/maintain-guides-secure-validator)
+- [How Nominated Proof of Stake will work in AXIASolar](https://medium.com/web3foundation/how-nominated-proof-of-stake-will-work-in-axiasolar-377d70c6bd43) - Blog post by AXIACoin Foundation researcher Alfonso Cevallos covering NPoS in AXIASolar.
+- [Secure validator setup](https://solar.wiki.axiacoin.network/docs/en/maintain-guides-secure-validator)

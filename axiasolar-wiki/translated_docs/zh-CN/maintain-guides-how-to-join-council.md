@@ -8,9 +8,9 @@ sidebar_label: 加入议会
 
 ## 成为候选人
 
-Submitting your candidacy for the council requires a small bond of DOT / KSM. The bond will be forfeited if your candidacy does not win or become a runner-up and will be kept otherwise. You only receive your bond back, if you manually renounce your candidacy before losing. Runners-up are selected after every round and are reserved members in case one of the winners gets forcefully removed.
+Submitting your candidacy for the council requires a small bond of SOLAR / LUNAR. The bond will be forfeited if your candidacy does not win or become a runner-up and will be kept otherwise. You only receive your bond back, if you manually renounce your candidacy before losing. Runners-up are selected after every round and are reserved members in case one of the winners gets forcefully removed.
 
-> Currently the bond for submitting a council candidacy on AXIASolar is 100 DOT, and 0.1666 KSM on AXIALunar.
+> Currently the bond for submitting a council candidacy on AXIASolar is 100 SOLAR, and 0.1666 LUNAR on AXIALunar.
 
 在提交参选候选人之前，最好先宣布您的意向，使您的支持者知道何时可以开始投票。如果没有其他人投票给你，你也可以投票给自己。
 
@@ -40,4 +40,4 @@ If you are one of the lucky ones to win a council election you will see your acc
 
 ![council members list](assets/council/axiasolarjs_council_members.png)
 
-Now you are able to participate on the council by making motions or voting proposals. To join in on the active discussions, join the [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation).
+Now you are able to participate on the council by making motions or voting proposals. To join in on the active discussions, join the [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org).

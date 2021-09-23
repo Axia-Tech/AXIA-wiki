@@ -97,7 +97,7 @@ class HomeFooter extends React.Component {
           </p>
         </Col>
         <Col>
-          <a href="https://guide.axialunar.network">
+          <a href="https://lunar.wiki.axiacoin.network">
             <button className="btn btn-lg btn-primary btn-bg-primary">
               Discover AXIALunar
             </button>
@@ -114,7 +114,7 @@ class HomeFooter extends React.Component {
           </span>
           <h3 className="h2 font-weight-bold">Help improve this wiki</h3>
           <p className="mb-5">
-            This wiki was started by and is maintained by Web3 Foundation. It is
+            This wiki was started by and is maintained by AXIACoin Foundation. It is
             an open-source-ish project and aims to be the most extensive
             resource of knowledge on AXIASolar and the AXIASolar ecosystem.
           </p>

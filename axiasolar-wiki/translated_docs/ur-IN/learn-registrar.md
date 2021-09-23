@@ -4,9 +4,9 @@ title: Using W3F Registrar
 sidebar_label: How to use W3F Registrar
 ---
 
-An on-chain identity is a good way to build up your reputation and let the community know more about you if you plan on running a validator or being a councilor. Web3 Foundation provides a registrar service in the AXIALunar and AXIASolar networks that only charges a small fee (0.04 KSM) on AXIALunar, and no fees on AXIASolar (although there may be a small fee in the future). However, you will of course need to reserve some DOT in your account while you have an identity, no matter which registrar you use. For details on amount necessary to reserve, as well as the identity system as a whole, see the [identity](learn-identity) page.
+An on-chain identity is a good way to build up your reputation and let the community know more about you if you plan on running a validator or being a councilor. AXIACoin Foundation provides a registrar service in the AXIALunar and AXIASolar networks that only charges a small fee (0.04 LUNAR) on AXIALunar, and no fees on AXIASolar (although there may be a small fee in the future). However, you will of course need to reserve some SOLAR in your account while you have an identity, no matter which registrar you use. For details on amount necessary to reserve, as well as the identity system as a whole, see the [identity](learn-identity) page.
 
-> **Note**: The registrar bot will not ask you to send any DOT, and never expose your private keys to anyone!
+> **Note**: The registrar bot will not ask you to send any SOLAR, and never expose your private keys to anyone!
 
 If you have provided `display name`, `email`, `twitter`, or `element name (previously called Riot)` when setting an on-chain identity, these will be required to verify one by one by signing a challenge message. Be aware that the `display name` cannot be too similar to others that have verified already. There is no need to set all of the fields when using the service. You are free to set whichever field or fields that you like.
 
@@ -45,7 +45,7 @@ Go to [Developer->Extrinics](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.
 
 The `reg_index` is the position of the registrar. For W3F, use 0.
 
-The `max_fee` is the amount of DOT or KSM to pay the registrar. For AXIALunar use **0.04 KSM** and for AXIASolar use **0 DOT**.
+The `max_fee` is the amount of SOLAR or LUNAR to pay the registrar. For AXIALunar use **0.04 LUNAR** and for AXIASolar use **0 SOLAR**.
 
 Note that in the future, a fee may be charged for the AXIASolar registrar.
 
@@ -53,7 +53,7 @@ Note that in the future, a fee may be charged for the AXIASolar registrar.
 
 Since we provided the Element, Twitter, and Email information in this example, we would start to receive the verification requests from those platforms. As for Element, an invitation will be sent by the bot named "W3F Registrar Verification".
 
-> Note: The handle of the W3F bot is called @registrar:web3.foundation. If you are not sure whether that is ours or not, ask in the AXIASolar community chat first.
+> Note: The handle of the W3F bot is called @registrar:axiacoin.org. If you are not sure whether that is ours or not, ask in the AXIASolar community chat first.
 
 ![registrar](assets/registrar/5.jpg)
 
@@ -75,7 +75,7 @@ If the information is correct, you should see a message like the above image tha
 
 Next, you should receive an email called "W3F Registrar Verification Service". Below is an example for reference.
 
-> Note: Please double-check the sender is "registrar@web3.foundation", not the others.
+> Note: Please double-check the sender is "registrar@axiacoin.org", not the others.
 
 ![registrar](assets/registrar/9.jpg)
 

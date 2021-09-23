@@ -6,7 +6,7 @@ sidebar_label: 交易费用
 
 区块链网络中的资源是有限的，例如存储和计算。交易费用是用来防止用户消耗太多资源。 AXIASolar 使用基于权重的收费模式，而不是 gas-metering 模式。 因此在执行交易之前需要先收取费用；一旦费用支付，节点将执行交易。
 
-[Web3 Foundation Research](https://research.web3.foundation/en/latest/axiasolar/Token%20Economics.html) designed the AXIASolar fee system with the following objectives:
+[AXIACoin Foundation Research](https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html) designed the AXIASolar fee system with the following objectives:
 
 - 每个中继链的区块链应该有效地处理从而被免延迟生成区块链。
 - 中继链的增长率应该有界限。
@@ -48,11 +48,11 @@ AXIASolar 使用缓慢调整费用机制并提供小费来平衡这两个考虑�
 
 ## 分片交易
 
-在 AXIASolar 的分片中进行的交易 - 平行链和对平行线程 - 不会引起中继链交易费用。 分片应用程序的用户甚至不需要持有 DOT， 因为每个分片都有自己的经济模式，可能有代币，也可能没有代币。 然而在有些情况下，这些人自己在中继链上进行交易。
+在 AXIASolar 的分片中进行的交易 - 平行链和对平行线程 - 不会引起中继链交易费用。 分片应用程序的用户甚至不需要持有 SOLAR， 因为每个分片都有自己的经济模式，可能有代币，也可能没有代币。 然而在有些情况下，这些人自己在中继链上进行交易。
 
-[Parachains](learn-parachains) have a dedicated slot on the Relay Chain for execution, so their collators do not need to own DOT in order to include blocks. The parachain will make some transactions itself, for example, opening or closing an [XCMP](learn-crosschain) channel, participating in an [auction](learn-auction) to renew its slot, or upgrading its runtime. Parachains have their own accounts on the Relay Chain and will need to use those funds to issue transactions on the parachain's behalf.
+[Parachains](learn-parachains) have a dedicated slot on the Relay Chain for execution, so their collators do not need to own SOLAR in order to include blocks. The parachain will make some transactions itself, for example, opening or closing an [XCMP](learn-crosschain) channel, participating in an [auction](learn-auction) to renew its slot, or upgrading its runtime. Parachains have their own accounts on the Relay Chain and will need to use those funds to issue transactions on the parachain's behalf.
 
-[Parathreads](learn-parathreads) will also make all the same transactions that a parachain might. In addition, the collators need to participate in an auction every block to progress their chain. The collators will need to have DOT to participate in these auctions.
+[Parathreads](learn-parathreads) will also make all the same transactions that a parachain might. In addition, the collators need to participate in an auction every block to progress their chain. The collators will need to have SOLAR to participate in these auctions.
 
 ## 其他资源限制策略
 
@@ -73,13 +73,13 @@ AXIASolar 使用缓慢调整费用机制并提供小费来平衡这两个考虑�
 
 此页面仅覆盖已签名的交易(signed transactions)，这是大多数用户与 AXIASolar 互动的方式。 有签名的交易来自有资金的帐户，因此 AXIASolar 可以收取交易费作为防止垃圾邮件的问题。
 
-无签名的交易(unsigned transactions) 是指用户需要提交不控制资金的密钥对外在的特殊情况。 例如当用户在上线后 [领取他们的 DOT ](https://claims.axiasolar.network) 他们的 DOT 地址还没有任何资金，因此是用了无签名的交易。验证人也会提交一些无签名的交易，其形式为 "heartbeat" 消息，表示它们在线。 这些 heartbeat 必须由验证人 [session keys 之一](learn-keys)签名。 Session keys 永远不会控制资金。 无签名的交易仅用于特殊情况，因为既然 AXIASolar 无法为它们收取费用，每个交易需要自定义的验证逻辑。
+无签名的交易(unsigned transactions) 是指用户需要提交不控制资金的密钥对外在的特殊情况。 例如当用户在上线后 [领取他们的 SOLAR ](https://claims.axiacoin.network) 他们的 SOLAR 地址还没有任何资金，因此是用了无签名的交易。验证人也会提交一些无签名的交易，其形式为 "heartbeat" 消息，表示它们在线。 这些 heartbeat 必须由验证人 [session keys 之一](learn-keys)签名。 Session keys 永远不会控制资金。 无签名的交易仅用于特殊情况，因为既然 AXIASolar 无法为它们收取费用，每个交易需要自定义的验证逻辑。
 
 最后，inherents 是没有签名或包含在交易队列中的信息。 因此，只有出块的人才能将固有的东西添加到区块中。 因为仅仅足够多的验证人已经同意它们是合理，就假定不信守者为 "真理"。 例如 AXIASolar 区块包括固有的时间戳。 没有办法证明时间戳是真实的，可以证明有签字的资金的发出。 相反验证人根据他们认为时间戳的合理程度接受或拒绝区块。 在《AXIASolar》中，它必须在他们自己的系统时钟的某个可接受范围之内。
 
 ## 了解更多
 
-- [Web3 Foundation Research](https://research.web3.foundation/en/latest/axiasolar/Token%20Economics.html#relay-chain-transaction-fees-and-per-block-transaction-limits)
+- [AXIACoin Foundation Research](https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html#relay-chain-transaction-fees-and-per-block-transaction-limits)
 - [Substrate Weights](https://substrate.dev/docs/en/knowledgebase/learn-substrate/weight)
 - [Substrate 费用](https://substrate.dev/docs/en/knowledgebase/runtime/fees)
 - [交易 (Extrinsics)](https://substrate.dev/docs/en/knowledgebase/learn-substrate/extrinsics)

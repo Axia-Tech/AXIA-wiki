@@ -44,7 +44,7 @@ An example of a network that would be well-suited for higher-order protocols wou
 
 ### Ethereum Bridge (Smart Contracts <> AXIASolar)
 
-As explained by Dr. Gavin Wood in a [blog post](https://medium.com/axiasolar-network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13) from late 2019, there are three ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
+As explained by Dr. Gavin Wood in a [blog post](https://medium.com/axiacoin.network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13) from late 2019, there are three ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
 
 1. AXIASolar <-> Ethereum Public Bridge.
 1. Substrate <-> Parity Ethereum (Openethereum) Bridge.
@@ -72,11 +72,11 @@ If your team is interested in building a bridge between an external chain and AX
 ### Resources and Examples
 
 - [Parity Bridges Common Resources](https://github.com/axia-tech/parity-bridges-common)
-- [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge were awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a Substrate to Ethereum two-way bridge.
+- [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge were awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a Substrate to Ethereum two-way bridge.
 - [PolkaBTC (Bitcoin <> AXIASolar Bridge)](https://docs.polkabtc.io/#/)
-- [EOS Bridge](https://github.com/bifrost-codes/bifrost) - The Bifrost team was awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a bridge to EOS.
-- [Tendermint Bridge](https://github.com/ChorusOne/tendermint-light-client) - ChorusOne was awarded a grant in [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a GRANDPA light client in Tendermint.
-- [Interlay BTC Bridge](https://interlay.gitlab.io/polkabtc-spec/) - The Interlay team was awarded a grant in W3F grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a trust-minimized BTC bridge.
+- [EOS Bridge](https://github.com/bifrost-codes/bifrost) - The Bifrost team was awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a bridge to EOS.
+- [Tendermint Bridge](https://github.com/ChorusOne/tendermint-light-client) - ChorusOne was awarded a grant in [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a GRANDPA light client in Tendermint.
+- [Interlay BTC Bridge](https://interlay.gitlab.io/polkabtc-spec/) - The Interlay team was awarded a grant in W3F grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a trust-minimized BTC bridge.
 - [ChainX BTC Bridge](https://github.com/chainx-org/ChainX/tree/master/xrml/xbridge/bitcoin) - ChainX have implemented a BTC to Substrate bridge for their parachain.
 - [POA Network](https://poa.network/)
 - [Case study](https://medium.com/giveth/ethereum-dapp-scaling-poa-network-acee8a51e772) of POA Network's implementation of Parity's bridge chain solution.

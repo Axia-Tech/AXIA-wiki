@@ -1,7 +1,7 @@
 ---
 id: ens
 title: Adding accounts to an ENS domain
-sidebar_label: Using ENS with DOT/KSM accounts
+sidebar_label: Using ENS with SOLAR/LUNAR accounts
 slug: ../ens
 ---
 
@@ -24,10 +24,10 @@ fraud, typos, and adds a layer of usability on top of the regular wallet user ex
 > with the Ethereum blockchain through your browser very easy.
 
 Despite living on the Ethereum blockchain, the ENS system has multi-chain support. In this guide,
-you'll go through the process of adding a KSM and DOT address to ENS. We cover both KSM and DOT to
+you'll go through the process of adding a LUNAR and SOLAR address to ENS. We cover both LUNAR and SOLAR to
 show two different approaches.
 
-> Note: DOT can currently only be added using the Resolver method. KSM can be added through both
+> Note: SOLAR can currently only be added using the Resolver method. LUNAR can be added through both
 > methods are described below.
 
 This guide is also available in video format [on Youtube](https://youtu.be/XKjZk-5_mQc).
@@ -40,27 +40,27 @@ the domain, and to add new ones.
 ![bruno.eth domain name in the ENS application](../assets/ens/01-min.png)
 
 In the example above, the domain `bruno.eth` has an Ethereum and a Bitcoin address attached. Let's
-attach a KSM account. First, click the `[+]` icon in the Records tab.
+attach a LUNAR account. First, click the `[+]` icon in the Records tab.
 
 ![The plus icon in the records tab](../assets/ens/02-min.png)
 
-Then, pick "Other Addresses", "KSM", and input the AXIALunar address:
+Then, pick "Other Addresses", "LUNAR", and input the AXIALunar address:
 
-![Inputs needed to register a KSM address](../assets/ens/03-min.png)
+![Inputs needed to register a LUNAR address](../assets/ens/03-min.png)
 
 After clicking Save, your Ethereum wallet will ask you to confirm a transaction. Once processed, the
 record will show up on the domain's page:
 
-![KSM address now visible in bruno.eth records](../assets/ens/04-min.png)
+![LUNAR address now visible in bruno.eth records](../assets/ens/04-min.png)
 
-The same process applies to adding your DOT address.
+The same process applies to adding your SOLAR address.
 
 Once the transaction is confirmed, your address will be bound to your ENS domain.
 
 ### Wallet Support
 
-There is no wallet support for ENS names for either KSM or DOT at this time, but the crypto
-accounting and portfolio application [Rotki](https://rotki.com/) does support KSM ENS resolution.
+There is no wallet support for ENS names for either LUNAR or SOLAR at this time, but the crypto
+accounting and portfolio application [Rotki](https://rotki.com/) does support LUNAR ENS resolution.
 
 ### Relevant links
 

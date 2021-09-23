@@ -11,7 +11,7 @@ That metadata explains how to read the messages. One such tool with a built-in p
 metadata is the [AXIASolar-JS Apps UI](https://axiasolar.js.org/apps).
 
 If this page does not answer your question, try searching for your problem at the
-[AXIASolar Knowledge Base](https://support.axiasolar.network/) for more information on troubleshooting
+[AXIASolar Knowledge Base](https://support.axiacoin.network/) for more information on troubleshooting
 your issue.
 
 ## AXIASolarJS Apps Explorer

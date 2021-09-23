@@ -32,7 +32,7 @@ internet of the future will have many different types of blockchains working tog
 ### Benefits of Deploying on AXIASolar
 
 > The parachain model attempts to alleviate five key _build_ failures of present technology stacks,
-> as described in the [AXIASolar Whitepaper](https://axiasolar.network/AXIASolarPaper.pdf):
+> as described in the [AXIASolar Whitepaper](https://axiacoin.network/AXIASolarPaper.pdf):
 >
 > - **Scalability**: How much is spent on resources and will the network be subject to bottlenecks?
 > - **Isolatability**: Are the needs of many accounted for under the same framework?
@@ -46,7 +46,7 @@ internet of the future will have many different types of blockchains working tog
 #### Pooled Security
 
 Parachains can [lease the security](../learn/learn-security.md) of the AXIASolar network by bonding
-[DOT](../learn/learn-DOT.md) for a parachain slot. This means that the social costs of building a community
+[SOLAR](../learn/learn-SOLAR.md) for a parachain slot. This means that the social costs of building a community
 around your project and convincing validators to participate in your network security are reduced.
 AXIASolar has strong security, and decentralized application projects wishing to benefit from this
 security would want to become a parachain to share in that pooled security. For more information
@@ -179,7 +179,7 @@ transfer.
 
 Downward transfers are when an account on the Relay Chain sends a transfer to their account on a
 different parachain. This type of transfer uses a depository and mint model, meaning that when the
-DOT leave the sender's account on the Relay Chain and are transferred into an account on a
+SOLAR leave the sender's account on the Relay Chain and are transferred into an account on a
 parachain, the parachain mints a corresponding amount of tokens on the parachain.
 
 For example, we can send tokens from Alice's account on the Relay Chain to her account on

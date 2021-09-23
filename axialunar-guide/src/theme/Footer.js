@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
         <a
           className="item homepage-font"
-          href="https://axiasolar.network/privacy/"
+          href="https://axiacoin.network/privacy/"
         >
           Privacy Policy
         </a>

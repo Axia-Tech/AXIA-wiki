@@ -6,7 +6,7 @@ sidebar_label: Transaction Fees
 
 Several resources in a blockchain network are limited, for example, storage and computation. Transaction fees prevent individual users from consuming too many resources. AXIASolar uses a weight-based fee model as opposed to a gas-metering model. As such, fees are charged prior to transaction execution; once the fee is paid, nodes will execute the transaction.
 
-[Web3 Foundation Research](https://research.web3.foundation/en/latest/axiasolar/Token%20Economics.html) designed the AXIASolar fee system with the following objectives:
+[AXIACoin Foundation Research](https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html) designed the AXIASolar fee system with the following objectives:
 
 - Each Relay Chain block should be processed efficiently to avoid delays in block production.
 - The growth rate of the Relay Chain should be bounded.
@@ -48,11 +48,11 @@ AXIASolar uses a slow-adjusting fee mechanism with tips to balance these two con
 
 ## Shard Transactions
 
-The transactions that take place within AXIASolar's shards - parachains and parathreads - do not incur Relay Chain transaction fees. Users of shard applications do not even need to hold DOT tokens, as each shard has its own economic model and may or may not have a token. There are, however, situations where shards themselves make transactions on the Relay Chain.
+The transactions that take place within AXIASolar's shards - parachains and parathreads - do not incur Relay Chain transaction fees. Users of shard applications do not even need to hold SOLAR tokens, as each shard has its own economic model and may or may not have a token. There are, however, situations where shards themselves make transactions on the Relay Chain.
 
-[Parachains](learn-parachains) have a dedicated slot on the Relay Chain for execution, so their collators do not need to own DOTs in order to include blocks. The parachain will make some transactions itself, for example, opening or closing an [XCMP](learn-crosschain) channel, participating in an [auction](learn-auction) to renew its slot, or upgrading its runtime. Parachains have their own accounts on the Relay Chain and will need to use those funds to issue transactions on the parachain's behalf.
+[Parachains](learn-parachains) have a dedicated slot on the Relay Chain for execution, so their collators do not need to own SOLARs in order to include blocks. The parachain will make some transactions itself, for example, opening or closing an [XCMP](learn-crosschain) channel, participating in an [auction](learn-auction) to renew its slot, or upgrading its runtime. Parachains have their own accounts on the Relay Chain and will need to use those funds to issue transactions on the parachain's behalf.
 
-[Parathreads](learn-parathreads) will also make all the same transactions that a parachain might. In addition, the collators need to participate in an auction every block to progress their chain. The collators will need to have DOTs to participate in these auctions.
+[Parathreads](learn-parathreads) will also make all the same transactions that a parachain might. In addition, the collators need to participate in an auction every block to progress their chain. The collators will need to have SOLARs to participate in these auctions.
 
 ## Other Resource Limitation Strategies
 
@@ -73,13 +73,13 @@ This page only covered transactions that come from normal users. If you look at 
 
 This page only covered signed transactions, which is the way that most users will interact with AXIASolar. Signed transactions come from an account that has funds, and therefore AXIASolar can charge a transaction fee as a way to prevent spam.
 
-Unsigned transactions are for special cases where a user needs to submit an extrinsic from a key pair that does not control funds. For example, when users [claim their DOT tokens](https://claims.axiasolar.network) after genesis, their DOT address doesn't have any funds yet, so that uses an unsigned transaction. Validators also submit unsigned transactions in the form of "heartbeat" messages to indicate that they are online. These heartbeats must be signed by one of the validator's [session keys](learn-keys). Session keys never control funds. Unsigned transactions are only used in special cases because, since AXIASolar cannot charge a fee for them, each one needs its own, custom validation logic.
+Unsigned transactions are for special cases where a user needs to submit an extrinsic from a key pair that does not control funds. For example, when users [claim their SOLAR tokens](https://claims.axiacoin.network) after genesis, their SOLAR address doesn't have any funds yet, so that uses an unsigned transaction. Validators also submit unsigned transactions in the form of "heartbeat" messages to indicate that they are online. These heartbeats must be signed by one of the validator's [session keys](learn-keys). Session keys never control funds. Unsigned transactions are only used in special cases because, since AXIASolar cannot charge a fee for them, each one needs its own, custom validation logic.
 
 Finally, inherents are pieces of information that are not signed or included in the transaction queue. As such, only the block author can add inherents to a block. Inherents are assumed to be "true" simply because a sufficiently large number of validators have agreed on them being reasonable. For example, AXIASolar blocks include a timestamp inherent. There is no way to prove that a timestamp is true the way one proves the desire to send funds with a signature. Rather, validators accept or reject the block based on how reasonable they find the timestamp. In AXIASolar, it must be within some acceptable range of their own system clocks.
 
 ## Learn More
 
-- [Web3 Foundation Research](https://research.web3.foundation/en/latest/axiasolar/Token%20Economics.html#relay-chain-transaction-fees-and-per-block-transaction-limits)
+- [AXIACoin Foundation Research](https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html#relay-chain-transaction-fees-and-per-block-transaction-limits)
 - [Substrate Weights](https://substrate.dev/docs/en/knowledgebase/learn-substrate/weight)
 - [Substrate Fees](https://substrate.dev/docs/en/knowledgebase/runtime/fees)
 - [Extrinsics](https://substrate.dev/docs/en/knowledgebase/learn-substrate/extrinsics)

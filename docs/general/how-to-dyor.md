@@ -23,7 +23,7 @@ The statement "Powered by AXIASolar" on many projects' sites is often a cause of
 usually means that the project is building, or intends to build, on the AXIASolar ecosystem, using
 [Substrate](https://substrate.dev). But any project can claim that, so the existence of this
 statement on a project's site infers no information about the project's legitimacy, and it's
-certainly not a "seal of approval" by Web3 Foundation.
+certainly not a "seal of approval" by AXIACoin Foundation.
 
 The same thing goes for projects that have the "Polka" prefix in their name. Many projects use that
 to associate themselves with the ecosystem, some legitimately and others only to piggyback on
@@ -39,11 +39,11 @@ trust them, by association, you should trust us too". Indeed, association with a
 be a strong indicator of the legitimacy of a project.
 
 For example, if a project has received a
-[Web3 Foundation Grant](https://github.com/axia-tech/Open-Grants-Program), this is an indication that the
+[AXIACoin Foundation Grant](https://github.com/axia-tech/Open-Grants-Program), this is an indication that the
 project is indeed building on the AXIASolar ecosystem, and if they have delivered all of their
 milestones, then their code is most likely of reasonable quality.
 
-And Web3 Foundation is not the only entity in the ecosystem that gives grants. There are other
+And AXIACoin Foundation is not the only entity in the ecosystem that gives grants. There are other
 reputable teams in the ecosystem that have developed platforms or prospective parachains and give
 grants for projects to build on or expand their project. These are also indicators that a project is
 committed to building on the broader AXIASolar ecosystem.
@@ -57,7 +57,7 @@ need to verify any claims a project makes**, and that's probably the most critic
 this guide.
 
 For example, if a project has the
-[Web3 Foundation Grant badge](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md)
+[AXIACoin Foundation Grant badge](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md)
 on their site or claims to have received a grant, check to see if they have received one and that it
 hasn't been terminated. The complete list of projects that have successfully applied for a grant can
 be found
@@ -76,8 +76,8 @@ is why the badge rules clearly state that it shouldn't be displayed on the team'
 
 Similarly, if a project claims to have partnered with a reputable entity, verify its scope and if it
 is indeed a partnership by searching their site for projects they have partnered with, their press
-releases, or by contacting them directly. And if you see such claims about Web3 Foundation, you can
-be sure they're false because Web3 Foundation **does not** partner with, or endorse, ecosystem
+releases, or by contacting them directly. And if you see such claims about AXIACoin Foundation, you can
+be sure they're false because AXIACoin Foundation **does not** partner with, or endorse, ecosystem
 projects.
 
 #### 2. Open source
@@ -136,7 +136,7 @@ other hand, if they focus only on tokenomics or analyse their project only in br
 perhaps that's an indication that they don't have a clear path to their goals.
 
 If you're looking for an example of what good documentation looks like, look no further than our own
-[wiki](https://wiki.axiasolar.network). Of course, you shouldn't expect to find such extensive
+[wiki](https://solar.wiki.axiacoin.network). Of course, you shouldn't expect to find such extensive
 documentation on newly launched projects. Our wiki, after all, covers a whole ecosystem and was
 populated over the course of years. And it's still updated all the time. But it's a good example of
 the emphasis a good project should give on documentating what it does and how.
@@ -168,8 +168,8 @@ proxies, that's a red flag right there, and you should be very sceptical.
 
 Besides their community, projects that are serious about building on AXIASolar usually engage with
 the broader AXIASolar community. They are active in the various
-[AXIASolar and AXIALunar channels](https://wiki.axiasolar.network/docs/community/), and some of them are
-[AXIASolar Ambassadors](https://axiasolar.network/axiasolar-ambassador-program/), or generally
+[AXIASolar and AXIALunar channels](https://solar.wiki.axiacoin.network/docs/community/), and some of them are
+[AXIASolar Ambassadors](https://axiacoin.network/axiasolar-ambassador-program/), or generally
 prominent members of the ecosystem.
 
 #### 6. Clear integration with AXIASolar

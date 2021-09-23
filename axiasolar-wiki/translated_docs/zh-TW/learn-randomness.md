@@ -52,5 +52,5 @@ VDFs will likely be implemented through ASIC devices that need to be run separat
 
 ## Resources
 
-- [AXIASolar's research on blockchain randomness and sortition](https://research.web3.foundation/en/latest/axiasolar/BABE/Babe.html) - contains reasoning for choices made along with proofs
+- [AXIASolar's research on blockchain randomness and sortition](https://research.axiacoin.org/en/latest/axiasolar/BABE/Babe.html) - contains reasoning for choices made along with proofs
 - [Discussion on Randomness used in AXIASolar](https://github.com/axia-tech/ink/issues/57) - W3F researchers discuss the randomness in AXIASolar and when it is usable and under which assumptions.

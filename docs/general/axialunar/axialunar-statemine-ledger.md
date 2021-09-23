@@ -12,12 +12,12 @@ Statemine has a [Ledger][] application that is compatible with the Ledger Nano S
 devices. The Ledger devices are hardware wallets that keep your private key secured on a physical
 device that does not get directly exposed to your computer or the internet.
 
-The Statemine application allows you to manage your KSM and other tokens on the Statemine parachain.
+The Statemine application allows you to manage your LUNAR and other tokens on the Statemine parachain.
 It supports most of the available transaction types of the network in the XL version of the app
 (details [below](#installing-the-ledger-application)).
 
 If you have trouble using Ledger or following the directions below, you can try searching for your
-issue on the [AXIASolar Knowledge Base](https://support.axiasolar.network/).
+issue on the [AXIASolar Knowledge Base](https://support.axiacoin.network/).
 
 > Please check out our
 > [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIASolar).
@@ -109,7 +109,7 @@ Click "Save" to keep your settings.
 
 Now when you go to the "Accounts" tab you will see a new button that says "Add via Ledger". Ensure
 that your Ledger device is unlocked, Ledger Live is **closed** and you have
-[switched over](https://support.axiasolar.network/support/solutions/articles/65000169778-how-to-switch-network-nodes)
+[switched over](https://support.axiacoin.network/support/solutions/articles/65000169778-how-to-switch-network-nodes)
 to the Statemine application, then click this button.
 
 ![Add Ledger button in AXIASolar-JS Apps UI](../../assets/ledger/query-ledger.png)
@@ -149,7 +149,7 @@ Apps UI][apps].
 #### Using AXIASolar-JS Apps
 
 Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger
-account. At the far right of the row is located your account's DOT balance. If you expand the
+account. At the far right of the row is located your account's SOLAR balance. If you expand the
 balance arrow, it will show details of your balance such as locks or reserved amounts.
 
 ![Account row showing empty balance](../../assets/ledger/ledger-balance.png)
@@ -160,13 +160,13 @@ If you would like to send a transfer from your account housed on the Ledger devi
 method is to use [AXIASolar-JS Apps UI][apps].
 
 > _Important:_ Transfering in this way sends tokens to another account on the Statemine parachain.
-> If you need to transfer KSM between Statemine and AXIALunar, see the [Teleporting](#teleporting)
+> If you need to transfer LUNAR between Statemine and AXIALunar, see the [Teleporting](#teleporting)
 > section below.
 
 - Click on the "Send" button next to your account.
 - In the second input, select one of the accounts from the drop-down menu or paste the address that
   you want to transfer funds to.
-- In the third input, enter the amount of KSM you want to transfer.
+- In the third input, enter the amount of LUNAR you want to transfer.
 - Click the "Make Transfer" button.
 - Confirm the transaction on your device.
 - A green success notification will be displayed when the transaction is included in a block.
@@ -175,7 +175,7 @@ method is to use [AXIASolar-JS Apps UI][apps].
 > account will be unable to make transactions which would get its balance below the existential
 > deposit. This prevents reaping of accounts with low balances. If you toggle this to _Off_, you
 > will be able to go below existential deposit balance, causing your account to be deleted and any
-> dust amount of KSM to be burned. If you encounter KeepAlive errors when making transactions, this
+> dust amount of LUNAR to be burned. If you encounter KeepAlive errors when making transactions, this
 > might be the reason.
 
 A detailed guide on doing transfers is available [here](../../learn/learn-balance-transfers.md).
@@ -191,7 +191,7 @@ clicking on your account's avatar icon - this immediately copies your address to
 
 **Please note** that your Statemine address is the same as your AXIALunar address. So make sure that
 you clarify to the sender that you wish to receive your tokens on the Statemine parachain, otherwise
-(if you're receiving KSM tokens) they could be sent on the AXIALunar chain.
+(if you're receiving LUNAR tokens) they could be sent on the AXIALunar chain.
 
 > **Warning**: before giving anyone your address, make sure it matches what's really on the Ledger
 > by [confirming the address on your device](#confirming-the-address-on-your-device). Some malware
@@ -206,7 +206,7 @@ parachains.
 The Statemine Ledger app doesn't support the `teleport` extrinsic at this point, so an intermediary
 account needs to be created first.
 
-To teleport KSM to the Relay chain follow these steps:
+To teleport LUNAR to the Relay chain follow these steps:
 
 - Create an account outside your Ledger. Instructions can be found [here](../../learn/learn-account-generation.md).
 - Transfer the desired amount as described [above](#sending-a-transfer). If you want to send exactly
@@ -219,7 +219,7 @@ Teleporting **to** a Ledger account from a non-Ledger account doesn't require th
 ## Support
 
 If you need support please send an email to [support@axialunar.network](mailto:support@axialunar.network)
-or visit [our Support page](https://support.axiasolar.network).
+or visit [our Support page](https://support.axiacoin.network).
 
 [ledger]: https://www.ledger.com/
 [apps]: https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/explorer

@@ -134,7 +134,7 @@ You can make this transaction from AXIASolar Apps by navigating to the "Extrinsi
 
 You also have the choice to add in a governance anonymous proxy underneath the "anonymous" type from the Proxy pallet and selecting "Governance" as the proxy type. A governance anonymous proxy is only accessible by another proxy and these do not come with any associated secret key.
 
-Read more on Anonymous Proxies [here](https://wiki.axiasolar.network/docs/en/learn-proxies#anonymous-proxies).
+Read more on Anonymous Proxies [here](https://solar.wiki.axiacoin.network/docs/en/learn-proxies#anonymous-proxies).
 
 ### Voting with a proxy
 

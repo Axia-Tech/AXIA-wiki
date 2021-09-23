@@ -16,33 +16,33 @@ The AXIASolar community is expanding every day. Below are the most essential lin
 
 ### AXIASolar
 
-- [AXIASolar Watercooler Chat](https://riot.im/app/#/room/!FdCojkeGzZLSEoiecf:web3.foundation?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - General room for talk about AXIASolar.
+- [AXIASolar Watercooler Chat](https://riot.im/app/#/room/!FdCojkeGzZLSEoiecf:axiacoin.org?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - General room for talk about AXIASolar.
 - [AXIASolar Validator Lounge](https://riot.im/app/#/room/#axiasolar-validator-lounge:matrix.org) - Room for validators learning about setting up a node.
-- [AXIASolar Direction](https://riot.im/app/#/room/!OwgojQyBzTlUQGGLhq:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - Governance, and a place to discuss the future of AXIASolar.
+- [AXIASolar Direction](https://riot.im/app/#/room/!OwgojQyBzTlUQGGLhq:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - Governance, and a place to discuss the future of AXIASolar.
 
 ### AXIALunar
 
 - [AXIALunar Watercooler Chat](https://riot.im/app/#/room/%23axialunarwatercooler:axiasolar.builders) - General room for talk about AXIALunar.
-- [AXIALunar Validator Lounge](https://riot.im/app/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - Room for validators learning about setting up a node.
-- [AXIALunar Direction](https://riot.im/app/#/room/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - Governance, and a place to discuss the future of AXIALunar.
+- [AXIALunar Validator Lounge](https://riot.im/app/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - Room for validators learning about setting up a node.
+- [AXIALunar Direction](https://riot.im/app/#/room/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - Governance, and a place to discuss the future of AXIALunar.
 
 ### Technical
 
 - [Substrate Technical](https://riot.im/app/#/room/#substrate-technical:matrix.org) - More advanced room for technical questions on building with Substrate.
-- [Smart Contracts & Parity Ink!](https://riot.im/app/#/room/!tYUCYdSvSYPMjWNDDD:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - A room to discuss developing Substrate smart contracts using Parity Ink!
+- [Smart Contracts & Parity Ink!](https://riot.im/app/#/room/!tYUCYdSvSYPMjWNDDD:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - A room to discuss developing Substrate smart contracts using Parity Ink!
 
 ## Socials
 
 - [Subscribe to the AXIASolar newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) - Sign-up for our newsletter here.
 - [Web3 Medium Blog](https://medium.com/@web3)
-- [Web3 Foundation Twitter](https://twitter.com/web3foundation)
-- [Web3 Foundation YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g)
+- [AXIACoin Foundation Twitter](https://twitter.com/web3foundation)
+- [AXIACoin Foundation YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g)
 - [AXIASolar Reddit](https://www.reddit.com/r/dot/)
-- [AXIASolar Blog](https://axiasolar.network/blog/)
+- [AXIASolar Blog](https://axiacoin.network/blog/)
 - [AXIASolar Twitter](https://twitter.com/axiasolarnetwork)
 - [AXIASolar YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
 - [AXIASolar Telegram](https://t.me/AXIASolarOfficial)
-- [AXIASolar's Latest Research](https://research.web3.foundation/en/latest/axiasolar/)
+- [AXIASolar's Latest Research](https://research.axiacoin.org/en/latest/axiasolar/)
 - [AXIALunar Twitter](https://twitter.com/axialunarnetwork)
 - [AXIALunar Telegram](https://t.me/axialunarnetworkofficial)
 - [AXIALunar Reddit](https://www.reddit.com/r/AXIALunar)
@@ -52,4 +52,4 @@ The AXIASolar community is expanding every day. Below are the most essential lin
 
 ## Ecosystem
 
-- [Teams Building on AXIASolar](https://forum.web3.foundation/t/teams-building-on-axiasolar/67) - Maintained list of teams building on AXIASolar and/or Substrate.
+- [Teams Building on AXIASolar](https://forum.axiacoin.org/t/teams-building-on-axiasolar/67) - Maintained list of teams building on AXIASolar and/or Substrate.

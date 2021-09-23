@@ -13,7 +13,7 @@ Substrate implementation, you probably want the ability to run a node-as-a-back-
 always better to rely on your own infrastructure than on a third-party-hosted one in this brave new
 decentralized world.
 
-This guide will show you how to connect to [AXIASolar network](https://axiasolar.network/), but the
+This guide will show you how to connect to [AXIASolar network](https://axiacoin.network/), but the
 same process applies to any other [Substrate](https://substrate.dev/docs/en/)-based chain. First,
 let's clarify the term _full node_.
 

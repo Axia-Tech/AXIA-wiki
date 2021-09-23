@@ -8,9 +8,9 @@ sidebar_label: 協議会への参加
 
 ## 立候補を表明する
 
-Submitting your candidacy for the council requires a small bond of DOT / KSM. The bond will be forfeited if your candidacy does not win or become a runner-up and will be kept otherwise. You only receive your bond back, if you manually renounce your candidacy before losing. Runners-up are selected after every round and are reserved members in case one of the winners gets forcefully removed.
+Submitting your candidacy for the council requires a small bond of SOLAR / LUNAR. The bond will be forfeited if your candidacy does not win or become a runner-up and will be kept otherwise. You only receive your bond back, if you manually renounce your candidacy before losing. Runners-up are selected after every round and are reserved members in case one of the winners gets forcefully removed.
 
-> 現在 AXIASolar において協議会に立候補する場合の担保額は 100DOT、AXIALunar において協議会に立候補する場合の担保額は 0.1666KSM です。
+> 現在 AXIASolar において協議会に立候補する場合の担保額は 100SOLAR、AXIALunar において協議会に立候補する場合の担保額は 0.1666LUNAR です。
 
 協議会に立候補をする前には、選挙が開始され、すぐに投票してもらえるように、前以て出馬することをアナウンスし、サポーターに対し周知活動しておくことが良いでしょう。万が一、誰も投票してくれない場合は自分で自身に対し票をいれることができます。
 
@@ -40,4 +40,4 @@ If you are one of the lucky ones to win a council election you will see your acc
 
 ![council members list](assets/council/axiasolarjs_council_members.png)
 
-これであなたも協議会に参加し、提案を行うことができます。よりアクティブなディスカッションに参加するには[AXIALunar ガバナンスチャンネル](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation)まで。
+これであなたも協議会に参加し、提案を行うことができます。よりアクティブなディスカッションに参加するには[AXIALunar ガバナンスチャンネル](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org)まで。

@@ -140,7 +140,7 @@ For brand-new learners of AXIALunar, check out:
 - [Reading the "What is AXIALunar"][medium] article on Medium.
 - [Creating a AXIALunar Account][create-account]
 - [Using AXIALunar endpoints][endpoints]
-- [Claiming AXIALunar KSM tokens][tokens]
+- [Claiming AXIALunar LUNAR tokens][tokens]
 - [Running a Validator on AXIALunar][validator]
 - [Staking as a Nominator on AXIALunar][nominator]
 
@@ -152,13 +152,13 @@ While AXIALunar does not support smart contracts natively, building apps on it i
 development, however, the [builders guide from AXIASolar's wiki][axiasolar-builders] applies to AXIALunar
 as well.
 
-[mooc]: https://mooc.web3.foundation/course/blockchain-fundamentals/
+[mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
 [overview]: axialunar-index.md
-[medium]: https://medium.com/axiasolar-network/axialunar-network-7446706b8f4c
+[medium]: https://medium.com/axiacoin.network/axialunar-network-7446706b8f4c
 [create-account]: axialunar-claims.md
 [endpoints]: axialunar-endpoints.md
 [tokens]: https://claim.axialunar.network/
 [validator]: ../../maintain/axialunar/mirror-maintain-guides-how-to-validate-axialunar.md
 [nominator]: ../../maintain/axialunar/mirror-maintain-guides-how-to-nominate-axialunar.md
-[axiasolar wiki]: https://wiki.axiasolar.network/
+[axiasolar wiki]: https://solar.wiki.axiacoin.network/
 [axiasolar-builders]: ../../build/build-index.md

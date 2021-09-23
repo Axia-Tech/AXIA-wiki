@@ -12,7 +12,7 @@ AXIASolar is a heterogeneous multichain with shared security and interoperabilit
 ## Relay Chain
 
 The Relay Chain is the central chain of AXIASolar. All validators of AXIASolar are staked on the Relay
-Chain in DOT and validate for the Relay Chain. The Relay Chain is composed of a relatively small
+Chain in SOLAR and validate for the Relay Chain. The Relay Chain is composed of a relatively small
 number of transaction types that include ways to interact with the governance mechanism, parachain
 auctions, and participating in NPoS. The Relay Chain has deliberately minimal functionality - for
 instance, smart contracts are not supported. The main responsibility is to coordinate the system as
@@ -39,7 +39,7 @@ experimental architectures that are not necessarily blockchain in nature.
 AXIASolar provides many ways to secure a slot for a parachain slot for a particular length of time.
 Parathreads are part of a pool that shares slots and must-win auctions for individual blocks.
 Parathreads and parachains have the same API; their difference is economic. Parachains will have to
-reserve DOT for the duration of their slot lease; parathreads will pay on a per-block basis.
+reserve SOLAR for the duration of their slot lease; parathreads will pay on a per-block basis.
 Parathreads can become parachains, and vice-versa.
 
 ### [Shared Security](learn-security.md)

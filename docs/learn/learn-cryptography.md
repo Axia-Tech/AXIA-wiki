@@ -11,7 +11,7 @@ knowledge about cryptographic primitives that are generally used in blockchains 
 elliptic curve cryptography (ECC), and public-private keypairs.
 
 For detailed descriptions on the cryptography used in AXIASolar please see the more advanced
-[research wiki](https://research.web3.foundation).
+[research wiki](https://research.axiacoin.org).
 
 ## Hashing Algorithm
 

@@ -104,7 +104,7 @@ axiasolar purge-chain
 
 ## Deployment Tools
 
-Web3 Foundation maintains [AXIASolar Deployer](https://github.com/axia-tech/axiasolar-deployer), which
+AXIACoin Foundation maintains [AXIASolar Deployer](https://github.com/axia-tech/axiasolar-deployer), which
 allows you to create local or remote cloud deployments of AXIASolar nodes. See the README for
 instructions.
 

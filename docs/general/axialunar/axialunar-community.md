@@ -16,14 +16,14 @@ public contact and anyone doing so is likely trying to scam you.
   houses the Rust implementation of the AXIASolar and AXIALunar Host.
 - [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
   Information on hosting meetups, applying for funding, and materials for running it.
-- [Support Knowledgebase](https://support.axiasolar.network/support/home) and
-  [Support Email](mailto:support@axiasolar.network)
-- [AXIASolar's Latest Research](https://research.web3.foundation/en/latest/axiasolar/) - also applies
+- [Support Knowledgebase](https://support.axiacoin.network/support/home) and
+  [Support Email](mailto:support@axiacoin.network)
+- [AXIASolar's Latest Research](https://research.axiacoin.org/en/latest/axiasolar/) - also applies
   to AXIALunar.
 
 ### Events
 
-The Web3 Foundation hosts many events online and in-person. To check out our current and past
+The AXIACoin Foundation hosts many events online and in-person. To check out our current and past
 events, please refer to our public
 [Notion page here](https://www.notion.so/Public-Events-Database-fdd2df4c29d04818a5dd403e2b85920d).
 
@@ -35,11 +35,11 @@ application we use most often to interact with the Matrix protocol is the
 
 - [AXIALunar Watercooler Chat](https://app.element.io/#/room/%23axialunarwatercooler:axiasolar.builders) -
   General room for talk about AXIALunar.
-- [AXIALunar Validator Lounge](https://app.element.io/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.parity.io&via=matrix.org&via=web3.foundation) -
+- [AXIALunar Validator Lounge](https://app.element.io/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) -
   Room for validators learning about setting up a node.
-- [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) -
+- [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) -
   Governance, and a place to discuss the future of AXIALunar.
-- [AXIASolar Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:web3.foundation) - News about what is
+- [AXIASolar Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:axiacoin.org) - News about what is
   happening in the AXIASolar ecosystem, published every weekday except holidays, includes AXIALunar.
 - To join the Chinese Validator chat, message
   [Anson](https://raw.githubusercontent.com/axialunarnetwork/userguide/master/chinese-language-validators-wechat.png?token=ABIBK6VM3MAOKWE43GM3JHC5G3ARG)
@@ -49,7 +49,7 @@ application we use most often to interact with the Matrix protocol is the
 
 - [Substrate Technical](https://app.element.io/#/room/#substrate-technical:matrix.org) - More
   advanced room for technical questions on building with Substrate.
-- [Smart Contracts & Parity Ink!](https://app.element.io/#/room/!tYUCYdSvSYPMjWNDDD:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) -
+- [Smart Contracts & Parity Ink!](https://app.element.io/#/room/!tYUCYdSvSYPMjWNDDD:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) -
   A room to discuss developing Substrate smart contracts using Parity Ink!
 
 ## Social
@@ -61,7 +61,7 @@ application we use most often to interact with the Matrix protocol is the
 ## Blogs and tutorials
 
 - [Web3 Medium Blog](https://medium.com/@web3)
-- [AXIASolar Blog](https://axiasolar.network/blog/)
+- [AXIASolar Blog](https://axiacoin.network/blog/)
 - [Gavin Wood's Medium Blog](https://medium.com/@gavofyork)
 - [Dotleap.com Tutorials](https://dotleap.com)
 

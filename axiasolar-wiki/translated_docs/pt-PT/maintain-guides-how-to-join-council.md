@@ -8,9 +8,9 @@ The council is an elected body of on-chain accounts that are intended to represe
 
 ## Submit Candidacy
 
-Submitting your candidacy for the council requires a small bond of DOTs / KSMs. The bond will be forfeited if your candidacy does not win or become a runner-up, but if you become a member of the council you will eventually get your bond back. Runner-ups are selected after every round and are reserved members in case one of the winners gets forcefully removed.
+Submitting your candidacy for the council requires a small bond of SOLARs / LUNARs. The bond will be forfeited if your candidacy does not win or become a runner-up, but if you become a member of the council you will eventually get your bond back. Runner-ups are selected after every round and are reserved members in case one of the winners gets forcefully removed.
 
-> Currently the bond for submitting a council candidacy on AXIALunar is 1 KSM.
+> Currently the bond for submitting a council candidacy on AXIALunar is 1 LUNAR.
 
 It is a good idea to announce your council intention before submitting your candidacy so that your supporters will know when they can start to vote for you. You can also vote for yourself in case no one else does.
 
@@ -40,4 +40,4 @@ If you are one of the lucky ones to win a council election you will see your acc
 
 ![e](assets/council/member.png)
 
-Congratulations! Now you are able to participate on the council by making motions or vetoing proposals. It's a good idea to now join the public [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation).
+Congratulations! Now you are able to participate on the council by making motions or vetoing proposals. It's a good idea to now join the public [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org).

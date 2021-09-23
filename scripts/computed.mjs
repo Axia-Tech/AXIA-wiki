@@ -1,5 +1,5 @@
-const DOTS = 1000000000000;
-const DOLLARS = DOTS / 100;
+const SOLARS = 1000000000000;
+const DOLLARS = SOLARS / 100;
 const CENTS = DOLLARS / 100;
 const MILLICENTS = CENTS / 1000;
 
@@ -15,12 +15,12 @@ const dotDeposit = (items, bytes) => {
 const dotProxyDepositBase = dotDeposit(1, 8) / DotDecimals;
 const dotProxyDepositFactor = dotDeposit(0, 33) / DotDecimals;
 
-const KSM_DOLLARS = DOTS / 6;
-const KSM_CENTS = KSM_DOLLARS / 100;
-const KSM_MILLICENTS = KSM_CENTS / 1000;
+const LUNAR_DOLLARS = SOLARS / 6;
+const LUNAR_CENTS = LUNAR_DOLLARS / 100;
+const LUNAR_MILLICENTS = LUNAR_CENTS / 1000;
 
 const ksmDeposit = (items, bytes) => {
-  return items* 20 * KSM_DOLLARS + bytes * 100 * KSM_MILLICENTS
+  return items* 20 * LUNAR_DOLLARS + bytes * 100 * LUNAR_MILLICENTS
 }
 
 const dotIpfsPdfUrl = `https://ipfs.io/ipfs/${process.env.IPFS_PDF_HASH}?filename=axiasolar-wiki.pdf`

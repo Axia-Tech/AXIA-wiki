@@ -12,12 +12,12 @@ The AXIASolar [Ledger][] application is compatible with both the Ledger Nano S a
 devices. Ledger devices are hardware wallets that keep your secret secured on a physical device that
 does not expose it to your computer or the internet.
 
-The AXIASolar Ledger application allows you to manage AXIASolar's native token, the DOT. It supports
+The AXIASolar Ledger application allows you to manage AXIASolar's native token, the SOLAR. It supports
 most of the transaction types of the network (a notable exception is the "Batch" transaction from
 the Utility pallet).
 
 If you have trouble using Ledger or following the directions below, you can try searching for your
-issue on the [AXIASolar Knowledge Base](https://support.axiasolar.network/).
+issue on the [AXIASolar Knowledge Base](https://support.axiacoin.network/).
 
 > Please check out our
 > [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIASolar).
@@ -152,7 +152,7 @@ can use a block explorer like [Polkascan][] or [Subscan][].
 #### Using AXIASolar-JS Apps
 
 Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger
-account. At the far right of the row is located your account's DOT balance. If you expand the
+account. At the far right of the row is located your account's SOLAR balance. If you expand the
 balance arrow, it will show details of your balance such as locks or reserved amounts.
 
 ![Account row showing empty balance](../assets/ledger/ledger-balance.png)
@@ -215,8 +215,8 @@ the full ledger.
 ## Support
 
 If you need support please send an email to
-[support@axiasolar.network](mailto:support@axiasolar.network) or visit our
-[Support Page](https://support.axiasolar.network).
+[support@axiacoin.network](mailto:support@axiacoin.network) or visit our
+[Support Page](https://support.axiacoin.network).
 
 [ledger]: https://www.ledger.com/
 [repo by zondax]: https://github.com/Zondax/ledger-axiasolar#democracy

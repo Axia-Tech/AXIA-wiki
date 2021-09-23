@@ -66,7 +66,7 @@ function FooterSocialColumn() {
       </p>
       <Button>
         <a
-          href="https://info.axiasolar.network/subscribe"
+          href="https://info.axiacoin.network/subscribe"
           target="_blank"
           style={{ color: "white" }}
         >
@@ -140,7 +140,7 @@ export default function Footer() {
                 id: "footer.body.general.about",
                 description: "About link in General column in Footer",
               })}
-              href="https://axiasolar.network/about"
+              href="https://axiacoin.network/about"
             />
             <FooterLink
               content={translate({
@@ -148,7 +148,7 @@ export default function Footer() {
                 id: "footer.body.general.faq",
                 description: "FAQ link in General column in Footer",
               })}
-              href="https://axiasolar.network/faq"
+              href="https://axiacoin.network/faq"
             />
             <FooterLink
               content={translate({
@@ -156,7 +156,7 @@ export default function Footer() {
                 id: "footer.body.general.contact",
                 description: "Contact link in General column in Footer",
               })}
-              href="https://axiasolar.network/contact"
+              href="https://axiacoin.network/contact"
             />
             <FooterLink
               content={translate({
@@ -164,7 +164,7 @@ export default function Footer() {
                 id: "footer.body.general.build",
                 description: "Build link in General column in Footer",
               })}
-              href="https://axiasolar.network/build"
+              href="https://axiacoin.network/build"
             />
             <FooterLink
               content={translate({
@@ -181,7 +181,7 @@ export default function Footer() {
                 id: "footer.body.general.careers",
                 description: "Careers link in General column in Footer",
               })}
-              href="https://axiasolar.network/jobs"
+              href="https://axiacoin.network/jobs"
             />
           </FooterNavColumn>
           <FooterNavColumn
@@ -197,7 +197,7 @@ export default function Footer() {
                 id: "footer.body.technology.technology",
                 description: "Technology link in Technology column in Footer",
               })}
-              href="https://axiasolar.network/technology"
+              href="https://axiacoin.network/technology"
             />
             <FooterLink
               content={translate({
@@ -205,7 +205,7 @@ export default function Footer() {
                 id: "footer.body.technology.token",
                 description: "Token link in Technology column in Footer",
               })}
-              href="https://axiasolar.network/dot-token"
+              href="https://axiacoin.network/dot-token"
             />
             <FooterLink
               content={translate({
@@ -229,7 +229,7 @@ export default function Footer() {
                 id: "footer.body.technology.whitepaper",
                 description: "Whitepaper link in Technology column in Footer",
               })}
-              href="https://axiasolar.network/AXIASolarPaper.pdf"
+              href="https://axiacoin.network/AXIASolarPaper.pdf"
             />
             <FooterLink
               content={translate({
@@ -237,7 +237,7 @@ export default function Footer() {
                 id: "footer.body.technology.lightpaper",
                 description: "Lightpaper link in Technology column in Footer",
               })}
-              href="https://axiasolar.network/AXIASolar-lightpaper.pdf"
+              href="https://axiacoin.network/AXIASolar-lightpaper.pdf"
             />
           </FooterNavColumn>
           <FooterNavColumn
@@ -253,7 +253,7 @@ export default function Footer() {
                 id: "footer.body.community.community",
                 description: "Community link in Community column in Footer",
               })}
-              href="https://axiasolar.network/community"
+              href="https://axiacoin.network/community"
             />
             <FooterLink
               content={translate({
@@ -261,7 +261,7 @@ export default function Footer() {
                 id: "footer.body.community.documentation",
                 description: "Documentation link in Community column in Footer",
               })}
-              href="http://wiki.axiasolar.network/en/latest/"
+              href="http://wiki.axiacoin.network/en/latest/"
             />
             <FooterLink
               content={translate({
@@ -269,16 +269,16 @@ export default function Footer() {
                 id: "footer.body.community.brandAssets",
                 description: "Brand Assets link in Community column in Footer",
               })}
-              href="https://axiasolar.network/brand-assets"
+              href="https://axiacoin.network/brand-assets"
             />
-            <FooterLink content="Blog" href="https://axiasolar.network/blog" />
+            <FooterLink content="Blog" href="https://axiacoin.network/blog" />
             <FooterLink
               content="Element Chat"
-              href="https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:web3.foundation?via=matrix.parity.io&via=matrix.org&via=web3.foundation"
+              href="https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:axiacoin.org?via=matrix.parity.io&via=matrix.org&via=axiacoin.org"
             />
             <FooterLink
               content="Medium"
-              href="https://medium.com/axiasolar-network"
+              href="https://medium.com/axiacoin.network"
             />
           </FooterNavColumn>
           <FooterSocialColumn />
@@ -288,7 +288,7 @@ export default function Footer() {
             <Col lg={2} className="mb-2 mb-lg-0">
               <a
                 className="navbar-brand"
-                href="https://axiasolar.network/"
+                href="https://axiacoin.network/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -300,7 +300,7 @@ export default function Footer() {
             <ul className="list-unstyled d-flex flex-wrap list-pipe-separator">
               <FooterLegalLink
                 content={footer.copyright}
-                href="https://web3.foundation"
+                href="https://axiacoin.org"
               />
               <FooterLegalLink
                 content={translate({
@@ -308,7 +308,7 @@ export default function Footer() {
                   id: "footer.footerLegal.impressum",
                   description: "Impressum Button Label in Footer Legal",
                 })}
-                href="https://axiasolar.network/impressum"
+                href="https://axiacoin.network/impressum"
               />
               <FooterLegalLink
                 content={translate({
@@ -316,7 +316,7 @@ export default function Footer() {
                   id: "footer.footerLegal.disclaimer",
                   description: "Disclaimer Button Label in Footer Legal",
                 })}
-                href="https://axiasolar.network/disclaimer"
+                href="https://axiacoin.network/disclaimer"
               />
               <FooterLegalLink
                 content={translate({
@@ -324,7 +324,7 @@ export default function Footer() {
                   id: "footer.footerLegal.privacy",
                   description: "Privacy Button Label in Footer Legal",
                 })}
-                href="https://axiasolar.network/privacy"
+                href="https://axiacoin.network/privacy"
               />
               {/* TODO: FIX the replacement */}
               <FooterLegalLink

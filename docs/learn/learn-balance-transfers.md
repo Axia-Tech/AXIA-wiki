@@ -45,11 +45,11 @@ is included in a block you will see a green notification in the top-right corner
 
 At an [extrinsic](../general/glossary.md#extrinsic) level, there are two main ways to transfer funds from one
 account to another. These are `transfer` and `transfer_keep_alive`. `transfer` will allow you to
-send DOTs regardless of the consequence; `transfer_keep_alive` will not allow you to send an amount
+send SOLARs regardless of the consequence; `transfer_keep_alive` will not allow you to send an amount
 that would allow the sending account to be removed due to it going below the existential deposit.
 
 By default, AXIASolar-JS Apps will use `transfer_keep_alive`, ensuring that the account you send from
-cannot drop below the existential deposit (1 DOT or 0.001666 KSM). However, it may be that you do
+cannot drop below the existential deposit (1 SOLAR or 0.001666 LUNAR). However, it may be that you do
 not want to keep this account alive (for example, because you are moving all of your funds to a
 different address). In this case, click on the "keep-alive" toggle at the bottom of the modal
 window. The label should switch from "Transfer with account keep-alive checks"(`transfer_keep_alive`
@@ -58,10 +58,10 @@ a common use case for using normal transfers is to entirely clear out the accoun
 will appear if you have the keep-alive check turned off that will send all the tokens in the
 account, minus a transaction fee, to the destination address.
 
-Attempting to send less than the existential deposit to an account with 0 DOT will always fail, no
-matter if the keep-alive check is on or not. For instance, attempting to transfer 0.1 DOT to an
-account you just generated (and thus has no DOT) will fail, since 0.1 is less than the existential
-deposit of 1 DOT and the account cannot be initialized with such a low balance.
+Attempting to send less than the existential deposit to an account with 0 SOLAR will always fail, no
+matter if the keep-alive check is on or not. For instance, attempting to transfer 0.1 SOLAR to an
+account you just generated (and thus has no SOLAR) will fail, since 0.1 is less than the existential
+deposit of 1 SOLAR and the account cannot be initialized with such a low balance.
 
 > NOTE: Even if the transfer fails due to a keep-alive check, the transaction fee will be deducted
 > from the sending account if you attempt to transfer.
@@ -117,7 +117,7 @@ probably not the reason for your tokens having existing references.
 {{ axialunar: On AXIALunar, you can check if recovery has been set up by checking the `recovery.recoverable(AccountId)`
 chain state. This can be found under `Developer > Chain state` in [AXIASolarJS Apps][axiasolar-js apps]. :axialunar }}
 
-#### Existing {{ axiasolar: Non-DOT :axiasolar }} {{ axialunar: Non-KSM :axialunar }} Assets
+#### Existing {{ axiasolar: Non-SOLAR :axiasolar }} {{ axialunar: Non-LUNAR :axialunar }} Assets
 
 Currently, {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} does not use the
 [Assets Pallet](https://substrate.dev/docs/en/knowledgebase/runtime/frame#assets), so this is

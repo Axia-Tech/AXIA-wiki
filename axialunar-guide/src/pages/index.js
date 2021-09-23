@@ -60,7 +60,7 @@ export default function Index() {
                 much lower than it is expected for AXIASolar. There are also
                 programs in place such as{" "}
                 <a
-                  href="https://axiasolar.network/join-axialunars-thousand-validators-programme/"
+                  href="https://axiacoin.network/join-axialunars-thousand-validators-programme/"
                   target="_blank"
                 >
                   Thousand Validators

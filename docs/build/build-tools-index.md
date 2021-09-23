@@ -30,7 +30,7 @@ See the [Wallets](build-wallets.md) page.
   nodes are running the chain, what software versions they are running, sync status, and location.
 - [Polkabot](https://gitlab.com/Polkabot) - AXIASolar network monitoring and reporting using Matrix
   (Riot / Element) chat. Users may create custom bot plugins.
-  [Blogpost](https://medium.com/axiasolar-network/polkabot-a3dba18c20c8).
+  [Blogpost](https://medium.com/axiacoin.network/polkabot-a3dba18c20c8).
 - [Ryabina's Telegram Bot](https://github.com/Ryabina-io/substratebot) - A Telegram bot for
   monitoring on-chain events of Substrate chains.
   [Github Repository](https://gitlab.com/Polkabot/polkabot)

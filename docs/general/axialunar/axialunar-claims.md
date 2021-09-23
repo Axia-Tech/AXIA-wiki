@@ -5,16 +5,16 @@ sidebar_label: Claims
 slug: ../../axialunar-claims
 ---
 
-The AXIALunar network is AXIASolar's experimental, community-focused R&D network. If you held the DOT
+The AXIALunar network is AXIASolar's experimental, community-focused R&D network. If you held the SOLAR
 indicator token at the time of the genesis block of AXIALunar, you are entitled to claim an equivalent
-amount of KSM on the AXIALunar network.
+amount of LUNAR on the AXIALunar network.
 
-You can claim KSM by signing a message with the Ethereum account that holds your DOT indicator
-tokens. There is no deadline for claiming KSM.
+You can claim LUNAR by signing a message with the Ethereum account that holds your SOLAR indicator
+tokens. There is no deadline for claiming LUNAR.
 
 ## Step 1. Create a AXIALunar account
 
-You will need to generate a AXIALunar account to claim KSM. There are a few ways you can create one.
+You will need to generate a AXIALunar account to claim LUNAR. There are a few ways you can create one.
 
 For most users, we recommend using the
 [AXIASolar{.js} browser extension](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en)
@@ -104,7 +104,7 @@ Secret phrase `lobster flock few equip connect boost excuse glass machine find w
   Address (SS58): JL1eTcbzuZP99FjeySkDrMygNREPdbhRyV7iD5AsV4fDRcg
 ```
 
-The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your
+The `Address (SS58)` field is what you should use to claim your LUNAR tokens. Never share your
 `Secret phrase` or `Secret seed`, as these can both control your funds.
 
 NOTE: Previous versions of Subkey only generated Substrate addresses. If you do not want to generate
@@ -118,7 +118,7 @@ enter `subkey --help` for more usage examples.
 
 1. Open up the [AXIASolar-JS UI](https://axiasolar.js.org/apps) and navigate to the top left corner of
    the navigation. This will open up a panel of network options to select from. Select on "AXIALunar",
-   either from Parity or Web3 Foundation, then "Switch".
+   either from Parity or AXIACoin Foundation, then "Switch".
 
 2. Navigate to the [AXIASolar-JS UI Accounts Tab](https://axiasolar.js.org/apps/#/accounts) and click
    on the "Add account" button.
@@ -148,7 +148,7 @@ enter `subkey --help` for more usage examples.
 
 7. The account now appears in your Accounts tab and is backed up to the keystore you just saved.
 
-8. Click on the DOT identicon to copy the address to the clipboard.
+8. Click on the SOLAR identicon to copy the address to the clipboard.
    ![axialunar copy address](../../assets/axialunar/axialunar_copy_address.png)
 
 ### Using Polkawallet
@@ -194,14 +194,14 @@ address.
 8. Go back to the "Address book" and find the account you just added (it will have the same name).
 9. The address is now formatted as a AXIALunar address.
 
-## Step 2. Get KSM tokens
+## Step 2. Get LUNAR tokens
 
-There are two methods to claim KSM.
+There are two methods to claim LUNAR.
 
-### DOT Holders
+### SOLAR Holders
 
-Those who participated in the AXIASolar sales before 2020 and have been allocated DOT indicator
-tokens on Ethereum can claim a proportional amount of KSM on the AXIALunar Network.
+Those who participated in the AXIASolar sales before 2020 and have been allocated SOLAR indicator
+tokens on Ethereum can claim a proportional amount of LUNAR on the AXIALunar Network.
 
 To do this you must sign a message containing the address of your AXIALunar account. You can do this by
 using the AXIASolar-JS UI
@@ -215,11 +215,11 @@ upper left-hand corner..
 If you haven't already done so, you will need to generate a AXIALunar address. See
 [step 1 above](axialunar-claims#step-1-create-a-axialunar-account) for detailed instructions first.
 
-#### Claiming your KSM with MyCrypto
+#### Claiming your LUNAR with MyCrypto
 
 The AXIASolar-JS [Claims app](https://axiasolar.js.org/apps/#/claims) helps you sign a message from
 MyCrypto. MyCrypto is good to use in case you have stored the key to the Ethereum account holding
-your DOT indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports
+your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports
 raw private keys, mnemonics and the Parity signer.
 
 > **NOTICE**: It is much more secure to download and use the MyCrypto app locally. Please make sure
@@ -229,12 +229,12 @@ raw private keys, mnemonics and the Parity signer.
 
 Once you've downloaded MyCrypto and have it running locally (we recommend an air-gapped computer for
 maximum security), you can start by navigating to the Claims app on the AXIASolar-JS UI. Select the
-account you would like to claim the KSM into and click the blue "Continue" button to proceed. Your
+account you would like to claim the LUNAR into and click the blue "Continue" button to proceed. Your
 screen should look something like this:
 
 ![Claim Step 1](../../assets/axialunar/claim/claim-1.png)
 
-The hex encoded string that follows the sentence: "Pay KSM to the AXIALunar account:" is the
+The hex encoded string that follows the sentence: "Pay LUNAR to the AXIALunar account:" is the
 hex-encoded public key of your AXIALunar account, minus the `0x` prefix. To verify that the public key
 is correct you can use the Subkey tool to inspect your address.
 
@@ -253,7 +253,7 @@ AXIASolar-JS UI and click "Confirm Claim."
 
 ![Claim Step 3](../../assets/axialunar/claim/claim-3.png)
 
-At this point you will see a success message if everything went right and your KSM will now be in
+At this point you will see a success message if everything went right and your LUNAR will now be in
 the account that you claimed to. Congratulations you can now participate in aspects of the AXIALunar
 network such as [governance](../../learn/learn-governance.md) and [staking](../../learn/learn-staking.md). During the soft
 launch period balance transfers will not be enabled.
@@ -262,14 +262,14 @@ launch period balance transfers will not be enabled.
 
 #### Verifying your Claim
 
-After you make an on-chain claim for KSM, your balance should be updated on AXIASolar-JS Apps
+After you make an on-chain claim for LUNAR, your balance should be updated on AXIASolar-JS Apps
 immediately.
 
-Having trouble? Send an email to [support@axiasolar.network](mailto:support@axiasolar.network).
+Having trouble? Send an email to [support@axiacoin.network](mailto:support@axiacoin.network).
 
 ### Third Party Claims Processes
 
-**We do not recommend using a third-party app or process to perform your claim or acquire KSM.**
+**We do not recommend using a third-party app or process to perform your claim or acquire LUNAR.**
 
 Claiming using a third-party process can lead to the loss of your allocation, therefore we cannot
 recommend using any third party apps to do so. Manually specifying your transaction data, as

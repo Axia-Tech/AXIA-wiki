@@ -10,15 +10,15 @@ sidebar_label: How to run a Validator on AXIALunar
 
 Running a validator on a live network is a lot of responsibility! You will be accountable for not only your own stake, but also the stake of your current nominators. If you make a mistake and get slashed, your money and your reputation will be at risk. However, running a validator can also be very rewarding, knowing that you contribute to the security of a decentralized network while growing your stash.
 
-Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The Web3 Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/axia-tech/axiasolar-secure-validator) that you can use by deploying yourself. As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
+Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The AXIACoin Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/axia-tech/axiasolar-secure-validator) that you can use by deploying yourself. As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
 
 If you need help, please reach out on the [AXIALunar validator chat](https://riot.im/app/#/room/#AXIALunarValidatorLounge:axiasolar.builders) on Riot. The team and other validators are there to help answer questions and provide experience.
 
-### How Many KSM Do I Need?
+### How Many LUNAR Do I Need?
 
-You can have a rough estimate on that by using the methods listed [here](faq#what-are-the-ways-to-find-out-the-minimum-stake-necessary-for-the-validators). Validators are elected based on [Phragmén's algorithm](learn-phragmen). To be elected into the set, you need a minimum stake behind your validator. This stake can come from yourself or from [nominators](learn-nominator). This means that as a minimum, you will need enough KSM to set up Stash and Controller [accounts](learn-keys) with the existential deposit, plus a little extra for transaction fees. The rest can come from nominators.
+You can have a rough estimate on that by using the methods listed [here](faq#what-are-the-ways-to-find-out-the-minimum-stake-necessary-for-the-validators). Validators are elected based on [Phragmén's algorithm](learn-phragmen). To be elected into the set, you need a minimum stake behind your validator. This stake can come from yourself or from [nominators](learn-nominator). This means that as a minimum, you will need enough LUNAR to set up Stash and Controller [accounts](learn-keys) with the existential deposit, plus a little extra for transaction fees. The rest can come from nominators.
 
-**Warning:** Any KSM that you stake for your validator is liable to be slashed, meaning that an insecure or improper setup may result in loss of KSM tokens! If you are not confident in your ability to run a validator node, it is recommended to nominate your KSM to a trusted validator node instead.
+**Warning:** Any LUNAR that you stake for your validator is liable to be slashed, meaning that an insecure or improper setup may result in loss of LUNAR tokens! If you are not confident in your ability to run a validator node, it is recommended to nominate your LUNAR to a trusted validator node instead.
 
 ## 初始设置
 
@@ -138,25 +138,25 @@ Depending on the size of the chain when you do this, this step may take anywhere
 
 If you are interested in determining how much longer you have to go, your server logs (printed to STDOUT from the `axiasolar` process) will tell you the latest block your node has processed and verified. You can then compare that to the current highest block via [Telemetry](https://telemetry.axiasolar.io/#list/AXIALunar) or the [AXIASolar-JS Block Explorer](https://axiasolar.js.org/apps/#/explorer).
 
-## 绑定 KSM
+## 绑定 LUNAR
 
 It is highly recommended that you make your controller and stash accounts be two separate accounts. For this, you will create two accounts and make sure each of them have at least enough funds to pay the fees for making transactions. Keep most of your funds in the stash account since it is meant to be the custodian of your staking funds.
 
-Make sure not to bond all your KSM balance since you will be unable to pay transaction fees from your bonded balance.
+Make sure not to bond all your LUNAR balance since you will be unable to pay transaction fees from your bonded balance.
 
 It is now time to set up our validator. We will do the following:
 
-- Bond the KSM of the Stash account. These KSM will be put at stake for the security of the network and can be slashed.
+- Bond the LUNAR of the Stash account. These LUNAR will be put at stake for the security of the network and can be slashed.
 - 选择 Controller，Controller 是决定何时开始或停止验证的帐户。
 
 First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) section. Click on "Account Actions", and then the "New stake" button.
 
 ![dashboard bonding](assets/guides/how-to-validate/axiasolar-dashboard-bonding.jpg)
 
-- **Stash account** - Select your Stash account. In this example, we will bond 100 milliKSM - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
-- **Controller account** - Select the Controller account created earlier. This account will also need a small amount of KSM in order to start and stop validating.
-- **Value bonded** - How much KSM from the Stash account you want to bond/stake. Note that you do not need to bond all of the KSM in that account. Also note that you can always bond _more_ KSM later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
-- **Payment destination** - The account where the rewards from validating are sent. More info [here](https://wiki.axiasolar.network/en/latest/axiasolar/learn-staking/#reward-distribution). Starting with runtime version v2023 natively included in client version [0.8.23](https://github.com/axia-tech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
+- **Stash account** - Select your Stash account. In this example, we will bond 100 milliLUNAR - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
+- **Controller account** - Select the Controller account created earlier. This account will also need a small amount of LUNAR in order to start and stop validating.
+- **Value bonded** - How much LUNAR from the Stash account you want to bond/stake. Note that you do not need to bond all of the LUNAR in that account. Also note that you can always bond _more_ LUNAR later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
+- **Payment destination** - The account where the rewards from validating are sent. More info [here](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn-staking/#reward-distribution). Starting with runtime version v2023 natively included in client version [0.8.23](https://github.com/axia-tech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom address. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of the staking rewards.
 
 Once everything is filled in properly, click `Bond` and sign the transaction with your Stash account.
 
@@ -180,7 +180,7 @@ You need to tell the chain your Session keys by signing and submitting an extrin
 
 #### Option 1: AXIASolar-JS Apps
 
-You can generate your [Session keys](https://wiki.axiasolar.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolar-JS Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Parity of Web3 Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
+You can generate your [Session keys](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolar-JS Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Parity of AXIACoin Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
 
 Once ensuring that you have connected to your node, the easiest way to set session keys for your node is by calling the `author_rotateKeys` RPC request to create new keys in your validator's keystore. Navigate to Toolbox tab and select RPC Calls then select the author > rotateKeys() option and remember to save the output that you get back for a later step.
 
@@ -222,13 +222,13 @@ If you go to the "Staking" tab, you will see a list of active validators current
 
 ![staking queue](assets/guides/how-to-validate/axiasolar-dashboard-staking.jpg)
 
-The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the _waiting_ queue. If your validator is not selected to become part of the validator set, it will remain in the _waiting_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of KSM staked or seek out nominators for your validator in order to join the validator set.
+The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the _waiting_ queue. If your validator is not selected to become part of the validator set, it will remain in the _waiting_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of LUNAR staked or seek out nominators for your validator in order to join the validator set.
 
 **Congratulations!** If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a AXIALunar validator! If you need help, reach out on the [AXIALunar forum](https://forum.axialunar.network/) or in the [AXIALunar Validator chat](https://riot.im/app/#/room/#AXIALunarValidatorLounge:axiasolar.builders).
 
 ## Thousand Validators Programme
 
-The Thousand Validators Programme is a joint initiative by Web3 Foundation and Parity Technologies to provide support for community validators. If you are interested in applying for the programme, you can find more information [on the wiki page](thousand-validators.md).
+The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Parity Technologies to provide support for community validators. If you are interested in applying for the programme, you can find more information [on the wiki page](thousand-validators.md).
 
 ## FAQ
 

@@ -25,9 +25,9 @@ or in AXIASolar-JS Apps by clicking the top-left corner of the screen and select
 
 <img src="/img/endpoints/axialunar_endpoint_parity.png" width=40% />
 
-## Web3 Foundation Archive Node
+## AXIACoin Foundation Archive Node
 
-The Web3 Foundation maintains an archive node at endpoint `wss://cc3-5.axialunar.network/`.
+The AXIACoin Foundation maintains an archive node at endpoint `wss://cc3-5.axialunar.network/`.
 
 To connect to this node, use the endpoint in your JavaScript apps like so:
 

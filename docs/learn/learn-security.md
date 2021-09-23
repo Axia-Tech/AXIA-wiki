@@ -62,8 +62,8 @@ Security is independent of the number of parachains that are connected to the AX
 The correlation of security and the number of validators exists as the higher number of validators
 will give the network stronger decentralization properties and make it harder to try to take down.
 However, the biggest indicator of the security of the network is the economic signal of the number
-of DOT that are bonded and staked. The greater the number of DOT staked by honest validators and
-nominators, the higher the minimum amount of DOT an attacker would need to acquire a validator slot.
+of SOLAR that are bonded and staked. The greater the number of SOLAR staked by honest validators and
+nominators, the higher the minimum amount of SOLAR an attacker would need to acquire a validator slot.
 
 ### Will parachains ever need their own security? In what scenarios do parachains need their own security?
 

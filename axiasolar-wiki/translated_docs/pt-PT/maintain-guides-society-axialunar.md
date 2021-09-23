@@ -42,7 +42,7 @@ Below are the various types of users at different stages.
 
 ## Procedure
 
-**Remember to take a look at the \[rules\]\[kapp rules\] first. And since those rules are not enforced entirely on-chain, it is recommended to join the [public chat room](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) to ask any questions if anything is unclear.**
+**Remember to take a look at the \[rules\]\[kapp rules\] first. And since those rules are not enforced entirely on-chain, it is recommended to join the [public chat room](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) to ask any questions if anything is unclear.**
 
 ### 1. Bid Phase
 
@@ -50,7 +50,7 @@ Anyone can submit a bid to join the society by reserving a deposit or finding an
 
 ![Society Dashboard](assets/society/submit_bid.jpg)
 
-Anyone who wants to join the society is required to deposit 10 KSM for reserve on AXIALunar and place the bid amount (1 KSM in this case) that they want to get when joining the society.
+Anyone who wants to join the society is required to deposit 10 LUNAR for reserve on AXIALunar and place the bid amount (1 LUNAR in this case) that they want to get when joining the society.
 
 ![Society Dashboard](assets/society/test_bid.jpg)
 
@@ -62,7 +62,7 @@ Once you have submitted the transaction, your bid will be shown on the [Society 
 
 If you are not sure what your position is, you can check that by going to the [Society->bids chain state](https://axiasolar.js.org/apps/#/chainstate) in the AXIASolarJS apps.
 
-You can find an existing member to place a bid on your behalf if you do not have KSM and you are willing to give them a tip. An existing member can submit a `vouch` transaction.
+You can find an existing member to place a bid on your behalf if you do not have LUNAR and you are willing to give them a tip. An existing member can submit a `vouch` transaction.
 
 > vouch(who,value,tip)
 >
@@ -107,7 +107,7 @@ In this example, a candidate will be approved to join the society since member 3
 >
 > The maximum number of strikes you can have is on AXIALunar is 10.
 
-The slashed funds (2 KSM currently) will be given to a random member who voted the same as the selected vote as a reward for participating in the vote. The reward is escrowed for some period of time - see below.
+The slashed funds (2 LUNAR currently) will be given to a random member who voted the same as the selected vote as a reward for participating in the vote. The reward is escrowed for some period of time - see below.
 
 #### Lock-up Time
 
@@ -144,7 +144,7 @@ Second, you will need to claim your payout manually by calling `payout` after th
 
 ![Society Payout](assets/society/payout.jpg)
 
-Third, there will be a membership challenge every seven days on AXIALunar. So one of the members will be randomly selected as a defender. Then, other members can vote whether this defender should stay in society or not. A simple majority wins the vote. You can take a look [here](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) and search for "Existing Members (Challenges)". Besides that, you can earn extra KSM by helping a user apply for the membership and requesting a tip. This is useful when a user does not have enough balance to reserve a deposit. The tip will be given when a user successfully joins the society.
+Third, there will be a membership challenge every seven days on AXIALunar. So one of the members will be randomly selected as a defender. Then, other members can vote whether this defender should stay in society or not. A simple majority wins the vote. You can take a look [here](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) and search for "Existing Members (Challenges)". Besides that, you can earn extra LUNAR by helping a user apply for the membership and requesting a tip. This is useful when a user does not have enough balance to reserve a deposit. The tip will be given when a user successfully joins the society.
 
 > **_NOTE:_**
 >
@@ -158,6 +158,6 @@ If a member accumulates too many strikes or fails their membership challenge, th
 
 [Convention of Approval of Membership](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) - Rules about joining the AXIALunar society
 
-[Kappa Sigma Mu Lounge](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - A public chat room on Riot to talk about anything about the society.
+[Kappa Sigma Mu Lounge](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - A public chat room on Riot to talk about anything about the society.
 
 [Substrate Society](https://www.shawntabrizi.com/substrate-society/) - It shows the AXIALunar society information and allowing you to directly place a bid if you have installed the [AXIASolarJS extension](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd).

@@ -83,7 +83,7 @@
       },
       "ens": {
         "title": "Adding accounts to an ENS domain",
-        "sidebar_label": "Using ENS with DOT/KSM accounts"
+        "sidebar_label": "Using ENS with SOLAR/LUNAR accounts"
       },
       "faq": {
         "title": "Frequently Asked Questions (FAQs)",
@@ -98,7 +98,7 @@
         "sidebar_label": "Glossary"
       },
       "grants": {
-        "title": "Web3 Foundation Grants",
+        "title": "AXIACoin Foundation Grants",
         "sidebar_label": "Grants"
       },
       "axiasolar-guide": {
@@ -221,9 +221,9 @@
         "title": "Cryptography Explainer",
         "sidebar_label": "Cryptography Explainer"
       },
-      "learn-DOT": {
-        "title": "DOT",
-        "sidebar_label": "DOT"
+      "learn-SOLAR": {
+        "title": "SOLAR",
+        "sidebar_label": "SOLAR"
       },
       "learn-governance": {
         "title": "Governance",
@@ -443,7 +443,7 @@
       },
       "mirror-ens": {
         "title": "Adding accounts to an ENS domain",
-        "sidebar_label": "Using ENS with DOT/KSM accounts"
+        "sidebar_label": "Using ENS with SOLAR/LUNAR accounts"
       },
       "mirror-learn-auction": {
         "title": "Parachain Slots Auction",
@@ -502,8 +502,8 @@
         "sidebar_label": "Thousand Validators Programme"
       },
       "redenomination": {
-        "title": "Redenomination of DOT",
-        "sidebar_label": "Redenomination of DOT"
+        "title": "Redenomination of SOLAR",
+        "sidebar_label": "Redenomination of SOLAR"
       },
       "research": {
         "title": "Research Pages",

@@ -1,6 +1,6 @@
 ---
 
-id: grants title: Web3 Foundation Grantees sidebar_label: Grants
+id: grants title: AXIACoin Foundation Grantees sidebar_label: Grants
 
 ---
 

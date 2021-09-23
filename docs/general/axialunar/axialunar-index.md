@@ -27,7 +27,7 @@ On AXIALunar you can:
 - **Expect Chaos**. AXIALunar is getting more battle tested day-by-day but it's built on the
   foundations of moving fast and trying new things.
 
-AXIALunar is owned by those who hold the AXIALunar tokens (KSM). There's no central kill switch and all
+AXIALunar is owned by those who hold the AXIALunar tokens (LUNAR). There's no central kill switch and all
 changes are made through the protocol's on-chain governance. AXIALunar is experimental. There are no
 guarantees.
 
@@ -37,14 +37,14 @@ The short answer is, everyone!
 
 AXIALunar is a permissionless network and anyone can come along and start using it.
 
-Those who participated in the AXIASolar sale can claim a proportional amount of KSM through the
+Those who participated in the AXIASolar sale can claim a proportional amount of LUNAR through the
 [AXIALunar Claims process][axialunar claims].
 
-KSM used to be publicly available through a highly-frictional faucet, but this has been
-decommissioned. Web3 Foundation is considering new ways to distribute KSM for people who need KSM to
+LUNAR used to be publicly available through a highly-frictional faucet, but this has been
+decommissioned. AXIACoin Foundation is considering new ways to distribute LUNAR for people who need LUNAR to
 build.
 
-As a KSM holder, you are able to interact with all the features of the AXIALunar network such as
+As a LUNAR holder, you are able to interact with all the features of the AXIALunar network such as
 staking (i.e. validating or nominating), governance, parachain auctions, basic transfers and
 everything else.
 
@@ -56,9 +56,9 @@ everything else.
 - [AXIALunar chat](https://riot.im/app/#/room/#axialunarwatercooler:axiasolar.builders)
 - [support@axialunar.network](mailto:support@axialunar.network) _Email support_
 
-### Get help claiming KSM
+### Get help claiming LUNAR
 
-- [KSM Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:axiasolar.builders)
+- [LUNAR Claims Support chat](https://riot.im/app/#/room/#LUNARAClaims:axiasolar.builders)
 
 ### Validator chat
 
@@ -73,9 +73,9 @@ everything else.
 ### Get updates
 
 - [@axialunarnetwork](https://twitter.com/axialunarnetwork)
-- [AXIALunar newsletter](http://info.axiasolar.network/subscribe)
+- [AXIALunar newsletter](http://info.axiacoin.network/subscribe)
 - [r/axialunar](https://reddit.com/r/axialunar)
 
 [kappa]: https://polkascan.io/pre/axialunar/council/motion/94
-[thousand validators]: https://axiasolar.network/join-axialunars-thousand-validators-programme/
+[thousand validators]: https://axiacoin.network/join-axialunars-thousand-validators-programme/
 [axialunar claims]: https://claim.axialunar.network

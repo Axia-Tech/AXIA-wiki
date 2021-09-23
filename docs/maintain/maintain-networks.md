@@ -66,7 +66,7 @@ Check that your node is connected by viewing it on
 
 #### AlphaNet Faucet
 
-Follow the instruction [here](../learn/learn-DOT.md#getting-westies) for instructions on acquiring Westies.
+Follow the instruction [here](../learn/learn-SOLAR.md#getting-westies) for instructions on acquiring Westies.
 
 ### Differences
 

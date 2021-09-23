@@ -10,7 +10,7 @@ module.exports = {
   tagline:
     "The hub for those interested in learning, building, or running a node on AXIASolar.",
   titleDelimiter: "·",
-  url: "https://wiki.axiasolar.network",
+  url: "https://solar.wiki.axiacoin.network",
   baseUrl: "/",
   projectName: "axiasolar-wiki",
   organizationName: "w3f",
@@ -24,7 +24,7 @@ module.exports = {
       defer: true,
     },
     {
-      src: "https://apisa.web3.foundation/latest.js",
+      src: "https://apisa.axiacoin.org/latest.js",
       async: true,
       defer: true,
     },
@@ -131,7 +131,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://guide.axialunar.network",
+          href: "https://lunar.wiki.axiacoin.network",
           label: "AXIALunar",
           position: "right",
         },
@@ -157,7 +157,7 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `© ${new Date().getFullYear()} Web3 Foundation`,
+      copyright: `© ${new Date().getFullYear()} AXIACoin Foundation`,
       logo: {
         src: "img/logo-axiasolar-light.svg",
       },

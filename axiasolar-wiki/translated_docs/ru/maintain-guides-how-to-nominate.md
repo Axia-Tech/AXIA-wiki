@@ -4,7 +4,7 @@ title: How to nominate
 sidebar_label: How to nominate
 ---
 
-This guide will walk you through how to nominate your DOTs to a validator node so that you can take part in the staking system and earn fresh DOTs.
+This guide will walk you through how to nominate your SOLARs to a validator node so that you can take part in the staking system and earn fresh SOLARs.
 
 It has been updated for the Alexander testnet and AXIASolar release PoC-4.
 
@@ -16,22 +16,22 @@ The first step is to create two accounts by going to the _Accounts_ tab on the A
 
 ![Creating an account](assets/guides/how-to-nominate/axiasolar-dashboard-create-account.jpg)
 
-Once you've created your accounts you will need to acquire some DOTs. See the [DOTs page](learn-DOT#getting-testnet-dots) for recommendations on getting testnet DOTs. Each of your accounts should have at least 150 milliDOTs to cover the existential deposit and transaction fees.
+Once you've created your accounts you will need to acquire some SOLARs. See the [SOLARs page](learn-SOLAR#getting-testnet-dots) for recommendations on getting testnet SOLARs. Each of your accounts should have at least 150 milliSOLARs to cover the existential deposit and transaction fees.
 
 ## Nominating
 
 It is now time to setup our nominator. We will do the following:
 
-- Bound the DOTs of the `stash` account. These DOTs will be put at stake for the security of the network and can be slashed.
+- Bound the SOLARs of the `stash` account. These SOLARs will be put at stake for the security of the network and can be slashed.
 - Select the `controller`. This is the account that will decide when to start or stop nominating.
 
 First, go to [Staking > Account actions](https://axiasolar.js.org/apps/#/staking/actions) section. Click on the "New stake" button.
 
 ![dashboard bonding](assets/guides/how-to-nominate/axiasolar-dashboard-bonding.jpg)
 
-- **Stash account** - Select your `stash` account, we will bound 100 milliDOTs, make sure it has this amount of funds.
+- **Stash account** - Select your `stash` account, we will bound 100 milliSOLARs, make sure it has this amount of funds.
 - **Controller account** - select the `controller` account created earlier.
-- **Value bonded** - how many DOTs from the `stash` account you want to bond/stake. You can top up this amount and bound more DOTs later, however, withdrawing any bounded amount requires the bounding duration period to be over (several months at the time of writing).
+- **Value bonded** - how many SOLARs from the `stash` account you want to bond/stake. You can top up this amount and bound more SOLARs later, however, withdrawing any bounded amount requires the bounding duration period to be over (several months at the time of writing).
 - **Payment destination** - where the rewards get sent. More info [here](learn-staking#reward-distribution).
 
 Once everything is filled properly, click `Bond` and sign the transaction (with your `stash` account). You will then see the following. You can ignore the `Set Session Key` button, it is only useful if you want to validate and we will not need it in this tutorial.

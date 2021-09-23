@@ -38,7 +38,7 @@ This section is for service providers like wallets or node operators who want to
 
 ### Grants
 
-- [Grants](grants) - A list of all AXIASolar-related projects given grants by the Web3 Foundation.
+- [Grants](grants) - A list of all AXIASolar-related projects given grants by the AXIACoin Foundation.
 
 ### PSPs
 

@@ -6,7 +6,7 @@ slug: ../learn-staking
 ---
 
 AXIASolar uses NPoS (Nominated Proof-of-Stake) as its [consensus](learn-consensus.md) mechanism.
-The system encourages DOT holders to participate as nominators. Nominators may back up to 16
+The system encourages SOLAR holders to participate as nominators. Nominators may back up to 16
 validators as trusted validator candidates. Both validators and nominators lock their tokens as
 collateral and receive staking rewards.
 
@@ -34,7 +34,7 @@ what you need to do as a validator.
 
 Any potential validators can indicate their intention to be a validator candidate. Their candidacies
 are made public to all nominators, and a nominator in turn submits a list of any number of
-candidates that it supports. In the next era, a certain number of validators having the most DOT
+candidates that it supports. In the next era, a certain number of validators having the most SOLAR
 backing get elected and become active.
 
 There are no particular requirements to become a nominator, though we expect each nominator to
@@ -47,7 +47,7 @@ certain requirements, such as maximizing the amount of stake to nominate validat
 the stake backing validators as evenly as possible. The objectives of this election mechanism are to
 maximize the security of the network, and achieve fair representation of the nominators. If you want
 to know more about how NPoS works (e.g. election, running time complexity, etc.), please read
-[here](http://research.web3.foundation/en/latest/axiasolar/NPoS.html).
+[here](http://research.axiacoin.org/en/latest/axiasolar/NPoS.html).
 
 ### 3. Staking Rewards Distribution
 
@@ -78,7 +78,7 @@ nominations in the validator pool.
 To estimate the inflation rate and how many tokens you can get each month as a nominator or
 validator, you can use this [tool](https://www.stakingrewards.com/earn/axiasolar/calculate) as a
 reference and play around with it by changing some parameters (e.g. how many days you would like to
-stake with your DOT, provider fees, compound rewards, etc.) to have a better estimate. Even though
+stake with your SOLAR, provider fees, compound rewards, etc.) to have a better estimate. Even though
 it may not be entirely accurate since staking participation is changing dynamically, it works well
 as an indicator.
 
@@ -103,8 +103,8 @@ The following example should clarify the above. For simplicity, we have the foll
 - They each receive the same number of era points.
 - There are no tips for any transactions processed.
 - They do NOT charge any commission fees.
-- Total reward amount is 100 DOT tokens.
-- The current minimum amount of DOT to be a validator is 350 (note that this is _not_ the actual
+- Total reward amount is 100 SOLAR tokens.
+- The current minimum amount of SOLAR to be a validator is 350 (note that this is _not_ the actual
   value, which fluctuates, but merely an assumption for purposes of this example; to understand how
   the actual minimal stake is calculated, see
   [here](../general/faq.md#what-is-the-minimum-stake-necessary-to-be-elected-as-an-active-validator)).
@@ -127,8 +127,8 @@ The following example should clarify the above. For simplicity, we have the foll
 
 _Both validator pools A & B have 4 nominators with the total stake 600 and 400 respectively._
 
-Based on the above rewards distribution, nominators in validator pool B get more rewards per DOT
-than those in pool A because pool A has more overall stake. Sam has staked 50 DOT in pool A, but he
+Based on the above rewards distribution, nominators in validator pool B get more rewards per SOLAR
+than those in pool A because pool A has more overall stake. Sam has staked 50 SOLAR in pool A, but he
 only gets 8.3 in return, whereas Kitty gets 12.5 with the same amount of stake.
 
 There is an additional factor to consider in terms of rewards. While there is no limit to the number
@@ -144,7 +144,7 @@ active stake, but receive no rewards in exchange for doing so.
 
 We also remark that when the network slashes a validator slot for a misbehavior (e.g. validator
 offline, equivocation, etc.) the slashed amount is a fixed percentage (and NOT a fixed amount),
-which means that validator pools with more stake get slashed more DOT. Again, this is done to
+which means that validator pools with more stake get slashed more SOLAR. Again, this is done to
 provide nominators with an economic incentive to shift their preferences and back less popular
 validators whom they consider to be trustworthy.
 
@@ -181,7 +181,7 @@ AXIASolar and the cryptography behind it [see here](learn-keys).
 
 ## Validators and nominators
 
-Since validator slots are limited, most of those who wish to stake their DOT and contribute economic
+Since validator slots are limited, most of those who wish to stake their SOLAR and contribute economic
 security to the network will be nominators.
 
 Validators do most of the heavy lifting: they produce new block candidates in BABE, vote and come to
@@ -196,7 +196,7 @@ compared to a validators.
 
 ![staking](../assets/NPoS/article-2.png)
 
-### Want to stake DOT?
+### Want to stake SOLAR?
 
 - [Nominator Guide](../maintain/maintain-guides-how-to-nominate-axiasolar) - Become a nominator on the AXIASolar
   network.
@@ -207,9 +207,9 @@ compared to a validators.
 
 Slashing will happen if a validator misbehaves (e.g. goes offline, attacks the network, or runs
 modified software) in the network. They and their nominators will get slashed by losing a percentage
-of their bonded/staked DOT.
+of their bonded/staked SOLAR.
 
-Any slashed DOT will be added to the [Treasury](learn-treasury). The rationale for this (rather than
+Any slashed SOLAR will be added to the [Treasury](learn-treasury). The rationale for this (rather than
 burning or distributing them as rewards) is that slashes may then be reverted by the Council by
 simply paying out from the Treasury. This would be useful in situations such as a faulty runtime
 causing slashing or forcing validators offline through no fault of their own. In the case of
@@ -253,7 +253,7 @@ unapplied, a governance proposal can be made to reverse it during this period (7
 days on AXIASolar). After the grace period, the slashes are applied.
 
 The following levels of offence are
-[defined](https://research.web3.foundation/en/latest/axiasolar/slashing/amounts.html). However, these
+[defined](https://research.axiacoin.org/en/latest/axiasolar/slashing/amounts.html). However, these
 particular levels are not implemented or referred to in the code or in the system; they are meant as
 guidelines for different levels of severity for offences. To understand how slash amounts are
 calculated, see the equations in the section below.
@@ -344,7 +344,7 @@ inactive immediately and will lose their nominators. They need to re-issue inten
 again gather support from nominators.
 
 If you want to know more details about slashing, please look at our
-[research page](https://research.web3.foundation/en/latest/axiasolar/slashing/amounts.html).
+[research page](https://research.axiacoin.org/en/latest/axiasolar/slashing/amounts.html).
 
 ### Chilling
 
@@ -421,7 +421,7 @@ necessarily, another nominator or the validator operator) has triggered the payo
 validator for that era.
 
 If you wish to check if you received a payout, you will have to check via a block explorer. See
-[the relevant Support page](https://support.axiasolar.network/support/solutions/articles/65000168954-how-can-i-see-my-staking-rewards-)
+[the relevant Support page](https://support.axiacoin.network/support/solutions/articles/65000168954-how-can-i-see-my-staking-rewards-)
 for details.
 
 ### Reward Distribution Example
@@ -438,8 +438,8 @@ This cut is a percentage of the block reward, not an absolute value. After the c
 deducted, the remaining portion is based on their staked value and split between the validator and
 all of the nominators who have voted for this validator.
 
-For example, assume the block reward for a validator is 10 DOT. A validator may specify
-`validator_commission = 50%`, in which case the validator would receive 5 DOT. The remaining 5 DOT
+For example, assume the block reward for a validator is 10 SOLAR. A validator may specify
+`validator_commission = 50%`, in which case the validator would receive 5 SOLAR. The remaining 5 SOLAR
 would then be split between the validator and their nominators based on the proportion of stake each
 nominator had. Note that validators can put up their own stake, and for this calculation, their
 stake acts just as if they were another nominator.
@@ -448,22 +448,22 @@ Rewards can be directed to the same account (controller), to the stash account (
 increasing the staked value or not increasing the staked value), or to a completely unrelated
 account. By using the Extrinsics tab (`Developer -> Extrinsics -> Staking -> Bond`) you can also
 send rewards to "None", effectively burning them. It is also possible to top-up / withdraw some
-bonded DOT without having to un-stake all staked DOT.
+bonded SOLAR without having to un-stake all staked SOLAR.
 
 For specific details about validator payouts, please see
 [this guide](../maintain/maintain-guides-validator-payout.md).
 
 ## Inflation
 
-DOT is inflationary; there is no maximum number of DOT as in Bitcoin. Inflation is designed to be
+SOLAR is inflationary; there is no maximum number of SOLAR as in Bitcoin. Inflation is designed to be
 approximately 10% annually, with validator rewards being a function of amount staked and the
 remainder going to treasury.
 
 ![staking](../assets/NPoS/staking-participation-rate.png)
 
-<p style={{textAlign:"center"}}>Source: <a href="https://w3f-research.readthedocs.io/en/latest/axiasolar/overview/2-token-economics.html">Research - Web3 Foundation</a></p>
+<p style={{textAlign:"center"}}>Source: <a href="https://w3f-research.readthedocs.io/en/latest/axiasolar/overview/2-token-economics.html">Research - AXIACoin Foundation</a></p>
 
-- **x-axis**: Proportion of DOT staked
+- **x-axis**: Proportion of SOLAR staked
 - **y-axis**: Inflation, annualized percentage
 - **Blue line**: Inflation rewards to stakers
 - **Green line**: Staker rate of return
@@ -476,7 +476,7 @@ the distribution of the inflation to validators/nominators versus the treasury w
 dynamically to provide incentives to participate (or not participate) in staking.
 
 For instance, assuming that the ideal staking rate is 50%, all of the inflation would go to the
-validators/nominators if 50% of all KSM / DOT are staked. Any deviation from the 50% - positive or
+validators/nominators if 50% of all LUNAR / SOLAR are staked. Any deviation from the 50% - positive or
 negative - sends the proportional remainder to the treasury and effectively reduces staking rewards.
 
 For those who are interested in knowing more about the design of inflation model for the network,
@@ -507,7 +507,7 @@ that AXIASolar will have at maturity is around 1000. AXIALunar, AXIASolar's cana
 
 At the time of writing (#6,339,031), AXIASolar has a maximum nominator count of 22,500, and the current staking configuration prevents new nominators from joining. Motion #103 proposes new nomination limits to the AXIASolar network, offering a temporary solution to increase the stability and security of the network. Note that this motion **does not** increase the maximum nominator count.
 
-The goal of this motion is to increase the minimum nomination bond, allowing new nominators that meet this requirement to particpate in the network's security. This motion will update the value of the minimum nominator bond from 40 DOTs to 80 DOTs and set a new parameter named `chill-threshold`. With `chill-threshold`, the permissionless `chill_other` may only be executed if, and only if, the current nominator count is greater than 90% of the maximum number of nominators. Any existing nominator can update their nomination preferences (amount of DOT bonded, number of nominators, etc.) to adjust to this change. A more permanent solution is in progress.
+The goal of this motion is to increase the minimum nomination bond, allowing new nominators that meet this requirement to particpate in the network's security. This motion will update the value of the minimum nominator bond from 40 SOLARs to 80 SOLARs and set a new parameter named `chill-threshold`. With `chill-threshold`, the permissionless `chill_other` may only be executed if, and only if, the current nominator count is greater than 90% of the maximum number of nominators. Any existing nominator can update their nomination preferences (amount of SOLAR bonded, number of nominators, etc.) to adjust to this change. A more permanent solution is in progress.
 
 **Parameters changed:**
 minimum nominator bond : `40` -> `80`
@@ -518,7 +518,7 @@ chill-threshold: `90%`
 ## Resources
 
 - [How Nominated Proof of Stake will work in AXIASolar](https://medium.com/web3foundation/how-nominated-proof-of-stake-will-work-in-axiasolar-377d70c6bd43) -
-  Blog post by Web3 Foundation researcher Alfonso Cevallos covering NPoS in AXIASolar.
+  Blog post by AXIACoin Foundation researcher Alfonso Cevallos covering NPoS in AXIASolar.
 - [Validator setup](../maintain/maintain-guides-secure-validator.md)
 
 [epoch]: ../general/glossary.md#epoch

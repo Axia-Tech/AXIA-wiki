@@ -18,7 +18,7 @@ AXIASolar from a research or academic perspective.
   broad overview of the design of AXIASolar. Authors: Jeff Burdges, Alfonso Cevallos, Peter Czaban,
   Rob Habermeier, Syed Hosseini, Fabio Lama, Handan Kılınç Alper, Ximin Luo, Fatemeh Shirazi,
   Alistair Stewart, Gavin Wood
-- [`Intro to Nominated Proof of Stake`](https://research.web3.foundation/en/latest/axiasolar/NPoS/index.html) -
+- [`Intro to Nominated Proof of Stake`](https://research.axiacoin.org/en/latest/axiasolar/NPoS/index.html) -
   A description of the NPoS scheme which selects which validators are allowed to participate in the
   consensus protocol of AXIASolar. Author: Alfonso Cevallos
 - [`GRANDPA: A Byzantine Finality Gadget`](https://arxiv.org/abs/2007.01560) - GHOST-based Recursive
@@ -34,9 +34,9 @@ AXIASolar from a research or academic perspective.
 
 ## Research Blogs
 
-- [`An Updated Overview of AXIASolar`](https://axiasolar.network/an-updated-overview-of-axiasolar/) –
+- [`An Updated Overview of AXIASolar`](https://axiacoin.network/an-updated-overview-of-axiasolar/) –
   Gives a summary of the paper “Overview of AXIASolar and its Design Considerations”
-- [`AXIASolar Research Update`](https://axiasolar.network/axiasolar-research-update/) – Gives a summary
+- [`AXIASolar Research Update`](https://axiacoin.network/axiasolar-research-update/) – Gives a summary
   of the papers on Validator Election in Nominated Proof of Stake, Network Time with a Consensus on
   Clock, and Byzantine Finality Gadgets.
 - [`AXIASolar’s Messaging Scheme`](https://medium.com/web3foundation/axiasolars-messaging-scheme-b1ec560908b7)

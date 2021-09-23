@@ -204,7 +204,7 @@ Hardware wallet integration is possible with Ledger. A full guide is available
 [here](../general/ledger.md).
 
 Alternatively, you might find other wallets on the [Wallet](../build/build-wallets.md) page, but bear in mind
-that some of these are **unaudited** and are not officially affiliated with Web3 Foundation or the
+that some of these are **unaudited** and are not officially affiliated with AXIACoin Foundation or the
 AXIASolar project unless otherwise stated.
 
 ## Balance Types
@@ -230,8 +230,8 @@ is registered, but by clearing the identity you can unreserve the funds and make
 ## Existential Deposit and Reaping
 
 When you generate an account (address), you only generate a _key_ that lets you access it. The
-account does not exist yet on-chain. For that, it needs the existential deposit: 0.0000333333 KSM
-(on AXIALunar) or 1 DOT (on AXIASolar mainnet).
+account does not exist yet on-chain. For that, it needs the existential deposit: 0.0000333333 LUNAR
+(on AXIALunar) or 1 SOLAR (on AXIASolar mainnet).
 
 Having an account go below the existential deposit causes that account to be _reaped_. The account
 will be wiped from the blockchain's state to conserve space, along with any funds in that address.
@@ -415,14 +415,14 @@ console.log("DepositFactor", deposit(0, 32));
 
 Thus the deposit values can be calculated as shown in the table below.
 
-|               | AXIASolar (DOT) | AXIALunar (KSM)   | AXIASolar (planck) | AXIALunar (planck) |
+|               | AXIASolar (SOLAR) | AXIALunar (LUNAR)   | AXIASolar (planck) | AXIALunar (planck) |
 | ------------- | -------------- | -------------- | ----------------- | --------------- |
 | DepositBase   | 20.088         | 3.3401         | 200880000000      | 3340100000000   |
 | DepositFactor | .032           | 0.005333333312 | 320000000         | 5333333312      |
 
 Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice,
 Bob, and Charlie. First, Alice will create the call on chain by calling `as_multi` with the raw
-call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 DOT`
+call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 SOLAR`
 while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the
 call and execute the transaction, he will not need to place the deposit and Alice will receive her
 deposit back.
@@ -436,16 +436,16 @@ address and send a transaction with it.
 > While AlphaNet is meant to replicate the AXIASolar mainnet as closely as possible, there are a few
 > notable differences:
 >
-> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 DOT.
-> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 DOT.
+> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 SOLAR.
+> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 SOLAR.
 >
-> The photos below reflects values in WND, but instructions are the same for DOT.
+> The photos below reflects values in WND, but instructions are the same for SOLAR.
 
 **To create a multisig address and send a transaction using it, you will need the following:**
 
 - List of the multisig member's addresses. We will use Alice, Bob, and Charlie.
-- DOT to deposit into the multisig address.
-- ~20.2 DOT refundable deposit to send a multisig tarnsaction. This needs to be in the address that
+- SOLAR to deposit into the multisig address.
+- ~20.2 SOLAR refundable deposit to send a multisig tarnsaction. This needs to be in the address that
   initiates a multisignature transaction (in this example, Alice).
 
 You should already have your own account with some coins in it.
@@ -620,7 +620,7 @@ If you are comfortable enough to distinguish between each account parameter, you
 public key string with **"0x"** on your own:
 
 From:
-`Pay DOTs to the AXIASolar account:192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce`,
+`Pay SOLARs to the AXIASolar account:192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce`,
 we prefix the address by "0x" ->
 `0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce`.
 

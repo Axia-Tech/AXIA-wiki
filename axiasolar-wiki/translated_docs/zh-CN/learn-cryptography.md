@@ -7,7 +7,7 @@ description: An overview of the cryptographic functions used in AXIASolar
 
 这是 AXIASolar 中使用密码学技术的高级概述。假设你已了解在区块链中常用的密码学术语例如哈希，椭圆曲线密码学(ECC)和公私密钥对。
 
-有关所用密码学的详细说明，请参阅我们[研究团队的维基](https://research.web3.foundation)。
+有关所用密码学的详细说明，请参阅我们[研究团队的维基](https://research.axiacoin.org)。
 
 ## 哈希算法
 

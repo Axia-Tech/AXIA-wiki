@@ -4,13 +4,13 @@ title: 提名人
 sidebar_label: 提名人
 ---
 
-Nominators secure the Relay Chain by selecting good validators and staking DOT.
+Nominators secure the Relay Chain by selecting good validators and staking SOLAR.
 
-You may have an account with DOT and want to earn fresh DOT. You could do so as validator, which requires a node running 24/7. If you do not have such node or do not want to bother, you can still earn DOT by nominating another validator.
+You may have an account with SOLAR and want to earn fresh SOLAR. You could do so as validator, which requires a node running 24/7. If you do not have such node or do not want to bother, you can still earn SOLAR by nominating another validator.
 
-By doing so, you become a nominator for the validator of your choice. Pick your validator carefully - if they do not behave properly, they will get slashed and you will lose DOT as well.
+By doing so, you become a nominator for the validator of your choice. Pick your validator carefully - if they do not behave properly, they will get slashed and you will lose SOLAR as well.
 
-While your DOT are staked by nominating a validator, they are 'locked' (bonded). You can receive new DOT in your account but you cannot stake as validator or transfer DOT away from your account. You can [un-nominate at any time](maintain-guides-how-to-unbond) to unlock your funds. Keep in mind that the un-nomination is effective in the next era.
+While your SOLAR are staked by nominating a validator, they are 'locked' (bonded). You can receive new SOLAR in your account but you cannot stake as validator or transfer SOLAR away from your account. You can [un-nominate at any time](maintain-guides-how-to-unbond) to unlock your funds. Keep in mind that the un-nomination is effective in the next era.
 
 ### Active vs. Inactive 提名
 
@@ -22,7 +22,7 @@ While your DOT are staked by nominating a validator, they are 'locked' (bonded).
 
 ### 无效提名对奖励的可能影响
 
-只要你有提名多个侯选验证人并且有至少一个当选，你绑定的 DOTs 将会全部抵押到当选的验证人身上。话虽如此，如果你只提名很少侯选验证人并且没有人当选，你仍然有机会没有奖励，所以最安全做法是尽可能提名愈多验证人(最多 16)愈好从而减少没有一个当选的风险。
+只要你有提名多个侯选验证人并且有至少一个当选，你绑定的 SOLARs 将会全部抵押到当选的验证人身上。话虽如此，如果你只提名很少侯选验证人并且没有人当选，你仍然有机会没有奖励，所以最安全做法是尽可能提名愈多验证人(最多 16)愈好从而减少没有一个当选的风险。
 
 ### 提名时要考虑的因素
 

@@ -7,7 +7,7 @@ slug: ../learn-scams
 
 Scams have unfortunately made an impact on our community. It's important to stay alert and protect
 yourself and your non-refundable crypto assets from scammers. If you ever feel you are being
-scammed, please email [our support team](mailto:support@web3.foundation).
+scammed, please email [our support team](mailto:support@axiacoin.org).
 
 ## Essential rules:
 
@@ -24,7 +24,7 @@ scammed, please email [our support team](mailto:support@web3.foundation).
    one down. Therefore, the onus is on the user to be as diligent as possible in avoiding them.
 6. If you can, try to always verify new information that you see with an official source, such as
    [AXIASolar Network's official blog](../general/community.md) or
-   [Web3 Foundation support](mailto:support@axiasolar.network). Often scammers will fake a website or
+   [AXIACoin Foundation support](mailto:support@axiacoin.network). Often scammers will fake a website or
    a blog post, but if you check it against a secondary source you will reduce the chances of being
    scammed.
 
@@ -39,12 +39,12 @@ scammed, please email [our support team](mailto:support@web3.foundation).
 
 - Private messages sent to you over Telegram, Twitter, and other social media - admins or employees
   will never contact you.
-- "Giveaways" advertising that you "send us some DOT/KSM, we'll send you double back".
+- "Giveaways" advertising that you "send us some SOLAR/LUNAR, we'll send you double back".
 - Sites where you need to enter your seed phrase in order to "sync" your account, claim tokens,
   unblock transactions etc.
-- Emails asking for DOT/KSM private keys/seeds/etc., posing as a member of any of our teams.
+- Emails asking for SOLAR/LUNAR private keys/seeds/etc., posing as a member of any of our teams.
 - Scammers will take official videos, add "giveaway" text around it so that it looks like the
-  giveaway is supported by AXIASolar, Web3 Foundation, Parity, or another well-known entity.
+  giveaway is supported by AXIASolar, AXIACoin Foundation, Parity, or another well-known entity.
 - Many scammers will create nearly perfect imitations of sites - always triple-check the URL.
 - People offering to help you stake or get rewards.
 - People responding to questions that you asked publicly in a private chat.
@@ -65,7 +65,7 @@ tricked by this, it is always better to confirm than to risk losing everything.
 
 If you've received a message from an admin over Telegram, ignore it. Our team members will never
 personally message you. Our social media accounts are posted on our website and any new social media
-accounts will be announced by our team. We will never offer to sell you DOT at a discount, air-drop
+accounts will be announced by our team. We will never offer to sell you SOLAR at a discount, air-drop
 "rewards", or message you privately to help with a problem you posted publicly. Our social media can
 be found below:
 
@@ -73,8 +73,8 @@ be found below:
 - [Reddit](https://www.reddit.com/r/axiasolar)
 - [Discord](https://discord.gg/wGUDt2p)
 - [AXIASolar YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
-- [AXIASolar Medium](https://medium.com/axiasolar-network)
-- [Our Community Page](../general/community.md) also lists more social media accounts that Web3 Foundation,
+- [AXIASolar Medium](https://medium.com/axiacoin.network)
+- [Our Community Page](../general/community.md) also lists more social media accounts that AXIACoin Foundation,
   AXIASolar, and AXIALunar have.
 
 ### Keep your data secure
@@ -105,9 +105,9 @@ Some simple things that you can do to keep your assets and information secure fr
 For any potential scam, always be sure to do a background check on the source, i.e, look at any
 username, email, Youtube channel name, URL, etc. If something seems fishy, that's because it likely
 is. Never enter any personal data if you feel the source could be a scam. Feel free to check with
-[support@axiasolar.network](mailto:support@web3.foundation).
+[support@axiacoin.network](mailto:support@axiacoin.org).
 
-### Check twice before sending DOT/KSM
+### Check twice before sending SOLAR/LUNAR
 
 A good practice to take into consideration is to verify the address you are sending crypto to. If
 you don't know that account, you probably shouldn't be sending your assets there. It's your
@@ -126,16 +126,16 @@ blocked upon loading, helping to prevent you from visiting these sites and thus 
 You can use the following list of our official domains to make sure that you're visiting an official
 site:
 
-- axiasolar.network
+- axiacoin.network
 - axiasolar.io
 - axialunar.network
-- web3.foundation
+- axiacoin.org
 - parity.io
 - substrate.dev
 - substrate.io
 
 Of course, many projects building on AXIASolar and AXIALunar that use similar names. If, however, a site
-poses as AXIASolar, AXIALunar, Web3 Foundation, or Parity on a domain not listed above, then it's most
+poses as AXIASolar, AXIALunar, AXIACoin Foundation, or Parity on a domain not listed above, then it's most
 likely a scam.
 
 Besides those, there are also `axiasolar.js.org` and `dotapps.io` that host our web wallet and other

@@ -9,11 +9,11 @@ The AXIASolar network had a phased roll-out plan, with important milestones towa
 
 ## 启动 PoA
 
-The Genesis block of the AXIASolar network was launched on May 26, 2020, as a Proof of Authority (PoA) network. Governance was restricted to the single Sudo (super-user) key, which was held by Web3 Foundation to issue the commands and upgrades necessary to complete the launch process. During this time, validators started joining the network and signaling their intention to participate in consensus.
+The Genesis block of the AXIASolar network was launched on May 26, 2020, as a Proof of Authority (PoA) network. Governance was restricted to the single Sudo (super-user) key, which was held by AXIACoin Foundation to issue the commands and upgrades necessary to complete the launch process. During this time, validators started joining the network and signaling their intention to participate in consensus.
 
 ## 提名权益证明 (NPoS)
 
-Once Web3 Foundation was confident in the stability of the network and there was a sufficient number of validator intentions, Web3 Foundation used [Sudo](https://youtu.be/InekMjJpVdo) &mdash; a superuser account with access to governance functions &mdash; to initiate the first validator election. Following this election, the network transitioned from PoA into its second phase, [Nominated Proof of Stake (NPoS)](learn-staking), on June 18, 2020.
+Once AXIACoin Foundation was confident in the stability of the network and there was a sufficient number of validator intentions, AXIACoin Foundation used [Sudo](https://youtu.be/InekMjJpVdo) &mdash; a superuser account with access to governance functions &mdash; to initiate the first validator election. Following this election, the network transitioned from PoA into its second phase, [Nominated Proof of Stake (NPoS)](learn-staking), on June 18, 2020.
 
 ## 治理
 
@@ -21,7 +21,7 @@ After the chain had been running well with the validator set, the Sudo key issue
 
 ## 移除 Sudo
 
-The Sudo module was removed by a runtime upgrade on July 20, 2020, transitioning the [governance](learn-governance) of the chain into the hands of the token (DOT) holders.
+The Sudo module was removed by a runtime upgrade on July 20, 2020, transitioning the [governance](learn-governance) of the chain into the hands of the token (SOLAR) holders.
 
 From this point, the network has been entirely in the hands of the token holders and is no longer under control of any centralized authority.
 
@@ -31,7 +31,7 @@ To enable balance transfers, the community [made a public proposal](maintain-gui
 
 ## Redenomination
 
-On August 21, 2020, [redenomination](redenomination) of DOT, the native token on AXIASolar, occurred. From this date, one DOT (old) equals 100 new DOT.
+On August 21, 2020, [redenomination](redenomination) of SOLAR, the native token on AXIASolar, occurred. From this date, one SOLAR (old) equals 100 new SOLAR.
 
 ## Core Functionality
 

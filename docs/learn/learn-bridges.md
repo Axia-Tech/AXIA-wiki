@@ -139,6 +139,6 @@ welcome.
 [interlay]: https://interlay.gitlab.io/polkabtc-spec/
 [xclaim]: https://eprint.iacr.org/2018/643.pdf
 [bifrost]: https://github.com/bifrost-codes/bifrost
-[wave 5]: https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096
-[eth bridging blog]: https://medium.com/axiasolar-network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13
+[wave 5]: https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096
+[eth bridging blog]: https://medium.com/axiacoin.network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13
 [grants program]: https://github.com/axia-tech/General-Grants-Program

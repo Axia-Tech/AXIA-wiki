@@ -12,19 +12,19 @@ practical information for dealing with the chain.
 ## Tokens
 
 - **Token decimals:**
-  - AXIASolar (DOT): 10
-  - AXIALunar (KSM): 12
+  - AXIASolar (SOLAR): 10
+  - AXIALunar (LUNAR): 12
 - **Base unit:** "Planck"
 - **Balance type:** [`u128`](https://doc.rust-lang.org/std/u128/index.html)
 
 ### Redenomination
 
 AXIASolar conducted a poll, which ended on 27 July 2020 (block 888_888), in which the stakeholders
-decided to redenominate the DOT token. The redenomination does not change the number of base units
-(called "plancks" in AXIASolar) in the network. The only change is that a single DOT token will be
+decided to redenominate the SOLAR token. The redenomination does not change the number of base units
+(called "plancks" in AXIASolar) in the network. The only change is that a single SOLAR token will be
 1e10 plancks instead of the original 1e12 plancks. See the AXIASolar blog posts explaining the
-[details](https://medium.com/axiasolar-network/the-first-axiasolar-vote-1fc1b8bd357b) and the
-[results](https://medium.com/axiasolar-network/the-results-are-in-8f6b1ca2a4e6) of the vote.
+[details](https://medium.com/axiacoin.network/the-first-axiasolar-vote-1fc1b8bd357b) and the
+[results](https://medium.com/axiacoin.network/the-results-are-in-8f6b1ca2a4e6) of the vote.
 
 The redenomination took effect 72 hours after transfers were enabled, at block 1_248_326, which
 occurred at approximately 16:50 UTC on 21 Aug 2020.
@@ -66,7 +66,7 @@ lockups are in tact, while preventing dust accounts from bloating state; the ED 
 accounts are not taking up data storage.
 
 If an account drops below the ED, it will be _reaped,_ i.e. completely removed from storage and the
-nonce reset. AXIASolar's ED is 1 DOT, while AXIALunar's is 33.3333 microKSM (0.0000333333 KSM). You can
+nonce reset. AXIASolar's ED is 1 SOLAR, while AXIALunar's is 33.3333 microLUNAR (0.0000333333 LUNAR). You can
 always verify the existential deposit by checking the
 [chain state](https://axiasolar.js.org/apps/#/chainstate) for the constant
 `balances.existentialDeposit`.
@@ -80,8 +80,8 @@ accounts reaped, as users could refund the address and try making transactions f
 pallet provides a `transfer_keep_alive` function that will return an error and abort rather than
 make the transfer if doing so would result in reaping the sender's account.
 
-> Note: The Statemint parachain has a lower existential deposit than the Relay Chain (0.1 DOT and
-> 0.000003333 KSM) as well as lower transaction fees. It is highly recommended to handle balance
+> Note: The Statemint parachain has a lower existential deposit than the Relay Chain (0.1 SOLAR and
+> 0.000003333 LUNAR) as well as lower transaction fees. It is highly recommended to handle balance
 > transfers on Statemint. Statemint integration is discussed in the next page of the guide.
 
 ## Free vs. Reserved vs. Locked vs. Vesting Balance
@@ -97,10 +97,10 @@ some operation and still belong to the account holder, but cannot be used.
 Locks are an abstraction over free balance that prevent spending for certain purposes. Several locks
 can operate on the same account, but they overlap rather than add. Locks are automatically added
 onto accounts when tasks are done on the network (e.g. leasing a parachain slot or voting), these
-are not customizable. For example, an account could have a free balance of 200 DOT with two locks on
-it: 150 DOT for `Transfer` purposes and 100 DOT for `Reserve` purposes. The account could not make a
-transfer that brings its free balance below 150 DOT, but an operation could result in reserving DOT
-such that the free balance is below 150, but above 100 DOT.
+are not customizable. For example, an account could have a free balance of 200 SOLAR with two locks on
+it: 150 SOLAR for `Transfer` purposes and 100 SOLAR for `Reserve` purposes. The account could not make a
+transfer that brings its free balance below 150 SOLAR, but an operation could result in reserving SOLAR
+such that the free balance is below 150, but above 100 SOLAR.
 
 Bonding tokens for staking and voting in governance referenda both utilize locks.
 
@@ -139,7 +139,7 @@ with a low risk of spam. Signed transactions fit the concept of a transaction in
 Bitcoin.
 
 Some transactions cannot be signed by a fee-paying account and use unsigned transactions. For
-example, when a user claims their DOT from the Ethereum DOT indicator contract to a new DOT address,
+example, when a user claims their SOLAR from the Ethereum SOLAR indicator contract to a new SOLAR address,
 the new address doesn't yet have any funds with which to pay fees.
 
 ### Transaction Mortality
@@ -180,9 +180,9 @@ transactions are identical, and both valid.
 
 | Index | Hash | Origin    | Nonce | Call                | Results                       |
 | :---: | :--: | :-------- | :---: | :------------------ | :---------------------------- |
-|   0   | 0x01 | Account A |   0   | Transfer 5 DOT to B | Account A reaped              |
-|   1   | 0x02 | Account B |   4   | Transfer 7 DOT to A | Account A created (nonce = 0) |
-|   2   | 0x01 | Account A |   0   | Transfer 5 DOT to B | Successful transaction        |
+|   0   | 0x01 | Account A |   0   | Transfer 5 SOLAR to B | Account A reaped              |
+|   1   | 0x02 | Account B |   4   | Transfer 7 SOLAR to A | Account A created (nonce = 0) |
+|   2   | 0x01 | Account A |   0   | Transfer 5 SOLAR to B | Successful transaction        |
 
 In addition, not every extrinsic in a Substrate-based chain comes from an account as a
 public/private key pair; Substrate, rather, has the concept of dispatch “origin”, which could be

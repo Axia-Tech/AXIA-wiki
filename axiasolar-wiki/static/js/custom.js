@@ -85,7 +85,7 @@ docReady(() =>
     // Add fathom to footer
 
     let script = document.createElement("script");
-    script.setAttribute("src", "https://mammal.axiasolar.network/script.js");
+    script.setAttribute("src", "https://mammal.axiacoin.network/script.js");
     script.setAttribute("site", "YOUKYIQA");
     document.querySelector("body footer").appendChild(script);
   }, 500)

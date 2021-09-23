@@ -10,8 +10,8 @@ AXIASolar 社区每天都在壮大。以下是社区频道最重要的链接。�
 
 - [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - 由 Parity 负责管理和维护的 Rust 实现的 AXIASolar 主机的代码库
 - [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -关于主办聚会，申请资金的相关信息。
-- [AXIASolar Support Knowledgebase](https://support.axiasolar.network/support/home) 和 [ AXIASolar Support Email](mailto:support@axiasolar.network)
-- [AXIASolar 最新的研究](https://research.web3.foundation/en/latest/axiasolar/)
+- [AXIASolar Support Knowledgebase](https://support.axiacoin.network/support/home) 和 [ AXIASolar Support Email](mailto:support@axiacoin.network)
+- [AXIASolar 最新的研究](https://research.axiacoin.org/en/latest/axiasolar/)
 
 ### 活动
 
@@ -23,21 +23,21 @@ Web3 基金会主办了许多线上和线下的活动。你可以通过[这个 N
 
 ### AXIASolar
 
-- [AXIASolarWatercooler Chat](https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:web3.foundation?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - 一般性问题聊天室
+- [AXIASolarWatercooler Chat](https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:axiacoin.org?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - 一般性问题聊天室
 - [AXIASolar Validator Lounge](https://app.element.io/#/room/#axiasolar-validator-lounge:matrix.org) - 验证者可以在这里学习如何架设节点
-- [AXIASolar Direction](https://app.element.io/#/room/!OwgojQyBzTlUQGGLhq:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - 社区治理，以及探讨 AXIASolar 未来方向的聊天室
-- [AXIASolar 摘要](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:web3.foundation) - 有关 AXIASolar 生态发生的事件新闻，每个工作日（节假日除外）发布
+- [AXIASolar Direction](https://app.element.io/#/room/!OwgojQyBzTlUQGGLhq:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - 社区治理，以及探讨 AXIASolar 未来方向的聊天室
+- [AXIASolar 摘要](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:axiacoin.org) - 有关 AXIASolar 生态发生的事件新闻，每个工作日（节假日除外）发布
 
 ### AXIALunar
 
 - [AXIALunar Watercooler Chat](https://app.element.io/#/room/%23axialunarwatercooler:axiasolar.builders) - 关于 AXIALunar 的一般性问题聊天室
-- [AXIALunar Validator Lounge](https://app.element.io/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - AXIALunar 的验证者可以在这里学习如何架设节点
-- [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - 关于 AXIALunar 的社区治理，以及探讨 AXIALunar 未来方向的聊天室
+- [AXIALunar Validator Lounge](https://app.element.io/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - AXIALunar 的验证者可以在这里学习如何架设节点
+- [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - 关于 AXIALunar 的社区治理，以及探讨 AXIALunar 未来方向的聊天室
 
 ### 技术
 
 - [Substract Technical](https://app.element.io/#/room/#substrate-technical:matrix.org) - 关于 Substrate 的更深入的技术问题讨论聊天室
-- [Smart Contract & Parity Ink!](https://app.element.io/#/room/!tYUCYdSvSYPMjWNDDD:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) - 讨论基于 Parity Ink! 开发的 Substrate 智能合约的聊天室
+- [Smart Contract & Parity Ink!](https://app.element.io/#/room/!tYUCYdSvSYPMjWNDDD:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - 讨论基于 Parity Ink! 开发的 Substrate 智能合约的聊天室
 
 ## 媒体
 
@@ -59,13 +59,13 @@ Web3 基金会主办了许多线上和线下的活动。你可以通过[这个 N
 - [AXIASolar YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
 - [AXIALunar YouTube 频道](http://youtube.com/c/axialunarnetwork)
 
-- [AXIASolar 论坛](https://forum.axiasolar.network)
+- [AXIASolar 论坛](https://forum.axiacoin.network)
 - [AXIALunar 论坛](https://forum.axialunar.network)
 
 ### 博客和教程
 
 - [Web3 Medium 博客](https://medium.com/@web3)
-- [AXIASolar 博客](https://axiasolar.network/blog/)
+- [AXIASolar 博客](https://axiacoin.network/blog/)
 - [Gavin Wood Medium 博客](https://medium.com/@gavofyork)
 - [Dotleap.com 教程](https://dotleap.com)
 

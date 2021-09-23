@@ -49,7 +49,7 @@ integrate AXIASolar into their systems.
 
 ### Grants
 
-- [Grants](../general/grants.md) - A list of all AXIASolar-related projects given grants by the Web3 Foundation.
+- [Grants](../general/grants.md) - A list of all AXIASolar-related projects given grants by the AXIACoin Foundation.
 
 ### PSPs
 

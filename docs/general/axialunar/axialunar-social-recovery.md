@@ -30,7 +30,7 @@ approve the recovery process in order to recover your account.
 
 First, go to [AXIASolar-JS Apps -> Accounts -> Accounts](https://axiasolar.js.org/apps/#/accounts)
 page that shows all available accounts on your browser's local storage and AXIASolar-JS extension. To
-create a recoverable account, make sure that you have some KSMs to pay for the transaction fees. You
+create a recoverable account, make sure that you have some LUNARs to pay for the transaction fees. You
 will also need some for the reserve required by the account recovery setup.
 
 ![axialunar accounts page](../../assets/axialunar/axialunar_social_recovery_accounts_page.png)
@@ -42,9 +42,9 @@ Then click the menu that is located beside the "send" button, and choose "Make r
 Now you need to provide the following information:
 
 `trusted social recovery helpers` - A list of accounts that you trust. These can help you if you
-lose the private key. Since setting up a recoverable account requires you to lock up KSM, ensure
+lose the private key. Since setting up a recoverable account requires you to lock up LUNAR, ensure
 your account has enough transferable balance to cover it. As you select additional recovery helpers,
-more KSM will be required.
+more LUNAR will be required.
 
 `recovery threshold` - The number of friends required to submit a `vouchRecovery` transaction in
 order to recover the account.
@@ -72,7 +72,7 @@ held in the lost account to the new account.
 
 The above diagram shows the whole process of recovering an account.
 
-> Note: Ensure that your new account has enough KSM to pay for the transaction fees and the amount
+> Note: Ensure that your new account has enough LUNAR to pay for the transaction fees and the amount
 > that is used for reserve when doing the recovery.
 
 Navigate to the menu that is located beside the send button in the row of your new account and click
@@ -85,7 +85,7 @@ Then input the address you would like to recover in the "recover this account" f
 
 ![axialunar accounts initial recoverable2](../../assets/axialunar/axialunar_make_account_initial.png)
 
-Once the transaction went through, some KSM will be locked to prevent malicious behavior.
+Once the transaction went through, some LUNAR will be locked to prevent malicious behavior.
 
 ![](../../assets/recovery/social-recovery-6.png)
 
@@ -108,19 +108,19 @@ your lost account.
 ![](../../assets/recovery/social-recovery-9.png)
 
 Next, in order to call the "closeRecovery" transaction, you can make use of the "asRecovered"
-function as your lost account to get the locked KSM.
+function as your lost account to get the locked LUNAR.
 
 ![](../../assets/recovery/social-recovery-10.png)
 
-Once the transaction goes through, the reserved KSM from the "NEW-ACC" will have been moved to the
+Once the transaction goes through, the reserved LUNAR from the "NEW-ACC" will have been moved to the
 lost account. This is a way of preventing someone from recovering other accounts maliciously.
 Imagine if someone tried to initiate recovery on your account, you can do this to slash their locked
-KSM.
+LUNAR.
 
 ![](../../assets/recovery/social-recovery-11.png)
 
 Moving on, we use the `asRecovered` function to submit the `removeRecovery` transaction on behalf of
-the lost account to release the reserved KSM from your lost account.
+the lost account to release the reserved LUNAR from your lost account.
 
 ![](../../assets/recovery/social-recovery-12.png)
 

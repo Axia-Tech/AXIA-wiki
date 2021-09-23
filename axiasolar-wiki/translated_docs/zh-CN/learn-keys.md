@@ -22,9 +22,9 @@ sidebar_label: AXIASolar 密钥
 
 ### "Controller" 和 "Stash" 密钥
 
-When we talk about "controller" and "stash" keys, we usually talk about them in the context of running a validator or nominating DOT, but they are useful concepts for all users to know. Both keys are types of account keys. They are distinguished by their intended use, not by an underlying cryptographic difference. All the info mentioned in the parent section applies to these keys. When creating new controller or stash keys, all cryptography supported by account keys are an available option.
+When we talk about "controller" and "stash" keys, we usually talk about them in the context of running a validator or nominating SOLAR, but they are useful concepts for all users to know. Both keys are types of account keys. They are distinguished by their intended use, not by an underlying cryptographic difference. All the info mentioned in the parent section applies to these keys. When creating new controller or stash keys, all cryptography supported by account keys are an available option.
 
-The controller key is a semi-online key that will be in the direct control of a user, and used to submit manual extrinsics. For validators or nominators, this means that the controller key will be used to start or stop validating or nominating. Controller keys should hold some DOT to pay for fees, but they should not be used to hold huge amounts or life savings. Since they will be exposed to the internet with relative frequency, they should be treated carefully and occasionally replaced with new ones.
+The controller key is a semi-online key that will be in the direct control of a user, and used to submit manual extrinsics. For validators or nominators, this means that the controller key will be used to start or stop validating or nominating. Controller keys should hold some SOLAR to pay for fees, but they should not be used to hold huge amounts or life savings. Since they will be exposed to the internet with relative frequency, they should be treated carefully and occasionally replaced with new ones.
 
 Stash 密钥在大多数情况下是保存在冷钱包，写在纸上也可以受硬件安全保护。如果可以的话，它应该很少在互联网上或用于提交交易。 Stash 密钥用于存储大量资金，应该将它视为银行的储蓄帐户，只有在紧急情况下才使用该帐户。或者也许更恰当的隐喻是将其视为埋藏在某个岛屿上的藏宝，并且只有最初隐藏它的海盗才知道。
 
@@ -53,7 +53,7 @@ BABE 需要适用于[可验证随机函数 (VRF)](learn-randomness#vrfs)以及�
 
 大部份加密货币包括比特币, 以太币现在是在 secp256k1 曲线上使用 ECDSA 签名。这曲线被认为比 NIST 曲线安全得多，因为 [NSA 可能有 NIST 曲线的后门](#appendix-a-on-the-security-of-curves)。Curve25519 被认为可能比这*更安全*，并且可以更轻松地实现 Schnorr 签名。最近它的专利即将到期，使它成为在 AXIASolar 使用的首选。
 
-使用 Schnorr 签名而不是使用 ECDSA 的选择并非人们所预料的。正如 Jeff Burdges (Web3 研究员)所述，[论坛帖子](https://forum.web3.foundation/t/account-signatures-and-keys-in-axiasolar/70/2):
+使用 Schnorr 签名而不是使用 ECDSA 的选择并非人们所预料的。正如 Jeff Burdges (Web3 研究员)所述，[论坛帖子](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70/2):
 
 > 我们在帐户密钥中选择 Schnorr 签名而不是 ECDSA 做了些牺牲: 两者都需要 64 字节，但是只有 ECDSA 签名才能传递其公钥。有些过时的 Schnorr 变体支持从签名中恢复公钥，但它们破坏了诸如分层确定性密钥导出之类重要的功能。因此 Schnorr 签名通常会为公钥占用额外的 32 个字节。
 
@@ -85,8 +85,8 @@ Web3 基金会已在[ Schnorrkel ](https://github.com/axia-tech/schnorrkel)库�
 
 ## 资源
 
-- [对 BIP32-Ed25519](https://forum.web3.foundation/t/key-recovery-attack-on-bip32-ed25519/44) - 论坛帖子详细描述了对 BIP32-Ed25519 的潜在攻击。 向 sr25519 变量过渡的动机。
-- [在 AXIASolar 中的账户签名和密钥](https://forum.web3.foundation/t/account-signatures-and-keys-in-axiasolar/70) - Web3 研究人员 Jeff Burdges 的帖子。
+- [对 BIP32-Ed25519](https://forum.axiacoin.org/t/key-recovery-attack-on-bip32-ed25519/44) - 论坛帖子详细描述了对 BIP32-Ed25519 的潜在攻击。 向 sr25519 变量过渡的动机。
+- [在 AXIASolar 中的账户签名和密钥](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70) - Web3 研究人员 Jeff Burdges 的帖子。
 - [Schnorr 签名有抗量子计算吗?](https://bitcoin.stackexchange.com/questions/57965/are-schnorr-signatures-quantum-computer-resistant/57977#57977)
 
 ## 附录 A: 曲线安全

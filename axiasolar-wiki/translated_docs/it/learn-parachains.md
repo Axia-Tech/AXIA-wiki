@@ -9,7 +9,7 @@ description: An introductory guide to AXIASolar Parachains.
 
 A parachain is an application-specific data structure that is globally coherent and validatable by the validators of the AXIASolar Relay Chain. Most commonly a parachain will take the form of a blockchain, but there is no specific need for them to be actual blockchains. They take their name from the concept of parallelized chains that run parallel to the Relay Chain. Due to their parallel nature, they are able to parallelize transaction processing and achieve scalability of the AXIASolar system. They [share in the security](learn-security) of the entire AXIASolar network and can communicate with other parachains through [XCMP](learn-crosschain).
 
-Parachains are maintained by a network maintainer known as a [collator](learn-collator). The role of the collator node is to maintain a full-node of the parachain, retain all necessary information of the parachain, and produce new block candidates to pass to the Relay Chain validators for verification and inclusion in the shared state of AXIASolar. The incentivization of a collator node is an implementation detail of the parachain. They are not required to be staked on the Relay Chain or own DOT tokens unless stipulated to do so by the parachain implementation.
+Parachains are maintained by a network maintainer known as a [collator](learn-collator). The role of the collator node is to maintain a full-node of the parachain, retain all necessary information of the parachain, and produce new block candidates to pass to the Relay Chain validators for verification and inclusion in the shared state of AXIASolar. The incentivization of a collator node is an implementation detail of the parachain. They are not required to be staked on the Relay Chain or own SOLAR tokens unless stipulated to do so by the parachain implementation.
 
 The AXIASolar Host (PH) requires that the state transitions performed on parachains to be specified as a Wasm executable. Proofs of new state transitions that occur on a parachain must be validated against the registered state transition function (STF) that is stored on the Relay Chain by the validators before AXIASolar acknowledges a state transition has occurred on a parachain. The only constraint to the logic that a parachain is allowed to implement is that it must be verifiable by the Relay Chain validators. Verification most commonly takes the form of a bundled proof of a state transition known as a Proof-of-Verification (PoV) block, which is submitted to the validators from one or more of the parachain collators to be checked.
 
@@ -33,13 +33,13 @@ AXIASolar supports a limited number of parachains, currently estimated to be abo
 
 ["Common Good" parachains](learn-parachains#common-good-parachains) are allocated by AXIASolar's on-chain governance system, and are deemed as a "common good" for the network, such as bridges to other networks or chains. They are usually considered system level chains or public utility chains. These typically do not have an economic model of their own and help remove transactions from the Relay Chain, allowing for more efficient parachain processing.
 
-[Auction granted parachains](learn-auction) are granted in a permissionless auction. Parachain teams can either bid with their own DOT tokens, or source them from the community using the [crowdloan functionality](learn-crowdloan).
+[Auction granted parachains](learn-auction) are granted in a permissionless auction. Parachain teams can either bid with their own SOLAR tokens, or source them from the community using the [crowdloan functionality](learn-crowdloan).
 
 [Parathreads](learn-parathreads) have the same API as parachains, but are scheduled for execution on a pay-as-you-go basis with an auction for each block.
 
 ### Slot Expiration
 
-When a parachain wins an auction, the DOT that it bid gets reserved until the end of the lease. Reserved balances are non-transferrable and cannot be used for staking. At the end of the lease, the DOT is unreserved. Parachains that have not secured a new lease to extend their slot will automatically become parathreads.
+When a parachain wins an auction, the SOLAR that it bid gets reserved until the end of the lease. Reserved balances are non-transferrable and cannot be used for staking. At the end of the lease, the SOLAR is unreserved. Parachains that have not secured a new lease to extend their slot will automatically become parathreads.
 
 ## Common Good Parachains
 
@@ -61,15 +61,15 @@ The vast majority of common good chains will likely be the unopinionated system 
 
 Public utility chains add functionality that doesn’t exist yet, but that the stakeholders believe will add value to the entire network. Because public utility chains add new functionality, there is a subjective component to their addition: the stakeholders of the network must believe that it is worth allocating a slot that would otherwise go to the winners of an auction, and thus would have an objective expression of conviction from its backers. Governance provides the means to internalize the value of the parachain slot and distribute it across all members of the network.
 
-Public utility chains will always be fully aligned with their Relay Chain stakeholder base. This means that they will adopt the Relay Chain's native token (i.e. DOT or KSM) as their native token and respect any messages incoming from the Relay Chain and system level parachains at face value.
+Public utility chains will always be fully aligned with their Relay Chain stakeholder base. This means that they will adopt the Relay Chain's native token (i.e. SOLAR or LUNAR) as their native token and respect any messages incoming from the Relay Chain and system level parachains at face value.
 
-Some examples of potential public utility chains are bridges, DOT-denominated smart contract platforms, and generic asset chains. All of these could operate without a new token:
+Some examples of potential public utility chains are bridges, SOLAR-denominated smart contract platforms, and generic asset chains. All of these could operate without a new token:
 
-- A bridge could add its own native token to charge as a toll, but in many cases that would be arbitrary value capture, when it could just as well use DOT and/or the bridged chain’s assets in its fee mechanism.
-- A DOT-denominated smart contract layer-one blockchain would allow Wasm smart contract execution using DOT as the native asset with which to pay gas.
-- A generic assets chain would allow anyone to place a deposit in DOT to deploy their asset on-chain. Assets on this chain could be backed by physical goods like artwork, real estate, or gold; or by paper goods like shares in a company or fiat currency held by a trusted party, providing a stable, permanent launchpad for stablecoins and Central Bank Digital Currencies.
+- A bridge could add its own native token to charge as a toll, but in many cases that would be arbitrary value capture, when it could just as well use SOLAR and/or the bridged chain’s assets in its fee mechanism.
+- A SOLAR-denominated smart contract layer-one blockchain would allow Wasm smart contract execution using SOLAR as the native asset with which to pay gas.
+- A generic assets chain would allow anyone to place a deposit in SOLAR to deploy their asset on-chain. Assets on this chain could be backed by physical goods like artwork, real estate, or gold; or by paper goods like shares in a company or fiat currency held by a trusted party, providing a stable, permanent launchpad for stablecoins and Central Bank Digital Currencies.
 
-Public utility parachains would typically grant privileged business logic to AXIASolar’s governance. Just as the AXIASolar Relay Chain has several privileged functions like setting the validator count or allocating DOT from the Treasury, these parachains can have privileged functions like changing system parameters or registering an asset.
+Public utility parachains would typically grant privileged business logic to AXIASolar’s governance. Just as the AXIASolar Relay Chain has several privileged functions like setting the validator count or allocating SOLAR from the Treasury, these parachains can have privileged functions like changing system parameters or registering an asset.
 
 Because public utility chains add functionality beyond the scope of the Relay Chain, they will likely be approved by the network stakeholders only in rare scenarios.
 
@@ -114,5 +114,5 @@ Please see the [Cumulus repository](https://github.com/axia-tech/cumulus#betanet
 
 ## Resources
 
-- [AXIASolar: The Parachain](https://medium.com/axiasolar-network/axiasolar-the-parachain-3808040a769a) - Blog post by AXIASolar co-founder Rob Habermeier that introduced parachains in 2017 as "a simpler form of blockchain, which attaches to the security provided by a Relay Chain rather than providing its own. The Relay Chain provides security to attached parachains, but also provides a guarantee of secure message-passing between them."
-- [The Path of a Parachain Block](https://axiasolar.network/the-path-of-a-parachain-block/) - A technical walkthrough of how parachains interact with the Relay Chain.
+- [AXIASolar: The Parachain](https://medium.com/axiacoin.network/axiasolar-the-parachain-3808040a769a) - Blog post by AXIASolar co-founder Rob Habermeier that introduced parachains in 2017 as "a simpler form of blockchain, which attaches to the security provided by a Relay Chain rather than providing its own. The Relay Chain provides security to attached parachains, but also provides a guarantee of secure message-passing between them."
+- [The Path of a Parachain Block](https://axiacoin.network/the-path-of-a-parachain-block/) - A technical walkthrough of how parachains interact with the Relay Chain.

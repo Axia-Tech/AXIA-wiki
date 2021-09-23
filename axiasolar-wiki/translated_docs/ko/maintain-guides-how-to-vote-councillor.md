@@ -8,13 +8,13 @@ The council is an elected body of on-chain accounts that are intended to represe
 
 ## Voting for Councillors
 
-Voting for councillors requires you to lock 5 DOT on AXIASolar or 0.0083 KSM on AXIALunar for the duration of your vote.
+Voting for councillors requires you to lock 5 SOLAR on AXIASolar or 0.0083 LUNAR on AXIALunar for the duration of your vote.
 
 > Warning: If your balance is vesting, you cannot use unvested tokens for this lock. You will have to wait until you have at least that many **free** tokens to vote.
 
 Like the validator elections, you can approve up to 16 different councillors and your vote will be equalized among the chosen group. Unlike validator elections, there is no unbonding period for your reserved tokens. Once you remove your vote, your tokens will be liquid again.
 
-> Warning: It is your responsibility not to put your entire balance into the reserved value when you make a vote for councillors. It's best to keep _at least_ enough DOT/KSM to pay for transaction fees.
+> Warning: It is your responsibility not to put your entire balance into the reserved value when you make a vote for councillors. It's best to keep _at least_ enough SOLAR/LUNAR to pay for transaction fees.
 
 Go to the [AXIASolar-JS Apps Dashboard](https://axiasolar.js.org/apps) and click on the "Council" tab. On the right side of the window there are two blue buttons, click on the one that says "Vote."
 

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "axialunar:clean": "shx rm -rf node_modules/.cache; docusaurus clear axialunar-guide",
-    "axialunar:start": "docusaurus start axialunar-guide",
+    "axialunar:start": "docusaurus start axialunar-guide --port 3402",
     "preaxialunar:build": "npm-run-all -ln axialunar:clean -p \"fetch --isAXIASolar=false\" mirror axialunar:copy-assets --aggregate-output",
     "axialunar:build": "cross-env BUILDING=true docusaurus build axialunar-guide; node axialunar-guide/postprocess",
     "axialunar:inject": "node --experimental-json-modules scripts/inject.mjs --rootDir axialunar-guide/build/axialunar-guide-hosting",

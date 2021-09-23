@@ -4,7 +4,7 @@ title: Thousand Validators Programme
 sidebar_label: Thousand Validators Programme
 ---
 
-The Thousand Validators Programme is an initiative by Web3 Foundation and Parity Technologies to use the funds held by both organizations to nominate validators in the community.
+The Thousand Validators Programme is an initiative by AXIACoin Foundation and Parity Technologies to use the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of validators on AXIALunar and AXIASolar and 2) to further decentralize the validator active set.
 
@@ -26,7 +26,7 @@ In order to apply to the AXIALunar programme, set up your node to adhere to the 
 
 - Verified identity (see [here]() for instructions)
 - Connect to dedicated telemetry (use `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
-- Minimum of 50 KSM self-stake
+- Minimum of 50 LUNAR self-stake
 - No more than 10% commission
 - Separate controller and stash (or have a Staking proxy set up)
 - Must be on latest release
@@ -64,7 +64,7 @@ In order to apply to the AXIASolar programme, set up your node to adhere to the 
 - Verified identity (see [here]() for instructions)
 - Connect to dedicated Telemetry (use `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
 - Rank 25 or higher on AXIALunar Thousand Validators Programme
-- Mininmum of 10K DOTs self stake (exceptions by approval for good intentions)
+- Mininmum of 10K SOLARs self stake (exceptions by approval for good intentions)
 - Reward destination 'Staked'
 - No more than 3% commission
 - Separate stash and controller (or have a Staking proxy set up)
@@ -81,6 +81,6 @@ The below addresses are the stash / controller pairs for the nominators involved
 A time delay proxy is used as the main interaction method for all of these accounts.
 
 Since approximately early January 2021, the nominators will select an automatic number of validators to nominate based on the lowest amount staked for a validator and the amount of funds it holds. This can be anywhere from a few validators receiving nomination from a single nominator to the max of 16.
-https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform https://guide.axialunar.network/docs/en/mirror-learn-identity#setting-an-identity
+https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform https://lunar.wiki.axiacoin.network/docs/en/mirror-learn-identity#setting-an-identity
 
 [axialunar 1kv form]: https://forms.gle/xqYLoceTwg1qvc9i6

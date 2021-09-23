@@ -26,7 +26,7 @@ of the collator node is to maintain a full-node of the parachain, retain all nec
 of the parachain, and produce new block candidates to pass to the Relay Chain validators for
 verification and inclusion in the shared state of AXIASolar. The incentivization of a collator node
 is an implementation detail of the parachain. They are not required to be staked on the Relay Chain
-or own DOT tokens unless stipulated to do so by the parachain implementation.
+or own SOLAR tokens unless stipulated to do so by the parachain implementation.
 
 The AXIASolar Host (PH) requires that the state transitions performed on parachains to be specified
 as a Wasm executable. Proofs of new state transitions that occur on a parachain must be validated
@@ -103,7 +103,7 @@ processing.
 
 {{ axiasolar: [Auction granted parachains](learn-auction.md) :axiasolar }}
 {{ axialunar: [Auction granted parachains](mirror-learn-auction.md) :axialunar }} are granted in a
-permissionless auction. Parachain teams can either bid with their own DOT tokens, or source them
+permissionless auction. Parachain teams can either bid with their own SOLAR tokens, or source them
 from the community using the
 {{ axiasolar: [crowdloan functionality](learn-crowdloans.md) :axiasolar }}
 {{ axialunar: [crowdloan functionality](mirror-learn-crowdloans.md) :axialunar }}.
@@ -130,7 +130,7 @@ on-chain {{ axiasolar: [governance](learn-governance.md) :axiasolar }}
 parachain's lease would not expire; it would only be removed via governance.
 
 See the
-[AXIASolar blog article](https://axiasolar.network/common-good-parachains-an-introduction-to-governance-allocated-parachain-slots/)
+[AXIASolar blog article](https://axiacoin.network/common-good-parachains-an-introduction-to-governance-allocated-parachain-slots/)
 and the [common good parachains](learn-common-good-chains.md) page for more information.
 
 ## Examples
@@ -212,10 +212,10 @@ Please see the [Parachain Development page](../build/build-parachains) for more 
 
 ## Resources
 
-- [AXIASolar: The Parachain](https://medium.com/axiasolar-network/axiasolar-the-parachain-3808040a769a) -
+- [AXIASolar: The Parachain](https://medium.com/axiacoin.network/axiasolar-the-parachain-3808040a769a) -
   Blog post by AXIASolar co-founder Rob Habermeier that introduced parachains in 2017 as "a simpler
   form of blockchain, which attaches to the security provided by a Relay Chain rather than providing
   its own. The Relay Chain provides security to attached parachains, but also provides a guarantee
   of secure message-passing between them."
-- [The Path of a Parachain Block](https://axiasolar.network/the-path-of-a-parachain-block/) - A
+- [The Path of a Parachain Block](https://axiacoin.network/the-path-of-a-parachain-block/) - A
   technical walkthrough of how parachains interact with the Relay Chain.

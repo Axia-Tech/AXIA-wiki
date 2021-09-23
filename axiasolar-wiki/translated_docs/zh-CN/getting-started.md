@@ -44,7 +44,7 @@ The [Cross-Chain Messaging Protocol (XCMP)](learn-crosschain) allows parachains 
 
 ## 为何要使用 AXIASolar？
 
-Whether you're a blockchain developer or if you're interested in taking part of [AXIASolar's community](https://axiasolar.network/axiasolar-ambassador-program/), AXIASolar offers a platform for everyone. This wiki offers a place for builders and maintainers to utilize [tools](build-tools-index) and for brand-new learners to dive into educational material.
+Whether you're a blockchain developer or if you're interested in taking part of [AXIASolar's community](https://axiacoin.network/axiasolar-ambassador-program/), AXIASolar offers a platform for everyone. This wiki offers a place for builders and maintainers to utilize [tools](build-tools-index) and for brand-new learners to dive into educational material.
 
 ## 入门教程
 
@@ -59,7 +59,7 @@ For brand-new learners of AXIASolar:
 - [AXIASolar's lightpaper ][light paper]是一个更直观，方便阅读文档。这份文档比较少使用技术数据，可以让你不需要了解太多技术知识的情况下，就可以对 AXIASolar 有更深入的理解。
 - [AXIASolar's specification][spec]是一个 Github 代码库，其中包含最新的 AXIASolar 主机协议规范、AXIASolar 对网络中许多组件的测试规范，以及 AXIASolar Runtime 规范。该代码库存有算法，并探讨各种进程如何在 AXIASolar 网络中发挥作用。AXIASolar 规范将 AXIASolar 的思想和概念从聚光灯下和白皮书中提取出来，聚焦于技术规范的技术说明。
 - [观看技术演示][teched videos]: 这些是解释及演示如何使用 AXIASolar 及其 [用户界面][ui]的介绍视频。
-- 在 Medium 上阅读 [What is AXIASolar? A Brief Introduction][article] 。您也可以在 [AXIASolar's Medium][p medium] 或 [Web3 Foundation's Medium][w medium]上阅读其余优质文章。
+- 在 Medium 上阅读 [What is AXIASolar? A Brief Introduction][article] 。您也可以在 [AXIASolar's Medium][p medium] 或 [AXIACoin Foundation's Medium][w medium]上阅读其余优质文章。
 - [创建 AXIASolar 帐户][account generation]
 - [发起转账][transfer]
 - [作为提名人进行抵押 (Staking)][nominator]
@@ -85,17 +85,17 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 - [社区/生态 ](community) - 谈论 AXIASolar 的社区频道列表。
 - [范例程序](build-examples-index) - 基于 AXIASolar 的应用案例及开发中的案例。
 - [贡献手册](contributing) - wiki 贡献者奖励规则。
-- [AXIASolar 知识库](https://support.axiasolar.network/) - 一些特定错误和问题的疑难解答。
+- [AXIASolar 知识库](https://support.axiacoin.network/) - 一些特定错误和问题的疑难解答。
 
-[mooc]: https://mooc.web3.foundation/course/blockchain-fundamentals/
+[mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
 
-[white paper]: https://axiasolar.network/AXIASolarPaper. pdf
+[white paper]: https://axiacoin.network/AXIASolarPaper. pdf
 [overview-paper]: https://github.com/axia-tech/research/blob/master/docs/papers/OverviewPaper-V1.pdf
-[light paper]: https://axiasolar.network/AXIASolar-lightpaper.pdf
+[light paper]: https://axiacoin.network/AXIASolar-lightpaper.pdf
 [spec]: https://github.com/axia-tech/axiasolar-spec
 [teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
-[article]: https://medium.com/axiasolar-network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
-[p medium]: https://medium.com/axiasolar-network
+[article]: https://medium.com/axiacoin.network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
+[p medium]: https://medium.com/axiacoin.network
 [w medium]: https://medium.com/web3foundation
 [ui]: https://axiasolar.js.org/apps/
 [account generation]: learn-account-generation
@@ -108,4 +108,4 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 [council]: maintain-guides-how-to-join-council
 [council voting]: maintain-guides-how-to-vote-councillor
 [treasury]: learn-treasury
-[axialunar guide]: https://guide.axialunar.network/
+[axialunar guide]: https://lunar.wiki.axiacoin.network/

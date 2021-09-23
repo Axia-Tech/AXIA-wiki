@@ -592,7 +592,7 @@ the
 or the `seqPhragménwithpostprocessing` method in the
 [Python reference implementation](https://github.com/axia-tech/consensus/tree/master/NPoS). If you would
 like to dive even more deeply, you can review the
-[W3F Research Page on Sequential Phragmén Method](https://research.web3.foundation/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html).
+[W3F Research Page on Sequential Phragmén Method](https://research.axiacoin.org/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html).
 
 ### Rationale for Minimizing the Number of Validators Per Nominator
 
@@ -659,7 +659,7 @@ nominations are priority-ranked in terms of amount of stake.
 
 - [BalPhragmms](https://arxiv.org/pdf/2004.12990.pdf) - W3F research paper that expands on the
   sequential Phragmén method.
-- [W3F Research Page on NPoS](https://research.web3.foundation/en/latest/axiasolar/NPoS/1.%20Overview.html) -
+- [W3F Research Page on NPoS](https://research.axiacoin.org/en/latest/axiasolar/NPoS/1.%20Overview.html) -
   An overview of Nominated Proof of Stake as its applied to AXIASolar.
 - [Python Reference Implementations](https://github.com/axia-tech/consensus/tree/master/NPoS) - Python
   implementations of Simple and Complicated Phragmén methods.

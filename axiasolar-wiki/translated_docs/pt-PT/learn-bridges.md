@@ -48,7 +48,7 @@ For full details on how it works please refer to the specification.
 
 ## Ethereum Bridge
 
-As explained by Dr. Gavin Wood in a [blog post](https://medium.com/axiasolar-network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13) from late 2019, there are three ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
+As explained by Dr. Gavin Wood in a [blog post](https://medium.com/axiacoin.network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13) from late 2019, there are three ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
 
 1. AXIASolar <-> Ethereum Public Bridge.
 1. Substrate <-> Parity Ethereum (Openethereum) Bridge.
@@ -71,10 +71,10 @@ If your team is interested in building a bridge between an external chain and AX
 
 ### Runtime Module Bridges
 
-- [Bifrost](https://github.com/bifrost-codes/bifrost) - The Bifrost team was awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a bridge to EOS.
-- [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge were awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a Substrate to Ethereum two-way bridge.
-- [Tendermint Bridge](https://github.com/ChorusOne) - ChorusOne was awarded a grant in [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a GRANDPA light client in Tendermint.
-- [Interlay BTC Bridge](https://interlay.gitlab.io/polkabtc-spec/) - The Interlay team was awarded a grant in W3F grants [Wave 5](https://medium.com/web3foundation/web3-foundation-grants-wave-5-recipients-2205f4fde096) to build a trust-minimized BTC bridge.
+- [Bifrost](https://github.com/bifrost-codes/bifrost) - The Bifrost team was awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a bridge to EOS.
+- [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge were awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a Substrate to Ethereum two-way bridge.
+- [Tendermint Bridge](https://github.com/ChorusOne) - ChorusOne was awarded a grant in [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a GRANDPA light client in Tendermint.
+- [Interlay BTC Bridge](https://interlay.gitlab.io/polkabtc-spec/) - The Interlay team was awarded a grant in W3F grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a trust-minimized BTC bridge.
 - [ChainX BTC Bridge](https://github.com/chainx-org/ChainX/tree/develop/cxrml/bridge/btc) - ChainX have implemented a BTC to Substrate bridge for their parachain.
 
 ### Design

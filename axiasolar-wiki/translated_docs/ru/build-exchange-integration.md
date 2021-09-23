@@ -189,14 +189,14 @@ In AXIASolar, account balances can be looked up within the `Balances` module usi
 
 NOTE: `FreeBalance` gives the total balance controlled by that account, but does not account for temporarily locked portions of balance, such as those locked for staking, voting or vesting. This information can be queried from the chain, but it is outside the scope of this document.
 
-The balance encodes the DOT token with 12 decimal places. To get the actual number of DOTs, you need to divide the 128-bit balance by 1,000,000,000,000 (10\*\*12). For completeness, The exact denominations of the AXIASolar currency are:
+The balance encodes the SOLAR token with 12 decimal places. To get the actual number of SOLARs, you need to divide the 128-bit balance by 1,000,000,000,000 (10\*\*12). For completeness, The exact denominations of the AXIASolar currency are:
 
 | Balance value | Name      |
 | ------------- | --------- |
 |               |           |
 | 1             | Planck 10 |
 
-**3 | Point 10**6 | Microdot (UDOT) 10**9 | Millidot (MDOT) 10**12 | Dot (DOT) 10\*\*15 | Blob
+**3 | Point 10**6 | Microdot (USOLAR) 10**9 | Millidot (MSOLAR) 10**12 | Dot (SOLAR) 10\*\*15 | Blob
 
 ### Transferring balances
 

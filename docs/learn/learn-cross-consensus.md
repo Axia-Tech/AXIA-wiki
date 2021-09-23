@@ -50,7 +50,7 @@ of deployment.
 An ultra-high level non-Turing-complete computer whose instructions are designed in a way to be roughly at
 the same level as transactions.
 
-A _message_ in XCM is simply just a programme that runs on the `XCVM`: in other words, one or more XCM instructions. To learn more about the XCVM and the XCM Format, see the latest [blog post](https://medium.com/axiasolar-network/xcm-the-cross-consensus-message-format-3b77b1373392) by Dr. Gavin Wood.
+A _message_ in XCM is simply just a programme that runs on the `XCVM`: in other words, one or more XCM instructions. To learn more about the XCVM and the XCM Format, see the latest [blog post](https://medium.com/axiacoin.network/xcm-the-cross-consensus-message-format-3b77b1373392) by Dr. Gavin Wood.
 
       AXIASolar comes with three distinct systems for actually communicating XCM messages between
       its constituent chains.
@@ -107,7 +107,7 @@ architecture and design decisions are as follows:
 XCMP queues must be initiated by first opening a channel between two parachains. The channel is
 identified by both the sender and recipient parachains, meaning that it's a one-way channel. A pair
 of parachains can have at most two channels between them, one for sending messages to the other
-chain and another for receiving messages. The channel will require a deposit in DOT to be opened,
+chain and another for receiving messages. The channel will require a deposit in SOLAR to be opened,
 which will get returned when the channel is closed.
 
 #### `XCMP-Lite (HRMP)`
@@ -174,11 +174,11 @@ doesn't support embedded videos. </video>
 
 ## Resources
 
-- [XCM: The Cross-Consensus Message Format](https://medium.com/axiasolar-network/xcm-the-cross-consensus-message-format-3b77b1373392) - Detailed blog post by Dr. Gavin Wood about the XCM Format.
+- [XCM: The Cross-Consensus Message Format](https://medium.com/axiacoin.network/xcm-the-cross-consensus-message-format-3b77b1373392) - Detailed blog post by Dr. Gavin Wood about the XCM Format.
 - [XCM Format](https://github.com/axia-tech/xcm-format) - Description of the high-level XCM format
   sent via XCMP.
-- [XCMP Scheme](https://research.web3.foundation/en/latest/axiasolar/XCMP.html) - Full technical
-  description of cross-chain communication on the Web3 Foundation research wiki.
+- [XCMP Scheme](https://research.axiacoin.org/en/latest/axiasolar/XCMP.html) - Full technical
+  description of cross-chain communication on the AXIACoin Foundation research wiki.
 - [Messaging Overview](https://w3f.github.io/parachain-implementers-guide/messaging.html) - An
   overview of the messaging schemes from the Parachain Implementor's guide.
 

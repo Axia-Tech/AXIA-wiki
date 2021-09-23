@@ -62,8 +62,8 @@ society pot can support will be selected. The selected bids will be moved to the
 whereas bids that were not selected will stay in the bidder pool until they are selected or a user
 chooses to unbid.
 
-Anyone who wants to join the society is required to deposit 1.6 KSM for reserve on AXIALunar and
-declare the bid amount (1 KSM in this case) that they will receive for joining the society.
+Anyone who wants to join the society is required to deposit 1.6 LUNAR for reserve on AXIALunar and
+declare the bid amount (1 LUNAR in this case) that they will receive for joining the society.
 
 ![Society Dashboard](../../assets/society/test_bid.jpg)
 
@@ -72,7 +72,7 @@ Once you have submitted the transaction, your bid will be shown on the
 cancel the bidding if you changed your mind about joining the society by calling `unbid` on the same
 page.
 
-You can find an existing member to place a bid on your behalf if you do not have KSM and you are
+You can find an existing member to place a bid on your behalf if you do not have LUNAR and you are
 willing to give them a tip. An existing member can submit a `vouch` transaction through the
 Extrinsics page.
 
@@ -117,7 +117,7 @@ case, member 4 will be punished.
 
 > Note: The maximum number of strikes you can have is on AXIALunar is 10.
 
-The slashed funds (2 KSM currently) will be given to a random member who voted the same as the
+The slashed funds (2 LUNAR currently) will be given to a random member who voted the same as the
 selected vote as a reward for participating in the vote. The reward is escrowed for some period of
 time - see below.
 
@@ -162,7 +162,7 @@ is the same as the above mentioned lock-up formula.
 Third, there will be a membership challenge every seven days on AXIALunar. So one of the members will
 be randomly selected as a defender. Then, other members can vote whether this defender should stay
 in the society or not. A simple majority wins the vote. You can take a look [here][kappa rules] and
-search for "Existing Members (Challenges)". Besides that, you can earn extra KSM by helping a user
+search for "Existing Members (Challenges)". Besides that, you can earn extra LUNAR by helping a user
 apply for the membership and requesting a tip. This is useful when a user does not have enough
 balance to reserve a deposit. The tip will be given when a user successfully joins the society.
 

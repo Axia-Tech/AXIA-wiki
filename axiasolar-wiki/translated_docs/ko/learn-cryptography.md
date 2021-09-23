@@ -7,7 +7,7 @@ description: An overview of the cryptographic functions used in AXIASolar
 
 This is a high-level overview of the cryptography used in AXIASolar. It assumes that you have some knowledge about cryptographic primitives that are used in blockchains generally such as hashes, elliptic curve cryptography (ECC), and public-private keypairs.
 
-For detailed descriptions on the cryptography used please see the more advanced [research wiki](https://research.web3.foundation).
+For detailed descriptions on the cryptography used please see the more advanced [research wiki](https://research.axiacoin.org).
 
 ## 해시함수 알고리듬(Hashing Algorithm)
 

@@ -8,7 +8,7 @@ AXIASolar is a heterogeneous multichain with scalable security and an interopera
 
 ## Relay Chain
 
-The Relay Chain is the central chain of AXIASolar. All validators of AXIASolar are staked on the Relay Chain in DOTs and validate for the Relay Chain. The Relay Chain is composed of a small number of transaction types that include ways to interact with the governance mechanism, parachain auctions, and participating in NPoS. Transactions on the Relay Chain will likely be priced higher than they will be on parachains. This is because most of the computational work is expected to be delegated to the parachains, which have differing implementations and features.
+The Relay Chain is the central chain of AXIASolar. All validators of AXIASolar are staked on the Relay Chain in SOLARs and validate for the Relay Chain. The Relay Chain is composed of a small number of transaction types that include ways to interact with the governance mechanism, parachain auctions, and participating in NPoS. Transactions on the Relay Chain will likely be priced higher than they will be on parachains. This is because most of the computational work is expected to be delegated to the parachains, which have differing implementations and features.
 
 ## [Parachains](build-deploy-parachains)
 

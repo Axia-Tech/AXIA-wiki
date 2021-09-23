@@ -4,21 +4,21 @@ title: Frequently Asked Questions (FAQs)
 sidebar_label: Frequently Asked Questions (FAQs)
 ---
 
-_This FAQ focuses on technical questions for users interested in developing applications for AXIASolar. If you have a more general question, you may wish to search for the answer on our support [Knowledge Base](https://support.axiasolar.network/support/home) or the main [AXIASolar Network FAQ](https://axiasolar.network/faq). If you have a question that is not answered, please feel free to ask on the AXIASolar Watercooler [Element channel](https://app.element.io/#/room/#axiasolar-watercooler:web3.foundation) or email [support](mailto:support@axiasolar.network)._
+_This FAQ focuses on technical questions for users interested in developing applications for AXIASolar. If you have a more general question, you may wish to search for the answer on our support [Knowledge Base](https://support.axiacoin.network/support/home) or the main [AXIASolar Network FAQ](https://axiacoin.network/faq). If you have a question that is not answered, please feel free to ask on the AXIASolar Watercooler [Element channel](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) or email [support](mailto:support@axiacoin.network)._
 
 ## AXIASolar Launch
 
 The Genesis block of the AXIASolar network was launched on May 26, 2020, as a Proof of Authority (PoA) network, with governance controlled by the single Sudo (super-user) account. During this time, validators started joining the network and signaling their intention to participate in consensus.
 
-The network evolved to become a Proof of Stake (PoS) network on June 18, 2020. With the chain secured by the decentralized community of validators, the Sudo module was removed on July 20, 2020, transitioning the governance of the chain into the hands of the token (DOT) holders. This is the point where AXIASolar became decentralized.
+The network evolved to become a Proof of Stake (PoS) network on June 18, 2020. With the chain secured by the decentralized community of validators, the Sudo module was removed on July 20, 2020, transitioning the governance of the chain into the hands of the token (SOLAR) holders. This is the point where AXIASolar became decentralized.
 
 The final step of the transition to full-functioning AXIASolar was the enabling of transfer functionality, which occurred on AXIASolar at block number 1,205,128 on August 18, 2020, at 16:39 UTC.
 
-On August 21, 2020, Redenomination of DOT occurred. From this date, one DOT (old) equals 100 new DOT.
+On August 21, 2020, Redenomination of SOLAR occurred. From this date, one SOLAR (old) equals 100 new SOLAR.
 
 ## AXIASolar Roadmap
 
-For more information on the AXIASolar roadmap please visit the [official AXIASolar website](https://axiasolar.network/technology/#roadmap).
+For more information on the AXIASolar roadmap please visit the [official AXIASolar website](https://axiacoin.network/technology/#roadmap).
 
 ## Validators
 
@@ -28,7 +28,7 @@ There is no central authority that decides on validators, so there is not per se
 
 However, once you've set up a validator and have registered your intention it does not mean that you will be included in the _active set_ right away. The validators are elected to the active set based on the results of an election algorithm known as [Phragmén's method](learn-phragmen). Phragmén's method tries to accomplish two goals: 1) select `n` members from a larger set based on stake-weighted votes and 2) equalize the stake backing each validator as much as possible.
 
-You will likely want to campaign your validator to the community in order to get more backing. You are looking for _nominators_ that will put up their tokens to increase the stake for your validator. For validators who cannot acquire the minimum stake from the community, Parity and Web3 Foundation also run a joint program called [Thousand Validators](thousand-validators) that will nominate validators if they apply and fit the requirements.
+You will likely want to campaign your validator to the community in order to get more backing. You are looking for _nominators_ that will put up their tokens to increase the stake for your validator. For validators who cannot acquire the minimum stake from the community, Parity and AXIACoin Foundation also run a joint program called [Thousand Validators](thousand-validators) that will nominate validators if they apply and fit the requirements.
 
 ### How are validators rewarded?
 
@@ -57,7 +57,7 @@ It is also worth mentioning that one thousand validators is more than the number
 
 Additionally, other projects sometimes have a different definition of _validator_ that approximates more closely to remote signing keys without the full operation of a validating node. On AXIASolar, each validator is running their own validating node and performing full verification of the Relay Chain, voting on finality, producing blocks in their decided slots, and verifying parachain state transitions. Other projects may consider validators and "validating nodes" as separate entities.
 
-Finally, individuals may participate in the block production process indirectly by [nominating](https://wiki.axiasolar.network/docs/en/learn-nominator) validators. In this way, individuals who are not running a node can still share in staking rewards.
+Finally, individuals may participate in the block production process indirectly by [nominating](https://solar.wiki.axiacoin.network/docs/en/learn-nominator) validators. In this way, individuals who are not running a node can still share in staking rewards.
 
 ## Relay Chain
 
@@ -79,23 +79,23 @@ While the AXIASolar Relay Chain does not implement smart contracts directly, und
 
 One of the cornerstone interoperability technologies being researched and developed for deployment on AXIASolar is cross-chain bridges. Bridges come in a variety of flavors with varying levels of trust associated with them. AXIASolar is predominantly researching the trust-minimized flavor that imposes economic costs on the operators of the bridge, and therefore makes it economically secure. Bridge efforts are being worked on in concert with other projects in the ecosystem. Eventually, there will be bridges between AXIASolar and most of the other major chains.
 
-## DOT
+## SOLAR
 
-### What is the difference between DOT (old) and new DOT?
+### What is the difference between SOLAR (old) and new SOLAR?
 
-The DOT (old) unit on AXIASolar was at twelve decimal places, otherwise known as 1e12 Plancks. On 21 August, 2020, Denomiation Day, the DOT (old) value was redenominated to 1e10 (10'000'000'000, or ten billion) Plancks, meaning that the new DOT was valued at ten decimal places. Following the [redenomination](redenomination), the new DOT is called DOT.
+The SOLAR (old) unit on AXIASolar was at twelve decimal places, otherwise known as 1e12 Plancks. On 21 August, 2020, Denomiation Day, the SOLAR (old) value was redenominated to 1e10 (10'000'000'000, or ten billion) Plancks, meaning that the new SOLAR was valued at ten decimal places. Following the [redenomination](redenomination), the new SOLAR is called SOLAR.
 
-### What is the inflation rate of the DOT?
+### What is the inflation rate of the SOLAR?
 
 The inflation rate is approximately 10% per year.
 
-A portion of the inflation is rewarded to validators for performing their duties, while another portion may go directly to the treasury. The exact percentage that goes into both varies and is based on the amount of DOT that are staked. Please see the article on [inflation](learn-staking#inflation) for more information.
+A portion of the inflation is rewarded to validators for performing their duties, while another portion may go directly to the treasury. The exact percentage that goes into both varies and is based on the amount of SOLAR that are staked. Please see the article on [inflation](learn-staking#inflation) for more information.
 
 ## Governance
 
 ### What prevents AXIASolar governance from failing?
 
-AXIASolar's governance has already been shown to work. Examples can be found in the runtime upgrades that have successfully taken place through on the testnets as well as in a real economic environment on [AXIALunar](https://guide.axialunar.network) and AXIASolar itself.
+AXIASolar's governance has already been shown to work. Examples can be found in the runtime upgrades that have successfully taken place through on the testnets as well as in a real economic environment on [AXIALunar](https://lunar.wiki.axiacoin.network) and AXIASolar itself.
 
 It is fair to say that the field of on-chain blockchain governance is still new, and no one can claim to know exactly what the optimal version of on-chain governance is yet. However, AXIASolar takes a brave step forward in pioneering thought-through mechanisms for evolving a blockchain.
 
@@ -139,13 +139,13 @@ The \[Interplanetary Filesystem][ipfs\] (IPFS) is a peer-to-peer hypermedia prot
 
 ## AXIALunar
 
-### What is the minimum amount of KSM / DOT I can have in my account?
+### What is the minimum amount of LUNAR / SOLAR I can have in my account?
 
 Please see information about [Existential Deposits](build-protocol-info#existential-deposit).
 
 ### What are the transfer fees for AXIALunar?
 
-It is important to note that the cost of transferring KSM is dynamic. Currently, the minimum cost of transferring KSM is 0.01 KSM (the base fee), although this can be changed via governance. However, actual transaction fees will vary based on a variety of factors. Specifically, fee calculation follows the following formula:
+It is important to note that the cost of transferring LUNAR is dynamic. Currently, the minimum cost of transferring LUNAR is 0.01 LUNAR (the base fee), although this can be changed via governance. However, actual transaction fees will vary based on a variety of factors. Specifically, fee calculation follows the following formula:
 
 ```
 base_fee + (tx_length * length_fee) + WeightToFee(weight)

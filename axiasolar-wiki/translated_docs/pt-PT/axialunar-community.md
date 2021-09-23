@@ -10,9 +10,9 @@ sidebar_label: Community
 
 [AXIALunar chat](https://riot.im/app/#/room/#axialunarwatercooler:axiasolar.builders)
 
-## Get help claiming KSM
+## Get help claiming LUNAR
 
-[KSM Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:axiasolar.builders)
+[LUNAR Claims Support chat](https://riot.im/app/#/room/#LUNARAClaims:axiasolar.builders)
 
 ## Report an issue or submit bugs
 

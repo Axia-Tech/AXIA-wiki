@@ -10,7 +10,7 @@ module.exports = {
   title: "Guide",
   titleDelimiter: "·",
   tagline: "One-stop-shop for AXIALunar information.",
-  url: "https://guide.axialunar.network",
+  url: "https://lunar.wiki.axiacoin.network",
   baseUrl: "/",
   projectName: isPub ? "axialunar-guide-hosting" : "",
   organizationName: "w3f",
@@ -24,7 +24,7 @@ module.exports = {
       defer: true,
     },
     {
-      src: "https://apisa.web3.foundation/latest.js",
+      src: "https://apisa.axiacoin.org/latest.js",
       async: true,
       defer: true,
     },
@@ -68,7 +68,7 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       isCloseable: false,
-      backgroundColor: "#e6007a",
+      backgroundColor: "#178fe1",
       content: `<a
           id="support_us"
           href="/docs/contributing"
@@ -120,7 +120,7 @@ module.exports = {
     },
     footer: {
       links: [],
-      copyright: `© ${new Date().getFullYear()} Web3 Foundation`,
+      copyright: `© ${new Date().getFullYear()} AXIACoin Foundation`,
       logo: {
         src: "img/AXIALunar_Canary_white.png",
       },

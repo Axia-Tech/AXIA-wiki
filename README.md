@@ -5,15 +5,15 @@
 [![AXIASolar Prod](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axiasolar-prod.yml/badge.svg)](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axiasolar-prod.yml)
 [![AXIALunar Prod](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axialunar-prod.yml/badge.svg)](https://github.com/axia-tech/axiasolar-wiki/actions/workflows/deploy-axialunar-prod.yml)
 
-| <a href="https://wiki.axiasolar.network/" rel="some text">![AXIASolar Wiki](docs/assets/axiasolar-wiki.png)</a> | <a href="https://guide.axialunar.network/" rel="some text">![AXIALunar Guide](docs/assets/axialunar-guide.png)</a> |
-| :----------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
+| <a href="https://solar.wiki.axiacoin.network/" rel="some text">![AXIASolar Wiki](docs/assets/axiasolar-wiki.png)</a> | <a href="https://lunar.wiki.axiacoin.network/" rel="some text">![AXIALunar Guide](docs/assets/axialunar-guide.png)</a> |
+| :-------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
 
 # AXIASolar Wiki
 
 <img align="right" src="docs/assets/web3-logo.png" width="518" height="285">
 
 <p align="left">
-  The AXIASolar Wiki is the central source of truth for AXIASolar. It is a community-focused initiative led by Web3 Foundation to 
+  The AXIASolar Wiki is the central source of truth for AXIASolar. It is a community-focused initiative led by AXIACoin Foundation to 
   keep an up-to-date resource on the best information for learning, building, or maintaining on AXIASolar. 
 </p>
 
@@ -107,10 +107,10 @@ one shown above.
 The AXIASolar wiki is built on the `gh-pages` branch and automatically deployed to GitHub Pages.
 The AXIALunar wiki is also deployed to GitHub Pages (via a separate repository).
 
-Development servers exist at `https://staging.axiasolar.network` and `https://staging.axialunar.network`.
+Development servers exist at `https://staging.axiacoin.network` and `https://staging.axialunar.network`.
 The servers will reflect the latest `master` commit or PR put up against the master branch by a member of the Technical Education team.
 The latest version of `master` is staged and checked by the team. If all is well, the new commits on `master` are transferred into the production branch,`prod`, by rebasing `master` on `prod`. The CICD production workflow will deploy `prod` to the public sites:
-[AXIASolar Wiki](https://wiki.axiasolar.network) and [AXIALunar Guide](https://guide.axialunar.network), respectively.
+[AXIASolar Wiki](https://solar.wiki.axiacoin.network) and [AXIALunar Guide](https://lunar.wiki.axiacoin.network), respectively.
 
 ### Mirror Pages
 
@@ -143,7 +143,7 @@ If the treasury ends a budget period without spending all of its funds, it suffe
 percentage of its funds -- thereby causing deflationary pressure.
 {{ axiasolar: This percentage is currently at 1%
 on AXIASolar. :axiasolar }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to
-[Society](https://guide.axialunar.network/docs/en/maintain-guides-society-axialunar) rather than being
+[Society](https://lunar.wiki.axiacoin.network/docs/en/maintain-guides-society-axialunar) rather than being
 burned. :axialunar }}
 ```
 

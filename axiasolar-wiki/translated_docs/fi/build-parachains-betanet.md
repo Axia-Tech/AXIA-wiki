@@ -12,7 +12,7 @@ You can see the list of included parachains [here](https://axiasolar.js.org/apps
 
 ## Parachain Workshop
 
-If you are interested in running and launching your own parachain, Parity Technologies has created a [parachain workshop](https://substrate.dev/cumulus-workshop/#/1-prep/1-compiling). There is also a [BetaNet Element chat channel](https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) as well as [Cumulus' GitHub repository](https://github.com/axia-tech/cumulus#betanet) available.
+If you are interested in running and launching your own parachain, Parity Technologies has created a [parachain workshop](https://substrate.dev/cumulus-workshop/#/1-prep/1-compiling). There is also a [BetaNet Element chat channel](https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) as well as [Cumulus' GitHub repository](https://github.com/axia-tech/cumulus#betanet) available.
 
 ### Obtaining ROC
 
@@ -30,7 +30,7 @@ To send a transfer between parachains, navigate to "Accounts" > "Transfer". From
 
 ### Downward Transfers
 
-Downward transfers are when an account on the Relay Chain sends a transfer to their account on a different parachain. This type of transfer uses a depository and mint model, meaning that when the DOT leave the sender's account on the Relay Chain and are transferred into an account on a parachain, the parachain mints a corresponding amount of tokens on the parachain.
+Downward transfers are when an account on the Relay Chain sends a transfer to their account on a different parachain. This type of transfer uses a depository and mint model, meaning that when the SOLAR leave the sender's account on the Relay Chain and are transferred into an account on a parachain, the parachain mints a corresponding amount of tokens on the parachain.
 
 For example, we can send tokens from Alice's account on the Relay Chain to her account on parachain 200. To do so, we will need to head to the "Network" > "Parachains" tab and click on the "Transfer to chain" button.
 
@@ -68,9 +68,9 @@ Alice is now able to send from her account on parachain 200 to her account on pa
 
 # BetaNet V1 Parachain Requirements
 
-The purpose of this document is to clearly describe the requirements for chain builders who wish to participate as [parachains](https://wiki.axiasolar.network/docs/en/learn-parachains#docsNav) in the [BetaNet V1 test network](https://medium.com/axiasolar-network/betanet-v1-a-holiday-gift-to-the-axiasolar-community-9d4da8049769). Furthermore, this document aims to provide helpful guidance in order to create a more successful outcome for all involved, for rather Parachain Host specific implementations it is recommended to look at the [Parachain Implementers Guide](https://w3f.github.io/parachain-implementers-guide/index.html)..
+The purpose of this document is to clearly describe the requirements for chain builders who wish to participate as [parachains](https://solar.wiki.axiacoin.network/docs/en/learn-parachains#docsNav) in the [BetaNet V1 test network](https://medium.com/axiacoin.network/betanet-v1-a-holiday-gift-to-the-axiasolar-community-9d4da8049769). Furthermore, this document aims to provide helpful guidance in order to create a more successful outcome for all involved, for rather Parachain Host specific implementations it is recommended to look at the [Parachain Implementers Guide](https://w3f.github.io/parachain-implementers-guide/index.html)..
 
-[BetaNet](https://wiki.axiasolar.network/docs/en/build-parachains-betanet#docsNav) is the environment for parachain and [XCMP](https://wiki.axiasolar.network/docs/en/learn-crosschain#overview-of-xcmp) testing and will undergo rapid changes, updates and chain state resets as it develops. After the initial tests are successful on BetaNet, we envision that in the long run it will be integrated into the [AlphaNet](https://wiki.axiasolar.network/docs/en/maintain-networks#alphanet-test-network) test network.
+[BetaNet](https://solar.wiki.axiacoin.network/docs/en/build-parachains-betanet#docsNav) is the environment for parachain and [XCMP](https://solar.wiki.axiacoin.network/docs/en/learn-crosschain#overview-of-xcmp) testing and will undergo rapid changes, updates and chain state resets as it develops. After the initial tests are successful on BetaNet, we envision that in the long run it will be integrated into the [AlphaNet](https://solar.wiki.axiacoin.network/docs/en/maintain-networks#alphanet-test-network) test network.
 
 ## General Strategy
 
@@ -98,7 +98,7 @@ The minimal requirements for any parachain candidate to be considered for the pa
 ### Requirements as an example walk-through
 
 1. Maintain **at least two** validator (full block authoring node) for [BetaNet](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Fbetanet-rpc.axiasolar.io#/explorer).
-   1. Treat this like a production grade AXIASolar node - see [Run a Validator (AXIASolar)](https://wiki.axiasolar.network/docs/en/maintain-guides-how-to-validate-axiasolar#docsNav)
+   1. Treat this like a production grade AXIASolar node - see [Run a Validator (AXIASolar)](https://solar.wiki.axiacoin.network/docs/en/maintain-guides-how-to-validate-axiasolar#docsNav)
    1. Node Setup - use one of the options below
       1. Build from source:
          1. `git clone https://github.com/axia-tech/axiasolar`
@@ -121,7 +121,7 @@ The minimal requirements for any parachain candidate to be considered for the pa
    1. `./target/release/<parachain_collator_name> export-genesis-wasm > genesis-wasm`
    1. `./target/release/<parachain_collator_name> --collator --parachain-id <your_registered_parachain_id> --execution wasm --chain betanet`
 1. Sign up through the [BetaNet V1 Parachain Registration](https://forms.gle/Eacp7RaRm3VNion16) form
-1. After receiving ROC’s to the ValidatorId Address initiate the [Submitting the setKeys Transaction](https://wiki.axiasolar.network/docs/en/maintain-guides-how-to-validate-axiasolar#submitting-the-setkeys-transaction)in [BetaNet Extrinsics](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Fbetanet-rpc.axiasolar.io#/extrinsics)
+1. After receiving ROC’s to the ValidatorId Address initiate the [Submitting the setKeys Transaction](https://solar.wiki.axiacoin.network/docs/en/maintain-guides-how-to-validate-axiasolar#submitting-the-setkeys-transaction)in [BetaNet Extrinsics](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Fbetanet-rpc.axiasolar.io#/extrinsics)
 1. Follow the [registration process](https://github.com/substrate-developer-hub/cumulus-workshop/blob/master/en/6-register/1-register.md#request-parachain-registration)
 1. You are free to do runtime upgrades after the parachain is connected, so you can still iterate on features later on
 
@@ -150,7 +150,7 @@ It helps:
 ## How to include your parachain in Chachacha
 
 1. Maintain **at least two** validators (full block authoring node) for [Chachacha](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Ffullnode-relay.chachacha.centrifuge.io#/explorer).
-   1. Treat this like a production grade AXIASolar node - see [Run a Validator (AXIASolar)](https://wiki.axiasolar.network/docs/en/maintain-guides-how-to-validate-axiasolar#docsNav)
+   1. Treat this like a production grade AXIASolar node - see [Run a Validator (AXIASolar)](https://solar.wiki.axiacoin.network/docs/en/maintain-guides-how-to-validate-axiasolar#docsNav)
    1. Chachacha Bootnodes
       1. `/ip4/34.89.248.129/tcp/30333/p2p/12D3KooWD8CAZBgpeZiSVVbaj8mijR6mfgUsHNAmCKwsRoRnFod4`
       1. `/ip4/35.242.217.240/tcp/30333/p2p/12D3KooWBthdCz4JshkMb4GxJXVwrHPv9GpWAgfh2hAdkyXQDKyN`
@@ -177,6 +177,6 @@ It helps:
    1. `wget -O betanet-chachacha.json https://storage.googleapis.com/centrifuge-artifact-releases/betanet-chachacha.json`
    1. `./target/release/<parachain_collator_name> --collator --parachain-id <your_registered_parachain_id> --execution wasm --chain betanet-chachacha.json`
 1. Sign up through the [Chachacha V1 Parachain Registration](https://forms.gle/1fZTAaA312pkYCtV7) form
-1. After receiving CHA’s to the ValidatorId Address initiate the [Submitting the setKeys Transaction](https://wiki.axiasolar.network/docs/en/maintain-guides-how-to-validate-axiasolar#submitting-the-setkeys-transaction)in [Chachacha Extrinsics](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Ffullnode-relay.chachacha.centrifuge.io#/extrinsics)
+1. After receiving CHA’s to the ValidatorId Address initiate the [Submitting the setKeys Transaction](https://solar.wiki.axiacoin.network/docs/en/maintain-guides-how-to-validate-axiasolar#submitting-the-setkeys-transaction)in [Chachacha Extrinsics](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Ffullnode-relay.chachacha.centrifuge.io#/extrinsics)
 1. Follow the [registration process](https://github.com/substrate-developer-hub/cumulus-workshop/blob/master/en/6-register/1-register.md#request-parachain-registration)
 1. You are free to do runtime upgrades after the parachain is connected, so you can still iterate on features later on

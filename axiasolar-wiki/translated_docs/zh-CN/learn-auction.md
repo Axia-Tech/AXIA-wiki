@@ -42,7 +42,7 @@ The slot durations are capped to 2 years and divided into 6-month periods. Parac
 
 ## Bidding
 
-Parachains, or parachain teams, can bid in the auction by specifying the slot range that they want to lease as well as the number of DOT they are willing to reserve. Bidders can be either ordinary accounts, or use the [crowdloan functionality](learn-crowdloans) to source DOT from the community.
+Parachains, or parachain teams, can bid in the auction by specifying the slot range that they want to lease as well as the number of SOLAR they are willing to reserve. Bidders can be either ordinary accounts, or use the [crowdloan functionality](learn-crowdloans) to source SOLAR from the community.
 
 ```
 创世的平行链插槽
@@ -62,7 +62,7 @@ Slot E |__________|__________|     1     |     2     |     3     |     4     |..
 
 Each parachain slot has a maximum duration of 2 years, divided into 6-month periods. More than one continuous period is a range.
 
-Bidders will submit a configuration of bids specifying the DOT amount they are willing to bond and for which ranges. The slot ranges may be any continuous range of the periods 1 - 4.
+Bidders will submit a configuration of bids specifying the SOLAR amount they are willing to bond and for which ranges. The slot ranges may be any continuous range of the periods 1 - 4.
 
 > Please note: If you bond tokens with a parachain slot, you cannot stake with those tokens. In this way, you pay for the parachain slot by forfeiting the opportunity to earn staking rewards.
 
@@ -72,22 +72,22 @@ A bidder configuration for a single bidder may look like the following pseudocod
 const bids = [
   {
     range: [1, 2, 3, 4],
-    bond_amount: 300, // DOT
+    bond_amount: 300, // SOLAR
   },
   {
     range: [1, 2],
-    bond_amount: 777, // DOT
+    bond_amount: 777, // SOLAR
   },
   {
     range: [2, 3, 4],
-    bond_amount: 450, // DOT
+    bond_amount: 450, // SOLAR
   },
 ];
 ```
 
 The important concept to understand from this example is that bidders may submit different configurations at different prices (`bond_amount`). However, only one of these bids would be eligible to win exclusive of the others.
 
-The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the amount of DOT held over the entire 2-year lease duration of the parachain slot. This means that the highest bidder for any given slot lease period might not always win (see the [example below](#examples)).
+The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the amount of SOLAR held over the entire 2-year lease duration of the parachain slot. This means that the highest bidder for any given slot lease period might not always win (see the [example below](#examples)).
 
 A random number, which is based on the VRF used by AXIASolar, is determined at each block. Additionally, each auction will have a threshold that starts at 0 and increases to 1. The random number produced by the VRF is examined next to the threshold to determine if that block is the end of the auction. Additionally, the VRF will pick a block from the last epoch to take the state of bids from (to mitigate some types of attacks from malicious validators).
 
@@ -95,11 +95,11 @@ A random number, which is based on the VRF used by AXIASolar, is determined at e
 
 There is one parachain slot available.
 
-Charlie bids `75 DOT` for the range 1 - 4.
+Charlie bids `75 SOLAR` for the range 1 - 4.
 
-Dave bids `100 DOT` for the range 3 - 4.
+Dave bids `100 SOLAR` for the range 3 - 4.
 
-Emily bids `40 DOT` for the range 1 - 2.
+Emily bids `40 SOLAR` for the range 1 - 2.
 
 Let's calculate each bidder's valuation according to the algorithm. We do this by multiplying the bond amount by the number of periods in the specified range of the bid.
 
@@ -109,7 +109,7 @@ Dave - 100 \* 2 = 200 for range 3 - 4
 
 Emily - 40 \* 2 = 80 for range 1 - 2
 
-Although Dave had the highest bid in accordance to DOT amount, when we do the calculations we see that since he only bid for a range of 2, he would need to share the slot with Emily who bid much less. Together Dave's and Emily's bids only equal a valuation of `280`.
+Although Dave had the highest bid in accordance to SOLAR amount, when we do the calculations we see that since he only bid for a range of 2, he would need to share the slot with Emily who bid much less. Together Dave's and Emily's bids only equal a valuation of `280`.
 
 Charlie's valuation for the entire range is `300` therefore Charlie is awarded the complete range of the parachain slot.
 
@@ -117,7 +117,7 @@ Charlie's valuation for the entire range is `300` therefore Charlie is awarded t
 
 ### 为什么每个人不竞标最大长度？
 
-For the duration of the slot the DOT bid in the auction will be locked up. This means that there are opportunity costs from the possibility of using those DOT for something else. For parachains that are beneficial to AXIASolar, this should align the interests between parachains and the AXIASolar Relay Chain.
+For the duration of the slot the SOLAR bid in the auction will be locked up. This means that there are opportunity costs from the possibility of using those SOLAR for something else. For parachains that are beneficial to AXIASolar, this should align the interests between parachains and the AXIASolar Relay Chain.
 
 ### 这种机制如何帮助确保平行链的多样性？
 
@@ -129,10 +129,10 @@ Randomness is problematic for blockchain systems. Generating a random number tru
 
 ### Are there other ways of acquiring a slot besides the candle auction?
 
-The only other way besides the candle auction to acquire a parachain slot is through a secondary market where an actor who has already won a parachain slot can resell the slot along with the associated deposit of DOT that is locked up to another buyer. This would allow the seller to get liquid DOT in exchange for the parachain slot and the buyer to acquire the slot as well as the deposited DOT.
+The only other way besides the candle auction to acquire a parachain slot is through a secondary market where an actor who has already won a parachain slot can resell the slot along with the associated deposit of SOLAR that is locked up to another buyer. This would allow the seller to get liquid SOLAR in exchange for the parachain slot and the buyer to acquire the slot as well as the deposited SOLAR.
 
 A number of system-level parachains may be granted slots by the [governing bodies](learn-governance) of the Relay Chain. Such parachains would not have to bid for or renew their slots as they would be considered essential to the ecosystem's future.
 
 ## 资源
 
-- [Parachain Allocation](https://research.web3.foundation/en/latest/axiasolar/economics/2-parachain-allocation.html) - W3F research page on parachain allocation that goes more in depth to the mechanism.
+- [Parachain Allocation](https://research.axiacoin.org/en/latest/axiasolar/economics/2-parachain-allocation.html) - W3F research page on parachain allocation that goes more in depth to the mechanism.

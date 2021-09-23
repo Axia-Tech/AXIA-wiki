@@ -162,7 +162,7 @@ like there are multiple [implementations of the AXIASolar Host](../learn/learn-i
 
 > **Call to Action:** Do you want to build a Parachain Development Kit from scratch? The Web3
 > Foundation is giving grants to teams who are doing this, learn more and apply on the
-> [W3F grants page](https://grants.web3.foundation).
+> [W3F grants page](https://grants.axiacoin.org).
 
 ### Get started with Substrate
 

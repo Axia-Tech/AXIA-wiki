@@ -8,7 +8,7 @@ AXIASolar provides a naming system that allows participants to add personal info
 
 ## Setting an Identity
 
-Users can register some default fields like legal name, display name, website, Twitter handle, Riot handle, etc. along with extra, custom fields for which they would like attestations (see [Judgements](#judgements)). Users must reserve funds in a bond to store their information on chain - 10 KSM per identity, and 2.5 KSM per each field beyond the legal name. These funds are _locked_, not spent - they are returned when the identity is cleared. Each field can store up to 32 bytes of information, so the data must be less than that. When inputting the data manually through the [Extrinsics UI](https://axiasolar.js.org/apps/#/extrinsics), a [UTF8 to bytes](https://onlineutf8tools.com/convert-utf8-to-bytes) converter can help.
+Users can register some default fields like legal name, display name, website, Twitter handle, Riot handle, etc. along with extra, custom fields for which they would like attestations (see [Judgements](#judgements)). Users must reserve funds in a bond to store their information on chain - 10 LUNAR per identity, and 2.5 LUNAR per each field beyond the legal name. These funds are _locked_, not spent - they are returned when the identity is cleared. Each field can store up to 32 bytes of information, so the data must be less than that. When inputting the data manually through the [Extrinsics UI](https://axiasolar.js.org/apps/#/extrinsics), a [UTF8 to bytes](https://onlineutf8tools.com/convert-utf8-to-bytes) converter can help.
 
 The easiest way to add the built-in fields is to click the gear icon next to one's account and select "Set on-chain identity".
 
@@ -40,7 +40,7 @@ Please note the following caveat: because the fields support different formats, 
 
 ## Registrars
 
-Registrars can set a fee for their services and limit their attestation to certain fields. For example, a registrar could charge 1 DOT to verify one's legal name, email, and GPG key. When a user requests judgement, they will pay this fee to the registrar who provides the judgement on those claims. Users set a maximum fee they are willing to pay and only registrars below this amount would provide judgement.
+Registrars can set a fee for their services and limit their attestation to certain fields. For example, a registrar could charge 1 SOLAR to verify one's legal name, email, and GPG key. When a user requests judgement, they will pay this fee to the registrar who provides the judgement on those claims. Users set a maximum fee they are willing to pay and only registrars below this amount would provide judgement.
 
 ### Becoming a registrar
 
@@ -54,11 +54,11 @@ Go to the Democracy tab, select "Submit preimage", and input the information for
 
 Copy the preimage hash. In the above image, that's `0x90a1b2f648fc4eaff4f236b9af9ead77c89ecac953225c5fafb069d27b7131b7`. Submit the preimage by signing a transaction.
 
-Next, select "Submit Proposal" and enter the previously copied preimage hash. The `locked balance` field needs to be at least 10 KSM. You can find out the minimum by querying the chain state under [Chain State](https://axiasolar.js.org/apps/#/chainstate) -> Constants -> democracy -> minimumDeposit.
+Next, select "Submit Proposal" and enter the previously copied preimage hash. The `locked balance` field needs to be at least 10 LUNAR. You can find out the minimum by querying the chain state under [Chain State](https://axiasolar.js.org/apps/#/chainstate) -> Constants -> democracy -> minimumDeposit.
 
 ![Submitting a proposal](/img/identity/13.jpg)
 
-At this point, DOT holders can second the motion. With enough seconds, the motion will become a referendum, which is then voted on. If it passes, users will be able to request judgement from this registrar.
+At this point, SOLAR holders can second the motion. With enough seconds, the motion will become a referendum, which is then voted on. If it passes, users will be able to request judgement from this registrar.
 
 ## Judgements
 
@@ -85,8 +85,8 @@ If you don't know which registrar to pick, first check the available registrars 
 
 The image above reveals two registrars:
 
-- Registrar 0, FcxNWVy5RESDsErjwyZmPCW6Z8Y3fbfLzmou34YZTrbcraL charges 25 KSM per judgement
-- Registrar 1, Fom9M5W6Kck1hNAiE2mDcZ67auUCiNTzLBUdQy4QnxHSxdn charges 5 KSM per judgement
+- Registrar 0, FcxNWVy5RESDsErjwyZmPCW6Z8Y3fbfLzmou34YZTrbcraL charges 25 LUNAR per judgement
+- Registrar 1, Fom9M5W6Kck1hNAiE2mDcZ67auUCiNTzLBUdQy4QnxHSxdn charges 5 LUNAR per judgement
 
 To find out how to contact the registrar after the application for judgement or to learn who they are, we can check their identity by adding them to our Address Book. Their identity will be automatically loaded.
 
@@ -126,7 +126,7 @@ To register a sub-account on an existing account, you must currently use the [Ex
 
 ![Sub account setup](/img/identity/06.jpg)
 
-Note that a deposit of 2.5KSM is required for every sub-account.
+Note that a deposit of 2.5LUNAR is required for every sub-account.
 
 ## Clearing and Killing
 

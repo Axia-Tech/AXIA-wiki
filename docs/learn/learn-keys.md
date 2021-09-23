@@ -27,7 +27,7 @@ ecosystem.
 ### "Controller" and "Stash" Keys
 
 When we talk about "controller" and "stash" keys, we usually talk about them in the context of
-running a validator or nominating DOT, but they are useful concepts for all users to know. Both keys
+running a validator or nominating SOLAR, but they are useful concepts for all users to know. Both keys
 are types of account keys. They are distinguished by their intended use, not by an underlying
 cryptographic difference. All the info mentioned in the parent section applies to these keys. When
 creating new controller or stash keys, all cryptography supported by account keys are an available
@@ -35,7 +35,7 @@ option.
 
 The controller key is a semi-online key that will be in the direct control of a user, and used to
 submit manual extrinsics. For validators or nominators, this means that the controller key will be
-used to start or stop validating or nominating. Controller keys should hold some DOT to pay for
+used to start or stop validating or nominating. Controller keys should hold some SOLAR to pay for
 fees, but they should not be used to hold huge amounts or life savings. Since they will be exposed
 to the internet with relative frequency, they should be treated carefully and occasionally replaced
 with new ones.
@@ -91,7 +91,7 @@ signatures. A recent patent expiration on it has made it the preferred choice fo
 
 The choice of using Schnorr signatures over using ECDSA is not so cut and dry. As stated in Jeff
 Burdges' (a Web3 researcher)
-[original forum post](https://forum.web3.foundation/t/account-signatures-and-keys-in-axiasolar/70/2)
+[original forum post](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70/2)
 on the topic:
 
 > There is one sacrifice we make by choosing Schnorr signatures over ECDSA signatures for account
@@ -124,7 +124,7 @@ The Decaf paper approach by the [Ristretto Group](https://ristretto.group/) was 
 implemented in Rust to include cofactor-8 curves like the Curve25519 and makes Schnorr signatures
 over the Edward's curve more secure.
 
-The Web3 Foundation has implemented a Schnorr signature library using the more secure Ristretto
+The AXIACoin Foundation has implemented a Schnorr signature library using the more secure Ristretto
 compression over the Curve25519 in the [Schnorrkel](https://github.com/axia-tech/schnorrkel) repository.
 Schnorrkel implements related protocols on top of this curve compression such as HDKD, MuSig, and a
 verifiable random function (VRF). It also includes various minor improvements such as the hashing
@@ -154,10 +154,10 @@ validators on the AXIASolar network and critical to the GRANDPA finality gadget.
 
 ## Resources
 
-- [Key discovery attack on BIP32-Ed25519](https://forum.web3.foundation/t/key-recovery-attack-on-bip32-ed25519/44) -
+- [Key discovery attack on BIP32-Ed25519](https://forum.axiacoin.org/t/key-recovery-attack-on-bip32-ed25519/44) -
   Forum post detailing a potential attack on BIP32-Ed25519. A motivation for transition to the
   sr25519 variant.
-- [Account signatures and keys in AXIASolar](https://forum.web3.foundation/t/account-signatures-and-keys-in-axiasolar/70) -
+- [Account signatures and keys in AXIASolar](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70) -
   Original forum post by Web3 researcher Jeff Burdges.
 - [Are Schnorr signatures quantum computer resistant?](https://bitcoin.stackexchange.com/questions/57965/are-schnorr-signatures-quantum-computer-resistant/57977#57977)
 

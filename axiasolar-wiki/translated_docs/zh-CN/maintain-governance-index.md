@@ -12,7 +12,7 @@ All changes to the protocol must be agreed upon by stake-weighted referenda; the
 
 ## Mechanism
 
-In order to make any changes to the network, the idea is to compose active token holders and council together to administrate the network upgrade decision. No matter whether the proposal is proposed by the public (DOT holders) or council, it finally will have to go through the [referenda](learn-governance#referenda) to let all DOT holders make the decision.
+In order to make any changes to the network, the idea is to compose active token holders and council together to administrate the network upgrade decision. No matter whether the proposal is proposed by the public (SOLAR holders) or council, it finally will have to go through the [referenda](learn-governance#referenda) to let all SOLAR holders make the decision.
 
 The following steps are the governance procedure in the AXIASolar network:
 
@@ -24,7 +24,7 @@ To better understand how the council is formed, please read [this section](#coun
 
 ### Proposing Referenda
 
-- **Public**: Anyone can propose a referenda by depositing the minimum amount of DOTs for a certain period (No. of Blocks). If someone likes the proposal, they may deposit the same amount of tokens to support it. The proposal with the highest number of support bond will be selected to be a referendum. The bonded tokens will be released once the proposal is tabled. At genesis, every two weeks there will be a referendum for the most supported proposal.
+- **Public**: Anyone can propose a referenda by depositing the minimum amount of SOLARs for a certain period (No. of Blocks). If someone likes the proposal, they may deposit the same amount of tokens to support it. The proposal with the highest number of support bond will be selected to be a referendum. The bonded tokens will be released once the proposal is tabled. At genesis, every two weeks there will be a referendum for the most supported proposal.
 
 - **[Council](#council)**:
 
@@ -34,19 +34,19 @@ To better understand how the council is formed, please read [this section](#coun
 
 ### Voting for a proposal
 
-To vote, a voter must lock their tokens up for at least the enactment delay period beyond the end of the referendum. This is in order to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling. At the same time, holding only a small amount of DOT tokens does not mean that they cannot influence the referendum result, you can read more about the [Voluntary Locking](#voluntary-locking).
+To vote, a voter must lock their tokens up for at least the enactment delay period beyond the end of the referendum. This is in order to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling. At the same time, holding only a small amount of SOLAR tokens does not mean that they cannot influence the referendum result, you can read more about the [Voluntary Locking](#voluntary-locking).
 
 ```
 Example:
 
-Peter: Votes `No` with 10 DOTs for a 12 week lock period  => 10 * 6 = 60 Votes
+Peter: Votes `No` with 10 SOLARs for a 12 week lock period  => 10 * 6 = 60 Votes
 
-Logan: Votes `Yes` with 20 DOTs for a 2 week lock period => 20 * 1 = 20 Votes
+Logan: Votes `Yes` with 20 SOLARs for a 2 week lock period => 20 * 1 = 20 Votes
 
-Kevin: Votes `Yes` with 15 DOTs for a 4 week lock period => 15 * 2 = 30 Votes
+Kevin: Votes `Yes` with 15 SOLARs for a 4 week lock period => 15 * 2 = 30 Votes
 ```
 
-According to the above scenario, even though combining both Logan and Kevin's DOTs is more than Peter, the lock period for both of them is far less than Peter, leading to their voting power counting as less.
+According to the above scenario, even though combining both Logan and Kevin's SOLARs is more than Peter, the lock period for both of them is far less than Peter, leading to their voting power counting as less.
 
 ### Tallying
 
@@ -67,7 +67,7 @@ against - the number of nay votes
 
 voters - the total number of voting tokens
 
-electorate - the total number of DOTs tokens issued in the network
+electorate - the total number of SOLARs tokens issued in the network
 ```
 
 **Super-Majority Approve**
@@ -87,13 +87,13 @@ _To know more about where these above formulas come from, please read the [democ
 ```
 Example:
 
-Assume we only have 1,500 DOTs tokens in total.
+Assume we only have 1,500 SOLARs tokens in total.
 
-John  - 500 DOTs
-Peter - 100 DOTs
-Lilly - 150 DOTs
-JJ    - 150 DOTs
-Ken   - 600 DOTs
+John  - 500 SOLARs
+Peter - 100 SOLARs
+Lilly - 150 SOLARs
+JJ    - 150 SOLARs
+Ken   - 600 SOLARs
 
 John: Votes `Yes`for a 2 week lock period  => 500 * 1 = 500 Votes
 
@@ -115,7 +115,7 @@ Based on the above result, the proposal will be approved. In addition, only the 
 
 ## Voluntary Locking
 
-AXIASolar utilizes an idea called `Voluntary Locking` that allows token holders to increase their voting power by declaring how long they are willing to lock-up their DOTs, hence, the maximum number of votes for each token holder will be calculated by the following formula:
+AXIASolar utilizes an idea called `Voluntary Locking` that allows token holders to increase their voting power by declaring how long they are willing to lock-up their SOLARs, hence, the maximum number of votes for each token holder will be calculated by the following formula:
 
 ```
 Max votes = tokens * periods
@@ -174,7 +174,7 @@ This would be the tentative governance configuration for AXIASolar in the initia
 - [Governance Description](learn-governance#referenda)
 - [Democracy Module](https://github.com/axia-tech/substrate/tree/master/srml/democracy/src)
 
-## [Usage of DOT](learn-DOT#dots-for-governance)
+## [Usage of SOLAR](learn-SOLAR#dots-for-governance)
 
 ## Guides
 

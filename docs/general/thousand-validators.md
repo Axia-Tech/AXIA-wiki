@@ -5,7 +5,7 @@ sidebar_label: Thousand Validators Programme
 slug: ../thousand-validators
 ---
 
-The Thousand Validators Programme is an initiative by Web3 Foundation and Parity Technologies to use
+The Thousand Validators Programme is an initiative by AXIACoin Foundation and Parity Technologies to use
 the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of
@@ -39,7 +39,7 @@ fill in the [application form][axialunar 1kv form]. You will hear back from the 
 - Verified identity (see [here][identity instructions] for instructions)
 - Connect to dedicated telemetry (use
   `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
-- Minimum of 50 KSM self-stake
+- Minimum of 50 LUNAR self-stake
 - No more than 10% commission
 - Separate controller and stash (or have a Staking proxy set up)
 - Must be on the latest release
@@ -78,7 +78,7 @@ and fill in the [application form][axiasolar 1kv form]. You will hear back from 
 - Connect to dedicated Telemetry (use
   `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
 - Rank 25 or higher on AXIALunar Thousand Validators Programme
-- Minimum of 5_000 DOTs self stake (exceptions by approval for good intentions)
+- Minimum of 5_000 SOLARs self stake (exceptions by approval for good intentions)
 - Reward destination 'Staked'
 - No more than 3% commission
 - Separate stash and controller (or have a Staking proxy set up)

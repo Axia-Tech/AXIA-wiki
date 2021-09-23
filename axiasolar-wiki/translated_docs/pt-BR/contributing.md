@@ -4,9 +4,9 @@ title: Contributing
 sidebar_label: Contributing
 ---
 
-The wiki was started and is maintained by the Web3 Foundation. It is an open source project and aims to be the most extensive resource of knowledge on AXIASolar and the AXIASolar ecosystem. A large part of the material currently focuses on AXIASolar directly but it is not opposed to covering informational material for community projects. Please do not try to pull request any marketing material as this will be rejected.
+The wiki was started and is maintained by the AXIACoin Foundation. It is an open source project and aims to be the most extensive resource of knowledge on AXIASolar and the AXIASolar ecosystem. A large part of the material currently focuses on AXIASolar directly but it is not opposed to covering informational material for community projects. Please do not try to pull request any marketing material as this will be rejected.
 
-Pull requests, discussions, and contributions from the community are encouraged. Active community members who demonstrate a record of good contributions may be given write access to the repository. Otherwise, Web3 Foundation holds the administrative position and final say on the content that is included. Specifically the Technical Education team at the foundation are most directly involved.
+Pull requests, discussions, and contributions from the community are encouraged. Active community members who demonstrate a record of good contributions may be given write access to the repository. Otherwise, AXIACoin Foundation holds the administrative position and final say on the content that is included. Specifically the Technical Education team at the foundation are most directly involved.
 
 > There is video guide on how to contribute to the wiki [here](https://www.youtube.com/watch?v=6i55KOcy7B0).
 

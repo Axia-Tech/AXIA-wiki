@@ -97,7 +97,7 @@ There is also the very secure [Parity Signer](https://www.parity.io/signer/). Th
 
 Hardware wallet integration is possible with Ledger. A full guide is available [here](learn-ledger).
 
-Alternatively, you might find other wallets on the [Wallet](build-wallets) page, but bear in mind that some of these are **unaudited** and are not officially affiliated with Web3 Foundation or the AXIASolar project unless otherwise stated.
+Alternatively, you might find other wallets on the [Wallet](build-wallets) page, but bear in mind that some of these are **unaudited** and are not officially affiliated with AXIACoin Foundation or the AXIASolar project unless otherwise stated.
 
 ## Balance Types
 
@@ -111,7 +111,7 @@ The "total" balance of the account is considered the amount of "free" funds in t
 
 ## Existential Deposit and Reaping
 
-When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit: 0.001666666667 KSM (on AXIALunar) or 1 DOT (on AXIASolar mainnet).
+When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit: 0.001666666667 LUNAR (on AXIALunar) or 1 SOLAR (on AXIASolar mainnet).
 
 Having an account go below the existential deposit causes that account to be _reaped_. The account will be wiped from the blockchain's state to conserve space, along with any funds in that address. You do not lose access to the reaped address - as long as you have your private key or recovery phrase, you can still use the address - but it needs a top-up of another existential deposit to be able to interact with the chain.
 
@@ -231,29 +231,29 @@ console.log("DepositFactor", deposit(0, 32));
 
 Thus the deposit values can be calculated as shown in the table below.
 
-|               | AXIASolar (DOT) | AXIALunar (KSM)   | AXIASolar (planck) | AXIALunar (planck) |
+|               | AXIASolar (SOLAR) | AXIALunar (LUNAR)   | AXIASolar (planck) | AXIALunar (planck) |
 | ------------- | -------------- | -------------- | ----------------- | --------------- |
 | DepositBase   | 20.088         | 3.347999999942 | 200880000000      | 3347999999942   |
 | DepositFactor | .032           | 0.005333333312 | 320000000         | 5333333312      |
 
-Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First, Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 DOT` while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.
+Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First, Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 SOLAR` while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.
 
 ### Example with AXIASolar.JS
 
-For this example, we will be using the [AlphaNet](https://wiki.axiasolar.network/docs/en/maintain-networks#alphanet-test-network) testnet and [AXIASolar.JS Apps](https://wiki.axiasolar.network/docs/en/learn-balance-transfers#axiasolar-js-apps) to create a 2-of-3 multisig address and send a transaction with it.
+For this example, we will be using the [AlphaNet](https://solar.wiki.axiacoin.network/docs/en/maintain-networks#alphanet-test-network) testnet and [AXIASolar.JS Apps](https://solar.wiki.axiacoin.network/docs/en/learn-balance-transfers#axiasolar-js-apps) to create a 2-of-3 multisig address and send a transaction with it.
 
 > While AlphaNet is meant to replicate the AXIASolar mainnet as closely as possible, there are a few notable differences:
 >
-> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 DOT.
-> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 DOT.
+> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 SOLAR.
+> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 SOLAR.
 >
-> The photos below reflects values in WND, but instructions are the same for DOT.
+> The photos below reflects values in WND, but instructions are the same for SOLAR.
 
 **To create a multisig address and send a transaction using it, you will need the following:**
 
 - List of the multisig member's addresses. We will use Alice, Bob, and Charlie.
-- DOT to deposit into the multisig address.
-- ~20.2 DOT refundable deposit to send a multisig tarnsaction. This needs to be in the address that initiates a multisignature transaction (in this example, Alice).
+- SOLAR to deposit into the multisig address.
+- ~20.2 SOLAR refundable deposit to send a multisig tarnsaction. This needs to be in the address that initiates a multisignature transaction (in this example, Alice).
 
 You should already have your own account with some coins in it.
 

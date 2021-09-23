@@ -12,9 +12,9 @@ given prefix, and which prefixes are availabe.
 
 | Prefix | Network               | Name                                                  | Symbols                                   | Decimals               | Standard Account | Website                       |
 | ------ | --------------------- | ----------------------------------------------------- | ----------------------------------------- | ---------------------- | ---------------- | ----------------------------- |
-| 0      | axiasolar              | AXIASolar Relay Chain                                  | DOT                                       | 10                     | \*25519          | https://axiasolar.network      |
+| 0      | axiasolar              | AXIASolar Relay Chain                                  | SOLAR                                       | 10                     | \*25519          | https://axiacoin.network      |
 | 1      | null                  | Bare 32-bit Schnorr/Ristretto (S/R 25519) public key. | null                                      | null                   | null             | null                          |
-| 2      | axialunar                | AXIALunar Relay Chain                                    | KSM                                       | 12                     | \*25519          | https://axialunar.network        |
+| 2      | axialunar                | AXIALunar Relay Chain                                    | LUNAR                                       | 12                     | \*25519          | https://axialunar.network        |
 | 3      | null                  | Bare 32-bit Ed25519 public key.                       | null                                      | null                   | null             | null                          |
 | 4      | katalchain            | Katal Chain                                           | null                                      | null                   | \*25519          | null                          |
 | 5      | plasm                 | Plasm Network                                         | PLM                                       | 15                     | \*25519          | https://plasmnet.io           |
@@ -38,7 +38,7 @@ given prefix, and which prefixes are availabe.
 | 23     | shift                 | ShiftNrg                                              | null                                      | null                   | \*25519          | null                          |
 | 24     | zero                  | ZERO                                                  | PLAY                                      | 18                     | \*25519          | https://zero.io               |
 | 25     | zero-alphaville       | ZERO Alphaville                                       | PLAY                                      | 18                     | \*25519          | https://zero.io               |
-| 26     | jupiter               | Jupiter                                               | jDOT                                      | 10                     | \*25519          | https://jupiter.patract.io    |
+| 26     | jupiter               | Jupiter                                               | jSOLAR                                      | 10                     | \*25519          | https://jupiter.patract.io    |
 | 28     | subsocial             | Subsocial                                             | null                                      | null                   | \*25519          | null                          |
 | 29     | cord                  | Dhiway CORD Network                                   | DCU                                       | 18                     | \*25519          | https://dhiway.com/           |
 | 30     | phala                 | Phala Network                                         | PHA                                       | 12                     | \*25519          | https://phala.network         |
@@ -63,7 +63,7 @@ given prefix, and which prefixes are availabe.
 | 63     | hydradx               | HydraDX                                               | HDX                                       | 12                     | \*25519          | https://hydradx.io            |
 | 65     | aventus               | AvN Mainnet                                           | AVT                                       | 18                     | \*25519          | https://aventus.io            |
 | 66     | crust                 | Crust Network                                         | CRU                                       | 12                     | \*25519          | https://crust.network         |
-| 67     | equilibrium           | Equilibrium Network                                   | Unknown, USD, EQ, ETH, BTC, EOS, DOT, CRV | 0, 9, 9, 9, 9, 9, 9, 9 | \*25519          | https://equilibrium.io        |
+| 67     | equilibrium           | Equilibrium Network                                   | Unknown, USD, EQ, ETH, BTC, EOS, SOLAR, CRV | 0, 9, 9, 9, 9, 9, 9, 9 | \*25519          | https://equilibrium.io        |
 | 69     | sora                  | SORA Network                                          | XOR                                       | 18                     | \*25519          | https://sora.org              |
 | 73     | zeitgeist             | Zeitgeist                                             | ZTG                                       | 10                     | \*25519          | https://zeitgeist.pm          |
 | 77     | manta                 | Manta network                                         | MA                                        | 12                     | \*25519          | https://manta.network         |

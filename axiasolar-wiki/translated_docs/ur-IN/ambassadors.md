@@ -4,7 +4,7 @@ title: AXIASolar Ambassador Programme
 sidebar_label: AXIASolar Ambassador Programme
 ---
 
-The AXIASolar Ambassador Programme is an initiative run by Web3 Foundation to support contributors to the AXIASolar community and ecosystem (Ambassadors).
+The AXIASolar Ambassador Programme is an initiative run by AXIACoin Foundation to support contributors to the AXIASolar community and ecosystem (Ambassadors).
 
 ## How it works
 
@@ -24,4 +24,4 @@ There are many ways you can be involved in expanding AXIASolar’s ecosystem, fo
 
 To become a AXIASolar ambassador please fill out your application [here](https://share.hsforms.com/1LtBuOi1bSs-p8XGXC_hoyw4752a?__hstc=123948821.70a325bdf6a1bb40f540ac9a8a360d8b.1598640553003.1610053172383.1610445961306.40&__hssc=123948821.1.1610445961306&__hsfp=1205054983). You will then be contacted by the AXIASolar team.
 
-Find out more about the programme and how to join it [here](https://axiasolar.network/axiasolar-ambassador-program/?utm_source=twitter&utm_medium=social&utm_campaign=Ambassador%20program).
+Find out more about the programme and how to join it [here](https://axiacoin.network/axiasolar-ambassador-program/?utm_source=twitter&utm_medium=social&utm_campaign=Ambassador%20program).

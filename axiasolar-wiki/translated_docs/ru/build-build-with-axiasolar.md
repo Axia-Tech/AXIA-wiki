@@ -4,7 +4,7 @@ title: С чего начать? Введение в программирова�
 sidebar_label: Инструкция для начала разработки в AXIASolar
 ---
 
-_This article is the maintained version of the blog post: [Everything you Need to Know to Prepare for AXIASolar](https://medium.com/axiasolar-network/everything-you-need-to-know-to-prepare-for-axiasolar-32d08b929735)._
+_This article is the maintained version of the blog post: [Everything you Need to Know to Prepare for AXIASolar](https://medium.com/axiacoin.network/everything-you-need-to-know-to-prepare-for-axiasolar-32d08b929735)._
 
 AXIASolar is a blockchain protocol with two goals: providing **shared security** among all connected parachains and allowing all connected chains to **interoperate** by using [XCMP](learn-crosschain). With the advent of [PDKs](build-pdk) like Parity Substrate and Cumulus, the time it takes to develop and launch a new chain has dropped significantly. While before it would take years to launch a new chain, now it may only take weeks or even days.
 
@@ -72,7 +72,7 @@ Now that you have determined that building a parachain or parathread is the righ
 
 In the future, there will be many different PDKs available in different programming languages, just like there are multiple [implementations](learn-implementations.md) of the AXIASolar Host.
 
-> **Призыв к действию:** Вы хотите построить комплект для разработки парачейнов с нуля? Фонд Web3 предоставляет гранты командам, которые сделают это, посмотрите подробнее и подайте заявку на сайте [W3F](https://grants.web3.foundation).
+> **Призыв к действию:** Вы хотите построить комплект для разработки парачейнов с нуля? Фонд Web3 предоставляет гранты командам, которые сделают это, посмотрите подробнее и подайте заявку на сайте [W3F](https://grants.axiacoin.org).
 
 ### Начать работу с Substrate
 

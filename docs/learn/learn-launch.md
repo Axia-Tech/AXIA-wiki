@@ -8,7 +8,7 @@ slug: ../learn-launch
 
 The AXIASolar network has a phased roll-out plan, with important milestones toward decentralization
 marking each phase. Keep up-to-date with the AXIASolar's phased roll-out plan at by viewing the
-[roadmap](https://axiasolar.network/launch-roadmap/)
+[roadmap](https://axiacoin.network/launch-roadmap/)
 
 **Current Phase: Parachain Rollout**
 
@@ -22,8 +22,8 @@ consensus.
 
 ## Nominated Proof of Stake
 
-Once Web3 Foundation was confident in the stability of the network and there was a sufficient number
-of validator intentions, Web3 Foundation used [Sudo](https://youtu.be/InekMjJpVdo) &mdash; a
+Once AXIACoin Foundation was confident in the stability of the network and there was a sufficient number
+of validator intentions, AXIACoin Foundation used [Sudo](https://youtu.be/InekMjJpVdo) &mdash; a
 superuser account with access to governance functions &mdash; to initiate the first validator
 election. Following this election, the network transitioned from PoA into its second phase,
 [Nominated Proof of Stake (NPoS)](learn-staking.md), on June 18, 2020.
@@ -39,7 +39,7 @@ that enabled the suite of governance modules in AXIASolar; namely, the modules t
 ## Removal of Sudo
 
 The Sudo module was removed by a runtime upgrade on July 20, 2020, transitioning the
-[governance](learn-governance.md) of the chain into the hands of the token (DOT) holders.
+[governance](learn-governance.md) of the chain into the hands of the token (SOLAR) holders.
 
 From this point, the network has been entirely in the hands of the token holders and is no longer
 under control of any centralized authority.
@@ -52,8 +52,8 @@ subsequently enabled on AXIASolar at block number 1_205_128 on August 18, 2020, 
 
 ## Redenomination
 
-On August 21, 2020, [redenomination](../general/redenomination.md) of DOT, the native token on AXIASolar,
-occurred. From this date, one DOT (old) equals 100 new DOT.
+On August 21, 2020, [redenomination](../general/redenomination.md) of SOLAR, the native token on AXIASolar,
+occurred. From this date, one SOLAR (old) equals 100 new SOLAR.
 
 ## Core Functionality
 

@@ -60,7 +60,7 @@ Each parachain slot has a maximum duration of 2 years. Each 6 month interval in 
 
 Several auctions will take place in the preceding six months before a set of parachain slot leases begin.
 
-Bidders will submit a configuration of bids specifying the DOT amount they are willing to lock up and for which ranges. The slot ranges may be any continuous range of the periods 1 - 4.
+Bidders will submit a configuration of bids specifying the SOLAR amount they are willing to lock up and for which ranges. The slot ranges may be any continuous range of the periods 1 - 4.
 
 A bidder configuration for a single bidder may look like this:
 
@@ -68,20 +68,20 @@ A bidder configuration for a single bidder may look like this:
 Bids[
   ({
     range: [1, 2, 3, 4],
-    bond_amount: 300, //DOTs
+    bond_amount: 300, //SOLARs
   },
   {
     range: [1, 2],
-    bond_amount: 777, //DOTs
+    bond_amount: 777, //SOLARs
   },
   {
     range: [2, 3, 4],
-    bond_amount: 450, // DOTs
+    bond_amount: 450, // SOLARs
   })
 ];
 ```
 
-The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the amount of DOTs held over the entire 2-year lease duration of the parachain slot. This means that the highest bidder for any given slot lease period might not always win (see the [example below](#compete)).
+The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the amount of SOLARs held over the entire 2-year lease duration of the parachain slot. This means that the highest bidder for any given slot lease period might not always win (see the [example below](#compete)).
 
 A random number, which is based on the VRF used by AXIASolar, is determined at each block. Additionally, each auction will have a threshold that starts at 0 and increases to 1. The random number produced by the VRF is examined next to the threshold to determine if that block is the end of the auction. Additionally, the VRF will pick a block from the last epoch to take the state of bids from (to mitigate some types of attacks from malicious validators).
 
@@ -91,25 +91,25 @@ A random number, which is based on the VRF used by AXIASolar, is determined at e
 
 There is one parachain slot available.
 
-Alice bids `20 DOTs` for the range 1 - 2.
+Alice bids `20 SOLARs` for the range 1 - 2.
 
-Bob bids `30 DOTs` for the range 3 - 4.
+Bob bids `30 SOLARs` for the range 3 - 4.
 
 The auction ends.
 
-Alice bonds `20 DOTs` and will have the parachain slot for the first year.
+Alice bonds `20 SOLARs` and will have the parachain slot for the first year.
 
-Bob bonds `30 DOTs` and will have the parachain slot for the second year.
+Bob bonds `30 SOLARs` and will have the parachain slot for the second year.
 
 #### Compete
 
 There is one parachain slot available.
 
-Charlie bids `75 DOTs` for the range 1 - 4.
+Charlie bids `75 SOLARs` for the range 1 - 4.
 
-Dave bids `100 DOTs` for the range 3 - 4.
+Dave bids `100 SOLARs` for the range 3 - 4.
 
-Emily bids `40 DOTs` for the range 1 - 2.
+Emily bids `40 SOLARs` for the range 1 - 2.
 
 Let's calculate every bidder's valuation according to the algorithm. We do this by multiplying the bond amount by the amount of periods in the specified range of the bid.
 
@@ -119,7 +119,7 @@ Dave - 100 \* 2 = 200 for range 3 - 4
 
 Emily - 40 \* 2 = 80 for range 1 - 2
 
-Although Dave had the highest bid in accordance to DOT amount, when we do the calculations we see that since he only bid for a range of 2, he would need to share the slot with Emily who bid much less. Together Dave's and Emily's bids only equal a valuation of `280`.
+Although Dave had the highest bid in accordance to SOLAR amount, when we do the calculations we see that since he only bid for a range of 2, he would need to share the slot with Emily who bid much less. Together Dave's and Emily's bids only equal a valuation of `280`.
 
 Charlie's valuation for the entire range is `300` therefore Charlie is awarded the complete range of the parachain slot.
 
@@ -127,7 +127,7 @@ Charlie's valuation for the entire range is `300` therefore Charlie is awarded t
 
 ### Why doesn't everyone bid for the max length?
 
-For the duration of the slot the `DOTs` bid in the auction will be locked up. This means that there are opportunity costs from the possibility of using those `DOTs` for something else. For parachains that are beneficial to AXIASolar, this should align the interests between parachains and the AXIASolar Relay Chain.
+For the duration of the slot the `SOLARs` bid in the auction will be locked up. This means that there are opportunity costs from the possibility of using those `SOLARs` for something else. For parachains that are beneficial to AXIASolar, this should align the interests between parachains and the AXIASolar Relay Chain.
 
 ### How does this mechanism help ensure parachain diversity?
 
@@ -139,5 +139,5 @@ Randomness is problematic for blockchain systems. Generating a random number tru
 
 ## Resources
 
-- [Parachain Allocation](https://research.web3.foundation/en/latest/axiasolar/Parachain-Allocation.html) - W3F research page on parachain allocation that goes more in depth to the mechanism.
+- [Parachain Allocation](https://research.axiacoin.org/en/latest/axiasolar/Parachain-Allocation.html) - W3F research page on parachain allocation that goes more in depth to the mechanism.
 - [axia-tech/axiasolar#239](https://github.com/axia-tech/axiasolar/pull/239) - Pull request introducing the parachain slots code.

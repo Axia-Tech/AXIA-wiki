@@ -9,7 +9,7 @@ The Treasury is a pot of funds collected through transaction fees, slashing, [st
 {{ spend_period }} days. The Treasury attempts to spend as many proposals in the queue as it can without running out of funds.
 
 If the Treasury ends a budget period without spending all of its funds, it suffers a burn of a percentage of its funds -- thereby causing deflationary pressure.
-{{ axiasolar: This percentage is currently at 1% on AXIASolar. :axiasolar }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to [Society](https://guide.axialunar.network/docs/en/maintain-guides-society-axialunar) rather than being burned. :axialunar }}
+{{ axiasolar: This percentage is currently at 1% on AXIASolar. :axiasolar }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to [Society](https://lunar.wiki.axiacoin.network/docs/en/maintain-guides-society-axialunar) rather than being burned. :axialunar }}
 
 When a stakeholder wishes to propose a spend from the Treasury, they must reserve a deposit totaling 5% of the proposed spend (see below for variations). This deposit will be slashed if the proposal is rejected, and returned if it is accepted.
 
@@ -44,12 +44,12 @@ Please note that there is no way for a user to revoke a treasury proposal after 
 To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal. Most discussion takes place on the following platforms:
 
 - Many community members participate in discussion in the [AXIALunar Element (previously Riot)](https://riot.w3f.tech/#/room/#axialunar:matrix.parity.io) chat.
-- The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their KSM address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
-- The {{ axiasolar: [AXIASolar forum](https://forum.axiasolar.network) :axiasolar }}
+- The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
+- The {{ axiasolar: [AXIASolar forum](https://forum.axiacoin.network) :axiasolar }}
   {{ axialunar: [AXIALunar forum](https://forum.axialunar.network) :axialunar }} can be used for proposal explanations.
 - [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} address and automatically reads proposals from the chain, turning them into discussion threads.
 
-Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Element channels like {{ axiasolar: the [AXIASolar Watercooler](https://app.element.io/#/room/#axiasolar-watercooler:web3.foundation) and [AXIASolar Direction room](https://app.element.io/#/room/#axiasolar-direction:matrix.parity.io) :axiasolar }}
+Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Element channels like {{ axiasolar: the [AXIASolar Watercooler](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) and [AXIASolar Direction room](https://app.element.io/#/room/#axiasolar-direction:matrix.parity.io) :axiasolar }}
 {{ axialunar: the [AXIALunar Direction room](https://app.element.io/#/room/#axialunar:matrix.parity.io) or the [AXIALunar Watercooler](https://app.element.io/#/room/#axialunarwatercooler:axiasolar.builders) :axialunar }}.
 
 ### Creating the Proposal
@@ -101,14 +101,14 @@ Since the tipper group is the same as the Council on AXIALunar, the Council must
 
 Charlie, Dave, and Eve all review the report and make tips according to their personal valuation of the benefit Bob has provided to AXIALunar.
 
-Charlie tips {{ axiasolar: 10 DOT :axiasolar }} {{ axialunar: 1 KSM :axialunar }}. Dave tips
-{{ axiasolar: 30 DOT :axiasolar }} {{ axialunar: 3 KSM :axialunar }}. Eve tips
-{{ axiasolar: 100 DOT :axiasolar }} {{ axialunar: 10 KSM :axialunar }}.
+Charlie tips {{ axiasolar: 10 SOLAR :axiasolar }} {{ axialunar: 1 LUNAR :axialunar }}. Dave tips
+{{ axiasolar: 30 SOLAR :axiasolar }} {{ axialunar: 3 LUNAR :axialunar }}. Eve tips
+{{ axiasolar: 100 SOLAR :axiasolar }} {{ axialunar: 10 LUNAR :axialunar }}.
 
 The tip could have been closed out with only two of the three tippers. Once more than half of the tippers group have issued tip valuations, the countdown to close the tip will begin. In this case, the third tipper issued their tip before the end of the closing period, so all three were able to make their tip valuations known.
 
 Now the actual tip that will be paid out to Bob is the median of these tips, so Bob will be paid out
-{{ axiasolar: 30 DOT :axiasolar }} {{ axialunar: 3 KSM :axialunar }} from the Treasury.
+{{ axiasolar: 30 SOLAR :axiasolar }} {{ axialunar: 3 LUNAR :axialunar }} from the Treasury.
 
 In order for Bob to be paid his tip, some account must call the `close_tip` extrinsic at the end of the closing period for the tip. This extrinsic may be called by anyone.
 
@@ -150,7 +150,7 @@ The curator can close the bounty once they approve the completion of its tasks. 
 
 A bounty can be closed by using the extrinsics tab and selecting the Treasury pallet, then `Award_bounty`, making sure the right bounty is to be closed and finally sign the transaction. It is important to note that those who received a reward after the bounty is completed, must claim the specific amount of the payout from the payout address, by calling `Claim_bounty` after the curator closed the allocation.
 
-To understand more about Bounties and how this new mechanism works, read this [AXIASolar Blog post](https://axiasolar.network/axialunar-and-axiasolar-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
+To understand more about Bounties and how this new mechanism works, read this [AXIASolar Blog post](https://axiacoin.network/axialunar-and-axiasolar-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
 
 ## FAQ
 

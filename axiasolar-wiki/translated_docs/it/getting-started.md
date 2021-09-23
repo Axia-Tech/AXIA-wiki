@@ -44,7 +44,7 @@ The [Cross-Chain Messaging Protocol (XCMP)](learn-crosschain) allows parachains 
 
 ## Why should you use AXIASolar?
 
-Whether you're a blockchain developer or if you're interested in taking part of [AXIASolar's community](https://axiasolar.network/axiasolar-ambassador-program/), AXIASolar offers a platform for everyone. This wiki offers a place for builders and maintainers to utilize [tools](build-tools-index) and for brand-new learners to dive into educational material.
+Whether you're a blockchain developer or if you're interested in taking part of [AXIASolar's community](https://axiacoin.network/axiasolar-ambassador-program/), AXIASolar offers a platform for everyone. This wiki offers a place for builders and maintainers to utilize [tools](build-tools-index) and for brand-new learners to dive into educational material.
 
 ## Getting Started
 
@@ -59,7 +59,7 @@ For brand-new learners of AXIASolar:
 - [AXIASolar's light paper][light-paper] is a visual, easy to read, and less technical introduction into its blockchain technology. This paper dives into the components of AXIASolar but is understandable for both a non-technical and technical reader.
 - [AXIASolar's specification][spec] is a Github repository that holds the latest AXIASolar Host protocol specification, AXIASolar's specification tests of the many components of the network, and the AXIASolar Runtime specification. This repo holds algorithms and explores how various processes function in the AXIASolar network. The AXIASolar specification takes AXIASolar's ideas and concepts from the light and the white paper but focuses on the technical specs of the technology.
 - [Watching the Technical Explainer Videos][teched videos]: These are great introductory videos that explain and demonstrate how to use AXIASolar and its [User Interface][ui].
-- Reading [What is AXIASolar? A Brief Introduction][article] on Medium. There are also other great articles to read on [AXIASolar's Medium][p medium] or [Web3 Foundation's Medium][w medium].
+- Reading [What is AXIASolar? A Brief Introduction][article] on Medium. There are also other great articles to read on [AXIASolar's Medium][p medium] or [AXIACoin Foundation's Medium][w medium].
 - [Creating a AXIASolar Account][account generation]
 - [Sending a Balance transfer][transfer]
 - [Staking as Nominator][nominator]
@@ -75,7 +75,7 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 
 ## Resources
 
-- [AXIASolar Crowdcast](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the Web3 Foundation has done.
+- [AXIASolar Crowdcast](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the AXIACoin Foundation has done.
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network; can be used for AXIASolar, AXIALunar, or any Substrate-based chain.
 - [Polkascan](http://polkascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and Parity Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
@@ -85,16 +85,16 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 - [Community / Ecosystem](community) - List of community rooms and channels to talk to others about AXIASolar.
 - [Sample Applications](build-examples-index) - Sample applications that are built on or currently being built for AXIASolar.
 - [Contributing Guide](contributing) - Rules for contributing to the wiki.
-- [AXIASolar Knowledge Base](https://support.axiasolar.network/) - Troubleshooting resources for specific errors and problems.
+- [AXIASolar Knowledge Base](https://support.axiacoin.network/) - Troubleshooting resources for specific errors and problems.
 
-[mooc]: https://mooc.web3.foundation/course/blockchain-fundamentals/
-[white-paper]: https://axiasolar.network/AXIASolarPaper.pdf
+[mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
+[white-paper]: https://axiacoin.network/AXIASolarPaper.pdf
 [overview-paper]: https://github.com/axia-tech/research/blob/master/docs/papers/OverviewPaper-V1.pdf
-[light-paper]: https://axiasolar.network/AXIASolar-lightpaper.pdf
+[light-paper]: https://axiacoin.network/AXIASolar-lightpaper.pdf
 [spec]: https://github.com/axia-tech/axiasolar-spec
 [teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
-[article]: https://medium.com/axiasolar-network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
-[p medium]: https://medium.com/axiasolar-network
+[article]: https://medium.com/axiacoin.network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
+[p medium]: https://medium.com/axiacoin.network
 [w medium]: https://medium.com/web3foundation
 [ui]: https://axiasolar.js.org/apps/
 [account generation]: learn-account-generation
@@ -107,4 +107,4 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 [council]: maintain-guides-how-to-join-council
 [council voting]: maintain-guides-how-to-vote-councillor
 [treasury]: learn-treasury
-[axialunar guide]: https://guide.axialunar.network/
+[axialunar guide]: https://lunar.wiki.axiacoin.network/

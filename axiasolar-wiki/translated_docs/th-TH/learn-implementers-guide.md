@@ -12,7 +12,7 @@ The Parachain Implementer's Guide is still heavily work in progress and maintain
 
 ## Further Resources
 
-- [The Path of a Parachain Block](https://medium.com/axiasolar-network/the-path-of-a-parachain-block-47d05765d7a) is a Medium article that dives into how parachains work.
+- [The Path of a Parachain Block](https://medium.com/axiacoin.network/the-path-of-a-parachain-block-47d05765d7a) is a Medium article that dives into how parachains work.
 - [Video - The Path of a Parachain Block](https://www.crowdcast.io/e/axiasolar-path-of-a-parachain-block?utm_source=profile&utm_medium=profile_web&utm_campaign=profile)
-- [AXIASolar Parachain Slots](https://axiasolar.network/axiasolar-parachain-slots/), a Medium article that explores how slots work in parachains.
+- [AXIASolar Parachain Slots](https://axiacoin.network/axiasolar-parachain-slots/), a Medium article that explores how slots work in parachains.
 - [Video - How to become a parachain on AXIASolar](https://www.youtube.com/watch?v=fYc1yolanoE)

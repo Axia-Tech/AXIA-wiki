@@ -44,7 +44,7 @@ Whether you're a blockchain developer or if you're interested in taking part of 
 - [Bridges](learn-bridges) - Overview of bridges.
 - [Cryptography](learn-cryptography) - Describes the cryptography used in AXIASolar and where it is employed in the protocol.
 - [Consensus](learn-consensus) - Describes what kind of consensus is used in the AXIASolar protocol and how it compares to other consensus protocols.
-- [DOT](learn-DOT) - Information on DOTs, the native token of the AXIASolar protocol.
+- [SOLAR](learn-SOLAR) - Information on SOLARs, the native token of the AXIASolar protocol.
 - [Governance](learn-governance) - What blockchain governance is, and how it works in AXIASolar.
 - [Cross-chain Communication](learn-crosschain) - Information regarding how cross-chain messaging works.
 - [Parachains](learn-parachains) - Overview of what a parachain is, and how they work.
@@ -67,4 +67,4 @@ Whether you're a blockchain developer or if you're interested in taking part of 
 - [Links](learn-relevant-links) - Comprehensive list of external links.
 - [Roadmap](learn-roadmap) - The implementation roadmap of AXIASolar.
 - [FAQ](faq) - Answers to some of the frequently asked questions about AXIASolar.
-- [Become a AXIASolar Ambassador](https://axiasolar.network/axiasolar-ambassador-program/) - Learn how you can take part in this program to strengthen our community
+- [Become a AXIASolar Ambassador](https://axiacoin.network/axiasolar-ambassador-program/) - Learn how you can take part in this program to strengthen our community

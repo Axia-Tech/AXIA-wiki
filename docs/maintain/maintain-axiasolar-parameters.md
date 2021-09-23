@@ -54,7 +54,7 @@ The AXIASolar Council consists of up to 13 members and up to 20 runners up.
 
 ### Staking, Validating, and Nominating
 
-As of June 30, 2021, the staking parameters have been modified to a minimum of 40 DOT to nominate,
+As of June 30, 2021, the staking parameters have been modified to a minimum of 40 SOLAR to nominate,
 and a maximum of 22_500 total nominators. As most of these parameters can be updated via on-chain
 governance, please check the latest parameters on
 [chain state](https://axiasolar.js.org/apps/#/chainstate) (selected state query - staking -
@@ -77,8 +77,8 @@ Burn percentage is currently `1.00%`.
 
 ### Precision
 
-DOT have 10 decimals of precision. In other words, 10 \*\* 10 (10_000_000_000 or ten billion)
-Plancks make up a DOT.
+SOLAR have 10 decimals of precision. In other words, 10 \*\* 10 (10_000_000_000 or ten billion)
+Plancks make up a SOLAR.
 
-The denomination of DOT was changed from 12 decimals of precision at block #1*248_328 in an event
+The denomination of SOLAR was changed from 12 decimals of precision at block #1*248_328 in an event
 known as \_Denomination Day*. See [Redenomination](../general/redenomination.md) for details.

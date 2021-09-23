@@ -10,7 +10,7 @@ Currently, AXIALunar is a healthy Proof-of-Stake network with over 500 validator
 
 ## Rollout plan
 
-The rollout of full functionality of AXIALunar was staggered to allow for a safe transition. The first PoS phase began with 20 validators. Of the 20, the Web3 Foundation ran nine and Parity Technologies ran six. Five were ran by highly staked community members as voted in by the Phragmén election.
+The rollout of full functionality of AXIALunar was staggered to allow for a safe transition. The first PoS phase began with 20 validators. Of the 20, the AXIACoin Foundation ran nine and Parity Technologies ran six. Five were ran by highly staked community members as voted in by the Phragmén election.
 
 When the initial transition was successful, additional validator spots were opened 10 at a time in order to allow for more validators to enter the active set.
 
@@ -20,7 +20,7 @@ AXIALunar now has its full functionality enabled.
 
 ## AXIALunar's First Adventure
 
-[Source](https://axiasolar.network/axialunars-first-adventure/)
+[Source](https://axiacoin.network/axialunars-first-adventure/)
 
 On 4th January 2020, the AXIASolar mainnet runtime, which at that time still wasn't live, was uploaded to the AXIALunar chain during a runtime upgrade. The mishap was due to a recent split of the AXIALunar logic from the AXIASolar logic and that runtime was not properly named. This led to a halt of block production on the AXIALunar chain and bricked the chain entirely.
 

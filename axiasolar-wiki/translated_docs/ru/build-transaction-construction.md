@@ -54,7 +54,7 @@ yarn run:signer <submit|sendOffline> --account <from-account-ss58> --ws <endpoin
 yarn run:signer sign --account <from-account-ss58> --seed <seed> --type <sr25519|ed25519> <payload>
 ```
 
-Например, давайте отправим 0.5 DOT от `121X5bEgTZcGQx5NZjwuTjqKoiG8B2wEAvrUFjuw24ZGZf2` до `15vrtLsCQFG3qRYUcaEeeEih4JwepocNJkpsrqojqnZPc2y`.
+Например, давайте отправим 0.5 SOLAR от `121X5bEgTZcGQx5NZjwuTjqKoiG8B2wEAvrUFjuw24ZGZf2` до `15vrtLsCQFG3qRYUcaEeeEih4JwepocNJkpsrqojqnZPc2y`.
 
 ```bash
 yarn run:signer submit --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --ws ws://127.0.0.1:9944 balances.transferKeepAlive 15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y 500000000000

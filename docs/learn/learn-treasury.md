@@ -18,7 +18,7 @@ If the Treasury ends a budget period without spending all of its funds, it suffe
 percentage of its funds -- thereby causing deflationary pressure.
 {{ axiasolar: This percentage is currently at 1%
 on AXIASolar. :axiasolar }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to
-[Society](https://guide.axialunar.network/docs/maintain-guides-society-axialunar) rather than being
+[Society](https://lunar.wiki.axiacoin.network/docs/maintain-guides-society-axialunar) rather than being
 burned. :axialunar }}
 
 When a stakeholder wishes to propose a spend from the Treasury, they must reserve a deposit of at
@@ -83,7 +83,7 @@ takes place on the following platforms:
 
 Spreading the word about the proposal's explanation is ultimately up to the proposer - the
 recommended way is using official Element channels like {{ axiasolar: the
-[AXIASolar Watercooler](https://matrix.to/#/#axiasolar-watercooler:web3.foundation) and
+[AXIASolar Watercooler](https://matrix.to/#/#axiasolar-watercooler:axiacoin.org) and
 [AXIASolar Direction room](https://matrix.to/#/#axiasolar-direction:matrix.parity.io) :axiasolar }}
 {{ axialunar: the
 [AXIALunar Direction room](https://matrix.to/#/#axialunar:matrix.parity.io) or the
@@ -170,9 +170,9 @@ independently) decide on the value of the tip that Bob deserves.
 Charlie, Dave, and Eve all review the report and make tips according to their personal valuation of
 the benefit Bob has provided to AXIALunar.
 
-Charlie tips {{ axiasolar: 10 DOT :axiasolar }} {{ axialunar: 1 KSM :axialunar }}. Dave tips
-{{ axiasolar: 30 DOT :axiasolar }} {{ axialunar: 3 KSM :axialunar }}. Eve tips
-{{ axiasolar: 100 DOT :axiasolar }} {{ axialunar: 10 KSM :axialunar }}.
+Charlie tips {{ axiasolar: 10 SOLAR :axiasolar }} {{ axialunar: 1 LUNAR :axialunar }}. Dave tips
+{{ axiasolar: 30 SOLAR :axiasolar }} {{ axialunar: 3 LUNAR :axialunar }}. Eve tips
+{{ axiasolar: 100 SOLAR :axiasolar }} {{ axialunar: 10 LUNAR :axialunar }}.
 
 The tip could have been closed out with only two of the three tippers. Once more than half of the
 tippers group have issued tip valuations, the countdown to close the tip will begin. In this case,
@@ -180,7 +180,7 @@ the third tipper issued their tip before the end of the closing period, so all t
 make their tip valuations known.
 
 Now the actual tip that will be paid out to Bob is the median of these tips, so Bob will be paid out
-{{ axiasolar: 30 DOT :axiasolar }} {{ axialunar: 3 KSM :axialunar }} from the Treasury.
+{{ axiasolar: 30 SOLAR :axiasolar }} {{ axialunar: 3 LUNAR :axialunar }} from the Treasury.
 
 In order for Bob to be paid his tip, some account must call the `close_tip` extrinsic at the end of
 the closing period for the tip. This extrinsic may be called by anyone.
@@ -273,7 +273,7 @@ specific amount of the payout from the payout address, by calling `Claim_bounty`
 closed the allocation.
 
 To understand more about Bounties and how this new mechanism works, read this
-[AXIASolar Blog post](https://axiasolar.network/axialunar-and-axiasolar-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
+[AXIASolar Blog post](https://axiacoin.network/axialunar-and-axiasolar-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
 
 ## FAQ
 

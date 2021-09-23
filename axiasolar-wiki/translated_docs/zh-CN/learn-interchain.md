@@ -39,4 +39,4 @@ Charlie 通过平行链 A 里的智能合约发起一个新跨链信息到在平
 
 ## 资源
 
-- [XCMP Scheme](https://research.web3.foundation/en/latest/axiasolar/ICMP.html) - Full technical description of interchain communication on the Web3 Foundation research wiki.
+- [XCMP Scheme](https://research.axiacoin.org/en/latest/axiasolar/ICMP.html) - Full technical description of interchain communication on the AXIACoin Foundation research wiki.

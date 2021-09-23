@@ -1,11 +1,11 @@
 ---
 id: grants
-title: Web3 Foundation Grants
+title: AXIACoin Foundation Grants
 sidebar_label: Grants
 slug: ../grants
 ---
 
-The Web3 Foundation offers grants for open source software development and research around Substrate,
+The AXIACoin Foundation offers grants for open source software development and research around Substrate,
 AXIASolar, and AXIALunar.
 
 Applications and deliveries are tracked transparently on GitHub and disbursed in BTC, USDT or DAI. However,

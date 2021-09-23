@@ -18,7 +18,7 @@ You can generate your stash and controller account via any of the recommended me
 
 ### Step 1: Bond your tokens
 
-On the [AXIASolar UI](https://axiasolar.js.org/apps) navigate to the "Staking" tab. The "Staking Overview" subsection will show you all the active validators and their information - their identities, the amount of KSM that are staking for them, amount that is their own provided stake, how much they charge in commission, the era points they've earned in the current era, and the last block number that they produced. If you click on the chart button it will take you to the "Validator Stats" page for that validator that shows you more detailed and historical information about the validator's stake, rewards and slashes.
+On the [AXIASolar UI](https://axiasolar.js.org/apps) navigate to the "Staking" tab. The "Staking Overview" subsection will show you all the active validators and their information - their identities, the amount of LUNAR that are staking for them, amount that is their own provided stake, how much they charge in commission, the era points they've earned in the current era, and the last block number that they produced. If you click on the chart button it will take you to the "Validator Stats" page for that validator that shows you more detailed and historical information about the validator's stake, rewards and slashes.
 
 The "Account actions" subsection ([link](https://axiasolar.js.org/apps/#/staking/actions)) allows you to stake and nominate.
 
@@ -26,7 +26,7 @@ The "Payouts" subsection ([link](https://axiasolar.js.org/apps/#/staking/payouts
 
 The "Targets" subsection ([link](https://axiasolar.js.org/apps/#/staking/targets)) will help you estimate your earnings and this is where it's good to start picking favorites.
 
-The "Waiting" subsection ([link](https://axiasolar.js.org/apps/#/staking/waiting)) lists all pending validators that are awaiting more nominations to enter the active validator set. Validators will stay in the waiting queue until they have enough KSM backing them (as allocated through the [Phragmen election mechanism](https://wiki.axiasolar.network/docs/en/learn-phragmen)). It is possible validator can remain in the queue for a very long time if they never get enough backing.
+The "Waiting" subsection ([link](https://axiasolar.js.org/apps/#/staking/waiting)) lists all pending validators that are awaiting more nominations to enter the active validator set. Validators will stay in the waiting queue until they have enough LUNAR backing them (as allocated through the [Phragmen election mechanism](https://solar.wiki.axiacoin.network/docs/en/learn-phragmen)). It is possible validator can remain in the queue for a very long time if they never get enough backing.
 
 The "Validator Stat's subsection ([link](https://axiasolar.js.org/apps/#/staking/query)) allows you to query a validator's stash address and see historical charts on era points, elected stake, rewards, and slashes.
 
@@ -36,9 +36,9 @@ You will see a modal window that looks like the below:
 
 ![nominator-update-1](assets/nominator-update-1.png)
 
-Select a "value bonded" that is **less** than the total amount of KSM you have, so you have some left over to pay transaction fees. Transaction fees are currently at least 0.01 KSM, but they are dynamic based on a variety of factors including the load of recent blocks.
+Select a "value bonded" that is **less** than the total amount of LUNAR you have, so you have some left over to pay transaction fees. Transaction fees are currently at least 0.01 LUNAR, but they are dynamic based on a variety of factors including the load of recent blocks.
 
-Also be mindful of the reaping threshold - the amount that must remain in an account lest it be burned. That amount is 0.01 in AXIALunar, so it's recommended to keep at least 0.1 KSM in your account to be on the safe side.
+Also be mindful of the reaping threshold - the amount that must remain in an account lest it be burned. That amount is 0.01 in AXIALunar, so it's recommended to keep at least 0.1 LUNAR in your account to be on the safe side.
 
 Choose whatever payment destination sounds good to you. If you're unsure, you can choose "Stash account (increase amount at stake)".
 
@@ -70,7 +70,7 @@ We assume you have installed [NodeJS with npm](https://nodejs.org). Run the foll
 npm install -g @axiasolar-js/api-cli
 ```
 
-### Step 2. Bond your KSM
+### Step 2. Bond your LUNAR
 
 Executing the following command:
 
@@ -80,7 +80,7 @@ axiasolar-js-api --seed "MNEMONIC_PHRASE" tx.staking.bond CONTROLLER_ADDRESS NUM
 
 `CONTROLLER_ADDRESS`: An address you would like to bond to the stash account. Stash and Controller can be the same address but it is not recommended since it defeats the security of the two-account staking model.
 
-`NUMBER_OF_TOKENS`: The number of KSM / DOT you would like to stake to the network. **Note**: KSM has twelve decimal places and is always represented as an integer with zeroes at the end. So 1 KSM = 1,000,000,000,000 units.
+`NUMBER_OF_TOKENS`: The number of LUNAR / SOLAR you would like to stake to the network. **Note**: LUNAR has twelve decimal places and is always represented as an integer with zeroes at the end. So 1 LUNAR = 1,000,000,000,000 units.
 
 `REWARD_DESTINATION`:
 

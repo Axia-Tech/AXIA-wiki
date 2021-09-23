@@ -6,7 +6,7 @@ sidebar_label: AXIASolar Wallets
 
 ## AXIASolar Wallets
 
-The integration of a [wallet](https://wiki.axiasolar.network/docs/en/glossary#wallet) with AXIASolar allows for simple and easy access to private keys and signing transactions. Below are some wallets that support AXIASolar along with their development statuses. Note that inclusion does not necessarily imply endorsement of that wallet.
+The integration of a [wallet](https://solar.wiki.axiacoin.network/docs/en/glossary#wallet) with AXIASolar allows for simple and easy access to private keys and signing transactions. Below are some wallets that support AXIASolar along with their development statuses. Note that inclusion does not necessarily imply endorsement of that wallet.
 
 ## Encryption Enhancement
 

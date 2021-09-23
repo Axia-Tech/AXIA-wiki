@@ -46,7 +46,7 @@ Whether you're a blockchain developer or if you're interested in taking part of 
 - [转接桥](learn-bridges) - 转接桥的概述。
 - [密码学](learn-cryptography) - 描述 AXIASolar 中使用的密码学以及在协议中那里使用。
 - [共识](learn-consensus) - 描述 AXIASolar 协议中使用的共识类型以及它与其它共识协议的比较。
-- [DOT](learn-DOT) - Information on DOT, the native token of the AXIASolar protocol.
+- [SOLAR](learn-SOLAR) - Information on SOLAR, the native token of the AXIASolar protocol.
 - [治理](learn-governance) - 什么是区块链治理及其在 AXIASolar 中的方式。
 - [跨链通信](learn-crosschain) - 跨链消息传递的工作方式。
 - [平行链](learn-parachains) - 什么是平行链以及它们如何运作。

@@ -52,5 +52,5 @@ VDFs will likely be implemented through ASIC devices that need to be run separat
 
 ## 资源
 
-- [ AXIASolar 对区块链随机性的研究](https://research.web3.foundation/en/latest/axiasolar/BABE/Babe.html) - 包含做出选择的理由以及证明
+- [ AXIASolar 对区块链随机性的研究](https://research.axiacoin.org/en/latest/axiasolar/BABE/Babe.html) - 包含做出选择的理由以及证明
 - [关于 AXIASolar 中使用随机性的讨论](https://github.com/axia-tech/ink/issues/57) - W3F 研究人员讨论了 AXIASolar 中的随机性，何时用以及在哪些假设下进行。

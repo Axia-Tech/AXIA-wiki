@@ -12,15 +12,15 @@ This guide will instruct you how to set up a validator node on the AXIASolar net
 
 Running a validator on a live network is a lot of responsibility! You will be accountable for not only your own stake, but also the stake of your current nominators. If you make a mistake and get slashed, your money and your reputation will be at risk. However, running a validator can also be very rewarding, knowing that you contribute to the security of a decentralized network while growing your stash.
 
-Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The Web3 Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/axia-tech/axiasolar-secure-validator) that you can use by deploying yourself (video walkthrough is available [here](https://www.youtube.com/watch?v=tTn8P6t7JYc)). As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
+Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The AXIACoin Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/axia-tech/axiasolar-secure-validator) that you can use by deploying yourself (video walkthrough is available [here](https://www.youtube.com/watch?v=tTn8P6t7JYc)). As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
 
-If you need help, please reach out on the [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) on Riot. The team and other validators are there to help answer questions and provide tips from experience.
+If you need help, please reach out on the [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) on Riot. The team and other validators are there to help answer questions and provide tips from experience.
 
-### How many DOTs do I need?
+### How many SOLARs do I need?
 
-You can have a rough estimate on that by using the methods listed [here](faq#what-is-the-minimum-stake-necessary-to-be-elected-as-an-active-validator). Validators are elected based on [Phragmen's algorithm](learn-phragmen). To be elected into the set, you need a minimum stake behind your validator. This stake can come from yourself or from [nominators](maintain-nominator). This means that as a minimum, you will need enough DOT to set up Stash and Controller [accounts](learn-keys) with the existential deposit, plus a little extra for transaction fees. The rest can come from nominators.
+You can have a rough estimate on that by using the methods listed [here](faq#what-is-the-minimum-stake-necessary-to-be-elected-as-an-active-validator). Validators are elected based on [Phragmen's algorithm](learn-phragmen). To be elected into the set, you need a minimum stake behind your validator. This stake can come from yourself or from [nominators](maintain-nominator). This means that as a minimum, you will need enough SOLAR to set up Stash and Controller [accounts](learn-keys) with the existential deposit, plus a little extra for transaction fees. The rest can come from nominators.
 
-**Warning:** Any DOTs that you stake for your validator is liable to be slashed, meaning that an insecure or improper setup may result in loss of DOT tokens! If you are not confident in your ability to run a validator node, it is recommended to nominate your DOT to a trusted validator node instead.
+**Warning:** Any SOLARs that you stake for your validator is liable to be slashed, meaning that an insecure or improper setup may result in loss of SOLAR tokens! If you are not confident in your ability to run a validator node, it is recommended to nominate your SOLAR to a trusted validator node instead.
 
 ## Initial Set-up
 
@@ -149,29 +149,29 @@ Depending on the size of the chain when you do this, this step may take anywhere
 
 If you are interested in determining how much longer you have to go, your server logs (printed to STDOUT from the `axiasolar` process) will tell you the latest block your node has processed and verified. You can then compare that to the current highest block via [Telemetry](https://telemetry.axiasolar.io/#list/AXIASolar%20CC1) or the [AXIASolarJS Block Explorer](https://axiasolar.js.org/apps/#/explorer).
 
-> **Note:** If you do not already have DOTs, this is as far as you will be able to go until the end of the soft launch period. You can still run a node, but you will need to have a minimal amount of DOTs to continue, as balance transfers are disabled during the soft launch. Please keep in mind that even for those with DOTs, they will only be indicating their _intent_ to validate; they will also not be able to run a validator until the NPoS phase starts.
+> **Note:** If you do not already have SOLARs, this is as far as you will be able to go until the end of the soft launch period. You can still run a node, but you will need to have a minimal amount of SOLARs to continue, as balance transfers are disabled during the soft launch. Please keep in mind that even for those with SOLARs, they will only be indicating their _intent_ to validate; they will also not be able to run a validator until the NPoS phase starts.
 
-## Bond DOTs
+## Bond SOLARs
 
 > **Note:** Transfers are disabled during the soft launch phase of AXIASolar. This means that if you are setting up a validator during this time you may not be able to make your stash and controller two separate accounts, as is recommended. You must make them the same account, meaning that you will bond the account to itself. However it is highly recommended that you change your controller as soon as possible.
 
 It is highly recommended that you make your controller and stash accounts be two separate accounts. For this, you will create two accounts and make sure each of them have at least enough funds to pay the fees for making transactions. Keep most of your funds in the stash account since it is meant to be the custodian of your staking funds.
 
-Make sure not to bond all your DOT balance since you will be unable to pay transaction fees from your bonded balance.
+Make sure not to bond all your SOLAR balance since you will be unable to pay transaction fees from your bonded balance.
 
 It is now time to set up our validator. We will do the following:
 
-- Bond the DOTs of the Stash account. These DOTs will be put at stake for the security of the network and can be slashed.
+- Bond the SOLARs of the Stash account. These SOLARs will be put at stake for the security of the network and can be slashed.
 - Select the Controller. This is the account that will decide when to start or stop validating.
 
 First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) section. Click on "Account Actions", and then the "New stake" button.
 
 ![dashboard bonding](assets/guides/how-to-validate/axiasolar-dashboard-bonding.jpg)
 
-- **Stash account** - Select your Stash account. In this example, we will bond 100 milliDOTs - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
-- **Controller account** - Select the Controller account created earlier. This account will also need a small amount of DOTs in order to start and stop validating.
-- **Value bonded** - How much DOts from the Stash account you want to bond/stake. Note that you do not need to bond all of the DOTs in that account. Also note that you can always bond _more_ DOTs later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
-- **Payment destination** - The account where the rewards from validating are sent. More info [here](https://wiki.axiasolar.network/en/latest/axiasolar/learn/staking/#reward-distribution).
+- **Stash account** - Select your Stash account. In this example, we will bond 100 milliSOLARs - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
+- **Controller account** - Select the Controller account created earlier. This account will also need a small amount of SOLARs in order to start and stop validating.
+- **Value bonded** - How much DOts from the Stash account you want to bond/stake. Note that you do not need to bond all of the SOLARs in that account. Also note that you can always bond _more_ SOLARs later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
+- **Payment destination** - The account where the rewards from validating are sent. More info [here](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/staking/#reward-distribution).
 
 Once everything is filled in properly, click `Bond` and sign the transaction with your Stash account.
 
@@ -195,7 +195,7 @@ You need to tell the chain your Session keys by signing and submitting an extrin
 
 #### Option 1: AXIASolarJS-APPS
 
-You can generate your [Session keys](https://wiki.axiasolar.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolarJS-Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Parity of Web3 Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
+You can generate your [Session keys](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolarJS-Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Parity of AXIACoin Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
 
 Once ensuring that you have connected to your node, the easiest way to set session keys for your node is by calling the `author_rotateKeys` RPC request to create new keys in your validator's keystore. Navigate to Toolbox tab and select RPC Calls then select the author > rotateKeys() option and remember to save the output that you get back for a later step.
 
@@ -239,9 +239,9 @@ If you go to the "Staking" tab, you will see a list of active validators current
 
 ![staking queue](assets/guides/how-to-validate/axiasolar-dashboard-staking.jpg)
 
-The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the _waiting_ queue. If your validator is not selected to become part of the validator set, it will remain in the _waiting_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of DOTs staked or seek out nominators for your validator in order to join the validator set.
+The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the _waiting_ queue. If your validator is not selected to become part of the validator set, it will remain in the _waiting_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of SOLARs staked or seek out nominators for your validator in order to join the validator set.
 
-**Congratulations!** If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a AXIASolar validator! If you need help, reach out on the [AXIASolar Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation).
+**Congratulations!** If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a AXIASolar validator! If you need help, reach out on the [AXIASolar Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org).
 
 ## FAQ
 

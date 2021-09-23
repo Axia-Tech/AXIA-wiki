@@ -8,9 +8,9 @@ sidebar_label: Ledger Devices
 
 AXIALunar has a [Ledger][] application that is compatible with the Ledger Nano S and Ledger Nano X devices. The Ledger devices are hardware wallets that keep your private key secured on a physical device that does not get directly exposed to your computer or the internet.
 
-The AXIALunar application allows you to manage AXIALunar's native asset, the KSM token. It supports most of the available transaction types of the network (a notable exception is the "Batch" transaction from the Utility pallet).
+The AXIALunar application allows you to manage AXIALunar's native asset, the LUNAR token. It supports most of the available transaction types of the network (a notable exception is the "Batch" transaction from the Utility pallet).
 
-If you have trouble using Ledger or following the directions below, you can try searching for your issue on the [AXIASolar Knowledge Base](https://support.axiasolar.network/).
+If you have trouble using Ledger or following the directions below, you can try searching for your issue on the [AXIASolar Knowledge Base](https://support.axiacoin.network/).
 
 > Please check out our [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIASolar).
 
@@ -106,7 +106,7 @@ There are a few methods to check the balance of your account. You can use AXIASo
 
 #### Using AXIASolar-JS Apps
 
-Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger account. At the far right of the row is located your account's DOT balance. If you expand the balance arrow, it will show details of your balance such as locks or reserved amounts.
+Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger account. At the far right of the row is located your account's SOLAR balance. If you expand the balance arrow, it will show details of your balance such as locks or reserved amounts.
 
 ![Account row showing empty balance](assets/ledger/ledger-balance.png)
 
@@ -117,12 +117,12 @@ If you would like to send a transfer from your account housed on the Ledger devi
 - Click on the "Transfer" button in "Accounts" dropdown in the top navigation menu.
 - In the top input, select "Ledger" as your sending account.
 - In the second input, select the account that you want to transfer funds to.
-- In the third input, enter the amount of KSM you want to transfer.
+- In the third input, enter the amount of LUNAR you want to transfer.
 - Click the "Make Transfer" button.
 - Confirm the transaction on your device.
 - A green success notification will be displayed when the transaction is included in a block.
 
-> Note the "Transfer with Keep-Alive Checks" toggle. While this toggle is in the _On_ state, your account will be unable to make transactions which would get its balance below the existential deposit. This prevents reaping of accounts with low balances. If you toggle this to _Off_, you will be able to go below existential deposit balance, causing your account to be deleted and any dust amount of KSM to be burned. If you encounter KeepAlive errors when making transactions, this might be the reason.
+> Note the "Transfer with Keep-Alive Checks" toggle. While this toggle is in the _On_ state, your account will be unable to make transactions which would get its balance below the existential deposit. This prevents reaping of accounts with low balances. If you toggle this to _Off_, you will be able to go below existential deposit balance, causing your account to be deleted and any dust amount of LUNAR to be burned. If you encounter KeepAlive errors when making transactions, this might be the reason.
 
 A detailed guide on doing transfers is available [here](learn-balance-transfers).
 
@@ -149,7 +149,7 @@ Since Ledger does not support batch transactions, you must do two separate trans
 
 ## Support
 
-If you need support please send an email to [support@axialunar.network](mailto:support@axialunar.network) or visit [our Support page](https://support.axiasolar.network).
+If you need support please send an email to [support@axialunar.network](mailto:support@axialunar.network) or visit [our Support page](https://support.axiacoin.network).
 
 [ledger]: https://www.ledger.com/
 [axiasolar-js apps]: https://axiasolar.js.org/apps

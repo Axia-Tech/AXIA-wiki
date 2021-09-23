@@ -8,9 +8,9 @@ sidebar_label: Ledger Application
 
 The AXIASolar [Ledger][] application is compatible with both the Ledger Nano S and the Ledger Nano X devices. Ledger devices are hardware wallets that keep your secret secured on a physical device that does not expose it to your computer or the internet.
 
-The AXIASolar Ledger application allows you to manage AXIASolar's native token, the DOT. It supports most of the transaction types of the network (a notable exception is the "Batch" transaction from the Utility pallet).
+The AXIASolar Ledger application allows you to manage AXIASolar's native token, the SOLAR. It supports most of the transaction types of the network (a notable exception is the "Batch" transaction from the Utility pallet).
 
-If you have trouble using Ledger or following the directions below, you can try searching for your issue on the [AXIASolar Knowledge Base](https://support.axiasolar.network/).
+If you have trouble using Ledger or following the directions below, you can try searching for your issue on the [AXIASolar Knowledge Base](https://support.axiacoin.network/).
 
 > Please check out our [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIASolar).
 
@@ -112,7 +112,7 @@ There are a few methods to check the balance of your account. You can use AXIASo
 
 #### Using AXIASolar-JS Apps
 
-Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger account. At the far right of the row is located your account's DOT balance. If you expand the balance arrow, it will show details of your balance such as locks or reserved amounts.
+Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger account. At the far right of the row is located your account's SOLAR balance. If you expand the balance arrow, it will show details of your balance such as locks or reserved amounts.
 
 ![Account row showing empty balance](assets/ledger/ledger-balance.png)
 
@@ -153,7 +153,7 @@ Since Ledger does not support batch transactions, you must issue several extrins
 
 ## Support
 
-If you need support please send an email to [support@axiasolar.network](mailto:support@axiasolar.network) or visit our [Support Page](https://support.axiasolar.network).
+If you need support please send an email to [support@axiacoin.network](mailto:support@axiacoin.network) or visit our [Support Page](https://support.axiacoin.network).
 
 [ledger]: https://www.ledger.com/
 [axiasolar-js apps]: https://axiasolar.js.org/apps

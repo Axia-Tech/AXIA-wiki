@@ -12,7 +12,7 @@ sidebar_label: 如何部署平行链
 
 ## 如何部署 Adder 平行链
 
-**You will need to have the minimum deposit needed to create a referendum. Currently this minimum is 5 DOT.**
+**You will need to have the minimum deposit needed to create a referendum. Currently this minimum is 5 SOLAR.**
 
 The `adder` parachain is a simple parachain that will keep a value in storage and add to this value as messages are sent to it. It can be found in the AXIASolar repository under the `test-parachains` folder.
 
@@ -70,7 +70,7 @@ Hex: 0x0000000000000000000000000000000000000000000000000000000000000000000000000
 
 Click on `democracy` -> `propose(proposal,value)` -> `parachains` -> `registerParachain(id,code,initial_head_data)`.
 
-In the `id` input enter in the id of the parachain. In the case of the simple adder it will be `100`. In the `code` field click on the page button and then upload the `adder.wasm` binary that was compiled from before. In the `initial_head_data` we will copy and paste the hex data that we got from running the collator node. In the `value` field you will need to input the minimum required value for creating a referendum. At the time of writing this is _5 DOT_ on the Alexander testnet.
+In the `id` input enter in the id of the parachain. In the case of the simple adder it will be `100`. In the `code` field click on the page button and then upload the `adder.wasm` binary that was compiled from before. In the `initial_head_data` we will copy and paste the hex data that we got from running the collator node. In the `value` field you will need to input the minimum required value for creating a referendum. At the time of writing this is _5 SOLAR_ on the Alexander testnet.
 
 ![registering a parachain](assets/parachain/register.png)
 

@@ -54,7 +54,7 @@ Check your node is connected by viewing it on [Telemetry](https://telemetry.axia
 
 #### AlphaNet Faucet
 
-Follow the instruction [here](learn-DOT#getting-westies) for instructions on acquiring Westies.
+Follow the instruction [here](learn-SOLAR#getting-westies) for instructions on acquiring Westies.
 
 ### Differences
 

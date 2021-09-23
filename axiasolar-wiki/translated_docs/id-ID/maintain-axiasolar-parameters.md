@@ -8,7 +8,7 @@ Many of these parameter values can be updated via on-chain governance. If you re
 
 ### Periods of common actions and attributes
 
-_NOTE: AXIALunar runs 4x as fast as AXIASolar, except AXIASolar also has 6 second blocktimes. See [AXIALunar Parameters](https://guide.axialunar.network/docs/en/axialunar-parameters) for more details on how AXIALunar's parameters differ from AXIASolar's._
+_NOTE: AXIALunar runs 4x as fast as AXIASolar, except AXIASolar also has 6 second blocktimes. See [AXIALunar Parameters](https://lunar.wiki.axiacoin.network/docs/en/axialunar-parameters) for more details on how AXIALunar's parameters differ from AXIASolar's._
 
 - Slot: 6 seconds \*(generally one block per slot, although see note below)
 - Epoch: 4 hours (2,400 slots x 6 seconds)
@@ -63,6 +63,6 @@ Burn percentage is currently `1.00%`.
 
 ### Precision
 
-DOT have 10 decimals of precision. In other words, 10 \*\* 10 (10,000,000,000 or ten billion) Plancks make up a DOT.
+SOLAR have 10 decimals of precision. In other words, 10 \*\* 10 (10,000,000,000 or ten billion) Plancks make up a SOLAR.
 
-The denomination of DOT was changed from 12 decimals of precision at block #1,248,328 in an event known as _Denomination Day_. See [Redenomination](redenomination) for details.
+The denomination of SOLAR was changed from 12 decimals of precision at block #1,248,328 in an event known as _Denomination Day_. See [Redenomination](redenomination) for details.

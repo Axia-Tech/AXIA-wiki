@@ -35,5 +35,5 @@ appear, this article will be updated with a comparison of the different solution
 and drawbacks that each provide.
 
 [schellingcoin]: https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/
-[chainlink]: https://axiasolar.network/chainlink-reaches-milestone-with-axiasolar/
+[chainlink]: https://axiacoin.network/chainlink-reaches-milestone-with-axiasolar/
 [feed pallet]: https://github.com/smartcontractkit/chainlink-axiasolar/blob/master/pallet-chainlink-feed/README.md

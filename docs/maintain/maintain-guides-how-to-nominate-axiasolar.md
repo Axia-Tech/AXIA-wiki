@@ -7,7 +7,7 @@ slug: ../maintain-guides-how-to-nominate-axiasolar
 
 > The following information applies to the AXIASolar network. If you want to nominate on AXIALunar,
 > check out the
-> [AXIALunar guide](https://guide.axialunar.network/docs/mirror-maintain-guides-how-to-nominate-axialunar)
+> [AXIALunar guide](https://lunar.wiki.axiacoin.network/docs/mirror-maintain-guides-how-to-nominate-axialunar)
 > instead.
 
 Nominators are one type of participant in the staking subsystem of AXIASolar. They are responsible
@@ -50,7 +50,7 @@ On the [AXIASolar-JS UI](https://axiasolar.js.org/apps) navigate to the "Staking
 "Network" menu).
 
 The "Staking Overview" subsection will show you all the active validators and their information -
-their identities, the amount of DOT that are staking for them, amount that is their own provided
+their identities, the amount of SOLAR that are staking for them, amount that is their own provided
 stake, how much they charge in commission, the era points they've earned in the current era, and the
 last block number that they produced. If you click on the chart button it will take you to the
 "Validator Stats" page for that validator that shows you more detailed and historical information
@@ -67,7 +67,7 @@ estimate your earnings and this is where it's good to start picking favorites.
 
 The "Waiting" subsection ([link](https://axiasolar.js.org/apps/#/staking/waiting)) lists all pending
 validators that are awaiting more nominations to enter the active validator set. Validators will
-stay in the waiting queue until they have enough DOT backing them (as allocated through the
+stay in the waiting queue until they have enough SOLAR backing them (as allocated through the
 [Phragmén election mechanism](../learn/learn-phragmen.md)). It is possible validator can remain in the queue
 for a very long time if they never get enough backing.
 
@@ -80,12 +80,12 @@ Pick "Account actions", then click the "+ Nominator" button.
 You will see a modal window that looks like the below:
 ![nominator-update-1](../assets/axiasolarjs_nominate_button.png)
 
-Select a "value bonded" that is **less** than the total amount of DOT you have, so you have some
-left over to pay transaction fees. Transaction fees are currently around 0.01 DOT, but they are
+Select a "value bonded" that is **less** than the total amount of SOLAR you have, so you have some
+left over to pay transaction fees. Transaction fees are currently around 0.01 SOLAR, but they are
 dynamic based on a variety of factors including the load of recent blocks.
 
 Also be mindful of the reaping threshold - the amount that must remain in an account lest it be
-burned. That amount is 1 DOT on AXIASolar, so it's recommended to keep at least 1.5 DOT in your
+burned. That amount is 1 SOLAR on AXIASolar, so it's recommended to keep at least 1.5 SOLAR in your
 account to be on the safe side.
 
 Choose whatever payment destination that makes sense to you. If you're unsure, you can choose "Stash
@@ -143,7 +143,7 @@ install the `@axiasolar-js/api-cli` globally:
 npm install -g @axiasolar-js/api-cli
 ```
 
-### Step 2. Bond your DOT
+### Step 2. Bond your SOLAR
 
 Executing the following command:
 
@@ -155,10 +155,10 @@ axiasolar-js-api --seed "MNEMONIC_PHRASE" tx.staking.bond CONTROLLER_ADDRESS NUM
 can be the same address but it is not recommended since it defeats the security of the two-account
 staking model.
 
-`NUMBER_OF_TOKENS`: The number of DOT you would like to stake to the network.
+`NUMBER_OF_TOKENS`: The number of SOLAR you would like to stake to the network.
 
-> **Note**: DOT has ten decimal places and is always represented as an integer with zeroes at the
-> end. So 1 DOT = 10_000_000_000 Plancks.
+> **Note**: SOLAR has ten decimal places and is always represented as an integer with zeroes at the
+> end. So 1 SOLAR = 10_000_000_000 Plancks.
 
 `REWARD_DESTINATION`:
 

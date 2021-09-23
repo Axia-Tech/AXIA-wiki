@@ -20,7 +20,7 @@ development statuses.
 | [AXIASolar-js extension](https://github.com/axiasolar-js/extension)   | Live              | Parity    | Browser extension | Non-custodial | Staking  |
 | [AXIASolar-js apps](https://axiasolar.js.org/apps/#/accounts)         | Live              | Parity    | Browser           | Non-Custodial | Staking  |
 
-[AXIASolar support](https://support.axiasolar.network/) can provide assistance with issues related to
+[AXIASolar support](https://support.axiacoin.network/) can provide assistance with issues related to
 AXIASolar-JS, the AXIASolar{.js} extension, or Parity Signer. For other wallet software, you should
 contact the developers of that wallet.
 

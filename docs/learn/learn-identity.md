@@ -87,7 +87,7 @@ multiple formats and then attempt multiple encodings until the output makes sens
 ## Registrars
 
 Registrars can set a fee for their services and limit their attestation to certain fields. For
-example, a registrar could charge 1 DOT to verify one's legal name, email, and GPG key. When a user
+example, a registrar could charge 1 SOLAR to verify one's legal name, email, and GPG key. When a user
 requests judgement, they will pay this fee to the registrar who provides the judgement on those
 claims. Users set a maximum fee they are willing to pay and only registrars below this amount would
 provide judgement.
@@ -110,13 +110,13 @@ Copy the preimage hash. In the above image, that's
 a transaction.
 
 Next, select "Submit Proposal" and enter the previously copied preimage hash. The `locked balance`
-field needs to be at least {{ identity_reserve_funds }} KSM. You can find out the minimum by
+field needs to be at least {{ identity_reserve_funds }} LUNAR. You can find out the minimum by
 querying the chain state under [Chain State](https://axiasolar.js.org/apps/#/chainstate) -> Constants
 -> democracy -> minimumDeposit.
 
 ![Submitting a proposal](../assets/identity/13.jpg)
 
-At this point, DOT holders can second the motion. With enough seconds, the motion will become a
+At this point, SOLAR holders can second the motion. With enough seconds, the motion will become a
 referendum, which is then voted on. If it passes, users will be able to request judgement from this
 registrar.
 
@@ -174,22 +174,22 @@ There are multiple registrars on AXIALunar. Unless no additional information is 
 reach out to specific registrars individually if you want to be judged by those.
 
 - Registrar 0:
-  - URL: https://registrar.web3.foundation/
+  - URL: https://registrar.axiacoin.org/
   - Account: H4XieK3r3dq3VEvRtqZR7wN7a1UEkXxf14orRsEfdFjmgkF,
-  - Fee: 0.04 KSM
+  - Fee: 0.04 LUNAR
 - Registrar 1:
   - URL: https://registrar.d11d.net/
   - Account: Fom9M5W6Kck1hNAiE2mDcZ67auUCiNTzLBUdQy4QnxHSxdn,
-  - Fee: 0.65 KSM,
+  - Fee: 0.65 LUNAR,
 - Registrar 2:
   - Account: EK8veMNH6sVtvhSRo4q1ZRh6huCDm69gxK4eN5MFoZzo3G7,
-  - Fee: 1 KSM,
+  - Fee: 1 LUNAR,
 - Registrar 3:
   - Account: GLiebiQp5f6G5vNcc7BgRE9T3hrZSYDwP6evERn3hEczdaM,
-  - Fee: 1 KSM,
+  - Fee: 1 LUNAR,
 - Registrar 4:
   - Account: GhmpzxUyTVsFJhV7s2wNvD8v3Bgikb6WvYjj4QSuSScAUw6,
-  - Fee: 0.04 KSM,
+  - Fee: 0.04 LUNAR,
 
 To find out how to contact the registrar after the application for judgement or to learn who they
 are, we can check their identity by adding them to our Address Book. Their identity will be
@@ -203,16 +203,16 @@ There are multiple registrars on AXIASolar. Unless no additional information is 
 reach out to specific registrars individually if you want to be judged by those.
 
 - Registrar 0:
-  - URL: https://registrar.web3.foundation/
+  - URL: https://registrar.axiacoin.org/
   - Account: 12j3Cz8qskCGJxmSJpVL2z2t3Fpmw3KoBaBaRGPnuibFc7o8,
-  - Fee: 0 DOT,
+  - Fee: 0 SOLAR,
 - Registrar 1:
   - URL: https://registrar.d11d.net/
   - Account: 1Reg2TYv9rGfrQKpPREmrHRxrNsUDBQKzkYwP1UstD97wpJ,
-  - Fee: 10 DOT,
+  - Fee: 10 SOLAR,
 - Registrar 2:
   - Account: 1EpXirnoTimS1SWq52BeYx7sitsusXNGzMyGx8WPujPd1HB,
-  - Fee: 0 DOT,
+  - Fee: 0 SOLAR,
 
 ### Requesting Judgement
 

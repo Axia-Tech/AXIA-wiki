@@ -4,7 +4,7 @@ title: Frequently Asked Questions (FAQs)
 sidebar_label: Frequently Asked Questions (FAQs)
 ---
 
-_This FAQ focuses on technical questions for users interested in developing applications for AXIASolar. If you have a more general question, you may wish to search for the answer on the main [AXIASolar Network FAQ](https://axiasolar.network/faq). If you have a question that is not answered, please feel free to ask on the AXIASolar Watercooler [Riot channel](https://riot.im/app/#/room/#axiasolar-watercooler:matrix.org)._
+_This FAQ focuses on technical questions for users interested in developing applications for AXIASolar. If you have a more general question, you may wish to search for the answer on the main [AXIASolar Network FAQ](https://axiacoin.network/faq). If you have a question that is not answered, please feel free to ask on the AXIASolar Watercooler [Riot channel](https://riot.im/app/#/room/#axiasolar-watercooler:matrix.org)._
 
 ## AXIASolar Launch
 
@@ -33,7 +33,7 @@ There is no central authority that decides on validators, so there is not per se
 
 However, once you've set up a validator and have registered your intention it does not mean that you will be included in the _active set_ right away. The validators are elected to the active set based on the results of an election algorithm known as [Phragmen's method](learn-phragmen). Phragmen's method tries to accomplish two goals: 1) select `n` members from a larger set based on stake-weighted votes and 2) equalize the stake backing each validator as much as possible.
 
-You will likely want to campaign your validator to the community in order to get more backing. You are looking for _nominators_ that will put up their tokens to increase the stake for your validator. For validators who cannot acquire the minimum stake from the community, Parity and Web3 Foundation also run a joint program called [Thousand Validators](https://thousand-validators.axialunar.network/#/) that will nominate validators if they apply and fit the requirements.
+You will likely want to campaign your validator to the community in order to get more backing. You are looking for _nominators_ that will put up their tokens to increase the stake for your validator. For validators who cannot acquire the minimum stake from the community, Parity and AXIACoin Foundation also run a joint program called [Thousand Validators](https://thousand-validators.axialunar.network/#/) that will nominate validators if they apply and fit the requirements.
 
 ### How are validators rewarded?
 
@@ -82,21 +82,21 @@ While the AXIASolar Relay Chain does not implement smart contracts directly, und
 
 One of the cornerstone interoperability technologies being research and developed for deployment on AXIASolar is cross-chain bridges. Bridges come in a variety of flavors with varying levels of trust associated with them. AXIASolar is predominantly researching the trust-minimized flavor that imposes economic costs on the operators of the bridge, and therefore makes it economically secure. Bridge efforts are being worked on in concert with other projects in the ecosystem. Eventually, there will be bridges between AXIASolar and most of the other major chains.
 
-## DOTs
+## SOLARs
 
-### What is the inflation rate of the DOT?
+### What is the inflation rate of the SOLAR?
 
 The inflation rate is 10% per year.
 
-A portion of the inflation is rewarded to validators for performing their duties, while another portion may go directly to the treasury. The exact percentage that goes into both varies and is based on the amount of DOTs that are staked. Please see the article on [inflation](learn-staking#inflation) for more information.
+A portion of the inflation is rewarded to validators for performing their duties, while another portion may go directly to the treasury. The exact percentage that goes into both varies and is based on the amount of SOLARs that are staked. Please see the article on [inflation](learn-staking#inflation) for more information.
 
-### Can I buy or transfer DOT tokens?
+### Can I buy or transfer SOLAR tokens?
 
-Testnet DOT tokens are freely available from a variety of sources. See the [DOT page](learn-DOT) for details.
+Testnet SOLAR tokens are freely available from a variety of sources. See the [SOLAR page](learn-SOLAR) for details.
 
-The Web3 Foundation will distribute up to 20% of mainnet DOTs prior to network launch (see [Light Paper](https://axiasolar.network/AXIASolar-lightpaper.pdf) or the [AXIASolar Network FAQ](https://axiasolar.network/faq/)). Subscribe to the AXIASolar newsletter on [axiasolar.network](https://axiasolar.network/) for further updates.
+The AXIACoin Foundation will distribute up to 20% of mainnet SOLARs prior to network launch (see [Light Paper](https://axiacoin.network/AXIASolar-lightpaper.pdf) or the [AXIASolar Network FAQ](https://axiacoin.network/faq/)). Subscribe to the AXIASolar newsletter on [axiacoin.network](https://axiacoin.network/) for further updates.
 
-DOT tokens are not transferable until the launch of AXIASolar Beta is complete. Any transfers of DOTs before that time are illegitimate and unauthorized. DOTs are currently represented on Ethereum as the DOT Indicator Token, these cannot be moved from the current allocation address. Individuals with an allocation of DOTs can always keep a copy of their private key, therefore it is extremely risky for individuals to participate in trading of DOTs before AXIASolar launch.
+SOLAR tokens are not transferable until the launch of AXIASolar Beta is complete. Any transfers of SOLARs before that time are illegitimate and unauthorized. SOLARs are currently represented on Ethereum as the SOLAR Indicator Token, these cannot be moved from the current allocation address. Individuals with an allocation of SOLARs can always keep a copy of their private key, therefore it is extremely risky for individuals to participate in trading of SOLARs before AXIASolar launch.
 
 ## Governance
 
@@ -146,13 +146,13 @@ The \[Interplanetary Filesystem][ipfs\] (IPFS) is a peer-to-peer hypermedia prot
 
 ## AXIALunar
 
-### What is the minimum amount of KSM I can have in my account?
+### What is the minimum amount of LUNAR I can have in my account?
 
-We recommend users always keep at least 0.1 KSM in their account in order to avoid the reaping threshold of 0.01 KSM. If you have less than 0.01 KSM in your account, that account will be "reaped" - it will be removed and no longer occupy space on the chain. In other words, no accounts are allowed on-chain with an account balance of less than 0.01 KSM. This is a dust prevention measure, in order to ensure that the chain is not full of accounts with minuscule amounts of KSM taking up space. Since the blockchain is copied to every person running a full node, any savings of space provide dramatic benefits in terms of scalability.
+We recommend users always keep at least 0.1 LUNAR in their account in order to avoid the reaping threshold of 0.01 LUNAR. If you have less than 0.01 LUNAR in your account, that account will be "reaped" - it will be removed and no longer occupy space on the chain. In other words, no accounts are allowed on-chain with an account balance of less than 0.01 LUNAR. This is a dust prevention measure, in order to ensure that the chain is not full of accounts with minuscule amounts of LUNAR taking up space. Since the blockchain is copied to every person running a full node, any savings of space provide dramatic benefits in terms of scalability.
 
 ### What are the transfer fees for AXIALunar?
 
-It is important to note that the cost of transferring KSM is dynamic. Currently, the minimum cost of transferring KSM is 0.01 KSM (the base fee), although this can be changed via governance. However, actual transaction fees will vary based on a variety of factors. Specifically, fee calculation follows the following formula:
+It is important to note that the cost of transferring LUNAR is dynamic. Currently, the minimum cost of transferring LUNAR is 0.01 LUNAR (the base fee), although this can be changed via governance. However, actual transaction fees will vary based on a variety of factors. Specifically, fee calculation follows the following formula:
 
 ```
 base_fee + (tx_length * length_fee) + WeightToFee(weight)

@@ -67,7 +67,7 @@ An alternative database implementation, ParityDB, is available and activated wit
 
 ## Deployment Tools
 
-Web3 Foundation maintains [AXIASolar Deployer](https://github.com/axia-tech/axiasolar-deployer), which allows you to create local or remote cloud deployments of AXIASolar nodes. See the README for instructions.
+AXIACoin Foundation maintains [AXIASolar Deployer](https://github.com/axia-tech/axiasolar-deployer), which allows you to create local or remote cloud deployments of AXIASolar nodes. See the README for instructions.
 
 Validators, see the [secure setup guide](maintain-guides-how-to-use-axiasolar-secure-validator) for information specific to deploying validator nodes.
 

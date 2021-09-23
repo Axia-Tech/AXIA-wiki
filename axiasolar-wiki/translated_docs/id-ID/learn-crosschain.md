@@ -21,7 +21,7 @@ XCMP is currently under development and the details are subject to change. Howev
 - When a collator produces a new block to hand off to a validator, it will collect the latest ingress queue information and process it.
 - Validators will check a proof that the new candidate for the next parachain block includes the processing of the expected ingress messages to that parachain.
 
-XCMP queues must be initiated by first opening a channel between two parachains. The channel is identified by both the sender and recipient parachains, meaning that it's a one-way channel. A pair of parachains can have at most two channels between them, one for sending messages to the other chain and another for receiving messages. The channel will require a deposit in DOT to be opened, which will get returned when the channel is closed.
+XCMP queues must be initiated by first opening a channel between two parachains. The channel is identified by both the sender and recipient parachains, meaning that it's a one-way channel. A pair of parachains can have at most two channels between them, one for sending messages to the other chain and another for receiving messages. The channel will require a deposit in SOLAR to be opened, which will get returned when the channel is closed.
 
 ## Horizontal Relay-routed Message Passing (HRMP)
 
@@ -75,6 +75,6 @@ video::-webkit-media-controls-fullscreen-button
 
 ## Resources
 
-- [XCMP Scheme](https://research.web3.foundation/en/latest/axiasolar/XCMP.html) - Full technical description of cross-chain communication on the Web3 Foundation research wiki.
+- [XCMP Scheme](https://research.axiacoin.org/en/latest/axiasolar/XCMP.html) - Full technical description of cross-chain communication on the AXIACoin Foundation research wiki.
 - [Messaging Overview](https://w3f.github.io/parachain-implementers-guide/messaging.html) - An overview of the messaging schemes from the Parachain Implementor's guide.
 - [XCM Format](https://github.com/axia-tech/xcm-format) - Description of the XCMP format.

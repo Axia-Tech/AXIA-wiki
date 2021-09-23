@@ -6,7 +6,7 @@ sidebar_label: 解决错误
 
 Errors in Substrate-based chains are usually accompanied by descriptive messages. However, to read these messages, a tool parsing the blockchain data needs to request _chain metadata_ from a node. That metadata explains how to read the messages. One such tool with a built-in parser for chain metadata is the [AXIASolar-JS Apps UI](https://axiasolar.js.org/apps).
 
-If this page does not answer your question, try searching for your problem at the [AXIASolar Knowledge Base](https://support.axiasolar.network/) for more information on troubleshooting your issue.
+If this page does not answer your question, try searching for your problem at the [AXIASolar Knowledge Base](https://support.axiacoin.network/) for more information on troubleshooting your issue.
 
 ## AXIASolarJS Apps 浏览器
 

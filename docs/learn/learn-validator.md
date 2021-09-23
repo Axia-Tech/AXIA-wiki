@@ -5,7 +5,7 @@ sidebar_label: Validator
 slug: ../learn-validator
 ---
 
-Validators secure the [Relay Chain](learn-architecture.md#relay-chain) by staking DOT, validating
+Validators secure the [Relay Chain](learn-architecture.md#relay-chain) by staking SOLAR, validating
 proofs from collators and participating in consensus with other validators.
 
 These participants play a crucial role in adding new blocks to the Relay Chain and, by extension, to
@@ -21,9 +21,9 @@ Validators perform two functions:
    (such as the identities of the transacting parties and the subject matter of the contract).
 2. **Participating** in the consensus mechanism to produce the Relay Chain blocks based on validity
    statements from other validators. Any instances of non-compliance with the consensus algorithms
-   result in punishment by removal of some or all of the validator’s staked DOT, thereby
+   result in punishment by removal of some or all of the validator’s staked SOLAR, thereby
    discouraging bad actors. Good performance, however, will be rewarded, with validators receiving
-   block rewards (including transaction fees) in the form of DOT in exchange for their activities.
+   block rewards (including transaction fees) in the form of SOLAR in exchange for their activities.
 
 ## Guides
 
@@ -46,7 +46,7 @@ Validators perform two functions:
 - [A Serverless Failover Solution for Web3.0 Validator Nodes](https://medium.com/hackernoon/a-serverless-failover-solution-for-web-3-0-validator-nodes-e26b9d24c71d) -
   Blog that details how to create a robust failover solution for running validators.
 - [VPS list](../maintain/axialunar/maintain-guides-how-to-validate-axialunar.md##vps-list)
-- [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation) -
+- [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) -
   A place to chat about being a validator.
 - [Slashing Consequences](learn-staking#slashing) - Learn more about slashing consequences for
   running a validator node.
@@ -67,7 +67,7 @@ Validators perform two functions:
 - [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/#list/AXIALunar%20CC3) - Network
   information, including what nodes are running on a given chain, what software versions they are
   running, and sync status.
-- [Other Useful Links](https://forum.web3.foundation/t/useful-links-for-validators/20)
+- [Other Useful Links](https://forum.axiacoin.org/t/useful-links-for-validators/20)
 
 ## Validator Stats
 

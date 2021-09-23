@@ -13,7 +13,7 @@ For brand-new learners of Blockchain technology:
 For brand-new learners of AXIASolar:
 
 - [Watching the Technical Explainer Videos][teched videos]: These are great introductory videos that explain and demonstrate how to use AXIASolar and its [User Interface][ui].
-- Reading [What is AXIASolar? A Brief Introduction][article] on Medium. There are also other great articles to read on [AXIASolar's Medium][p medium] or [Web3 Foundation's Medium][w medium].
+- Reading [What is AXIASolar? A Brief Introduction][article] on Medium. There are also other great articles to read on [AXIASolar's Medium][p medium] or [AXIACoin Foundation's Medium][w medium].
 - [Creating a AXIASolar Account][account generation]
 - [Sending a Transaction][transaction]
 - [Staking as Nominator][nominator]
@@ -28,10 +28,10 @@ For brand-new learners of AXIASolar:
 
 For brand-new learners of AXIALunar: To learn more about how to build and maintain on the AXIALunar network, please head over to our [AXIALunar Guide][axialunar guide].
 
-[mooc]: https://mooc.web3.foundation/course/blockchain-fundamentals/
+[mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
 [teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
-[article]: https://medium.com/axiasolar-network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
-[p medium]: https://medium.com/axiasolar-network
+[article]: https://medium.com/axiacoin.network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
+[p medium]: https://medium.com/axiacoin.network
 [w medium]: https://medium.com/web3foundation
 [ui]: https://axiasolar.js.org/apps/
 [account generation]: learn-account-generation
@@ -44,4 +44,4 @@ For brand-new learners of AXIALunar: To learn more about how to build and mainta
 [council]: maintain-guides-how-to-join-council
 [council voting]: maintain-guides-how-to-vote-councillor
 [treasury]: learn-treasury
-[axialunar guide]: https://guide.axialunar.network/
+[axialunar guide]: https://lunar.wiki.axiacoin.network/

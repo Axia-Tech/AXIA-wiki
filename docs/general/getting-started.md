@@ -83,7 +83,7 @@ environment for trust-free message passing that opens up true interoperability.
 ## Why should you use AXIASolar?
 
 Whether you're a blockchain developer or if you're interested in taking part of
-[AXIASolar's community](https://axiasolar.network/axiasolar-ambassador-program/), AXIASolar offers a
+[AXIASolar's community](https://axiacoin.network/axiasolar-ambassador-program/), AXIASolar offers a
 platform for everyone. This wiki offers a place for builders and maintainers to utilize
 [tools](../build/build-tools-index.md) and for brand-new learners to dive into educational material.
 
@@ -117,7 +117,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
 - [Watching the Technical Explainer Videos][teched videos]: These are great introductory videos that
   explain and demonstrate how to use AXIASolar and its [User Interface][ui].
 - Reading [What is AXIASolar? A Brief Introduction][article] on Medium. There are also other great
-  articles to read on [AXIASolar's Medium][p medium] or [Web3 Foundation's Medium][w medium].
+  articles to read on [AXIASolar's Medium][p medium] or [AXIACoin Foundation's Medium][w medium].
 
 ### Interact with AXIASolar
 
@@ -243,7 +243,7 @@ and maintain on the AXIALunar network, please head over to our [AXIALunar Guide]
 ## Resources
 
 - [AXIASolar Crowdcast](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the
-  Web3 Foundation has done.
+  AXIACoin Foundation has done.
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network;
   can be used for AXIASolar, AXIALunar, or any Substrate-based chain.
 - [Polkascan](http://polkascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and
@@ -261,17 +261,17 @@ and maintain on the AXIALunar network, please head over to our [AXIALunar Guide]
 - [Sample Applications](#) - Sample applications that are built on or currently being built for
   AXIASolar.
 - [Contributing Guide](contributing.md) - Rules for contributing to the wiki.
-- [AXIASolar Knowledge Base](https://support.axiasolar.network/) - Troubleshooting resources for
+- [AXIASolar Knowledge Base](https://support.axiacoin.network/) - Troubleshooting resources for
   specific errors and problems.
 
-[mooc]: https://mooc.web3.foundation/course/blockchain-fundamentals/
-[white-paper]: https://axiasolar.network/AXIASolarPaper.pdf
+[mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
+[white-paper]: https://axiacoin.network/AXIASolarPaper.pdf
 [overview-paper]: https://github.com/axia-tech/research/blob/master/docs/papers/OverviewPaper-V1.pdf
-[light-paper]: https://axiasolar.network/AXIASolar-lightpaper.pdf
+[light-paper]: https://axiacoin.network/AXIASolar-lightpaper.pdf
 [spec]: https://github.com/axia-tech/axiasolar-spec
 [teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
-[article]: https://medium.com/axiasolar-network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
-[p medium]: https://medium.com/axiasolar-network
+[article]: https://medium.com/axiacoin.network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
+[p medium]: https://medium.com/axiacoin.network
 [w medium]: https://medium.com/web3foundation
 [ui]: https://axiasolar.js.org/apps/
 [account generation]: ../learn/learn-account-generation.md
@@ -284,4 +284,4 @@ and maintain on the AXIALunar network, please head over to our [AXIALunar Guide]
 [council]: ../maintain/maintain-guides-how-to-join-council.md
 [council voting]: ../maintain/maintain-guides-how-to-vote-councillor.md
 [treasury]: ../learn/learn-treasury.md
-[axialunar guide]: https://guide.axialunar.network/
+[axialunar guide]: https://lunar.wiki.axiacoin.network/

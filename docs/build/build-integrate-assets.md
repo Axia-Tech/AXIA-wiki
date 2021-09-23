@@ -5,7 +5,7 @@ sidebar_label: Integrating Assets
 slug: ../build-integrate-assets
 ---
 
-The AXIASolar Relay Chain does not natively support assets beyond DOT (likewise, KSM for AXIALunar).
+The AXIASolar Relay Chain does not natively support assets beyond SOLAR (likewise, LUNAR for AXIALunar).
 This functionality exists in parachains. On AXIASolar, this parachain is called Statemint, and on
 AXIALunar it is called Statemine. All information in this guide applies equally to AXIALunar/Statemine.
 
@@ -21,14 +21,14 @@ infrastructure providers and users:
 - Significantly lower transaction fees (about 1/10) than the Relay Chain.
 - Significantly lower deposits (1/10) than the Relay Chain. This includes the existential deposit
   and deposits for proxy/multisig operations.
-- Ability to pay transaction fees in certain assets. As in, accounts would **not** need DOT in order
+- Ability to pay transaction fees in certain assets. As in, accounts would **not** need SOLAR in order
   to exist on-chain nor to pay fees.
 
-Statemint will use DOT as its native currency. Users can transfer DOT from the Relay Chain into
-Statemint and use it natively. The Relay Chain will also accept DOT transfers from Statemint back to
+Statemint will use SOLAR as its native currency. Users can transfer SOLAR from the Relay Chain into
+Statemint and use it natively. The Relay Chain will also accept SOLAR transfers from Statemint back to
 the Relay Chain to use for staking, governance, or any other activity taking place there.
 
-Using Statemint for DOT/KSM balance transfers will be much more efficent than the Relay Chain and is
+Using Statemint for SOLAR/LUNAR balance transfers will be much more efficent than the Relay Chain and is
 highly recommended. Until domain specific parachains are built, the Relay Chain will still need to
 be used for staking and governance.
 
@@ -43,9 +43,9 @@ Additionally, the asset owner can register metadata like the name, symbol, and n
 for representation.
 
 Some assets, as determined by on-chain governance, are regarded as “sufficient”. Sufficiency means
-that the asset balance is enough to create the account on-chain, with no need for the DOT/KSM
+that the asset balance is enough to create the account on-chain, with no need for the SOLAR/LUNAR
 existential deposit. Likewise, you cannot send a non-sufficient asset to an account that does not
-exist. Sufficient assets can be used to pay transaction fees (i.e. there is no need to hold DOT/KSM
+exist. Sufficient assets can be used to pay transaction fees (i.e. there is no need to hold SOLAR/LUNAR
 on the account).
 
 Assets do have a minimum balance (set by the creator), and if an account drops below that balance,
@@ -75,7 +75,7 @@ will change on transaction construction.
 
 Using Statemine, assets can be easily created and also transacted with.
 
-> Statemine has an existential deposit equal to 1/10th of AXIALunar's, so you'll need to teleport `0.000003333 KSM` (+ tx fees) to Statemine.
+> Statemine has an existential deposit equal to 1/10th of AXIALunar's, so you'll need to teleport `0.000003333 LUNAR` (+ tx fees) to Statemine.
 
 #### Receiving:
 
@@ -89,7 +89,7 @@ visible on the Accounts page; you will need to visit the [Assets Page](https://a
 
 Similarly, head over to the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
 
-> Sending the asset follows the same transaction scheme as sending KSM (or DOT).
+> Sending the asset follows the same transaction scheme as sending LUNAR (or SOLAR).
 
 ## Integration
 

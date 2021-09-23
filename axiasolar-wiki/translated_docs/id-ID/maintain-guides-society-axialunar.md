@@ -40,13 +40,13 @@ To submit a bid, click the Submit Bid button on the [Society page](https://ipfs.
 
 Anyone can submit a bid to join the society by reserving a deposit or finding an existing member to create a bid on their behalf by vouching for them. At every rotation period, as many bids as the society pot can support will be selected. The selected bids will be moved to the candidate phase, whereas bids that were not selected will stay in the bidder pool until they are selected or a user chooses to unbid.
 
-Anyone who wants to join the society is required to deposit 1.6 KSM for reserve on AXIALunar and declare the bid amount (1 KSM in this case) that they will receive for joining the society.
+Anyone who wants to join the society is required to deposit 1.6 LUNAR for reserve on AXIALunar and declare the bid amount (1 LUNAR in this case) that they will receive for joining the society.
 
 ![Society Dashboard](assets/society/test_bid.jpg)
 
 Once you have submitted the transaction, your bid will be shown on the [Society page](https://ipfs.io/ipns/axialunar.dotapps.io/#/society) under the bids section. You can cancel the bidding if you changed your mind about joining the society by calling `unbid` on the same page.
 
-You can find an existing member to place a bid on your behalf if you do not have KSM and you are willing to give them a tip. An existing member can submit a `vouch` transaction through the Extrinsics page.
+You can find an existing member to place a bid on your behalf if you do not have LUNAR and you are willing to give them a tip. An existing member can submit a `vouch` transaction through the Extrinsics page.
 
 > vouch(who,value,tip)
 >
@@ -79,7 +79,7 @@ Since member 5 was chosen as a skeptic, they are required to participate in the 
 
 > Note: The maximum number of strikes you can have is on AXIALunar is 10.
 
-The slashed funds (2 KSM currently) will be given to a random member who voted the same as the selected vote as a reward for participating in the vote. The reward is escrowed for some period of time - see below.
+The slashed funds (2 LUNAR currently) will be given to a random member who voted the same as the selected vote as a reward for participating in the vote. The reward is escrowed for some period of time - see below.
 
 #### Lock-up Time
 
@@ -110,7 +110,7 @@ Second, you will need to claim your payout manually by calling `payout` after th
 
 ![Society Payout](assets/society/payout.jpg)
 
-Third, there will be a membership challenge every seven days on AXIALunar. So one of the members will be randomly selected as a defender. Then, other members can vote whether this defender should stay in the society or not. A simple majority wins the vote. You can take a look [here](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) and search for "Existing Members (Challenges)". Besides that, you can earn extra KSM by helping a user apply for the membership and requesting a tip. This is useful when a user does not have enough balance to reserve a deposit. The tip will be given when a user successfully joins the society.
+Third, there will be a membership challenge every seven days on AXIALunar. So one of the members will be randomly selected as a defender. Then, other members can vote whether this defender should stay in the society or not. A simple majority wins the vote. You can take a look [here](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) and search for "Existing Members (Challenges)". Besides that, you can earn extra LUNAR by helping a user apply for the membership and requesting a tip. This is useful when a user does not have enough balance to reserve a deposit. The tip will be given when a user successfully joins the society.
 
 > Note: Each member can only vouch for one user at a time. A member is not required to reserve the deposit when vouching for a user.
 

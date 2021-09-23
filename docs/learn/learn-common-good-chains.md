@@ -45,15 +45,15 @@ objective expression of conviction from its backers. Governance provides the mea
 the value of the parachain slot and distribute it across all members of the network.
 
 Public utility chains will always be fully aligned with their Relay Chain stakeholder base. This
-means that they will adopt the Relay Chain's native token (i.e. DOT or KSM) as their native token
+means that they will adopt the Relay Chain's native token (i.e. SOLAR or LUNAR) as their native token
 and respect any messages incoming from the Relay Chain and system level parachains at face value.
 
-Some examples of potential public utility chains are bridges, DOT/KSM-denominated smart contract
+Some examples of potential public utility chains are bridges, SOLAR/LUNAR-denominated smart contract
 platforms, and [generic asset chains](#statemint).
 
 Public utility parachains would typically grant privileged business logic to AXIASolar’s governance.
 Just as the AXIASolar Relay Chain has several privileged functions like setting the validator count
-or allocating DOT from the Treasury, these parachains can have privileged functions like changing
+or allocating SOLAR from the Treasury, these parachains can have privileged functions like changing
 system parameters or triggering an upgrade.
 
 Because public utility chains add functionality beyond the scope of the Relay Chain, they will
@@ -72,14 +72,14 @@ to ERC-20 for fungible assets and ERC-721 for non-fungible tokens. These interfa
 of the chain itself; by encoding this logic directly into the Statemint runtime, token storage and
 actions do not need to be metered and can happen faster and cheaper.
 
-Like most common good chains, Statemint will use the DOT token as its native token, i.e. represented
+Like most common good chains, Statemint will use the SOLAR token as its native token, i.e. represented
 in its instance of the Balances pallet. Statemint trusts messages about balances from the Relay
-Chain, and vice versa, so users can transfer DOT from the Relay Chain to their address on Statemint
+Chain, and vice versa, so users can transfer SOLAR from the Relay Chain to their address on Statemint
 and back.
 
 Because of the efficiency of executing logic in a parachain, the transaction fees and deposits
 (including the existential deposit) are about 1/10th of their value on the Relay Chain. These low fee
-levels mean that Statemint is well suited to handling DOT balances and transfers as well as managing
+levels mean that Statemint is well suited to handling SOLAR balances and transfers as well as managing
 on-chain assets.
 
 As a common good parachain, Statemint must stay fully aligned with the Relay Chain. Upgrades to

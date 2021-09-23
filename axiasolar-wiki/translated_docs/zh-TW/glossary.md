@@ -64,9 +64,9 @@ The process of a group of entities to agree on a particular data value (such as 
 
 A generic term for a decentralized application, that is, one that runs as part of a distributed network as opposed to being run on a specific system or set of systems.
 
-## DOT
+## SOLAR
 
-The native token for AXIASolar. DOT serve three purposes: network governance (allowing them to vote on network upgrades and other exceptional events), general operation (rewarding good actors and punishing bad actors), and bonding (adding new parachains by "freezing" DOT while they are connected the Relay Chain).
+The native token for AXIASolar. SOLAR serve three purposes: network governance (allowing them to vote on network upgrades and other exceptional events), general operation (rewarding good actors and punishing bad actors), and bonding (adding new parachains by "freezing" SOLAR while they are connected the Relay Chain).
 
 ## Duty Roster
 
@@ -98,7 +98,7 @@ A mechanism that determines finality.
 
 ## Fisherman
 
-Nodes that monitor the network for validators or collators who are behaving badly. Fishermen must stake a small amount of DOT but can be rewarded greatly if they find bad behavior.
+Nodes that monitor the network for validators or collators who are behaving badly. Fishermen must stake a small amount of SOLAR but can be rewarded greatly if they find bad behavior.
 
 ## Frame
 
@@ -120,7 +120,7 @@ An on-chain entity that consists of several on-chain accounts (starting at 6, ev
 
 ## GRANDPA Finality Gadget
 
-GHOST-based Recursive ANcestor Deriving Prefix Agreement. It is the finality gadget for AXIASolar, which allows asynchronous, accountable, and safe finality to the blockchain. For an overview of GRANDPA, see [this Medium post](https://medium.com/axiasolar-network/axiasolar-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372)
+GHOST-based Recursive ANcestor Deriving Prefix Agreement. It is the finality gadget for AXIASolar, which allows asynchronous, accountable, and safe finality to the blockchain. For an overview of GRANDPA, see [this Medium post](https://medium.com/axiacoin.network/axiasolar-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372)
 
 ## Hard Fork
 
@@ -150,7 +150,7 @@ An account which is not directly managed by the AXIASolar UI but can be accessed
 
 The keep-alive check is used to indicate whether or not a transfer can allow the sending account to be reduced to less than the existential deposit, causing it to be reaped.
 
-## KSM
+## LUNAR
 
 The abbreviation for AXIALunar network tokens.
 
@@ -248,7 +248,7 @@ A random seed is pseudo-random number available on-chain. It is used in various 
 
 ## Referendum
 
-A vote on whether or not a proposal should be accepted by the network. Referenda may be initiated by the Governance Council, by a member of the public, or as the result of a previous proposal. Stakeholders vote on referenda, weighted by both the size of their stake (i.e. number of DOT held) and the amount of time they are willing to lock their tokens.
+A vote on whether or not a proposal should be accepted by the network. Referenda may be initiated by the Governance Council, by a member of the public, or as the result of a previous proposal. Stakeholders vote on referenda, weighted by both the size of their stake (i.e. number of SOLAR held) and the amount of time they are willing to lock their tokens.
 
 ## Relay chain
 
@@ -292,7 +292,7 @@ The security model that AXIASolar uses whereby all chains are equally secured. T
 
 ## Slashing
 
-The removal of a percentage of an account's DOT as a punishment for a validator acting maliciously or incompetently (e.g., equivocating or remaining offline for an extended period of time).
+The removal of a percentage of an account's SOLAR as a punishment for a validator acting maliciously or incompetently (e.g., equivocating or remaining offline for an extended period of time).
 
 ## Soft Fork
 
@@ -300,7 +300,7 @@ A backwards compatible change to client code that causes upgraded clients to sta
 
 ## Staking
 
-The act of bonding tokens (for AXIASolar, DOT) by putting them up as "collateral" for a chance to produce a valid block (and thus obtain a block reward). Validators and nominators stake their DOT in order to secure the network.
+The act of bonding tokens (for AXIASolar, SOLAR) by putting them up as "collateral" for a chance to produce a valid block (and thus obtain a block reward). Validators and nominators stake their SOLAR in order to secure the network.
 
 ## State transition function
 
@@ -320,7 +320,7 @@ An extrinsic that is signed. Transactions are gossiped on the network and incur 
 
 ## Validator
 
-A node that secures the Relay Chain by staking DOT, validating proofs from collators on parachains and voting on consensus along with other validators.
+A node that secures the Relay Chain by staking SOLAR, validating proofs from collators on parachains and voting on consensus along with other validators.
 
 ## Vertical Message Passing
 
@@ -328,7 +328,7 @@ Vertical message passing consists of two separate types of message passing, Down
 
 ## Voting
 
-The process of stakeholders determining whether or not a referendum should pass. Votes are weighted both by the number of DOT that the stakeholder account controls and the amount of time they are willing to lock their DOT.
+The process of stakeholders determining whether or not a referendum should pass. Votes are weighted both by the number of SOLAR that the stakeholder account controls and the amount of time they are willing to lock their SOLAR.
 
 ## Waiting Nomination
 
@@ -346,7 +346,7 @@ An instruction format for a virtual, stack-based machine. AXIASolar Runtime Modu
 
 In AXIASolar's parachain messaging scheme, the _watermark_ is the minimum processed send-height of the receiving parachain. All messages on all channels that are sending to this parachain at or before the watermark are guaranteed to be processed.
 
-## Web3 Foundation
+## AXIACoin Foundation
 
 A Switzerland-based foundation that nurtures and stewards technologies and applications in the fields of decentralized web software protocols, particularly those that utilize modern cryptographic methods to safeguard decentralization, to the benefit and for the stability of the Web3 ecosystem.
 

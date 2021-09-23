@@ -7,7 +7,7 @@ slug: ../maintain-guides-how-to-use-axiasolar-validator-setup
 
 # AXIASolar Validator Setup
 
-The following guide will walk you through using Web3 Foundation's [axiasolar validator setup][] to
+The following guide will walk you through using AXIACoin Foundation's [axiasolar validator setup][] to
 offer a potential setup for your validator that aims to prevent some types of potential attacks
 at the TCP layer and layers below. This will work for AXIASolar and AXIALunar out of the box, and,
 if you're using another Substrate-based chain, it should work with some tweaks.

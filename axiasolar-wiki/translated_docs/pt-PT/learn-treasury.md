@@ -31,16 +31,16 @@ The Treasury is funded from different sources:
 
 ## Creating a Treasury Proposal
 
-The proposer has to deposit 5% of the requested amount or 20 KSM (whichever is higher) as an anti-spam measure. This amount is burned if the proposal is rejected, or refunded otherwise. These values are subject to [governance](learn-governance) so they may change in the future.
+The proposer has to deposit 5% of the requested amount or 20 LUNAR (whichever is higher) as an anti-spam measure. This amount is burned if the proposal is rejected, or refunded otherwise. These values are subject to [governance](learn-governance) so they may change in the future.
 
 ### Announcing the Proposal
 
 To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal. Most discussion takes place on the following platforms:
 
 - Many community members participate in discussion in the [AXIALunar Riot](https://riot.w3f.tech/#/room/#axialunar:matrix.parity.io) chat.
-- The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their KSM address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
-- The [AXIALunar forum](https://forum.axialunar.network) and [AXIASolar forum](https://forum.axiasolar.network) can be used for proposal explanations on AXIALunar and AXIASolar respectively.
-- [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their KSM address and automatically reads proposals from the chain, turning them into discussion threads.
+- The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
+- The [AXIALunar forum](https://forum.axialunar.network) and [AXIASolar forum](https://forum.axiacoin.network) can be used for proposal explanations on AXIALunar and AXIASolar respectively.
+- [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads.
 
 Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Riot channels like the [AXIALunar Direction room](https://riot.w3f.tech/#/room/#axialunar:matrix.parity.io) or the [AXIALunar Watercooler](https://riot.w3f.tech/#/room/#axialunarwatercooler:axiasolar.builders). For AXIASolar, you may want to frequent the [AXIASolar Watercooler](https://riot.w3f.tech/#/room/#axiasolar-watercooler:matrix.org) and [AXIASolar Direction room](https://riot.w3f.tech/#/room/#axiasolar-direction:matrix.parity.io).
 
@@ -50,7 +50,7 @@ One way to create the proposal is to use the AXIASolar JS Apps [website](https:/
 
 ![An example of a proposal being created](/img/treasury/propose.jpg)
 
-The system will automatically take the required deposit, picking the higher of the following two values: 20 KSM or 5% of the requested amount.
+The system will automatically take the required deposit, picking the higher of the following two values: 20 LUNAR or 5% of the requested amount.
 
 Once created, your proposal will become visible in the Treasury screen and the council can start voting on it.
 
@@ -84,11 +84,11 @@ Since the tipper group is the same as the council on AXIALunar, the council must
 
 Charlie, Dave, and Eve all review the report and make tips according to their personal valuation of the benefit Bob has provided to AXIALunar.
 
-Charlie tips 100 KSM. Dave tips 300 KSM. Eve tips 1000 KSM.
+Charlie tips 100 LUNAR. Dave tips 300 LUNAR. Eve tips 1000 LUNAR.
 
 The tip could have been closed out with only two of the three tippers. Once more than half of the tippers group have issued tip valuations the countdown to close the tip will begin. In this case, the third tipper issued their tip before the end of the closing period, so all three were able to make their tip valuations known.
 
-Now the actual tip that will be paid out to Bob is the median of these tips, so Bob will be paid out 300 KSM from the treasury.
+Now the actual tip that will be paid out to Bob is the median of these tips, so Bob will be paid out 300 LUNAR from the treasury.
 
 In order for Bob to be paid his tip, some account must call the `close_tip` extrinsic at the end of the closing period for the tip. This extrinsic may be called by anyone.
 

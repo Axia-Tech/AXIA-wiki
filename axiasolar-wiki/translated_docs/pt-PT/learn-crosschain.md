@@ -39,4 +39,4 @@ The collator now hands this block to the validator, which itself will verify tha
 
 ## Resources
 
-- [XCMP Scheme](https://research.web3.foundation/en/latest/axiasolar/XCMP.html) - Full technical description of cross-chain communication on the Web3 Foundation research wiki.
+- [XCMP Scheme](https://research.axiacoin.org/en/latest/axiasolar/XCMP.html) - Full technical description of cross-chain communication on the AXIACoin Foundation research wiki.

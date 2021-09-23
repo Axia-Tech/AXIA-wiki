@@ -4,43 +4,43 @@ title: AXIASolar Claims
 sidebar_label: Claims
 ---
 
-If you made a DOT purchase in one of the pre-launch sales, then you will need to claim your DOT tokens. For those who made a pre-genesis claim by sending a claim transaction to the Claims Contract on Ethereum, you will still need to send a free _attest_ transaction that will agree to the terms and conditions of your allocation. If you did not make a pre-genesis claim, then you will claim and attest in a single transaction.
+If you made a SOLAR purchase in one of the pre-launch sales, then you will need to claim your SOLAR tokens. For those who made a pre-genesis claim by sending a claim transaction to the Claims Contract on Ethereum, you will still need to send a free _attest_ transaction that will agree to the terms and conditions of your allocation. If you did not make a pre-genesis claim, then you will claim and attest in a single transaction.
 
 This guide will walk you through the steps for either making a claim or attesting to the statement.
 
 If you are making a claim on AXIASolar for the first time, please read on below in the [making a claim](#making-a-claim) section. If you've already claimed during the pre-genesis claims period, please proceed to the [attesting to a statement](#attesting-to-a-statement) section instead.
 
-> To learn more on How to claim your DOTs post genesis, check out our walkthrough [video](https://www.youtube.com/watch?v=rjhWfKXJTCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22) and our video on [Claiming DOTs with an Ethereum address generated using an old mnemonic phrase](https://www.youtube.com/watch?v=AlwrM27x3As&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=16)
+> To learn more on How to claim your SOLARs post genesis, check out our walkthrough [video](https://www.youtube.com/watch?v=rjhWfKXJTCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22) and our video on [Claiming SOLARs with an Ethereum address generated using an old mnemonic phrase](https://www.youtube.com/watch?v=AlwrM27x3As&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=16)
 
 ## Making a Claim
 
-If you did not make a claim in the pre-genesis claims period, then you are able to claim your DOT tokens after genesis. There is no time limit for making your claim so feel free to do this whenever you are most comfortable.
+If you did not make a claim in the pre-genesis claims period, then you are able to claim your SOLAR tokens after genesis. There is no time limit for making your claim so feel free to do this whenever you are most comfortable.
 
-> Note: When you make a claim, you will also attest to the agreement that corresponds to your DOT allocation. The two actions "claim" and "attest" are done in a single transaction, but for the most part this is simplified from the perspective of the user.
+> Note: When you make a claim, you will also attest to the agreement that corresponds to your SOLAR allocation. The two actions "claim" and "attest" are done in a single transaction, but for the most part this is simplified from the perspective of the user.
 
 ### What You Will Need
 
-- The Ethereum account that holds the DOT indicator tokens
+- The Ethereum account that holds the SOLAR indicator tokens
 - The MyCrypto wallet
 - A AXIASolar account
 
-You should already have your Ethereum account that holds the DOT indicator tokens from AXIASolar's prior sales. You will need to have access to this account in order to make a signature.
+You should already have your Ethereum account that holds the SOLAR indicator tokens from AXIASolar's prior sales. You will need to have access to this account in order to make a signature.
 
 [MyCrypto][] is a versatile wallet that supports a variety of storage methods for your Ethereum account. Go to their downloads page and ensure that you download the latest version for your operating system. This is important because the latest version will always have the latest security patches.
 
 > **NOTICE**: It is much more secure to download and use the MyCrypto app locally. You can always find the most up-to-date releases of the desktop app on their [releases page][mycrypto].
 
-You will need a AXIASolar account to claim your DOTs. Please follow the instructions on the \[account generation\]\[\] page for generating a new AXIASolar account.
+You will need a AXIASolar account to claim your SOLARs. Please follow the instructions on the \[account generation\]\[\] page for generating a new AXIASolar account.
 
-#### Claiming your DOT with MyCrypto
+#### Claiming your SOLAR with MyCrypto
 
-The AXIASolar JS [Claims app][] helps you sign a message from MyCrypto. MyCrypto is a good choice in case you have stored the key to the Ethereum account holding your DOT indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics, and Parity signer.
+The AXIASolar JS [Claims app][] helps you sign a message from MyCrypto. MyCrypto is a good choice in case you have stored the key to the Ethereum account holding your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics, and Parity signer.
 
-Once you've downloaded MyCrypto and have it running locally (we recommend an air-gapped computer for maximum security), you can start by navigating to the Claims app on AXIASolar-JS Apps. Select the account you would like to claim the DOTs into and click the blue "Continue" button to proceed. Your screen should look something like this:
+Once you've downloaded MyCrypto and have it running locally (we recommend an air-gapped computer for maximum security), you can start by navigating to the Claims app on AXIASolar-JS Apps. Select the account you would like to claim the SOLARs into and click the blue "Continue" button to proceed. Your screen should look something like this:
 
 ![claim-1](assets/new-claims/claim-1.png)
 
-Now you will need to provide the Ethereum address that is associated with the DOT indicator tokens that you will claim. Enter the Ethereum address into the box and click "Continue".
+Now you will need to provide the Ethereum address that is associated with the SOLAR indicator tokens that you will claim. Enter the Ethereum address into the box and click "Continue".
 
 ![claim-2](assets/new-claims/claim-2.png)
 
@@ -48,7 +48,7 @@ Next your screen should look the image below.
 
 ![claim-2-1](assets/new-claims/claim-2-1.png)
 
-The hex-encoded string that follows the sentence: "Pay DOTs to the AXIASolar account:" is the hex-encoded public key of your AXIASolar account, minus the `0x` prefix.
+The hex-encoded string that follows the sentence: "Pay SOLARs to the AXIASolar account:" is the hex-encoded public key of your AXIASolar account, minus the `0x` prefix.
 
 The next step is to go to the MyCrypto application and click on "Sign & Verify Message" tab.
 
@@ -74,21 +74,21 @@ A green box will appear telling you the amount to claim with a "Claim" button to
 
 ![claim-9](assets/new-claims/claim-9.png)
 
-If this claim succeeded, then you will see a success message and your DOTs will be in the account that you claimed to.
+If this claim succeeded, then you will see a success message and your SOLARs will be in the account that you claimed to.
 
 #### Verifying your Claim
 
-After you make an on-chain claim for DOTs, your balance should be updated on the AXIASolar UI immediately.
+After you make an on-chain claim for SOLARs, your balance should be updated on the AXIASolar UI immediately.
 
-Having trouble? Get support in the DOT [Claims Support]() channel.
+Having trouble? Get support in the SOLAR [Claims Support]() channel.
 
 ![claim-10](assets/new-claims/claim-10.png)
 
-Congratulations, you have now completed the process for claiming and signing for your DOTs.
+Congratulations, you have now completed the process for claiming and signing for your SOLARs.
 
 ### Third Party Claims Processes
 
-**We do not recommend using third-party apps or processes to perform your claim or acquire DOT.**
+**We do not recommend using third-party apps or processes to perform your claim or acquire SOLAR.**
 
 Claiming using a third-party process can lead to the loss of your allocation, therefore we cannot recommend using any third party apps to do so. Manually specifying your transaction data, as specified in our claims process, is the only way to be certain you will receive your allocation.
 
@@ -126,7 +126,7 @@ Click "Continue" and you will see a green box appear on the right.
 
 ![claim-attest-4](assets/new-claims/new-attest-4.png)
 
-Click on "I Agree" and then "Sign and Submit" to make your free attest transaction. When the transaction is included in the block, you will see a green success box appear in the upper right corner and the DOTs will be in your account.
+Click on "I Agree" and then "Sign and Submit" to make your free attest transaction. When the transaction is included in the block, you will see a green success box appear in the upper right corner and the SOLARs will be in your account.
 
 ![claim-attest-5](assets/new-claims/new-attest-5.png)
 
@@ -155,7 +155,7 @@ Open Parity Signer and choose "AXIASolar" network.
 
 ![ps-1](assets/new-claims/ps-01.jpg)
 
-Select the address that you have claimed DOTs to during pre-genesis.
+Select the address that you have claimed SOLARs to during pre-genesis.
 
 ![ps-2](assets/new-claims/ps-02.jpg)
 
@@ -193,8 +193,8 @@ First, you need to press the "QR Scanner" on the Parity Signer to scan the QR co
 
 ![ps-3r](assets/new-claims/ps-3r.jpg)
 
-When the transaction is included in the block, you will see a green success box appear in the upper right corner and the DOTs will be in your account.
-https://riot.im/app/#/room/!kwIkVteRpPRjjTyvTe:web3.foundation?via=web3.foundation&via=matrix.org&via=matrix.parity.io
+When the transaction is included in the block, you will see a green success box appear in the upper right corner and the SOLARs will be in your account.
+https://riot.im/app/#/room/!kwIkVteRpPRjjTyvTe:axiacoin.org?via=axiacoin.org&via=matrix.org&via=matrix.parity.io
 
 [mycrypto]: https://download.mycrypto.com/
 [mycrypto]: https://download.mycrypto.com/

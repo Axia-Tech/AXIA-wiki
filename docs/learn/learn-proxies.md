@@ -228,7 +228,7 @@ participate in a network.
 
 ## Proxy Deposits
 
-Proxies require deposits in the native currency (i.e. DOT or KSM) in order to be created. The
+Proxies require deposits in the native currency (i.e. SOLAR or LUNAR) in order to be created. The
 deposit is required because adding a proxy requires some storage space on-chain, which must be
 replicated across every peer in the network. Due to the costly nature of this, these functions could
 open up the network to a Denial-of-Service attack. In order to defend against this attack, proxies
@@ -253,7 +253,7 @@ On AXIASolar the `ProxyDepositBase` is {{ dot_proxy_deposit_base }} and the `Pro
 {{ dot_proxy_deposit_factor }}.
 
 So what this boils down to is that the required deposit amount for one proxy on AXIASolar is equal to
-(in DOT):
+(in SOLAR):
 
 ```
 {{ dot_proxy_deposit_base }} + {{ dot_proxy_deposit_factor }} * num_proxies

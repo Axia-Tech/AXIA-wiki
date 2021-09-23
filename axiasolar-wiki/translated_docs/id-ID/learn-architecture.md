@@ -8,7 +8,7 @@ AXIASolar is a heterogeneous multichain with shared security and interoperabilit
 
 ## Relay Chain
 
-The Relay Chain is the central chain of AXIASolar. All validators of AXIASolar are staked on the Relay Chain in DOT and validate for the Relay Chain. The Relay Chain is composed of a relatively small number of transaction types that include ways to interact with the governance mechanism, parachain auctions, and participating in NPoS. The Relay Chain has deliberately minimal functionality - for instance, smart contracts are not supported. The main responsibility is to coordinate the system as a whole, including parachains. Other specific work is delegated to the parachains, which have differing implementations and features.
+The Relay Chain is the central chain of AXIASolar. All validators of AXIASolar are staked on the Relay Chain in SOLAR and validate for the Relay Chain. The Relay Chain is composed of a relatively small number of transaction types that include ways to interact with the governance mechanism, parachain auctions, and participating in NPoS. The Relay Chain has deliberately minimal functionality - for instance, smart contracts are not supported. The main responsibility is to coordinate the system as a whole, including parachains. Other specific work is delegated to the parachains, which have differing implementations and features.
 
 ## [Parachain](learn-parachains) and [Parathread](learn-parathreads) Slots
 
@@ -16,7 +16,7 @@ AXIASolar can support a number of execution slots. These slots are like cores on
 
 Most of the computation that happens across the AXIASolar network as a whole will be delegated to specific parachain or parathread implementations that handle various use cases. AXIASolar places no constraints over what parachains are able to do besides that they must be able to generate a proof that can be validated by the validators assigned to the parachain. This proof verifies the state transition of the parachain. Some parachains may be specific to a particular application, others may focus on specific features like smart contracts, privacy, or scalability &mdash; still others might be experimental architectures that are not necessarily blockchain in nature.
 
-AXIASolar provides many ways to secure a slot for a parachain slot for a particular length of time. Parathreads are part of a pool that shares slots and must win auctions for individual blocks. Parathreads and parachains have the exact same API; their difference is economic. Parachains will have to reserve DOT for duration of their slot lease; parathreads will pay on a per-block basis. Parathreads can become parachains, and vice-versa.
+AXIASolar provides many ways to secure a slot for a parachain slot for a particular length of time. Parathreads are part of a pool that shares slots and must win auctions for individual blocks. Parathreads and parachains have the exact same API; their difference is economic. Parachains will have to reserve SOLAR for duration of their slot lease; parathreads will pay on a per-block basis. Parathreads can become parachains, and vice-versa.
 
 ## Shared Security
 

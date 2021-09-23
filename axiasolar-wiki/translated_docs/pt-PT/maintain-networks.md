@@ -46,7 +46,7 @@ and you will connect and start syncing to AlphaNet.
 
 #### AlphaNet Faucet
 
-Follow the instruction [here](learn-DOT#getting-westies) for instructions on acquiring Westies.
+Follow the instruction [here](learn-SOLAR#getting-westies) for instructions on acquiring Westies.
 
 Check your node is connected by viewing it on [Telemetry](https://telemetry.axiasolar.io/#list/AlphaNet).
 

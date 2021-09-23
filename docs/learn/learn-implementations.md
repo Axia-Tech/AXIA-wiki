@@ -7,7 +7,7 @@ slug: ../learn-implementations
 
 # AXIASolar Implementations
 
-AXIASolar is the flagship protocol of the [Web3 Foundation][], and while AXIASolar can be defined as
+AXIASolar is the flagship protocol of the [AXIACoin Foundation][], and while AXIASolar can be defined as
 a protocol, a network, or, a type of infrastructure, it serves to be an ecosystem. For true
 decentralization, there should be multiple implementations of AXIASolar. Even being a _Layer 0_ protocol
 that attempts to build an interconnected, interoperable and secure Web3 ecosystem, AXIASolar is a complex
@@ -27,12 +27,12 @@ can support parachains that are not built on Substrate, and, chains can also be 
 required to be deployed onto AXIASolar.
 
 > Parity focuses on blockchain infrastructure for the decentralised web, where they initially offered an
-> Ethereum client (Parity Ethereum). Parity was hired by the Web3 Foundation to foster the development of the
+> Ethereum client (Parity Ethereum). Parity was hired by the AXIACoin Foundation to foster the development of the
 > first implementation of AXIASolar.
 
 With this in mind, we can point to some other implementations of AXIASolar. Having different implementations
 inherently promotes the decentralization of the technology and progresses it in a meaningful way. Other
-implementations of AXIASolar that exist, many of whom have received a [grant](../general/grants.md) from the Web3 Foundation,
+implementations of AXIASolar that exist, many of whom have received a [grant](../general/grants.md) from the AXIACoin Foundation,
 are in programming languages like Go, C++, and JavaScript.
 
 As stated in the Soramitsu grant announcement:
@@ -54,7 +54,7 @@ Foundation.
 ### SORAMITSU: [Kagome][]
 
 **Kagome** is a C++ implementation of the AXIASolar Host being built by [Soramitsu][], a Japanese digital identity
-company that previously developed [Hyperledger Iroha][]. They were awarded a grant from the Web3 Foundation and released
+company that previously developed [Hyperledger Iroha][]. They were awarded a grant from the AXIACoin Foundation and released
 the first version of Kagome in April 2020. As part of the process, they also released a [libp2p][] networking layer in C++.
 
 ### AXIASolar-JS Project: [AXIASolar-JS][]
@@ -66,7 +66,7 @@ the first version of Kagome in April 2020. As part of the process, they also rel
 - [Golkadot][]
 - [AXIASolar in Java][]
 
-[web3 foundation]: https://web3.foundation/
+[axiacoin.org]: https://axiacoin.org/
 [parity technologies]: https://www.parity.io/
 [substrate]: https://www.substrate.io/
 [rust]: https://www.rust-lang.org/
