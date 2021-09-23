@@ -261,13 +261,13 @@
     tweetnacl "^1.0.3"
     xxhashjs "^0.2.2"
 
-"@axiasolar-js/util@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/util/-/util-1.0.7.tgz#946f75938cafbe2419b5983c9a0959255eaacd50"
-  integrity sha512-L5IwiY4kNUpLrSzOXUV8vSqvjLcQfj4WTzFZVa42QvzHEbMXJupeuF0LlMaW6OxMYFAF7oxgBE3KCf3lxc74rA==
+"@axiasolar-js/util@^1.0.0", "@axiasolar-js/util@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/util/-/util-1.1.0.tgz#d8e6a072d4fc2b63aa7a4fa1ee84b0251fc001b1"
+  integrity sha512-HIOQ0L6wAMoqBZUFK8q4MGwG8RrqYJWblGKJMsQkZ4lqYCfu7srs1ZxKS9HE1d9vGj9zqChoI3r4TR3Hef95sA==
   dependencies:
-    "@axiasolar-js/x-textdecoder" "^1.0.0"
-    "@axiasolar-js/x-textencoder" "^1.0.0"
+    "@axiasolar-js/x-textdecoder" "1.1.0"
+    "@axiasolar-js/x-textencoder" "1.1.0"
     "@babel/runtime" "^7.15.4"
     "@types/bn.js" "^4.11.6"
     bn.js "^4.12.0"
@@ -307,6 +307,13 @@
     "@types/node-fetch" "^2.5.12"
     node-fetch "^2.6.2"
 
+"@axiasolar-js/x-global@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-global/-/x-global-1.1.0.tgz#8218b554b01781d0fd416c9696e2404643d67a20"
+  integrity sha512-wF4sfIEhRok+ouTiyFtBrSFMu3Fqk6tIdOU63EeNqiiUtRxfCokpxK0mUsqZqIEfBVeunnIdQbFu1RIaOWZqiQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 "@axiasolar-js/x-global@^1.0.0":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@axiasolar-js/x-global/-/x-global-1.0.7.tgz#99bca63e2f4d69807e3b9dfe0ac2c960736e1541"
@@ -322,20 +329,20 @@
     "@axiasolar-js/x-global" "^1.0.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/x-textdecoder@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textdecoder/-/x-textdecoder-1.0.7.tgz#9f9383b775ed8bd5c3c1927c99218423408eb95e"
-  integrity sha512-hUfEeQt/iaAqZcmfSr8GR/DygjvDCfZcl3iPPnU9HH0eBeRUfhiig5wvUn4hj9viH77QPOu8QUVeFC1ZKcw/+A==
+"@axiasolar-js/x-textdecoder@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textdecoder/-/x-textdecoder-1.1.0.tgz#3852209bd80d29cee0167164993aed8350d4d861"
+  integrity sha512-7NHDezGaxmWxnKX0d7ZdYKCIQGdALyZVaF8WhK59do+GShhwE6aKiRd2P4EEE9XFO2RmiYUIwp5noG2eRdic2g==
   dependencies:
-    "@axiasolar-js/x-global" "^1.0.0"
+    "@axiasolar-js/x-global" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/x-textencoder@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textencoder/-/x-textencoder-1.0.7.tgz#3d3a86c68aa73fe3e622a09ce3eb1d6b286f300f"
-  integrity sha512-xWPWoObNr5/FDhbuiR8jqL1yC/TJ9iTGXUuMytwj+EcpF7HPf02/t6DDIREv5a+xAxbBI6tR580nXpswAyusLQ==
+"@axiasolar-js/x-textencoder@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textencoder/-/x-textencoder-1.1.0.tgz#37ba685830b7075850225a7f9fda14f01c10bffd"
+  integrity sha512-92vFZBqrqyUWtTb/rXNplqkQYQ2smtUZvZxxxb+sFgSTY+DOB6Q/tPgN1eAPbDOqKLZDXmP9Psqw1yJyztO3Rw==
   dependencies:
-    "@axiasolar-js/x-global" "^1.0.0"
+    "@axiasolar-js/x-global" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
 "@axiasolar-js/x-ws@^1.0.0":

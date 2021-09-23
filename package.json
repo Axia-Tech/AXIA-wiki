@@ -70,7 +70,7 @@
     "yargs": "^17.1.1"
   },
   "dependencies": {
-    "@axiasolar-js/util": "^1.0.0",
+    "@axiasolar-js/util": "^1.1.0",
     "@axiasolar-js/wasm-crypto": "1.1.0",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.6",
     "ansi-html": "^0.0.7",
