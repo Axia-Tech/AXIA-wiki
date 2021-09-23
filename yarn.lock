@@ -147,106 +147,106 @@
     "@algolia/logger-common" "4.9.3"
     "@algolia/requester-common" "4.9.3"
 
-"@axiasolar-js/api-derive@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/api-derive/-/api-derive-1.0.7.tgz#8e88f4dce825d65cf54a86d04864bb46dc78315a"
-  integrity sha512-B4W1e7agIGnPMKnIe0W13IcKc8iJknyveyjT0/otzI3vVy/aYoPpfE75HbWl01jiQKFjiQreM9S/RDnxAfnvhg==
+"@axiasolar-js/api-derive@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/api-derive/-/api-derive-1.1.0.tgz#04f16b30bc2e861109c78440c1713411c2d759e4"
+  integrity sha512-0Vc/iMek/a875guew92n0VTKCl02DXF0jHxUdDWb1nGBEWCMRkjtcKlWnMduQW0JtfsAX6cdu6q/kPxDyUxogg==
   dependencies:
-    "@axiasolar-js/api" "^1.0.0"
-    "@axiasolar-js/rpc-core" "^1.0.0"
-    "@axiasolar-js/types" "^1.0.0"
-    "@axiasolar-js/util" "^1.0.0"
-    "@axiasolar-js/util-crypto" "^1.0.0"
+    "@axiasolar-js/api" "1.1.0"
+    "@axiasolar-js/rpc-core" "1.1.0"
+    "@axiasolar-js/types" "1.1.0"
+    "@axiasolar-js/util" "1.1.0"
+    "@axiasolar-js/util-crypto" "1.1.0"
     "@babel/runtime" "^7.15.4"
     rxjs "^7.3.0"
 
-"@axiasolar-js/api@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/api/-/api-1.0.7.tgz#6def97b1245ff3543727ac010228f2b1e09505bf"
-  integrity sha512-eK5b2AS8R4bAuJOZuQ/IRtQ9Rpmir6PstWR6oDu6/5NkCLAPU8gckeOdHtVS3nVllYyOFOwF41Knh/N+Es7juQ==
+"@axiasolar-js/api@1.1.0", "@axiasolar-js/api@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/api/-/api-1.1.0.tgz#f2fd16693e5f943f9e558072b8275a2a6b6e941b"
+  integrity sha512-wLJ6CUy84cnPB2Ikn8ToR8RzCpp/REcrztlqa0u/wINcXo3JbVNNswgK6jEQx51HMRntAzfh9LQUOBhme1ISHQ==
   dependencies:
-    "@axiasolar-js/api-derive" "^1.0.0"
-    "@axiasolar-js/keyring" "^1.0.0"
-    "@axiasolar-js/rpc-core" "^1.0.0"
-    "@axiasolar-js/rpc-provider" "^1.0.0"
-    "@axiasolar-js/types" "^1.0.0"
-    "@axiasolar-js/types-known" "^1.0.0"
-    "@axiasolar-js/util" "^1.0.0"
-    "@axiasolar-js/util-crypto" "^1.0.0"
+    "@axiasolar-js/api-derive" "1.1.0"
+    "@axiasolar-js/keyring" "1.1.0"
+    "@axiasolar-js/rpc-core" "1.1.0"
+    "@axiasolar-js/rpc-provider" "1.1.0"
+    "@axiasolar-js/types" "1.1.0"
+    "@axiasolar-js/types-known" "1.1.0"
+    "@axiasolar-js/util" "1.1.0"
+    "@axiasolar-js/util-crypto" "1.1.0"
     "@babel/runtime" "^7.15.4"
     eventemitter3 "^4.0.7"
     rxjs "^7.3.0"
 
-"@axiasolar-js/keyring@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/keyring/-/keyring-1.0.7.tgz#769c633899a545a08c075f325ca8cf482d09105c"
-  integrity sha512-paevumaxQQPWB60nRipM/YFTxQx/nNsUQOMaz/nHhUWb/ah3H6vIRqDIWKXBTzEx/i1xDsEJguOHqbdiNGJHVw==
+"@axiasolar-js/keyring@1.1.0", "@axiasolar-js/keyring@^1.0.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/keyring/-/keyring-1.1.0.tgz#e6c0525578aa0ed4cabd73ba410f5241257dde10"
+  integrity sha512-mvEzTrd4ks4QbfykXBUugF1sEAiVbKarvRs1pAm88ubbgH1h46Gg+WgYa06R8xB/ZMIioTp7WuTDWqOozW703g==
   dependencies:
-    "@axiasolar-js/util" "^1.0.0"
-    "@axiasolar-js/util-crypto" "^1.0.0"
+    "@axiasolar-js/util" "1.1.0"
+    "@axiasolar-js/util-crypto" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/networks@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/networks/-/networks-1.0.7.tgz#948ea78c2dd28a4fe5c580b9440fd3b577052ae5"
-  integrity sha512-wmbAsYweGsgtbi+DMoPA63N8/llJrQYFXYoNEaw6WAyo/dYBpAaH1o3K/UPCouNvHRMZoWq5YWuBlGnLCLAxtg==
+"@axiasolar-js/networks@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/networks/-/networks-1.1.0.tgz#91d142c72b47086ab3cf541b0a7bc7093ddb3329"
+  integrity sha512-nRsflKKLwcfreF+v+a5kjbVrW2r97me76O/fdQeYM/vHWoT3t4ubYpvrEKGRauQJj+Ak0+AuOwEvucUwsXqr8A==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/rpc-core@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/rpc-core/-/rpc-core-1.0.7.tgz#120b6a3c403af594a0ef8c1f1808c05221813b5f"
-  integrity sha512-NlvwdXBhPc5QV5gqMTg6xZaEzTBFjq9pFyJP0+CdAAUQq8UpgvAp7fV8MUPEUjtXtqoYXyVkIRm76iPn/dLU+A==
+"@axiasolar-js/rpc-core@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/rpc-core/-/rpc-core-1.1.0.tgz#99c845f3285fd798ec26d80b3e78d429d1c07c5b"
+  integrity sha512-Bcgtjxa//yyHhv0D3rqHTfUWbK/g/GVfh3G+wMwNKbgx7CtWweutTVvNawT0RHAa9KHzrsCqD7OsvxSm45Jo1w==
   dependencies:
-    "@axiasolar-js/rpc-provider" "^1.0.0"
-    "@axiasolar-js/types" "^1.0.0"
-    "@axiasolar-js/util" "^1.0.0"
+    "@axiasolar-js/rpc-provider" "1.1.0"
+    "@axiasolar-js/types" "1.1.0"
+    "@axiasolar-js/util" "1.1.0"
     "@babel/runtime" "^7.15.4"
     rxjs "^7.3.0"
 
-"@axiasolar-js/rpc-provider@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/rpc-provider/-/rpc-provider-1.0.7.tgz#e6a1f566fdf85f5d819b0804d96e5fdbfcc7d977"
-  integrity sha512-BtvfeH67AUzHWPCcBqOcqk10yDs+c3Uo4zSrkGpnQuoj/MV437EXXTDHYkLgRFeWAFnzduG3PUMos8ZtJSJaSA==
+"@axiasolar-js/rpc-provider@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/rpc-provider/-/rpc-provider-1.1.0.tgz#76ab7d7cdf312b07d53d14b83a5a3d4c9b7ecc15"
+  integrity sha512-uUCM8S138obuNgpaTSbou5b1/34lGO0iwYGkWRzEqqog6qn+zx1/gs8xe51rsesDwwzfyurPv95oi8fWRyILPA==
   dependencies:
-    "@axiasolar-js/types" "^1.0.0"
-    "@axiasolar-js/util" "^1.0.0"
-    "@axiasolar-js/util-crypto" "^1.0.0"
-    "@axiasolar-js/x-fetch" "^1.0.0"
-    "@axiasolar-js/x-global" "^1.0.0"
-    "@axiasolar-js/x-ws" "^1.0.0"
+    "@axiasolar-js/types" "1.1.0"
+    "@axiasolar-js/util" "1.1.0"
+    "@axiasolar-js/util-crypto" "1.1.0"
+    "@axiasolar-js/x-fetch" "1.1.0"
+    "@axiasolar-js/x-global" "1.1.0"
+    "@axiasolar-js/x-ws" "1.1.0"
     "@babel/runtime" "^7.15.4"
     eventemitter3 "^4.0.7"
 
-"@axiasolar-js/types-known@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/types-known/-/types-known-1.0.7.tgz#a1f1a1938e5da4f98f2ae69d41cb19564fd8ba11"
-  integrity sha512-BBex04lBjZhE5edv54b8jatM6GLJ0XBOxMSZmYCGn33Kl872FKB1EnI464uaq7h+Ny3MMjedSI9LnaEMZjkD1g==
+"@axiasolar-js/types-known@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/types-known/-/types-known-1.1.0.tgz#8b18f9fbeec9d8d6655ef5e1090b8ccd8782e093"
+  integrity sha512-YWuzusp9VFprYM5uzxi+9paAzNgk4/Um06VLrSqW3zdOCA8TCNLNxZIhXy0V90LGuyWD8mlbdiRVMk9Yh51Flw==
   dependencies:
-    "@axiasolar-js/networks" "^1.0.0"
-    "@axiasolar-js/types" "^1.0.0"
-    "@axiasolar-js/util" "^1.0.0"
+    "@axiasolar-js/networks" "1.1.0"
+    "@axiasolar-js/types" "1.1.0"
+    "@axiasolar-js/util" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/types@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/types/-/types-1.0.7.tgz#25e0a82d93edae5a99b0db14ee8f3e80fc5ea71b"
-  integrity sha512-mGIqDgAhbtDOmH6U8bcRFZsVo0FWgHi/O8dQQwXMdh3IWFl60D8/MVb0RP4pr7pOGTX/Xk96obJsM2mwwVmf+g==
+"@axiasolar-js/types@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/types/-/types-1.1.0.tgz#0a3a09f9901e093182050966501658c055469ecf"
+  integrity sha512-CubGqMBV+WbCK+4PPQs33bJOi68jLkY9ECMjSFOeUO6ikNfg+tKgdckc5iwfl0sX2ybuVTvwkWvY7mEs5/Qn8Q==
   dependencies:
-    "@axiasolar-js/util" "^1.0.0"
-    "@axiasolar-js/util-crypto" "^1.0.0"
+    "@axiasolar-js/util" "1.1.0"
+    "@axiasolar-js/util-crypto" "1.1.0"
     "@babel/runtime" "^7.15.4"
     rxjs "^7.3.0"
 
-"@axiasolar-js/util-crypto@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/util-crypto/-/util-crypto-1.0.7.tgz#b04ec29e620e9ecc6c0bee4a135bed95dfcfb64f"
-  integrity sha512-Nk0N5BjM3hUD6zr1iI/7jepLbBjYu7tdk+BTzsM+s8L3tGGDmriHFpmjaX/V70Iphahs4vYXrEX1nrHjivKJ0Q==
+"@axiasolar-js/util-crypto@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/util-crypto/-/util-crypto-1.1.0.tgz#3945b6f81b0962f94326dcec7009e6718cfd49a9"
+  integrity sha512-fB+sQrH5lKqpgyaz2hxeK7n8s3Koz1C/PQ5R2yv5kmCpAEJ0ufBokjNdeOkrWbPfE4exWeLtwLNTqkqvxPMRZA==
   dependencies:
-    "@axiasolar-js/networks" "^1.0.0"
-    "@axiasolar-js/util" "^1.0.0"
-    "@axiasolar-js/wasm-crypto" "^1.0.0"
-    "@axiasolar-js/x-randomvalues" "^1.0.0"
+    "@axiasolar-js/networks" "1.1.0"
+    "@axiasolar-js/util" "1.1.0"
+    "@axiasolar-js/wasm-crypto" "1.1.0"
+    "@axiasolar-js/x-randomvalues" "1.1.0"
     "@babel/runtime" "^7.15.4"
     base-x "^3.0.8"
     base64-js "^1.5.1"
@@ -261,13 +261,13 @@
     tweetnacl "^1.0.3"
     xxhashjs "^0.2.2"
 
-"@axiasolar-js/util@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/util/-/util-1.0.7.tgz#946f75938cafbe2419b5983c9a0959255eaacd50"
-  integrity sha512-L5IwiY4kNUpLrSzOXUV8vSqvjLcQfj4WTzFZVa42QvzHEbMXJupeuF0LlMaW6OxMYFAF7oxgBE3KCf3lxc74rA==
+"@axiasolar-js/util@1.1.0", "@axiasolar-js/util@^1.0.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/util/-/util-1.1.0.tgz#d8e6a072d4fc2b63aa7a4fa1ee84b0251fc001b1"
+  integrity sha512-HIOQ0L6wAMoqBZUFK8q4MGwG8RrqYJWblGKJMsQkZ4lqYCfu7srs1ZxKS9HE1d9vGj9zqChoI3r4TR3Hef95sA==
   dependencies:
-    "@axiasolar-js/x-textdecoder" "^1.0.0"
-    "@axiasolar-js/x-textencoder" "^1.0.0"
+    "@axiasolar-js/x-textdecoder" "1.1.0"
+    "@axiasolar-js/x-textencoder" "1.1.0"
     "@babel/runtime" "^7.15.4"
     "@types/bn.js" "^4.11.6"
     bn.js "^4.12.0"
@@ -288,7 +288,7 @@
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/wasm-crypto@1.1.0", "@axiasolar-js/wasm-crypto@^1.0.0":
+"@axiasolar-js/wasm-crypto@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@axiasolar-js/wasm-crypto/-/wasm-crypto-1.1.0.tgz#291a0a136fbb03bca94fd7ac45fc4ba62b3b0300"
   integrity sha512-BKLBA+lItYqZDyQ1utlCXUsvNMRb3d+zt019Du4acJ6TrzB7SIufMDsNiaKhQtML5fQCG3i+0WVQqYWokOXIoA==
@@ -297,53 +297,53 @@
     "@axiasolar-js/wasm-crypto-wasm" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/x-fetch@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-fetch/-/x-fetch-1.0.7.tgz#42bfa2bc300b254b7219dd51c5095c4c7f4d7ce7"
-  integrity sha512-nCfWlZc/oFGcQmxrdXozviJx+Fdz6tspLzDVmVunYRSRG4DAtja+LCLy+msAyh7LNCSYdFajqymHZyvujjcVgw==
+"@axiasolar-js/x-fetch@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-fetch/-/x-fetch-1.1.0.tgz#df561b2841a7ccd279a2caaa6ab1cad673ffa54f"
+  integrity sha512-VXpktRiZIu7ipkaOz6E8IHz+nMDQHzAOeZ9itrRJbcVJ0GLgXrVUCzzKHYvpLu6HTJiTmzStKpj8XD5zcqb0UQ==
   dependencies:
-    "@axiasolar-js/x-global" "^1.0.0"
+    "@axiasolar-js/x-global" "1.1.0"
     "@babel/runtime" "^7.15.4"
     "@types/node-fetch" "^2.5.12"
     node-fetch "^2.6.2"
 
-"@axiasolar-js/x-global@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-global/-/x-global-1.0.7.tgz#99bca63e2f4d69807e3b9dfe0ac2c960736e1541"
-  integrity sha512-eJdgxaJOlokKV8PcYOLpl3ahpwO7C96+79aK3rHB97qx0c1l/qTs7Bv7XsCVL0zeqIbSS/M/za1M7To2xyQexA==
+"@axiasolar-js/x-global@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-global/-/x-global-1.1.0.tgz#8218b554b01781d0fd416c9696e2404643d67a20"
+  integrity sha512-wF4sfIEhRok+ouTiyFtBrSFMu3Fqk6tIdOU63EeNqiiUtRxfCokpxK0mUsqZqIEfBVeunnIdQbFu1RIaOWZqiQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/x-randomvalues@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-randomvalues/-/x-randomvalues-1.0.7.tgz#5da092c267c1234c1c77a4e7c20c0b503f14c741"
-  integrity sha512-mBGdWDZbpi9xUG7yElxBXRGXFjZerq3LxKladRGsr0wUB/4yTedL+PhTRwzlo29tbJqWWkLm2tmUHEjkGcicog==
+"@axiasolar-js/x-randomvalues@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-randomvalues/-/x-randomvalues-1.1.0.tgz#474c0d0c900e6a37d7c7ffa3b3a4c9b9ce7a3209"
+  integrity sha512-UsXOr575Ga9mQgvJ5vnXuNk1lc+0MNLLqEK6vb7XDL0G6KMK3zk6Q1IdmvAvp9aj4rtqi53nAUhRU2t5dPgJuw==
   dependencies:
-    "@axiasolar-js/x-global" "^1.0.0"
+    "@axiasolar-js/x-global" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/x-textdecoder@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textdecoder/-/x-textdecoder-1.0.7.tgz#9f9383b775ed8bd5c3c1927c99218423408eb95e"
-  integrity sha512-hUfEeQt/iaAqZcmfSr8GR/DygjvDCfZcl3iPPnU9HH0eBeRUfhiig5wvUn4hj9viH77QPOu8QUVeFC1ZKcw/+A==
+"@axiasolar-js/x-textdecoder@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textdecoder/-/x-textdecoder-1.1.0.tgz#3852209bd80d29cee0167164993aed8350d4d861"
+  integrity sha512-7NHDezGaxmWxnKX0d7ZdYKCIQGdALyZVaF8WhK59do+GShhwE6aKiRd2P4EEE9XFO2RmiYUIwp5noG2eRdic2g==
   dependencies:
-    "@axiasolar-js/x-global" "^1.0.0"
+    "@axiasolar-js/x-global" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/x-textencoder@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textencoder/-/x-textencoder-1.0.7.tgz#3d3a86c68aa73fe3e622a09ce3eb1d6b286f300f"
-  integrity sha512-xWPWoObNr5/FDhbuiR8jqL1yC/TJ9iTGXUuMytwj+EcpF7HPf02/t6DDIREv5a+xAxbBI6tR580nXpswAyusLQ==
+"@axiasolar-js/x-textencoder@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-textencoder/-/x-textencoder-1.1.0.tgz#37ba685830b7075850225a7f9fda14f01c10bffd"
+  integrity sha512-92vFZBqrqyUWtTb/rXNplqkQYQ2smtUZvZxxxb+sFgSTY+DOB6Q/tPgN1eAPbDOqKLZDXmP9Psqw1yJyztO3Rw==
   dependencies:
-    "@axiasolar-js/x-global" "^1.0.0"
+    "@axiasolar-js/x-global" "1.1.0"
     "@babel/runtime" "^7.15.4"
 
-"@axiasolar-js/x-ws@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-ws/-/x-ws-1.0.7.tgz#91312cb7a9b73c1ffe1f34c649517d619165ba88"
-  integrity sha512-q09euNRvDeMMDWqVKT2cHmIeLhEAVSFJARhOwuTB5JV6faiHXT8LdVwbFoIuTTqKjLXCtvEYjjKuZlexo73k0w==
+"@axiasolar-js/x-ws@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/x-ws/-/x-ws-1.1.0.tgz#3b7534994a8ae1d372cc5472b5aa5511f841ed8a"
+  integrity sha512-xWrTsBGTH0wyHjaLVONUgGk5PHX8IuxyerR3osxumAjGJ6/io1nZbNtECc+FU02Wm+YnhyHSdSzesh4+a1v/tg==
   dependencies:
-    "@axiasolar-js/x-global" "^1.0.0"
+    "@axiasolar-js/x-global" "1.1.0"
     "@babel/runtime" "^7.15.4"
     "@types/websocket" "^1.0.4"
     websocket "^1.0.34"
