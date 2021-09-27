@@ -6,7 +6,7 @@ slug: ../learn-implementers-guide
 ---
 
 The Parachain Implementer's Guide is still a significant work in progress and maintained by
-[Parity](../general/glossary.md##parity-technologies).
+[Axia](../general/glossary.md##axia-technologies).
 
 ## Live version
 

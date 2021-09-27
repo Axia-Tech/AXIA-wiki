@@ -4,7 +4,7 @@ title: Thousand Validators Programme
 sidebar_label: Thousand Validators Programme
 ---
 
-The Thousand Validators Programme is an initiative by AXIACoin Foundation and Parity Technologies to use the funds held by both organizations to nominate validators in the community.
+The Thousand Validators Programme is an initiative by AXIACoin Foundation and Axia Technologies to use the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of validators on AXIALunar and AXIASolar and 2) to further decentralize the validator active set.
 

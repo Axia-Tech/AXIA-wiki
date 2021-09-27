@@ -47,7 +47,7 @@ Ethereum Classic (see above),
 [Verge](https://coincentral.com/verge-suffers-51-attack-hard-forks-in-response/),
 [Bitcoin Gold](https://bitcoingold.org/responding-to-attacks/), and other cryptocurrencies.
 
-On AXIASolar, this disparity between chain security will not be present. When a parachain connects to
+On AXIASolar, this disaxia between chain security will not be present. When a parachain connects to
 AXIASolar, the Relay Chain validator set become the securers of that parachain's state transitions.
 The parachain will only have the overhead of needing to run a few collator nodes to keep the
 validators informed with the latest state transitions and proofs/witness. Validators will then check

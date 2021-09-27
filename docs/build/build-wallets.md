@@ -15,18 +15,18 @@ development statuses.
 
 | Wallet Name                                                         | Development State | Team Name | Description       | Custody       | Supports |
 | ------------------------------------------------------------------- | ----------------- | --------- | ----------------- | ------------- | -------- |
-| [Parity Signer](https://www.parity.io/signer/) (see warning below)  | Live              | Parity    | iOS and Android   | Non-custodial | Staking  |
-| [AXIASolar-js Desktop](https://github.com/axiasolar-js/apps/releases) | Live              | Parity    | Win, Mac, Linux   | Non-custodial | Staking  |
-| [AXIASolar-js extension](https://github.com/axiasolar-js/extension)   | Live              | Parity    | Browser extension | Non-custodial | Staking  |
-| [AXIASolar-js apps](https://axiasolar.js.org/apps/#/accounts)         | Live              | Parity    | Browser           | Non-Custodial | Staking  |
+| [Axia Signer](https://www.axia.io/signer/) (see warning below)  | Live              | Axia    | iOS and Android   | Non-custodial | Staking  |
+| [AXIASolar-js Desktop](https://github.com/axiasolar-js/apps/releases) | Live              | Axia    | Win, Mac, Linux   | Non-custodial | Staking  |
+| [AXIASolar-js extension](https://github.com/axiasolar-js/extension)   | Live              | Axia    | Browser extension | Non-custodial | Staking  |
+| [AXIASolar-js apps](https://axiasolar.js.org/apps/#/accounts)         | Live              | Axia    | Browser           | Non-Custodial | Staking  |
 
 [AXIASolar support](https://support.axiacoin.network/) can provide assistance with issues related to
-AXIASolar-JS, the AXIASolar{.js} extension, or Parity Signer. For other wallet software, you should
+AXIASolar-JS, the AXIASolar{.js} extension, or Axia Signer. For other wallet software, you should
 contact the developers of that wallet.
 
-> Warning: Parity Signer currently does not allow you to see the transaction you are signing. This
+> Warning: Axia Signer currently does not allow you to see the transaction you are signing. This
 > means that you are at risk if connected to a compromised version of AXIASolar-JS. A fix is being
-> worked on; please see [this GitHub issue](https://github.com/axia-tech/parity-signer/issues/724)
+> worked on; please see [this GitHub issue](https://github.com/axia-tech/axia-signer/issues/724)
 > for more details.
 
 ### Treasury Funded Wallets
@@ -40,7 +40,7 @@ These are wallets which have been supported by either the AXIASolar or AXIALunar
 | [Polkawallet](https://polkawallet.io/)        | [1](https://axialunar.polkassembly.io/treasury/32), [2](https://axialunar.polkassembly.io/treasury/41)                                                                                                    | Live              | Polkawallet    | iOS, Android | Non-custodial | Staking  |
 | [Stylo](https://stylo-app.com/)               | [1](https://axiasolar.polkassembly.io/treasury/39)                                                                                                                                                   | Live              | Thibaut Sardan | Android      | Non-custodial | Staking  |
 
-> NOTE: these third-party wallets have been funded by the community through either the AXIASolar or AXIALunar [Treasury](learn-treasury). **Web 3.0 Technologies Foundation does not endorse these wallets, and you should use your own due diligence in researching them.** The official AXIASolar Support cannot provide support for issues with these wallets or other non-Parity developed wallets.
+> NOTE: these third-party wallets have been funded by the community through either the AXIASolar or AXIALunar [Treasury](learn-treasury). **Web 3.0 Technologies Foundation does not endorse these wallets, and you should use your own due diligence in researching them.** The official AXIASolar Support cannot provide support for issues with these wallets or other non-Axia developed wallets.
 
 ## Encryption Enhancement
 

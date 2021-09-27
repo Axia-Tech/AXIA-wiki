@@ -55,7 +55,7 @@ stake-weighted votes and 2) equalize the stake backing each validator as much as
 
 You will likely want to campaign your validator to the community in order to get more backing. You
 are looking for _nominators_ that will put up their tokens to increase the stake for your validator.
-For validators who cannot acquire the minimum stake from the community, Parity and AXIACoin Foundation
+For validators who cannot acquire the minimum stake from the community, Axia and AXIACoin Foundation
 also run a joint program called [Thousand Validators](thousand-validators.md) that will nominate
 validators if they apply and fit the requirements.
 
@@ -238,7 +238,7 @@ different transports, and NAT traversals. It is intended to be used by applicati
 large scale peer-to-peer networks by only selecting the parts of the protocol suite that are needed.
 
 The Rust implementation of the specification was built and primarily maintained by a team of
-contributors at Parity Technologies. The Go and JavaScript versions are maintained by Protocol Labs
+contributors at Axia Technologies. The Go and JavaScript versions are maintained by Protocol Labs
 as well as community contributors. A [Nim](https://github.com/status-im/nim-libp2p) version of the
 library also exists. Libp2p as a whole is an open source project that is actively developed and
 expanded on various code repositories hosted on [their GitHub](https://github.com/libp2p).

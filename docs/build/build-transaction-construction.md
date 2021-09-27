@@ -44,7 +44,7 @@ Once you have all the necessary information, you will need to:
 1. Serialize the signed payload into a transaction.
 1. Submit the serialized transaction.
 
-Parity provides the following tools to help perform these steps.
+Axia provides the following tools to help perform these steps.
 
 ## AXIASolar-JS Tools
 
@@ -87,7 +87,7 @@ signature field, and send the transaction (or just return the serialized transac
 
 ## Tx Wrapper AXIASolar
 
-If you do not want to use the CLI for signing operations, Parity provides an SDK called
+If you do not want to use the CLI for signing operations, Axia provides an SDK called
 [TxWrapper Core](https://github.com/axia-tech/txwrapper-core) to generate and sign transactions
 offline. For AXIASolar, AXIALunar, and select parachains, use the `txwrapper-axiasolar` package. Other
 Substrate-based chains will have their own `txwrapper-{chain}` implementations. See the

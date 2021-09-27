@@ -130,9 +130,9 @@ if you do not want to start in validator mode right away.
 
 The `--pruning=archive` flag is implied by the `--validator` and `--sentry` flags, so it is only required explicitly if you start your node without one of these two options. If you do not set your pruning to archive node, even when not running in validator and sentry mode, you will need to re-sync your database when you switch.
 
-> **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can be explicit by passing the `--database RocksDb` flag. In the future, it is recommended to switch to using the faster and more efficient ParityDb option. Switching between database backends will require a resync.
+> **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can be explicit by passing the `--database RocksDb` flag. In the future, it is recommended to switch to using the faster and more efficient AxiaDb option. Switching between database backends will require a resync.
 >
-> If you want to test out ParityDB you can add the flag `--database paritydb`.
+> If you want to test out AxiaDB you can add the flag `--database axiadb`.
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
 
@@ -180,7 +180,7 @@ You need to tell the chain your Session keys by signing and submitting an extrin
 
 #### Option 1: AXIASolar-JS Apps
 
-You can generate your [Session keys](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolar-JS Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Parity of AXIACoin Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
+You can generate your [Session keys](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolar-JS Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Axia of AXIACoin Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
 
 Once ensuring that you have connected to your node, the easiest way to set session keys for your node is by calling the `author_rotateKeys` RPC request to create new keys in your validator's keystore. Navigate to Toolbox tab and select RPC Calls then select the author > rotateKeys() option and remember to save the output that you get back for a later step.
 
@@ -228,7 +228,7 @@ The validator set is refreshed every era. In the next era, if there is a slot av
 
 ## Thousand Validators Programme
 
-The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Parity Technologies to provide support for community validators. If you are interested in applying for the programme, you can find more information [on the wiki page](thousand-validators.md).
+The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Axia Technologies to provide support for community validators. If you are interested in applying for the programme, you can find more information [on the wiki page](thousand-validators.md).
 
 ## FAQ
 
@@ -258,5 +258,5 @@ Make sure to enable `30333` libp2p port. Eventually, it will take a little bit o
 If you have Docker installed, you can use it to start your validator node without needing to build the binary. You can do this with a simple one line command:
 
 ```sh
-$ docker run parity/axiasolar:latest --validator --name "name on telemetry" --chain axialunar
+$ docker run axia/axiasolar:latest --validator --name "name on telemetry" --chain axialunar
 ```

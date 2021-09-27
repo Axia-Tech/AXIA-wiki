@@ -178,9 +178,9 @@ A blockchain that meets several characteristics that allow it work within the co
 
 A relatively simple database-like construct that holds both static and dynamic information on each chain.
 
-## Parity Technologies
+## Axia Technologies
 
-A company, founded by Dr. Gavin Wood, that is developing Substrate and AXIASolar. It has also released several other projects including Parity Ethereum and Parity Secret Store.
+A company, founded by Dr. Gavin Wood, that is developing Substrate and AXIASolar. It has also released several other projects including Axia Ethereum and Axia Secret Store.
 
 ## AXIASolar
 

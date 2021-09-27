@@ -37,12 +37,12 @@ The proposer has to deposit 5% of the requested amount or 20 LUNAR (whichever is
 
 To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal. Most discussion takes place on the following platforms:
 
-- Many community members participate in discussion in the [AXIALunar Riot](https://riot.w3f.tech/#/room/#axialunar:matrix.parity.io) chat.
+- Many community members participate in discussion in the [AXIALunar Riot](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) chat.
 - The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
 - The [AXIALunar forum](https://forum.axialunar.network) and [AXIASolar forum](https://forum.axiacoin.network) can be used for proposal explanations on AXIALunar and AXIASolar respectively.
 - [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads.
 
-Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Riot channels like the [AXIALunar Direction room](https://riot.w3f.tech/#/room/#axialunar:matrix.parity.io) or the [AXIALunar Watercooler](https://riot.w3f.tech/#/room/#axialunarwatercooler:axiasolar.builders). For AXIASolar, you may want to frequent the [AXIASolar Watercooler](https://riot.w3f.tech/#/room/#axiasolar-watercooler:matrix.org) and [AXIASolar Direction room](https://riot.w3f.tech/#/room/#axiasolar-direction:matrix.parity.io).
+Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Riot channels like the [AXIALunar Direction room](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) or the [AXIALunar Watercooler](https://riot.w3f.tech/#/room/#axialunarwatercooler:axiasolar.builders). For AXIASolar, you may want to frequent the [AXIASolar Watercooler](https://riot.w3f.tech/#/room/#axiasolar-watercooler:matrix.org) and [AXIASolar Direction room](https://riot.w3f.tech/#/room/#axiasolar-direction:matrix.axia.io).
 
 ### Creating the Proposal
 

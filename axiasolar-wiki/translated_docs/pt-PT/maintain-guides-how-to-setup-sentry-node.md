@@ -215,14 +215,14 @@ Another way is by starting the node to see the identity printed as follows:
 `./axiasolar --validator`
 
 ```
-2020-06-13 14:42:21 Parity AXIASolar
+2020-06-13 14:42:21 Axia AXIASolar
 2020-06-13 14:42:21 ✌️  version 0.8.8-b2c9c149-x86_64-linux-gnu
-2020-06-13 14:42:21 ❤️  by Parity Technologies <admin@parity.io>, 2017-2020
+2020-06-13 14:42:21 ❤️  by Axia Technologies <admin@axia.io>, 2017-2020
 2020-06-13 14:42:21 📋 Chain specification: AXIASolar CC1
 2020-06-13 14:42:21 🏷  Node name: validator-node
 2020-06-13 14:42:21 👤 Role: AUTHORITY
 2020-06-13 14:42:21 💾 Database: RocksDb at /home/$USER/.local/share/axiasolar/chains/axiasolar/db
-2020-06-13 14:42:21 ⛓  Native runtime: axiasolar-8 (parity-axiasolar-0.tx0.au0)
+2020-06-13 14:42:21 ⛓  Native runtime: axiasolar-8 (axia-axiasolar-0.tx0.au0)
 2020-06-13 14:42:21 📦 Highest known block at #529
 2020-06-13 14:42:21 🏷  Local node identity is: 12D3KooWSAhdYsqrJKed3r5HKTJzpEWFUXCFmn6wv85M2woLLJpD (legacy representation: QmdtiSGnqDoHrfVyxrRWuETyehMnmZJhxrnVBFyYtY7Trk)
 2020-06-13 14:42:21 〽️ Prometheus server started at 127.0.0.1:9615

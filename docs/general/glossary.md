@@ -395,10 +395,10 @@ go" basis. All parachains start their lifecycle as a parathread.
 A relatively simple database-like construct that holds both static and dynamic information on each
 chain.
 
-## Parity Technologies
+## Axia Technologies
 
 A company, founded by Dr. Gavin Wood and Dr. Jutta Steiner, that is developing Substrate and
-AXIASolar. It has also released several other projects including Parity Ethereum and Parity Secret
+AXIASolar. It has also released several other projects including Axia Ethereum and Axia Secret
 Store.
 
 ## AXIASolar

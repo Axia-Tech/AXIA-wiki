@@ -14,7 +14,7 @@ Running a validator on a live network is a lot of responsibility! You will be ac
 
 Since security is so important to running a successful validator, you should take a look at the [secure validator](maintain-guides-secure-validator) information to make you understand the factors to consider when constructing your infrastructure. The AXIACoin Foundation also maintains a [reference implementation for a secure validator set-up](https://github.com/axia-tech/axiasolar-secure-validator) that you can use by deploying yourself (video walkthrough is available [here](https://www.youtube.com/watch?v=tTn8P6t7JYc)). As you progress in your journey as a validator, you will likely want to use this repository as a _starting point_ for your own modifications and customizations.
 
-If you need help, please reach out on the [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) on Riot. The team and other validators are there to help answer questions and provide tips from experience.
+If you need help, please reach out on the [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) on Riot. The team and other validators are there to help answer questions and provide tips from experience.
 
 ### How many SOLARs do I need?
 
@@ -141,9 +141,9 @@ if you do not want to start in validator mode right away.
 
 The `--pruning=archive` flag is implied by the `--validator` and `--sentry` flags, so it is only required explicitly if you start your node without one of these two options. If you do not set your pruning to archive node, even when not running in validator and sentry mode, you will need to re-sync your database when you switch.
 
-> **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can be explicit by passing the `--database RocksDb` flag. In the future, it is recommended to switch to using the faster and more efficient ParityDb option. Switching between database backends will require a resync.
+> **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can be explicit by passing the `--database RocksDb` flag. In the future, it is recommended to switch to using the faster and more efficient AxiaDb option. Switching between database backends will require a resync.
 >
-> If you want to test out ParityDB you can add the flag `--database paritydb`.
+> If you want to test out AxiaDB you can add the flag `--database axiadb`.
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
 
@@ -195,7 +195,7 @@ You need to tell the chain your Session keys by signing and submitting an extrin
 
 #### Option 1: AXIASolarJS-APPS
 
-You can generate your [Session keys](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolarJS-Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Parity of AXIACoin Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
+You can generate your [Session keys](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key) in the client via the apps RPC. If you are doing this, make sure that you have the AXIASolarJS-Apps explorer attached to your validator node. You can configure the apps dashboard to connect to the endpoint of your validator in the Settings tab. If you are connected to a default endpoint hosted by Axia of AXIACoin Foundation, you will not be able to use this method since making RPC requests to this node would effect the local keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore for _your node_.
 
 Once ensuring that you have connected to your node, the easiest way to set session keys for your node is by calling the `author_rotateKeys` RPC request to create new keys in your validator's keystore. Navigate to Toolbox tab and select RPC Calls then select the author > rotateKeys() option and remember to save the output that you get back for a later step.
 
@@ -241,7 +241,7 @@ If you go to the "Staking" tab, you will see a list of active validators current
 
 The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the _waiting_ queue. If your validator is not selected to become part of the validator set, it will remain in the _waiting_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of SOLARs staked or seek out nominators for your validator in order to join the validator set.
 
-**Congratulations!** If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a AXIASolar validator! If you need help, reach out on the [AXIASolar Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org).
+**Congratulations!** If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a AXIASolar validator! If you need help, reach out on the [AXIASolar Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org).
 
 ## FAQ
 
@@ -271,5 +271,5 @@ Make sure to enable `30333` libp2p port. Eventually, it will take a little bit o
 If you have Docker installed, you can use it to start your validator node without needing to build the binary. You can do this with a simple one line command:
 
 ```sh
-$ docker run parity/axiasolar:latest --validator --name "name on telemetry"
+$ docker run axia/axiasolar:latest --validator --name "name on telemetry"
 ```

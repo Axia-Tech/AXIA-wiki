@@ -12,7 +12,7 @@ You can see the list of included parachains [here](https://axiasolar.js.org/apps
 
 ## Parachain Workshop
 
-If you are interested in running and launching your own parachain, Parity Technologies has created a [parachain workshop](https://substrate.dev/cumulus-workshop/#/1-prep/1-compiling). There is also a [BetaNet Element chat channel](https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) as well as [Cumulus' GitHub repository](https://github.com/axia-tech/cumulus#betanet) available.
+If you are interested in running and launching your own parachain, Axia Technologies has created a [parachain workshop](https://substrate.dev/cumulus-workshop/#/1-prep/1-compiling). There is also a [BetaNet Element chat channel](https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) as well as [Cumulus' GitHub repository](https://github.com/axia-tech/cumulus#betanet) available.
 
 ### Obtaining ROC
 
@@ -107,10 +107,10 @@ The minimal requirements for any parachain candidate to be considered for the pa
          1. `cargo build --release --features=real-overseer`
          1. `./target/release/axiasolar --validator --chain betanet --name <your_betanet_validator_name>`
       1. Use Docker:
-         1. `docker run -d parity/betanet:<tag_following_axiasolar> --validator --chain betanet --name <your_betanet_validator_name>`
+         1. `docker run -d axia/betanet:<tag_following_axiasolar> --validator --chain betanet --name <your_betanet_validator_name>`
    1. Check your node on the [BetaNet Telemetry](https://telemetry.axiasolar.io/#list/BetaNet)
    1. Generate your [BetaNet V1 ValidatorId Address](https://github.com/substrate-developer-hub/cumulus-workshop/blob/master/en/6-register/1-register.md#launching-the-validators)
-   1. Follow [BetaNet Validator Lounge](https://matrix.to/#/!mAfyXPbSILyZLvZwSJ:matrix.parity.io?via=matrix.parity.io) announcements for BetaNet V1 validator updates, which can require one of the following scenarios
+   1. Follow [BetaNet Validator Lounge](https://matrix.to/#/!mAfyXPbSILyZLvZwSJ:matrix.axia.io?via=matrix.axia.io) announcements for BetaNet V1 validator updates, which can require one of the following scenarios
       1. Update client
       1. Update client and purge-chain
 1. Maintain at least one collator (full block authoring node) for your team’s parachain.
@@ -145,7 +145,7 @@ It helps:
 - Chachacha will be at par with the latest BetaNet axiasolar/cumulus/substrate version
 - The network will be refreshed and restarted frequently
 - Inclusion process is analogous to BetaNet's
-- Notifications and Support will be given in the [Chachacha](https://matrix.to/#/!bNsgeAIUuMfcyVXKAu:matrix.org?via=matrix.org&via=matrix.parity.io) Element channel
+- Notifications and Support will be given in the [Chachacha](https://matrix.to/#/!bNsgeAIUuMfcyVXKAu:matrix.org?via=matrix.org&via=matrix.axia.io) Element channel
 
 ## How to include your parachain in Chachacha
 
@@ -165,7 +165,7 @@ It helps:
          1. `docker run -d centrifugeio/betanet:chachacha-v1 --validator --chain betanet-chachacha --name <your_chachacha_validator_name> --bootnodes <bootnodes_addr_from_above>`
    1. Check your node on the [Chachacha Telemetry](https://telemetry.axiasolar.io/#list/Chachacha%20Staging%20Testnet)
    1. Generate your [Chachacha V1 ValidatorId Address](https://github.com/substrate-developer-hub/cumulus-workshop/blob/master/6-register/1-register.md#launching-the-validators)
-   1. Follow [Chachacha](https://matrix.to/#/!bNsgeAIUuMfcyVXKAu:matrix.org?via=matrix.org&via=matrix.parity.io) announcements for Chachacha V1 validator updates, which can require one of the following scenarios
+   1. Follow [Chachacha](https://matrix.to/#/!bNsgeAIUuMfcyVXKAu:matrix.org?via=matrix.org&via=matrix.axia.io) announcements for Chachacha V1 validator updates, which can require one of the following scenarios
       1. Update client
       1. Update client and purge-chain
 1. Maintain at least one collator (full block authoring node) for your team’s parachain.

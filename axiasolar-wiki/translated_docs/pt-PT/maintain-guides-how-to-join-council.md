@@ -40,4 +40,4 @@ If you are one of the lucky ones to win a council election you will see your acc
 
 ![e](assets/council/member.png)
 
-Congratulations! Now you are able to participate on the council by making motions or vetoing proposals. It's a good idea to now join the public [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org).
+Congratulations! Now you are able to participate on the council by making motions or vetoing proposals. It's a good idea to now join the public [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org).

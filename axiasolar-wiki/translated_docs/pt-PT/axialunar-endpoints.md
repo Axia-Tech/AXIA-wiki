@@ -6,11 +6,11 @@ sidebar_label: AXIALunar Endpoints
 
 When interacting with the [AXIALunar network](https://axialunar.network) via [AXIASolar Apps](https://axiasolar.js.org/apps) or other UIs and programmatic methods, you'd ideally be running your own node ([text guide](maintain-sync), [video guide](https://www.youtube.com/watch?v=31DdfcxbAVs)). Granted, that's not something everyone can or wants to do, so convenience trumps ideals in most cases. To facilitate this convenience, AXIALunar has several public endpoints you can use for your apps.
 
-## Parity Archive Node
+## Axia Archive Node
 
-The development company Parity maintains an archive node at endpoint `wss://axialunar-rpc.axiasolar.io/`.
+The development company Axia maintains an archive node at endpoint `wss://axialunar-rpc.axiasolar.io/`.
 
-To connect to the Parity node, use the endpoint in your JavaScript apps like so:
+To connect to the Axia node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
 const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
@@ -23,7 +23,7 @@ const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
 
 or in AXIASolar Apps UI by clicking the top-left corner of the screen and selecting the appropriate option:
 
-![Selecting Parity's Node](/img/endpoints/parity.png)
+![Selecting Axia's Node](/img/endpoints/axia.png)
 
 ## AXIACoin Foundation Archive Node
 
@@ -59,7 +59,7 @@ The nodes are distributed and decentralized, but the load balancer serving them 
 
 #### Full nodes
 
-The nodes in the RYO cloud are currently _full nodes_, not _archive nodes_. To learn the difference, [watch this crash course](https://www.youtube.com/watch?v=31DdfcxbAVs). If you need archive data, run your own archive node or use a Parity or W3F hosted node for now. Archive nodes in RYO are planned for a future update.
+The nodes in the RYO cloud are currently _full nodes_, not _archive nodes_. To learn the difference, [watch this crash course](https://www.youtube.com/watch?v=31DdfcxbAVs). If you need archive data, run your own archive node or use a Axia or W3F hosted node for now. Archive nodes in RYO are planned for a future update.
 
 #### Avado Only
 

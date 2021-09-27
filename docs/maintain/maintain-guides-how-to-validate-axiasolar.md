@@ -35,7 +35,7 @@ validator, you will likely want to use this repository as a _starting point_ for
 modifications and customizations.
 
 If you need help, please reach out on the
-[AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org)
+[AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org)
 on Riot. The team and other validators are there to help answer questions and provide tips from
 experience.
 
@@ -175,15 +175,15 @@ The AXIASolar Binary in included in `Debian` derivatives (i.e. **Debain**, **Ubu
 Run the following commands as the root user:
 
 ```ssh
-# Import the security@parity.io GPG key
+# Import the security@axia.io GPG key
 gpg --recv-keys --keyserver hkps://keys.mailvelope.com 9D4B2B6EB8F97156D19669A9FF0812D491B96798
-gpg --export 9D4B2B6EB8F97156D19669A9FF0812D491B96798 > /usr/share/keyrings/parity.gpg
-# Add the Parity repository and update the package index
-echo 'deb [signed-by=/usr/share/keyrings/parity.gpg] https://releases.parity.io/deb release main' > /etc/apt/sources.list.d/parity.list
+gpg --export 9D4B2B6EB8F97156D19669A9FF0812D491B96798 > /usr/share/keyrings/axia.gpg
+# Add the Axia repository and update the package index
+echo 'deb [signed-by=/usr/share/keyrings/axia.gpg] https://releases.axia.io/deb release main' > /etc/apt/sources.list.d/axia.list
 apt update
-# Install the `parity-keyring` package - This will ensure the GPG key
+# Install the `axia-keyring` package - This will ensure the GPG key
 # used by APT remains up-to-date
-apt install parity-keyring
+apt install axia-keyring
 # Install axiasolar
 apt install axiasolar
 ```
@@ -196,7 +196,7 @@ Run the following commands as the root user:
 # Install dnf-plugins-core (This might already be installed)
 dnf install dnf-plugins-core
 # Add the repository and enable it
-dnf config-manager --add-repo https://releases.parity.io/rpm/axiasolar.repo
+dnf config-manager --add-repo https://releases.axia.io/rpm/axiasolar.repo
 dnf config-manager --set-enabled axiasolar
 # Install axiasolar (You may have to confirm the import of the GPG key, which
 # should have the following fingerprint: 9D4B2B6EB8F97156D19669A9FF0812D491B96798)
@@ -304,14 +304,14 @@ You can begin syncing your node by running the following command:
 if you do not want to start in validator mode right away.
 
 ```
-2021-06-17 03:07:07 Parity AXIASolar
+2021-06-17 03:07:07 Axia AXIASolar
 2021-06-17 03:07:07 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
-2021-06-17 03:07:07 ❤️  by Parity Technologies <admin@parity.io>, 2017-2021
+2021-06-17 03:07:07 ❤️  by Axia Technologies <admin@axia.io>, 2017-2021
 2021-06-17 03:07:07 📋 Chain specification: AXIASolar
 2021-06-17 03:07:07 🏷 Node name: boiling-pet-7554
 2021-06-17 03:07:07 👤 Role: FULL
 2021-06-17 03:07:07 💾 Database: RocksDb at /root/.local/share/axiasolar/chains/axiasolar/db
-2021-06-17 03:07:07 ⛓  Native runtime: axiasolar-9050 (parity-axiasolar-0.tx7.au0)
+2021-06-17 03:07:07 ⛓  Native runtime: axiasolar-9050 (axia-axiasolar-0.tx7.au0)
 2021-06-17 03:07:10 🏷 Local node identity is: 12D3KooWLtXFWf1oGrnxMGmPKPW54xWCHAXHbFh4Eap6KXmxoi9u
 2021-06-17 03:07:10 📦 Highest known block at #17914
 2021-06-17 03:07:10 〽️ Prometheus server started at 127.0.0.1:9615
@@ -337,9 +337,9 @@ re-sync your database when you switch.
 > **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can
 > be explicit by passing the `--database RocksDb` flag.
 >
-> In the future, it is recommended to switch to the faster and more efficient ParityDB option. Note
-> that **ParityDB is still experimental and should not be used in production.** If you want to test
-> out ParityDB, you can add the flag `--database paritydb`. Switching between database backends will
+> In the future, it is recommended to switch to the faster and more efficient AxiaDB option. Note
+> that **AxiaDB is still experimental and should not be used in production.** If you want to test
+> out AxiaDB, you can add the flag `--database axiadb`. Switching between database backends will
 > require a resync.
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes
@@ -421,14 +421,14 @@ will now start running the node.
 Similarly:
 
 ```
-2021-06-17 03:12:08 Parity AXIASolar
+2021-06-17 03:12:08 Axia AXIASolar
 2021-06-17 03:12:08 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
-2021-06-17 03:12:08 ❤️  by Parity Technologies <admin@parity.io>, 2017-2021
+2021-06-17 03:12:08 ❤️  by Axia Technologies <admin@axia.io>, 2017-2021
 2021-06-17 03:12:08 📋 Chain specification: AXIASolar
 2021-06-17 03:12:08 🏷 Node name: nateched-test
 2021-06-17 03:12:08 👤 Role: AUTHORITY
 2021-06-17 03:12:08 💾 Database: RocksDb at /root/.local/share/axiasolar/chains/axiasolar/db
-2021-06-17 03:12:08 ⛓  Native runtime: axiasolar-9050 (parity-axiasolar-0.tx7.au0)
+2021-06-17 03:12:08 ⛓  Native runtime: axiasolar-9050 (axia-axiasolar-0.tx7.au0)
 2021-06-17 03:12:12 🏷 Local node identity is: 12D3KooWLtXFWf1oGrnxMGmPKPW54xWCHAXHbFh4Eap6KXmxoi9u
 2021-06-17 03:12:12 📦 Highest known block at #64673
 2021-06-17 03:12:12 〽️ Prometheus server started at 127.0.0.1:9615
@@ -455,7 +455,7 @@ associates your validator node with your Controller account on AXIASolar.
 You can generate your [Session keys](../learn/learn-keys.md#session-keys) in the client via the apps RPC. If
 you are doing this, make sure that you have the AXIASolarJS-Apps explorer attached to your validator
 node. You can configure the apps dashboard to connect to the endpoint of your validator in the
-Settings tab. If you are connected to a default endpoint hosted by Parity of AXIACoin Foundation, you
+Settings tab. If you are connected to a default endpoint hosted by Axia of AXIACoin Foundation, you
 will not be able to use this method since making RPC requests to this node would effect the local
 keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore
 for _your node_.
@@ -545,11 +545,11 @@ validator set.
 
 **Congratulations!** If you have followed all of these steps, and been selected to be a part of the
 validator set, you are now running a AXIASolar validator! If you need help, reach out on the
-[AXIASolar Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org).
+[AXIASolar Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org).
 
 ## Thousand Validators Programme
 
-The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Parity Technologies
+The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Axia Technologies
 to provide support for community validators. If you are interested in applying for the programme,
 you can find more information [on the wiki page](../general/thousand-validators.md).
 
@@ -584,5 +584,5 @@ If you have Docker installed, you can use it to start your validator node withou
 the binary. You can do this with a simple one line command:
 
 ```sh
-$ docker run parity/axiasolar:latest --validator --name "name on telemetry"
+$ docker run axia/axiasolar:latest --validator --name "name on telemetry"
 ```

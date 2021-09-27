@@ -251,5 +251,5 @@ other set-up instructions in this guide. If you would like to connect to your no
 ensure that you run you node with the `--rpc-external` and `--ws-external` commands.
 
 ```zsh
-docker run -p 9944:9944 parity/axiasolar:v0.8.24 --name "calling_home_from_a_docker_container" --rpc-external --ws-external
+docker run -p 9944:9944 axia/axiasolar:v0.8.24 --name "calling_home_from_a_docker_container" --rpc-external --ws-external
 ```

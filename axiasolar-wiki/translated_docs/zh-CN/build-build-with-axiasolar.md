@@ -6,7 +6,7 @@ sidebar_label: AXIASolar 開發者入门指南
 
 _本文是对博文[《波卡开发入门需知》](https://medium.com/axiacoin.network/everything-you-need-to-know-to-prepare-for-axiasolar-32d08b929735)的维护版本。_
 
-作为一个区块链协议，波卡希望达成两个目标：为所有接入的平行链提供**共享安全性**，并允许所有接入的链使用[XCMP](learn-crosschain)来实现**互操作**。随着 Parity 的 Substrate 和 Cumulus 这类[PDKs](build-pdk)的问世，开发和启动一条新链所需花费的时间已大大减少。以前开发一条新链需要几年，而现在可能只需要几周甚至几天。
+作为一个区块链协议，波卡希望达成两个目标：为所有接入的平行链提供**共享安全性**，并允许所有接入的链使用[XCMP](learn-crosschain)来实现**互操作**。随着 Axia 的 Substrate 和 Cumulus 这类[PDKs](build-pdk)的问世，开发和启动一条新链所需花费的时间已大大减少。以前开发一条新链需要几年，而现在可能只需要几周甚至几天。
 
 这份指南将带你了解想要使用 AXIASolar 创建你的愿景，你现在能做的事儿。我们将解释平行链和智能合约之间的区别（以及为什么其中一个可能比另一个更适合你的应用程序）。还将列出现在可用的资源和即将发布的资源，以便你可以开始创建应用程序，并为参与今年晚些时候的 AXIASolar 主网发布做准备。
 
@@ -24,7 +24,7 @@ _本文是对博文[《波卡开发入门需知》](https://medium.com/axiacoin.
 
 波卡[采用丰富的编程语言](learn-implementations)，支持从 Rust 到 JavaScript 等一系列语言。在 Substrate 框架下当前主要采用 Rust 进行编程。Substrate 是一套支持开发者便捷地开发完整区块链应用的框架。这套框架通过集成核心要素而得以实现，这些要素有网络协议、共识层、Wasm 编译器和运行模块(也称为模块) 等。Cumulus 是一种对 Substrate 的扩展版本，它允许使用 Substrate 开发的链与波卡连接成为平行链。Substrate 当前发布的标签版本是 2.0.0，这一版拥有稳定版 API。
 
-波卡的原生功能不支持智能合约，但可以通过平行链实现智能合约。用 Substrate 开发的链能够通过使用 Wasm 合约中的[Contracts](https://github.com/axia-tech/substrate/tree/master/frame/contracts)模块和 FRAME 中的[EVM](https://github.com/axia-tech/substrate/tree/master/frame/evm)模块来实现智能合约的功能。contracts 模块能够允许任意用户或者根据具体规则在链上部署 Wasm 编译的合约。为了促进 Wasm 智能合约的开发，Parity 也在开发一种基于 Rust 用来专门编写智能合约的语言[ink!](https://github.com/axia-tech/ink)。
+波卡的原生功能不支持智能合约，但可以通过平行链实现智能合约。用 Substrate 开发的链能够通过使用 Wasm 合约中的[Contracts](https://github.com/axia-tech/substrate/tree/master/frame/contracts)模块和 FRAME 中的[EVM](https://github.com/axia-tech/substrate/tree/master/frame/evm)模块来实现智能合约的功能。contracts 模块能够允许任意用户或者根据具体规则在链上部署 Wasm 编译的合约。为了促进 Wasm 智能合约的开发，Axia 也在开发一种基于 Rust 用来专门编写智能合约的语言[ink!](https://github.com/axia-tech/ink)。
 
 波卡主网自 2020 年 5 月正式上线。现在开发工具已经出现且趋于稳定，那当下正是尝试用波卡开发你项目的大好时机。但别急！在你一头扎进写代码前，你应该仔细考虑你想开发的去中心化应用的类型，并且了解一些适用于波卡开发者的不同范式。
 
@@ -68,7 +68,7 @@ _本文是对博文[《波卡开发入门需知》](https://medium.com/axiacoin.
 
 ## 所以你想开发平行链或是平行线程……
 
-现在你已经决定将开发平行链或者平行线程作为你新项目的正确方式，下面就是决定使用哪个框架了。用于开发平行链或平行线程的框架被称为平行链开发套件 (PDKs) 。现阶段，只有 Parity Technologies 开发的 Substrate 和 Cumulus 可控选择。
+现在你已经决定将开发平行链或者平行线程作为你新项目的正确方式，下面就是决定使用哪个框架了。用于开发平行链或平行线程的框架被称为平行链开发套件 (PDKs) 。现阶段，只有 Axia Technologies 开发的 Substrate 和 Cumulus 可控选择。
 
 未来会有很多不同语言编写的 PDKs，就像波卡 HOST 有多种[实现](learn-implementations.md)一样。
 
@@ -78,7 +78,7 @@ _本文是对博文[《波卡开发入门需知》](https://medium.com/axiacoin.
 
 Substrate 是用于开发波卡的底层框架。它是为区块链创新者所开发的工具包，提供了开发新链所需的模块。它包含了模块式的运行插件库，你可以用它来开发你的链条逻辑，也可以用它来编写你自己的组件或者共享到社区。
 
-开始使用 Substrate 的最佳方式是先去探索一下[Substrate 基础知识](https://substrate.dev/docs/en/)，这是一个由 Parity Technologies 创建并维护的在线知识库。
+开始使用 Substrate 的最佳方式是先去探索一下[Substrate 基础知识](https://substrate.dev/docs/en/)，这是一个由 Axia Technologies 创建并维护的在线知识库。
 
 我们推荐你在知识库那里多逛逛，直到你熟悉了常用的模式为止。一旦你有了扎实的理解，你就可以在提供的教程中挑战自己所学来获得进步。
 
@@ -126,7 +126,7 @@ Substrate 有两种方式来支持开箱即用的智能合约开发。一种方�
 
 对于以前写过智能合约的开发者而言，他们对于部署 EVM 的链更为熟练。然而合约模块针对 EVM 的设计做了一些显著的改善，它们是：
 
-1. **Wasm**. 此合约模块将 WebAssembly 用作自己的编译目标，凡是经过 Wasm 编译的语言都可被用作便携智能合约。不过写智能合约最好是有一个专门的特定领域语言，为此 Parity 提供了[ink!](#ink)语言。
+1. **Wasm**. 此合约模块将 WebAssembly 用作自己的编译目标，凡是经过 Wasm 编译的语言都可被用作便携智能合约。不过写智能合约最好是有一个专门的特定领域语言，为此 Axia 提供了[ink!](#ink)语言。
 
 2. **租赁**. 合约必须支付租金或者足额的抵押来证明它存在于链上的正当性。当一份合约没有做上述维护时，可能会产生一种叫做*tombstone*的引用。在某些情况下，如果合约没有达到以上要求，它将会随存储一起被彻底删除。
 

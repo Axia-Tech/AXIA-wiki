@@ -93,7 +93,7 @@ Similarly, head over to the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss
 
 ## Integration
 
-Statemint will come with the same tooling suite that Parity Technologies provides for the Relay
+Statemint will come with the same tooling suite that Axia Technologies provides for the Relay
 Chain, namely [API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) and
 [TxWrapper AXIASolar](https://github.com/axia-tech/txwrapper-core/tree/main/packages/txwrapper-axiasolar).
 If you have a technical question or issue about how to use one of the integration tools please file

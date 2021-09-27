@@ -15,7 +15,7 @@ The AXIASolar Relay Chain will not support smart contracts natively. However, pa
 如果开发者想要开始在基于 Substrate 的平行链上开发并部署智能合约，可以参考这个列表的资源：
 
 - [Edgeware 合约](https://contracts.edgewa.re) - Edgeware 合约的文档。
-- [ink!](https://github.com/axia-tech/ink) - Parity 提供的编写智能合约的 ink。
+- [ink!](https://github.com/axia-tech/ink) - Axia 提供的编写智能合约的 ink。
 - [Substrate 合约工作坊](https://substrate.dev/substrate-contracts-workshop/#/) - 指导您使用`ink!`编写和部署 ERC20 令牌的基础知识。
 
 ## 例子

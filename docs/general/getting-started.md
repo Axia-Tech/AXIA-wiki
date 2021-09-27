@@ -247,11 +247,11 @@ and maintain on the AXIALunar network, please head over to our [AXIALunar Guide]
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network;
   can be used for AXIASolar, AXIALunar, or any Substrate-based chain.
 - [Polkascan](http://polkascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and
-  Parity Substrate chains.
+  Axia Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of
   AXIASolar. (Video)
-- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-parity-technologies/) -
+- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) -
   Dr. Jutta Steiner presents AXIASolar. (Video)
 - [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
   Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIASolar, and builds a blockchain

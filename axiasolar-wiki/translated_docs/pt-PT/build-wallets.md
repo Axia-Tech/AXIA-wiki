@@ -18,9 +18,9 @@ If you are unable to load a JSON file in a wallet, try loading it in the AXIASol
 
 | Wallet Name                                                        | Development State | Team Name   | Description                         |
 | ------------------------------------------------------------------ | ----------------- | ----------- | ----------------------------------- |
-| [Signer](https://www.parity.io/signer/)                            | Live              | Parity      | IOS and Android                     |
-| [AXIASolar-JS](https://axiasolar.js.org/apps/#/accounts)             | Live              | Parity      | Browser                             |
-| [AXIASolar.JS Plugin](https://github.com/axiasolar-js/extension)     | Live              | Parity      | Browser extension                   |
+| [Signer](https://www.axia.io/signer/)                            | Live              | Axia      | IOS and Android                     |
+| [AXIASolar-JS](https://axiasolar.js.org/apps/#/accounts)             | Live              | Axia      | Browser                             |
+| [AXIASolar.JS Plugin](https://github.com/axiasolar-js/extension)     | Live              | Axia      | Browser extension                   |
 | [Polkawallet](https://polkawallet.io/)                             | Live              | Polkawallet | IOS and Android                     |
 | [Math Wallet](https://www.mathwallet.org/axialunar-wallet/en/)        | Live              | Math Wallet | Browser extension                   |
 | [Lunie](https://lunie.io/)                                         | Live              | Lunie       | Browser extension                   |

@@ -30,7 +30,7 @@ integrate AXIASolar into their systems.
 - [Integration Initiation](build-integration.md) - The guide to the guide.
 - [AXIASolar Protocol Information](build-protocol-info.md) - General information and F.A.Q.s about
   the AXIASolar protocol, e.g. address formats.
-- [Node Management](build-node-management.md) - A short overview of the Parity AXIASolar client and
+- [Node Management](build-node-management.md) - A short overview of the Axia AXIASolar client and
   the most relevant options/flags for infrastructure providers.
 - [Node Interaction](build-node-interaction.md) - Learn how to interact with your node via RPC.
 - [Transaction Construction and Signing](build-transaction-construction.md) - Learn the transaction

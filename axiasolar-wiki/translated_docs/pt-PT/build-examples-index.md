@@ -12,7 +12,7 @@ For a list of all AXIACoin Foundation grants to teams working on projects that p
 
 ## Substrate Runtimes
 
-### Parity
+### Axia
 
 - [Shasper](https://github.com/axia-tech/shasper) - Eth2.0 implemented as Substrate runtime.
 - [Substrate TCR](https://github.com/substrate-developer-hub/substrate-tcr) - Token curated registry as a runtime module.

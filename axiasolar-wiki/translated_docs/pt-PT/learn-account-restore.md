@@ -5,7 +5,7 @@ sidebar_label: Backing up and Restoring Accounts
 description: Step-by-step guides on backing up and restoring a AXIASolar account.
 ---
 
-In the case that your AXIASolar account needs to backed up and later restored, there are simple ways to take care of this in AXIASolar.js Browser Plugin, AXIASolar.js, and Parity Signer. Note that in order to recover an account, it is necessary that an account is created according to the instructions [here](learn-account-generation).
+In the case that your AXIASolar account needs to backed up and later restored, there are simple ways to take care of this in AXIASolar.js Browser Plugin, AXIASolar.js, and Axia Signer. Note that in order to recover an account, it is necessary that an account is created according to the instructions [here](learn-account-generation).
 
 ## AXIASolar.js Browser Plugin
 
@@ -53,26 +53,26 @@ Now that those details have been filled in, you will need to click on the "Save"
 
 There we go! Now you've successfully restored and backed up your account using its mnemonic seed.
 
-## Parity Signer
+## Axia Signer
 
-To back up an account we'll restore below in Parity Signer, open the app and click on the user profile icon in the top right hand corner.
+To back up an account we'll restore below in Axia Signer, open the app and click on the user profile icon in the top right hand corner.
 
-![click-profile-parity](assets/accounts/parity_select_profile.jpeg)
+![click-profile-axia](assets/accounts/axia_select_profile.jpeg)
 
 From here, we want to choose "Show Recovery Phase", which will be the next step in restoring an account.
 
-![click-restore-parity](assets/accounts/parity_click_restore.jpg)
+![click-restore-axia](assets/accounts/axia_click_restore.jpg)
 
-The next step will require you to enter your PIN that was created with your account on Parity Signer. Once this has been added, you'll have access to your Mnemonic Recovery phrase for your account.
+The next step will require you to enter your PIN that was created with your account on Axia Signer. Once this has been added, you'll have access to your Mnemonic Recovery phrase for your account.
 
-![enter-pin-parity](assets/accounts/parity_enter_password.jpg) ![recovery-phrase-parity](assets/accounts/parity_recovery_phrase.jpg)
+![enter-pin-axia](assets/accounts/axia_enter_password.jpg) ![recovery-phrase-axia](assets/accounts/axia_recovery_phrase.jpg)
 
-Now, it's time to restore the account. Open up the AXIASolar.js on your browser, and navigate to "Add Account". Though this may seem counter-intuitive, we aren't actually adding in an account here, rather we are restoring the account using its mnemonic recovery phrase. It is very important here to put in the mnemonic recovery phrase from your Parity Signer account.
+Now, it's time to restore the account. Open up the AXIASolar.js on your browser, and navigate to "Add Account". Though this may seem counter-intuitive, we aren't actually adding in an account here, rather we are restoring the account using its mnemonic recovery phrase. It is very important here to put in the mnemonic recovery phrase from your Axia Signer account.
 
 Note that you can change the name and password if desired.
 
-![restoring-account-parity](assets/accounts/parity_restoring_account.jpg)
+![restoring-account-axia](assets/accounts/axia_restoring_account.jpg)
 
-Once you hit save, click on "Create and backup account", which will download a `.json` file that contains all the relevant data for that account. At this point, we have successfully saved the Parity Signer account onto AXIASolar js and downloaded the account data, now we have restored the account.
+Once you hit save, click on "Create and backup account", which will download a `.json` file that contains all the relevant data for that account. At this point, we have successfully saved the Axia Signer account onto AXIASolar js and downloaded the account data, now we have restored the account.
 
-![save-backup-parity](assets/accounts/parity_save_recovery.png)
+![save-backup-axia](assets/accounts/axia_save_recovery.png)

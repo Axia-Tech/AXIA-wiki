@@ -9,12 +9,12 @@ sidebar_label: Links
 ### General
 
 - [Substrate, AXIASolar & The Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg) - Epicenter interviews Gavin Wood.
-- [Blockchain Infrastructure](https://softwareengineeringdaily.com/2018/11/26/parity-blockchain-infrastructure-with-gavin-wood/) - Gavin Wood presents Substrate on Software Daily.
+- [Blockchain Infrastructure](https://softwareengineeringdaily.com/2018/11/26/axia-blockchain-infrastructure-with-gavin-wood/) - Gavin Wood presents Substrate on Software Daily.
 - [AXIASolar on Zero Knowledge](https://www.zeroknowledge.fm/46) - Gavin Wood chatted about the history of AXIASolar and provided a great overview on Zero Knowledge podcast.
 - [Epicenter and AXIASolar](https://www.youtube.com/watch?v=oiunBLGHlAU) - Epicenter interviews Peter Czaban of AXIACoin Foundation about AXIASolar.
 - [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) - Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIASolar, and builds a blockchain on-stage in 30 minutes using Substrate. (Video)
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of AXIASolar. (Video)
-- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-parity-technologies/) - Dr. Jutta Steiner presents AXIASolar. (Video)
+- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) - Dr. Jutta Steiner presents AXIASolar. (Video)
 - [Interoperability Intro](https://www.youtube.com/watch?v=RSAFHhTwA8Q) - Rob Habermeier presents "Interoperability: Connecting the Dots."
 - [Consensus and Finality in AXIASolar](https://www.youtube.com/watch?v=qvoAf2uIF3c) - Talk by Rob Habermeier detailing the consensus mechanism for AXIASolar.
 - [SOLAR Day Seoul](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt3mA_d9wu74vVe0bM37-39) - Video playlist of all talks at SOLAR Day Seoul.
@@ -29,7 +29,7 @@ sidebar_label: Links
 ### Substrate
 
 - [What is Substrate?](https://medium.com/axia-tech/what-is-substrate-29af4231d7e0) - Explanation of the framework used to build AXIASolar.
-- [Parity Substrate](https://github.com/axia-tech/substrate) - First implementation, written in Rust. Parity Technologies is a 75-person development team based in the UK and Germany. Parity’s tech is responsible for running the premier client for Ethereum, powering 40% of the nodes in the network. Parity also maintains a client for [Bitcoin](https://github.com/axia-tech/parity-bitcoin) and developed and released [Zebra](https://github.com/ZcashFoundation/zebra), a rust implementation of a zcash node.
+- [Axia Substrate](https://github.com/axia-tech/substrate) - First implementation, written in Rust. Axia Technologies is a 75-person development team based in the UK and Germany. Axia’s tech is responsible for running the premier client for Ethereum, powering 40% of the nodes in the network. Axia also maintains a client for [Bitcoin](https://github.com/axia-tech/axia-bitcoin) and developed and released [Zebra](https://github.com/ZcashFoundation/zebra), a rust implementation of a zcash node.
 - [Substrate Developer Hub](https://substrate.dev/docs/en/) - Overviews, tutorials and reference documentation for Substrate.
 - [Substrate Intro](https://youtu.be/iUMZyL5kTwc) - Dr. Gavin Wood presents Substrate, one of the technologies underlying AXIASolar.
 - [How Substrate relates to AXIASolar](https://medium.com/axiacoin.network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - A Tale of Two Technologies Presentation Transcript
@@ -77,8 +77,8 @@ sidebar_label: Links
 ### Wasm
 
 - [Wasmi](https://github.com/axia-tech/Wasmi) - WebAssembly interpreter written in Rust.
-- [Parity Wasm](https://github.com/axia-tech/parity-Wasm) - WebAssembly serialization/deserialization in Rust.
-- [Wasm utils](https://github.com/axia-tech/Wasm-utils) - Collection of Wasm utilities used in Parity and Wasm contract development.
+- [Axia Wasm](https://github.com/axia-tech/axia-Wasm) - WebAssembly serialization/deserialization in Rust.
+- [Wasm utils](https://github.com/axia-tech/Wasm-utils) - Collection of Wasm utilities used in Axia and Wasm contract development.
 
 ### Networking (libp2p)
 
@@ -86,7 +86,7 @@ sidebar_label: Links
 
 ### Bridges
 
-- [Parity Bridge](https://github.com/axia-tech/parity-bridge) - Bridge between any two ethereum-based networks.
+- [Axia Bridge](https://github.com/axia-tech/axia-bridge) - Bridge between any two ethereum-based networks.
 
 ## Running a node
 
@@ -97,7 +97,7 @@ sidebar_label: Links
 
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network; can be used for Alexander, AXIALunar, or your own private network.
 - [Telemetry](http://telemetry.axiasolar.io/) - Information services website for nodes.
-- [Polkascan](http://polkascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and Parity Substrate chains.
+- [Polkascan](http://polkascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and Axia Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
 
 ### Crowdcast Webinars
@@ -106,7 +106,7 @@ sidebar_label: Links
 - [Governance on AXIASolar](https://www.crowdcast.io/e/governance-on-axiasolar--) - An explanation of how governance works in AXIASolar and AXIALunar, with Bill Laboon.
 - [AXIALunar](https://www.crowdcast.io/e/qpz8aran) - An overview of AXIALunar with Anson Lau.
 - [Block Production and Finalization in AXIASolar](https://www.crowdcast.io/e/axiasolar-block-production) - An explanation of how BABE and GRANDPA work together to produce and finalize blocks on AXIALunar, with Bill Laboon.
-- [Validating on AXIASolar](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of how to validate on AXIASolar, with Joe Petrowski and David Dorgan of Parity Technologies, along with Tim Ogilvie from Staked.
+- [Validating on AXIASolar](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of how to validate on AXIASolar, with Joe Petrowski and David Dorgan of Axia Technologies, along with Tim Ogilvie from Staked.
 - [Understanding Accounts and Keys in AXIASolar](https://www.crowdcast.io/e/axiasolar-keys) - An explanation of what the different kinds of accounts and keys are used for in AXIASolar, with Bill Laboon and Chinmay Patel of BlockX Labs.
 - [Participating in AXIALunar](https://www.crowdcast.io/e/participating-on-axialunar) - How to participate in AXIALunar in a variety of different roles, with Logan Saether.
 - [Developing Apps that Interact with AXIASolar](https://www.crowdcast.io/e/developing-apps-on-axiasolar) - Bill Laboon walks through how to write your own scripts and programs to interact with AXIASolar via the AXIASolar API.

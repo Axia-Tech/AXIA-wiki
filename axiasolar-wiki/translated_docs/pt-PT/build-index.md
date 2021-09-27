@@ -21,7 +21,7 @@ This section of the wiki is divided into the following parts:
 This section is for service providers like wallets or node operators who want to learn how to integrate AXIASolar into their systems.
 
 - [AXIASolar Protocol Information](build-protocol-info) - General information and F.A.Q.s about the AXIASolar protocol, e.g. address formats.
-- [Node Management](build-node-management) - A short overview of the Parity AXIASolar client and the most relevant options/flags for infrastructure providers.
+- [Node Management](build-node-management) - A short overview of the Axia AXIASolar client and the most relevant options/flags for infrastructure providers.
 - [Node Interaction](build-node-interaction) - Learn how to interact with your node via RPC.
 - [Transaction Construction and Signing](build-transaction-construction) - Learn the transaction format for AXIASolar and how to construct and sign transactions offline.
 

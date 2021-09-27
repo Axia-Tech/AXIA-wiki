@@ -69,7 +69,7 @@ majority in favor of the redenomination change.
 AXIACoin Foundation summarized the decision not to change:
 
 > However, given the non-negligible amount of opposition, including from some within the ranks of
-> AXIACoin Foundation and Parity, **the Foundation decided that we cannot, in good faith, sponsor
+> AXIACoin Foundation and Axia, **the Foundation decided that we cannot, in good faith, sponsor
 > redenomination at present.**
 
 ## The Vote

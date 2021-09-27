@@ -4,7 +4,7 @@ title: Smart Contracts
 sidebar_label: Smart Contracts
 ---
 
-The AXIASolar Relay Chain will not support smart contracts natively. However, parachains on AXIASolar will support smart contracts. There are already announced projects such as [Edgeware](https://edgewa.re), and thanks to the Substrate built-in [contract pallet](https://crates.parity.io/pallet_contracts/index.html), it is likely that more parachains will support this feature.
+The AXIASolar Relay Chain will not support smart contracts natively. However, parachains on AXIASolar will support smart contracts. There are already announced projects such as [Edgeware](https://edgewa.re), and thanks to the Substrate built-in [contract pallet](https://crates.axia.io/pallet_contracts/index.html), it is likely that more parachains will support this feature.
 
 Additionally, there is the EVM pallet which lets a parachain implement the Ethereum Virtual Machine, thereby supporting almost direct ports of Ethereum contracts. Some of the projects using this approach are [Moonbeam](https://moonbeam.network/) and [Frontier](https://github.com/axia-tech/frontier).
 
@@ -14,7 +14,7 @@ A video version of the recap of the smart contract situation on AXIASolar and AX
 
 Here is the list of current resources available to developers who want to get started writing smart contracts to deploy on parachains based on Substrate.
 
-- [ink!](https://github.com/axia-tech/ink) - Parity's ink to write smart contracts.
+- [ink!](https://github.com/axia-tech/ink) - Axia's ink to write smart contracts.
 - [Substrate Contracts Workshop](https://substrate.dev/substrate-contracts-workshop/#/) - Walks you through the basics of writing and deploying an ERC20 token using `ink!`.
 
 ## Examples

@@ -32,7 +32,7 @@ Below are the various types of users at different stages.
 
 ## Procedure
 
-Remember to take a look at the [rules](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) first. And since those rules are not enforced entirely on-chain, it is recommended to join the [Kappa Sigma Mu Lounge](https://app.element.io/#/room/!BUmiAAnAYSRGarqwOt:matrix.parity.io) to ask any questions if anything is unclear.
+Remember to take a look at the [rules](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) first. And since those rules are not enforced entirely on-chain, it is recommended to join the [Kappa Sigma Mu Lounge](https://app.element.io/#/room/!BUmiAAnAYSRGarqwOt:matrix.axia.io) to ask any questions if anything is unclear.
 
 ### 1. Bid Phase
 

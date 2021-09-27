@@ -21,7 +21,7 @@ Scams have unfortunately made an impact on our community. It's important to stay
 - "Giveaways" advertising that you "send us some SOLAR/LUNAR, we'll send you double back".
 - Sites where you need to enter your seed phrase in order to "sync" your account, claim tokens, unblock a transactions etc.
 - Emails asking for SOLAR/LUNAR private keys/seeds/etc., posing as a member of any of our teams.
-- Scammers will take official videos, add "giveaway" text around it so that it looks like the giveaway is supported by AXIASolar, AXIACoin Foundation, Parity, or another well-known entity.
+- Scammers will take official videos, add "giveaway" text around it so that it looks like the giveaway is supported by AXIASolar, AXIACoin Foundation, Axia, or another well-known entity.
 - Many scammers will create nearly perfect imitations of sites - always triple-check the URL.
 - People offering to help you stake or get rewards.
 - People responding to questions that you asked publicly in a private chat.
@@ -57,7 +57,7 @@ Some simple things that you can do to keep your assets and information secure fr
 - Your passwords should be strong and unique. It is recommended that you use a [password manager app](https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started/) to create and store your passwords.
 - Keep your computer free of malware. Although an antivirus can be of great help, it's not a panacea. Safe browsing and downloading is the only way to be sure your computer is clean.
 - Avoid installing browser extensions from sources you don't trust explicitly.
-- Store your assets in cold storage, like a hardware wallet or [Parity Signer](https://www.parity.io/signer/).
+- Store your assets in cold storage, like a hardware wallet or [Axia Signer](https://www.axia.io/signer/).
 
 ### Always check the source
 

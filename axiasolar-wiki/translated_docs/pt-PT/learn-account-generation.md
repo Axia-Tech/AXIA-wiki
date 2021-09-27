@@ -10,7 +10,7 @@ There are several ways to generate a AXIASolar address:
 - [AXIASolar.js Browser Plugin](#axiasolarjs-browser-plugin) **RECOMMENDED FOR MOST USERS**
 - [Subkey](#subkey) **ADVANCED and MOST SECURE**
 - [AXIASolar.js Web Apps](#axiasolarjs)
-- [Parity Signer](#parity-signer)
+- [Axia Signer](#axia-signer)
 
 > To learn more on how to create AXIASolar accounts, head over to our [video](https://www.youtube.com/watch?v=hhUZ40ZWqkE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=19)
 
@@ -34,7 +34,7 @@ The axiasolar.js plugin provides a reasonable balance of security and usability.
 
 This method involves installing the axiasolar.js plugin and using it as a “virtual vault," separate from your browser, to store your private keys. It also allows signing of transactions and similar functionality.
 
-It is still running on the same computer you use to connected to the internet with and thus is less secure than using Parity Signer or other air-gapped protocols.
+It is still running on the same computer you use to connected to the internet with and thus is less secure than using Axia Signer or other air-gapped protocols.
 
 ### Install the Browser Plugin
 
@@ -190,29 +190,29 @@ Other calls work exactly the same - if a multi-sig wants to become a Council mem
 
 Signatories should communicate off-chain to prevent many pending transactions and crossed communication lines on-chain.
 
-## Parity Signer
+## Axia Signer
 
-Parity Signer is a secure way of storing your SOLARs on an air-gapped device. It is highly recommended that you turn off wifi, cellular network, Bluetooth, NFC, and any other communications methods after installing it. If you have any communications methods turned on, you will see an "unshielded" icon in red on the top-right corner that indicates your connection may not be secure.
+Axia Signer is a secure way of storing your SOLARs on an air-gapped device. It is highly recommended that you turn off wifi, cellular network, Bluetooth, NFC, and any other communications methods after installing it. If you have any communications methods turned on, you will see an "unshielded" icon in red on the top-right corner that indicates your connection may not be secure.
 
 ### Create Account
 
 Click "Create" to create an identity, or "recover" if you have previously backed up the recovery phrase. You can have multiple identities on one device. Each identity can manage multiple addresses on different networks.
 
-![Parity Signer Create Account 1](assets/accounts/ps-create-1.jpg)
+![Axia Signer Create Account 1](assets/accounts/ps-create-1.jpg)
 
 ### Name Account
 
 Input the name for your identity and then click "Create".
 
-![Parity Signer Create Account 2](assets/accounts/ps-create-2.jpg)
+![Axia Signer Create Account 2](assets/accounts/ps-create-2.jpg)
 
 ### Backup Account
 
-Parity Signer will then generate a recovery phrase for you and display it in the form of 12 or 24 words.
+Axia Signer will then generate a recovery phrase for you and display it in the form of 12 or 24 words.
 
-You should write down this recovery phrase on paper and store it somewhere safe, secret, and secure. If you cannot access your account via your phone for some reason, you can simply re-enter your recovery phrase on another phone that has Parity Signer installed, and have access to your account once again. This is the only way to recover your account, and anyone who has access to these words will also have access to your account. Therefore, it is a good idea to write them down and store them in multiple secure places!
+You should write down this recovery phrase on paper and store it somewhere safe, secret, and secure. If you cannot access your account via your phone for some reason, you can simply re-enter your recovery phrase on another phone that has Axia Signer installed, and have access to your account once again. This is the only way to recover your account, and anyone who has access to these words will also have access to your account. Therefore, it is a good idea to write them down and store them in multiple secure places!
 
-![Parity Signer Create Account 3](assets/accounts/ps-create-3.jpg)
+![Axia Signer Create Account 3](assets/accounts/ps-create-3.jpg)
 
 Please see above for information on [storing your key safely](#disclaimer-key-security).
 
@@ -222,16 +222,16 @@ After confirming that you have backed up your seed, a new textbox will appear in
 
 Note that if someone knows the 12/24 words in your recovery phrase, they will still have control over your account, even if they do not know the PIN.
 
-![Parity Signer Create Account 4](assets/accounts/ps-create-4.jpg)
+![Axia Signer Create Account 4](assets/accounts/ps-create-4.jpg)
 
 ### Get Address
 
 Choose which network you would like to create an address on by clicking the name of the network. For example, if you select "AXIASolar", a new AXIASolar address will be created for you under this identity.
 
-![Parity Signer Create Account 5](assets/accounts/ps-create-5.jpg)
+![Axia Signer Create Account 5](assets/accounts/ps-create-5.jpg)
 
 ### Your Address
 
-The address will be shown as a QR code. You can import your address to the AXIASolarJS Apps by going to the [Accounts](https://axiasolar.js.org/apps/#/accounts) page on an Internet-connected computer and click "Add via QR", and following the instructions to add the account. An account created this way will always require you to sign messages with your Parity Signer device. It will do this only by scanning and displaying QR codes, leaving even someone with total control of your internet-connected computer a very small and limited scope for interacting with the Parity Signer device, which can continue to keep your key safe.
+The address will be shown as a QR code. You can import your address to the AXIASolarJS Apps by going to the [Accounts](https://axiasolar.js.org/apps/#/accounts) page on an Internet-connected computer and click "Add via QR", and following the instructions to add the account. An account created this way will always require you to sign messages with your Axia Signer device. It will do this only by scanning and displaying QR codes, leaving even someone with total control of your internet-connected computer a very small and limited scope for interacting with the Axia Signer device, which can continue to keep your key safe.
 
-![Parity Signer Create Account 6](assets/accounts/ps-create-6.jpg)
+![Axia Signer Create Account 6](assets/accounts/ps-create-6.jpg)

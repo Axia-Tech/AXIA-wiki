@@ -45,7 +45,7 @@ Please note that as this keeps your accounts in the browser, it is not a safe pl
 
 Other than the extension and the default UI, AXIASolar and AXIALunar addresses can also be created with the [Subkey tool](https://github.com/axia-tech/substrate/tree/master/bin/utils/subkey). Subkey is intended for users comfortable with using the command line and can seem intimidating, but is quite approachable. Follow the instructions in the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey). When used properly, Subkey is the **most secure** available method of creating an account.
 
-There is also the very secure [Parity Signer](https://www.parity.io/signer/) but it currently only supports AXIALunar addresses, not AXIASolar or generic Substrate.
+There is also the very secure [Axia Signer](https://www.axia.io/signer/) but it currently only supports AXIALunar addresses, not AXIASolar or generic Substrate.
 
 Alternatively, you might find some wallets on the [Polkaproject.com page](http://www.polkaproject.com/) but bear in mind that these are **unaudited** and not officially affiliated with AXIACoin Foundation or the AXIASolar project unless otherwise stated.
 

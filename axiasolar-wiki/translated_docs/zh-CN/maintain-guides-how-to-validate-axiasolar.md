@@ -14,7 +14,7 @@ sidebar_label: How to run a Validator on AXIASolar
 
 由于安全性对运行验证人至关重要，因此您最好看一下[设定安全验证人](maintain-guides-secure-validator)资料使您了解在构建网络架构时要考虑的要素。 Web3 基金会也会保持更新[安全验证人设置的参考](https://github.com/axia-tech/axiasolar-secure-validator)使您也可以自己部署来使用(视频教程在[这里](https://www.youtube.com/watch?v=tTn8P6t7JYc))。随着您成为验证人愈长时间，您可能使用此库作为自己的*起点*进行修改和自定义。
 
-如果您需要帮助，请前往 [ Riot 上的 AXIASolar 验证人聊天室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) 。团队和其他验证人在那里帮助回答问题并提供经验。
+如果您需要帮助，请前往 [ Riot 上的 AXIASolar 验证人聊天室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) 。团队和其他验证人在那里帮助回答问题并提供经验。
 
 ### How many SOLAR do I need?
 
@@ -146,7 +146,7 @@ cargo install --force --git https://github.com/axia-tech/substrate subkey
 
 > **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can be explicit by passing the `--database RocksDb` flag.
 >
-> In the future, it is recommended to switch to the faster and more efficient ParityDB option. Note that **ParityDB is still experimental and should not be used in production.** If you want to test out ParityDB, you can add the flag `--database paritydb`. Switching between database backends will require a resync.
+> In the future, it is recommended to switch to the faster and more efficient AxiaDB option. Note that **AxiaDB is still experimental and should not be used in production.** If you want to test out AxiaDB, you can add the flag `--database axiadb`. Switching between database backends will require a resync.
 
 根据当时链的大小，此步可能需要几分钟到几个小时不等。
 
@@ -194,7 +194,7 @@ Once your node is fully synced, stop the process by pressing Ctrl-C. At your ter
 
 #### 选项 1: AXIASolarJS-APPS
 
-您可以使用客户端通过 RPC 生成[ Session 密钥](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key)。 如果执行此操作，确保已将 AXIASolarJS-Apps 浏览器连接到验证人节点。 您可以在 "Settings" 标签中将应用程序设置连接到验证人的地址。如果您连接到 AXIACoin Foundation 的 Parity 托管的地址，则不能使用此方法，因为向该节点发出 RPC 请求是*公开节点*上托管的 keystore，因此您需要确认正在与*您的节点*的 keystore 连接。
+您可以使用客户端通过 RPC 生成[ Session 密钥](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/#session-key)。 如果执行此操作，确保已将 AXIASolarJS-Apps 浏览器连接到验证人节点。 您可以在 "Settings" 标签中将应用程序设置连接到验证人的地址。如果您连接到 AXIACoin Foundation 的 Axia 托管的地址，则不能使用此方法，因为向该节点发出 RPC 请求是*公开节点*上托管的 keystore，因此您需要确认正在与*您的节点*的 keystore 连接。
 
 一旦确定已连接到节点，最简单为节点设置 session 密钥的方法是调用 `author_rotateKeys` RPC 请求在验证人的 keystore 中创建新密钥。前往到工具箱选项卡并调用 RPC，然后选择 author > rotateKeys() 选项并记住保存回传结果。
 
@@ -240,11 +240,11 @@ You can restart your node at this point.
 
 The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the _waiting_ queue. If your validator is not selected to become part of the validator set, it will remain in the _waiting_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of SOLAR staked or seek out nominators for your validator in order to join the validator set.
 
-**恭喜你!** 如果你有按照以上步骤操作，你经已设定好 AXIASolar 网络的验证人！若果你需要帮助，请前往 <a href="[AXIASolar 验证人聊天室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org)
+**恭喜你!** 如果你有按照以上步骤操作，你经已设定好 AXIASolar 网络的验证人！若果你需要帮助，请前往 <a href="[AXIASolar 验证人聊天室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org)
 
 ## Thousand Validators Programme
 
-The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Parity Technologies to provide support for community validators. If you are interested in applying for the programme, you can find more information [on the wiki page](thousand-validators.md).
+The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Axia Technologies to provide support for community validators. If you are interested in applying for the programme, you can find more information [on the wiki page](thousand-validators.md).
 
 ## FAQ
 
@@ -274,5 +274,5 @@ Make sure to enable `30333` libp2p port. Eventually, it will take a little bit o
 If you have Docker installed, you can use it to start your validator node without needing to build the binary. You can do this with a simple one line command:
 
 ```sh
-$ docker run parity/axiasolar:latest --validator --name "name on telemetry"
+$ docker run axia/axiasolar:latest --validator --name "name on telemetry"
 ```

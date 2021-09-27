@@ -36,7 +36,7 @@ sidebar_label: Создание транзакций
 1. Сериализовать подписанную полезную информацию в транзакцию.
 1. Отправить сериализованную транзакцию.
 
-Parity предоставляет следующие инструменты для выполнения этих шагов.
+Axia предоставляет следующие инструменты для выполнения этих шагов.
 
 ## AXIASolar-JS Tools
 
@@ -70,7 +70,7 @@ yarn run:signer sign --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 
 
 ## Tx Оболочка/Tx Wrapper
 
-Если Вы не хотите использовать CLI для операций подписи, Parity предоставляет SDK с именем [TxWrapper](https://github.com/axia-tech/txwrapper) для генерации и подписания транзакций в автономном режиме. Посмотреть на [примеры](https://github.com/axia-tech/txwrapper/tree/master/examples) из руководства.
+Если Вы не хотите использовать CLI для операций подписи, Axia предоставляет SDK с именем [TxWrapper](https://github.com/axia-tech/txwrapper) для генерации и подписания транзакций в автономном режиме. Посмотреть на [примеры](https://github.com/axia-tech/txwrapper/tree/master/examples) из руководства.
 
 **Импорт приватного ключа**
 

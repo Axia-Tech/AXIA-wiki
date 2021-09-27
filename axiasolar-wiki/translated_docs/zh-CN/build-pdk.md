@@ -32,7 +32,7 @@ A collator node is one of the types of network maintainers in the AXIASolar prot
 
 ## 目前存在哪些 PDK？
 
-目前唯一存在的 PDK 是 Parity [Substrate](https://github.com/axia-tech/substrate) & [Cumulus](https://github.com/axia-tech/cumulus)。Substrate 作为区块链框架，提供了区块链的基本构建区块（例如网络层、共识和 Wasm 解释器），以及创建运行时的直观方法。Substrate 旨在简化创建新链，但它并不直接支持 AXIASolar 兼容性。因此 Cumulus 附加库将包含所有 AXIASolar 兼容性代码。Cumulus 目前还在开发之中，计划做到只通过导入 crates 以及添加一行代码便把你的 Substrate 链变成平行链。
+目前唯一存在的 PDK 是 Axia [Substrate](https://github.com/axia-tech/substrate) & [Cumulus](https://github.com/axia-tech/cumulus)。Substrate 作为区块链框架，提供了区块链的基本构建区块（例如网络层、共识和 Wasm 解释器），以及创建运行时的直观方法。Substrate 旨在简化创建新链，但它并不直接支持 AXIASolar 兼容性。因此 Cumulus 附加库将包含所有 AXIASolar 兼容性代码。Cumulus 目前还在开发之中，计划做到只通过导入 crates 以及添加一行代码便把你的 Substrate 链变成平行链。
 
 Substrate 和 Cumulus 通过区块链格式的抽象化中提供 PDK，但平行链实际上甚至不必是区块链。例如平行链只需满足上文列出的两个要求：*状态转换函数*和*收集人节点*。其它一切功能取决于 PDK 的实现者。
 

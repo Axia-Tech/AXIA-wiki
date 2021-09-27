@@ -6,13 +6,13 @@ sidebar_label: Node Interaction
 
 This page will guide you through some basic interactions with your node. Always refer to the proper documentation for the tool you are using. This guide should _guide you to the proper tools,_ not be seen as canonical reference.
 
-- [Substrate RPC API](https://crates.parity.io/sc_rpc_api/index.html)
+- [Substrate RPC API](https://crates.axia.io/sc_rpc_api/index.html)
 - [AXIASolar JS RPC Documentation](https://axiasolar.js.org/api/substrate/rpc.html)
 - [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar)
 
 ## AXIASolar RPC
 
-The Parity AXIASolar client exposes HTTP and WS endpoints for RPC connections. The default ports are 9933 for HTTP and 9944 for WS.
+The Axia AXIASolar client exposes HTTP and WS endpoints for RPC connections. The default ports are 9933 for HTTP and 9944 for WS.
 
 To get a list of all RPC methods, the node has an RPC endpoint called `rpc_methods`.
 
@@ -40,7 +40,7 @@ Use the RPC endpoint `chain_subscribeFinalizedHeads` to subscribe to a stream of
 
 ## Substrate API Sidecar
 
-Parity maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It handles the metadata and codec logic so that you are always dealing with decoded information. It also aggregates information that an infrastructure business may need for accounting and auditing, e.g. transaction fees.
+Axia maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It handles the metadata and codec logic so that you are always dealing with decoded information. It also aggregates information that an infrastructure business may need for accounting and auditing, e.g. transaction fees.
 
 The sidecar can fetch blocks, get the balance of an address atomically (i.e., with a corresponding block number), get the chain's metadata, get a transaction fee prediction, and submit transactions to a node's transaction queue. If you have any feature/endpoint requests, log an issue in the [repo](https://github.com/axia-tech/substrate-api-sidecar).
 

@@ -7,7 +7,7 @@ description: Step-by-step guides on backing up and restoring a AXIASolar account
 
 Depending on what software you are using to access your account, there are various ways to back up and restore your account. It is a good idea to back your information up and keep it in a secure place.. Note that in order to recover an account, you should create your account according to the instructions [here](learn-account-generation). In general, however, as long as you know how you created your account, and have the seed phrase (mnemonic phrase) or JSON file (and password) stored securely, you will be able to restore your account.
 
-This page covers backing up and restoring accounts in AXIASolar{.js} Browser Plugin, AXIASolar-JS UI, and Parity Signer. For other wallet applications, please see their specific documentation.
+This page covers backing up and restoring accounts in AXIASolar{.js} Browser Plugin, AXIASolar-JS UI, and Axia Signer. For other wallet applications, please see their specific documentation.
 
 ## AXIASolar{.js} Browser Plugin
 
@@ -51,18 +51,18 @@ After this, delete the generated mnemonic phrase (seed words) and replace them w
 
 Finally, click the "Save" button, then click the "Create and backup account" button. This will download the `.json` file which contains the data to be used in account restoration. You can use this JSON file to restore this account in the future using the instructions above, or simply delete the file and continue to use the mnemnonic phrase to restore the account again if necessary.
 
-## Parity Signer
+## Axia Signer
 
-If you've created an account with Parity Signer, you can recover that account with your seed words. If you generated the account with another wallet, there may be additional steps necessary, including setting the derivation path: see [this document](https://github.com/axia-tech/parity-signer/blob/master/docs/tutorials/Recover-Account-AXIASolarjs.md) for details.
+If you've created an account with Axia Signer, you can recover that account with your seed words. If you generated the account with another wallet, there may be additional steps necessary, including setting the derivation path: see [this document](https://github.com/axia-tech/axia-signer/blob/master/docs/tutorials/Recover-Account-AXIASolarjs.md) for details.
 
-On Parity Signer, click on the top right user icon on the screen. Proceed to "+ Add Identity". On this screen, tap on the "recover existing identity" button.
+On Axia Signer, click on the top right user icon on the screen. Proceed to "+ Add Identity". On this screen, tap on the "recover existing identity" button.
 
-![restore-using-parity](assets/parity_Signer_restore1.PNG)
+![restore-using-axia](assets/axia_Signer_restore1.PNG)
 
 Enter in the identity name and the mnemonic seed phrase from the account you'd like to restore.
 
 Set an identity PIN that will be used to unlock this account when you need to.
 
-![restore-using-parity](assets/parity_Signer_restore2.PNG)
+![restore-using-axia](assets/axia_Signer_restore2.PNG)
 
 The identity has now been recovered and you can select a network to create the first account.

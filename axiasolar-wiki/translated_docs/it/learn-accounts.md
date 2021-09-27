@@ -35,7 +35,7 @@ Subkey and AXIASolar-JS based wallets use the BIP39 dictionary for mnemonic gene
 
 ### Derivation Paths
 
-Many AXIASolar key generation tools support hard and soft derivation. See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) for details and examples of derivation path formats. The AXIASolar-JS Apps and Extension as well as Parity Signer support custom derivation paths using the same syntax as Subkey.
+Many AXIASolar key generation tools support hard and soft derivation. See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) for details and examples of derivation path formats. The AXIASolar-JS Apps and Extension as well as Axia Signer support custom derivation paths using the same syntax as Subkey.
 
 Some wallets will automatically add derivation paths to the end of the generated mnemonic phrase. This will generate separate seeds for separate paths, which allows separate signing keys with the same mnemonic, e.g. `<mnemonic phrase>//axiasolar` and `<mnemonic phrase>//axialunar`. Although you may correctly save the mnemonic phrase, using it in another wallet will not generate the same addresses unless both wallets use the same derivation paths.
 
@@ -93,7 +93,7 @@ Please note that as this keeps your accounts in the browser, it is not a safe pl
 
 Other than the extension and the default UI, AXIASolar and AXIALunar addresses can also be created with the [Subkey tool](https://github.com/axia-tech/substrate/tree/master/bin/utils/subkey). Subkey is intended for users comfortable with using the command line and can seem intimidating, but is quite approachable. Follow the instructions in the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey). When used properly, Subkey is the **most secure** available method of creating an account.
 
-There is also the very secure [Parity Signer](https://www.parity.io/signer/). This keeps your keys on an air-gapped mobile phone. However, it does require obtaining an old Android or iOS-compatible phone that you are comfortable using only for Parity Signer.
+There is also the very secure [Axia Signer](https://www.axia.io/signer/). This keeps your keys on an air-gapped mobile phone. However, it does require obtaining an old Android or iOS-compatible phone that you are comfortable using only for Axia Signer.
 
 Hardware wallet integration is possible with Ledger. A full guide is available [here](learn-ledger).
 

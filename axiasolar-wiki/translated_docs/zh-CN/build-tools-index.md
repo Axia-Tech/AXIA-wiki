@@ -76,9 +76,9 @@ AXIASolar-JS Common provides various utility functions that are used across all 
 Webassembly related tools and projects.
 
 - [ink!](https://github.com/axia-tech/ink/) - An eDSL to write WebAssembly based smart contracts using the Rust programming language.
-- [parity-wasm](https://github.com/axia-tech/parity-wasm) - Low-level WebAssembly format library.
+- [axia-wasm](https://github.com/axia-tech/axia-wasm) - Low-level WebAssembly format library.
 - [wasm-utils](https://github.com/axia-tech/wasm-utils) - Collection of WebAssembly utilities used in pwasm-ethereum and substrate contract development.
-- [wasmi](https://github.com/axia-tech/wasmi) - A WebAssembly interpreter conceived as a component of parity-ethereum (Ethereum-like contracts in Wasm) and Substrate.
+- [wasmi](https://github.com/axia-tech/wasmi) - A WebAssembly interpreter conceived as a component of axia-ethereum (Ethereum-like contracts in Wasm) and Substrate.
 
 ### RPC and API Tools
 
@@ -102,7 +102,7 @@ It is designed for high-performance, copy-free encoding and decoding of data in 
 It is used in almost all communication to/from Substrate nodes, so implementations in different languages exist:
 
 - [Ruby](https://github.com/itering/scale.rb)
-- [Rust](https://github.com/axia-tech/parity-scale-codec)
+- [Rust](https://github.com/axia-tech/axia-scale-codec)
 - [Go](https://github.com/itering/scale.go)
 - [C++](https://github.com/soramitsu/kagome/tree/master/core/scale)
 - [TypeScript](https://github.com/axiasolar-js/api)
@@ -116,7 +116,7 @@ It is used in almost all communication to/from Substrate nodes, so implementatio
 The following tools help you extract and structure data from a Substrate node.
 
 - [Polkascan PRE Harvester](https://github.com/polkascan/polkascan-pre-harvester) ([matching explorer for harvested data](https://github.com/polkascan/polkascan-pre-explorer-gui)) - Transforms raw blockchain data into relational data.
-- [Parity's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL database.
+- [Axia's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL database.
 - [Hydra: GraphQL Builder](https://github.com/Joystream/joystream/tree/query_node/query-node) - Generate a GraphQL database from a Substrate chain's data.
 - [Polka-store](https://github.com/TheGoldenEye/polka-store) - A tool which scans a Substrate chain and stores balance-relevant transactions in an SQLite database.
 - [Substrate-graph](https://github.com/playzero/substrate-graph) - A compact indexer for Substrate based nodes providing a GraphQL interface.

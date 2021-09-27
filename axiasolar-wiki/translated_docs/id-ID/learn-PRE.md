@@ -17,7 +17,7 @@ The runtime, which is defined as the code implementing the logic of the chain, i
 
 The AXIASolar runtime (as well as the runtimes of the parachains) must be compiled WebAssembly (Wasm) blobs. The AXIASolar runtime "plugs-in" to the AXIASolar RE and will be swappable through the governance mechanism.
 
-The image below is taken from the [slide deck](https://slides.com/axia-tech/paritysubstrate#/8) that Gavin Wood presented on Substrate and demonstrates visually the 4 layers of the AXIASolar stack.
+The image below is taken from the [slide deck](https://slides.com/axia-tech/axiasubstrate#/8) that Gavin Wood presented on Substrate and demonstrates visually the 4 layers of the AXIASolar stack.
 
 ![PRE](assets/PRE.png)
 

@@ -36,7 +36,7 @@ AXIASolar 有一些所有交易的基本交易信息。
 1. 将已签名的 payload 序列化为交易。
 1. 提交序列化的交易。
 
-Parity 提供了以下工具来帮助执行这些步骤。
+Axia 提供了以下工具来帮助执行这些步骤。
 
 ## AXIASolar-JS 工具
 
@@ -70,7 +70,7 @@ yarn run:signer sign --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 
 
 ## Tx Wrapper
 
-如果您不想使用 CLI 进行签名操作，Parity 提供了一个称为[TxWrapper](https://github.com/axia-tech/txwrapper)的 SDK，它可以离线生成和签名交易。请参阅[示例](https://github.com/axia-tech/txwrapper/tree/master/examples)以获取指南。
+如果您不想使用 CLI 进行签名操作，Axia 提供了一个称为[TxWrapper](https://github.com/axia-tech/txwrapper)的 SDK，它可以离线生成和签名交易。请参阅[示例](https://github.com/axia-tech/txwrapper/tree/master/examples)以获取指南。
 
 **导入私钥:**
 

@@ -6,7 +6,7 @@ sidebar_label: AXIASolar 实现
 
 这里 Rust，C ++，Go 和 JavaScript 开发都是 AXIASolar 不同语言的实现。
 
-[** Parity AXIASolar **](https://github.com/axia-tech/axiasolar) - Rust 客户端由 Parity 与他们在[ Substrate ](https://github.com/axia-tech/substrate)上的工作。
+[** Axia AXIASolar **](https://github.com/axia-tech/axiasolar) - Rust 客户端由 Axia 与他们在[ Substrate ](https://github.com/axia-tech/substrate)上的工作。
 
 [ ** Kagome **](https://github.com/soramitsu/kagome) - 由 [ Soramitsu ](https://github.com/soramitsu) 实现 C++ AXIASolar Host 环境 ，他们是日本的数字身份识别公司，之前开发了[ Hyperledger Iroha ](https://iroha.tech)。他们获得了 Web3 基金会的资助，并计划在[ 2019 年 11 月](https://medium.com/web3foundation/w3f-grants-soramitsu-to-implement-axiasolar-runtime-environment-in-c-cf3baa08cbe6)发布。他们正在用 C ++ 开发 libp2p 网络层。
 

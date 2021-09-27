@@ -90,7 +90,7 @@ A soft derivation allows someone to potentially "go backwards" to figure out the
 
 See the
 [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) for details and
-examples of derivation path formats. The AXIASolar-JS Apps and Extension as well as Parity Signer
+examples of derivation path formats. The AXIASolar-JS Apps and Extension as well as Axia Signer
 support custom derivation paths using the same syntax as Subkey.
 
 Some wallets will automatically add derivation paths to the end of the generated mnemonic phrase.
@@ -196,9 +196,9 @@ approachable. Follow the instructions in the
 [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey). When used
 properly, Subkey is the **most secure** available method of creating an account.
 
-There is also the very secure [Parity Signer](https://www.parity.io/signer/). This keeps your keys
+There is also the very secure [Axia Signer](https://www.axia.io/signer/). This keeps your keys
 on an air-gapped mobile phone. However, it does require obtaining an old Android or iOS-compatible
-phone that you are comfortable using only for Parity Signer.
+phone that you are comfortable using only for Axia Signer.
 
 Hardware wallet integration is possible with Ledger. A full guide is available
 [here](../general/ledger.md).

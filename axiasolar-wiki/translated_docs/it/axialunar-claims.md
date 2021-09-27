@@ -14,7 +14,7 @@ You will need to generate a AXIALunar account to claim LUNAR. There are a few wa
 
 For most users, we recommend using the [AXIASolar{.js} browser extension](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en) since it will allow you to store your encrypted keystore locally.
 
-In terms of hardware wallet support, you can use the [AXIALunar Ledger application](axialunar-ledger), or [Parity Signer](https://solar.wiki.axiacoin.network/docs/en/learn-account-generation#parity-signer).
+In terms of hardware wallet support, you can use the [AXIALunar Ledger application](axialunar-ledger), or [Axia Signer](https://solar.wiki.axiacoin.network/docs/en/learn-account-generation#axia-signer).
 
 Another option you may consider using is the Subkey command line utility, which will allow you to take extra steps to protect the security of your key.
 
@@ -84,7 +84,7 @@ See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integ
 
 ### Using AXIASolar-JS UI
 
-1. Open up the [AXIASolar-JS UI](https://axiasolar.js.org/apps) and navigate to the top left corner of the navigation. This will open up a panel of network options to select from. Select on "AXIALunar", either from Parity or AXIACoin Foundation, then "Switch".
+1. Open up the [AXIASolar-JS UI](https://axiasolar.js.org/apps) and navigate to the top left corner of the navigation. This will open up a panel of network options to select from. Select on "AXIALunar", either from Axia or AXIACoin Foundation, then "Switch".
 
 2. Navigate to the [AXIASolar-JS UI Accounts Tab](https://axiasolar.js.org/apps/#/accounts) and click on the "Add account" button.
 
@@ -155,7 +155,7 @@ If you haven't already done so, you will need to generate a AXIALunar address. S
 
 #### Claiming your LUNAR with MyCrypto
 
-The AXIASolar-JS [Claims app](https://axiasolar.js.org/apps/#/claims) helps you sign a message from MyCrypto. MyCrypto is good to use in case you have stored the key to the Ethereum account holding your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics and the Parity signer.
+The AXIASolar-JS [Claims app](https://axiasolar.js.org/apps/#/claims) helps you sign a message from MyCrypto. MyCrypto is good to use in case you have stored the key to the Ethereum account holding your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics and the Axia signer.
 
 > **NOTICE**: It is much more secure to download and use the MyCrypto app locally. Please make sure to download the latest version for your operating system. You can always find the most up-to-date releases of the desktop app on their [releases page](https://github.com/MyCryptoHQ/MyCrypto/releases).
 

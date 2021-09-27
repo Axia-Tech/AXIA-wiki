@@ -59,4 +59,4 @@ the row "Members".
 
 Now you are able to participate on the council by making motions or voting proposals. To join in on
 the active discussions, join the
-[AXIASolar Direction channel](https://matrix.to/#/#axiasolar-direction:matrix.parity.io).
+[AXIASolar Direction channel](https://matrix.to/#/#axiasolar-direction:matrix.axia.io).

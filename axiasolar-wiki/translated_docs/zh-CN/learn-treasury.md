@@ -43,14 +43,14 @@ Please note that there is no way for a user to revoke a treasury proposal after 
 
 To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal. Most discussion takes place on the following platforms:
 
-- Many community members participate in discussion in the [AXIALunar Element (previously Riot)](https://riot.w3f.tech/#/room/#axialunar:matrix.parity.io) chat.
+- Many community members participate in discussion in the [AXIALunar Element (previously Riot)](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) chat.
 - The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
 - The {{ axiasolar: [AXIASolar forum](https://forum.axiacoin.network) :axiasolar }}
   {{ axialunar: [AXIALunar forum](https://forum.axialunar.network) :axialunar }} can be used for proposal explanations.
 - [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} address and automatically reads proposals from the chain, turning them into discussion threads.
 
-Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Element channels like {{ axiasolar: the [AXIASolar Watercooler](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) and [AXIASolar Direction room](https://app.element.io/#/room/#axiasolar-direction:matrix.parity.io) :axiasolar }}
-{{ axialunar: the [AXIALunar Direction room](https://app.element.io/#/room/#axialunar:matrix.parity.io) or the [AXIALunar Watercooler](https://app.element.io/#/room/#axialunarwatercooler:axiasolar.builders) :axialunar }}.
+Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Element channels like {{ axiasolar: the [AXIASolar Watercooler](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) and [AXIASolar Direction room](https://app.element.io/#/room/#axiasolar-direction:matrix.axia.io) :axiasolar }}
+{{ axialunar: the [AXIALunar Direction room](https://app.element.io/#/room/#axialunar:matrix.axia.io) or the [AXIALunar Watercooler](https://app.element.io/#/room/#axialunarwatercooler:axiasolar.builders) :axialunar }}.
 
 ### Creating the Proposal
 
@@ -137,10 +137,10 @@ Anyone can create a Bounty proposal using AXIASolar JS Apps: Users are able to s
 To submit a bounty, please visit [AXIASolar JS Apps](https://axiasolar.js.org/apps) and click on the governance tab in the options bar on the top of the site. After, click on 'Bounties' and find the button '+ Add Bounty' on the upper-right side of the interface. Complete the bounty title, the requested allocation (including curator's fee) and confirm the call.
 
 After this, a Council member will need to assist you to pass the bounty proposal for vote as a motion. You can contact the Council by joining the
-{{ axiasolar: AXIASolar Direction [channel](https://parity.link/axiasolar-direction) :axiasolar }}
-{{ axialunar: AXIALunar Direction [channel](https://parity.link/axialunar-direction) :axialunar }} in Element or joining our
-{{ axiasolar: AXIASolar Discord [server](https://parity.link/axiasolar-discord) :axiasolar }}
-{{ axialunar: AXIALunar Discord [server](https://parity.link/axialunar-discord) :axialunar }} and publishing a short description of your bounty, with a link to one of the [forums](#announcing-the-proposal) for contextual information.
+{{ axiasolar: AXIASolar Direction [channel](https://axia.link/axiasolar-direction) :axiasolar }}
+{{ axialunar: AXIALunar Direction [channel](https://axia.link/axialunar-direction) :axialunar }} in Element or joining our
+{{ axiasolar: AXIASolar Discord [server](https://axia.link/axiasolar-discord) :axiasolar }}
+{{ axialunar: AXIALunar Discord [server](https://axia.link/axialunar-discord) :axialunar }} and publishing a short description of your bounty, with a link to one of the [forums](#announcing-the-proposal) for contextual information.
 
 A bounty can be cancelled by deleting the earmark for a specific treasury amount or be closed if the tasks have been completed. On the opposite side, the 90 days life of a bounty can be extended by amending the expiry block number of the bounty to stay active.
 

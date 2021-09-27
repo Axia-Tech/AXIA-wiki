@@ -10,7 +10,7 @@ Currently, AXIALunar is a healthy Proof-of-Stake network with over 500 validator
 
 ## Rollout plan
 
-The rollout of full functionality of AXIALunar was staggered to allow for a safe transition. The first PoS phase began with 20 validators. Of the 20, the AXIACoin Foundation ran nine and Parity Technologies ran six. Five were ran by highly staked community members as voted in by the Phragmén election.
+The rollout of full functionality of AXIALunar was staggered to allow for a safe transition. The first PoS phase began with 20 validators. Of the 20, the AXIACoin Foundation ran nine and Axia Technologies ran six. Five were ran by highly staked community members as voted in by the Phragmén election.
 
 When the initial transition was successful, additional validator spots were opened 10 at a time in order to allow for more validators to enter the active set.
 

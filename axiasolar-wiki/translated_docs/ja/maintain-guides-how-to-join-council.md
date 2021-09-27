@@ -40,4 +40,4 @@ If you are one of the lucky ones to win a council election you will see your acc
 
 ![council members list](assets/council/axiasolarjs_council_members.png)
 
-これであなたも協議会に参加し、提案を行うことができます。よりアクティブなディスカッションに参加するには[AXIALunar ガバナンスチャンネル](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org)まで。
+これであなたも協議会に参加し、提案を行うことができます。よりアクティブなディスカッションに参加するには[AXIALunar ガバナンスチャンネル](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org)まで。

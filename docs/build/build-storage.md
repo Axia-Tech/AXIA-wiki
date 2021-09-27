@@ -64,14 +64,14 @@ as a database-backed, _modified_ Merkle tree. Substrate's higher-layer storage a
 built on the key-value store.
 
 The key-value data store is backed by [RocksDB](https://rocksdb.org/), and it also supports an experimental
-[Parity database](https://github.com/axia-tech/parity-db).
+[Axia database](https://github.com/axia-tech/axia-db).
 
 > The database is used for components that require persistent storage: Substrate clients, Substrate light-clients
 > & off-chain workers. For more information, check out
 > Substrate Developer Hub's [Storage Page](https://substrate.dev/docs/en/knowledgebase/advanced/storage).
 
 When building on Substrate, _runtime developers_ can take advantage of Substrate's FRAME `Storage pallet` which
-gives access to Substrate's storage APIs. These storage items support values that are encoded by Parity's
+gives access to Substrate's storage APIs. These storage items support values that are encoded by Axia's
 `SCALE (Simple Concatenated Aggregate Little-Endian) Codec`.
 
 There is a
@@ -81,7 +81,7 @@ a [`Storage Map`](https://substrate.dev/rustdocs/latest/frame_support/storage/tr
 that is used to a key-value hash map,
 a [`Storage Double Map`](https://substrate.dev/rustdocs/latest/frame_support/storage/trait.StorageDoubleMap.html) API
 that creates a `storage map` with two keys to provide the ability to efficiently remove all entries that have a common
-first key, and a [`Storage N Map`](https://crates.parity.io/frame_support/storage/trait.StorageNMap.html) API that can
+first key, and a [`Storage N Map`](https://crates.axia.io/frame_support/storage/trait.StorageNMap.html) API that can
 be used to store a hash map with any arbitrary number of keys.
 
 These layered APIs act as runtime storage that allows you to store data in your blockchain. More information can be

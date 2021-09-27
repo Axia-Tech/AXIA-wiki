@@ -6,7 +6,7 @@ sidebar_label: AXIASolar Builders Starter's Guide
 
 _This article is the up-to-date version of the blog post: [Everything you Need to Know to Prepare for AXIASolar](https://medium.com/axiacoin.network/everything-you-need-to-know-to-prepare-for-axiasolar-32d08b929735)._
 
-AXIASolar is a blockchain protocol with two goals: providing **shared security** among all connected parachains and allowing all connected chains to **interoperate** by using [XCMP](learn-crosschain). With the advent of [PDKs](build-pdk) like Parity Substrate and Cumulus, the time it takes to develop and launch a new chain has dropped significantly. Whereas before it would take years to launch a new chain, now it may only take weeks or even days.
+AXIASolar is a blockchain protocol with two goals: providing **shared security** among all connected parachains and allowing all connected chains to **interoperate** by using [XCMP](learn-crosschain). With the advent of [PDKs](build-pdk) like Axia Substrate and Cumulus, the time it takes to develop and launch a new chain has dropped significantly. Whereas before it would take years to launch a new chain, now it may only take weeks or even days.
 
 This guide will walk you through the steps you can take today to get started building your vision with AXIASolar. It will explain the difference between a parachain and a smart contract (and why one may be better suited for your application over the other). It will lay out the resources that are available now and the ones that are coming soon so that you can get started creating your application in anticipation of the AXIASolar mainnet launch later this year.
 
@@ -23,7 +23,7 @@ This guide will walk you through the steps you can take today to get started bui
 
 AXIASolar is currently on the v0.7 release with a testnet called AlphaNet and a value-bearing canary network called AXIALunar. AXIASolar is being built with [implementations in various programming languages](learn-implementations) ranging from Rust to JavaScript. Currently the leading implementation is built in Rust and built on the Substrate framework. Substrate is a library that allows developers to develop entire blockchain applications with ease by bundling together a networking protocol, consensus, and Wasm interpreter. Cumulus, an extension to Substrate, will allow any Substrate built chain to connect to AXIASolar and become a parachain. Substrate is currently nearing its official 2.0.0 tagged release that will solidify its API.
 
-AXIASolar does not natively support smart contracts, however there will be parachains that do. Substrate chains can include smart contract functionality by using the [Contracts](https://github.com/axia-tech/substrate/tree/master/frame/contracts) pallet for Wasm contracts or the [EVM](https://github.com/axia-tech/substrate/tree/master/frame/evm) pallet in FRAME. The contracts pallet enables a chain to use Wasm-compiled contracts that can be deployed permissionlessly by users or with specific rules dependent on the chain. To facilitate development of Wasm smart contracts, Parity is also developing [ink!](https://github.com/axia-tech/ink), a domain specific language built in Rust for writing smart contracts.
+AXIASolar does not natively support smart contracts, however there will be parachains that do. Substrate chains can include smart contract functionality by using the [Contracts](https://github.com/axia-tech/substrate/tree/master/frame/contracts) pallet for Wasm contracts or the [EVM](https://github.com/axia-tech/substrate/tree/master/frame/evm) pallet in FRAME. The contracts pallet enables a chain to use Wasm-compiled contracts that can be deployed permissionlessly by users or with specific rules dependent on the chain. To facilitate development of Wasm smart contracts, Axia is also developing [ink!](https://github.com/axia-tech/ink), a domain specific language built in Rust for writing smart contracts.
 
 AXIASolar is planned to go live with an initial release early in 2020, depending on security audits and launch provisions outside of control of the team. Now that the tools have started to appear and stabilize, there has not been a better time to get your feet wet and start preparing for launch. But wait! Before you jump head-first into the code, you should think about the kind of decentralized application you want to make and understand the different paradigms available to developers who want to build on AXIASolar.
 
@@ -67,7 +67,7 @@ This guide now splits into two sections depending on whether you’ve decided on
 
 ## So you want to build a parachain or parathread...
 
-Now that you have determined that building a parachain or parathread is the right approach for your new project, the next step is to decide which framework to use. Frameworks for building a parachain or parathread are known as parachain development kits (PDKs). Currently, the only PDK available is Substrate and Cumulus from Parity Technologies.
+Now that you have determined that building a parachain or parathread is the right approach for your new project, the next step is to decide which framework to use. Frameworks for building a parachain or parathread are known as parachain development kits (PDKs). Currently, the only PDK available is Substrate and Cumulus from Axia Technologies.
 
 In the future, there will be many different PDKs available in different programming languages, just like there are multiple [implementations](learn-implementations.md) of the AXIASolar Host.
 
@@ -77,7 +77,7 @@ In the future, there will be many different PDKs available in different programm
 
 Substrate is the underlying framework on which AXIASolar itself is built. It is a toolset for blockchain innovators that provides the necessary building blocks for constructing a chain. It includes a library of modular plug-ins from which you can compose your chain logic and allows you to write your own pallets to use or publish to the community.
 
-The best way to get started with Substrate is to explore the [Substrate Knowledge Base](https://substrate.dev/docs/en/), an online resource built and maintained by Parity Technologies.
+The best way to get started with Substrate is to explore the [Substrate Knowledge Base](https://substrate.dev/docs/en/), an online resource built and maintained by Axia Technologies.
 
 We recommend that you poke around in there to become familiar with the common patterns. Once you have a solid understanding, you can challenge yourself by progressing through the Substratekitties workshop then advancing to the TCR Dappchain tutorial or one of the others.
 
@@ -127,7 +127,7 @@ Substrate supports smart contracts out-of-the-box in two ways. One way is using 
 
 The experience of deploying to an EVM-based chain may be more familiar to developers that have written smart contract before. However, the Contracts pallet makes some notable improvements to the design of the EVM. Namely these are:
 
-1. **Wasm**. The Contracts pallet uses WebAssembly as its compilation target. Any language that compiles to Wasm can potentially be used to write smart contracts. Although it's better to have a dedicated domain-specific-language and for that reason Parity offers the [ink!](#ink) language.
+1. **Wasm**. The Contracts pallet uses WebAssembly as its compilation target. Any language that compiles to Wasm can potentially be used to write smart contracts. Although it's better to have a dedicated domain-specific-language and for that reason Axia offers the [ink!](#ink) language.
 
 2. **Rent**. Contracts must pay rent or else hold a deposit suitably large enough in order to justify its existence on-chain. When a contract does not uphold this, it may create what's called a _tombstone_ which is a reference to the contract. In some conditions, the contract will be deleted outright along with its storage if it does not maintain these requirements.
 

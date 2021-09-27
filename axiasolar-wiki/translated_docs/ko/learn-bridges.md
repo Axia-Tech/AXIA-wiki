@@ -30,7 +30,7 @@ For the standalone chains that will not have a parachain bridging module on AXIA
 
 Given the generality of blockchain platforms with Turing-complete smart contract languages, it is possible to bridge AXIASolar and any other smart contract capable blockchain (Ethereum, EOS, Tezos, etc).
 
-Those who are already familiar with Ethereum may know of the now archived [Parity Bridge](https://github.com/axia-tech/parity-bridge) and the efforts being made to connect PoA sidechains to the Ethereum mainnet. The Parity bridge is a combination of two smart contracts, one deployed on each chain, that allow for cross-chain transfers of value. As an example of usage, the initial Parity Bridge proof of concept connects two Ethereum chains, `main` and `side`. Ether deposited into the contract on `main` generates a balance denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract on `side` can free up Ether on `main`.
+Those who are already familiar with Ethereum may know of the now archived [Axia Bridge](https://github.com/axia-tech/axia-bridge) and the efforts being made to connect PoA sidechains to the Ethereum mainnet. The Axia bridge is a combination of two smart contracts, one deployed on each chain, that allow for cross-chain transfers of value. As an example of usage, the initial Axia Bridge proof of concept connects two Ethereum chains, `main` and `side`. Ether deposited into the contract on `main` generates a balance denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract on `side` can free up Ether on `main`.
 
 > To learn more on how Bitcoin and Ethereum can Cooperate and Collaborate Through AXIASolar, check out this explainer video [here](https://www.youtube.com/watch?v=rvoFUiOR3cM)
 
@@ -47,7 +47,7 @@ An example of a network that would be well-suited for higher-order protocols wou
 As explained by Dr. Gavin Wood in a [blog post](https://medium.com/axiacoin.network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13) from late 2019, there are three ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
 
 1. AXIASolar <-> Ethereum Public Bridge.
-1. Substrate <-> Parity Ethereum (Openethereum) Bridge.
+1. Substrate <-> Axia Ethereum (Openethereum) Bridge.
 1. The Substrate EVM module.
 
 Please read the blog article for fuller descriptions of each one of these options.
@@ -71,7 +71,7 @@ If your team is interested in building a bridge between an external chain and AX
 
 ### Resources and Examples
 
-- [Parity Bridges Common Resources](https://github.com/axia-tech/parity-bridges-common)
+- [Axia Bridges Common Resources](https://github.com/axia-tech/axia-bridges-common)
 - [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge were awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a Substrate to Ethereum two-way bridge.
 - [PolkaBTC (Bitcoin <> AXIASolar Bridge)](https://docs.polkabtc.io/#/)
 - [EOS Bridge](https://github.com/bifrost-codes/bifrost) - The Bifrost team was awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a bridge to EOS.
@@ -79,6 +79,6 @@ If your team is interested in building a bridge between an external chain and AX
 - [Interlay BTC Bridge](https://interlay.gitlab.io/polkabtc-spec/) - The Interlay team was awarded a grant in W3F grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a trust-minimized BTC bridge.
 - [ChainX BTC Bridge](https://github.com/chainx-org/ChainX/tree/master/xrml/xbridge/bitcoin) - ChainX have implemented a BTC to Substrate bridge for their parachain.
 - [POA Network](https://poa.network/)
-- [Case study](https://medium.com/giveth/ethereum-dapp-scaling-poa-network-acee8a51e772) of POA Network's implementation of Parity's bridge chain solution.
+- [Case study](https://medium.com/giveth/ethereum-dapp-scaling-poa-network-acee8a51e772) of POA Network's implementation of Axia's bridge chain solution.
 - [Edgeth Bridge](https://github.com/hicommonwealth/edgeth_bridge/) - a bridge from Ethereum to Edgeware chain (a Substrate-based chain) - now defunct and not maintained, but a good example.
 - [XCLAIM](https://eprint.iacr.org/2018/643.pdf) - XCLAIM is a framework for achieving trustless and efficient cross-chain exchanges using cryptocurrency-backed assets.

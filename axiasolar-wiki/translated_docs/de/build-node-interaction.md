@@ -12,7 +12,7 @@ This page will guide you through some basic interactions with your node. Always 
 
 ## AXIASolar RPC
 
-The Parity AXIASolar client exposes HTTP and WS endpoints for RPC connections. The default ports are 9933 for HTTP and 9944 for WS.
+The Axia AXIASolar client exposes HTTP and WS endpoints for RPC connections. The default ports are 9933 for HTTP and 9944 for WS.
 
 To get a list of all RPC methods, the node has an RPC endpoint called `rpc_methods`.
 
@@ -40,7 +40,7 @@ Use the RPC endpoint `chain_subscribeFinalizedHeads` to subscribe to a stream of
 
 ## Substrate API Sidecar
 
-Parity maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It handles the metadata and codec logic so that you are always dealing with decoded information. It also aggregates information that an infrastructure business may need for accounting and auditing, e.g. transaction fees.
+Axia maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It handles the metadata and codec logic so that you are always dealing with decoded information. It also aggregates information that an infrastructure business may need for accounting and auditing, e.g. transaction fees.
 
 The sidecar can fetch blocks, get the balance of an address atomically (i.e., with a corresponding block number), get the chain's metadata, get a transaction fee prediction, calculate outstanding staking rewards for an address, submit transactions to a node's transaction queue, and [much more](https://github.com/axia-tech/substrate-api-sidecar#available-paths).
 

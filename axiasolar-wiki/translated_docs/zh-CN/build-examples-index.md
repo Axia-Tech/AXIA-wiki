@@ -12,7 +12,7 @@ For a list of all AXIACoin Foundation grants to teams working on projects that p
 
 ## Substrate Runtimes
 
-### Parity
+### Axia
 
 - [Shasper](https://github.com/axia-tech/shasper) 使用 Substrate 实现 Eth2.0
 - [Substrate TCR](https://github.com/substrate-developer-hub/substrate-tcr) -将 TCR 作为 runtime 模块

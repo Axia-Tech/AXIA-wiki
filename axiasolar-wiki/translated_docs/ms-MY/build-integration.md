@@ -19,6 +19,6 @@ The guide focuses on AXIASolar and AXIALunar, but the principles will apply to p
 
 Each page in the guide, especially the Node Interaction and Transaction Construction pages, tries to list several options to accomplish the same thing. We want you to know your options and choose the solution that is best for you.
 
-That said, the easiest path to integration is almost always to use [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) to interact with your node and [TxWrapper](https://github.com/axia-tech/txwrapper) to construct and sign transactions. Parity and AXIACoin Foundation will be able to provide the best support if you use these tools.
+That said, the easiest path to integration is almost always to use [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) to interact with your node and [TxWrapper](https://github.com/axia-tech/txwrapper) to construct and sign transactions. Axia and AXIACoin Foundation will be able to provide the best support if you use these tools.
 
 If your team would like support, join some of our [community channels](community) or contact support@axiacoin.network.

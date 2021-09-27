@@ -31,7 +31,7 @@ For the standalone chains that will not have a parachain bridging module on AXIA
 
 ## Bridge contracts
 
-Those who are already familiar with Ethereum may know of the [Parity Bridge](https://github.com/axia-tech/parity-bridge) and the efforts being made to connect PoA sidechains to the Ethereum mainnet. The bridge is a combination of two smart contracts, one deployed on each chain, that allow for cross-chain transfers of value. As an example of usage, the initial Parity Bridge proof of concept connects two Ethereum chains, `main` and `side`. Ether deposited into the contract on `main` generates a balance denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract on `side` can free up Ether on `main`.
+Those who are already familiar with Ethereum may know of the [Axia Bridge](https://github.com/axia-tech/axia-bridge) and the efforts being made to connect PoA sidechains to the Ethereum mainnet. The bridge is a combination of two smart contracts, one deployed on each chain, that allow for cross-chain transfers of value. As an example of usage, the initial Axia Bridge proof of concept connects two Ethereum chains, `main` and `side`. Ether deposited into the contract on `main` generates a balance denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract on `side` can free up Ether on `main`.
 
 In the case of AXIASolar, it should be possible to have a bridge contract deployed on, say, an EVM-based standalone chain and a contract deployed on a smart contract capable parachain. This would not necessarily be the most efficient method of bridging, but given the generality of a Turing-complete parachain it would be possible to bridge AXIASolar and any other smart contract capable blockchain.
 
@@ -51,7 +51,7 @@ For full details on how it works please refer to the specification.
 As explained by Dr. Gavin Wood in a [blog post](https://medium.com/axiacoin.network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13) from late 2019, there are three ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
 
 1. AXIASolar <-> Ethereum Public Bridge.
-1. Substrate <-> Parity Ethereum (Openethereum) Bridge.
+1. Substrate <-> Axia Ethereum (Openethereum) Bridge.
 1. The Substrate EVM module.
 
 Please read the blog article for fuller descriptions of each one of these options.
@@ -65,9 +65,9 @@ If your team is interested in building a bridge between an external chain and AX
 ### Smart Contract Bridges
 
 - [Edgeth Bridge](https://github.com/hicommonwealth/edgeth_bridge/) - a bridge from Ethereum to Edgeware chain (a Substrate-based chain).
-- [Parity Bridge](https://github.com/axia-tech/parity-bridge)
+- [Axia Bridge](https://github.com/axia-tech/axia-bridge)
 - [POA Network](https://poa.network/)
-- [Case study](https://medium.com/giveth/ethereum-dapp-scaling-poa-network-acee8a51e772) of POA Network's implementation of Parity's bridge chain solution.
+- [Case study](https://medium.com/giveth/ethereum-dapp-scaling-poa-network-acee8a51e772) of POA Network's implementation of Axia's bridge chain solution.
 
 ### Runtime Module Bridges
 

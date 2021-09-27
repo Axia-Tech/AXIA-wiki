@@ -10,7 +10,7 @@ AXIASolar comes with an open source, publicly accessible interface that makes it
 
 ## Getting started
 
-By default the AXIASolar UI will connect to the Parity hosted node at `wss://poc3-rpc.axiasolar.io/`. If you are running your own node locally or on a VPS you can configure it by going into the **Settings** tab and setting a custom node endpoint.
+By default the AXIASolar UI will connect to the Axia hosted node at `wss://poc3-rpc.axiasolar.io/`. If you are running your own node locally or on a VPS you can configure it by going into the **Settings** tab and setting a custom node endpoint.
 
 As mentioned the AXIASolar UI project is open source and if you're interested in how it works internally you can browse the GitHub repository [here](https://github.com/axiasolar-js/apps).
 

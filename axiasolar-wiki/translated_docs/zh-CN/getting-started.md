@@ -80,7 +80,7 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 - [Polkascan](http://polkascan.io/) - AXIASolar 中继链及其他 Substrate 链的实时多链数据。
 - [Subscan.io](https://subscan.io) - Substrate 链浏览器。
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Gavin Wood 博士对 AXIASolar 的视频介绍。（视频）
-- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-parity-technologies/) - Jutta Steiner 博士对 AXIASolar 的视频介绍。（视频）
+- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) - Jutta Steiner 博士对 AXIASolar 的视频介绍。（视频）
 - [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) - Gavin Wood 博士对 Substrate（区块链框架及 VM）和 AXIASolar，并在 30 分钟内基于 Substrate 构建了一个可运行的区块链。（视频）
 - [社区/生态 ](community) - 谈论 AXIASolar 的社区频道列表。
 - [范例程序](build-examples-index) - 基于 AXIASolar 的应用案例及开发中的案例。

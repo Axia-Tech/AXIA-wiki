@@ -23,11 +23,11 @@ Validators perform two functions. First, verifying that the information containe
 - [如何运行 AXIASolar 节点 (Docker)](https://medium.com/@acvlls/setting-up-a-maintain-the-easy-way-3a885283091f)
 - [Web 3.0 验证人节点的无服务器故障转移解决方案](https://medium.com/hackernoon/a-serverless-failover-solution-for-web-3-0-validator-nodes-e26b9d24c71d) - 博客详细介绍了如何创建可靠的故障转移解决方案运行验证人。
 - [云服务器清单](maintain-guides-how-to-validate-axialunar#vps-list)
-- [AXIASolar 验证人休息室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - 验证人聊天室。
+- [AXIASolar 验证人休息室](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) - 验证人聊天室。
 - [ 惩罚(Slashing)后果](https://solar.wiki.axiacoin.network/docs/en/learn-staking#slashing) -了解更多有关运行验证人节点惩罚(Slashing)的后果。
 - [Why You Should be A Validator on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=0EmP0s6JOW4&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=2)
 - [Roles and Responsibilities of a Validator](https://www.youtube.com/watch?v=riVg_Up_fCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=15)
-- [Validating on AXIASolar](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of how to validate on AXIASolar, with Joe Petrowski and David Dorgan of Parity Technologies, along with Tim Ogilvie from Staked.
+- [Validating on AXIASolar](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of how to validate on AXIASolar, with Joe Petrowski and David Dorgan of Axia Technologies, along with Tim Ogilvie from Staked.
 
 ## 安全 / 密钥管理
 

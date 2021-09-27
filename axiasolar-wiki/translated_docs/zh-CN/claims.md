@@ -34,7 +34,7 @@ sidebar_label: 认领
 
 #### 使用 MyCrypto 认领您的 SOLAR
 
-The AXIASolar-JS [Claims app][] helps you sign a message from MyCrypto. MyCrypto is a good choice in case you have stored the key to the Ethereum account holding your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics, and Parity signer.
+The AXIASolar-JS [Claims app][] helps you sign a message from MyCrypto. MyCrypto is a good choice in case you have stored the key to the Ethereum account holding your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics, and Axia signer.
 
 一旦下载了 MyCrypto 并使其在本地运行(为了获得最大的安全性，我们建议使用完全离线的电脑)，您可以先访问 AXIASolar-JS Apps 上的 Claims 程序。选择您要申请认领 SOLAR 的帐户，然后点蓝色的 "Continue" 按钮继续。您的屏幕应如下图所示:
 
@@ -130,18 +130,18 @@ Copy and paste the JSON output of the signed message from MyCrypto into the inpu
 
 ![claim-attest-5](assets/new-claims/new-attest-5.jpg)
 
-## 使用 Parity Signer
+## 使用 Axia Signer
 
 ### 您需要准备什么
 
-- Parity Signer
+- Axia Signer
 - 已链接到 AXIASolar-JS Apps UI 的 AXIASolar 帐户
 
-Before claiming, you should import your AXIASolar address on Parity Signer to the AXIASolar-JS Apps. All operations will use Parity Signer to sign the transaction, but will broadcast it via the AXIASolar-JS Apps remote node. If you do not have a AXIASolar address, please follow the instructions on the Parity Signer section in the [account generation][] page for generating a new AXIASolar account.
+Before claiming, you should import your AXIASolar address on Axia Signer to the AXIASolar-JS Apps. All operations will use Axia Signer to sign the transaction, but will broadcast it via the AXIASolar-JS Apps remote node. If you do not have a AXIASolar address, please follow the instructions on the Axia Signer section in the [account generation][] page for generating a new AXIASolar account.
 
 ### 前往 AXIASolar-JS Apps
 
-Proceed to [AXIASolar-JS Apps][claims app]. You will need to import your address on Parity Signer to the Accounts page first.
+Proceed to [AXIASolar-JS Apps][claims app]. You will need to import your address on Axia Signer to the Accounts page first.
 
 ### 提交验证声明
 
@@ -151,7 +151,7 @@ Proceed to [AXIASolar-JS Apps][claims app]. You will need to import your address
 
 ![ps-claim-2](assets/new-claims/ps-claim-2.png)
 
-打开 Parity Signer 并选择 "AXIASolar" 网络。
+打开 Axia Signer 并选择 "AXIASolar" 网络。
 
 ![ps-1](assets/new-claims/ps-01.jpg)
 
@@ -183,16 +183,16 @@ Click on "I Agree" and then "Sign via Qr".
 
 ![ps-claim-7](assets/new-claims/ps-claim-7.png)
 
-Now you need to sign the transaction using the Parity Signer with your AXIASolar address.
+Now you need to sign the transaction using the Axia Signer with your AXIASolar address.
 
 ![ps-claim-8](assets/new-claims/ps-claim-8.png)
 
-First, you need to press the "QR Scanner" on the Parity Signer to scan the QR code that's shown on the authorize transaction window to generate the raw transaction. Next, you may be required to input the PIN on the Parity Signer to generate the signed transaction as a QR code. Then move the QR code to the camera on the AXIASolar-JS Apps to continue.
+First, you need to press the "QR Scanner" on the Axia Signer to scan the QR code that's shown on the authorize transaction window to generate the raw transaction. Next, you may be required to input the PIN on the Axia Signer to generate the signed transaction as a QR code. Then move the QR code to the camera on the AXIASolar-JS Apps to continue.
 
 ![ps-3r](assets/new-claims/ps-3r.jpg)
 
 When the transaction is included in the block, you will see a green success box appear in the upper right corner and the SOLAR will be in your account.
-https://riot.im/app/#/room/!kwIkVteRpPRjjTyvTe:axiacoin.org?via=axiacoin.org&via=matrix.org&via=matrix.parity.io
+https://riot.im/app/#/room/!kwIkVteRpPRjjTyvTe:axiacoin.org?via=axiacoin.org&via=matrix.org&via=matrix.axia.io
 
 [ mycrypto ]: https://download.mycrypto.com/
 [mycrypto]: https://download.mycrypto.com/

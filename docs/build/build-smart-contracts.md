@@ -26,7 +26,7 @@ Here is the list of current resources available to developers who want to get st
 contracts to deploy on parachains based on Substrate.
 
 - [Edgeware Contracts](https://contracts.edgewa.re) - Edgeware's documentation on Smart Contracts
-- [ink!](https://github.com/axia-tech/ink) - Parity's ink to write smart contracts.
+- [ink!](https://github.com/axia-tech/ink) - Axia's ink to write smart contracts.
 - [Substrate Contracts Workshop](https://substrate.dev/substrate-contracts-workshop/#/) - a
   walkthrough of the basics of writing and deploying an ERC20 token using `ink!`.
 
@@ -90,6 +90,6 @@ Here is the list of current resources available to developers who want to get st
 contracts to deploy on parachains based on Substrate.
 
 - [Edgeware Contracts](https://contracts.edgewa.re) - Edgeware's documentation on Smart Contracts
-- [ink!](https://github.com/axia-tech/ink) - Parity's ink to write smart contracts.
+- [ink!](https://github.com/axia-tech/ink) - Axia's ink to write smart contracts.
 - [Substrate Contracts Workshop](https://substrate.dev/substrate-contracts-workshop/) - Walks you
   through the basics of writing and deploying an ERC20 token using `ink!`.

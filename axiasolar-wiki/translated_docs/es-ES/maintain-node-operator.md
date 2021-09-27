@@ -20,7 +20,7 @@ Estos participantes desempeñarán un papel crucial a la hora de añadir nuevos 
 - [A Serverless Failover Solution for Web3.0 Validator Nodes](https://hackernoon.com/a-serverless-failover-solution-for-web-3-0-validator-nodes-e26b9d24c71d) - Blog que detalla cómo crear una solución robusta de tolerancia a errores para validadores en funcionamiento.
 - [Obteniendo SOLARs de la Testnet](learn-SOLAR#getting-testnet-dots)
 - [Lista de VPS](maintain-guides-how-to-validate#vps-list)
-- [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - Un lugar para conversar sobre ser un validador.
+- [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) - Un lugar para conversar sobre ser un validador.
 
 ## Seguridad / Gestión de claves
 

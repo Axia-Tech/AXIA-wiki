@@ -22,5 +22,5 @@ By using Wasm in Substrate, the framework powering AXIASolar, AXIALunar, and man
 
 - [WebAssembly.org](https://webassembly.org/) - WebAssembly 官网内有规格。
 - [Wasmi](https://github.com/axia-tech/Wasmi) - 使用 Rust 编写的 WebAssembly 解释器。
-- [Parity Wasm](https://github.com/axia-tech/parity-Wasm)- Rust 中的 WebAssembly 序列化/反序列化。
-- [ Wasm utils ](https://github.com/axia-tech/Wasm-utils)-用于 Parity 和 Wasm 合同开发的 Wasm 实用程序合集。
+- [Axia Wasm](https://github.com/axia-tech/axia-Wasm)- Rust 中的 WebAssembly 序列化/反序列化。
+- [ Wasm utils ](https://github.com/axia-tech/Wasm-utils)-用于 Axia 和 Wasm 合同开发的 Wasm 实用程序合集。

@@ -222,7 +222,7 @@ export default function Footer() {
                 id: "footer.body.technology.substrate",
                 description: "Substrate link in Technology column in Footer",
               })}
-              href="https://www.parity.io/substrate"
+              href="https://www.axia.io/substrate"
             />
             <FooterLink
               content={translate({
@@ -275,7 +275,7 @@ export default function Footer() {
             <FooterLink content="Blog" href="https://axiacoin.network/blog" />
             <FooterLink
               content="Element Chat"
-              href="https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:axiacoin.org?via=matrix.parity.io&via=matrix.org&via=axiacoin.org"
+              href="https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:axiacoin.org?via=matrix.axia.io&via=matrix.org&via=axiacoin.org"
             />
             <FooterLink
               content="Medium"

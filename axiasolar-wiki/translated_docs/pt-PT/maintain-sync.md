@@ -129,5 +129,5 @@ It is possible to almost quadruple synchronization speed by using an additional 
 Finally, you can use Docker to run your node in a container. Doing this is a bit more advanced so it's best left up to those that either already have familiarity with docker, or have completed the other set-up instructions in this guide.
 
 ```zsh
-docker run -p 9944:9944 parity/axiasolar:v0.8.3 --name "calling_home_from_a_docker_container"
+docker run -p 9944:9944 axia/axiasolar:v0.8.3 --name "calling_home_from_a_docker_container"
 ```

@@ -42,7 +42,7 @@ Below are the various types of users at different stages.
 
 ## Procedure
 
-**Remember to take a look at the \[rules\]\[kapp rules\] first. And since those rules are not enforced entirely on-chain, it is recommended to join the [public chat room](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) to ask any questions if anything is unclear.**
+**Remember to take a look at the \[rules\]\[kapp rules\] first. And since those rules are not enforced entirely on-chain, it is recommended to join the [public chat room](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) to ask any questions if anything is unclear.**
 
 ### 1. Bid Phase
 
@@ -158,6 +158,6 @@ If a member accumulates too many strikes or fails their membership challenge, th
 
 [Convention of Approval of Membership](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) - Rules about joining the AXIALunar society
 
-[Kappa Sigma Mu Lounge](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) - A public chat room on Riot to talk about anything about the society.
+[Kappa Sigma Mu Lounge](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) - A public chat room on Riot to talk about anything about the society.
 
 [Substrate Society](https://www.shawntabrizi.com/substrate-society/) - It shows the AXIALunar society information and allowing you to directly place a bid if you have installed the [AXIASolarJS extension](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd).

@@ -74,8 +74,8 @@ proposal, they will probably need to find an off-chain way to explain the propos
 takes place on the following platforms:
 
 - Many community members participate in discussion in the
-  [AXIALunar Element (previously Riot)](https://matrix.to/#/#axialunar:matrix.parity.io) chat or
-  [AXIASolar Element](https://matrix.to/#//#axiasolar:matrix.parity.io).
+  [AXIALunar Element (previously Riot)](https://matrix.to/#/#axialunar:matrix.axia.io) chat or
+  [AXIASolar Element](https://matrix.to/#//#axiasolar:matrix.axia.io).
 - The [Polkassembly](https://polkassembly.io) discussion platform that allows users to log in with
   their Web3 address and automatically reads proposals from the chain, turning them into discussion
   threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a
@@ -84,9 +84,9 @@ takes place on the following platforms:
 Spreading the word about the proposal's explanation is ultimately up to the proposer - the
 recommended way is using official Element channels like {{ axiasolar: the
 [AXIASolar Watercooler](https://matrix.to/#/#axiasolar-watercooler:axiacoin.org) and
-[AXIASolar Direction room](https://matrix.to/#/#axiasolar-direction:matrix.parity.io) :axiasolar }}
+[AXIASolar Direction room](https://matrix.to/#/#axiasolar-direction:matrix.axia.io) :axiasolar }}
 {{ axialunar: the
-[AXIALunar Direction room](https://matrix.to/#/#axialunar:matrix.parity.io) or the
+[AXIALunar Direction room](https://matrix.to/#/#axialunar:matrix.axia.io) or the
 [AXIALunar Watercooler](https://matrix.to/#/#axialunarwatercooler:axiasolar.builders) :axialunar }}.
 
 ### Creating the Proposal
@@ -248,11 +248,11 @@ requested allocation (including curator's fee) and confirm the call.
 
 After this, a Council member will need to assist you to pass the bounty proposal for vote as a
 motion. You can contact the Council by joining the
-{{ axiasolar: AXIASolar Direction [channel](https://matrix.to/#/#axiasolar-direction:matrix.parity.io) :axiasolar }}
-{{ axialunar: AXIALunar Direction [channel](https://matrix.to/#/#axialunar:matrix.parity.io) :axialunar }} in
+{{ axiasolar: AXIASolar Direction [channel](https://matrix.to/#/#axiasolar-direction:matrix.axia.io) :axiasolar }}
+{{ axialunar: AXIALunar Direction [channel](https://matrix.to/#/#axialunar:matrix.axia.io) :axialunar }} in
 Element or joining our
-{{ axiasolar: AXIASolar Discord [server](https://parity.link/axiasolar-discord) :axiasolar }}
-{{ axialunar: AXIALunar Discord [server](https://parity.link/axialunar-discord) :axialunar }} and publishing a
+{{ axiasolar: AXIASolar Discord [server](https://axia.link/axiasolar-discord) :axiasolar }}
+{{ axialunar: AXIALunar Discord [server](https://axia.link/axialunar-discord) :axialunar }} and publishing a
 short description of your bounty, with a link to one of the [forums](#announcing-the-proposal) for
 contextual information.
 

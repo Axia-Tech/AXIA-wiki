@@ -12,7 +12,7 @@ public contact and anyone doing so is likely trying to scam you.
 ## General
 
 - [AXIALunar Discussion and Governance on Polkassembly](https://axialunar.polkassembly.io/)
-- [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - Parity maintained repository that
+- [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - Axia maintained repository that
   houses the Rust implementation of the AXIASolar and AXIALunar Host.
 - [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
   Information on hosting meetups, applying for funding, and materials for running it.
@@ -35,9 +35,9 @@ application we use most often to interact with the Matrix protocol is the
 
 - [AXIALunar Watercooler Chat](https://app.element.io/#/room/%23axialunarwatercooler:axiasolar.builders) -
   General room for talk about AXIALunar.
-- [AXIALunar Validator Lounge](https://app.element.io/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) -
+- [AXIALunar Validator Lounge](https://app.element.io/#/room/!LhjZccBOqFNYKLdmbb:axiasolar.builders?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
   Room for validators learning about setting up a node.
-- [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) -
+- [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
   Governance, and a place to discuss the future of AXIALunar.
 - [AXIASolar Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:axiacoin.org) - News about what is
   happening in the AXIASolar ecosystem, published every weekday except holidays, includes AXIALunar.
@@ -49,8 +49,8 @@ application we use most often to interact with the Matrix protocol is the
 
 - [Substrate Technical](https://app.element.io/#/room/#substrate-technical:matrix.org) - More
   advanced room for technical questions on building with Substrate.
-- [Smart Contracts & Parity Ink!](https://app.element.io/#/room/!tYUCYdSvSYPMjWNDDD:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=axiacoin.org) -
-  A room to discuss developing Substrate smart contracts using Parity Ink!
+- [Smart Contracts & Axia Ink!](https://app.element.io/#/room/!tYUCYdSvSYPMjWNDDD:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
+  A room to discuss developing Substrate smart contracts using Axia Ink!
 
 ## Social
 

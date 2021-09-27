@@ -40,11 +40,11 @@ In his [quest for developer health](https://bruno.id/an-endomorphs-journey-to-he
 
 ### Joe Petrowski
 
-- email: [joe@parity.io](mailto:joe@parity.io)
-- matrix / riot / element: [@joe:matrix.parity.io](https://matrix.to/#/@joe:matrix.parity.io)
+- email: [joe@axia.io](mailto:joe@axia.io)
+- matrix / riot / element: [@joe:matrix.axia.io](https://matrix.to/#/@joe:matrix.axia.io)
 - telegram: [@joepetrowski](https://t.me/joepetrowski)
 
-Joe is a research analyst at Parity Technologies, where he focuses on making Substrate chain integration as smooth as possible, from educating users on Substrate and AXIASolar fundamentals to building tools to create great user experiences and occasionally writing a bit of code. He also hosts the [Relay Chain](https://relaychain.fm) podcast. Prior to working at Parity, Joe worked in shock and vibration simulation for satellite launch, algorithmic trading, and professional cycling. He has a Bachelor of Science in Aeronautical and Mechanical Engineering.
+Joe is a research analyst at Axia Technologies, where he focuses on making Substrate chain integration as smooth as possible, from educating users on Substrate and AXIASolar fundamentals to building tools to create great user experiences and occasionally writing a bit of code. He also hosts the [Relay Chain](https://relaychain.fm) podcast. Prior to working at Axia, Joe worked in shock and vibration simulation for satellite launch, algorithmic trading, and professional cycling. He has a Bachelor of Science in Aeronautical and Mechanical Engineering.
 
 ---
 

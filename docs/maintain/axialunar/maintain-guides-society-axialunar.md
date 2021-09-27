@@ -48,7 +48,7 @@ Below are the various types of users at different stages.
 
 Remember to take a look at the [rules][kappa rules] first. And since those rules are not enforced
 entirely on-chain, it is recommended to join the
-[Kappa Sigma Mu Lounge](https://app.element.io/#/room/!BUmiAAnAYSRGarqwOt:matrix.parity.io) to ask
+[Kappa Sigma Mu Lounge](https://app.element.io/#/room/!BUmiAAnAYSRGarqwOt:matrix.axia.io) to ask
 any questions if anything is unclear.
 
 ### 1. Bid Phase

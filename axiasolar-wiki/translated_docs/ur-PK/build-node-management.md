@@ -4,7 +4,7 @@ title: Node Management
 sidebar_label: Node Management
 ---
 
-This page contains basic information about running a Parity AXIASolar client. There are a lot of ways to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This guide will always refer to the executable as `axiasolar`.
+This page contains basic information about running a Axia AXIASolar client. There are a lot of ways to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This guide will always refer to the executable as `axiasolar`.
 
 **Always refer to the client's help `axiasolar --help` for the most up-to-date information.**
 
@@ -36,11 +36,11 @@ Use the `--rpc-external` flag to expose RPC ports and `--ws-external` to expose 
 
 **Execution**
 
-The Parity AXIASolar client implements a [AXIASolar Host](learn-axiasolar-host) and a native runtime. The runtime must compile to WebAssembly and is stored on-chain. If the client's runtime is the same spec as the runtime that is stored on-chain, then the client will execute blocks using the client binary. Otherwise, the client will execute the Wasm runtime from the chain.
+The Axia AXIASolar client implements a [AXIASolar Host](learn-axiasolar-host) and a native runtime. The runtime must compile to WebAssembly and is stored on-chain. If the client's runtime is the same spec as the runtime that is stored on-chain, then the client will execute blocks using the client binary. Otherwise, the client will execute the Wasm runtime from the chain.
 
 Therefore, when syncing the chain, the client will execute blocks from past runtimes using their associated Wasm binary. This feature also allows forkless upgrades: the client can execute a new runtime without updating the client.
 
-Parity's AXIASolar client has two Wasm execution methods, interpreted (default) and compiled. Set the preferred method to use when executing Wasm with `--wasm-execution <Interpreted|Compiled>`. Compiled execution will run much faster, especially when syncing the chain, but is experimental and may use more memory/CPU. A reasonable tradeoff would be to sync the chain with compiled execution and then restart the node with interpreted execution.
+Axia's AXIASolar client has two Wasm execution methods, interpreted (default) and compiled. Set the preferred method to use when executing Wasm with `--wasm-execution <Interpreted|Compiled>`. Compiled execution will run much faster, especially when syncing the chain, but is experimental and may use more memory/CPU. A reasonable tradeoff would be to sync the chain with compiled execution and then restart the node with interpreted execution.
 
 ## File Structure
 
@@ -63,7 +63,7 @@ To delete your DB and re-sync from genesis, run:
 axiasolar purge-chain
 ```
 
-An alternative database implementation, ParityDB, is available and activated with the `--database paritydb` option. This database uses more disk space than the default RocksBD, but is more efficient in reads and writes.
+An alternative database implementation, AxiaDB, is available and activated with the `--database axiadb` option. This database uses more disk space than the default RocksBD, but is more efficient in reads and writes.
 
 ## Deployment Tools
 
@@ -105,6 +105,6 @@ All targets are set to `info` logging by default. You can adjust individual log 
 
 **Telemetry & Metrics**
 
-The Parity AXIASolar client connects to telemetry by default. You can disable it with `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option (see the help options for instructions). Connecting to public telemetry may expose information that puts your node at higher risk of attack. You can run your own, private [telemetry server](https://github.com/axia-tech/substrate-telemetry) or deploy a `substrate-telemetry` instance to a Kubernetes cluster using [this Helm chart](https://github.com/axia-tech/substrate-telemetry-chart).
+The Axia AXIASolar client connects to telemetry by default. You can disable it with `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option (see the help options for instructions). Connecting to public telemetry may expose information that puts your node at higher risk of attack. You can run your own, private [telemetry server](https://github.com/axia-tech/substrate-telemetry) or deploy a `substrate-telemetry` instance to a Kubernetes cluster using [this Helm chart](https://github.com/axia-tech/substrate-telemetry-chart).
 
 The node also exposes a Prometheus endpoint by default (disable with `--no-prometheus`). Substrate has a [vizualizing node metrics tutorial](https://substrate.dev/docs/en/tutorials/visualize-node-metrics/) which uses this endpoint.

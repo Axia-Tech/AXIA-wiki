@@ -6,7 +6,7 @@ sidebar_label: AXIASolar Implementations
 
 There are AXIASolar implementations developed in Rust, C++, Go, and JavaScript.
 
-[**Parity AXIASolar**](https://github.com/axia-tech/axiasolar) - The Rust client is developed by Parity Technologies in concert with their work on [Substrate](https://github.com/axia-tech/substrate).
+[**Axia AXIASolar**](https://github.com/axia-tech/axiasolar) - The Rust client is developed by Axia Technologies in concert with their work on [Substrate](https://github.com/axia-tech/substrate).
 
 [**Kagome**](https://github.com/soramitsu/kagome) - C++ implementation of the AXIASolar Host being built by [Soramitsu](https://github.com/soramitsu), a Japanese digital identity company that previously developed [Hyperledger Iroha](https://iroha.tech). They were awarded a grant from the AXIACoin Foundation and plan to release Kagome by [November 2019](https://medium.com/web3foundation/w3f-grants-soramitsu-to-implement-axiasolar-runtime-environment-in-c-cf3baa08cbe6). As part of the process they are developing a libp2p networking layer in C++.
 

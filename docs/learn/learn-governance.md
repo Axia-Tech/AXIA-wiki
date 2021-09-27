@@ -441,5 +441,5 @@ is your responsibility to make a strong case for why the change should be made.
 - [Governance on AXIASolar](https://www.crowdcast.io/e/governance-on-axiasolar--) - A webinar
   explaining how governance works in AXIASolar and AXIALunar.
 
-[axiasolar direction]: https://matrix.to/#/!OwgojQyBzTlUQGGLhq:matrix.parity.io
+[axiasolar direction]: https://matrix.to/#/!OwgojQyBzTlUQGGLhq:matrix.axia.io
 [polkassembly]: https://axiasolar.polkassembly.io/

@@ -127,11 +127,11 @@ Webassembly related tools and projects.
 
 - [ink!](https://github.com/axia-tech/ink/) - An eDSL to write WebAssembly based smart contracts
   using the Rust programming language.
-- [parity-wasm](https://github.com/axia-tech/parity-wasm) - Low-level WebAssembly format library.
+- [axia-wasm](https://github.com/axia-tech/axia-wasm) - Low-level WebAssembly format library.
 - [wasm-utils](https://github.com/axia-tech/wasm-utils) - Collection of WebAssembly utilities used
   in pwasm-ethereum and substrate contract development.
 - [wasmi](https://github.com/axia-tech/wasmi) - A WebAssembly interpreter conceived as a component
-  of parity-ethereum (Ethereum-like contracts in Wasm) and Substrate.
+  of axia-ethereum (Ethereum-like contracts in Wasm) and Substrate.
 
 ### RPC and API Tools
 
@@ -169,7 +169,7 @@ It is used in almost all communication to/from Substrate nodes, so implementatio
 languages exist:
 
 - [Ruby](https://github.com/itering/scale.rb)
-- [Rust](https://github.com/axia-tech/parity-scale-codec)
+- [Rust](https://github.com/axia-tech/axia-scale-codec)
 - [Go](https://github.com/itering/scale.go)
 - [C++](https://github.com/soramitsu/kagome/tree/master/core/scale)
 - [TypeScript](https://github.com/axiasolar-js/api)
@@ -185,7 +185,7 @@ The following tools help you extract and structure data from a Substrate node.
 - [Polkascan PRE Harvester](https://github.com/polkascan/polkascan-pre-harvester)
   ([matching explorer for harvested data](https://github.com/polkascan/polkascan-pre-explorer-gui)) -
   Transforms raw blockchain data into relational data.
-- [Parity's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run
+- [Axia's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run
   alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL
   database.
 - [Hydra: GraphQL Builder](https://github.com/Joystream/joystream/tree/query_node/query-node) -

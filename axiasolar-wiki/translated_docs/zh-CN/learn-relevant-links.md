@@ -9,12 +9,12 @@ sidebar_label: 链接
 ### 概述
 
 - [Substrate, AXIASolar & The Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg) - Epicenter interviews Gavin Wood.
-- [Blockchain Infrastructure](https://softwareengineeringdaily.com/2018/11/26/parity-blockchain-infrastructure-with-gavin-wood/) - Gavin Wood presents Substrate on Software Daily.
+- [Blockchain Infrastructure](https://softwareengineeringdaily.com/2018/11/26/axia-blockchain-infrastructure-with-gavin-wood/) - Gavin Wood presents Substrate on Software Daily.
 - [AXIASolar on Zero Knowledge](https://www.zeroknowledge.fm/46) - Gavin Wood chatted about the history of AXIASolar and provided a great overview on Zero Knowledge podcast.
 - [Epicenter and AXIASolar](https://www.youtube.com/watch?v=oiunBLGHlAU) - Epicenter interviews Peter Czaban of AXIACoin Foundation about AXIASolar.
 - [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) - Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIASolar, and builds a blockchain on-stage in 30 minutes using Substrate. (Video)
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of AXIASolar. (Video)
-- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-parity-technologies/) - Dr. Jutta Steiner presents AXIASolar. (Video)
+- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) - Dr. Jutta Steiner presents AXIASolar. (Video)
 - [Interoperability Intro](https://www.youtube.com/watch?v=RSAFHhTwA8Q) - Rob Habermeier presents "Interoperability: Connecting the Dots."
 - [Consensus and Finality in AXIASolar](https://www.youtube.com/watch?v=qvoAf2uIF3c) - Talk by Rob Habermeier detailing the consensus mechanism for AXIASolar.
 - [SOLAR Day Seoul](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt3mA_d9wu74vVe0bM37-39) - Video playlist of all talks at SOLAR Day Seoul.
@@ -29,7 +29,7 @@ sidebar_label: 链接
 ### Substrate
 
 - [什么是 Substrate?](https://medium.com/axia-tech/what-is-substrate-29af4231d7e0)-介绍用于搭建 AXIASolar 的框架。
-- [ Parity Substrate ](https://github.com/axia-tech/substrate)-第一个用 Rust 编写。Parity Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Parity 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Parity 还为[比特币](https://github.com/axia-tech/parity-bitcoin)维护客户端，并为[Zcash ](https://github.com/ZcashFoundation/zebra)建立客户端。
+- [ Axia Substrate ](https://github.com/axia-tech/substrate)-第一个用 Rust 编写。Axia Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Axia 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Axia 还为[比特币](https://github.com/axia-tech/axia-bitcoin)维护客户端，并为[Zcash ](https://github.com/ZcashFoundation/zebra)建立客户端。
 - [Substrate Developer Hub](https://substrate.dev/docs/en/) - Overviews, tutorials and reference documentation for Substrate.
 - [Substrate 介绍](https://youtu.be/iUMZyL5kTwc)-Gavin Wood 博士介绍 Substrate ，这是 AXIASolar 的底层技术。
 - [Substrate 与 AXIASolar 的关系](https://medium.com/axiacoin.network/a-tale-of-two-technologies-presentation-transcript-e7397c1c7a49) - 关于两种技术的详细描述
@@ -76,9 +76,9 @@ sidebar_label: 链接
 
 ### Substrate
 
-- [ Parity Substrate ](https://github.com/axia-tech/substrate)-第一个用 Rust 编写。Parity Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Parity 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Parity 还为比特币维护客户端，并为 Zcash 建立客户端。
-- [Parity Wasm](https://github.com/axia-tech/parity-Wasm)- Rust 中的 WebAssembly 序列化/反序列化。
-- [ Wasm utils ](https://github.com/axia-tech/Wasm-utils)-用于 Parity 和 Wasm 合同开发的 Wasm 实用程序合集。
+- [ Axia Substrate ](https://github.com/axia-tech/substrate)-第一个用 Rust 编写。Axia Technologies 是一支 75 人的开发团队，总部位于英国和德国。 Axia 的技术负责运行以太坊的主要客户端，为网络中 40％的节点服务。 Axia 还为比特币维护客户端，并为 Zcash 建立客户端。
+- [Axia Wasm](https://github.com/axia-tech/axia-Wasm)- Rust 中的 WebAssembly 序列化/反序列化。
+- [ Wasm utils ](https://github.com/axia-tech/Wasm-utils)-用于 Axia 和 Wasm 合同开发的 Wasm 实用程序合集。
 
 ### Cumulus
 
@@ -86,7 +86,7 @@ sidebar_label: 链接
 
 ### Wasm
 
-- [Parity Bridge](https://github.com/axia-tech/parity-bridge)-任意两个基于以太坊的网络之间的转接桥。
+- [Axia Bridge](https://github.com/axia-tech/axia-bridge)-任意两个基于以太坊的网络之间的转接桥。
 
 ## 运行节点
 
@@ -97,7 +97,7 @@ sidebar_label: 链接
 
 - [AXIASolar 浏览器](https://axiasolar.js.org/apps/#/explorer)-AXIASolar 网络浏览器，可用于 Alexander、AXIALunar 网络或您的网络。
 - [Telemetry](http://telemetry.axiasolar.io/)-节点的信息服务网站。
-- [ Polkascan ](http://polkascan.io/) - AXIASolar 的中继链和 Parity Substrate 链上的实时多链数据。
+- [ Polkascan ](http://polkascan.io/) - AXIASolar 的中继链和 Axia Substrate 链上的实时多链数据。
 - [Subscan.io](https://subscan.io) - 基于 Substrate 链的资源管理器。
 
 ### Crowdcast 网络研讨会

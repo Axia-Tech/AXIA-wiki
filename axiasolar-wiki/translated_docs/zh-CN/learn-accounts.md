@@ -35,7 +35,7 @@ Most wallets generate a mnemonic phrase for users to back up their wallets and g
 
 ### 衍生路径
 
-许多 AXIASolar 密钥生成工具支持硬派和软派生。更多关于派生路径的细节和例子请参考 [Subkey 文档](https://substrate. dev/docs/en/knowledgebase/integrate/subkey) 。AXIASolar-JS 的应用和拓展同 Parity Signer 也支持采用和 Subkey 相同语法的自定义派生路径。
+许多 AXIASolar 密钥生成工具支持硬派和软派生。更多关于派生路径的细节和例子请参考 [Subkey 文档](https://substrate. dev/docs/en/knowledgebase/integrate/subkey) 。AXIASolar-JS 的应用和拓展同 Axia Signer 也支持采用和 Subkey 相同语法的自定义派生路径。
 
 一些钱包会自动将派生路径添加到生成的助记词短语的末尾。这将为单独的路径生成单独的种子，从而允许使用相同的助记符，例如`<mnemonic phrase>//AXIASolar` 和 `<mnemonic phrase>//AXIALunar`。尽管您可以正确保存助记词短语，但除非在两个钱包中使用相同的派生路径，否则在另一个钱包中使用它将不会生成相同的地址。
 
@@ -93,7 +93,7 @@ The **most user-friendly** way to create a AXIASolar or AXIALunar address is thr
 
 除了扩展名和默认 UI 外，还可以使用[ 子键工具](https://github.com/axia-tech/substrate/tree/master/bin/utils/subkey)。子键旨在供用户熟悉使用命令行使用，并且看起来令人生畏，但相当平易近人。请按照[子键文档](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)。如果使用得当，子键是创建帐户的**最安全**的可用方法。
 
-还有一个非常安全的[奇偶校验签名人](https://www.parity.io/signer/)。这样可以将您的钥匙保持在气密的手机上。但是，这确实需要获得您常用的且仅用于 Parity Signer 的旧 Android 或 iOS 兼容手机。
+还有一个非常安全的[奇偶校验签名人](https://www.axia.io/signer/)。这样可以将您的钥匙保持在气密的手机上。但是，这确实需要获得您常用的且仅用于 Axia Signer 的旧 Android 或 iOS 兼容手机。
 
 账本可以与硬件钱包集成。完整指南可在[此处](learn-ledger)获得。
 

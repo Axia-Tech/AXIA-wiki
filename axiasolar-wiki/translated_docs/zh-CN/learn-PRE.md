@@ -17,7 +17,7 @@ Runtime（定义为实现链逻辑的代码）与 AXIASolar RE 分离。 这两�
 
 AXIASolar runtime（以及平行链 runtime）必须编译成 WebAssembly(Wasm) Blob。 AXIASolar runtime 将 "插件" 放到 AXIASolar RE 并且可以通过治理机制进行交换。
 
-下图取自 Gavin Wood 在 Substrate 上展示的[ PPT ](https://slides.com/axia-tech/paritysubstrate#/8)，并演示了 AXIASolar 堆栈的四 层 。
+下图取自 Gavin Wood 在 Substrate 上展示的[ PPT ](https://slides.com/axia-tech/axiasubstrate#/8)，并演示了 AXIASolar 堆栈的四 层 。
 
 ![PRE](assets/PRE.png)
 

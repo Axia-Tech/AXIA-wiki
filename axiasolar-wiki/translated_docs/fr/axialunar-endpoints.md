@@ -6,11 +6,11 @@ sidebar_label: AXIALunar Endpoints
 
 When interacting with the [AXIALunar network](https://axialunar.network) via [AXIASolar-JS Apps](https://axiasolar.js.org/apps) or other UIs and programmatic methods, you'd ideally be running your own node ([text guide](maintain-sync), [video guide](https://www.youtube.com/watch?v=31DdfcxbAVs)). Granted, that's not something everyone wants to do, so convenience trumps ideals in most cases. To facilitate this convenience, AXIALunar has several public endpoints you can use for your apps.
 
-## Parity Archive Node
+## Axia Archive Node
 
-[Parity](https://parity.io), the company that develops the AXIASolar Rust client, maintains an archive node at endpoint `wss://axialunar-rpc.axiasolar.io/`.
+[Axia](https://axia.io), the company that develops the AXIASolar Rust client, maintains an archive node at endpoint `wss://axialunar-rpc.axiasolar.io/`.
 
-To connect to the Parity node, use the endpoint in your JavaScript apps like so:
+To connect to the Axia node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
 const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
@@ -23,7 +23,7 @@ const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
 
 or in AXIASolar-JS Apps by clicking the top-left corner of the screen and selecting the appropriate option:
 
-<img src="/img/endpoints/axialunar_endpoint_parity.png" width=40% />
+<img src="/img/endpoints/axialunar_endpoint_axia.png" width=40% />
 
 ## AXIACoin Foundation Archive Node
 
