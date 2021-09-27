@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import Translate, { translate } from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import Logo from "@site/static/img/logo-axiasolar-light.svg";
+import Logo from "@site/static/img/axiasolar-blue-logo.svg";
 
 function FooterNavColumn({ headline, children }) {
   return (
@@ -61,7 +61,8 @@ function FooterSocialColumn() {
           id="footer.subscribeMessage"
           description="Subscribe message in Footer"
         >
-          Subscribe to the newsletter to hear about AXIASolar updates and events.
+          Subscribe to the newsletter to hear about AXIASolar updates and
+          events.
         </Translate>
       </p>
       <Button>
@@ -292,7 +293,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Logo alt="AXIASolar Network" />
+                <Logo alt="AXIASolar Network" width="176.871px" height="42px" />
               </a>
             </Col>
           )}

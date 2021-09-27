@@ -159,7 +159,7 @@ module.exports = {
     footer: {
       copyright: `© ${new Date().getFullYear()} AXIACoin Foundation`,
       logo: {
-        src: "img/logo-axiasolar-light.svg",
+        src: "img/axiasolar-blue-logo.svg",
       },
     },
     algolia: {
