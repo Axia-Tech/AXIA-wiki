@@ -67,7 +67,7 @@
     "remarkable-katex": "^1.1.8",
     "shx": "^0.3.3",
     "unist-util-visit": "2.0.3",
-    "yargs": "^17.1.1"
+    "yargs": "^17.2.1"
   },
   "dependencies": {
     "@axiasolar-js/util": "^1.0.0",
