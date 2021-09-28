@@ -39,7 +39,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@actions/core": "^1.5.0",
+    "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
     "@axiasolar-js/api": "^1.0.0",
     "@axiasolar-js/keyring": "^1.0.0",
