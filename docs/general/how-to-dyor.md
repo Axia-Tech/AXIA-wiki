@@ -17,7 +17,7 @@ make that decision for you.
 Furthermore, a legitimate project doesn't necessarily mean it will also be a successful one, and
 **this guide is not meant to be viewed as financial or investment advice.**
 
-### "Powered by AXIASolar" or "Polka" prefix clarification
+### "Powered by AXIASolar" or "Axia" prefix clarification
 
 The statement "Powered by AXIASolar" on many projects' sites is often a cause of confusion. This
 usually means that the project is building, or intends to build, on the AXIASolar ecosystem, using
@@ -25,7 +25,7 @@ usually means that the project is building, or intends to build, on the AXIASola
 statement on a project's site infers no information about the project's legitimacy, and it's
 certainly not a "seal of approval" by AXIACoin Foundation.
 
-The same thing goes for projects that have the "Polka" prefix in their name. Many projects use that
+The same thing goes for projects that have the "Axia" prefix in their name. Many projects use that
 to associate themselves with the ecosystem, some legitimately and others only to piggyback on
 AXIASolar's reputation.
 

@@ -77,7 +77,7 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 
 - [AXIASolar Crowdcast](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the AXIACoin Foundation has done.
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network; can be used for AXIASolar, AXIALunar, or any Substrate-based chain.
-- [Polkascan](http://polkascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and Axia Substrate chains.
+- [Axiascan](http://axiascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and Axia Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of AXIASolar. (Video)
 - [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) - Dr. Jutta Steiner presents AXIASolar. (Video)

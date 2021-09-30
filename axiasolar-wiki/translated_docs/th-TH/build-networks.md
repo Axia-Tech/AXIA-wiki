@@ -20,7 +20,7 @@ You can run a simple single-node development "network" on your machine by runnin
 axiasolar --dev
 ```
 
-You can muck around by cloning and building the http://github.com/axia-tech/polka-ui and http://github.com/axia-tech/axiasolar-ui or just heading to https://axiasolar.js.org/apps.
+You can muck around by cloning and building the http://github.com/axia-tech/axia-ui and http://github.com/axia-tech/axiasolar-ui or just heading to https://axiasolar.js.org/apps.
 
 ## Krumme Lanke
 

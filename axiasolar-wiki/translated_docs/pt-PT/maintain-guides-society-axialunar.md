@@ -8,7 +8,7 @@ Kappa Sigma Mu is a membership club using the Substrate [Society](https://substr
 
 ![Society Dashboard](assets/society/dashboard.jpg)
 
-Before joining the society, let's take a brief look at the [Society UI](https://axiasolar.js.org/apps/#/society) on AXIASolarJS apps and read through all the [rules](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) to become a member.
+Before joining the society, let's take a brief look at the [Society UI](https://axiasolar.js.org/apps/#/society) on AXIASolarJS apps and read through all the [rules](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) to become a member.
 
 ## UI Overview
 
@@ -38,7 +38,7 @@ Below are the various types of users at different stages.
 
 `Head` - One winning candidate will be randomly chosen as head of the members, weighted by the number of approvals the winning candidates accumulated.
 
-`Defender` - In every challenge period, one of the members will be randomly selected to defend their membership in the society. The rules for defending the membership are documented [in the rules](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17).
+`Defender` - In every challenge period, one of the members will be randomly selected to defend their membership in the society. The rules for defending the membership are documented [in the rules](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17).
 
 ## Procedure
 
@@ -144,7 +144,7 @@ Second, you will need to claim your payout manually by calling `payout` after th
 
 ![Society Payout](assets/society/payout.jpg)
 
-Third, there will be a membership challenge every seven days on AXIALunar. So one of the members will be randomly selected as a defender. Then, other members can vote whether this defender should stay in society or not. A simple majority wins the vote. You can take a look [here](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) and search for "Existing Members (Challenges)". Besides that, you can earn extra LUNAR by helping a user apply for the membership and requesting a tip. This is useful when a user does not have enough balance to reserve a deposit. The tip will be given when a user successfully joins the society.
+Third, there will be a membership challenge every seven days on AXIALunar. So one of the members will be randomly selected as a defender. Then, other members can vote whether this defender should stay in society or not. A simple majority wins the vote. You can take a look [here](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) and search for "Existing Members (Challenges)". Besides that, you can earn extra LUNAR by helping a user apply for the membership and requesting a tip. This is useful when a user does not have enough balance to reserve a deposit. The tip will be given when a user successfully joins the society.
 
 > **_NOTE:_**
 >
@@ -156,7 +156,7 @@ If a member accumulates too many strikes or fails their membership challenge, th
 
 ## Useful links
 
-[Convention of Approval of Membership](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) - Rules about joining the AXIALunar society
+[Convention of Approval of Membership](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) - Rules about joining the AXIALunar society
 
 [Kappa Sigma Mu Lounge](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) - A public chat room on Riot to talk about anything about the society.
 

@@ -41,7 +41,7 @@ Validators perform two functions. First, verifying that the information containe
 
 ## Validator Stats
 
-- [HashQuark Staking Strategy](https://labs.hashquark.io/#/polka/strategy) - The HashQuark staking strategy dashboard helps you choose the optimal set-up to maximize rewards.
-- [Polkastats](https://polkastats.io/) - Polkastats is a cleanly designed dashboard for validator statistics.
-- [Polkanalytics](https://polkanalytics.com/#/dashboard) - A validator dashboard that displays the daily earnings of all nominators.
+- [HashQuark Staking Strategy](https://labs.hashquark.io/#/axia/strategy) - The HashQuark staking strategy dashboard helps you choose the optimal set-up to maximize rewards.
+- [Axiastats](https://axiastats.io/) - Axiastats is a cleanly designed dashboard for validator statistics.
+- [Axianalytics](https://axianalytics.com/#/dashboard) - A validator dashboard that displays the daily earnings of all nominators.
 - [Subscan Validators Page](https://axialunar.subscan.io/validator) - Displays information on the current validators - not as tailored for validators as the other sites.

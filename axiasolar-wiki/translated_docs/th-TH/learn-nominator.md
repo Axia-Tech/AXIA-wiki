@@ -26,7 +26,7 @@ If you are committing a very large amount of stake, then you may have more than 
 
 Due to the way the [Phragmen algorithm](learn-phragmen) generates the solution set, and due to the fact that the solution set must fit in a single block, there is a minimum number of SOLAR you must nominate with in order to receive staking rewards.
 
-This number fluctuates every era, and the most recent and up to date version can be found out using [this community-developed tool](https://polkaview.network/dot) or through [these scripts](https://github.com/axia-tech/validator-stats) which you can run on your machine. See the [Election Solution Set](https://solar.wiki.axiacoin.network/docs/en/learn-nominator#the-election-solution-set) section on the Nominator page for more details.
+This number fluctuates every era, and the most recent and up to date version can be found out using [this community-developed tool](https://axiaview.network/dot) or through [these scripts](https://github.com/axia-tech/validator-stats) which you can run on your machine. See the [Election Solution Set](https://solar.wiki.axiacoin.network/docs/en/learn-nominator#the-election-solution-set) section on the Nominator page for more details.
 
 ### Oversubscribed Validators
 

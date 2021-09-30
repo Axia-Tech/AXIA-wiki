@@ -22,7 +22,7 @@ if (argv.isAXIASolar === undefined) {
   throw new Error("Must pass a --isAXIASolar option.");
 }
 
-const node = argv.isAXIASolar ? "wss://rpc.polkadot.io" : "wss://kusama-rpc.polkadot.io/";
+const node = argv.isAXIASolar ? "wss://wss.stage.axiacoin.network/" : "wss://kusama-rpc.axiadot.io/";
 console.log("Connecting to node " + node);
 
 let filledDict = {};

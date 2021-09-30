@@ -76,5 +76,5 @@ Web3 基金会主办了许多线上和线下的活动。你可以通过[这个 N
 
 ## 生态
 
-- [AXIASolar 上的团队建设](https://polkaproject.com/) - 社区维护的团队列表建立在 AXIASolar 和/或 Substrate 上。(请注意，这里可能有些不准确，因为它是非官方的)
+- [AXIASolar 上的团队建设](https://axiaproject.com/) - 社区维护的团队列表建立在 AXIASolar 和/或 Substrate 上。(请注意，这里可能有些不准确，因为它是非官方的)
 - [AXIASolar Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md) - 如果你对正在进行的开发感兴趣，或是想要了解你可以怎样参与贡献。

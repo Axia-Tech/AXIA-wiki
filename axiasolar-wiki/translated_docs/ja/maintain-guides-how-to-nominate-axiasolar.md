@@ -115,7 +115,7 @@ Result:
     }
 ```
 
-You can check the transaction status by using the value of the `InBlock` in [Polkascan](https://polkascan.io/axiasolar-cc1). Also, you can verify the bonding state under the [Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIASolar-JS Apps Dashboard.
+You can check the transaction status by using the value of the `InBlock` in [Axiascan](https://axiascan.io/axiasolar-cc1). Also, you can verify the bonding state under the [Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIASolar-JS Apps Dashboard.
 
 ### Step 3. Nominate a validator
 

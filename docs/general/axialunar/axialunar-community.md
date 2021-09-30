@@ -11,7 +11,7 @@ public contact and anyone doing so is likely trying to scam you.
 
 ## General
 
-- [AXIALunar Discussion and Governance on Polkassembly](https://axialunar.polkassembly.io/)
+- [AXIALunar Discussion and Governance on Axiassembly](https://axialunar.axiassembly.io/)
 - [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - Axia maintained repository that
   houses the Rust implementation of the AXIASolar and AXIALunar Host.
 - [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -

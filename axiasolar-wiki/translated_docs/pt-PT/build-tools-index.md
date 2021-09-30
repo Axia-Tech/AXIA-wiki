@@ -9,7 +9,7 @@ Here we provide a list of tools available for your development needs. They are s
 ## Block Explorers
 
 - [AXIASolar-JS Apps Explorer](https://axiasolar.js.org/apps/#/explorer) - AXIASolar dashboard block explorer. Currently connects to AXIALunar by default, but can be configured to connect to other remote or local endpoints.
-- [Polkascan](https://polkascan.io/) - Blockchain explorer for AXIASolar, AXIALunar, and other related chains.
+- [Axiascan](https://axiascan.io/) - Blockchain explorer for AXIASolar, AXIALunar, and other related chains.
 - [Subscan](https://subscan.io) - Blockchain explorer for Substrate chains.
 
 ## Wallets
@@ -19,8 +19,8 @@ See the [Wallets](build-wallets.md) page.
 ## Network Monitoring & Reporting
 
 - [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/) - Network information including what nodes are running the chain, what software versions they are running, sync status, and location.
-- Polkabot - AXIASolar network monitoring and reporting using Riot chat. Users may create custom bot plugins. [Blogpost](https://medium.com/axiacoin.network/polkabot-a3dba18c20c8). [Github Repository](https://gitlab.com/Polkabot/polkabot)
-- [PolkaStats](https://polkastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows network information and staking details from validators and intentions. [Github Repository](https://github.com/Colm3na/polkastats-v2/)
+- Axiabot - AXIASolar network monitoring and reporting using Riot chat. Users may create custom bot plugins. [Blogpost](https://medium.com/axiacoin.network/axiabot-a3dba18c20c8). [Github Repository](https://gitlab.com/Axiabot/axiabot)
+- [AxiaStats](https://axiastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows network information and staking details from validators and intentions. [Github Repository](https://github.com/Colm3na/axiastats-v2/)
 
 ## Rust
 

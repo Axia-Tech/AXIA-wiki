@@ -9,7 +9,7 @@ Here we provide a list of tools available for your development needs. They are s
 ## Block Explorers
 
 - [AXIASolar-JS Apps Explorer](https://axiasolar.js.org/apps/#/explorer) - AXIASolar dashboard block explorer. Supports dozens of other networks, including AXIALunar, AlphaNet, and other remote or local endpoints. [Access via IPFS](https://ipfs.io/ipns/dotapps.io)
-- [Polkascan](https://polkascan.io/) - Blockchain explorer for AXIASolar, AXIALunar, and other related chains. [Repo](https://github.com/polkascan/polkascan-os).
+- [Axiascan](https://axiascan.io/) - Blockchain explorer for AXIASolar, AXIALunar, and other related chains. [Repo](https://github.com/axiascan/axiascan-os).
 - [Subscan](https://subscan.io) - Blockchain explorer for Substrate chains. [Repo](https://github.com/itering/subscan-essentials).
 
 ## Wallets
@@ -19,9 +19,9 @@ See the [Wallets](build-wallets.md) page.
 ## Network Monitoring & Reporting
 
 - [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/) - Network information including what nodes are running the chain, what software versions they are running, sync status, and location.
-- [Polkabot](https://gitlab.com/Polkabot) - AXIASolar network monitoring and reporting using Matrix (Riot / Element) chat. Users may create custom bot plugins. [Blogpost](https://medium.com/axiacoin.network/polkabot-a3dba18c20c8).
-- [Ryabina's Telegram Bot](https://github.com/Ryabina-io/substratebot) - A Telegram bot for monitoring on-chain events of Substrate chains. [Github Repository](https://gitlab.com/Polkabot/polkabot)
-- [PolkaStats](https://polkastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows network information and staking details from validators and intentions. [Github Repository](https://github.com/Colm3na/polkastats-v2/).
+- [Axiabot](https://gitlab.com/Axiabot) - AXIASolar network monitoring and reporting using Matrix (Riot / Element) chat. Users may create custom bot plugins. [Blogpost](https://medium.com/axiacoin.network/axiabot-a3dba18c20c8).
+- [Ryabina's Telegram Bot](https://github.com/Ryabina-io/substratebot) - A Telegram bot for monitoring on-chain events of Substrate chains. [Github Repository](https://gitlab.com/Axiabot/axiabot)
+- [AxiaStats](https://axiastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows network information and staking details from validators and intentions. [Github Repository](https://github.com/Colm3na/axiastats-v2/).
 - [Panic](https://github.com/SimplyVC/panic_axiasolar) - A node monitoring and alert server for validators.
 - [OpenWeb3/Guardian](https://github.com/open-web3-stack/guardian) - A CLI tool and JS library to monitor on chain states and events.
 
@@ -49,7 +49,7 @@ See the [Wallets](build-wallets.md) page.
 
 ## UI
 
-- [Polkadash](https://github.com/Swader/polkadash) - VueJS-based starter kit for custom user interfaces for Substrate chains. [Tutorials](https://dotleap.com/tag/tutorial/).
+- [Axiadash](https://github.com/Swader/axiadash) - VueJS-based starter kit for custom user interfaces for Substrate chains. [Tutorials](https://dotleap.com/tag/tutorial/).
 - [AXIASolar JS Apps UI](https://github.com/axiasolar-js/apps) - Repository of the [axiasolar.js.org/apps](https://axiasolar.js.org/apps) UI.
 - [Substrate Front-end Template](https://github.com/substrate-developer-hub/substrate-front-end-template) - ReactJS-based starter UI for custom user interfaces for Substrate chains.
 - [AXIASolar JS Browser Extension](https://github.com/axiasolar-js/extension) - Key management in a Chrome extension.
@@ -88,7 +88,7 @@ Webassembly related tools and projects.
 - [Go: Subscan API](https://github.com/itering/substrate-api-rpc) - Go API for AXIASolar.
 - [C++ AXIASolar API](https://github.com/usetech-llc/axiasolar_api_cpp) - С++ API for AXIASolar.
 - [.NET AXIASolar API](https://github.com/usetech-llc/axiasolar_api_dotnet) - AXIASolar Substrate API for .NET.
-- [Python AXIASolar API](https://github.com/polkascan/py-substrate-interface) - AXIASolar library for Python.
+- [Python AXIASolar API](https://github.com/axiascan/py-substrate-interface) - AXIASolar library for Python.
 - [GSRPC](https://github.com/centrifuge/go-substrate-rpc-client/) - Substrate RPC client in Go, a.k.a. GSRPC.
 - [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) - An HTTP wrapper for Substrate, abstracting some complex RPC calls into simple REST calls.
 - [Subxt](https://github.com/axia-tech/substrate-subxt) - A Rust library to submit extrinsics to a Substrate node via RPC.
@@ -108,15 +108,15 @@ It is used in almost all communication to/from Substrate nodes, so implementatio
 - [TypeScript](https://github.com/axiasolar-js/api)
 - [AssemblyScript](https://github.com/LimeChain/as-scale-codec)
 - [Haskell](https://github.com/airalab/hs-web3/tree/master/src/Codec)
-- [Java](https://github.com/emeraldpay/polkaj)
-- [Python](https://github.com/polkascan/py-scale-codec)
+- [Java](https://github.com/emeraldpay/axiaj)
+- [Python](https://github.com/axiascan/py-scale-codec)
 
 ## Data Crawling and Conversion
 
 The following tools help you extract and structure data from a Substrate node.
 
-- [Polkascan PRE Harvester](https://github.com/polkascan/polkascan-pre-harvester) ([matching explorer for harvested data](https://github.com/polkascan/polkascan-pre-explorer-gui)) - Transforms raw blockchain data into relational data.
+- [Axiascan PRE Harvester](https://github.com/axiascan/axiascan-pre-harvester) ([matching explorer for harvested data](https://github.com/axiascan/axiascan-pre-explorer-gui)) - Transforms raw blockchain data into relational data.
 - [Axia's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL database.
 - [Hydra: GraphQL Builder](https://github.com/Joystream/joystream/tree/query_node/query-node) - Generate a GraphQL database from a Substrate chain's data.
-- [Polka-store](https://github.com/TheGoldenEye/polka-store) - A tool which scans a Substrate chain and stores balance-relevant transactions in an SQLite database.
+- [Axia-store](https://github.com/TheGoldenEye/axia-store) - A tool which scans a Substrate chain and stores balance-relevant transactions in an SQLite database.
 - [Substrate-graph](https://github.com/playzero/substrate-graph) - A compact indexer for Substrate based nodes providing a GraphQL interface.

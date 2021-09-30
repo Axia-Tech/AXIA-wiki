@@ -212,7 +212,7 @@ If the cancellation is controversial enough that the council cannot get a two-th
 
 ### Blacklisting
 
-A proposal can be blacklisted by Root origin (e.g. sudo). A blacklisted proposal and its related referendum (if any) is immediately [canceled](#canceling). Additionally, a blacklisted proposal's hash cannot re-appear in the proposal queue. Blacklisting is useful when removing erroneous proposals that could be submitted with the same hash, i.e. [proposal #2](https://polkascan.io/axiasolar/democracy/proposal/2) in which the submitter used plain text to make a suggestion.
+A proposal can be blacklisted by Root origin (e.g. sudo). A blacklisted proposal and its related referendum (if any) is immediately [canceled](#canceling). Additionally, a blacklisted proposal's hash cannot re-appear in the proposal queue. Blacklisting is useful when removing erroneous proposals that could be submitted with the same hash, i.e. [proposal #2](https://axiascan.io/axiasolar/democracy/proposal/2) in which the submitter used plain text to make a suggestion.
 
 Upon seeing their proposal removed, a submitter who is not properly introduced to the democracy system of AXIASolar might be tempted to re-submit the same proposal. That said, this is far from a fool-proof method of preventing invalid proposals from being submitted - a single changed character in a proposal's text will also change the hash of the proposal, rendering the per-hash blacklist invalid.
 
@@ -280,7 +280,7 @@ In some circumstances you may want to appeal to the on-chain council to enact a 
 
 The first step to appeal to the council is to get in contact with the councillors. There is no singular place where you are guaranteed to grab every councillor's ear with your message. However, there are a handful of good places to start where you can get the attention of some of them. The [AXIASolar Direction](https://matrix.to/#/!OwgojQyBzTlUQGGLhq:matrix.axia.io) matrix room is one such place. After creating an account and joining this room, you can post a well thought-through message here that lays down your case and provides justification for why you think the council should consider enacting a change to the protocol on your behalf.
 
-At some point you will likely need a place for a longer form discussion. For this, making a post on [Polkassembly](https://axiasolar.polkassembly.io/) is the recommended place to do so. When you write a post on Polkassembly make sure you present all the evidence for your circumstances and state clearly what kind of change you would suggest to the councillors to enact. Remember - the councillors do not need to make the change, it is your responsibility to make a strong case for why the change should be made.
+At some point you will likely need a place for a longer form discussion. For this, making a post on [Axiassembly](https://axiasolar.axiassembly.io/) is the recommended place to do so. When you write a post on Axiassembly make sure you present all the evidence for your circumstances and state clearly what kind of change you would suggest to the councillors to enact. Remember - the councillors do not need to make the change, it is your responsibility to make a strong case for why the change should be made.
 
 ## Resources
 

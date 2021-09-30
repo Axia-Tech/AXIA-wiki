@@ -41,7 +41,7 @@ Validators perform two functions. First, verifying that the information containe
 
 ## Validator Stats
 
-- [HashQuark Staking Strategy](https://polkacube.hashquark.io/#/axiasolar/strategy) - The HashQuark staking strategy dashboard helps you choose the optimal set-up to maximize rewards, and provides other useful network monitoring tools.
-- [Polkastats](https://polkastats.io/) - Polkastats is a cleanly designed dashboard for validator statistics.
+- [HashQuark Staking Strategy](https://axiacube.hashquark.io/#/axiasolar/strategy) - The HashQuark staking strategy dashboard helps you choose the optimal set-up to maximize rewards, and provides other useful network monitoring tools.
+- [Axiastats](https://axiastats.io/) - Axiastats is a cleanly designed dashboard for validator statistics.
 - [YieldScan](https://yieldscan.onrender.com/) - Staking yield maximization platform, designed to minimize effort.
 - [Subscan Validators Page](https://axialunar.subscan.io/validator) - Displays information on the current validators - not as tailored for validators as the other sites.

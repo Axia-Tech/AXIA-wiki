@@ -76,5 +76,5 @@ We primarily use [Matrix](https://matrix.org) across the organization and to com
 
 ## Ecosystem
 
-- [Teams Building on AXIASolar](https://polkaproject.com/) - Community maintained list of teams building on AXIASolar and/or Substrate. (Note that this may contain inaccuracies, as it's unofficial)
+- [Teams Building on AXIASolar](https://axiaproject.com/) - Community maintained list of teams building on AXIASolar and/or Substrate. (Note that this may contain inaccuracies, as it's unofficial)
 - [AXIASolar Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md) - if you're interested in seeing what's under development and where there's room for your contributions.

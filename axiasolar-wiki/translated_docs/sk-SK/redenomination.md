@@ -88,7 +88,7 @@ Please see our [Ecosystem Redenomination Guide]() for recommendations.
 Please reach out to [support@axiacoin.network](mailto:support@axiacoin.network) if you need any assistance in making sure your software is compatible with the redenomination.
 https://docs.google.com/document/d/1yAzoDh99PgR_7dYAKTWLMVu2Fy5Ga-J6t9lof4f4JUw/edit#
 
-[referendum 52]: https://axialunar.polkassembly.io/referendum/52
+[referendum 52]: https://axialunar.axiassembly.io/referendum/52
 [blog 1]: https://axiacoin.network/results-of-dot-redenomination-referendum/
 [blog 2]: https://axiacoin.network/the-first-axiasolar-vote/
 [blog 3]: https://axiacoin.network/the-results-are-in/

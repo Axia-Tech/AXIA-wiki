@@ -106,13 +106,13 @@ See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integ
 
 8. Click on the SOLAR identicon to copy the address to the clipboard. ![axialunar copy address](assets/axialunar/axialunar_copy_address.png)
 
-### Using Polkawallet
+### Using Axiawallet
 
-1. Install [Polkawallet](https://polkawallet.io). Click "Download" and select the link corresponding to the platform you are using. On Android, you may need to allow installing apps from external sources. On iOS, you may need to "trust" Polkawallet in the "General > Profiles & Device Management > Enterprise App" section before running the app.
+1. Install [Axiawallet](https://axiawallet.io). Click "Download" and select the link corresponding to the platform you are using. On Android, you may need to allow installing apps from external sources. On iOS, you may need to "trust" Axiawallet in the "General > Profiles & Device Management > Enterprise App" section before running the app.
 
 2. Once the app is open, copy the seed phrase and store it in a safe place. Don't share the seed phrase with anyone, you can use it to access your account if you forget your password or otherwise lose your keystore.
 
-<img src="/img/axialunar/polkawallet-create-account.jpg" width=50% />
+<img src="/img/axialunar/axiawallet-create-account.jpg" width=50% />
 
 3. Name your account and make a strong password, make sure to write it down in another place, then click "Save".
 
@@ -120,8 +120,8 @@ See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integ
 
 5. Click on the pink QR Code symbol and select "Copy address" to copy your address to the clipboard.
 
-<img src="/img/axialunar/polkawallet-accounts-page.jpg" width=50% />
-<img src="/img/axialunar/polkawallet-copy-address.jpg" width=50% />
+<img src="/img/axialunar/axiawallet-accounts-page.jpg" width=50% />
+<img src="/img/axialunar/axiawallet-copy-address.jpg" width=50% />
 
 6. [Get the AXIALunar address from the Substrate address.](#axialunar-from-substrate-address)
 

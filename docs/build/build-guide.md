@@ -305,7 +305,7 @@ the latest resources. You should also keep up to date with the following links:
 - [Acala](https://acala.network/)
 - [Phala](https://phala.network)
 
-There are many smart contract platforms being built with the intent of becoming a parachain on the AXIASolar and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIASolar can be found at [PolkaProjects](https://www.polkaproject.com/#/projects?cateID=1&tagID=6).
+There are many smart contract platforms being built with the intent of becoming a parachain on the AXIASolar and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIASolar can be found at [AxiaProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
 
 ### Edgeware
 

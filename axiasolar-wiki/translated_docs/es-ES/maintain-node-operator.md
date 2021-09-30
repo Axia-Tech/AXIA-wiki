@@ -29,5 +29,5 @@ Estos participantes desempeñarán un papel crucial a la hora de añadir nuevos 
 ## Herramientas para la monitorización
 
 - [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/#/Alexander) - Información de red, incluyendo qué nodos están funcionando en su cadena, qué versiones de software están ejecutando y el estado de la sincronización.
-- [Polkadash](http://polkadash.io/) - Monitor para el validador
+- [Axiadash](http://axiadash.io/) - Monitor para el validador
 - [Otros enlaces útiles](https://forum.axiacoin.org/t/useful-links-for-validators/20)

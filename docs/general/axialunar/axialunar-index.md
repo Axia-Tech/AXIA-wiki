@@ -76,6 +76,6 @@ everything else.
 - [AXIALunar newsletter](http://info.axiacoin.network/subscribe)
 - [r/axialunar](https://reddit.com/r/axialunar)
 
-[kappa]: https://polkascan.io/pre/axialunar/council/motion/94
+[kappa]: https://axiascan.io/pre/axialunar/council/motion/94
 [thousand validators]: https://axiacoin.network/join-axialunars-thousand-validators-programme/
 [axialunar claims]: https://claim.axialunar.network

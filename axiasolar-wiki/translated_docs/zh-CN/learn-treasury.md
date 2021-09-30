@@ -44,7 +44,7 @@ Please note that there is no way for a user to revoke a treasury proposal after 
 To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal. Most discussion takes place on the following platforms:
 
 - Many community members participate in discussion in the [AXIALunar Element (previously Riot)](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) chat.
-- The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
+- The [Axiassembly](https://axialunar.axiassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
 - The {{ axiasolar: [AXIASolar forum](https://forum.axiacoin.network) :axiasolar }}
   {{ axialunar: [AXIALunar forum](https://forum.axialunar.network) :axialunar }} can be used for proposal explanations.
 - [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} address and automatically reads proposals from the chain, turning them into discussion threads.
@@ -90,8 +90,8 @@ To better understand the process a tip goes through until it is paid out, let's 
 Bob has done something great for {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }}. Alice has noticed this and decides to report Bob as deserving a tip from the Treasury. The Council is composed of three members Charlie, Dave, and Eve.
 
 Alice begins the process by issuing the `report_awesome` extrinsic. This extrinsic requires two arguments, a reason and the address to tip. Alice submits Bob's address with the reason being a UTF-8 encoded URL to a post on
-{{ axiasolar: [polkassembly](https://axiasolar.polkassembly.io) :axiasolar }}
-{{ axialunar: [polkassembly](https://axialunar.polkassembly.io) :axialunar }} that explains her reasoning for why Bob deserves the tip.
+{{ axiasolar: [axiassembly](https://axiasolar.axiassembly.io) :axiasolar }}
+{{ axialunar: [axiassembly](https://axialunar.axiassembly.io) :axialunar }} that explains her reasoning for why Bob deserves the tip.
 
 As mentioned above, Alice must also lock up a deposit for making this report. The deposit is the base deposit as set in the chain's parameter list plus the additional deposit per byte contained in the reason. This is why Alice submitted a URL as the reason instead of the explanation directly, it was cheaper for her to do so.
 

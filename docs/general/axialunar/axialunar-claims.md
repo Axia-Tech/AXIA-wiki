@@ -151,18 +151,18 @@ enter `subkey --help` for more usage examples.
 8. Click on the SOLAR identicon to copy the address to the clipboard.
    ![axialunar copy address](../../assets/axialunar/axialunar_copy_address.png)
 
-### Using Polkawallet
+### Using Axiawallet
 
-1. Install [Polkawallet](https://polkawallet.io). Click "Download" and select the link corresponding
+1. Install [Axiawallet](https://axiawallet.io). Click "Download" and select the link corresponding
    to the platform you are using. On Android you may need to allow installing apps from external
-   sources. On iOS, you may need to "trust" Polkawallet in the "General > Profiles & Device
+   sources. On iOS, you may need to "trust" Axiawallet in the "General > Profiles & Device
    Management > Enterprise App" section before running the app.
 
 2. Once the app is open, copy the seed phrase and store it in a safe place. Don't share the seed
    phrase with anyone, you can use it to access your account if you forget your password or
    otherwise lose your keystore.
 
-<img src={require('./../../assets/axialunar/polkawallet-create-account.jpg').default} width="50%" />
+<img src={require('./../../assets/axialunar/axiawallet-create-account.jpg').default} width="50%" />
 
 3. Name your account and make a strong password, make sure to write it down in another place, then
    click "Save".
@@ -172,8 +172,8 @@ enter `subkey --help` for more usage examples.
 
 5. Click on the pink QR Code symbol and select "Copy address" to copy your address to clipboard.
 
-<img src={require('./../../assets/axialunar/polkawallet-accounts-page.jpg').default} width="50%" /> <img
-src={require('./../../assets/axialunar/polkawallet-copy-address.jpg').default} width="50%" />
+<img src={require('./../../assets/axialunar/axiawallet-accounts-page.jpg').default} width="50%" /> <img
+src={require('./../../assets/axialunar/axiawallet-copy-address.jpg').default} width="50%" />
 
 6. [Get the AXIALunar address from the Substrate address.](#axialunar-from-substrate-address)
 

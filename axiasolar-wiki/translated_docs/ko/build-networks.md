@@ -20,7 +20,7 @@ cargo install --git https://github.com/axia-tech/axiasolar.git axiasolar
 axiasolar --dev
 ```
 
-http://github.com/axia-tech/polka-ui나 http://github.com/axia-tech/axiasolar-ui을 클로닝하거나 만들면서 노닥거릴수 있습니다. 아니면 https://axiasolar.js.org/apps을 가리킬 수도 있습니다.
+http://github.com/axia-tech/axia-ui나 http://github.com/axia-tech/axiasolar-ui을 클로닝하거나 만들면서 노닥거릴수 있습니다. 아니면 https://axiasolar.js.org/apps을 가리킬 수도 있습니다.
 
 ## Krumme Lanke (베를린 남서쪽에 있는 호수 이름 - 역자 주 )
 

@@ -99,7 +99,7 @@ community members. The application we use most often to interact with the Matrix
 
 ## Ecosystem
 
-- [Teams Building on AXIASolar](https://polkaproject.com/) - Community maintained list of teams
+- [Teams Building on AXIASolar](https://axiaproject.com/) - Community maintained list of teams
   building on AXIASolar and/or Substrate. (Note that this may contain inaccuracies, as it's
   unofficial)
 - [AXIASolar Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md) -

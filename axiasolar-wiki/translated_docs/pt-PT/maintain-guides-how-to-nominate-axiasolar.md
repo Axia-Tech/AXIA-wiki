@@ -66,7 +66,7 @@ At some point, you might decide to stop nominating one or more validators. You c
 
 # Using Command-Line Interface (CLI)
 
-Apart from using AXIASolar-JS Apps to participate in staking, you can do all these things in CLI instead. The CLI approach allows you to interact with the AXIASolar network without going to the Polkado-JS Apps dashboard.
+Apart from using AXIASolar-JS Apps to participate in staking, you can do all these things in CLI instead. The CLI approach allows you to interact with the AXIASolar network without going to the Axiado-JS Apps dashboard.
 
 ### Step 1: Install @axiasolar-js/api-cli
 
@@ -112,7 +112,7 @@ Result:
     }
 ```
 
-You can check the transaction status by using the value of the `InBlock` in [Polkascan](https://polkascan.io/axiasolar-cc1). Also, you can verify the bonding state under the [Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIASolarJS Apps Dashboard.
+You can check the transaction status by using the value of the `InBlock` in [Axiascan](https://axiascan.io/axiasolar-cc1). Also, you can verify the bonding state under the [Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIASolarJS Apps Dashboard.
 
 ### Step 3. Nominate a validator
 

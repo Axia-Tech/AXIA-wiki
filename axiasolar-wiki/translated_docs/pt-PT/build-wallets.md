@@ -21,7 +21,7 @@ If you are unable to load a JSON file in a wallet, try loading it in the AXIASol
 | [Signer](https://www.axia.io/signer/)                            | Live              | Axia      | IOS and Android                     |
 | [AXIASolar-JS](https://axiasolar.js.org/apps/#/accounts)             | Live              | Axia      | Browser                             |
 | [AXIASolar.JS Plugin](https://github.com/axiasolar-js/extension)     | Live              | Axia      | Browser extension                   |
-| [Polkawallet](https://polkawallet.io/)                             | Live              | Polkawallet | IOS and Android                     |
+| [Axiawallet](https://axiawallet.io/)                             | Live              | Axiawallet | IOS and Android                     |
 | [Math Wallet](https://www.mathwallet.org/axialunar-wallet/en/)        | Live              | Math Wallet | Browser extension                   |
 | [Lunie](https://lunie.io/)                                         | Live              | Lunie       | Browser extension                   |
 | [ImToken](https://token.im/)                                       | Live              | ImToken     | IOS and Android                     |

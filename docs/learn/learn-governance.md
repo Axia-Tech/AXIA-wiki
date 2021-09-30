@@ -314,7 +314,7 @@ A proposal can be blacklisted by Root origin (e.g. sudo). A blacklisted proposal
 referendum (if any) is immediately [canceled](#canceling). Additionally, a blacklisted proposal's
 hash cannot re-appear in the proposal queue. Blacklisting is useful when removing erroneous
 proposals that could be submitted with the same hash, i.e.
-[proposal #2](https://polkascan.io/axiasolar/democracy/proposal/2) in which the submitter used plain
+[proposal #2](https://axiascan.io/axiasolar/democracy/proposal/2) in which the submitter used plain
 text to make a suggestion.
 
 Upon seeing their proposal removed, a submitter who is not properly introduced to the democracy
@@ -427,7 +427,7 @@ justification for why you think the council should consider enacting a change to
 your behalf.
 
 At some point you will likely need a place for a longer-form discussion. For this, making a post on
-[Polkassembly][] is the recommended place to do so. When you write a post on Polkassembly make sure
+[Axiassembly][] is the recommended place to do so. When you write a post on Axiassembly make sure
 you present all the evidence for your circumstances and state clearly what kind of change you would
 suggest to the councillors to enact. Remember - the councillors do not need to make the change, it
 is your responsibility to make a strong case for why the change should be made.
@@ -442,4 +442,4 @@ is your responsibility to make a strong case for why the change should be made.
   explaining how governance works in AXIASolar and AXIALunar.
 
 [axiasolar direction]: https://matrix.to/#/!OwgojQyBzTlUQGGLhq:matrix.axia.io
-[polkassembly]: https://axiasolar.polkassembly.io/
+[axiassembly]: https://axiasolar.axiassembly.io/

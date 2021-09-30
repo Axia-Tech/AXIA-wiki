@@ -41,7 +41,7 @@ Validators perform two functions. First, verifying that the information containe
 
 ## 验证人统计
 
-- [HashQuark 抵押策略](https://labs.hashquark.io/#/polka/strategy) - HashQuark 抵押策略 - 帮助您选择最佳设置以获得最大奖励。
-- [ Polkastats ](https://polkastats.io/) - Polkastats 是验证程序的精心设计的网页
-- [ Polkanalytics ](https://polkanalytics.com/#/dashboard) - 验证人网页，显示所有提名人的每日收入。
+- [HashQuark 抵押策略](https://labs.hashquark.io/#/axia/strategy) - HashQuark 抵押策略 - 帮助您选择最佳设置以获得最大奖励。
+- [ Axiastats ](https://axiastats.io/) - Axiastats 是验证程序的精心设计的网页
+- [ Axianalytics ](https://axianalytics.com/#/dashboard) - 验证人网页，显示所有提名人的每日收入。
 - [ Subscan 验证人页面](https://axialunar.subscan.io/validator) - 显示当前验证人的信息 - 不像其他站点那样适合验证人。

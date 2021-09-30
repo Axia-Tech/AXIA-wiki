@@ -77,7 +77,7 @@ For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn
 
 - [AXIASolar Crowdcast](https://www.crowdcast.io/axiasolar) - Web3 基金会过往 Crowdcast 网络会议列表
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer)-AXIASolar 网络浏览器，可用于 AXIASolar、AXIALunar 或其他基于 Substrate 的区块链网络。
-- [Polkascan](http://polkascan.io/) - AXIASolar 中继链及其他 Substrate 链的实时多链数据。
+- [Axiascan](http://axiascan.io/) - AXIASolar 中继链及其他 Substrate 链的实时多链数据。
 - [Subscan.io](https://subscan.io) - Substrate 链浏览器。
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Gavin Wood 博士对 AXIASolar 的视频介绍。（视频）
 - [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) - Jutta Steiner 博士对 AXIASolar 的视频介绍。（视频）

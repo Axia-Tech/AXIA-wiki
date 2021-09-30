@@ -15,7 +15,7 @@ On AXIALunar you can:
 - Explore the politics. Campaign as a councillor or vote for new runtime proposals using Democracy.
 - Hone your validator set-up. The minimum requirement for staking as a validator on AXIALunar is much lower than it is expected for AXIASolar. There are also programs in place such as [Thousand Validators](https://axiacoin.network/join-axialunars-thousand-validators-programme/) to help community validators rise the ranks.
 - Deploy a parachain. AXIALunar will get the functionality required for parachains before AXIASolar. This includes participating in a parachain slot auction and composable applications.
-- Join a cyber secret society. The [Kappa Sigma Mu](https://polkascan.io/pre/axialunar/council/motion/94) fraternity asks you to get a AXIALunar tattoo to join.
+- Join a cyber secret society. The [Kappa Sigma Mu](https://axiascan.io/pre/axialunar/council/motion/94) fraternity asks you to get a AXIALunar tattoo to join.
 - Expect Chaos. AXIALunar is getting more battle tested day-by-day but it's built on the foundations of moving fast and trying new things.
 
 AXIALunar is owned by those who hold the AXIALunar tokens (LUNAR). There's no central kill switch and all changes are made through the protocol's on-chain governance. AXIALunar is experimental. There are no guarantees.

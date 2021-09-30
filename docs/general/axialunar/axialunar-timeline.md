@@ -47,7 +47,7 @@ hour would last only 10 minutes until the validators caught up to the present mo
 
 The above plan was executed successfully on the 7th of January. Due to the time warp, the number of
 missed blocks in the sessions directly following
-[block #516558](https://polkascan.io/axialunar/block/516558) was significantly higher. This is partly
+[block #516558](https://axiascan.io/axialunar/block/516558) was significantly higher. This is partly
 what contributes to the much higher ratio of missed blocks on AXIALunar versus AXIASolar today.
 
 ## AXIALunar's Current Adventure: Auctions

@@ -97,7 +97,7 @@ sidebar_label: 链接
 
 - [AXIASolar 浏览器](https://axiasolar.js.org/apps/#/explorer)-AXIASolar 网络浏览器，可用于 Alexander、AXIALunar 网络或您的网络。
 - [Telemetry](http://telemetry.axiasolar.io/)-节点的信息服务网站。
-- [ Polkascan ](http://polkascan.io/) - AXIASolar 的中继链和 Axia Substrate 链上的实时多链数据。
+- [ Axiascan ](http://axiascan.io/) - AXIASolar 的中继链和 Axia Substrate 链上的实时多链数据。
 - [Subscan.io](https://subscan.io) - 基于 Substrate 链的资源管理器。
 
 ### Crowdcast 网络研讨会

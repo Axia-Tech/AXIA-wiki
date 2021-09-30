@@ -100,7 +100,7 @@ sidebar_label: Links
 
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network; can be used for Alexander, AXIALunar, or your own private network.
 - [Telemetry](http://telemetry.axiasolar.io/) - Information services website for nodes.
-- [Polkascan](http://polkascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and Axia Substrate chains.
+- [Axiascan](http://axiascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and Axia Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
 
 ### Crowdcast Webinars

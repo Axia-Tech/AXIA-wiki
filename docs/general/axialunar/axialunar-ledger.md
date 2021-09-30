@@ -136,7 +136,7 @@ Apps UI][apps].
 ### Checking the Balance of Your Account
 
 There are a few methods to check the balance of your account. You can use AXIASolar-JS Apps or you
-can use a block explorer like [Polkascan][] or [Subscan][].
+can use a block explorer like [Axiascan][] or [Subscan][].
 
 #### Using AXIASolar-JS Apps
 
@@ -228,5 +228,5 @@ or visit [our Support page](https://support.axiacoin.network).
 [apps]: https://axialunar.dotapps.io
 [prerelease instructions]: https://github.com/Zondax/ledger-axialunar#download-and-install
 [releases page]: https://github.com/Zondax/ledger-axialunar/releases
-[polkascan]: https://polkascan.io/axialunar
+[axiascan]: https://axiascan.io/axialunar
 [subscan]: https://axialunar.subscan.io/

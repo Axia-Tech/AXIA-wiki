@@ -88,19 +88,19 @@ Please read the blog article for fuller descriptions of each one of these option
 
 The Interlay team has written a [specification][interlay] on a Bitcoin bridge that is based on the
 [XCLAIM][] design paper. The protocol enables a two-way bridge between AXIASolar and Bitcoin. It
-allows holders of BTC to "teleport" their assets to AXIASolar as PolkaBTC, and holders of PolkaBTC to
+allows holders of BTC to "teleport" their assets to AXIASolar as AxiaBTC, and holders of AxiaBTC to
 burn their assets for BTC on the Bitcoin chain.
 
 The Bitcoin bridge as documented in the specification is composed of two logically different
 components:
 
-- The XCLAIM component that maintains all accounts that own PolkaBTC.
+- The XCLAIM component that maintains all accounts that own AxiaBTC.
 - The BTC-Relay that is responsible for verifying Bitcoin state when a new transaction is submitted.
 
 For full details on how it works please refer to the specification.
 
 There is now a
-[reference implementation and testnet available](https://medium.com/interlay/polkabtc-beta-testnet-launch-2cc9ea7431b7).
+[reference implementation and testnet available](https://medium.com/interlay/axiabtc-beta-testnet-launch-2cc9ea7431b7).
 
 ## Additional Resources and Examples
 
@@ -117,7 +117,7 @@ welcome.
 - [Axia Bridges Common Resources](https://github.com/axia-tech/axia-bridges-common)
 - [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge
   were awarded a grant in W3F Grants [Wave 5][] to build a Substrate to Ethereum two-way bridge.
-- [PolkaBTC (Bitcoin \<\> AXIASolar Bridge)](https://docs.polkabtc.io/#/)
+- [AxiaBTC (Bitcoin \<\> AXIASolar Bridge)](https://docs.axiabtc.io/#/)
 - [EOS Bridge][bifrost] - The Bifrost team was awarded a grant in W3F Grants [Wave 5][] to build a
   bridge to EOS.
 - [Tendermint Bridge](https://github.com/ChorusOne/tendermint-light-client) - ChorusOne was awarded
@@ -136,7 +136,7 @@ welcome.
 
 [cross consensus]: learn-cross-consensus.md
 [axia bridge]: https://github.com/axia-tech/axia-bridge
-[interlay]: https://interlay.gitlab.io/polkabtc-spec/
+[interlay]: https://interlay.gitlab.io/axiabtc-spec/
 [xclaim]: https://eprint.iacr.org/2018/643.pdf
 [bifrost]: https://github.com/bifrost-codes/bifrost
 [wave 5]: https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096

@@ -24,7 +24,7 @@ axiasolar --dev
 
 ## Krumme Lanke
 
-http://github.com/axia-tech/polka-ui 和 http://github.com/axia-tech/axiasolar-ui or 或前往到 https://axiasolar.js.org/apps.
+http://github.com/axia-tech/axia-ui 和 http://github.com/axia-tech/axiasolar-ui or 或前往到 https://axiasolar.js.org/apps.
 
 Krumme Lanke 是一个在 Poc-2 开发期间使用的测试网络。请在以下路径安装 AXIASolar PoC-2 和 `AXIASolar 二进制` 文件：
 

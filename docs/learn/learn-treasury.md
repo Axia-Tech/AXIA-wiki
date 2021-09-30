@@ -76,7 +76,7 @@ takes place on the following platforms:
 - Many community members participate in discussion in the
   [AXIALunar Element (previously Riot)](https://matrix.to/#/#axialunar:matrix.axia.io) chat or
   [AXIASolar Element](https://matrix.to/#//#axiasolar:matrix.axia.io).
-- The [Polkassembly](https://polkassembly.io) discussion platform that allows users to log in with
+- The [Axiassembly](https://axiassembly.io) discussion platform that allows users to log in with
   their Web3 address and automatically reads proposals from the chain, turning them into discussion
   threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a
   vote.
@@ -152,8 +152,8 @@ is composed of three members Charlie, Dave, and Eve.
 Alice begins the process by issuing the `report_awesome` extrinsic. This extrinsic requires two
 arguments, a reason and the address to tip. Alice submits Bob's address with the reason being a
 UTF-8 encoded URL to a post on
-{{ axiasolar: [polkassembly](https://axiasolar.polkassembly.io) :axiasolar }}
-{{ axialunar: [polkassembly](https://axialunar.polkassembly.io) :axialunar }} that explains her reasoning for
+{{ axiasolar: [axiassembly](https://axiasolar.axiassembly.io) :axiasolar }}
+{{ axialunar: [axiassembly](https://axialunar.axiassembly.io) :axialunar }} that explains her reasoning for
 why Bob deserves the tip.
 
 As mentioned above, Alice must also lock up a deposit for making this report. The deposit is the

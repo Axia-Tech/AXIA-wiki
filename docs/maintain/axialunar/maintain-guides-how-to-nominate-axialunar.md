@@ -132,7 +132,7 @@ are available [here](../maintain-guides-how-to-unbond.md).
 
 Apart from using the AXIASolar-JS UI to participate in the staking, you can do all these things in
 CLI instead. The CLI approach allows you to interact with the AXIASolar / AXIALunar network without
-going to the PolkadoJS dashboard.
+going to the AxiadoJS dashboard.
 
 ### Step 1: Install @axiasolar-js/api-cli
 
@@ -184,7 +184,7 @@ Result:
 ```
 
 You can check the transaction status by using the value of the `InBlock` in
-[Polkascan](https://polkascan.io/pre/axialunar). Also, you can verify the bonding state under the
+[Axiascan](https://axiascan.io/pre/axialunar). Also, you can verify the bonding state under the
 [Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIASolar-JS Apps Dashboard.
 
 ### Step 3. Nominate a validator

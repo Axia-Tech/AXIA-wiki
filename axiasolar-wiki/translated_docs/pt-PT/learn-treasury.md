@@ -38,7 +38,7 @@ The proposer has to deposit 5% of the requested amount or 20 LUNAR (whichever is
 To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal. Most discussion takes place on the following platforms:
 
 - Many community members participate in discussion in the [AXIALunar Riot](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) chat.
-- The [Polkassembly](https://axialunar.polkassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
+- The [Axiassembly](https://axialunar.axiassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
 - The [AXIALunar forum](https://forum.axialunar.network) and [AXIASolar forum](https://forum.axiacoin.network) can be used for proposal explanations on AXIALunar and AXIASolar respectively.
 - [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads.
 
@@ -74,7 +74,7 @@ To better understand the process a tip goes through until it is paid out, let's 
 
 Bob has done something great for AXIALunar. Alice has noticed this and decides to report Bob as deserving a tip from the treasury. The council is composed of three members Charlie, Dave, and Eve.
 
-Alice begins the process by issuing the `report_awesome` extrinsic. This extrinsic requires two arguments, a reason and the address to tip. Alice submits Bob's address with the reason being a UTF-8 encoded URL to post on [polkassembly](https://axialunar.polkassembly.io) that explains her reasoning for why Bob is deserving.
+Alice begins the process by issuing the `report_awesome` extrinsic. This extrinsic requires two arguments, a reason and the address to tip. Alice submits Bob's address with the reason being a UTF-8 encoded URL to post on [axiassembly](https://axialunar.axiassembly.io) that explains her reasoning for why Bob is deserving.
 
 Alice must also lock up a deposit for making this report. The deposit is the base deposit as set in the chain's parameter list plus the additional deposit per byte contained in the reason. This is why Alice submitted a URL as the reason instead of the explanation directly, it was cheaper for her to do so.
 

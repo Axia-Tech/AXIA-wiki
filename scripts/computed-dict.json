@@ -13,6 +13,6 @@
   "{{ axialunar_max_nominators }}": "256",
   "{{ axiasolar_max_nominators }}": "256",
   "{{ dot_ipfs_pdf_url }}": "https://ipfs.io/ipfs/undefined?filename=axiasolar-wiki.pdf",
-  "{{ num_validators }}": 297,
-  "{{ treasury_proposal_total }}": 70
+  "{{ num_validators }}": 2,
+  "{{ treasury_proposal_total }}": 10
 }

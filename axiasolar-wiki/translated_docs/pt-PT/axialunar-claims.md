@@ -16,7 +16,7 @@ For most users, we recommend using the [AXIASolar UI](https://axiasolar.js.org/a
 
 > NOTICE: Unfortunately, at this time AXIALunar does not have hardware wallet support. Hopefully this will change soon!
 
-Another option you may consider using is the `subkey` command line utility, which will allow you to take extra steps to protect the security of your key. Additionally, another option is the Polkawallet mobile wallet, although it requires an extra step to generate AXIALunar addresses.
+Another option you may consider using is the `subkey` command line utility, which will allow you to take extra steps to protect the security of your key. Additionally, another option is the Axiawallet mobile wallet, although it requires an extra step to generate AXIALunar addresses.
 
 ### Using axiasolar{.js} extension (Chrome/Brave or Firefox)
 
@@ -96,13 +96,13 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/knowledgebase/int
 
 7. Click on the SOLAR identicon to copy the address to the clipboard. <img src="/img/axialunar/axiasolarui-copy-account-address.png" width=50% />
 
-### Using Polkawallet
+### Using Axiawallet
 
-1. Install [Polkawallet](https://polkawallet.io). Click `Download` and select the link corresponding to the platform you are using. On Android you may need to allow installing apps from external sources. On iOS, you may need to "trust" Polkawallet in the `General > Profiles & Device Management > Enterprise App` section before running the app.
+1. Install [Axiawallet](https://axiawallet.io). Click `Download` and select the link corresponding to the platform you are using. On Android you may need to allow installing apps from external sources. On iOS, you may need to "trust" Axiawallet in the `General > Profiles & Device Management > Enterprise App` section before running the app.
 
 2. Once the app is open, copy the seed phrase and store it in a safe place. Don't share the seed phrase with anyone, you can use it to access your account if you forget your password or otherwise lose your keystore.
 
-<img src="/img/axialunar/polkawallet-create-account.jpg" width=50% />
+<img src="/img/axialunar/axiawallet-create-account.jpg" width=50% />
 
 3. Name your account and make a strong password, make sure to write it down in another place, then click `Save`.
 
@@ -110,8 +110,8 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/knowledgebase/int
 
 5. Click on the pink QR Code symbol and select `Copy address` to copy your address to clipboard.
 
-<img src="/img/axialunar/polkawallet-accounts-page.jpg" width=50% />
-<img src="/img/axialunar/polkawallet-copy-address.jpg" width=50% />
+<img src="/img/axialunar/axiawallet-accounts-page.jpg" width=50% />
+<img src="/img/axialunar/axiawallet-copy-address.jpg" width=50% />
 
 6. [Get the AXIALunar address from the Substrate address.](#axialunar-from-substrate-address)
 

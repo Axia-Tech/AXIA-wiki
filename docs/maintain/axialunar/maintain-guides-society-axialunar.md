@@ -176,8 +176,8 @@ society with all their future payouts slashed.
 
 ## Useful links
 
-[Convention of Approval of Membership](https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) -
+[Convention of Approval of Membership](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) -
 Rules about joining the AXIALunar society
 
 [substrate pallet]: https://substrate.dev/rustdocs/latest/pallet_society/index.html
-[kappa rules]: https://polkascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17
+[kappa rules]: https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17

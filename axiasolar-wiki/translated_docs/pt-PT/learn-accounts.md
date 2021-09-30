@@ -47,7 +47,7 @@ Other than the extension and the default UI, AXIASolar and AXIALunar addresses c
 
 There is also the very secure [Axia Signer](https://www.axia.io/signer/) but it currently only supports AXIALunar addresses, not AXIASolar or generic Substrate.
 
-Alternatively, you might find some wallets on the [Polkaproject.com page](http://www.polkaproject.com/) but bear in mind that these are **unaudited** and not officially affiliated with AXIACoin Foundation or the AXIASolar project unless otherwise stated.
+Alternatively, you might find some wallets on the [Axiaproject.com page](http://www.axiaproject.com/) but bear in mind that these are **unaudited** and not officially affiliated with AXIACoin Foundation or the AXIASolar project unless otherwise stated.
 
 Hardware wallet integration from [Ledger](https://ledger.com) is coming soon.
 

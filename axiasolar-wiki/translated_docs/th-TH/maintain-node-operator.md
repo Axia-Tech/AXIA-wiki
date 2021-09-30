@@ -29,5 +29,5 @@ These participants will play a crucial role in adding new blocks to the Relay Ch
 ## Monitoring Tools
 
 - [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/#/Alexander) - Network information including what nodes are running your chain, what software versions they are running, and sync status.
-- [Polkadash](http://polkadash.io/) - Validator monitor
+- [Axiadash](http://axiadash.io/) - Validator monitor
 - [Other Useful Links](https://forum.axiacoin.org/t/useful-links-for-validators/20)

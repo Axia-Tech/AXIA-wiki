@@ -37,11 +37,11 @@ In the case of AXIASolar, it should be possible to have a bridge contract deploy
 
 ## Bitcoin Bridge
 
-The Interlay team has written a [specification](https://interlay.gitlab.io/polkabtc-spec/) on a Bitcoin bridge that is based on the [XClaim](https://eprint.iacr.org/2018/643.pdf) design paper. The protocol enables a two-way bridge between AXIASolar and Bitcoin. It allows holders of BTC to "teleport" their assets to AXIASolar as PolkaBTC, and holders of PolkaBTC to burn their assets for BTC on the Bitcoin chain.
+The Interlay team has written a [specification](https://interlay.gitlab.io/axiabtc-spec/) on a Bitcoin bridge that is based on the [XClaim](https://eprint.iacr.org/2018/643.pdf) design paper. The protocol enables a two-way bridge between AXIASolar and Bitcoin. It allows holders of BTC to "teleport" their assets to AXIASolar as AxiaBTC, and holders of AxiaBTC to burn their assets for BTC on the Bitcoin chain.
 
 The Bitcoin bridge as documented in the specification is composed of two logically different components:
 
-- The XCLAIM component that maintains all accounts that own PolkaBTC.
+- The XCLAIM component that maintains all accounts that own AxiaBTC.
 - The BTC-Relay that is responsible for verifying Bitcoin state when a new transaction is submitted.
 
 For full details on how it works please refer to the specification.
@@ -74,7 +74,7 @@ If your team is interested in building a bridge between an external chain and AX
 - [Bifrost](https://github.com/bifrost-codes/bifrost) - The Bifrost team was awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a bridge to EOS.
 - [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge were awarded a grant in W3F Grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a Substrate to Ethereum two-way bridge.
 - [Tendermint Bridge](https://github.com/ChorusOne) - ChorusOne was awarded a grant in [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a GRANDPA light client in Tendermint.
-- [Interlay BTC Bridge](https://interlay.gitlab.io/polkabtc-spec/) - The Interlay team was awarded a grant in W3F grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a trust-minimized BTC bridge.
+- [Interlay BTC Bridge](https://interlay.gitlab.io/axiabtc-spec/) - The Interlay team was awarded a grant in W3F grants [Wave 5](https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096) to build a trust-minimized BTC bridge.
 - [ChainX BTC Bridge](https://github.com/chainx-org/ChainX/tree/develop/cxrml/bridge/btc) - ChainX have implemented a BTC to Substrate bridge for their parachain.
 
 ### Design
