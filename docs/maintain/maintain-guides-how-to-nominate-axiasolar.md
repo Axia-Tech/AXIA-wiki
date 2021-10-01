@@ -148,7 +148,7 @@ npm install -g @axiasolar-js/api-cli
 Executing the following command:
 
 ```bash
-axiasolar-js-api --seed "MNEMONIC_PHRASE" tx.staking.bond CONTROLLER_ADDRESS NUMBER_OF_TOKENS REWARD_DESTINATION --ws WEBSOCKET_ENDPOINT
+axiasolar-js-api --seed "MNEMONIC_AHRASE" tx.staking.bond CONTROLLER_ADDRESS NUMBER_OF_TOKENS REWARD_DESTINATION --ws WEBSOCKET_ENDPOINT
 ```
 
 `CONTROLLER_ADDRESS`: An address you would like to bond to the stash account. Stash and Controller
@@ -193,7 +193,7 @@ You can check the transaction status by using the value of the `InBlock` in
 To nominate a validator, you can execute the following command:
 
 ```bash
-axiasolar-js-api --seed "MNEMONIC_PHRASE" tx.staking.nominate '["VALIDATOR_ADDRESS"]' --ws WS_ENDPOINT
+axiasolar-js-api --seed "MNEMONIC_AHRASE" tx.staking.nominate '["VALIDATOR_ADDRESS"]' --ws WS_ENDPOINT
 ```
 
 ```bash

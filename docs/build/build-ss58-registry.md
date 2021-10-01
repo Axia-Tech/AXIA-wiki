@@ -41,7 +41,7 @@ given prefix, and which prefixes are availabe.
 | 26     | jupiter               | Jupiter                                               | jSOLAR                                      | 10                     | \*25519          | https://jupiter.patract.io    |
 | 28     | subsocial             | Subsocial                                             | null                                      | null                   | \*25519          | null                          |
 | 29     | cord                  | Dhiway CORD Network                                   | DCU                                       | 18                     | \*25519          | https://dhiway.com/           |
-| 30     | phala                 | Phala Network                                         | PHA                                       | 12                     | \*25519          | https://phala.network         |
+| 30     | phala                 | Phala Network                                         | AHA                                       | 12                     | \*25519          | https://phala.network         |
 | 31     | litentry              | Litentry Network                                      | LIT                                       | 12                     | \*25519          | https://litentry.com/         |
 | 32     | robonomics            | Robonomics                                            | XRT                                       | 9                      | \*25519          | https://robonomics.network    |
 | 33     | datahighway           | DataHighway                                           | null                                      | null                   | \*25519          | null                          |

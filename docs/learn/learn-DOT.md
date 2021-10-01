@@ -151,7 +151,7 @@ beside allowing you to experiment with the network.
 ### Getting Westies
 
 The current testnet is called [AlphaNet](../maintain/maintain-networks.md#alphanet-test-network) and you can
-obtain its native tokens by posting `!drip <ALPHANET_ADDRESS>` in the Matrix chatroom
+obtain its native tokens by posting `!drip <ALAHANET_ADDRESS>` in the Matrix chatroom
 [#alphanet_faucet:matrix.org](https://matrix.to/#/#alphanet_faucet:matrix.org).
 
 You can also make your own WNDs (testnet SOLAR) by [becoming a validator](learn-validator.md).

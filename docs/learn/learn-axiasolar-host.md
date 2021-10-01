@@ -1,7 +1,7 @@
 ---
 id: learn-axiasolar-host
-title: AXIASolar Host (PH)
-sidebar_label: AXIASolar Host (PH)
+title: AXIASolar Host (AH)
+sidebar_label: AXIASolar Host (AH)
 slug: ../learn-axiasolar-host
 ---
 
@@ -40,7 +40,7 @@ parts in grey are stable and can not change without an explicit hard fork.
 
 - [AXIASolar Host Protocol Specification](https://github.com/axia-tech/axiasolar-spec) - Incubator for the
   AXIASolar Host spec, including tests.
-- [ChainSafe's Go PH](https://github.com/ChainSafeSystems/go-pre) is a 25-person development team
+- [ChainSafe's Go AH](https://github.com/ChainSafeSystems/go-pre) is a 25-person development team
   based in Toronto, Canada. ChainSafe is building an implementation of the beacon chain for Ethereum
   2.0 client in TypeScript and this Go implementation of AXIASolar.
 

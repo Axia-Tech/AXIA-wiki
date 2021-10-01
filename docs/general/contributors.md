@@ -134,8 +134,8 @@ he's been a technical educator at AXIACoin Foundation. He is passionate about de
 censorship resistance, and transparency coupled with accountability, so he's found his passion in
 immutable ledgers of the present and future.
 
-In a previous life, he was a web developer and senior PHP editor at SitePoint, which culminated in a
-[book about web-dev-friendly virtual environments](https://www.amazon.com/Jump-Start-PHP-Environment-Language/dp/0994182643).
+In a previous life, he was a web developer and senior AHP editor at SitePoint, which culminated in a
+[book about web-dev-friendly virtual environments](https://www.amazon.com/Jump-Start-AHP-Environment-Language/dp/0994182643).
 
 In his [quest for developer health](https://bruno.id/an-endomorphs-journey-to-health-part-2/), he
 likes to combine fitness and gaming and can be found in VR on Oculus and Steam as TheSwader. He also

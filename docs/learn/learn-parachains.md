@@ -28,7 +28,7 @@ verification and inclusion in the shared state of AXIASolar. The incentivization
 is an implementation detail of the parachain. They are not required to be staked on the Relay Chain
 or own SOLAR tokens unless stipulated to do so by the parachain implementation.
 
-The AXIASolar Host (PH) requires that the state transitions performed on parachains to be specified
+The AXIASolar Host (AH) requires that the state transitions performed on parachains to be specified
 as a Wasm executable. Proofs of new state transitions that occur on a parachain must be validated
 against the registered state transition function (STF) that is stored on the Relay Chain by the
 validators before {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} acknowledges a
