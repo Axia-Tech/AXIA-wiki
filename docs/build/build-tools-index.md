@@ -14,7 +14,7 @@ developers, feel free to [add it in](../general/contributing.md).
 - [AXIASolar-JS Apps Explorer](https://axiasolar.js.org/apps/#/explorer) - AXIASolar dashboard block
   explorer. Supports dozens of other networks, including AXIALunar, AlphaNet, and other remote or local
   endpoints. [Access via IPFS](https://ipfs.io/ipns/dotapps.io)
-- [Axiascan](https://axiascan.io/) - Blockchain explorer for AXIASolar, AXIALunar, and other related
+- [AXIAscan](https://axiascan.io/) - Blockchain explorer for AXIASolar, AXIALunar, and other related
   chains. [Repo](https://github.com/axiascan/axiascan-os).
 - [Subscan](https://subscan.io) - Blockchain explorer for Substrate chains.
   [Repo](https://github.com/itering/subscan-essentials).
@@ -182,7 +182,7 @@ languages exist:
 
 The following tools help you extract and structure data from a Substrate node.
 
-- [Axiascan PRE Harvester](https://github.com/axiascan/axiascan-pre-harvester)
+- [AXIAscan PRE Harvester](https://github.com/axiascan/axiascan-pre-harvester)
   ([matching explorer for harvested data](https://github.com/axiascan/axiascan-pre-explorer-gui)) -
   Transforms raw blockchain data into relational data.
 - [Axia's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run

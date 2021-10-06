@@ -136,7 +136,7 @@ Apps UI][apps].
 ### Checking the Balance of Your Account
 
 There are a few methods to check the balance of your account. You can use AXIASolar-JS Apps or you
-can use a block explorer like [Axiascan][] or [Subscan][].
+can use a block explorer like [AXIAscan][] or [Subscan][].
 
 #### Using AXIASolar-JS Apps
 

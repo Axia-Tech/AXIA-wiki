@@ -39,9 +39,9 @@ is a live example of the above.
 If you cannot look up the error this way, or there is no message in the `details` field, consult the
 table below.
 
-## Axiascan and Subscan
+## AXIAscan and Subscan
 
-Axiascan and Subscan show the `ExtrinsicFailed` event when a transaction does not succeed
+AXIAscan and Subscan show the `ExtrinsicFailed` event when a transaction does not succeed
 ([example](https://axiascan.io/axiasolar/event/2836233-3)). This event gives us the `error` and
 `index` indices of the error but does not give us a nice message to understand what it means. We
 will look up the error in the codebase ourselves to understand what went wrong.

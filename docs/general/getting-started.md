@@ -246,7 +246,7 @@ and maintain on the AXIALunar network, please head over to our [AXIALunar Guide]
   AXIACoin Foundation has done.
 - [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network;
   can be used for AXIASolar, AXIALunar, or any Substrate-based chain.
-- [Axiascan](http://axiascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and
+- [AXIAscan](http://axiascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and
   Axia Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
 - [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of
