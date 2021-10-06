@@ -21,7 +21,7 @@ For most users, we recommend using the
 since it will allow you to store your encrypted keystore locally.
 
 In terms of hardware wallet support, you can use the [AXIALunar Ledger application](axialunar-ledger.md),
-or [Axia Signer](../../learn/learn-account-generation.md#axia-signer).
+or [AXIA Signer](../../learn/learn-account-generation.md#axia-signer).
 
 Another option you may consider using is the Subkey command line utility, which will allow you to
 take extra steps to protect the security of your key.
@@ -118,7 +118,7 @@ enter `subkey --help` for more usage examples.
 
 1. Open up the [AXIASolar-JS UI](https://axiasolar.js.org/apps) and navigate to the top left corner of
    the navigation. This will open up a panel of network options to select from. Select on "AXIALunar",
-   either from Axia or AXIACoin Foundation, then "Switch".
+   either from AXIA or AXIACoin Foundation, then "Switch".
 
 2. Navigate to the [AXIASolar-JS UI Accounts Tab](https://axiasolar.js.org/apps/#/accounts) and click
    on the "Add account" button.
@@ -220,7 +220,7 @@ If you haven't already done so, you will need to generate a AXIALunar address. S
 The AXIASolar-JS [Claims app](https://axiasolar.js.org/apps/#/claims) helps you sign a message from
 MyCrypto. MyCrypto is good to use in case you have stored the key to the Ethereum account holding
 your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports
-raw private keys, mnemonics and the Axia signer.
+raw private keys, mnemonics and the AXIA signer.
 
 > **NOTICE**: It is much more secure to download and use the MyCrypto app locally. Please make sure
 > to download the latest version for your operating system. You can always find the most up-to-date

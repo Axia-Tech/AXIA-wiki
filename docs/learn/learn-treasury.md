@@ -76,7 +76,7 @@ takes place on the following platforms:
 - Many community members participate in discussion in the
   [AXIALunar Element (previously Riot)](https://matrix.to/#/#axialunar:matrix.axia.io) chat or
   [AXIASolar Element](https://matrix.to/#//#axiasolar:matrix.axia.io).
-- The [Axiassembly](https://axiassembly.io) discussion platform that allows users to log in with
+- The [AXIAssembly](https://axiassembly.io) discussion platform that allows users to log in with
   their Web3 address and automatically reads proposals from the chain, turning them into discussion
   threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a
   vote.

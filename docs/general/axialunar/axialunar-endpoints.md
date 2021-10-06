@@ -12,12 +12,12 @@ wants to do, so convenience trumps ideals in most cases. To facilitate this conv
 several public endpoints you can use for your apps provided by infrastructure and
 API services providers in the ecosystem.
 
-## Axia Archive Node
+## AXIA Archive Node
 
-[Axia][], the company that develops the AXIASolar Rust client, maintains an archive node at
+[AXIA][], the company that develops the AXIASolar Rust client, maintains an archive node at
 endpoint `wss://axialunar-rpc.axiasolar.io/`.
 
-To connect to the Axia node, use the endpoint in your JavaScript apps like so:
+To connect to the AXIA node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
 const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')

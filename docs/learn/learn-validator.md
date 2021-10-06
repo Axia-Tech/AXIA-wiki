@@ -53,7 +53,7 @@ Validators perform two functions:
 - [Why You Should be A Validator on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=0EmP0s6JOW4&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=2)
 - [Roles and Responsibilities of a Validator](https://www.youtube.com/watch?v=riVg_Up_fCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=15)
 - [Validating on AXIASolar](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of
-  how to validate on AXIASolar, with Joe Petrowski and David Dorgan of Axia Technologies, along
+  how to validate on AXIASolar, with Joe Petrowski and David Dorgan of AXIA Technologies, along
   with Tim Ogilvie from Staked.
 
 ## Security / Key Management
@@ -74,7 +74,7 @@ Validators perform two functions:
 - [HashQuark Staking Strategy](https://axiacube.hashquark.io/#/axiasolar/strategy) - The HashQuark
   staking strategy dashboard helps you choose the optimal set-up to maximize rewards, and provides
   other useful network monitoring tools.
-- [Axiastats](https://axiastats.io/) - Axiastats is a cleanly designed dashboard for validator
+- [AXIAstats](https://axiastats.io/) - AXIAstats is a cleanly designed dashboard for validator
   statistics.
 - [YieldScan](https://yieldscan.app/) - Staking yield maximization platform, designed to minimize
   effort.

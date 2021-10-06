@@ -427,7 +427,7 @@ justification for why you think the council should consider enacting a change to
 your behalf.
 
 At some point you will likely need a place for a longer-form discussion. For this, making a post on
-[Axiassembly][] is the recommended place to do so. When you write a post on Axiassembly make sure
+[AXIAssembly][] is the recommended place to do so. When you write a post on AXIAssembly make sure
 you present all the evidence for your circumstances and state clearly what kind of change you would
 suggest to the councillors to enact. Remember - the councillors do not need to make the change, it
 is your responsibility to make a strong case for why the change should be made.

@@ -5,7 +5,7 @@ sidebar_label: Node Management
 slug: ../build-node-management
 ---
 
-This page contains basic information about running a Axia AXIASolar client. There are a lot of ways
+This page contains basic information about running a AXIA AXIASolar client. There are a lot of ways
 to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This
 guide will always refer to the executable as `axiasolar`.
 
@@ -54,7 +54,7 @@ with the `--rpc-port` and `--ws-port` options. To limit the hosts who can access
 
 **Execution**
 
-The Axia AXIASolar client implements a [AXIASolar Host](../learn/learn-axiasolar-host.md) and a native
+The AXIA AXIASolar client implements a [AXIASolar Host](../learn/learn-axiasolar-host.md) and a native
 runtime. The runtime must compile to WebAssembly and is stored on-chain. If the client's runtime is
 the same spec as the runtime that is stored on-chain, then the client will execute blocks using the
 client binary. Otherwise, the client will execute the Wasm runtime from the chain.
@@ -63,7 +63,7 @@ Therefore, when syncing the chain, the client will execute blocks from past runt
 associated Wasm binary. This feature also allows forkless upgrades: the client can execute a new
 runtime without updating the client.
 
-Axia's AXIASolar client has two Wasm execution methods, interpreted (default) and compiled. Set the
+AXIA's AXIASolar client has two Wasm execution methods, interpreted (default) and compiled. Set the
 preferred method to use when executing Wasm with `--wasm-execution <Interpreted|Compiled>`. Compiled
 execution will run much faster, especially when syncing the chain, but is experimental and may use
 more memory/CPU. A reasonable tradeoff would be to sync the chain with compiled execution and then
@@ -97,10 +97,10 @@ axiasolar purge-chain
 
 > **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can
 > be explicit by passing the `--database RocksDb` flag. In the future, it is recommended to switch
-> to using the faster and more efficient AxiaDb option. Switching between database backends will
+> to using the faster and more efficient AXIADb option. Switching between database backends will
 > require a resync.
 >
-> If you want to test out AxiaDB you can add the flag `--database axiadb`.
+> If you want to test out AXIADB you can add the flag `--database axiadb`.
 
 ## Deployment Tools
 
@@ -147,7 +147,7 @@ All targets are set to `info` logging by default. You can adjust individual log 
 
 **Telemetry & Metrics**
 
-The Axia AXIASolar client connects to telemetry by default. You can disable it with
+The AXIA AXIASolar client connects to telemetry by default. You can disable it with
 `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option
 (see the help options for instructions). Connecting to public telemetry may expose information that
 puts your node at higher risk of attack. You can run your own, private

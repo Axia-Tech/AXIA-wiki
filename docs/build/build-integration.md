@@ -35,7 +35,7 @@ solution that is best for you.
 That said, the easiest path to integration is almost always to use
 [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) to interact with your
 node and [TxWrapper Core](https://github.com/axia-tech/txwrapper-core/) to construct and sign
-transactions. Axia and AXIACoin Foundation will be able to provide the best support if you use these
+transactions. AXIA and AXIACoin Foundation will be able to provide the best support if you use these
 tools.
 
 If your team would like support, join some of our [community channels](../general/community.md) or contact

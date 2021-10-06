@@ -18,7 +18,7 @@ documentation for the tool you are using:
 
 ## AXIASolar RPC
 
-The Axia AXIASolar client exposes HTTP and WS endpoints for RPC connections. The default ports are
+The AXIA AXIASolar client exposes HTTP and WS endpoints for RPC connections. The default ports are
 9933 for HTTP and 9944 for WS.
 
 To get a list of all RPC methods, the node has an RPC endpoint called `rpc_methods`.
@@ -59,7 +59,7 @@ from a block number.
 
 ## Substrate API Sidecar
 
-Axia maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It
+AXIA maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It
 handles the metadata and codec logic so that you are always dealing with decoded information. It
 also aggregates information that an infrastructure business may need for accounting and auditing,
 e.g. transaction fees.

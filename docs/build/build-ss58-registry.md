@@ -68,8 +68,8 @@ given prefix, and which prefixes are availabe.
 | 73     | zeitgeist             | Zeitgeist                                             | ZTG                                       | 10                     | \*25519          | https://zeitgeist.pm          |
 | 77     | manta                 | Manta network                                         | MA                                        | 12                     | \*25519          | https://manta.network         |
 | 78     | calamari              | Calamari: Manta Canary Network                        | KMA                                       | 12                     | \*25519          | https://manta.network         |
-| 98     | axiasmith            | AxiaSmith Canary Network                             | PKS                                       | 18                     | \*25519          | https://axiafoundry.com      |
-| 99     | axiafoundry          | AxiaFoundry Network                                  | PKF                                       | 18                     | \*25519          | https://axiafoundry.com      |
+| 98     | axiasmith            | AXIASmith Canary Network                             | PKS                                       | 18                     | \*25519          | https://axiafoundry.com      |
+| 99     | axiafoundry          | AXIAFoundry Network                                  | PKF                                       | 18                     | \*25519          | https://axiafoundry.com      |
 | 101    | origintrail-parachain | OriginTrail Parachain                                 | TRAC                                      | 18                     | secp256k1        | https://origintrail.io        |
 | 110    | heiko                 | Heiko                                                 | HKO                                       | 12                     | \*25519          | https://parallel.fi/          |
 | 136    | altair                | Altair                                                | AIR                                       | 18                     | \*25519          | https://centrifuge.io/        |

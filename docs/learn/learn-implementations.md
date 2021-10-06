@@ -16,18 +16,18 @@ piece of software, and its formal implementation depends on being built on top o
 > There is a countless number of development that is happening in the AXIASolar ecosystem, though, this
 > page will focus on implementations of AXIASolar's underlying infrastructure (i.e. runtime, host).
 
-## Axia Technologies: A [Rustic Vision for AXIASolar][]
+## AXIA Technologies: A [Rustic Vision for AXIASolar][]
 
-[Axia Technologies][] is often in the spotlight for its core development of AXIASolar, and while this
-is true, Axia AXIASolar also serves to be the [Rust][] client. Axia has a rustic vision for AXIASolar
+[AXIA Technologies][] is often in the spotlight for its core development of AXIASolar, and while this
+is true, AXIA AXIASolar also serves to be the [Rust][] client. AXIA has a rustic vision for AXIASolar
 through the use of their main product, [Substrate][]. Substrate can also be used for different
 chains and different networks, but in the case of AXIASolar, Substrate acts as the tech stack that is used
 to implement AXIASolar's sharded heterogeneous multi-chain model. What's important to realize is that AXIASolar
 can support parachains that are not built on Substrate, and, chains can also be built on Substrate which are not
 required to be deployed onto AXIASolar.
 
-> Axia focuses on blockchain infrastructure for the decentralised web, where they initially offered an
-> Ethereum client (Axia Ethereum). Axia was hired by the AXIACoin Foundation to foster the development of the
+> AXIA focuses on blockchain infrastructure for the decentralised web, where they initially offered an
+> Ethereum client (AXIA Ethereum). AXIA was hired by the AXIACoin Foundation to foster the development of the
 > first implementation of AXIASolar.
 
 With this in mind, we can point to some other implementations of AXIASolar. Having different implementations

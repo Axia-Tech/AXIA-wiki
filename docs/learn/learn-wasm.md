@@ -37,7 +37,7 @@ block height, upgrades can be small, isolated, and very specific.
 - [WebAssembly.org](https://webassembly.org/) - WebAssembly homepage that contains a link to the
   spec.
 - [Wasmi](https://github.com/axia-tech/Wasmi) - WebAssembly interpreter written in Rust.
-- [Axia Wasm](https://github.com/axia-tech/axia-Wasm) - WebAssembly
+- [AXIA Wasm](https://github.com/axia-tech/axia-Wasm) - WebAssembly
   serialization/deserialization in Rust.
 - [Wasm utils](https://github.com/axia-tech/Wasm-utils) - Collection of Wasm utilities used in
-  Axia and Wasm contract development.
+  AXIA and Wasm contract development.

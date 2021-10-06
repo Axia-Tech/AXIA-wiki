@@ -7,7 +7,7 @@ slug: ../build-build-with-axiasolar
 
 AXIASolar is a blockchain protocol with two goals: providing **shared security** among all connected
 parachains and allowing all connected chains to **interoperate** by using
-[XCM](../learn/learn-cross-consensus.md). With the advent of [PDKs](<build-parachains.md##parachain-development-kit-(PDK)>) like Axia Substrate and
+[XCM](../learn/learn-cross-consensus.md). With the advent of [PDKs](<build-parachains.md##parachain-development-kit-(PDK)>) like AXIA Substrate and
 Cumulus, the time it takes to develop and launch a new chain has dropped significantly. While before
 it would take years to launch a new chain, now it may only take weeks or even days.
 
@@ -155,7 +155,7 @@ applicable to you.
 Now that you have determined that building a parachain or parathread is the right approach for your
 new project, the next step is to decide which framework to use. Frameworks for building a parachain
 or parathread are known as parachain development kits ([PDKs](<build-parachains.md##parachain-development-kit-(PDK)>). Currently, the only
-PDK available is Substrate and Cumulus from Axia Technologies.
+PDK available is Substrate and Cumulus from AXIA Technologies.
 
 In the future, there will be many different PDKs available in different programming languages, just
 like there are multiple [implementations of the AXIASolar Host](../learn/learn-implementations.md).
@@ -172,7 +172,7 @@ includes a library of modular runtime plug-ins from which you can compose your c
 
 The best way to get started with Substrate is to explore the
 [Substrate Developer Hub](https://substrate.dev/docs/en/), an online resource built and maintained
-by [Axia Technologies](https://axia.io).
+by [AXIA Technologies](https://axia.io).
 
 ### How to set up your parachain
 
@@ -257,7 +257,7 @@ written smart contracts before. However, the Contracts pallet makes some notable
 design of the EVM:
 
 1. **Wasm**. The Contracts pallet uses WebAssembly as its compilation target. Any language that
-   compiles to Wasm can potentially be used to write smart contracts. Nevertheless, it is better to have a dedicated domain-specific language, and for that reason Axia offers the [ink!](#ink) language.
+   compiles to Wasm can potentially be used to write smart contracts. Nevertheless, it is better to have a dedicated domain-specific language, and for that reason AXIA offers the [ink!](#ink) language.
 
 2. **Rent**. Contracts must pay rent or else hold a deposit suitably large enough in order to
    justify its existence on-chain. When a contract does not uphold this, it may create what's called
@@ -292,7 +292,7 @@ It is still very early for smart contracts on AXIASolar and the development is o
 We are actively producing content to help developers get up to speed and will maintain the wiki with
 the latest resources. You should also keep up to date with the following links:
 
-#### Axia Tech
+#### AXIA Tech
 
 - [ink!](https://github.com/axia-tech/ink)
 - [Substrate contracts pallet](https://github.com/axia-tech/substrate/tree/master/frame/contracts)
@@ -305,7 +305,7 @@ the latest resources. You should also keep up to date with the following links:
 - [Acala](https://acala.network/)
 - [Phala](https://phala.network)
 
-There are many smart contract platforms being built with the intent of becoming a parachain on the AXIASolar and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIASolar can be found at [AxiaProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
+There are many smart contract platforms being built with the intent of becoming a parachain on the AXIASolar and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIASolar can be found at [AXIAProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
 
 ### Edgeware
 

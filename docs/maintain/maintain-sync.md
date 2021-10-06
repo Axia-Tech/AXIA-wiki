@@ -33,7 +33,7 @@ archive node. However, an archive node takes up a lot of disk space - around AXI
 block this was around 15 to 20GB.
 
 Archive nodes are used by utilities that need past information - like block explorers, council
-scanners, discussion platforms like [Axiassembly](https://axiassembly.io), and others. They need
+scanners, discussion platforms like [AXIAssembly](https://axiassembly.io), and others. They need
 to be able to look at past on-chain data.
 
 A **full node** is _pruned_: it discards all finalized blocks older than a configurable number

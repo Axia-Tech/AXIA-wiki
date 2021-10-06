@@ -171,7 +171,7 @@ Run the following commands as the root user:
 # Import the security@axia.io GPG key
 gpg --recv-keys --keyserver hkps://keys.mailvelope.com 9D4B2B6EB8F97156D19669A9FF0812D491B96798
 gpg --export 9D4B2B6EB8F97156D19669A9FF0812D491B96798 > /usr/share/keyrings/axia.gpg
-# Add the Axia repository and update the package index
+# Add the AXIA repository and update the package index
 echo 'deb [signed-by=/usr/share/keyrings/axia.gpg] https://releases.axia.io/deb release main' > /etc/apt/sources.list.d/axia.list
 apt update
 # Install the `axia-keyring` package - This will ensure the GPG key
@@ -302,9 +302,9 @@ if you do not want to start in validator mode right away.
 2021-06-17 02:34:25       endorsed by the
 2021-06-17 02:34:25      AXIALUNAR FOUNDATION
 2021-06-17 02:34:25 ----------------------------
-2021-06-17 02:34:25 Axia AXIASolar
+2021-06-17 02:34:25 AXIA AXIASolar
 2021-06-17 02:34:25 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
-2021-06-17 02:34:25 ❤️  by Axia Technologies <admin@axia.io>, 2017-2021
+2021-06-17 02:34:25 ❤️  by AXIA Technologies <admin@axia.io>, 2017-2021
 2021-06-17 02:34:25 📋 Chain specification: AXIALunar
 2021-06-17 02:34:25 🏷 Node name: obtainable-kitten-0716
 2021-06-17 02:34:25 👤 Role: FULL
@@ -340,9 +340,9 @@ re-sync your database when you switch.
 > **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can
 > be explicit by passing the `--database RocksDb` flag.
 >
-> In the future, it is recommended to switch to the faster and more efficient AxiaDB option. Note
-> that **AxiaDB is still experimental and should not be used in production.** If you want to test
-> out AxiaDB, you can add the flag `--database axiadb`. Switching between database backends will
+> In the future, it is recommended to switch to the faster and more efficient AXIADB option. Note
+> that **AXIADB is still experimental and should not be used in production.** If you want to test
+> out AXIADB, you can add the flag `--database axiadb`. Switching between database backends will
 > require a resync.
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes
@@ -424,9 +424,9 @@ Similarly:
 2021-06-17 02:47:05       endorsed by the
 2021-06-17 02:47:05      AXIALUNAR FOUNDATION
 2021-06-17 02:47:05 ----------------------------
-2021-06-17 02:47:05 Axia AXIASolar
+2021-06-17 02:47:05 AXIA AXIASolar
 2021-06-17 02:47:05 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
-2021-06-17 02:47:05 ❤️  by Axia Technologies <admin@axia.io>, 2017-2021
+2021-06-17 02:47:05 ❤️  by AXIA Technologies <admin@axia.io>, 2017-2021
 2021-06-17 02:47:05 📋 Chain specification: AXIALunar
 2021-06-17 02:47:05 🏷 Node name: techedtest
 2021-06-17 02:47:05 👤 Role: AUTHORITY
@@ -459,7 +459,7 @@ associates your validator node with your Controller account on AXIASolar.
 You can generate your [Session keys](../../learn/learn-keys.md#session-keys) in the client via the apps RPC. If
 you are doing this, make sure that you have the AXIASolar-JS Apps explorer attached to your validator
 node. You can configure the apps dashboard to connect to the endpoint of your validator in the
-Settings tab. If you are connected to a default endpoint hosted by Axia of AXIACoin Foundation, you
+Settings tab. If you are connected to a default endpoint hosted by AXIA of AXIACoin Foundation, you
 will not be able to use this method since making RPC requests to this node would effect the local
 keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore
 for _your node_.
@@ -542,7 +542,7 @@ validator set, you are now running a AXIALunar validator! If you need help, reac
 
 ## Thousand Validators Programme
 
-The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and Axia Technologies
+The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and AXIA Technologies
 to provide support for community validators. If you are interested in applying for the programme,
 you can find more information [on the wiki page](../../general/thousand-validators.md).
 

@@ -220,7 +220,7 @@ AXIASolar uses weight-based fees that, unlike gas, are charged _pre-dispatch._ U
 
 ### Encoding
 
-Axia's integration tools should allow you to deal with decoded data. If you'd like to bypass them
+AXIA's integration tools should allow you to deal with decoded data. If you'd like to bypass them
 and interact directly with the chain data or implement your own codec, AXIASolar encodes block and
 transaction data using the
 [SCALE codec](https://substrate.dev/docs/en/knowledgebase/advanced/codec).

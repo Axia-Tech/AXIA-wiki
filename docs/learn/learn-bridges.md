@@ -51,10 +51,10 @@ Given the generality of blockchain platforms with Turing-complete smart contract
 possible to bridge AXIASolar and any other smart contract capable blockchain (Ethereum, EOS, Tezos,
 etc).
 
-Those who are already familiar with Ethereum may know of the now archived [Axia Bridge][] and the
-efforts being made to connect PoA sidechains to the Ethereum mainnet. The Axia bridge is a
+Those who are already familiar with Ethereum may know of the now archived [AXIA Bridge][] and the
+efforts being made to connect PoA sidechains to the Ethereum mainnet. The AXIA bridge is a
 combination of two smart contracts, one deployed on each chain, that allow for cross-chain transfers
-of value. As an example of usage, the initial Axia Bridge proof of concept connects two Ethereum
+of value. As an example of usage, the initial AXIA Bridge proof of concept connects two Ethereum
 chains, `main` and `side`. Ether deposited into the contract on `main` generates a balance
 denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract
 on `side` can free up Ether on `main`.
@@ -79,7 +79,7 @@ As explained by Dr. Gavin Wood in a [blog post][eth bridging blog] from late 201
 ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
 
 1. AXIASolar <-> Ethereum Public Bridge.
-1. Substrate <-> Axia Ethereum (Openethereum) Bridge.
+1. Substrate <-> AXIA Ethereum (Openethereum) Bridge.
 1. The Substrate EVM module.
 
 Please read the blog article for fuller descriptions of each one of these options.
@@ -88,13 +88,13 @@ Please read the blog article for fuller descriptions of each one of these option
 
 The Interlay team has written a [specification][interlay] on a Bitcoin bridge that is based on the
 [XCLAIM][] design paper. The protocol enables a two-way bridge between AXIASolar and Bitcoin. It
-allows holders of BTC to "teleport" their assets to AXIASolar as AxiaBTC, and holders of AxiaBTC to
+allows holders of BTC to "teleport" their assets to AXIASolar as AXIABTC, and holders of AXIABTC to
 burn their assets for BTC on the Bitcoin chain.
 
 The Bitcoin bridge as documented in the specification is composed of two logically different
 components:
 
-- The XCLAIM component that maintains all accounts that own AxiaBTC.
+- The XCLAIM component that maintains all accounts that own AXIABTC.
 - The BTC-Relay that is responsible for verifying Bitcoin state when a new transaction is submitted.
 
 For full details on how it works please refer to the specification.
@@ -114,10 +114,10 @@ welcome.
 
 ### Resources and Examples
 
-- [Axia Bridges Common Resources](https://github.com/axia-tech/axia-bridges-common)
+- [AXIA Bridges Common Resources](https://github.com/axia-tech/axia-bridges-common)
 - [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge
   were awarded a grant in W3F Grants [Wave 5][] to build a Substrate to Ethereum two-way bridge.
-- [AxiaBTC (Bitcoin \<\> AXIASolar Bridge)](https://docs.axiabtc.io/#/)
+- [AXIABTC (Bitcoin \<\> AXIASolar Bridge)](https://docs.axiabtc.io/#/)
 - [EOS Bridge][bifrost] - The Bifrost team was awarded a grant in W3F Grants [Wave 5][] to build a
   bridge to EOS.
 - [Tendermint Bridge](https://github.com/ChorusOne/tendermint-light-client) - ChorusOne was awarded
@@ -128,7 +128,7 @@ welcome.
   ChainX have implemented a BTC to Substrate bridge for their parachain.
 - [POA Network](https://poa.network/)
 - [Case study](https://medium.com/giveth/ethereum-dapp-scaling-poa-network-acee8a51e772) of POA
-  Network's implementation of Axia's bridge chain solution.
+  Network's implementation of AXIA's bridge chain solution.
 - [Edgeth Bridge](https://github.com/hicommonwealth/edgeth_bridge/) - a bridge from Ethereum to
   Edgeware chain (a Substrate-based chain) - now defunct and not maintained, but a good example.
 - [XCLAIM][] - XCLAIM is a framework for achieving trustless and efficient cross-chain exchanges

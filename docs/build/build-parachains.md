@@ -98,7 +98,7 @@ client for the relay chain. For more on collator nodes, see the [collator page](
 
 ### What PDKs Exist?
 
-Currently, the only PDK is [Axia Substrate](https://github.com/axia-tech/substrate) and
+Currently, the only PDK is [AXIA Substrate](https://github.com/axia-tech/substrate) and
 [Cumulus](https://github.com/axia-tech/cumulus). **Substrate** is a blockchain framework that provides
 the basic building blocks of a blockchain (things like the networking layer, consensus, a Wasm
 interpreter) while providing an intuitive way to construct your runtime. Substrate is made to ease the
@@ -161,7 +161,7 @@ channel on Matrix. To receive ROC tokens, use the command:
 [Cumulus](https://github.com/axia-tech/cumulus#betanet) is set of tools for writing Substrate-based
 parachains.
 
-If you are interested in running and launching your own parathread or parachain, Axia Technologies
+If you are interested in running and launching your own parathread or parachain, AXIA Technologies
 has created a [cumulus parachain workshop](https://substrate.dev/cumulus-workshop/) to show you how.
 Get stuck or need support along the way? Join the
 [Parachain Technical matrix chat channel](https://matrix.to/#/#parachain-technical:matrix.axia.io)

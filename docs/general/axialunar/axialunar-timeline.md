@@ -16,7 +16,7 @@ more information in the sections below.
 ## Rollout plan
 
 The rollout of full functionality of AXIALunar was staggered to allow for a safe transition. The first
-PoS phase began with 20 validators. Of the 20, the AXIACoin Foundation ran nine and Axia Technologies
+PoS phase began with 20 validators. Of the 20, the AXIACoin Foundation ran nine and AXIA Technologies
 ran six. Five were ran by highly staked community members as voted in by the Phragmén election.
 
 When the initial transition was successful, additional validator spots were opened 10 at a time in

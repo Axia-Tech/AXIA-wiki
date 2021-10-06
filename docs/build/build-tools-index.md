@@ -28,13 +28,13 @@ See the [Wallets](build-wallets.md) page.
 
 - [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/) - Network information including what
   nodes are running the chain, what software versions they are running, sync status, and location.
-- [Axiabot](https://gitlab.com/Axiabot) - AXIASolar network monitoring and reporting using Matrix
+- [AXIAbot](https://gitlab.com/AXIAbot) - AXIASolar network monitoring and reporting using Matrix
   (Riot / Element) chat. Users may create custom bot plugins.
   [Blogpost](https://medium.com/axiacoin.network/axiabot-a3dba18c20c8).
 - [Ryabina's Telegram Bot](https://github.com/Ryabina-io/substratebot) - A Telegram bot for
   monitoring on-chain events of Substrate chains.
-  [Github Repository](https://gitlab.com/Axiabot/axiabot)
-- [AxiaStats](https://axiastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows
+  [Github Repository](https://gitlab.com/AXIAbot/axiabot)
+- [AXIAStats](https://axiastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows
   network information and staking details from validators and intentions.
   [Github Repository](https://github.com/Colm3na/axiastats-v2/).
 - [Panic](https://github.com/SimplyVC/panic_axiasolar) - A node monitoring and alert server for
@@ -82,7 +82,7 @@ See the [Wallets](build-wallets.md) page.
 
 ## UI
 
-- [Axiadash](https://github.com/Swader/axiadash) - VueJS-based starter kit for custom user
+- [AXIAdash](https://github.com/Swader/axiadash) - VueJS-based starter kit for custom user
   interfaces for Substrate chains. [Tutorials](https://dotleap.com/tag/tutorial/).
 - [AXIASolar JS Apps UI](https://github.com/axiasolar-js/apps) - Repository of the
   [axiasolar.js.org/apps](https://axiasolar.js.org/apps) UI.
@@ -185,12 +185,12 @@ The following tools help you extract and structure data from a Substrate node.
 - [AXIAscan PRE Harvester](https://github.com/axiascan/axiascan-pre-harvester)
   ([matching explorer for harvested data](https://github.com/axiascan/axiascan-pre-explorer-gui)) -
   Transforms raw blockchain data into relational data.
-- [Axia's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run
+- [AXIA's Substrate Archive](https://github.com/axia-tech/substrate-archive) - Can be run
   alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL
   database.
 - [Hydra: GraphQL Builder](https://github.com/Joystream/joystream/tree/query_node/query-node) -
   Generate a GraphQL database from a Substrate chain's data.
-- [Axia-store](https://github.com/TheGoldenEye/axia-store) - A tool which scans a Substrate chain
+- [AXIA-store](https://github.com/TheGoldenEye/axia-store) - A tool which scans a Substrate chain
   and stores balance-relevant transactions in an SQLite database.
 - [Substrate-graph](https://github.com/playzero/substrate-graph) - A compact indexer for Substrate
   based nodes providing a GraphQL interface.

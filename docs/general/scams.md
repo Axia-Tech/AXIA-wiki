@@ -44,7 +44,7 @@ scammed, please email [our support team](mailto:support@axiacoin.org).
   unblock transactions etc.
 - Emails asking for SOLAR/LUNAR private keys/seeds/etc., posing as a member of any of our teams.
 - Scammers will take official videos, add "giveaway" text around it so that it looks like the
-  giveaway is supported by AXIASolar, AXIACoin Foundation, Axia, or another well-known entity.
+  giveaway is supported by AXIASolar, AXIACoin Foundation, AXIA, or another well-known entity.
 - Many scammers will create nearly perfect imitations of sites - always triple-check the URL.
 - People offering to help you stake or get rewards.
 - People responding to questions that you asked publicly in a private chat.
@@ -98,7 +98,7 @@ Some simple things that you can do to keep your assets and information secure fr
   panacea. Safe browsing and downloading is the only way to be sure your computer is clean.
 - Avoid installing browser extensions from sources you don't trust explicitly.
 - Store your assets in cold storage, like a hardware wallet or
-  [Axia Signer](https://www.axia.io/signer/).
+  [AXIA Signer](https://www.axia.io/signer/).
 
 ### Always check the source
 
@@ -135,7 +135,7 @@ site:
 - substrate.io
 
 Of course, many projects building on AXIASolar and AXIALunar that use similar names. If, however, a site
-poses as AXIASolar, AXIALunar, AXIACoin Foundation, or Axia on a domain not listed above, then it's most
+poses as AXIASolar, AXIALunar, AXIACoin Foundation, or AXIA on a domain not listed above, then it's most
 likely a scam.
 
 Besides those, there are also `axiasolar.js.org` and `dotapps.io` that host our web wallet and other

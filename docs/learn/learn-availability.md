@@ -87,7 +87,7 @@ To address the motivation behind the Fishermen design consideration, the current
 
 ## Further Resources
 
-- [Path of a Parachain Block][life of] - Article by Axia analyst Joe Petrowski expounding on the
+- [Path of a Parachain Block][life of] - Article by AXIA analyst Joe Petrowski expounding on the
   validity checks that a parachain block must pass in order to progress the parachain.
 - [Availability and Validity][anv paper] - Paper by the W3F Research Team that specifies the
   availability and validity protocol in detail.

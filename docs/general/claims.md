@@ -60,7 +60,7 @@ in the remaining sections of this page.
 
 The AXIASolar-JS [Claims app][] helps you sign a message from MyCrypto. MyCrypto is a good choice in
 case you have stored the key to the Ethereum account holding your SOLAR indicator tokens on a hardware
-device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics, and Axia
+device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics, and AXIA
 signer.
 
 Once you've downloaded MyCrypto and have it running locally (we recommend an air-gapped computer for
@@ -182,22 +182,22 @@ corner and the SOLAR will be in your account.
 
 ![claim-attest-5](../assets/new-claims/new-attest-5.jpg)
 
-## Using Axia Signer
+## Using AXIA Signer
 
 ### What you will need
 
-- Axia Signer
+- AXIA Signer
 - Your AXIASolar account linked to AXIASolar-JS Apps UI
 
-Before claiming, you should import your AXIASolar address on Axia Signer to the AXIASolar-JS Apps.
-All operations will use Axia Signer to sign the transaction, but will broadcast it via the
+Before claiming, you should import your AXIASolar address on AXIA Signer to the AXIASolar-JS Apps.
+All operations will use AXIA Signer to sign the transaction, but will broadcast it via the
 AXIASolar-JS Apps remote node. If you do not have a AXIASolar address, please follow the instructions
-on the Axia Signer section in the [account generation][] page for generating a new AXIASolar
+on the AXIA Signer section in the [account generation][] page for generating a new AXIASolar
 account.
 
 ### Go to AXIASolar-JS Apps
 
-Proceed to [AXIASolar-JS Apps][claims app]. You will need to import your address on Axia Signer to
+Proceed to [AXIASolar-JS Apps][claims app]. You will need to import your address on AXIA Signer to
 the Accounts page first.
 
 ### Make the Attestation
@@ -208,7 +208,7 @@ Click "Add via Qr" on the right side.
 
 ![ps-claim-2](../assets/new-claims/ps-claim-2.png)
 
-Open Axia Signer and choose "AXIASolar" network.
+Open AXIA Signer and choose "AXIASolar" network.
 
 ![ps-1](../assets/new-claims/ps-01.jpg)
 
@@ -246,13 +246,13 @@ Click on "I Agree" and then "Sign via Qr".
 
 ![ps-claim-7](../assets/new-claims/ps-claim-7.png)
 
-Now you need to sign the transaction using the Axia Signer with your AXIASolar address.
+Now you need to sign the transaction using the AXIA Signer with your AXIASolar address.
 
 ![ps-claim-8](../assets/new-claims/ps-claim-8.png)
 
-First, you need to press the "QR Scanner" on the Axia Signer to scan the QR code that's shown on
+First, you need to press the "QR Scanner" on the AXIA Signer to scan the QR code that's shown on
 the authorize transaction window to generate the raw transaction. Next, you may be required to input
-the PIN on the Axia Signer to generate the signed transaction as a QR code. Then move the QR code
+the PIN on the AXIA Signer to generate the signed transaction as a QR code. Then move the QR code
 to the camera on the AXIASolar-JS Apps to continue.
 
 ![ps-3r](../assets/new-claims/ps-3r.jpg)

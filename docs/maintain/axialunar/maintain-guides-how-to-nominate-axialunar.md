@@ -132,7 +132,7 @@ are available [here](../maintain-guides-how-to-unbond.md).
 
 Apart from using the AXIASolar-JS UI to participate in the staking, you can do all these things in
 CLI instead. The CLI approach allows you to interact with the AXIASolar / AXIALunar network without
-going to the AxiadoJS dashboard.
+going to the AXIAdoJS dashboard.
 
 ### Step 1: Install @axiasolar-js/api-cli
 

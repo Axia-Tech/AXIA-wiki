@@ -64,14 +64,14 @@ as a database-backed, _modified_ Merkle tree. Substrate's higher-layer storage a
 built on the key-value store.
 
 The key-value data store is backed by [RocksDB](https://rocksdb.org/), and it also supports an experimental
-[Axia database](https://github.com/axia-tech/axia-db).
+[AXIA database](https://github.com/axia-tech/axia-db).
 
 > The database is used for components that require persistent storage: Substrate clients, Substrate light-clients
 > & off-chain workers. For more information, check out
 > Substrate Developer Hub's [Storage Page](https://substrate.dev/docs/en/knowledgebase/advanced/storage).
 
 When building on Substrate, _runtime developers_ can take advantage of Substrate's FRAME `Storage pallet` which
-gives access to Substrate's storage APIs. These storage items support values that are encoded by Axia's
+gives access to Substrate's storage APIs. These storage items support values that are encoded by AXIA's
 `SCALE (Simple Concatenated Aggregate Little-Endian) Codec`.
 
 There is a

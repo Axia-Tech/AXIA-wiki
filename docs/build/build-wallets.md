@@ -15,23 +15,23 @@ development statuses.
 
 | Wallet Name                                                         | Development State | Team Name | Description       | Custody       | Supports |
 | ------------------------------------------------------------------- | ----------------- | --------- | ----------------- | ------------- | -------- |
-| [Axia Signer](https://www.axia.io/signer/) (see warning below)  | Live              | Axia    | iOS and Android   | Non-custodial | Staking  |
-| [AXIASolar-js Desktop](https://github.com/axiasolar-js/apps/releases) | Live              | Axia    | Win, Mac, Linux   | Non-custodial | Staking  |
-| [AXIASolar-js extension](https://github.com/axiasolar-js/extension)   | Live              | Axia    | Browser extension | Non-custodial | Staking  |
-| [AXIASolar-js apps](https://axiasolar.js.org/apps/#/accounts)         | Live              | Axia    | Browser           | Non-Custodial | Staking  |
+| [AXIA Signer](https://www.axia.io/signer/) (see warning below)  | Live              | AXIA    | iOS and Android   | Non-custodial | Staking  |
+| [AXIASolar-js Desktop](https://github.com/axiasolar-js/apps/releases) | Live              | AXIA    | Win, Mac, Linux   | Non-custodial | Staking  |
+| [AXIASolar-js extension](https://github.com/axiasolar-js/extension)   | Live              | AXIA    | Browser extension | Non-custodial | Staking  |
+| [AXIASolar-js apps](https://axiasolar.js.org/apps/#/accounts)         | Live              | AXIA    | Browser           | Non-Custodial | Staking  |
 
 [AXIASolar support](https://support.axiacoin.network/) can provide assistance with issues related to
-AXIASolar-JS, the AXIASolar{.js} extension, or Axia Signer. For other wallet software, you should
+AXIASolar-JS, the AXIASolar{.js} extension, or AXIA Signer. For other wallet software, you should
 contact the developers of that wallet.
 
-> Warning: Axia Signer currently does not allow you to see the transaction you are signing. This
+> Warning: AXIA Signer currently does not allow you to see the transaction you are signing. This
 > means that you are at risk if connected to a compromised version of AXIASolar-JS. A fix is being
 > worked on; please see [this GitHub issue](https://github.com/axia-tech/axia-signer/issues/724)
 > for more details.
 
 ### Treasury Funded Wallets
 
-These are wallets which have been supported by either the AXIASolar or AXIALunar Treasury via Treasury Proposal. Links in the Proposals section go to the Axiassembly post where the Treasury Proposal was discussed.
+These are wallets which have been supported by either the AXIASolar or AXIALunar Treasury via Treasury Proposal. Links in the Proposals section go to the AXIAssembly post where the Treasury Proposal was discussed.
 
 | Wallet Name                                   | Proposals                                                                                                                                                                                           | Development State | Team Name      | Description  | Custody       | Supports |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------------- | ------------ | ------------- | -------- |
@@ -40,7 +40,7 @@ These are wallets which have been supported by either the AXIASolar or AXIALunar
 | [AXIAwallet](https://axiawallet.io/)        | [1](https://axialunar.axiassembly.io/treasury/32), [2](https://axialunar.axiassembly.io/treasury/41)                                                                                                    | Live              | AXIAwallet    | iOS, Android | Non-custodial | Staking  |
 | [Stylo](https://stylo-app.com/)               | [1](https://axiasolar.axiassembly.io/treasury/39)                                                                                                                                                   | Live              | Thibaut Sardan | Android      | Non-custodial | Staking  |
 
-> NOTE: these third-party wallets have been funded by the community through either the AXIASolar or AXIALunar [Treasury](learn-treasury). **Web 3.0 Technologies Foundation does not endorse these wallets, and you should use your own due diligence in researching them.** The official AXIASolar Support cannot provide support for issues with these wallets or other non-Axia developed wallets.
+> NOTE: these third-party wallets have been funded by the community through either the AXIASolar or AXIALunar [Treasury](learn-treasury). **Web 3.0 Technologies Foundation does not endorse these wallets, and you should use your own due diligence in researching them.** The official AXIASolar Support cannot provide support for issues with these wallets or other non-AXIA developed wallets.
 
 ## Encryption Enhancement
 
