@@ -162,10 +162,27 @@
     "@babel/runtime" "^7.15.4"
     rxjs "^7.3.0"
 
-"@axiasolar-js/api@1.1.0", "@axiasolar-js/api@^1.0.0":
+"@axiasolar-js/api@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@axiasolar-js/api/-/api-1.1.0.tgz#f2fd16693e5f943f9e558072b8275a2a6b6e941b"
   integrity sha512-wLJ6CUy84cnPB2Ikn8ToR8RzCpp/REcrztlqa0u/wINcXo3JbVNNswgK6jEQx51HMRntAzfh9LQUOBhme1ISHQ==
+  dependencies:
+    "@axiasolar-js/api-derive" "1.1.0"
+    "@axiasolar-js/keyring" "1.1.0"
+    "@axiasolar-js/rpc-core" "1.1.0"
+    "@axiasolar-js/rpc-provider" "1.1.0"
+    "@axiasolar-js/types" "1.1.0"
+    "@axiasolar-js/types-known" "1.1.0"
+    "@axiasolar-js/util" "1.1.0"
+    "@axiasolar-js/util-crypto" "1.1.0"
+    "@babel/runtime" "^7.15.4"
+    eventemitter3 "^4.0.7"
+    rxjs "^7.3.0"
+
+"@axiasolar-js/api@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@axiasolar-js/api/-/api-1.1.1.tgz#9c808b3293f200fa570675c652e5195aaff8d411"
+  integrity sha512-55wdbKsGEMsdLbTz9Jd/rIigwbSv22T9B0j+3Pe2kXspyNT8rSvIDJ6lgkuWe9hPddf/zeRK3oCHxG4rBGmPnQ==
   dependencies:
     "@axiasolar-js/api-derive" "1.1.0"
     "@axiasolar-js/keyring" "1.1.0"
