@@ -7,27 +7,27 @@ slug: ../learn-video-tutorials
 
 ## Getting Started
 
-- [AXIASolar for Beginners](https://www.youtube.com/watch?v=kw8eu2VadFA&list=PLOyWqupZ-WGt-V6azbEcVuuIL_MbmgKhy)
-- [A walkthrough of AXIASolar's UI](https://www.youtube.com/watch?v=mNStMPZjiHM)
-- [AXIASolar Webinars](https://www.youtube.com/watch?v=9B10wX9Mphc&list=PLOyWqupZ-WGsLEJq0sRyvUD-pWuVwA5yg)
+- [AXIACoin for Beginners](https://www.youtube.com/watch?v=kw8eu2VadFA&list=PLOyWqupZ-WGt-V6azbEcVuuIL_MbmgKhy)
+- [A walkthrough of AXIACoin's UI](https://www.youtube.com/watch?v=mNStMPZjiHM)
+- [AXIACoin Webinars](https://www.youtube.com/watch?v=9B10wX9Mphc&list=PLOyWqupZ-WGsLEJq0sRyvUD-pWuVwA5yg)
 - [How to protect yourself from scams](https://www.youtube.com/watch?v=WqDlG4sy_i4)
 
 ## Tutorials
 
 ### Accounts, Transfers and Staking
 
-- [How to create AXIASolar accounts](https://www.youtube.com/watch?v=hhUZ40ZWqkE)
+- [How to create AXIACoin accounts](https://www.youtube.com/watch?v=hhUZ40ZWqkE)
 - [understanding Accounts and Keys](https://www.youtube.com/watch?v=zhfccevPqWI)
 - [How to Stake SOLAR/LUNAR with Ledger](https://www.youtube.com/watch?v=VN4S8MofEW8)
 - [Why do transfers fail](https://www.youtube.com/watch?v=Wzqi8-WXiK8)
 - [Existential Deposit and Keep-Alive Checks](https://www.youtube.com/watch?v=ZjKpTgxDp_4)
-- [Why Nominate on AXIASolar and AXIALunar](https://youtu.be/weG_uzdSs1E)
+- [Why Nominate on AXIACoin and AXIALunar](https://youtu.be/weG_uzdSs1E)
 - [Picking validators to Nominate (Stake)](https://youtu.be/ZMzhM1m4I-k)
 
 ### Governance
 
-- [Voting on Referenda on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=BkbhhlsezGA)
-- [Voting for AXIASolar and AXIALunar council](https://www.youtube.com/watch?v=837Vv3gdRzI)
+- [Voting on Referenda on AXIACoin and AXIALunar](https://www.youtube.com/watch?v=BkbhhlsezGA)
+- [Voting for AXIACoin and AXIALunar council](https://www.youtube.com/watch?v=837Vv3gdRzI)
 
 ### For validators
 
@@ -38,14 +38,14 @@ slug: ../learn-video-tutorials
 
 ### Technical Content
 
-- [Rust, Substrate and AXIASolar](https://youtu.be/aVW_eG-IH7o)
+- [Rust, Substrate and AXIACoin](https://youtu.be/aVW_eG-IH7o)
 - [Instroduction to Substrate](https://youtu.be/-6BBIr-DmI4)
 
 ## Past and Ongoing Events
 
-- [Encode AXIASolar Club 2021](https://www.youtube.com/playlist?list=PLOyWqupZ-WGvgdDcF-dW4RVEoeFZiZmQc)
-- [AXIASolar Decoded 2021](https://www.youtube.com/playlist?list=PLOyWqupZ-WGuAB8z_PkZD6f-IA6CUONFb)
-- [AXIASolar Buildathon India 2021](https://www.youtube.com/playlist?list=PLOyWqupZ-WGtnuyctbnGPPyt6DSSXH1h3)
-- [AXIASolar Decoded 2020](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt4LvKE0n66rw_R5c3Qju5f)
+- [Encode AXIACoin Club 2021](https://www.youtube.com/playlist?list=PLOyWqupZ-WGvgdDcF-dW4RVEoeFZiZmQc)
+- [AXIACoin Decoded 2021](https://www.youtube.com/playlist?list=PLOyWqupZ-WGuAB8z_PkZD6f-IA6CUONFb)
+- [AXIACoin Buildathon India 2021](https://www.youtube.com/playlist?list=PLOyWqupZ-WGtnuyctbnGPPyt6DSSXH1h3)
+- [AXIACoin Decoded 2020](https://www.youtube.com/playlist?list=PLOyWqupZ-WGt4LvKE0n66rw_R5c3Qju5f)
 - [Hacaxialunar Webinar Series 2020](https://www.youtube.com/playlist?list=PLOyWqupZ-WGsAB7lMLn_Q7c3tbESTzXg7)
 - [Web3 Builders Series 2020](https://www.youtube.com/playlist?list=PLOyWqupZ-WGve_wS2thJp34cWm_SpNNYf)

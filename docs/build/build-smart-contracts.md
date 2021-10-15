@@ -5,7 +5,7 @@ sidebar_label: Smart Contracts
 slug: ../build-smart-contracts
 ---
 
-The AXIASolar Relay Chain will not natively support smart contracts. However, parachains on AXIASolar
+The AXIACoin Relay Chain will not natively support smart contracts. However, parachains on AXIACoin
 will support smart contracts. There are already announced projects such as
 [Edgeware](https://edgewa.re), and thanks to the Substrate built-in
 [contract pallet](https://substrate.dev/rustdocs/latest/pallet_contracts/index.html), it is likely
@@ -17,7 +17,7 @@ parachain to implement the Ethereum Virtual Machine, thereby supporting almost d
 Ethereum contracts. Some of the projects using this approach are [Edgeware](https://edgewa.re),
 [Moonbeam](https://moonbeam.network/) and [Frontier](https://github.com/axia-tech/frontier).
 
-A video version of the recap of the smart contract situation on AXIASolar and AXIALunar is available
+A video version of the recap of the smart contract situation on AXIACoin and AXIALunar is available
 [here](https://www.youtube.com/watch?v=fKHkFBXaUxQ).
 
 ## Resources
@@ -70,7 +70,7 @@ Some platforms, such as Bitcoin, get around this constraint by providing a very 
 language. Others, such as Ethereum, "charge" the smart contract "gas" for the rights to execute
 their code. If a smart contract does get into a state where execution will never halt, it eventually
 runs out of gas, ceases execution, and any state transition that would have been made by the smart
-contract is rolled back. AXIASolar uses a _weight-fee model_ and not a _gas-metering model_.
+contract is rolled back. AXIACoin uses a _weight-fee model_ and not a _gas-metering model_.
 
 Parachains can implement arbitrarily powerful programming languages and also contain no notion of
 gas for their own native logic. This means that some functionality is easier to implement for the

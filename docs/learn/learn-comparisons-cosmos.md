@@ -1,25 +1,25 @@
 ---
 id: learn-comparisons-cosmos
-title: AXIASolar and Cosmos
+title: AXIACoin and Cosmos
 sidebar_label: Cosmos
 slug: ../learn-comparisons-cosmos
 ---
 
-AXIASolar and Cosmos are both protocols that provide an interface for different state machines to
+AXIACoin and Cosmos are both protocols that provide an interface for different state machines to
 communicate with each other. Both protocols are predicated on the thesis that the future will have
 multiple blockchains that need to interoperate with each other rather than individual blockchains
 existing in isolation.
 
 ## Model
 
-AXIASolar uses a sharded model where each shard in the protocol has an abstract state transition
-function (STF). AXIASolar uses WebAssembly (Wasm) as a "meta-protocol". A shard's STF can be abstract
-as long as the validators on AXIASolar can execute it within a Wasm environment.
+AXIACoin uses a sharded model where each shard in the protocol has an abstract state transition
+function (STF). AXIACoin uses WebAssembly (Wasm) as a "meta-protocol". A shard's STF can be abstract
+as long as the validators on AXIACoin can execute it within a Wasm environment.
 
-The shards of AXIASolar are called "[parachains](learn-parachains.md)". Every time a parachain wants
+The shards of AXIACoin are called "[parachains](learn-parachains.md)". Every time a parachain wants
 to make a state transition, it submits a block (batch of state transitions) along with a state proof
-that AXIASolar validators can independently verify. These blocks are finalized for the parachains
-when they are finalized by AXIASolar's Relay Chain, the main chain of the system. As such, all
+that AXIACoin validators can independently verify. These blocks are finalized for the parachains
+when they are finalized by AXIACoin's Relay Chain, the main chain of the system. As such, all
 parachains share state with the entire system, meaning that a chain re-organization of a single
 parachain would require a re-organization of all parachains and the Relay Chain.
 
@@ -33,9 +33,9 @@ recipient's trust in the security of the sender.
 
 ## Architecture
 
-### AXIASolar
+### AXIACoin
 
-AXIASolar has a Relay Chain acting as the main chain of the system. All validators in AXIASolar are on
+AXIACoin has a Relay Chain acting as the main chain of the system. All validators in AXIACoin are on
 the Relay Chain. Parachains have collators, who construct and propose parachain blocks to
 validators. Collators don't have any security responsibilities, and thus do not require a robust
 incentive system. Collators can submit a single parachain block for every Relay Chain block every 6
@@ -44,12 +44,12 @@ checks before committing it to the final chain.
 
 Parachain slots are limited, and thus parachain candidates participate in an auction to reserve a
 slot for up to two years. For chains that do not have the funding for a parachain slot or the
-necessity to execute with a six-second block time, AXIASolar also has
+necessity to execute with a six-second block time, AXIACoin also has
 [parathreads](learn-parathreads.md). Parathreads execute on a pay-as-you-go basis, only paying to
 execute a block when they need to.
 
 In order to interact with chains that want to use their own finalization process (e.g. Bitcoin),
-AXIASolar has [bridge parachains](learn-bridges.md) that offer two-way compatibility.
+AXIACoin has [bridge parachains](learn-bridges.md) that offer two-way compatibility.
 
 ### Cosmos
 
@@ -68,7 +68,7 @@ parachains.
 
 ## Consensus
 
-AXIASolar uses a hybrid [consensus](learn-consensus.md) protocol with two sub-protocols: BABE and
+AXIACoin uses a hybrid [consensus](learn-consensus.md) protocol with two sub-protocols: BABE and
 GRANDPA, together called "Fast Forward". BABE (Blind Assignment for Blockchain Extension) uses a
 verifiable random function (VRF) to assign slots to validators and a fallback round-robin pattern to
 guarantee that each slot has an author. GRANDPA (GHOST-based Recursive Ancestor Deriving Prefix
@@ -92,13 +92,13 @@ it has quadratic transport complexity, but can only finalize one block at a time
 
 ## Staking Mechanics
 
-AXIASolar uses [Nominated Proof of Stake (NPoS)](learn-staking.md) to select validators using the
+AXIACoin uses [Nominated Proof of Stake (NPoS)](learn-staking.md) to select validators using the
 [sequential Phragmén algorithm](learn-phragmen.md). The validator set size is set by governance
 (1_000 validators planned) and stakers who do not want to run validator infrastructure can nominate
 up to 16 validators. Phragmén's algorithm selects the optimal allocation of stake, where optimal is
 based on having the most evenly staked set.
 
-All validators in AXIASolar have the same weight in the consensus protocols. That is, to reach
+All validators in AXIACoin have the same weight in the consensus protocols. That is, to reach
 greater than 2/3 of support for a chain, more than 2/3 of the _validators_ must commit to it, rather
 than 2/3 of the _stake._ Likewise, validator rewards are tied to their activity, primarily block
 production and finality justifications, not their amount of stake. This creates an incentive to
@@ -114,12 +114,12 @@ than 2/3 of the _stake_ must commit, rather than 2/3 of the _validators._ Likewi
 
 Finally, in Cosmos, if a staker does not vote in a governance referendum, the validators assume
 their voting power. Because of this, many validators in Cosmos have zero commission in order to
-acquire more control over the protocol. In AXIASolar, governance and staking are completely disjoint;
+acquire more control over the protocol. In AXIACoin, governance and staking are completely disjoint;
 nominating a validator does not assign any governance voting rights to the validator.
 
 ## Message Passing
 
-AXIASolar uses [Cross-Consensus Message Passing Format (XCM)](learn-cross-consensus.md) for parachains
+AXIACoin uses [Cross-Consensus Message Passing Format (XCM)](learn-cross-consensus.md) for parachains
 to send arbitrary messages to each other. Parachains open connections with each other and can send
 messages via their established channels. [Collators](learn-collator.md) are full nodes of parachains
 and full nodes of the relay chain, so collator nodes are a key component of message passing. Messages
@@ -130,7 +130,7 @@ In the case of a chain re-organization, messages can be rolled back to the point
 re-organization based on the proofs of post in the Relay Chain. The shared state amongst parachains
 means that messages are free from trust bounds; they all operate in the same context.
 
-AXIASolar has an additional protocol called [SPREE](learn-spree.md) that provides shared logic for
+AXIACoin has an additional protocol called [SPREE](learn-spree.md) that provides shared logic for
 cross-chain messages. Messages sent with SPREE carry additional guarantees about provenance and
 interpretation by the receiving chain.
 
@@ -141,14 +141,14 @@ chains must trust the security of a message's origin.
 
 ## Governance
 
-AXIASolar has a multicameral [governance](learn-governance.md) system with several avenues to pass
+AXIACoin has a multicameral [governance](learn-governance.md) system with several avenues to pass
 proposals. All proposals ultimately pass through a public referendum, where the majority of tokens
-can always control the outcome. For low-turnout referenda, AXIASolar uses adaptive quorum biasing to
+can always control the outcome. For low-turnout referenda, AXIACoin uses adaptive quorum biasing to
 set the passing threshold. Referenda can contain a variety of proposals, including fund allocation
 from an on-chain [Treasury](learn-treasury.md). Decisions get enacted on-chain and are binding and
 autonomous.
 
-AXIASolar has several on-chain, permissionless bodies. The primary one is the Council, which
+AXIACoin has several on-chain, permissionless bodies. The primary one is the Council, which
 comprises a set of accounts that are elected in Phragmén fashion. The Council represents minority
 interests and as such, proposals that are unanimously approved of by the Council have a lower
 passing threshold in the public referendum. There is also a Technical Committee for making technical
@@ -157,11 +157,11 @@ recommendations (e.g. emergency runtime upgrade to fix a bug).
 Cosmos uses coin-vote signalling to pass referenda. The actual enactment of governance decisions is
 carried out via a protocol fork, much like other blockchains. All token holders can vote, however,
 if a delegator abstains from a vote then the validator they delegate to assume their voting power.
-Validators in AXIASolar do not receive any voting power based on their nominators.
+Validators in AXIACoin do not receive any voting power based on their nominators.
 
 ## Upgrades
 
-Using the Wasm meta-protocol, AXIASolar can enact chain upgrades and successful proposals without a
+Using the Wasm meta-protocol, AXIACoin can enact chain upgrades and successful proposals without a
 hard fork. Anything that is within the STF, the transaction queue, or off-chain workers can be
 upgraded without forking the chain.
 
@@ -170,8 +170,8 @@ mechanism.
 
 ## Development Framework
 
-Both Cosmos and AXIASolar are designed such that each chain has its STF and both provide support for
-smart contracts in both Wasm and the Ethereum Virtual Machine (EVM). AXIASolar provides an
+Both Cosmos and AXIACoin are designed such that each chain has its STF and both provide support for
+smart contracts in both Wasm and the Ethereum Virtual Machine (EVM). AXIACoin provides an
 ahead-of-time Wasm compiler as well as an interpreter (Wasmi) for execution, while Cosmos only
 executes smart contracts in an interpreter.
 
@@ -185,15 +185,15 @@ a chain's STF. Beyond simply using the pallets, Substrate adds a further layer o
 allows developers to compose FRAME's pallets by adding custom modules and configuring the parameters
 and initial storage values for the chain.
 
-> Note: AXIASolar can support an STF written in any language, so long as it compiles to its
+> Note: AXIACoin can support an STF written in any language, so long as it compiles to its
 > meta-protocol Wasm. Likewise, it could still use the Substrate client (database, RPC, networking,
 > etc.); it only needs to implement the primitives at the interface.
 
 ## Conclusion
 
-AXIASolar was designed on the principle that scalability and interoperability require shared
+AXIACoin was designed on the principle that scalability and interoperability require shared
 validation logic to create a trust-free environment. As more blockchains are developed, their
-security must be cooperative, not competitive. Therefore, AXIASolar provides the shared validation
+security must be cooperative, not competitive. Therefore, AXIACoin provides the shared validation
 logic and security processes across chains so that they can interact knowing that their
 interlocutors execute within the same security context.
 

@@ -23,7 +23,7 @@ scammed, please email [our support team](mailto:support@axiacoin.org).
 5. Scams are absolutely rife in this space. It is easy and cheap to set a scam up, and hard to shut
    one down. Therefore, the onus is on the user to be as diligent as possible in avoiding them.
 6. If you can, try to always verify new information that you see with an official source, such as
-   [AXIASolar Network's official blog](../general/community.md) or
+   [AXIACoin Network's official blog](../general/community.md) or
    [AXIACoin Foundation support](mailto:support@axiacoin.network). Often scammers will fake a website or
    a blog post, but if you check it against a secondary source you will reduce the chances of being
    scammed.
@@ -44,7 +44,7 @@ scammed, please email [our support team](mailto:support@axiacoin.org).
   unblock transactions etc.
 - Emails asking for SOLAR/LUNAR private keys/seeds/etc., posing as a member of any of our teams.
 - Scammers will take official videos, add "giveaway" text around it so that it looks like the
-  giveaway is supported by AXIASolar, AXIACoin Foundation, AXIA, or another well-known entity.
+  giveaway is supported by AXIACoin, AXIACoin Foundation, AXIA, or another well-known entity.
 - Many scammers will create nearly perfect imitations of sites - always triple-check the URL.
 - People offering to help you stake or get rewards.
 - People responding to questions that you asked publicly in a private chat.
@@ -69,13 +69,13 @@ accounts will be announced by our team. We will never offer to sell you SOLAR at
 "rewards", or message you privately to help with a problem you posted publicly. Our social media can
 be found below:
 
-- [Twitter](https://twitter.com/AXIASolar)
+- [Twitter](https://twitter.com/AXIACoin)
 - [Reddit](https://www.reddit.com/r/axiasolar)
 - [Discord](https://discord.gg/wGUDt2p)
-- [AXIASolar YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
-- [AXIASolar Medium](https://medium.com/axiacoin.network)
+- [AXIACoin YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
+- [AXIACoin Medium](https://medium.com/axiacoin.network)
 - [Our Community Page](../general/community.md) also lists more social media accounts that AXIACoin Foundation,
-  AXIASolar, and AXIALunar have.
+  AXIACoin, and AXIALunar have.
 
 ### Keep your data secure
 
@@ -115,7 +115,7 @@ responsibility to make sure that you understand where you are sending your funds
 decentralized space and your only recourse if a mistake is made is by appealing to the council (who
 usually will not get involved in matters of mistaken transfers - see below).
 
-### Install the AXIASolar{.js} extension
+### Install the AXIACoin{.js} extension
 
 The extension uses crowd-sourced [anti-phishing measures](https://axiasolar.js.org/phishing/) to
 automatically prevent your browser from displaying known phishing or scam sites. They will be
@@ -134,8 +134,8 @@ site:
 - substrate.dev
 - substrate.io
 
-Of course, many projects building on AXIASolar and AXIALunar that use similar names. If, however, a site
-poses as AXIASolar, AXIALunar, AXIACoin Foundation, or AXIA on a domain not listed above, then it's most
+Of course, many projects building on AXIACoin and AXIALunar that use similar names. If, however, a site
+poses as AXIACoin, AXIALunar, AXIACoin Foundation, or AXIA on a domain not listed above, then it's most
 likely a scam.
 
 Besides those, there are also `axiasolar.js.org` and `dotapps.io` that host our web wallet and other
@@ -144,7 +144,7 @@ tools.
 ## I Got Scammed - What Can I Do?
 
 In the unfortunate case of having fallen for a scam, there is likely nothing anyone can do to help
-you restore your funds. AXIASolar and AXIALunar are decentralized platforms and while we do have
+you restore your funds. AXIACoin and AXIALunar are decentralized platforms and while we do have
 governance functionality that could technically allow for funds freezing or refunds, it is
 impossible to prove that you are the original owner, or that you did not sell the tokens and are
 trying to reclaim them. Additionally, even with addresses that are obviously in possession of a
@@ -155,7 +155,7 @@ would affect their ill-gotten gains and move them to a new address before the pr
 You could put together a full account of the transactions and chat messages accompanied by
 screenshots and explanations, but there are no guarantee stakeholders on the network will help you
 restore the funds as it would set a dangerous precedent. In fact, there have been several attempts
-on AXIASolar in the past and none have been passed. It is safer for the network and for future users
+on AXIACoin in the past and none have been passed. It is safer for the network and for future users
 to consider the money lost. Still, your detailed account of the situation might help prevent others
 from falling for the same thing so we recommend retracing your steps and talking publicly about
 them, if it's not too private.

@@ -1,16 +1,16 @@
 ---
 id: maintain-guides-how-to-validate-axiasolar
-title: Run a Validator (AXIASolar)
-sidebar_label: How to run a Validator on AXIASolar
+title: Run a Validator (AXIACoin)
+sidebar_label: How to run a Validator on AXIACoin
 slug: ../maintain-guides-how-to-validate-axiasolar
 ---
 
-> The following information applies to the AXIASolar network. If you want to set up a validator on
+> The following information applies to the AXIACoin network. If you want to set up a validator on
 > AXIALunar, check out the
 > [AXIALunar guide](axialunar/mirror-maintain-guides-how-to-validate-axialunar.md)
 > instead.
 
-This guide will instruct you how to set up a validator node on the AXIASolar network.
+This guide will instruct you how to set up a validator node on the AXIACoin network.
 
 ## Preliminaries
 
@@ -23,7 +23,7 @@ your stash.
 ⚠️
 **`Warning: It is highly recommended that you have significant system administration experience before attempting to run your own validator.`
 You must be able to handle technical issues and anomalies with your node which you must be able to
-tackle yourself. Being a validator involves more than just executing the AXIASolar binary.**
+tackle yourself. Being a validator involves more than just executing the AXIACoin binary.**
 
 Since security is so important to running a successful validator, you should take a look at the
 [secure validator](maintain-guides-secure-validator.md) information to make sure you understand the
@@ -35,7 +35,7 @@ validator, you will likely want to use this repository as a _starting point_ for
 modifications and customizations.
 
 If you need help, please reach out on the
-[AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org)
+[AXIACoin Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org)
 on Riot. The team and other validators are there to help answer questions and provide tips from
 experience.
 
@@ -63,7 +63,7 @@ choose whatever [VPS](#vps-list) provider that your prefer, and whatever operati
 comfortable with. For this guide we will be using **Ubuntu 18.04**, but the instructions should be
 similar for other platforms.
 
-The transactions weights in AXIASolar were benchmarked on standard hardware. It is recommended that
+The transactions weights in AXIACoin were benchmarked on standard hardware. It is recommended that
 validators run at least the standard hardware in order to ensure they are able to process all blocks
 in time. The following are not _minimum requirements_ but if you decide to run with less than this
 beware that you might have performance issue.
@@ -75,7 +75,7 @@ For the full details of the standard hardware please see
 
 - **CPU** - Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
 - **Storage** - A NVMe solid state drive. Should be reasonably sized to deal with blockchain growth.
-  Starting around 80GB - 160GB will be okay for the first six months of AXIASolar, but will need to
+  Starting around 80GB - 160GB will be okay for the first six months of AXIACoin, but will need to
   be re-evaluated every six months.
 - **Memory** - 64GB.
 
@@ -118,7 +118,7 @@ rustc --version
 ```
 
 Finally, run this command to install the necessary dependencies for compiling and running the
-AXIASolar node software.
+AXIACoin node software.
 
 ```sh
 sudo apt install make clang pkg-config libssl-dev build-essential
@@ -168,7 +168,7 @@ sudo ntpq -p
 
 #### Optional: Installation via Package Managers
 
-The AXIASolar Binary in included in `Debian` derivatives (i.e. **Debain**, **Ubuntu**) and `RPM-based` distros (i.e. **Fedora**, **CentOS**).
+The AXIACoin Binary in included in `Debian` derivatives (i.e. **Debain**, **Ubuntu**) and `RPM-based` distros (i.e. **Fedora**, **CentOS**).
 
 #### Debian-based (Debian, Ubuntu)
 
@@ -203,7 +203,7 @@ dnf config-manager --set-enabled axiasolar
 dnf install axiasolar
 ```
 
-After installing AXIASolar, you can verify the installation by running
+After installing AXIACoin, you can verify the installation by running
 
 ```bash
 which axiasolar
@@ -215,10 +215,10 @@ It should return
 /usr/bin/axiasolar
 ```
 
-> By default, the AXIASolar systemd service is disabled.
+> By default, the AXIACoin systemd service is disabled.
 > To start the service, run `sudo systemctl start axiasolar.service`.
 
-### AXIASolar Binary
+### AXIACoin Binary
 
 You will need to build the `axiasolar` binary from the
 [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repository on GitHub using the source
@@ -288,7 +288,7 @@ cargo install --force --git https://github.com/axia-tech/substrate subkey
 
 > **Note:** By default, Validator nodes are in archive mode. If you've already synced the chain not
 > in archive mode, you must first remove the database with `axiasolar purge-chain` and then ensure
-> that you run AXIASolar with the `--pruning=archive` option.
+> that you run AXIACoin with the `--pruning=archive` option.
 >
 > You may run a validator node in non-archive mode by adding the following flags:
 > `--unsafe-pruning --pruning <NUM OF BLOCKS>`, a reasonable value being 1000. Note that an archive
@@ -304,10 +304,10 @@ You can begin syncing your node by running the following command:
 if you do not want to start in validator mode right away.
 
 ```
-2021-06-17 03:07:07 AXIA AXIASolar
+2021-06-17 03:07:07 AXIA AXIACoin
 2021-06-17 03:07:07 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
 2021-06-17 03:07:07 ❤️  by AXIA Technologies <admin@axia.io>, 2017-2021
-2021-06-17 03:07:07 📋 Chain specification: AXIASolar
+2021-06-17 03:07:07 📋 Chain specification: AXIACoin
 2021-06-17 03:07:07 🏷 Node name: boiling-pet-7554
 2021-06-17 03:07:07 👤 Role: FULL
 2021-06-17 03:07:07 💾 Database: RocksDb at /root/.local/share/axiasolar/chains/axiasolar/db
@@ -348,8 +348,8 @@ to a few hours.
 If you are interested in determining how much longer you have to go, your server logs (printed to
 STDOUT from the `axiasolar` process) will tell you the latest block your node has processed and
 verified. You can then compare that to the current highest block via
-[Telemetry](https://telemetry.axiasolar.io/#list/AXIASolar%20CC1) or the
-[AXIASolarJS Block Explorer](https://axiasolar.js.org/apps/#/explorer).
+[Telemetry](https://telemetry.axiasolar.io/#list/AXIACoin%20CC1) or the
+[AXIACoinJS Block Explorer](https://axiasolar.js.org/apps/#/explorer).
 
 ## Bond SOLAR
 
@@ -380,7 +380,7 @@ First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) sect
 - **Value bonded** - How much SOLAR from the Stash account you want to bond/stake. Note that you do
   not need to bond all of the SOLAR in that account. Also note that you can always bond _more_ SOLAR
   later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On
-  AXIALunar, the unbonding period is 7 days. On AXIASolar, the planned unbonding period is 28 days.
+  AXIALunar, the unbonding period is 7 days. On AXIACoin, the planned unbonding period is 28 days.
 - **Payment destination** - The account where the rewards from validating are sent. More info
   [here](../learn/learn-staking.md/#reward-distribution). Starting with runtime version v23 natively included
   in client version [0.9.3](https://github.com/axia-tech/axiasolar/releases/tag/v0.9.3), payouts can
@@ -421,10 +421,10 @@ will now start running the node.
 Similarly:
 
 ```
-2021-06-17 03:12:08 AXIA AXIASolar
+2021-06-17 03:12:08 AXIA AXIACoin
 2021-06-17 03:12:08 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
 2021-06-17 03:12:08 ❤️  by AXIA Technologies <admin@axia.io>, 2017-2021
-2021-06-17 03:12:08 📋 Chain specification: AXIASolar
+2021-06-17 03:12:08 📋 Chain specification: AXIACoin
 2021-06-17 03:12:08 🏷 Node name: nateched-test
 2021-06-17 03:12:08 👤 Role: AUTHORITY
 2021-06-17 03:12:08 💾 Database: RocksDb at /root/.local/share/axiasolar/chains/axiasolar/db
@@ -448,12 +448,12 @@ people are using telemetry, it is recommended that you choose something likely t
 ### Generating the Session Keys
 
 You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what
-associates your validator node with your Controller account on AXIASolar.
+associates your validator node with your Controller account on AXIACoin.
 
-#### Option 1: AXIASolarJS-APPS
+#### Option 1: AXIACoinJS-APPS
 
 You can generate your [Session keys](../learn/learn-keys.md#session-keys) in the client via the apps RPC. If
-you are doing this, make sure that you have the AXIASolarJS-Apps explorer attached to your validator
+you are doing this, make sure that you have the AXIACoinJS-Apps explorer attached to your validator
 node. You can configure the apps dashboard to connect to the endpoint of your validator in the
 Settings tab. If you are connected to a default endpoint hosted by AXIA of AXIACoin Foundation, you
 will not be able to use this method since making RPC requests to this node would effect the local
@@ -498,8 +498,8 @@ Submit this extrinsic and you are now ready to start validating.
 ## Validate
 
 To verify that your node is live and synchronized, head to
-[Telemetry](https://telemetry.axiasolar.io/#list/AXIASolar%20CC1) and find your node. Note that this
-will show all nodes on the AXIASolar network, which is why it is important to select a unique name!
+[Telemetry](https://telemetry.axiasolar.io/#list/AXIACoin%20CC1) and find your node. Note that this
+will show all nodes on the AXIACoin network, which is why it is important to select a unique name!
 
 In this example, we used the name `techedtest` and have successfully located it upon searching:
 
@@ -544,8 +544,8 @@ increase the number of SOLAR staked or seek out nominators for your validator in
 validator set.
 
 **Congratulations!** If you have followed all of these steps, and been selected to be a part of the
-validator set, you are now running a AXIASolar validator! If you need help, reach out on the
-[AXIASolar Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org).
+validator set, you are now running a AXIACoin validator! If you need help, reach out on the
+[AXIACoin Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org).
 
 ## Thousand Validators Programme
 

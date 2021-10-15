@@ -26,11 +26,11 @@ dictate the real-world data on-chain. On the decentralized end, a [complex game 
 don't submit the same data as everyone else. Solutions such as [ChainLink][chainlink] fit somewhere
 in the middle, where the amount of trust you put into the reporting oracles can be adjusted based on
 your preferences. A Chainlink [Feed Pallet][feed pallet] was recently released to allow smart
-contract applications across AXIASolar to access price reference data, made available as a Substrate
+contract applications across AXIACoin to access price reference data, made available as a Substrate
 oracle pallet.
 
 When using an oracle in your application you should be aware of the benefits and risks that are
-baked into its specific model. As the AXIASolar ecosystem develops and oracle parachains begin to
+baked into its specific model. As the AXIACoin ecosystem develops and oracle parachains begin to
 appear, this article will be updated with a comparison of the different solutions and the benefits
 and drawbacks that each provide.
 

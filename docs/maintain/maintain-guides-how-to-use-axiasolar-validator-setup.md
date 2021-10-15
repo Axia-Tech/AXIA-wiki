@@ -1,15 +1,15 @@
 ---
 id: maintain-guides-how-to-use-axiasolar-validator-setup
-title: How to use AXIASolar Validator Setup
-sidebar_label: How to use AXIASolar Validator Setup
+title: How to use AXIACoin Validator Setup
+sidebar_label: How to use AXIACoin Validator Setup
 slug: ../maintain-guides-how-to-use-axiasolar-validator-setup
 ---
 
-# AXIASolar Validator Setup
+# AXIACoin Validator Setup
 
 The following guide will walk you through using AXIACoin Foundation's [axiasolar validator setup][] to
 offer a potential setup for your validator that aims to prevent some types of potential attacks
-at the TCP layer and layers below. This will work for AXIASolar and AXIALunar out of the box, and,
+at the TCP layer and layers below. This will work for AXIACoin and AXIALunar out of the box, and,
 if you're using another Substrate-based chain, it should work with some tweaks.
 
 > NOTE: This setup should not be assumed to include the best security practices. It is up to
@@ -276,7 +276,7 @@ ok: [34.80.70.172] => {
 ```
 
 The result "0xf126b68841f5…..95f54249" is your session key. Set this to your controller account in
-[AXIASolar-JS Apps](https://axiasolar.js.org/apps/#/staking/actions).
+[AXIACoin-JS Apps](https://axiasolar.js.org/apps/#/staking/actions).
 
 After accessing one of the machines through SSH, you can keep track of the node’s status by running
 `journalctl --follow -u axiasolar`, which will show the latest synced block information.

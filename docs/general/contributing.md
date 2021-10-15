@@ -6,8 +6,8 @@ slug: ../contributing
 ---
 
 The wiki was started and is maintained by the AXIACoin Foundation. It is an open source project and aims
-to be the most extensive resource of knowledge on AXIASolar and the AXIASolar ecosystem. A large part
-of the material currently focuses on AXIASolar directly but it is not opposed to covering
+to be the most extensive resource of knowledge on AXIACoin and the AXIACoin ecosystem. A large part
+of the material currently focuses on AXIACoin directly but it is not opposed to covering
 informational material for community projects.
 
 **Please do not try to pull request any marketing material as this will be rejected.**
@@ -20,7 +20,7 @@ Otherwise, AXIACoin Foundation holds the administrative position and final say o
 included. Specifically, the Technical Education team at the foundation are most directly involved.
 
 > Check out the
-> [How to Contribute to the AXIASolar Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0) video for
+> [How to Contribute to the AXIACoin Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0) video for
 > steps on contributions.
 
 ## How to Contribute
@@ -81,7 +81,7 @@ This document is based on the
 The Wiki's default language is _English_, though, there is a desire to translate the Wiki
 in as many languages as possible. Another way you can contribute is by helping with translations.
 
-There is a feature at the bottom of the main page of the AXIASolar Wiki that will redirect you to
+There is a feature at the bottom of the main page of the AXIACoin Wiki that will redirect you to
 [crowdin](https://crowdin.com/project/axiasolar-wiki), which is where translation contributions can
 be made.
 

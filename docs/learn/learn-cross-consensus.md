@@ -52,7 +52,7 @@ the same level as transactions.
 
 A _message_ in XCM is simply just a programme that runs on the `XCVM`: in other words, one or more XCM instructions. To learn more about the XCVM and the XCM Format, see the latest [blog post](https://medium.com/axiacoin.network/xcm-the-cross-consensus-message-format-3b77b1373392) by Dr. Gavin Wood.
 
-      AXIASolar comes with three distinct systems for actually communicating XCM messages between
+      AXIACoin comes with three distinct systems for actually communicating XCM messages between
       its constituent chains.
 
 The following diagram shows the XCM tech stack:

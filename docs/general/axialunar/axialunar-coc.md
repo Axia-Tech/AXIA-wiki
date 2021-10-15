@@ -48,4 +48,4 @@ If you are being harassed, notice that someone else is being harassed, or have a
 relating to harassment, please contact the administrator of the channel you’re in.
 
 This Code of Conduct may be revised at any time. We are always willing to revise this document based
-on feedback from the AXIALunar participants and/or the AXIASolar community.
+on feedback from the AXIALunar participants and/or the AXIACoin community.

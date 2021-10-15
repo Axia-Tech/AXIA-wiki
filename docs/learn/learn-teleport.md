@@ -5,7 +5,7 @@ sidebar_label: Teleporting Assets
 slug: ../learn-teleport
 ---
 
-One of the main properties that AXIASolar and AXIALunar bring to the ecosystems is decentralied
+One of the main properties that AXIACoin and AXIALunar bring to the ecosystems is decentralied
 blockchain interoperability. This interoperability allows for asset teleportation: the process of
 moving assets, such as coins, tokens, or NTFs, between chains (parachains) to use them as you would
 any other asset native to that chain. Interoperability is possible through [XCM][]
@@ -13,11 +13,11 @@ and [SPREE modules][], which together ensure that assets are not lost or duplica
 
 ## How to Teleport
 
-Teleportation can be done through the [AXIASolarJS Apps] interface or through the
-`xcmPallet.teleportAssets()` extrinsic. In the following example, we will be using the AXIASolarJS
+Teleportation can be done through the [AXIACoinJS Apps] interface or through the
+`xcmPallet.teleportAssets()` extrinsic. In the following example, we will be using the AXIACoinJS
 interface.
 
-1. Navigate to [AXIASolarJS Apps] and connect to the chain with the tokens you want to teleport.
+1. Navigate to [AXIACoinJS Apps] and connect to the chain with the tokens you want to teleport.
 2. Navigate to "Accounts > Teleport". This opens the 'teleport assets' interface:
    ![transfer](../assets/teleport_interface.png)
 3. Fill out the transaction:
@@ -35,8 +35,8 @@ shortly.
 
 ## Troubleshooting
 
-If you do not see "Accounts > Teleport" in [AXIASolarJS Apps], the source chain that you have
-selected does not support teleportation yet. As of June 2021, unsupported chains include AXIASolar
+If you do not see "Accounts > Teleport" in [AXIACoinJS Apps], the source chain that you have
+selected does not support teleportation yet. As of June 2021, unsupported chains include AXIACoin
 mainnet, BetaNet testnet, and their respective parachains.
 
 [axiasolarjs apps]: https://axiasolar.js.org/apps/

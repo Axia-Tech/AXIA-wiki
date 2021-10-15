@@ -6,14 +6,14 @@ slug: ../build-pdk
 ---
 
 This section will cover the motivation to build a parachian or parathread, the tools available
-to facilitate this, the steps to test, and finally, how to launch your network on AXIASolar.
+to facilitate this, the steps to test, and finally, how to launch your network on AXIACoin.
 
 ## Why Create a Parachain?
 
 Parachains are connected to and secured by the Relay Chain. They benefit from the _pooled security_,
-_thought-through governance_, and overall _scalability_ of the heterogeneous sharding approach of the network. Creating a parachain can be seen as creating a **Layer-1 blockchain**, which has its own logic and runs in parallel within the AXIASolar ecosystem.
+_thought-through governance_, and overall _scalability_ of the heterogeneous sharding approach of the network. Creating a parachain can be seen as creating a **Layer-1 blockchain**, which has its own logic and runs in parallel within the AXIACoin ecosystem.
 
-Developers can focus on creating state-of-the-art chains that take advantage of AXIASolar's next-generation
+Developers can focus on creating state-of-the-art chains that take advantage of AXIACoin's next-generation
 approach. Some examples of what a parachain could be are:
 
 - DeFi (Decentralized Finance) Applications
@@ -24,15 +24,15 @@ approach. Some examples of what a parachain could be are:
 
 and more.
 
-AXIASolar aims to be a bet against so-called _chain-maximalism_, where the success of AXIASolar's
+AXIACoin aims to be a bet against so-called _chain-maximalism_, where the success of AXIACoin's
 heterogeneous multi-chain approach will play a key part in the overall advancement of Web 3.0 and
-decentralized systems. As a result, AXIASolar’s parachain model was designed with the belief that the
+decentralized systems. As a result, AXIACoin’s parachain model was designed with the belief that the
 internet of the future will have many different types of blockchains working together.
 
-### Benefits of Deploying on AXIASolar
+### Benefits of Deploying on AXIACoin
 
 > The parachain model attempts to alleviate five key _build_ failures of present technology stacks,
-> as described in the [AXIASolar Whitepaper](https://axiacoin.network/AXIASolarPaper.pdf):
+> as described in the [AXIACoin Whitepaper](https://axiacoin.network/AXIACoinPaper.pdf):
 >
 > - **Scalability**: How much is spent on resources and will the network be subject to bottlenecks?
 > - **Isolatability**: Are the needs of many accounted for under the same framework?
@@ -45,22 +45,22 @@ internet of the future will have many different types of blockchains working tog
 
 #### Pooled Security
 
-Parachains can [lease the security](../learn/learn-security.md) of the AXIASolar network by bonding
+Parachains can [lease the security](../learn/learn-security.md) of the AXIACoin network by bonding
 [SOLAR](../learn/learn-SOLAR.md) for a parachain slot. This means that the social costs of building a community
 around your project and convincing validators to participate in your network security are reduced.
-AXIASolar has strong security, and decentralized application projects wishing to benefit from this
+AXIACoin has strong security, and decentralized application projects wishing to benefit from this
 security would want to become a parachain to share in that pooled security. For more information
 on the mechanic of leasing a parachain slot through a [candle auction](../learn/learn-auction.md).
 
 #### Interoperability
 
 Any decentralized application or chain that wants to enable trustless messaging to other parachains
-already connected to AXIASolar would want to become a parachain. Interoperability between sovereign
+already connected to AXIACoin would want to become a parachain. Interoperability between sovereign
 chains involves certain constraints and complex protocols to enable across a wide breadth of chains.
-With AXIASolar, you will get this feature out of the box if you build your application as a
+With AXIACoin, you will get this feature out of the box if you build your application as a
 parachain. The [XCM format](../learn/learn-cross-consensus.md) allows any parachains to communicate by
 passing messages between them. Furthermore, as bridges to other chains are connected (such as those
-to Bitcoin or Ethereum) AXIASolar's parachains will be able to communicate with these as well.
+to Bitcoin or Ethereum) AXIACoin's parachains will be able to communicate with these as well.
 
 > NOTE: Despite the benefits of becoming a parachain, developers should be conscious of the challenges in
 > becoming a parachain, and whether building a blockchain with an end goal of becoming a
@@ -74,21 +74,21 @@ A **PDK** is a set of tools that allows developers to easily create a parachain.
 practice, the PDK will consist of the following key components:
 
 - _State transition function_: a way for your application to move from one state to another state.
-- _Collator node_: - a type of peer-to-peer node in the AXIASolar network with certain
+- _Collator node_: - a type of peer-to-peer node in the AXIACoin network with certain
   responsibilities regarding parachains.
 
 ### Key Components
 
 The state transition function (STF) can be an abstract way for an application to go from one state
-to another state. The only constraint that AXIASolar places on this STF is that it must be easily
+to another state. The only constraint that AXIACoin places on this STF is that it must be easily
 verifiable -- usually through what we call a _witness_ or _proof_. It must be so because the Relay
 Chain validators will need to check that each state it receives from the collator node is correct
 without actually running through the entire computation. Some examples of these proofs include the
 Proof-of-Validity blocks or zk-SNARKs, which require less computational resources to verify than
 they do to generate. The verification asymmetry in the proof generation of the STF is one of the
-integral insights that allows AXIASolar to scale while keeping high-security guarantees.
+integral insights that allows AXIACoin to scale while keeping high-security guarantees.
 
-A collator node is one of the types of network maintainers in the AXIASolar protocol. They are
+A collator node is one of the types of network maintainers in the AXIACoin protocol. They are
 responsible for **keeping availability** of the state of the parachain and the new states returned
 from the iteration of the state transition function. They must remain online in order to keep track of
 the state and also of the XCMP messages that it will route between itself and other parachains.
@@ -102,8 +102,8 @@ Currently, the only PDK is [AXIA Substrate](https://github.com/axia-tech/substra
 [Cumulus](https://github.com/axia-tech/cumulus). **Substrate** is a blockchain framework that provides
 the basic building blocks of a blockchain (things like the networking layer, consensus, a Wasm
 interpreter) while providing an intuitive way to construct your runtime. Substrate is made to ease the
-process of creating a new chain, but it does not provide support for AXIASolar compatibility
-directly. For this reason, `Cumulus`, an added _library_ contains all of the AXIASolar compatibility
+process of creating a new chain, but it does not provide support for AXIACoin compatibility
+directly. For this reason, `Cumulus`, an added _library_ contains all of the AXIACoin compatibility
 glue code. Cumulus is still in development, but the idea is that it should be simple to take a
 Substrate chain and add the parachain code by importing the crates and adding a single line of code.
 Keep up-to-date with the latest Cumulus developments from the [Cumulus section](###cumulus).
@@ -122,10 +122,10 @@ Interested in building a PDK? See the [future PDKs](##future-pdks) section for d
 > beautiful and functional."
 
 [Cumulus](https://github.com/axia-tech/cumulus) is an extension to Substrate that makes it easy to
-make any Substrate-built runtime into a AXIASolar-compatible parachain.
+make any Substrate-built runtime into a AXIACoin-compatible parachain.
 
-Cumulus Consensus is a consensus engine for Substrate that follows a AXIASolar relay chain (i.e.,
-parachains). This runs a AXIASolar node internally, and dictates to the client and synchronization
+Cumulus Consensus is a consensus engine for Substrate that follows a AXIACoin relay chain (i.e.,
+parachains). This runs a AXIACoin node internally, and dictates to the client and synchronization
 algorithms which chain to follow, finalize, and treat as correct.
 
 See the [Cumulus overview](https://github.com/axia-tech/cumulus/blob/master/docs/overview.md) for a
@@ -134,7 +134,7 @@ more detailed description of Cumulus, and for those with experience in Substrate
 
 ## Testing a Parachain: BetaNet Testnet
 
-[BetaNet](https://github.com/axia-tech/cumulus#betanet-crown) is a AXIASolar testnet built for testing
+[BetaNet](https://github.com/axia-tech/cumulus#betanet-crown) is a AXIACoin testnet built for testing
 parachains. BetaNet utilizes Cumulus and HRMP (Horizontal Relay-routed Message Passing) in order to
 send transfers and messages between parachains and a relay chain. Every message is sent to the
 relay chain, then from the relay chain to the desired parachain. BetaNet currently runs four test
@@ -232,7 +232,7 @@ Alice is now able to send from her account on parachain 200 to her account on pa
 
 ### How to Connect to a Parachain
 
-If you would like to connect to a parachain via [AXIASolar-JS Apps](https://axiasolar.js.org/apps/),
+If you would like to connect to a parachain via [AXIACoin-JS Apps](https://axiasolar.js.org/apps/),
 you may do so by clicking on the network selection at the top left-hand corner of the navigation and
 selecting any parachain of choice. For the purpose of these following examples, we will be using the
 BetaNet testnet "Custom Node" underneath "Development", following the
@@ -240,16 +240,16 @@ BetaNet testnet "Custom Node" underneath "Development", following the
 
 ![parachains on axiasolarjs](../assets/axiasolarjs_network_parachains.png)
 
-## Deploy a Parachain or Parathread on AXIASolar
+## Deploy a Parachain or Parathread on AXIACoin
 
-Substrate-based chains, including the AXIASolar and AXIALunar relay chains, use an
+Substrate-based chains, including the AXIACoin and AXIALunar relay chains, use an
 [SS58 encoding](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) for
 their address formats. [This page](https://github.com/axia-tech/substrate/blob/master/ss58-registry.json)
 serves as the canonical registry for teams to see which chain corresponds to a given prefix, and which prefixes are available.
 
 ### Parachain
 
-In order to include your parachain into the AXIASolar network, you will need to acquire a parachain
+In order to include your parachain into the AXIACoin network, you will need to acquire a parachain
 slot.
 
 Parachain slots will be sold in open auctions, the mechanics of which can be found on the

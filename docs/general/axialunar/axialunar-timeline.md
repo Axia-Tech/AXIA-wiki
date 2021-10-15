@@ -32,9 +32,9 @@ AXIALunar now has its full functionality enabled.
 
 [Source](https://axiacoin.network/axialunars-first-adventure/)
 
-On 4th January 2020, the AXIASolar mainnet runtime, which at that time still wasn't live, was
+On 4th January 2020, the AXIACoin mainnet runtime, which at that time still wasn't live, was
 uploaded to the AXIALunar chain during a runtime upgrade. The mishap was due to a recent split of the
-AXIALunar logic from the AXIASolar logic and that runtime was not properly named. This led to a halt of
+AXIALunar logic from the AXIACoin logic and that runtime was not properly named. This led to a halt of
 block production on the AXIALunar chain and bricked the chain entirely.
 
 The solution to the issue involved a rollback of the chain history before the problematic runtime
@@ -48,7 +48,7 @@ hour would last only 10 minutes until the validators caught up to the present mo
 The above plan was executed successfully on the 7th of January. Due to the time warp, the number of
 missed blocks in the sessions directly following
 [block #516558](https://axiascan.io/axialunar/block/516558) was significantly higher. This is partly
-what contributes to the much higher ratio of missed blocks on AXIALunar versus AXIASolar today.
+what contributes to the much higher ratio of missed blocks on AXIALunar versus AXIACoin today.
 
 ## AXIALunar's Current Adventure: Auctions
 
@@ -56,7 +56,7 @@ what contributes to the much higher ratio of missed blocks on AXIALunar versus A
 
 AXIALunar promised chaos, and it delivered on that promise. On 15th June 2021, the roll out of the
 first public parachain slot auction commenced, marking the beginning of the end to deliver on the
-last piece of core functionality outlined in the AXIASolar whitepaper: purpose-built, interoperable
+last piece of core functionality outlined in the AXIACoin whitepaper: purpose-built, interoperable
 parachains.
 
 Teams and projects looking to become an official parachain on the AXIALunar network have been working
@@ -77,4 +77,4 @@ The launch of the second batch of parachain slot auctions will officially go liv
 with the sixth parachain slot auction to officially begin on 1st September 2021. Five more slot auctions
 will occur over five weeks with a pause for evaluation of overall network performance before a third batch of five auctions begins in a similar schedule.
 
-The path of AXIALunar deployment will pave the way to AXIASolar's parachains as the technology becomes proven.
+The path of AXIALunar deployment will pave the way to AXIACoin's parachains as the technology becomes proven.

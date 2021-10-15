@@ -5,7 +5,7 @@ sidebar_label: Identity
 slug: ../learn-identity
 ---
 
-AXIASolar provides a naming system that allows participants to add personal information to their
+AXIACoin provides a naming system that allows participants to add personal information to their
 on-chain account and subsequently ask for verification of this information by
 [registrars](#registrars).
 
@@ -61,21 +61,21 @@ Note that custom fields are not shown in the UI by default:
 ![Only built-in fields are shown](../assets/identity/04.jpg)
 
 The rendering of such custom values is, ultimately, up to the UI/dapp makers. In the case of
-AXIASolarJS, the team prefers to only show official fields for now. If you want to check that the
+AXIACoinJS, the team prefers to only show official fields for now. If you want to check that the
 values are still stored, use the [Chain State UI](https://axiasolar.js.org/apps/#/chainstate) to
 query the active account's identity info:
 
 ![Raw values of custom fields are available on-chain](../assets/identity/05.jpg)
 
 It is up to your own UI or dapp to then do with this data as it pleases. The data will remain
-available for querying via the AXIASolar API, so you don't have to rely on the AXIASolarJS UI.
+available for querying via the AXIACoin API, so you don't have to rely on the AXIACoinJS UI.
 
 You can have a maximum of 100 custom fields.
 
 ### Format Caveat
 
 Please note the following caveat: because the fields support different formats, from raw bytes to
-various hashes, a UI has no way of telling how to encode a given field it encounters. The AXIASolarJS
+various hashes, a UI has no way of telling how to encode a given field it encounters. The AXIACoinJS
 UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable
 on-screen. However, given that there are no restrictions on the values that can be placed into these
 fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This
@@ -197,9 +197,9 @@ automatically loaded.
 
 ![Chevdor is registrar #1](../assets/identity/16.jpg)
 
-### AXIASolar Registrars
+### AXIACoin Registrars
 
-There are multiple registrars on AXIASolar. Unless no additional information is available here, you must
+There are multiple registrars on AXIACoin. Unless no additional information is available here, you must
 reach out to specific registrars individually if you want to be judged by those.
 
 - Registrar 0:
@@ -216,7 +216,7 @@ reach out to specific registrars individually if you want to be judged by those.
 
 ### Requesting Judgement
 
-Requesting judement follows the same process regardless of whether you're on the AXIALunar or AXIASolar
+Requesting judement follows the same process regardless of whether you're on the AXIALunar or AXIACoin
 networks. Select one of the registrars from the query you made above.
 
 ![Requesting judgement](../assets/identity/08.jpg)

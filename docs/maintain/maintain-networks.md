@@ -5,37 +5,37 @@ sidebar_label: Networks
 slug: ../maintain-networks
 ---
 
-AXIASolar is built on top of Substrate, a modular framework for blockchains. One feature of Substrate
+AXIACoin is built on top of Substrate, a modular framework for blockchains. One feature of Substrate
 is to allow for connection to different networks using a single executable and configuring it with a
-start-up flag. Here are some of the networks associated with AXIASolar or Substrate that you may want
+start-up flag. Here are some of the networks associated with AXIACoin or Substrate that you may want
 to connect to and join.
 
-## AXIASolar Networks
+## AXIACoin Networks
 
-To connect to a AXIASolar network please follow the [instructions](maintain-sync.md) for installing
-the AXIASolar executable.
+To connect to a AXIACoin network please follow the [instructions](maintain-sync.md) for installing
+the AXIACoin executable.
 
-### AXIASolar Mainnet
+### AXIACoin Mainnet
 
-Currently AXIASolar is built from the tip of master and is the default option when starting a node.
+Currently AXIACoin is built from the tip of master and is the default option when starting a node.
 
-To start a AXIASolar node, run the AXIASolar binary:
+To start a AXIACoin node, run the AXIACoin binary:
 
 ```bash
 axiasolar
 ```
 
-and you will connect and start syncing to AXIASolar.
+and you will connect and start syncing to AXIACoin.
 
 Check your node is connected by viewing it on
-[Telemetry](https://telemetry.axiasolar.io/#/AXIASolar%20CC3) (you can set a custom name by specifying
+[Telemetry](https://telemetry.axiasolar.io/#/AXIACoin%20CC3) (you can set a custom name by specifying
 `--name "my custom name"`)
 
 ### AXIALunar Canary Network
 
 AXIALunar is a canary network and holds real economic value.
 
-Run the AXIASolar binary and specify `axialunar` as the chain:
+Run the AXIACoin binary and specify `axialunar` as the chain:
 
 ```bash
 axiasolar --chain=axialunar
@@ -49,10 +49,10 @@ Check your node is connected by viewing it on
 
 ### AlphaNet Test Network
 
-AlphaNet is the latest test network for AXIASolar. The tokens on this network are called _Westies_ and
+AlphaNet is the latest test network for AXIACoin. The tokens on this network are called _Westies_ and
 they purposefully hold no economic value.
 
-Run the AXIASolar binary and specify `alphanet` as the chain:
+Run the AXIACoin binary and specify `alphanet` as the chain:
 
 ```bash
 axiasolar --chain=alphanet
@@ -72,14 +72,14 @@ Follow the instruction [here](../learn/learn-SOLAR.md#getting-westies) for instr
 
 Runtime differences (e.g. existential and multisignature deposit sizes) between the different
 networks can be found by doing a `diff` between the `src/lib.rs` of the respositories. For example,
-to compare the AXIASolar and AlphaNet runtimes:
+to compare the AXIACoin and AlphaNet runtimes:
 
 - `git clone https://github.com/axia-tech/axiasolar && cd axiasolar/runtime`
 - `ls` - show the available runtimes
 - `diff axiasolar/src/lib.rs alphanet/src/lib.rs`
 
 You can also paste the runtimes
-([AXIASolar](https://github.com/axia-tech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs),
+([AXIACoin](https://github.com/axia-tech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs),
 [AlphaNet](https://github.com/axia-tech/axiasolar/blob/master/runtime/alphanet/src/lib.rs)) into a
 web-based diff tool like [Diffchecker](https://www.diffchecker.com/) if you're not comfortable with
 the CLI.
@@ -92,7 +92,7 @@ installing the Substrate executable first.
 ### Flaming Fir
 
 Flaming Fir is the public Substrate test network. It contains some pallets that will not be included
-in the AXIASolar runtime.
+in the AXIACoin runtime.
 
 Flaming Fir is built from the tip of master and is the default option when running the Substrate
 executable.

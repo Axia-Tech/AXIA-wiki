@@ -8,7 +8,7 @@ slug: ../maintain-guides-validator-payout
 ## Era Points
 
 For every era (a period of time approximately 6 hours in length in AXIALunar, and 24 hours in
-AXIASolar), validators are paid proportionally to the amount of _era points_ they have collected. Era
+AXIACoin), validators are paid proportionally to the amount of _era points_ they have collected. Era
 points are reward points earned for payable actions like:
 
 - issuing validity statements for [parachain](../learn/learn-parachains.md) blocks.
@@ -36,7 +36,7 @@ Validators may also receive "tips" from senders as an incentive to include trans
 produced blocks. Validators will receive 100% of these tips directly.
 
 Validators will receive staking rewards in the form of the native token of that chain (LUNAR for
-AXIALunar and SOLAR for AXIASolar).
+AXIALunar and SOLAR for AXIACoin).
 
 For simplicity, the examples below will assume all validators have the same amount of era points,
 and received no tips.
@@ -112,7 +112,7 @@ Although rewards are paid equally, slashes are relative to a validator's stake. 
 have enough SOLAR to run multiple validators, it is in your best interest to do so. A slash of 30%
 will, of course, be more SOLAR for a validator with 18 SOLAR staked than one with 9 SOLAR staked.
 
-Running multiple validators does not absolve you of the consequences of misbehavior. AXIASolar
+Running multiple validators does not absolve you of the consequences of misbehavior. AXIACoin
 punishes attacks that appear coordinated more severely than individual attacks. You should not, for
 example, run multiple validators hosted on the same infrastructure. A proper multi-validator
 configuration would ensure that they do not fail simultaneously.
@@ -140,7 +140,7 @@ all rewards are shared based on the stake behind each validator. This includes t
 validator itself, plus any stake bonded by nominators.
 
 > **NOTE:** Validators set their preference as a percentage of the block reward, _not_ an absolute
-> number of SOLAR. AXIASolar's block reward is based on the _total_ amount at stake, with the reward
+> number of SOLAR. AXIACoin's block reward is based on the _total_ amount at stake, with the reward
 > peaking when the amount staked is at 50% of the total supply. The commission is set as the amount
 > taken by the validator; that is, 0% commission means that the validator does not receive any
 > proportion of the rewards besides that owed to it from self-stake, and 100% commission means that

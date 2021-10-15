@@ -5,10 +5,10 @@ sidebar_label: Nominator Guide
 slug: ../../maintain-guides-how-to-nominate-axialunar
 ---
 
-> The following information applies to the AXIALunar network. If you want to nominate on AXIASolar,
-> check out the [AXIASolar guide](../maintain-guides-how-to-validate-axiasolar.md) instead.
+> The following information applies to the AXIALunar network. If you want to nominate on AXIACoin,
+> check out the [AXIACoin guide](../maintain-guides-how-to-validate-axiasolar.md) instead.
 
-Nominators are one type of participant in the staking subsystem of AXIASolar. They are responsible
+Nominators are one type of participant in the staking subsystem of AXIACoin. They are responsible
 for appointing their stake to the validators who are the second type of participant. By appointing
 their stake, they are able to elect the active set of validators and share in the rewards that are
 paid out.
@@ -25,7 +25,7 @@ validator gets slashed.
 
 > If you prefer a video format, the following videos related to staking are available:
 >
-> - [Staking with a Ledger and AXIASolarJS Apps](https://www.youtube.com/watch?v=VN4S8MofEW8)
+> - [Staking with a Ledger and AXIACoinJS Apps](https://www.youtube.com/watch?v=VN4S8MofEW8)
 > - [Staking with a Ledger and Ledger Live](https://www.youtube.com/watch?v=obZyGeHrm_M&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=43)
 
 Nominators are recommended to set up two separate stash and controller accounts. Explanation and
@@ -41,11 +41,11 @@ address. If you'd like to redirect payments to an account that is neither the co
 stash account, set one up. Note that it is extremely unsafe to set an exchange address as the
 recipient of the staking rewards.
 
-## Using AXIASolar-JS UI
+## Using AXIACoin-JS UI
 
 ### Step 1: Bond your tokens
 
-On the [AXIASolar-JS UI](https://axiasolar.js.org/apps) navigate to the "Staking" tab (within the
+On the [AXIACoin-JS UI](https://axiasolar.js.org/apps) navigate to the "Staking" tab (within the
 "Network" menu).
 
 The "Staking Overview" subsection will show you all the active validators and their information -
@@ -94,7 +94,7 @@ earn compound interest.
 
 ![Payout account selection dropdown with the custom account option highlighted](../../assets/payout/01.png)
 
-> These concepts have been further explained in AXIASolar's
+> These concepts have been further explained in AXIACoin's
 > [UI Walkthrough Video](https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8)
 
 ### Step 2: Nominate a validator
@@ -130,8 +130,8 @@ are available [here](../maintain-guides-how-to-unbond.md).
 
 ## Using Command-Line Interface (CLI)
 
-Apart from using the AXIASolar-JS UI to participate in the staking, you can do all these things in
-CLI instead. The CLI approach allows you to interact with the AXIASolar / AXIALunar network without
+Apart from using the AXIACoin-JS UI to participate in the staking, you can do all these things in
+CLI instead. The CLI approach allows you to interact with the AXIACoin / AXIALunar network without
 going to the AXIAdoJS dashboard.
 
 ### Step 1: Install @axiasolar-js/api-cli
@@ -185,7 +185,7 @@ Result:
 
 You can check the transaction status by using the value of the `InBlock` in
 [AXIAscan](https://axiascan.io/pre/axialunar). Also, you can verify the bonding state under the
-[Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIASolar-JS Apps Dashboard.
+[Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIACoin-JS Apps Dashboard.
 
 ### Step 3. Nominate a validator
 
@@ -200,7 +200,7 @@ axiasolar-js-api --seed "xxxx xxxxx xxxx xxxxx" tx.staking.nominate '["CmD9vaMYo
 ```
 
 After a few seconds, you should see the hash of the transaction and if you would like to verify the
-nomination status, you can check that on the AXIASolar-JS UI as well.
+nomination status, you can check that on the AXIACoin-JS UI as well.
 
 [validators]: maintain-guides-how-to-validate-axialunar.md
 [keys]: ../../learn/learn-keys.md###"controller"-and-"stash"-keys

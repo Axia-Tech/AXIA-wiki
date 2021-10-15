@@ -2,7 +2,7 @@
 id: learn-treasury
 title: Treasury
 sidebar_label: Treasury
-description: Details about AXIASolar's on-chain treasury.
+description: Details about AXIACoin's on-chain treasury.
 slug: ../learn-treasury
 ---
 
@@ -17,7 +17,7 @@ without running out of funds.
 If the Treasury ends a budget period without spending all of its funds, it suffers a burn of a
 percentage of its funds -- thereby causing deflationary pressure.
 {{ axiasolar: This percentage is currently at 1%
-on AXIASolar. :axiasolar }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to
+on AXIACoin. :axiasolar }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to
 [Society](https://lunar.wiki.axiacoin.network/docs/maintain-guides-society-axialunar) rather than being
 burned. :axialunar }}
 
@@ -75,7 +75,7 @@ takes place on the following platforms:
 
 - Many community members participate in discussion in the
   [AXIALunar Element (previously Riot)](https://matrix.to/#/#axialunar:matrix.axia.io) chat or
-  [AXIASolar Element](https://matrix.to/#//#axiasolar:matrix.axia.io).
+  [AXIACoin Element](https://matrix.to/#//#axiasolar:matrix.axia.io).
 - The [AXIAssembly](https://axiassembly.io) discussion platform that allows users to log in with
   their Web3 address and automatically reads proposals from the chain, turning them into discussion
   threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a
@@ -83,15 +83,15 @@ takes place on the following platforms:
 
 Spreading the word about the proposal's explanation is ultimately up to the proposer - the
 recommended way is using official Element channels like {{ axiasolar: the
-[AXIASolar Watercooler](https://matrix.to/#/#axiasolar-watercooler:axiacoin.org) and
-[AXIASolar Direction room](https://matrix.to/#/#axiasolar-direction:matrix.axia.io) :axiasolar }}
+[AXIACoin Watercooler](https://matrix.to/#/#axiasolar-watercooler:axiacoin.org) and
+[AXIACoin Direction room](https://matrix.to/#/#axiasolar-direction:matrix.axia.io) :axiasolar }}
 {{ axialunar: the
 [AXIALunar Direction room](https://matrix.to/#/#axialunar:matrix.axia.io) or the
 [AXIALunar Watercooler](https://matrix.to/#/#axialunarwatercooler:axiasolar.builders) :axialunar }}.
 
 ### Creating the Proposal
 
-One way to create the proposal is to use the AXIASolar-JS Apps
+One way to create the proposal is to use the AXIACoin-JS Apps
 [website](https://axiasolar.js.org/apps). From the website, use either the
 [extrinsics tab](https://axiasolar.js.org/apps/#/extrinsics) and select the Treasury pallet, then
 `proposeSpend` and enter the desired amount and recipient, or use the
@@ -145,7 +145,7 @@ To better understand the process a tip goes through until it is paid out, let's 
 
 ### Example
 
-Bob has done something great for {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }}.
+Bob has done something great for {{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }}.
 Alice has noticed this and decides to report Bob as deserving a tip from the Treasury. The Council
 is composed of three members Charlie, Dave, and Eve.
 
@@ -195,7 +195,7 @@ highly unlikely that a majority of members are capable in such diverse topics.
 Bounties Spending proposals aim to delegate the curation activity of spending proposals to experts
 called Curators: They can be defined as addresses with agency over a portion of the Treasury with
 the goal of fixing a bug or vulnerability, developing a strategy, or monitoring a set of tasks
-related to a specific topic: all for the benefit of the AXIASolar ecosystem.
+related to a specific topic: all for the benefit of the AXIACoin ecosystem.
 
 A proposer can submit a bounty proposal for the Council to pass, with a curator to be defined later,
 whose background and expertise is such that they are capable of determining when the task is
@@ -234,24 +234,24 @@ sub-bounties for more granularity and allocation in the next iteration of the me
 
 ### Creating a Bounty Proposal
 
-Anyone can create a Bounty proposal using AXIASolar JS Apps: Users are able to submit a proposal on
+Anyone can create a Bounty proposal using AXIACoin JS Apps: Users are able to submit a proposal on
 the dedicated Bounty section under Governance. The development of a robust user interface to view
-and manage bounties in the AXIASolar Apps is still under development and it will serve Council
+and manage bounties in the AXIACoin Apps is still under development and it will serve Council
 members, Curators and Beneficiaries of the bounties, as well as all users observing the on-chain
 treasury governance. For now, the help of a Councillor is needed to open a bounty proposal as a
 motion to be voted.
 
-To submit a bounty, please visit [AXIASolar JS Apps](https://axiasolar.js.org/apps) and click on the
+To submit a bounty, please visit [AXIACoin JS Apps](https://axiasolar.js.org/apps) and click on the
 governance tab in the options bar on the top of the site. After, click on 'Bounties' and find the
 button '+ Add Bounty' on the upper-right side of the interface. Complete the bounty title, the
 requested allocation (including curator's fee) and confirm the call.
 
 After this, a Council member will need to assist you to pass the bounty proposal for vote as a
 motion. You can contact the Council by joining the
-{{ axiasolar: AXIASolar Direction [channel](https://matrix.to/#/#axiasolar-direction:matrix.axia.io) :axiasolar }}
+{{ axiasolar: AXIACoin Direction [channel](https://matrix.to/#/#axiasolar-direction:matrix.axia.io) :axiasolar }}
 {{ axialunar: AXIALunar Direction [channel](https://matrix.to/#/#axialunar:matrix.axia.io) :axialunar }} in
 Element or joining our
-{{ axiasolar: AXIASolar Discord [server](https://axia.link/axiasolar-discord) :axiasolar }}
+{{ axiasolar: AXIACoin Discord [server](https://axia.link/axiasolar-discord) :axiasolar }}
 {{ axialunar: AXIALunar Discord [server](https://axia.link/axialunar-discord) :axialunar }} and publishing a
 short description of your bounty, with a link to one of the [forums](#announcing-the-proposal) for
 contextual information.
@@ -273,7 +273,7 @@ specific amount of the payout from the payout address, by calling `Claim_bounty`
 closed the allocation.
 
 To understand more about Bounties and how this new mechanism works, read this
-[AXIASolar Blog post](https://axiacoin.network/axialunar-and-axiasolar-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
+[AXIACoin Blog post](https://axiacoin.network/axialunar-and-axiasolar-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
 
 ## FAQ
 

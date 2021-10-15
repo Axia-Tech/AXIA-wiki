@@ -21,7 +21,7 @@ In this unit file you will write the commands that you want to run on server boo
 
 ```
 [Unit]
-Description=AXIASolar Validator
+Description=AXIACoin Validator
 
 [Service]
 ExecStart=PATH_TO_AXIASOLAR_BIN --validator --name SHOW_ON_TELEMETRY

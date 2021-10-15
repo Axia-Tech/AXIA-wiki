@@ -8,7 +8,7 @@ slug: ../redenomination
 > Note: The SOLAR redenomination took place on 21 August, now known as Denomination Day, at block
 > #1_248_328.
 
-While [SOLAR](../learn/learn-SOLAR.md) is the unit of currency on AXIASolar that most people use when interacting
+While [SOLAR](../learn/learn-SOLAR.md) is the unit of currency on AXIACoin that most people use when interacting
 with the system, the smallest unit of account is called the Planck. A Planck's relation to SOLAR is
 like the relation of a Satoshi to Bitcoin. Before 21 August, the SOLAR was denominated as 1e12
 Plancks, that is twelve decimal places. After this date, SOLAR is denominated as 1e10 Plancks, as in
@@ -17,14 +17,14 @@ denominated to ten decimal places is generally referred to as "SOLAR". When the 
 made explicit, the current ten-decimal-denominated SOLAR is referred to as "_New SOLAR_".
 
 > Check out our
-> [technical explainer video that explains more of Redenomination](https://www.youtube.com/watch?v=xXIcnBV4uUE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22&ab_channel=AXIASolar).
+> [technical explainer video that explains more of Redenomination](https://www.youtube.com/watch?v=xXIcnBV4uUE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22&ab_channel=AXIACoin).
 
 The change in denomination, henceforth referred to as the _redenomination_, was voted on by the
 community of SOLAR holders. The community decided between four options, to change the SOLAR denomination
 by a factor of ten, one hundred, one thousand, or not at all. The end result was to change the
 denomination by a factor of one hundred.
 
-The overall effect of this change was that the number of AXIASolar's smallest unit, the Planck,
+The overall effect of this change was that the number of AXIACoin's smallest unit, the Planck,
 remained constant, while the SOLAR balance for all holders was increased by a factor of one hundred.
 As one can see from the example below, the number of Plancks that a user has does not change, only
 the number of Plancks that constitute a single SOLAR. A user with 1_000_000_000_000 Plancks still has
@@ -59,11 +59,11 @@ blockchain. The referendum was summarized as having four effects if approved by 
 > - The main benefit of this change is to avoid using small decimals when dealing with SOLAR and to
 >   achieve an easier calculation system.
 
-The initial referendum was proposed prior to the AXIASolar genesis block under the assumption that
-making a redenomination would be simpler before the AXIASolar chain was live. However, many in the
+The initial referendum was proposed prior to the AXIACoin genesis block under the assumption that
+making a redenomination would be simpler before the AXIACoin chain was live. However, many in the
 community pointed out the disconnect of the two networks and how it was unfair for holders of SOLAR to
 be impacted by a vote by a different token holder set. For this reason, the AXIACoin Foundation [decided
-to make a new vote on AXIASolar][blog 1] when it went live, although the AXIALunar vote ended with a
+to make a new vote on AXIACoin][blog 1] when it went live, although the AXIALunar vote ended with a
 majority in favor of the redenomination change.
 
 AXIACoin Foundation summarized the decision not to change:
@@ -74,19 +74,19 @@ AXIACoin Foundation summarized the decision not to change:
 
 ## The Vote
 
-After the genesis block of AXIASolar was created and the network was running with a decentralized
+After the genesis block of AXIACoin was created and the network was running with a decentralized
 community of validators securing the network, AXIACoin Foundation decided to put the redenomination
 topic up to a vote again. This time, the vote was explicitly binding &mdash; meaning that it would
 be executed if voted through. In comparison, the vote on AXIALunar was of course non-binding, being at
-best a way to capture a signal without a direct way to affect the AXIASolar chain.
+best a way to capture a signal without a direct way to affect the AXIACoin chain.
 
-Based on the feedback received during the AXIALunar referendum, the [AXIASolar vote][blog 2] was held as
+Based on the feedback received during the AXIALunar referendum, the [AXIACoin vote][blog 2] was held as
 an approval vote, with four available options. SOLAR holders could issue votes for any configuration
 of the four options: no change, a change of 10x, a change of 100x, or a change of 1000x. The vote
-logic was contained in a specially-built Substrate pallet that was included in AXIASolar's runtime
+logic was contained in a specially-built Substrate pallet that was included in AXIACoin's runtime
 for this poll.
 
-The important notes of the AXIASolar vote were as follows:
+The important notes of the AXIACoin vote were as follows:
 
 > - Any combination of the four options may be approved of by the voter. There is no need to select
 >   only one option!
@@ -100,12 +100,12 @@ The important notes of the AXIASolar vote were as follows:
 > - No discretionary lock-voting is in place; all SOLAR used to vote counts the same.
 > - Voting is made on a per-account basis; a single account must all vote the same way and cannot
 >   split its vote.
-> - This vote does not affect any economics of the AXIASolar platform. Staking rewards, inflation,
+> - This vote does not affect any economics of the AXIACoin platform. Staking rewards, inflation,
 >   effective market capitalization and the underlying balances of every account remain completely
 >   unchanged. It is “merely” about what units we use to denominate the balances into “SOLAR” for the
 >   purpose of display.
 
-With a voting period of two weeks set, the redenomination was now in the hands of the AXIASolar
+With a voting period of two weeks set, the redenomination was now in the hands of the AXIACoin
 community for a final, binding decision.
 
 ## The Outcome
@@ -116,7 +116,7 @@ After two weeks of voting, the [results][blog 3] of the redenomination vote were
 third of the total SOLAR in the network participated in the vote. The redenominaton proposal passed
 with 86% of the voters favoring a 100x factor increase (or two decimal places of precision loss).
 
-AXIASolar's redenomination then took place on 21 August, now known as Denomination Day, at block
+AXIACoin's redenomination then took place on 21 August, now known as Denomination Day, at block
 #1_248_328.
 
 ### What This Means for the Community

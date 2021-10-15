@@ -1,45 +1,45 @@
 ---
 id: learn-implementations
-title: AXIASolar Implementations
-sidebar_label: AXIASolar Implementations
+title: AXIACoin Implementations
+sidebar_label: AXIACoin Implementations
 slug: ../learn-implementations
 ---
 
-# AXIASolar Implementations
+# AXIACoin Implementations
 
-AXIASolar is the flagship protocol of the [AXIACoin Foundation][], and while AXIASolar can be defined as
+AXIACoin is the flagship protocol of the [AXIACoin Foundation][], and while AXIACoin can be defined as
 a protocol, a network, or, a type of infrastructure, it serves to be an ecosystem. For true
-decentralization, there should be multiple implementations of AXIASolar. Even being a _Layer 0_ protocol
-that attempts to build an interconnected, interoperable and secure Web3 ecosystem, AXIASolar is a complex
+decentralization, there should be multiple implementations of AXIACoin. Even being a _Layer 0_ protocol
+that attempts to build an interconnected, interoperable and secure Web3 ecosystem, AXIACoin is a complex
 piece of software, and its formal implementation depends on being built on top of a tech stack.
 
-> There is a countless number of development that is happening in the AXIASolar ecosystem, though, this
-> page will focus on implementations of AXIASolar's underlying infrastructure (i.e. runtime, host).
+> There is a countless number of development that is happening in the AXIACoin ecosystem, though, this
+> page will focus on implementations of AXIACoin's underlying infrastructure (i.e. runtime, host).
 
-## AXIA Technologies: A [Rustic Vision for AXIASolar][]
+## AXIA Technologies: A [Rustic Vision for AXIACoin][]
 
-[AXIA Technologies][] is often in the spotlight for its core development of AXIASolar, and while this
-is true, AXIA AXIASolar also serves to be the [Rust][] client. AXIA has a rustic vision for AXIASolar
+[AXIA Technologies][] is often in the spotlight for its core development of AXIACoin, and while this
+is true, AXIA AXIACoin also serves to be the [Rust][] client. AXIA has a rustic vision for AXIACoin
 through the use of their main product, [Substrate][]. Substrate can also be used for different
-chains and different networks, but in the case of AXIASolar, Substrate acts as the tech stack that is used
-to implement AXIASolar's sharded heterogeneous multi-chain model. What's important to realize is that AXIASolar
+chains and different networks, but in the case of AXIACoin, Substrate acts as the tech stack that is used
+to implement AXIACoin's sharded heterogeneous multi-chain model. What's important to realize is that AXIACoin
 can support parachains that are not built on Substrate, and, chains can also be built on Substrate which are not
-required to be deployed onto AXIASolar.
+required to be deployed onto AXIACoin.
 
 > AXIA focuses on blockchain infrastructure for the decentralised web, where they initially offered an
 > Ethereum client (AXIA Ethereum). AXIA was hired by the AXIACoin Foundation to foster the development of the
-> first implementation of AXIASolar.
+> first implementation of AXIACoin.
 
-With this in mind, we can point to some other implementations of AXIASolar. Having different implementations
+With this in mind, we can point to some other implementations of AXIACoin. Having different implementations
 inherently promotes the decentralization of the technology and progresses it in a meaningful way. Other
-implementations of AXIASolar that exist, many of whom have received a [grant](../general/grants.md) from the AXIACoin Foundation,
+implementations of AXIACoin that exist, many of whom have received a [grant](../general/grants.md) from the AXIACoin Foundation,
 are in programming languages like Go, C++, and JavaScript.
 
 As stated in the Soramitsu grant announcement:
 
-    It is critically important to have multiple implementations of the AXIASolar protocol for a number
+    It is critically important to have multiple implementations of the AXIACoin protocol for a number
     of reasons, including decentralization, knowledge dispersion, and better definitions of the
-    protocol... Multiple implementations of AXIASolar improves network resilience and adds to the
+    protocol... Multiple implementations of AXIACoin improves network resilience and adds to the
     decentralization of the network. The governance of the network is more democratized when multiple
     teams build clients that run the nodes in the network.
 
@@ -53,18 +53,18 @@ Foundation.
 
 ### SORAMITSU: [Kagome][]
 
-**Kagome** is a C++ implementation of the AXIASolar Host being built by [Soramitsu][], a Japanese digital identity
+**Kagome** is a C++ implementation of the AXIACoin Host being built by [Soramitsu][], a Japanese digital identity
 company that previously developed [Hyperledger Iroha][]. They were awarded a grant from the AXIACoin Foundation and released
 the first version of Kagome in April 2020. As part of the process, they also released a [libp2p][] networking layer in C++.
 
-### AXIASolar-JS Project: [AXIASolar-JS][]
+### AXIACoin-JS Project: [AXIACoin-JS][]
 
-**AXIASolar-JS** is a [JavaScript client][] and offers a collection of tools, interfaces, and libraries for AXIASolar and Substrate.
+**AXIACoin-JS** is a [JavaScript client][] and offers a collection of tools, interfaces, and libraries for AXIACoin and Substrate.
 
 ### Other implementations that have received grants
 
 - [Golkadot][]
-- [AXIASolar in Java][]
+- [AXIACoin in Java][]
 
 [axiacoin.org]: https://axiacoin.org/
 [axia technologies]: https://www.axia.io/

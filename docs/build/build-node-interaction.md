@@ -10,15 +10,15 @@ seen as canonical reference. Always refer to the proper
 documentation for the tool you are using:
 
 - [Substrate RPC API](https://substrate.dev/rustdocs/latest/sc_rpc_api/index.html)
-- [AXIASolar-JS RPC](https://axiasolar.js.org/docs/substrate/rpc)
+- [AXIACoin-JS RPC](https://axiasolar.js.org/docs/substrate/rpc)
 - [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar)
 
-**AXIASolar-JS RPC** is a JavaScript library for interacting with the **Substrate RPC API** endpoint, distributed as `@axiasolar-js/api` Node.js package.  
-**Substrate API Sidecar** is using the **AXIASolar-JS RPC** to provide separately runnable REST services.
+**AXIACoin-JS RPC** is a JavaScript library for interacting with the **Substrate RPC API** endpoint, distributed as `@axiasolar-js/api` Node.js package.  
+**Substrate API Sidecar** is using the **AXIACoin-JS RPC** to provide separately runnable REST services.
 
-## AXIASolar RPC
+## AXIACoin RPC
 
-The AXIA AXIASolar client exposes HTTP and WS endpoints for RPC connections. The default ports are
+The AXIA AXIACoin client exposes HTTP and WS endpoints for RPC connections. The default ports are
 9933 for HTTP and 9944 for WS.
 
 To get a list of all RPC methods, the node has an RPC endpoint called `rpc_methods`.
@@ -43,7 +43,7 @@ $ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method
 {"jsonrpc":"2.0","result":{"block":{"extrinsics":["0x280402000b50055ee97001","0x1004140000"],"header":{"digest":{"logs":["0x06424142453402af000000937fbd0f00000000","0x054241424501011e38401b0aab22f4d72ebc95329c3798445786b92ca1ae69366aacb6e1584851f5fcdfcc0f518df121265c343059c62ab0a34e8e88fda8578810fbe508b6f583"]},"extrinsicsRoot":"0x0e354333c062892e774898e7ff5e23bf1cdd8314755fac15079e25c1a7765f06","number":"0x16c28c","parentHash":"0xe3bf2e8f0e901c292de24d07ebc412d67224ce52a3d1ffae76dc4bd78351e8ac","stateRoot":"0xd582f0dfeb6a7c73c47db735ae82d37fbeb5bada67ee8abcd43479df0f8fc8d8"}},"justification":null},"id":1}
 ```
 
-Some return values may not appear meaningful at first glance. AXIASolar uses
+Some return values may not appear meaningful at first glance. AXIACoin uses
 [SCALE encoding](https://substrate.dev/docs/en/knowledgebase/advanced/codec) as a format that is
 suitable for resource-constrained execution environments. You will need to decode the information
 and use the chain [metadata](https://substrate.dev/docs/en/knowledgebase/runtime/metadata)

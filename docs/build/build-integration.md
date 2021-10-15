@@ -1,23 +1,23 @@
 ---
 id: build-integration
-title: AXIASolar Integration Guide
+title: AXIACoin Integration Guide
 sidebar_label: Integration Initiation
 slug: ../build-integration
 ---
 
-Welcome to the AXIASolar integration guide. This guide will provide all the information you need to
+Welcome to the AXIACoin integration guide. This guide will provide all the information you need to
 get started on your integration. The target audiences for this guide are wallets and custodians, but
 it will be useful to any infrastructure provider such as validators or chain indexers.
 
 ## Structure
 
-The guide focuses on AXIASolar and AXIALunar, but the principles will apply to parachains and other
+The guide focuses on AXIACoin and AXIALunar, but the principles will apply to parachains and other
 Substrate-based chains. The guide contains four sections:
 
 1. [Protocol Info](build-protocol-info.md): The entry point to the guide. Please read it carefully
-   as it provides information about AXIASolar that differentiates it from other blockchains. Use this
+   as it provides information about AXIACoin that differentiates it from other blockchains. Use this
    page to check your assumptions.
-1. [Assets](build-integrate-assets.md): The guide to integrating assets on AXIASolar into your
+1. [Assets](build-integrate-assets.md): The guide to integrating assets on AXIACoin into your
    systems.
 1. [Node Management](build-node-management.md): This page will guide you to starting and monitoring
    a node.

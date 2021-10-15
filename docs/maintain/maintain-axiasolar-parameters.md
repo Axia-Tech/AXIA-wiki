@@ -1,6 +1,6 @@
 ---
 id: maintain-axiasolar-parameters
-title: AXIASolar Parameters
+title: AXIACoin Parameters
 sidebar_label: Parameters
 slug: ../maintain-axiasolar-parameters
 ---
@@ -12,8 +12,8 @@ at the [chain state](https://axiasolar.js.org/apps/#/chainstate/constants) and/o
 
 ### Periods of common actions and attributes
 
-_NOTE: AXIASolar generally runs at &frac14;th the speed of AXIALunar, except in the time slot duration
-itself. See [AXIALunar Parameters](../general/axialunar/axialunar-parameters) for more details on how AXIASolar's parameters
+_NOTE: AXIACoin generally runs at &frac14;th the speed of AXIALunar, except in the time slot duration
+itself. See [AXIALunar Parameters](../general/axialunar/axialunar-parameters) for more details on how AXIACoin's parameters
 differ from AXIALunar's._
 
 - Slot: 6 seconds \*(generally one block per slot, although see note below)
@@ -21,7 +21,7 @@ differ from AXIALunar's._
 - Session: 4 hours (Session and Epoch lengths are the same)
 - Era: 24 hours (6 sessions per Era, 2_400 slots x 6 epochs x 6 seconds)
 
-| AXIASolar | Time      | Slots\* |
+| AXIACoin | Time      | Slots\* |
 | -------- | --------- | ------- |
 | Slot     | 6 seconds | 1       |
 | Epoch    | 4 hours   | 2_400   |
@@ -45,7 +45,7 @@ more details._
 | Term duration | 7 days | 100_800 | The length of a council member's term until the next election round. |
 | Voting period | 7 days | 100_800 | The council's voting period for motions.                             |
 
-The AXIASolar Council consists of up to 13 members and up to 20 runners up.
+The AXIACoin Council consists of up to 13 members and up to 20 runners up.
 
 | Technical committee     | Time    | Slots   | Description                                                                                    |
 | ----------------------- | ------- | ------- | ---------------------------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ governance, please check the latest parameters on
 [chain state](https://axiasolar.js.org/apps/#/chainstate) (selected state query - staking -
 minimumNominatorBond and maxNominatorsCount)
 
-| AXIASolar             | Time    | Slots   | Description                                                                                                                                                                                         |
+| AXIACoin             | Time    | Slots   | Description                                                                                                                                                                                         |
 | -------------------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Term duration        | 1 Day   | 14_400  | The time for which a validator is in the set after being elected. Note, this duration can be shortened in the case that a validator misbehaves.                                                     |
 | Nomination period    | 1 Day   | 14_400  | How often a new validator set is elected according to Phragmén's method.                                                                                                                            |

@@ -5,7 +5,7 @@ sidebar_label: Home
 slug: ../../axialunar-index
 ---
 
-AXIALunar is a _canary network_ for AXIASolar; an early release of the code that is available first and
+AXIALunar is a _canary network_ for AXIACoin; an early release of the code that is available first and
 holds real economic value. For developers, AXIALunar is a proving ground for runtime upgrades, on-chain
 governance, and parachains.
 
@@ -18,9 +18,9 @@ On AXIALunar you can:
 - Explore the politics. Campaign as a councillor or vote for new runtime proposals using
   [Democracy](../../maintain/maintain-guides-democracy.md).
 - Hone your validator set-up. The minimum requirement for staking as a validator on AXIALunar is much
-  lower than it is expected for AXIASolar. There are also programs in place such as [Thousand
+  lower than it is expected for AXIACoin. There are also programs in place such as [Thousand
   Validators][thousand validators] to help community validators rise the ranks.
-- Deploy a parachain. AXIALunar will get the functionality required for parachains before AXIASolar.
+- Deploy a parachain. AXIALunar will get the functionality required for parachains before AXIACoin.
   This includes participating in a parachain slot auction and composable applications.
 - Join a cyber secret society. The [Kappa Sigma Mu][kappa] fraternity asks you to get a AXIALunar
   tattoo to join.
@@ -37,7 +37,7 @@ The short answer is, everyone!
 
 AXIALunar is a permissionless network and anyone can come along and start using it.
 
-Those who participated in the AXIASolar sale can claim a proportional amount of LUNAR through the
+Those who participated in the AXIACoin sale can claim a proportional amount of LUNAR through the
 [AXIALunar Claims process][axialunar claims].
 
 LUNAR used to be publicly available through a highly-frictional faucet, but this has been

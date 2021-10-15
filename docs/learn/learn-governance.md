@@ -5,7 +5,7 @@ sidebar_label: Governance
 slug: ../learn-governance
 ---
 
-AXIASolar uses a sophisticated governance mechanism that allows it to evolve gracefully overtime at
+AXIACoin uses a sophisticated governance mechanism that allows it to evolve gracefully overtime at
 the ultimate behest of its assembled stakeholders. The stated goal is to ensure that the majority of
 the stake can always command the network.
 
@@ -44,7 +44,7 @@ Referenda can be started in one of several ways:
 
 All referenda have an _enactment delay_ associated with them. This is the period between the
 referendum ending and, assuming the proposal was approved, the changes being enacted. For the first
-two ways that a referendum is launched, this is a fixed time. For AXIALunar, it is 8 days; in AXIASolar,
+two ways that a referendum is launched, this is a fixed time. For AXIALunar, it is 8 days; in AXIACoin,
 it is 28 days. For the third type, it can be set as desired.
 
 Emergency proposals deal with major problems with the network that need to be "fast-tracked". These
@@ -80,7 +80,7 @@ referendum in progress.
 
 #### Voting Timetable
 
-Every 28 days on AXIASolar or 7 days on AXIALunar, a new referendum will come up for a vote, assuming
+Every 28 days on AXIACoin or 7 days on AXIALunar, a new referendum will come up for a vote, assuming
 there is at least one proposal in one of the queues. There is a queue for Council-approved proposals
 and a queue for publicly submitted proposals. The referendum to be voted upon alternates between the
 top proposal in the two queues.
@@ -105,7 +105,7 @@ the holder cannot influence the referendum result, thanks to time-locking. You c
 this at [Voluntary Locking](#voluntary-locking).
 
 > To learn more about voting on referenda, please check out our
-> [technical explainer video](https://www.youtube.com/watch?v=BkbhhlsezGA&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=31&ab_channel=AXIASolar).
+> [technical explainer video](https://www.youtube.com/watch?v=BkbhhlsezGA&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=31&ab_channel=AXIACoin).
 
 ```
 Example:
@@ -209,7 +209,7 @@ period.
 
 #### Voluntary Locking
 
-AXIASolar utilizes an idea called `Voluntary Locking` that allows token holders to increase their
+AXIACoin utilizes an idea called `Voluntary Locking` that allows token holders to increase their
 voting power by declaring how long they are willing to lock up their tokens, hence, the number of
 votes for each token holder will be calculated by the following formula:
 
@@ -231,7 +231,7 @@ double.
 |      32      |        6        |
 
 The maximum number of "doublings" of the lock period is set to 6 (and thus 32 lock periods in
-total), and one lock period equals 28 days on AXIASolar and 8 days on AXIALunar. Only doublings are
+total), and one lock period equals 28 days on AXIACoin and 8 days on AXIALunar. Only doublings are
 allowed; you cannot lock for, say, 24 periods and increase your conviction by 5.5, for instance.
 
 While a token is locked, you can still use it for voting and staking; you are only prohibited from
@@ -242,7 +242,7 @@ the tokens are locked.
 
 #### Adaptive Quorum Biasing
 
-AXIASolar introduces a concept, "Adaptive Quorum Biasing", which functions as a lever that the
+AXIACoin introduces a concept, "Adaptive Quorum Biasing", which functions as a lever that the
 council can use to alter the effective super-majority required to make it easier or more difficult
 for a proposal to pass in the case that there is no clear majority of voting power backing it or
 against it.
@@ -276,10 +276,10 @@ against - equate to a simple majority-carries system at 100% turnout.
 
 > [Video explainer on Council](https://www.youtube.com/watch?v=837Vv3gdRzI)
 
-To represent passive stakeholders, AXIASolar introduces the idea of a "council". The council is an
-on-chain entity comprising several actors, each represented as an on-chain account. On AXIASolar, the
+To represent passive stakeholders, AXIACoin introduces the idea of a "council". The council is an
+on-chain entity comprising several actors, each represented as an on-chain account. On AXIACoin, the
 council currently consists of 13 members. This is expected to increase over the next few months to
-24 seats. In general, the council will end up having a fixed number of seats. On AXIASolar, this will
+24 seats. In general, the council will end up having a fixed number of seats. On AXIACoin, this will
 be 24 seats while on AXIALunar it is 19 seats.
 
 Along with [controlling the treasury](learn-treasury.md), the council is called upon primarily for
@@ -318,7 +318,7 @@ proposals that could be submitted with the same hash, i.e.
 text to make a suggestion.
 
 Upon seeing their proposal removed, a submitter who is not properly introduced to the democracy
-system of AXIASolar might be tempted to re-submit the same proposal. That said, this is far from a
+system of AXIACoin might be tempted to re-submit the same proposal. That said, this is far from a
 fool-proof method of preventing invalid proposals from being submitted - a single changed character
 in a proposal's text will also change the hash of the proposal, rendering the per-hash blacklist
 invalid.
@@ -332,11 +332,11 @@ All stakeholders are free to signal their approval of any of the registered cand
 Council elections are handled by the same [Phragmén election](learn-phragmen.md) process that
 selects validators from the available pool based on nominations. However, token holders' votes for
 councillors are isolated from any of the nominations they may have on validators. Council terms last
-for one day on AXIALunar and one week on AXIASolar.
+for one day on AXIALunar and one week on AXIACoin.
 
 At the end of each term, [Phragmén election algorithm](learn-phragmen.md) runs and the result will
 choose the new councillors based on the vote configurations of all voters. The election also chooses
-a set number of runners up (currently 19 on AXIALunar and 20 on AXIASolar) that will remain in the queue
+a set number of runners up (currently 19 on AXIALunar and 20 on AXIACoin) that will remain in the queue
 with their votes intact.
 
 As opposed to a "first-past-the-post" electoral system, where voters can only vote for a single
@@ -396,7 +396,7 @@ The Technical Committee was introduced in the
 [AXIALunar rollout and governance post](https://axiacoin.network/axialunar-rollout-and-governance/) as one
 of the three chambers of AXIALunar governance (along with the Council and the Referendum chamber). The
 Technical Committee is composed of the teams that have successfully implemented or specified either
-a AXIASolar/AXIALunar runtime or AXIASolar Host. Teams are added or removed from the Technical Committee
+a AXIACoin/AXIALunar runtime or AXIACoin Host. Teams are added or removed from the Technical Committee
 via a simple majority vote of the [Council](#council).
 
 The Technical Committee can, along with the Council, produce emergency referenda, which are
@@ -414,14 +414,14 @@ same time. Voting on one does not prevent a user from voting on the other.
 In some circumstances, you may want to appeal to the on-chain council to enact a change on your
 behalf. One example of this circumstance is the case of lost or locked funds when the funds were
 lost due to a human interface error (such as inputting an address for another network). Another
-example is if you participated in the 2017 AXIASolar ICO with a multi-sig address which now does not
+example is if you participated in the 2017 AXIACoin ICO with a multi-sig address which now does not
 let you sign a message easily. When these circumstances can be proven beyond a reasonable doubt to
 be an error, the council _may_ consider a governance motion to correct it.
 
 The first step to appeal to the council is to get in contact with the councillors. There is no
 singular place where you are guaranteed to grab every councillor's ear with your message. However,
 there are a handful of good places to start where you can get the attention of some of them. The
-[AXIASolar Direction][] matrix room is one such place. After creating an account and joining this
+[AXIACoin Direction][] matrix room is one such place. After creating an account and joining this
 room, you can post a well-thought-through message here that lays down your case and provides
 justification for why you think the council should consider enacting a change to the protocol on
 your behalf.
@@ -437,9 +437,9 @@ is your responsibility to make a strong case for why the change should be made.
 - [Initial Governance Description](https://github.com/axia-tech/axiasolar/wiki/Governance)
 - [Democracy Pallet](https://github.com/axia-tech/substrate/tree/master/frame/democracy/src)
 - [Governance Demo](https://www.youtube.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734) - Dr.
-  Gavin Wood presents the initial governance structure for AXIASolar. (Video)
-- [Governance on AXIASolar](https://www.crowdcast.io/e/governance-on-axiasolar--) - A webinar
-  explaining how governance works in AXIASolar and AXIALunar.
+  Gavin Wood presents the initial governance structure for AXIACoin. (Video)
+- [Governance on AXIACoin](https://www.crowdcast.io/e/governance-on-axiasolar--) - A webinar
+  explaining how governance works in AXIACoin and AXIALunar.
 
 [axiasolar direction]: https://matrix.to/#/!OwgojQyBzTlUQGGLhq:matrix.axia.io
 [axiassembly]: https://axiasolar.axiassembly.io/

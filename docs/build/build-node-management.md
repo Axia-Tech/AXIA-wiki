@@ -5,7 +5,7 @@ sidebar_label: Node Management
 slug: ../build-node-management
 ---
 
-This page contains basic information about running a AXIA AXIASolar client. There are a lot of ways
+This page contains basic information about running a AXIA AXIACoin client. There are a lot of ways
 to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This
 guide will always refer to the executable as `axiasolar`.
 
@@ -22,7 +22,7 @@ If you are trying to run a validator, refer to this tutorial
 **Selecting a chain**
 
 Use the `--chain <chainspec>` option to select the chain. Can be `axiasolar`, `axialunar`, `alphanet`,
-`betanet`, or a custom chain spec. By default, the client will start AXIASolar. Watch
+`betanet`, or a custom chain spec. By default, the client will start AXIACoin. Watch
 [How a single codebase can power four different blockchains](https://www.youtube.com/watch?v=i9vNCHz6wO4)
 to learn more about how the chain selection works internally.
 
@@ -54,7 +54,7 @@ with the `--rpc-port` and `--ws-port` options. To limit the hosts who can access
 
 **Execution**
 
-The AXIA AXIASolar client implements a [AXIASolar Host](../learn/learn-axiasolar-host.md) and a native
+The AXIA AXIACoin client implements a [AXIACoin Host](../learn/learn-axiasolar-host.md) and a native
 runtime. The runtime must compile to WebAssembly and is stored on-chain. If the client's runtime is
 the same spec as the runtime that is stored on-chain, then the client will execute blocks using the
 client binary. Otherwise, the client will execute the Wasm runtime from the chain.
@@ -63,7 +63,7 @@ Therefore, when syncing the chain, the client will execute blocks from past runt
 associated Wasm binary. This feature also allows forkless upgrades: the client can execute a new
 runtime without updating the client.
 
-AXIA's AXIASolar client has two Wasm execution methods, interpreted (default) and compiled. Set the
+AXIA's AXIACoin client has two Wasm execution methods, interpreted (default) and compiled. Set the
 preferred method to use when executing Wasm with `--wasm-execution <Interpreted|Compiled>`. Compiled
 execution will run much faster, especially when syncing the chain, but is experimental and may use
 more memory/CPU. A reasonable tradeoff would be to sync the chain with compiled execution and then
@@ -78,7 +78,7 @@ can set a custom path with `--base-path <path>`.
 
 The keystore stores session keys, which are important for validator operations.
 
-- [AXIASolar documentation](../learn/learn-keys.md/#session-keys)
+- [AXIACoin documentation](../learn/learn-keys.md/#session-keys)
 - [Substrate documentation](https://substrate.dev/docs/en/knowledgebase/learn-substrate/session-keys)
 
 **`db`**
@@ -104,8 +104,8 @@ axiasolar purge-chain
 
 ## Deployment Tools
 
-AXIACoin Foundation maintains [AXIASolar Deployer](https://github.com/axia-tech/axiasolar-deployer), which
-allows you to create local or remote cloud deployments of AXIASolar nodes. See the README for
+AXIACoin Foundation maintains [AXIACoin Deployer](https://github.com/axia-tech/axiasolar-deployer), which
+allows you to create local or remote cloud deployments of AXIACoin nodes. See the README for
 instructions.
 
 Validators, see the [validator setup guide](../maintain/maintain-guides-how-to-use-axiasolar-validator-setup.md)
@@ -123,7 +123,7 @@ curl -H "Content-Type: application/json" --data '{ "jsonrpc":"2.0", "method":"sy
 
 **Logs**
 
-The AXIASolar client has a number of log targets. The most interesting to users may be:
+The AXIACoin client has a number of log targets. The most interesting to users may be:
 
 - `afg` (Al's Finality Gadget - GRANDPA consensus)
 - `babe`
@@ -147,7 +147,7 @@ All targets are set to `info` logging by default. You can adjust individual log 
 
 **Telemetry & Metrics**
 
-The AXIA AXIASolar client connects to telemetry by default. You can disable it with
+The AXIA AXIACoin client connects to telemetry by default. You can disable it with
 `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option
 (see the help options for instructions). Connecting to public telemetry may expose information that
 puts your node at higher risk of attack. You can run your own, private

@@ -21,14 +21,14 @@ SOLAR in your account but you cannot stake as validator or transfer SOLAR away f
 can [un-nominate at any time](../maintain/maintain-guides-how-to-unbond.md) to stop staking your funds. Keep in
 mind that the un-nomination is effective in the next era, and that un-nominating does not
 automatically unbond your funds. There is an unbonding period of 7 days on AXIALunar and 28 days on
-AXIASolar before bonded funds can be transferred after issuing an unbond transaction.
+AXIACoin before bonded funds can be transferred after issuing an unbond transaction.
 
 ### Active vs. Inactive Nomination
 
 When you go to the [Account actions](https://axiasolar.js.org/apps/#/staking/actions) under staking
 page, you should see your bonded accounts and nomination status. If not, you can follow
 [this](../maintain/maintain-guides-how-to-nominate-axiasolar.md) guide to configure it first. Your nominations
-will be effective in the next era; eras are roughly 6 hours on AXIALunar and 24 hours on AXIASolar.
+will be effective in the next era; eras are roughly 6 hours on AXIALunar and 24 hours on AXIACoin.
 
 ![Nominations](../assets/staking/axiasolarjs_nominator_account.png)
 
@@ -183,19 +183,19 @@ are too many nominators, the lowest-staked nominations will be dropped. This val
 dynamic and will vary over time. If you review the lowest amount of nominations that are occurring
 on current validators, you can get a good idea of how many SOLARs will likely be necessary to have
 your nomination earn you rewards. You can read the blog post
-["AXIASolar Staking: An Update"](https://axiacoin.network/axiasolar-staking-an-update/) for more
+["AXIACoin Staking: An Update"](https://axiacoin.network/axiasolar-staking-an-update/) for more
 details.
 
 > These concepts have been further explained in the
-> [Why Nominate on AXIASolar & AXIALunar video](https://www.youtube.com/watch?v=weG_uzdSs1E&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=4)
+> [Why Nominate on AXIACoin & AXIALunar video](https://www.youtube.com/watch?v=weG_uzdSs1E&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=4)
 > and
-> [What to Consider when Nominating Validators on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=K-a4CgVchvU&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=9)
+> [What to Consider when Nominating Validators on AXIACoin and AXIALunar](https://www.youtube.com/watch?v=K-a4CgVchvU&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=9)
 > and
-> [Nominating/Staking on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=NYs9oWAbzbE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=14)
+> [Nominating/Staking on AXIACoin and AXIALunar](https://www.youtube.com/watch?v=NYs9oWAbzbE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=14)
 
 ### Guides
 
-- [Be a Nominator (AXIASolar)](../maintain/maintain-guides-how-to-nominate-axiasolar.md) - Guide on nominating on
+- [Be a Nominator (AXIACoin)](../maintain/maintain-guides-how-to-nominate-axiasolar.md) - Guide on nominating on
   the AXIALunar canary network.
 - [Stop Being a Nominator (all networks)](../maintain/maintain-guides-how-to-unbond.md) - Guide on stopping
   nominations and withdrawing tokens.

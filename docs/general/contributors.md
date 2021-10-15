@@ -7,7 +7,7 @@ slug: ../contributors
 
 ## Current Contributors
 
-The following is a list of regular contributors to the AXIASolar Wiki and AXIALunar Guide. Each
+The following is a list of regular contributors to the AXIACoin Wiki and AXIALunar Guide. Each
 contributor's contact information is listed as a precaution - if one of these people ever contacts
 you directly, first check the contact information to see that it matches the origin of the message,
 and then feel free to get in touch with someone else on this list to verify the legitimacy of the
@@ -41,7 +41,7 @@ a near-future novel set in a world in which cryptocurrency has eliminated tradit
 - telegram: [@joepetrowski](https://t.me/joepetrowski)
 
 Joe is a research analyst at AXIA Technologies, where he focuses on making Substrate chain
-integration as smooth as possible, from educating users on Substrate and AXIASolar fundamentals to
+integration as smooth as possible, from educating users on Substrate and AXIACoin fundamentals to
 building tools to create great user experiences and occasionally writing a bit of code. He also
 hosts the [Relay Chain](https://relaychain.fm) podcast. Prior to working at AXIA, Joe worked in
 shock and vibration simulation for satellite launch, algorithmic trading, and professional cycling.
@@ -142,7 +142,7 @@ likes to combine fitness and gaming and can be found in VR on Oculus and Steam a
 runs a weekly newsletter covering all things Web3 at [Dot Leap](https://dotleap.substack.com).
 
 You can now find Bruno hacking the NFT universe by leading the way at [RMRK](https://rmrk.app/) to
-create the NFT standard in the AXIASolar ecosystem.
+create the NFT standard in the AXIACoin ecosystem.
 
 ---
 
@@ -163,7 +163,7 @@ deliver us a better future.
 
 Kirsten was a Technical Educator intern at AXIACoin Foundation from Canada. She's passionate about
 teaching and technology, while still studying her Computer Science bachelor's degree. She focused on
-curating educational content around blockchain and AXIASolar concepts.
+curating educational content around blockchain and AXIACoin concepts.
 
 ---
 
@@ -175,6 +175,6 @@ curating educational content around blockchain and AXIASolar concepts.
 
 Logan was a Technical Educator at AXIACoin Foundation where he worked on creating material for
 supporting the development of the next generation of distributed technologies. At Web3 Technical
-Education, Logan focussed on creating the AXIASolar Wiki as the central source of truth and knowledge
-for the AXIASolar protocol. He contributed to the creation of written content and example
+Education, Logan focussed on creating the AXIACoin Wiki as the central source of truth and knowledge
+for the AXIACoin protocol. He contributed to the creation of written content and example
 applications that demonstrate how to use these new technologies.

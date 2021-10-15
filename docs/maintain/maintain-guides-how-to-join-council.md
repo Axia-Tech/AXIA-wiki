@@ -6,7 +6,7 @@ slug: ../maintain-guides-how-to-join-council
 ---
 
 The council is an elected body of on-chain accounts that are intended to represent the passive
-stakeholders of AXIASolar and/or AXIALunar. The council has two major tasks in governance: proposing
+stakeholders of AXIACoin and/or AXIALunar. The council has two major tasks in governance: proposing
 referenda and vetoing dangerous or malicious referenda. For more information on the council, see the
 [governance page](../learn/learn-governance.md#council). This guide will walk you through entering your
 candidacy to the council.
@@ -18,14 +18,14 @@ wins, the bond will be forfeited. You can receive your bond back if you manually
 candidacy before losing. Runners-up are selected after every round and are reserved members in case
 one of the winners gets forcefully removed.
 
-> Currently the bond for submitting a council candidacy on AXIASolar is 100 SOLAR, and 0.0033 LUNAR on
+> Currently the bond for submitting a council candidacy on AXIACoin is 100 SOLAR, and 0.0033 LUNAR on
 > AXIALunar.
 
 It is a good idea to announce your council intention before submitting your candidacy so that your
 supporters will know when they can start to vote for you. You can also vote for yourself in case no
 one else does.
 
-Go to [AXIASolar Apps Dashboard](https://axiasolar.js.org/apps) and navigate to the "Council" tab.
+Go to [AXIACoin Apps Dashboard](https://axiasolar.js.org/apps) and navigate to the "Council" tab.
 Click the button on the right that says "Submit Candidacy."
 
 ![submit candidancy button](../assets/council/axiasolarjs_submit_candidancy.png)
@@ -59,4 +59,4 @@ the row "Members".
 
 Now you are able to participate on the council by making motions or voting proposals. To join in on
 the active discussions, join the
-[AXIASolar Direction channel](https://matrix.to/#/#axiasolar-direction:matrix.axia.io).
+[AXIACoin Direction channel](https://matrix.to/#/#axiasolar-direction:matrix.axia.io).

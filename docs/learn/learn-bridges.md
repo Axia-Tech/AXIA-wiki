@@ -8,14 +8,14 @@ slug: ../learn-bridges
 A cornerstone technology of blockchain interoperability is the blockchain bridge. Blockchain bridges
 are ways for two economically sovereign and technologically diverse chains to communicate with each
 other. Bridge designs come in a variety of flavors ranging from centralized and trusted to more
-decentralized and trustless. AXIASolar favors the latter bridge designs for its ecosystem, however
+decentralized and trustless. AXIACoin favors the latter bridge designs for its ecosystem, however
 there is nothing that blocks a development team from building and deploying the former.
 
 While bridge designs are now getting to a place where they are sufficiently planned out, there has
 not been too many that have been used heavily in production. For this reason, you can consider this
 page a work in progress. It will be updated as more information is determined and available.
 
-> Bridges are specifically for making the AXIASolar ecosystem compatible with external blockchains
+> Bridges are specifically for making the AXIACoin ecosystem compatible with external blockchains
 > such as Bitcoin, Ethereum, or Tezos (among others). For information on XCMP, the native
 > interoperability technology that allows parachains to trustlessly communicate, please see the
 > dedicated [cross consensus][] page on the Wiki.
@@ -25,7 +25,7 @@ page a work in progress. It will be updated as more information is determined an
 Building a bridge that is as decentralized and trustless as possible can be done through any of the
 following methods (ordered by suggested methodology):
 
-- _Bridge pallets_ - For Substrate-native chains, use a bridge pallet (e.g. AXIALunar `\<\>` AXIASolar
+- _Bridge pallets_ - For Substrate-native chains, use a bridge pallet (e.g. AXIALunar `\<\>` AXIACoin
   bridge, since both networks' parachains use Substrate).
 - _Smart contracts_ - If the chain is not on Substrate, you should have smart contracts on the
   non-Substrate chain to bridge (e.g. Ethereum mainnet will have a bridge smart contract that
@@ -35,20 +35,20 @@ following methods (ordered by suggested methodology):
 
 ### via Bridge Pallets
 
-Receiving messages on AXIASolar from an external, non-parachain blockchain can be possible through a
-Substrate pallet. The Substrate instance can then be deployed to AXIASolar either as a system-level
-parachain (native extension to the core AXIASolar software) or as a community-operated parachain.
+Receiving messages on AXIACoin from an external, non-parachain blockchain can be possible through a
+Substrate pallet. The Substrate instance can then be deployed to AXIACoin either as a system-level
+parachain (native extension to the core AXIACoin software) or as a community-operated parachain.
 
-An example of a bridge that would strictly use bridge pallets would be a AXIALunar `\<\>` AXIASolar
+An example of a bridge that would strictly use bridge pallets would be a AXIALunar `\<\>` AXIACoin
 bridge, since both use parachains based on Substrate.
 
-For the standalone chains that will not have a parachain bridging module on AXIASolar
+For the standalone chains that will not have a parachain bridging module on AXIACoin
 (non-Substrate), it will be necessary to deploy bridge contracts (see below).
 
 ### via Smart Contracts
 
 Given the generality of blockchain platforms with Turing-complete smart contract languages, it is
-possible to bridge AXIASolar and any other smart contract capable blockchain (Ethereum, EOS, Tezos,
+possible to bridge AXIACoin and any other smart contract capable blockchain (Ethereum, EOS, Tezos,
 etc).
 
 Those who are already familiar with Ethereum may know of the now archived [AXIA Bridge][] and the
@@ -59,7 +59,7 @@ chains, `main` and `side`. Ether deposited into the contract on `main` generates
 denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract
 on `side` can free up Ether on `main`.
 
-> To learn more on how Bitcoin and Ethereum can Cooperate and Collaborate Through AXIASolar, check
+> To learn more on how Bitcoin and Ethereum can Cooperate and Collaborate Through AXIACoin, check
 > out this explainer video [here](https://www.youtube.com/watch?v=rvoFUiOR3cM)
 
 ### via Higher-Order Protocols
@@ -73,22 +73,22 @@ it does not support smart-contracts and it's not based on Substrate.
 
 ## Examples
 
-### Ethereum Bridge (Smart Contracts \<\> AXIASolar)
+### Ethereum Bridge (Smart Contracts \<\> AXIACoin)
 
 As explained by Dr. Gavin Wood in a [blog post][eth bridging blog] from late 2019, there are three
-ways that the AXIASolar and Substrate ecosystem can be bridged to the Ethereum ecosystem.
+ways that the AXIACoin and Substrate ecosystem can be bridged to the Ethereum ecosystem.
 
-1. AXIASolar <-> Ethereum Public Bridge.
+1. AXIACoin <-> Ethereum Public Bridge.
 1. Substrate <-> AXIA Ethereum (Openethereum) Bridge.
 1. The Substrate EVM module.
 
 Please read the blog article for fuller descriptions of each one of these options.
 
-### Bitcoin Bridge (XCLAIM \<\> Substrate \<\> AXIASolar)
+### Bitcoin Bridge (XCLAIM \<\> Substrate \<\> AXIACoin)
 
 The Interlay team has written a [specification][interlay] on a Bitcoin bridge that is based on the
-[XCLAIM][] design paper. The protocol enables a two-way bridge between AXIASolar and Bitcoin. It
-allows holders of BTC to "teleport" their assets to AXIASolar as AXIABTC, and holders of AXIABTC to
+[XCLAIM][] design paper. The protocol enables a two-way bridge between AXIACoin and Bitcoin. It
+allows holders of BTC to "teleport" their assets to AXIACoin as AXIABTC, and holders of AXIABTC to
 burn their assets for BTC on the Bitcoin chain.
 
 The Bitcoin bridge as documented in the specification is composed of two logically different
@@ -106,7 +106,7 @@ There is now a
 
 ### For Bridge Builders
 
-If your team is interested in building a bridge between an external chain and AXIASolar, there may be
+If your team is interested in building a bridge between an external chain and AXIACoin, there may be
 funding available from the W3F [grants program][]. Please first check that the chain you are
 intending to bridge between hasn't already been built or is in the process of being built by another
 team. More popular chains with clear use cases will be given priority, and novel bridge designs are
@@ -117,7 +117,7 @@ welcome.
 - [AXIA Bridges Common Resources](https://github.com/axia-tech/axia-bridges-common)
 - [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge
   were awarded a grant in W3F Grants [Wave 5][] to build a Substrate to Ethereum two-way bridge.
-- [AXIABTC (Bitcoin \<\> AXIASolar Bridge)](https://docs.axiabtc.io/#/)
+- [AXIABTC (Bitcoin \<\> AXIACoin Bridge)](https://docs.axiabtc.io/#/)
 - [EOS Bridge][bifrost] - The Bifrost team was awarded a grant in W3F Grants [Wave 5][] to build a
   bridge to EOS.
 - [Tendermint Bridge](https://github.com/ChorusOne/tendermint-light-client) - ChorusOne was awarded

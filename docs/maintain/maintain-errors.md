@@ -8,15 +8,15 @@ slug: ../maintain-errors
 Errors in Substrate-based chains are usually accompanied by descriptive messages. However, to read
 these messages, a tool parsing the blockchain data needs to request _chain metadata_ from a node.
 That metadata explains how to read the messages. One such tool with a built-in parser for chain
-metadata is the [AXIASolar-JS Apps UI](https://axiasolar.js.org/apps).
+metadata is the [AXIACoin-JS Apps UI](https://axiasolar.js.org/apps).
 
 If this page does not answer your question, try searching for your problem at the
-[AXIASolar Knowledge Base](https://support.axiacoin.network/) for more information on troubleshooting
+[AXIACoin Knowledge Base](https://support.axiacoin.network/) for more information on troubleshooting
 your issue.
 
-## AXIASolarJS Apps Explorer
+## AXIACoinJS Apps Explorer
 
-Here's how to find out the detailed error description through AXIASolar-JS Apps.
+Here's how to find out the detailed error description through AXIACoin-JS Apps.
 
 A typical failed transactions looks something like this:
 
@@ -80,7 +80,7 @@ The table below lists the most commonly encountered errors and ways to resolve t
 
 ## Error Table
 
-The below table is a reference to the errors that exists in AXIASolar. It is generated from the
+The below table is a reference to the errors that exists in AXIACoin. It is generated from the
 runtime's metadata.
 
 | Pallet                  | Error                                  | Documentation                                                                                                                                    |

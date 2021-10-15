@@ -51,8 +51,8 @@ and respect any messages incoming from the Relay Chain and system level parachai
 Some examples of potential public utility chains are bridges, SOLAR/LUNAR-denominated smart contract
 platforms, and [generic asset chains](#statemint).
 
-Public utility parachains would typically grant privileged business logic to AXIASolar’s governance.
-Just as the AXIASolar Relay Chain has several privileged functions like setting the validator count
+Public utility parachains would typically grant privileged business logic to AXIACoin’s governance.
+Just as the AXIACoin Relay Chain has several privileged functions like setting the validator count
 or allocating SOLAR from the Treasury, these parachains can have privileged functions like changing
 system parameters or triggering an upgrade.
 

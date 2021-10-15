@@ -35,7 +35,7 @@ forgiving than the equivocation or parachain validity slashing.
 
 ## Key Management
 
-See the [AXIASolar Keys guide](../learn/learn-keys.md) for more information on keys. The keys that are of
+See the [AXIACoin Keys guide](../learn/learn-keys.md) for more information on keys. The keys that are of
 primary concern for validator infrastructure are the Session keys. These keys sign messages related
 to consensus and parachains. Although Session keys are _not_ account keys and therefore cannot
 transfer funds, an attacker could use them to commit slashable behavior.
@@ -53,7 +53,7 @@ Controller key telling the chain your new Session keys.
 
 ### Signing Outside the Client
 
-In the future, AXIASolar will support signing payloads outside the client so that keys can be stored
+In the future, AXIACoin will support signing payloads outside the client so that keys can be stored
 on another device, e.g. a hardware security module (HSM) or secure enclave. For the time being,
 however, Session key signatures are performed within the client.
 
@@ -86,7 +86,7 @@ however, Session key signatures are performed within the client.
 
 ## Conclusions
 
-- At the moment, AXIASolar/Substrate can't interact with HSM/SGX, so we need to provide the signing
+- At the moment, AXIACoin/Substrate can't interact with HSM/SGX, so we need to provide the signing
   key seeds to the validator machine. This key is kept in memory for signing operations and
   persisted to disk (encrypted with a password).
 
@@ -96,7 +96,7 @@ however, Session key signatures are performed within the client.
 
 ### Validators
 
-- Validators should only run the AXIASolar binary, and they should not listen on any port other than
+- Validators should only run the AXIACoin binary, and they should not listen on any port other than
   the configured p2p port.
 
 - Validators should run on bare-metal machines, as opposed to VMs. This will prevent some of the
@@ -106,9 +106,9 @@ however, Session key signatures are performed within the client.
 
 - Session keys should be generated and provided in a secure way.
 
-- AXIASolar should be started at boot and restarted if stopped for any reason (supervisor process).
+- AXIACoin should be started at boot and restarted if stopped for any reason (supervisor process).
 
-- AXIASolar should run as a non-root user.
+- AXIACoin should run as a non-root user.
 
 ### Monitoring
 

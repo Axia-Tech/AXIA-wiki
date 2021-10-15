@@ -1,28 +1,28 @@
 ---
 id: build-protocol-info
-title: AXIASolar Protocol Information
-sidebar_label: AXIASolar Protocol
+title: AXIACoin Protocol Information
+sidebar_label: AXIACoin Protocol
 slug: ../build-protocol-info
 ---
 
-This page serves as a high-level introduction to the AXIASolar protocol with terminology that may be
-specific to AXIASolar, notable differences to other chains that you may have worked with, and
+This page serves as a high-level introduction to the AXIACoin protocol with terminology that may be
+specific to AXIACoin, notable differences to other chains that you may have worked with, and
 practical information for dealing with the chain.
 
 ## Tokens
 
 - **Token decimals:**
-  - AXIASolar (SOLAR): 10
+  - AXIACoin (SOLAR): 10
   - AXIALunar (LUNAR): 12
 - **Base unit:** "Planck"
 - **Balance type:** [`u128`](https://doc.rust-lang.org/std/u128/index.html)
 
 ### Redenomination
 
-AXIASolar conducted a poll, which ended on 27 July 2020 (block 888_888), in which the stakeholders
+AXIACoin conducted a poll, which ended on 27 July 2020 (block 888_888), in which the stakeholders
 decided to redenominate the SOLAR token. The redenomination does not change the number of base units
-(called "plancks" in AXIASolar) in the network. The only change is that a single SOLAR token will be
-1e10 plancks instead of the original 1e12 plancks. See the AXIASolar blog posts explaining the
+(called "plancks" in AXIACoin) in the network. The only change is that a single SOLAR token will be
+1e10 plancks instead of the original 1e12 plancks. See the AXIACoin blog posts explaining the
 [details](https://medium.com/axiacoin.network/the-first-axiasolar-vote-1fc1b8bd357b) and the
 [results](https://medium.com/axiacoin.network/the-results-are-in-8f6b1ca2a4e6) of the vote.
 
@@ -31,10 +31,10 @@ occurred at approximately 16:50 UTC on 21 Aug 2020.
 
 ## Addresses
 
-In AXIASolar (and most Substrate chains), user accounts are identified by a 32-byte (256-bit)
+In AXIACoin (and most Substrate chains), user accounts are identified by a 32-byte (256-bit)
 `AccountId`. This is simply the public key for the cryptography used by Substrate.
 
-AXIASolar (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to
+AXIACoin (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to
 handle many different cryptographies and chains. It has much in common with Bitcoin's Base58Check
 format such as a version prefix, a hash-based checksum suffix, and base-58 encoding.
 
@@ -43,13 +43,13 @@ in the Substrate wiki for encoding information and a more comprehensive list of 
 
 Relevant SS58 prefixes for this guide:
 
-- AXIASolar: 0
+- AXIACoin: 0
 - AXIALunar: 2
 - AlphaNet: 42
 
 ### Cryptography
 
-AXIASolar supports the following [cryptographic](../learn/learn-cryptography.md) key pairs and signing
+AXIACoin supports the following [cryptographic](../learn/learn-cryptography.md) key pairs and signing
 algorithms:
 
 - Ed25519
@@ -61,12 +61,12 @@ order to reduce the public key from 33 bytes to 32 bytes.
 
 ## Existential Deposit
 
-AXIASolar, and most Substrate-based chains, use an _existential deposit_ (ED) to ensure that account
+AXIACoin, and most Substrate-based chains, use an _existential deposit_ (ED) to ensure that account
 lockups are in tact, while preventing dust accounts from bloating state; the ED ensures that dust
 accounts are not taking up data storage.
 
 If an account drops below the ED, it will be _reaped,_ i.e. completely removed from storage and the
-nonce reset. AXIASolar's ED is 1 SOLAR, while AXIALunar's is 33.3333 microLUNAR (0.0000333333 LUNAR). You can
+nonce reset. AXIACoin's ED is 1 SOLAR, while AXIALunar's is 33.3333 microLUNAR (0.0000333333 LUNAR). You can
 always verify the existential deposit by checking the
 [chain state](https://axiasolar.js.org/apps/#/chainstate) for the constant
 `balances.existentialDeposit`.
@@ -88,7 +88,7 @@ make the transfer if doing so would result in reaping the sender's account.
 
 Account balance information is stored in
 [`AccountData`](https://substrate.dev/rustdocs/latest/pallet_balances/struct.AccountData.html).
-AXIASolar primarily deals with two types of balances: free and reserved.
+AXIACoin primarily deals with two types of balances: free and reserved.
 
 For most operations, free balance is what you are interested in. It is the "power" of an account in
 staking and governance, for example. Reserved balance represents funds that have been set aside by
@@ -169,7 +169,7 @@ immortal transaction. Always default to using a mortal extrinsic.
 > Make sure that you read this section carefully.
 
 Many infrastructure providers on existing blockchains, e.g. Ethereum, consider a transaction's hash
-as a unique identifier. In Substrate-based chains like AXIASolar, a transaction's hash only serves as
+as a unique identifier. In Substrate-based chains like AXIACoin, a transaction's hash only serves as
 a fingerprint of the information within a transaction, and there are times when two transactions
 with the same hash are both valid. In the case that one is invalid, the network properly handles the
 transaction and does not charge a transaction fee to the sender nor consider the transaction in the
@@ -214,23 +214,23 @@ Monitor events instead of transaction names to ensure that you can properly cred
 
 ### Fees
 
-AXIASolar uses weight-based fees that, unlike gas, are charged _pre-dispatch._ Users can also add a
+AXIACoin uses weight-based fees that, unlike gas, are charged _pre-dispatch._ Users can also add a
 "tip" to increase transaction priority during congested periods. See the
 [transaction fee](../learn/learn-transaction-fees.md) page for more info.
 
 ### Encoding
 
 AXIA's integration tools should allow you to deal with decoded data. If you'd like to bypass them
-and interact directly with the chain data or implement your own codec, AXIASolar encodes block and
+and interact directly with the chain data or implement your own codec, AXIACoin encodes block and
 transaction data using the
 [SCALE codec](https://substrate.dev/docs/en/knowledgebase/advanced/codec).
 
 ## Runtime Upgrades
 
-[Runtime upgrades](../learn/learn-runtime-upgrades.md) allow AXIASolar to change the
+[Runtime upgrades](../learn/learn-runtime-upgrades.md) allow AXIACoin to change the
 logic of the chain without the need for a hard fork. A hard fork would require node operators to manually
 upgrade their nodes to the latest runtime version. In a distributed system, this is a complex process to
-coordinate and communicate. AXIASolar can upgrade without a hard fork. The existing runtime logic is followed
+coordinate and communicate. AXIACoin can upgrade without a hard fork. The existing runtime logic is followed
 to update the Wasm runtime stored on the blockchain to a new version. The upgrade is then included in the
 blockchain itself, meaning that all the nodes on the network execute it.
 
@@ -244,22 +244,22 @@ you don't think you can submit a transaction before the upgrade, it is better to
 it after the upgrade takes place.
 
 Although upgrading your nodes is generally not necessary to follow an upgrade, we recommend
-following the AXIASolar releases and upgrading in a timely manner, especially for high priority or
+following the AXIACoin releases and upgrading in a timely manner, especially for high priority or
 critical releases.
 
 ## Smart Contracts
 
-The AXIASolar Relay Chain does not support smart contracts.
+The AXIACoin Relay Chain does not support smart contracts.
 
 ## Other Networks
 
-Besides running a private network, AXIASolar has two other networks where you could test
-infrastucture prior to deploying to the AXIASolar mainnet.
+Besides running a private network, AXIACoin has two other networks where you could test
+infrastucture prior to deploying to the AXIACoin mainnet.
 
-**AXIALunar Canary Network:** AXIALunar is AXIASolar's cutting-edge cousin. Many risky features are
-deployed to AXIALunar prior to making their way into AXIASolar.
+**AXIALunar Canary Network:** AXIALunar is AXIACoin's cutting-edge cousin. Many risky features are
+deployed to AXIALunar prior to making their way into AXIACoin.
 
-**AlphaNet Testnet:** AlphaNet is AXIASolar's testnet and uses the AXIASolar runtime.
+**AlphaNet Testnet:** AlphaNet is AXIACoin's testnet and uses the AXIACoin runtime.
 
 ## Other F.A.Q.
 
@@ -272,23 +272,23 @@ i.e. free balance minus the maximum lock.
 
 **What chain depth is considered "safe"?**
 
-AXIASolar uses a deterministic finality mechanism. Once a block is finalized, it cannot be reverted
+AXIACoin uses a deterministic finality mechanism. Once a block is finalized, it cannot be reverted
 except by a hard fork. AXIALunar has had hard forks that had to revert four finalized blocks in order
 to cancel a runtime upgrade. Using a finalized depth of ten blocks should be safe.
 
-Note that block production and finality are isolated processes in AXIASolar, and the chain can have a
+Note that block production and finality are isolated processes in AXIACoin, and the chain can have a
 long unfinalized head.
 
 **Do users need to interact with any smart contracts?**
 
 No, users interact directly with the chain's logic.
 
-**Does AXIASolar have state rent?**
+**Does AXIACoin have state rent?**
 
-No, AXIASolar uses the existential deposit to prevent dust accounts and other economic mechanisms
+No, AXIACoin uses the existential deposit to prevent dust accounts and other economic mechanisms
 like locking or reserving tokens for operations that utilize state.
 
 **What is an external source to see the current chain height?**
 
-- [AXIASolar-JS explorer](https://axiasolar.js.org/apps/#/explorer)
+- [AXIACoin-JS explorer](https://axiasolar.js.org/apps/#/explorer)
 - [AXIAscan block explorer](https://axiascan.io/)

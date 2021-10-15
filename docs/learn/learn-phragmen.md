@@ -8,7 +8,7 @@ slug: ../learn-phragmen
 ## What is the sequential Phragmén method?
 
 The sequential Phragmén method is a multi-winner election method introduced by Edvard Phragmén in
-the 1890s. While sequential Phragmén is currently in use on AXIASolar and AXIALunar, an improvement on
+the 1890s. While sequential Phragmén is currently in use on AXIACoin and AXIALunar, an improvement on
 the sequential Phragmén method named [BalPhragmms](#external-resources) will be used in the future.
 
 The quote below taken from the reference [Phragmén paper](#external-resources) sums up the purpose
@@ -24,11 +24,11 @@ of the sequential Phragmén method:
 
 `BalPhragmms` is a new election rule inspired by Phragmén, and aims to achieve a constant-factor approximation guarantee for the _maximin support objective_ and the closely related _proportional justified representation_ (PJR) property. The maximin support objective is based on maximizing the support of the least-supported elected candidate. The PJR property considers proportionality of the voter’s decision power.
 
-The security of a distributed and decentralized system such as AXIASolar is directly related to the goal of avoiding _overrepresentation_ of any minority. This is a stark contrast to classical approaches to proportional representation axioms, which only seek to avoid underrepresentation.
+The security of a distributed and decentralized system such as AXIACoin is directly related to the goal of avoiding _overrepresentation_ of any minority. This is a stark contrast to classical approaches to proportional representation axioms, which only seek to avoid underrepresentation.
 
 Sequential Phragmén and MMS are two efficient election rules that both achieve PJR.
 
-Previously, AXIASolar employed the sequential Phragmén (`seqPhragmen`) method for validator and council elections. Although `seqPhramen` is very fast with a runtime of `O(|E| * k)`, it does not provide constant-factor approximation for the maximin support problem.
+Previously, AXIACoin employed the sequential Phragmén (`seqPhragmen`) method for validator and council elections. Although `seqPhramen` is very fast with a runtime of `O(|E| * k)`, it does not provide constant-factor approximation for the maximin support problem.
 
 In contrast, `MMS` is another standard greedy algorithm that simultaneously achieves the PJR property and provides a 2-factor approximation for maximin support, although with a considerably slower runtime of `O(Bal * |C| * k)` where Bal is the time complexity of computing a balanced weight vector.
 
@@ -57,14 +57,14 @@ The `BalPhragmms` algorithm iterates through the available seats, starting with 
 5. Rebalance by replacing `w` with a balanced weight vector for `A`.
 6. If there are more seats available, go back to step 2. Otherwise, return the balanced solution `(A, w)`.
 
-## Where is the Phragmén method used in AXIASolar?
+## Where is the Phragmén method used in AXIACoin?
 
 ### NPoS: Validator Elections
 
 The sequential Phragmén method is used in the Nominated Proof-of-Stake scheme to elect validators
 based on their own self-stake and the stake that is voted to them from nominators. It also tries to
 equalize the weights between the validators after each election round. Since validators are paid
-equally in AXIASolar, it is important that the stake behind each validator is spread out. AXIASolar
+equally in AXIACoin, it is important that the stake behind each validator is spread out. AXIACoin
 tries to optimize three metrics in its elections:
 
 1. Maximize the total amount at stake.
@@ -74,7 +74,7 @@ tries to optimize three metrics in its elections:
 #### Off-Chain Phragmén
 
 Given the large set of nominators and validators, Phragmén's method is a difficult optimization
-problem. AXIASolar uses off-chain workers to compute the result off-chain and submit a transaction to
+problem. AXIACoin uses off-chain workers to compute the result off-chain and submit a transaction to
 propose the set of winners. The reason for performing this computation off-chain is to keep a
 constant block time of six seconds and prevent long block times at the end of each era, when the
 validator election takes place.
@@ -251,8 +251,8 @@ is `2`, etc.
 
 ### Rationale
 
-While this method works well if all voters have equal weight, this is not the case in AXIASolar.
-Elections for both validators and candidates for the AXIASolar Council are weighted by the number of
+While this method works well if all voters have equal weight, this is not the case in AXIACoin.
+Elections for both validators and candidates for the AXIACoin Council are weighted by the number of
 tokens held by the voters. This makes elections more similar to a corporate shareholder election
 than a traditional political election, where some members have more pull than others. Someone with a
 single token will have much less voting power than someone with 100. Although this may seem
@@ -660,7 +660,7 @@ nominations are priority-ranked in terms of amount of stake.
 - [BalPhragmms](https://arxiv.org/pdf/2004.12990.pdf) - W3F research paper that expands on the
   sequential Phragmén method.
 - [W3F Research Page on NPoS](https://research.axiacoin.org/en/latest/axiasolar/NPoS/1.%20Overview.html) -
-  An overview of Nominated Proof of Stake as its applied to AXIASolar.
+  An overview of Nominated Proof of Stake as its applied to AXIACoin.
 - [Python Reference Implementations](https://github.com/axia-tech/consensus/tree/master/NPoS) - Python
   implementations of Simple and Complicated Phragmén methods.
 - [Substrate Implementation](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs) -

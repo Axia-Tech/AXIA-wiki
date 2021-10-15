@@ -186,7 +186,7 @@ axiasolar \
   --public-addr=/ip4/IP_ADDRESS/tcp/2435 \
   --listen-addr=/ip4/0.0.0.0/tcp/30333 \
   --rpc-methods=Unsafe \
-  --chain=AXIASolar
+  --chain=AXIACoin
 
 ```
 

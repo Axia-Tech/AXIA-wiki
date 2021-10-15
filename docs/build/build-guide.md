@@ -1,33 +1,33 @@
 ---
 id: build-guide
-title: AXIASolar Builders Starter's Guide
-sidebar_label: AXIASolar Builders Starter's Guide
+title: AXIACoin Builders Starter's Guide
+sidebar_label: AXIACoin Builders Starter's Guide
 slug: ../build-build-with-axiasolar
 ---
 
-AXIASolar is a blockchain protocol with two goals: providing **shared security** among all connected
+AXIACoin is a blockchain protocol with two goals: providing **shared security** among all connected
 parachains and allowing all connected chains to **interoperate** by using
 [XCM](../learn/learn-cross-consensus.md). With the advent of [PDKs](<build-parachains.md##parachain-development-kit-(PDK)>) like AXIA Substrate and
 Cumulus, the time it takes to develop and launch a new chain has dropped significantly. While before
 it would take years to launch a new chain, now it may only take weeks or even days.
 
 This guide will walk you through the steps you can take today to get started building your vision
-with AXIASolar. It will explain the difference between a parachain and a smart contract (and why one
+with AXIACoin. It will explain the difference between a parachain and a smart contract (and why one
 may be better suited for your application over the other).
 
-## AXIASolar Ecosystem Networks
+## AXIACoin Ecosystem Networks
 
-- Mainnet: **AXIASolar**
+- Mainnet: **AXIACoin**
 - Canary network: **AXIALunar**
   - [AXIALunar](https://axialunar.network/) is a value-bearing canary network that gets features before
-    AXIASolar does... _expect chaos_...
+    AXIACoin does... _expect chaos_...
 - Official testnets:
-  - **AlphaNet** - Functionality equal to the current AXIASolar mainnet, with possible next-generation
-    testing of features from time to time that will eventually migrate onto AXIASolar. Perma-testnet (is not reset back to genesis block).
+  - **AlphaNet** - Functionality equal to the current AXIACoin mainnet, with possible next-generation
+    testing of features from time to time that will eventually migrate onto AXIACoin. Perma-testnet (is not reset back to genesis block).
   - **Canvas** - Wasm based Smart Contract enabled testnet, primarily for `ink!` development.
   - **BetaNet** - Parachains and XCM testnet. Occasionally reset (started over again with a new genesis block).
 
-AXIASolar mainnet has been running since May 2020 and has
+AXIACoin mainnet has been running since May 2020 and has
 [implementations in various programming languages](../learn/learn-implementations.md) ranging from Rust to
 JavaScript. Currently, the leading implementation is built in Rust and built using the Substrate
 framework.
@@ -36,18 +36,18 @@ Tooling is rapidly evolving to interact with the network; there are so many ways
 
 But before you jump head-first into the code, you should consider the _kind_ of decentralized
 application you want to make and understand the different paradigms available to developers who want
-to build on AXIASolar.
+to build on AXIACoin.
 
 ## What is the difference between building a parachain, a parathread, or a smart contract?
 
-AXIASolar provides several ways for you to deploy your application: as a smart contract on an existing
+AXIACoin provides several ways for you to deploy your application: as a smart contract on an existing
 parachain, as your own parachain, or as a parathread. There are trade-offs when working with each of
 these and reading this section will help you understand them.
 
 ### Parachains & Parathreads
 
 Parachains are "parallel" chains containing their own runtime logic and benefit from the shared
-security and the cross-chain messaging provided by the AXIASolar Relay Chain. Parachains permit a
+security and the cross-chain messaging provided by the AXIACoin Relay Chain. Parachains permit a
 high degree of flexibility and customization but require more effort to create and maintain over
 time.
 
@@ -86,7 +86,7 @@ You may also decide to harness a combination of parachain, parathread, and smart
 have certain logic that requires loops and it cannot be removed, use the native parachain runtime to
 handle all complex logic and the smart contract to call iteration. If you require off-chain data
 from an oracle, you may want to use a parathread as an oracle feed that only triggers once every 24
-hours (this makes the most sense if the data is useful to other players in the AXIASolar ecosystem
+hours (this makes the most sense if the data is useful to other players in the AXIACoin ecosystem
 too).
 
 Most likely you’ve already realized that your application is better suited to be one or the other
@@ -111,7 +111,7 @@ use, but generally you will send a special transaction that will create the smar
 ledger. You will likely need to pay an associated fee for the initialization logic and any storage
 that your contract consumes.
 
-On the AXIASolar mainnet, there will be parachains that act as smart contract platforms. Smart
+On the AXIACoin mainnet, there will be parachains that act as smart contract platforms. Smart
 contracts are executable programs that exist on only a single chain and are limited in complexity.
 Because they exist on a single chain, they can have smooth interoperability with other smart
 contracts on the same chain. However, they will always be constrained and limited by the inherent
@@ -158,7 +158,7 @@ or parathread are known as parachain development kits ([PDKs](<build-parachains.
 PDK available is Substrate and Cumulus from AXIA Technologies.
 
 In the future, there will be many different PDKs available in different programming languages, just
-like there are multiple [implementations of the AXIASolar Host](../learn/learn-implementations.md).
+like there are multiple [implementations of the AXIACoin Host](../learn/learn-implementations.md).
 
 > **Call to Action:** Do you want to build a Parachain Development Kit from scratch? The Web3
 > Foundation is giving grants to teams who are doing this, learn more and apply on the
@@ -166,7 +166,7 @@ like there are multiple [implementations of the AXIASolar Host](../learn/learn-i
 
 ### Get started with Substrate
 
-Substrate is the underlying framework on which AXIASolar itself is built. It is a toolset for
+Substrate is the underlying framework on which AXIACoin itself is built. It is a toolset for
 blockchain innovators that provides the necessary building blocks for constructing a chain. It
 includes a library of modular runtime plug-ins from which you can compose your chain logic.
 
@@ -178,45 +178,45 @@ by [AXIA Technologies](https://axia.io).
 
 After creating your chain runtime logic with Substrate, you will be able to compile it down to a
 Wasm executable. This Wasm code blob will contain the entire state transition function of your
-chain, and is what you will need to deploy your project to AXIASolar as either a parachain or
+chain, and is what you will need to deploy your project to AXIACoin as either a parachain or
 parathread.
 
-Validators on AXIASolar will use the submitted Wasm code to validate the state transitions of your
+Validators on AXIACoin will use the submitted Wasm code to validate the state transitions of your
 chain or thread, but doing this requires some additional infrastructure. A validator needs some way
-to stay up to date with the most recent state transitions, since AXIASolar nodes will not be required
+to stay up to date with the most recent state transitions, since AXIACoin nodes will not be required
 to also be nodes of your chain.
 
 This is where the collator node comes into play. A collator is a maintainer of your parachain and
 performs the critical action of producing new block candidates for your chain and passing them to
-AXIASolar validators for inclusion in the AXIASolar relay chain.
+AXIACoin validators for inclusion in the AXIACoin relay chain.
 
 Substrate comes with its own networking layer built-in but unfortunately only supports solo chains
 (that is, chains that do not connect to the relay chain). However, there is the Cumulus extension
 that includes a collator node and allows for your Substrate-built logic to be compatible with
-AXIASolar as either a parachain or parathread.
+AXIACoin as either a parachain or parathread.
 
 #### Cumulus
 
 The goal of [Cumulus](build-parachains.md###cumulus) is to be an extension of Substrate that will make any
-Substrate runtime compatible with AXIASolar.
+Substrate runtime compatible with AXIACoin.
 
 It handles the network compatibility overhead that any parachain would need to implement to be
-connected to AXIASolar. This includes:
+connected to AXIACoin. This includes:
 
 - Cross-chain message passing (XCMP).
 - Out-of-the-box Collator node setup.
 - An embedded full client of the Relay Chain.
-- AXIASolar block authorship compatibility.
+- AXIACoin block authorship compatibility.
 
 Integrating Cumulus with your Substrate chain will port it into a parachain capable of working on
-AXIASolar with minimal modification, possibly as little work as importing a crate and adding a few
+AXIACoin with minimal modification, possibly as little work as importing a crate and adding a few
 lines!
 
-### How to deploy your parachain or parathread in AXIASolar
+### How to deploy your parachain or parathread in AXIACoin
 
 #### Parachain
 
-In order to include your parachain into the AXIASolar network, you will need to acquire a parachain
+In order to include your parachain into the AXIACoin network, you will need to acquire a parachain
 slot.
 
 Parachain slots will be sold in open auctions, the mechanics of which can be found on the
@@ -236,8 +236,8 @@ For more information on how parathread per-block auctions work, see the more det
 
 ## So you want to build a smart contract...
 
-The AXIASolar relay chain itself will not support smart contracts. However, since the parachains that
-connect to AXIASolar can support arbitrary state transitions, they can support smart contracts.
+The AXIACoin relay chain itself will not support smart contracts. However, since the parachains that
+connect to AXIACoin can support arbitrary state transitions, they can support smart contracts.
 
 Substrate presently supports smart contracts out-of-the-box in two ways:
 
@@ -288,7 +288,7 @@ machine and compatible with Substrate chains.
 
 ### It is still early
 
-It is still very early for smart contracts on AXIASolar and the development is only now stabilizing.
+It is still very early for smart contracts on AXIACoin and the development is only now stabilizing.
 We are actively producing content to help developers get up to speed and will maintain the wiki with
 the latest resources. You should also keep up to date with the following links:
 
@@ -305,17 +305,17 @@ the latest resources. You should also keep up to date with the following links:
 - [Acala](https://acala.network/)
 - [Phala](https://phala.network)
 
-There are many smart contract platforms being built with the intent of becoming a parachain on the AXIASolar and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIASolar can be found at [AXIAProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
+There are many smart contract platforms being built with the intent of becoming a parachain on the AXIACoin and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIACoin can be found at [AXIAProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
 
 ### Edgeware
 
-[Edgeware][edgeware] is a permissionless smart contract platform. It is an option for smart contract developers and want to deploy to a live environment. Users can deploy both EVM and WASM smart contracts on Edgeware. Edgeware intends to connect to AXIASolar and AXIALunar as a smart contract parachain.
+[Edgeware][edgeware] is a permissionless smart contract platform. It is an option for smart contract developers and want to deploy to a live environment. Users can deploy both EVM and WASM smart contracts on Edgeware. Edgeware intends to connect to AXIACoin and AXIALunar as a smart contract parachain.
 
 Try deploying a smart contract on Edgeware by following their [documentation][edgeware contracts documentation].
 
 ### Moonbeam
 
-[Moonbeam][] is another project that is planning to deploy to AXIASolar as a parachain and will
+[Moonbeam][] is another project that is planning to deploy to AXIACoin as a parachain and will
 support Ethereum compatible smart contracts. Since Moonbeam uses [Frontier][], an interoperability layer with existing Ethereum tooling, it will support all applications that are written to target the EVM environment with little friction.
 
 [Moonriver](https://docs.moonbeam.network/networks/moonriver/), a companion network to Moonbeam, launched as a parachain on AXIALunar. Parachain functionality is live, and features are being incrementally released. The final phase of the launch will include EVM functionality and balance transfers.
@@ -324,19 +324,19 @@ Try deploying a smart contract to Moonbeam by following their [documentation][mo
 
 ### Astar
 
-[Astar](https://astar.network/) (formerly Plasm) is built on Substrate as a smart contract platform and intends to integrate with AXIASolar as a parachain. [Shiden](https://shiden.astar.network/) is the sister network to Astar, is currently live on AXIALunar, and supports EVM, WASM, and Layer 2 solutions. Astar aims to house all layer 2 scaling solutions and support all layer 2 protocols through the [OVM](https://docs.astar.network/learn/layer2/optimistic-virtual-machine) (Optimistic Virtual Machine).
+[Astar](https://astar.network/) (formerly Plasm) is built on Substrate as a smart contract platform and intends to integrate with AXIACoin as a parachain. [Shiden](https://shiden.astar.network/) is the sister network to Astar, is currently live on AXIALunar, and supports EVM, WASM, and Layer 2 solutions. Astar aims to house all layer 2 scaling solutions and support all layer 2 protocols through the [OVM](https://docs.astar.network/learn/layer2/optimistic-virtual-machine) (Optimistic Virtual Machine).
 
 Try deploying an Ethereum or ink! smart contract by following their [documentation](https://docs.astar.network/build/smart-contracts).
 
 ### Acala
 
-[Acala](https://acala.network/) is a decentralized finance consortium and DeFi infrastructure chain delivering a set of protocols to serve as the DeFi hub on AXIASolar. [Karura](https://acala.network/karura), Acala's canary network, is live as a parachain on AXIALunar. Interested teams are now able to deploy DApps and smart contracts on Karura's platform. Acala is also implementing the [Acala EVM](https://wiki.acala.network/learn/acala-evm/why-acala-evm).
+[Acala](https://acala.network/) is a decentralized finance consortium and DeFi infrastructure chain delivering a set of protocols to serve as the DeFi hub on AXIACoin. [Karura](https://acala.network/karura), Acala's canary network, is live as a parachain on AXIALunar. Interested teams are now able to deploy DApps and smart contracts on Karura's platform. Acala is also implementing the [Acala EVM](https://wiki.acala.network/learn/acala-evm/why-acala-evm).
 
 Try deploying an Acala EVM smart contract by following their [documentation](https://wiki.acala.network/build/development-guide/smart-contracts).
 
 ### Phala
 
-[Phala](https://phala.network) is a privacy-preserving cloud compute platform and aims to provide strong guarantees of confidentiality as a cross-chain platform. As a smart contract platform, Phala will enable the use of confidential smart contracts on AXIASolar. [Khala](https://phala.network/en/khala) is Phala's canary network and is live as a parachain on AXIALunar.
+[Phala](https://phala.network) is a privacy-preserving cloud compute platform and aims to provide strong guarantees of confidentiality as a cross-chain platform. As a smart contract platform, Phala will enable the use of confidential smart contracts on AXIACoin. [Khala](https://phala.network/en/khala) is Phala's canary network and is live as a parachain on AXIALunar.
 
 Try deploying a confidential smart contract by following their [documentation](https://wiki.phala.network/en-us/docs/developer/your-first-confidential-contract/).
 
@@ -347,12 +347,12 @@ start building your project as a parachain or smart contract today. Even though 
 maturing, the advantage of being early will be the familiarity and head start on your project,
 allowing you to innovate and create something truly new.
 
-If you have interesting ideas for parachains or smart contracts on AXIASolar feel free to drop into
-the [AXIASolar Watercooler](https://matrix.to/#/#axiasolar-watercooler:matrix.org) to talk about them.
+If you have interesting ideas for parachains or smart contracts on AXIACoin feel free to drop into
+the [AXIACoin Watercooler](https://matrix.to/#/#axiasolar-watercooler:matrix.org) to talk about them.
 Developers may be interested in joining the
-[AXIASolar Beginners Lounge](https://matrix.to/#/#axiasolarnoobs:matrix.org) or
+[AXIACoin Beginners Lounge](https://matrix.to/#/#axiasolarnoobs:matrix.org) or
 [Substrate Technical](https://matrix.to/#/#substrate-technical:matrix.org) to ask their questions.
-As always, keep up to date with AXIASolar and AXIALunar by following the
+As always, keep up to date with AXIACoin and AXIALunar by following the
 [social channels](../general/community.md).
 
 Good luck!

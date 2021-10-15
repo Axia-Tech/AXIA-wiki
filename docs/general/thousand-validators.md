@@ -9,7 +9,7 @@ The Thousand Validators Programme is an initiative by AXIACoin Foundation and AX
 the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of
-validators on AXIALunar and AXIASolar and 2) to further decentralize the validator active set.
+validators on AXIALunar and AXIACoin and 2) to further decentralize the validator active set.
 
 ## How it Works
 
@@ -64,12 +64,12 @@ Since approximately early January 2021, the nominators will select an automatic 
 to nominate based on the lowest amount staked for a validator and the amount of funds it holds. This
 can be anywhere from a few validators receiving nomination from a single nominator to the max of 16.
 
-### AXIASolar
+### AXIACoin
 
-> NOTE: Entrance to the AXIASolar programme requires a rank of 25 or higher in the AXIALunar programme.
+> NOTE: Entrance to the AXIACoin programme requires a rank of 25 or higher in the AXIALunar programme.
 > This usually takes about a month.
 
-In order to apply to the AXIASolar programme, set up your node to adhere to the requirements below
+In order to apply to the AXIACoin programme, set up your node to adhere to the requirements below
 and fill in the [application form][axiasolar 1kv form]. You will hear back from the team shortly.
 
 #### Requirements
@@ -86,7 +86,7 @@ and fill in the [application form][axiasolar 1kv form]. You will hear back from 
 
 #### Nominators
 
-The below addresses are the stash / controller pairs for the nominators involved in the AXIASolar
+The below addresses are the stash / controller pairs for the nominators involved in the AXIACoin
 Thousand Validators programme. They are formatted like "`stash` / `controller`".
 
 - `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` / `16XJHQ58dEPnZn5J5YqmRcJmKtvVFFMoMrXgj6fWJfeGGkQw`

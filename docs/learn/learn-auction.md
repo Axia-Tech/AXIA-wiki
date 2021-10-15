@@ -5,10 +5,10 @@ sidebar_label: Parachain Slots Auction
 slug: ../learn-auction
 ---
 
-For a [parachain](learn-parachains.md) to be added to AXIASolar it must inhabit one of the available
-parachain slots. A parachain slot is a scarce resource on AXIASolar and only a limited number will be
+For a [parachain](learn-parachains.md) to be added to AXIACoin it must inhabit one of the available
+parachain slots. A parachain slot is a scarce resource on AXIACoin and only a limited number will be
 available. As parachains ramp up, there may only be a few slots that are unlocked every few months.
-The goal is to eventually have 100 parachain slots available on {{ axiasolar: AXIASolar :axiasolar }}
+The goal is to eventually have 100 parachain slots available on {{ axiasolar: AXIACoin :axiasolar }}
 {{ axialunar: AXIALunar :axialunar }} (these will be split between parachains and the
 [parathread pool](learn-parathreads.md)). If a parachain wants to have guaranteed block inclusion at
 every Relay Chain block, it must acquire a parachain slot.
@@ -71,16 +71,16 @@ be determined to have ended. This helps to ensure that bidders are willing to bi
 early. Otherwise, they might find themselves in the situation that the auction was determined to
 have ended before they even bid.
 
-## AXIASolar Implementation
+## AXIACoin Implementation
 
-AXIASolar will use a _random beacon_ based on the VRF that's used also in other places of the
+AXIACoin will use a _random beacon_ based on the VRF that's used also in other places of the
 protocol. The VRF will provide the base of the randomness, which will retroactively determine the
 end-time of the auction.
 
 The slot durations are capped to {{ axiasolar: 2 years and divided into 3-month periods :axiasolar }}
 {{ axialunar: 1 year and divided into 6-week periods :axialunar }}; Parachains may lease a slot for any
 combination of periods of the slot duration. Parachains may lease more than one slot over time,
-meaning that they could extend their lease to AXIASolar past the maximum duration by leasing a
+meaning that they could extend their lease to AXIACoin past the maximum duration by leasing a
 contiguous slot.
 
 > Note: Individual parachain slots are fungible. This means that parachains do not need to always
@@ -115,7 +115,7 @@ _Each period of the range 1 - 4 represents a
 
 Bidders will submit a configuration of bids specifying the token amount they are willing to bond and
 for which periods. The slot ranges may be any of the periods 1 - `n`, where `n` is the number of
-periods available for a slot (`n` will be 8 for both AXIASolar and AXIALunar).
+periods available for a slot (`n` will be 8 for both AXIACoin and AXIALunar).
 
 > Please note: If you bond tokens with a parachain slot, you cannot stake with those tokens. In this
 > way, you pay for the parachain slot by forfeiting the opportunity to earn staking rewards.
@@ -148,7 +148,7 @@ amount of tokens held over the entire lease duration of the parachain slot. This
 highest bidder for any given slot lease period might not always win (see the
 [example below](#examples)).
 
-A random number, which is based on the VRF used by AXIASolar, is determined at each block.
+A random number, which is based on the VRF used by AXIACoin, is determined at each block.
 Additionally, each auction will have a threshold that starts at 0 and increases to 1. The random
 number produced by the VRF is examined next to the threshold to determine if that block is the end
 of the auction within the so-called _ending period_. Additionally, the VRF will pick a block from
@@ -187,7 +187,7 @@ the parachain slot.
 
 For the duration of the slot the tokens bid in the auction will be locked up. This means that there
 are opportunity costs from the possibility of using those tokens for something else. For parachains
-that are beneficial to AXIASolar, this should align the interests between parachains and the AXIASolar
+that are beneficial to AXIACoin, this should align the interests between parachains and the AXIACoin
 Relay Chain.
 
 ### How does this mechanism help ensure parachain diversity?
@@ -210,7 +210,7 @@ transparent and open network in which other parties must be able to verify opens
 actors to attempt to alter or manipulate the randomness. There have been a few solutions that have
 been put forward, including hash-onions like [RANDAO](https://github.com/randao/randao) and
 [verifiable random functions](https://en.wikipedia.org/wiki/Verifiable_random_function) (VRFs). The
-latter is what AXIASolar uses as a base for its randomness.
+latter is what AXIACoin uses as a base for its randomness.
 
 ### Are there other ways of acquiring a slot besides the candle auction?
 

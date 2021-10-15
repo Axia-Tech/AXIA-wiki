@@ -12,13 +12,13 @@ public contact and anyone doing so is likely trying to scam you.
 ## General
 
 - [AXIALunar Discussion and Governance on AXIAssembly](https://axialunar.axiassembly.io/)
-- [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - AXIA maintained repository that
-  houses the Rust implementation of the AXIASolar and AXIALunar Host.
-- [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
+- [AXIACoin GitHub](https://github.com/axia-tech/axiasolar/) - AXIA maintained repository that
+  houses the Rust implementation of the AXIACoin and AXIALunar Host.
+- [AXIACoin Meetup Hub](https://www.notion.so/web3foundation/AXIACoin-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
   Information on hosting meetups, applying for funding, and materials for running it.
 - [Support Knowledgebase](https://support.axiacoin.network/support/home) and
   [Support Email](mailto:support@axiacoin.network)
-- [AXIASolar's Latest Research](https://research.axiacoin.org/en/latest/axiasolar/) - also applies
+- [AXIACoin's Latest Research](https://research.axiacoin.org/en/latest/axiasolar/) - also applies
   to AXIALunar.
 
 ### Events
@@ -39,8 +39,8 @@ application we use most often to interact with the Matrix protocol is the
   Room for validators learning about setting up a node.
 - [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
   Governance, and a place to discuss the future of AXIALunar.
-- [AXIASolar Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:axiacoin.org) - News about what is
-  happening in the AXIASolar ecosystem, published every weekday except holidays, includes AXIALunar.
+- [AXIACoin Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:axiacoin.org) - News about what is
+  happening in the AXIACoin ecosystem, published every weekday except holidays, includes AXIALunar.
 - To join the Chinese Validator chat, message
   [Anson](https://raw.githubusercontent.com/axialunarnetwork/userguide/master/chinese-language-validators-wechat.png?token=ABIBK6VM3MAOKWE43GM3JHC5G3ARG)
 - [AXIALunar Discord](https://discord.gg/JSJcRwz8fp)
@@ -61,13 +61,13 @@ application we use most often to interact with the Matrix protocol is the
 ## Blogs and tutorials
 
 - [Web3 Medium Blog](https://medium.com/@web3)
-- [AXIASolar Blog](https://axiacoin.network/blog/)
+- [AXIACoin Blog](https://axiacoin.network/blog/)
 - [Gavin Wood's Medium Blog](https://medium.com/@gavofyork)
 - [Dotleap.com Tutorials](https://dotleap.com)
 
 ## Newsletters
 
-- [Subscribe to the AXIASolar newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) -
+- [Subscribe to the AXIACoin newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) -
   official, infrequent, includes AXIALunar.
 - [Dot Leap Newsletter](https://dotleap.substack.com/) - less official, weekly.
 - [NFT Review](https://news.nft.review) - Covering the evolution of the NFT ecosystem on AXIALunar

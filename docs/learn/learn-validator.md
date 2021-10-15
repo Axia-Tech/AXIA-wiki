@@ -27,8 +27,8 @@ Validators perform two functions:
 
 ## Guides
 
-- [How to Validate on AXIASolar](../maintain/maintain-guides-how-to-validate-axiasolar.md) - Guide on how to set
-  up a validator on the AXIASolar live network.
+- [How to Validate on AXIACoin](../maintain/maintain-guides-how-to-validate-axiasolar.md) - Guide on how to set
+  up a validator on the AXIACoin live network.
 - [Validator Payout Overview](../maintain/maintain-guides-validator-payout.md) - A short overview on how the
   validator payout mechanism works.
 - [How to run your validator as a systemd process](../maintain/maintain-guides-how-to-systemd.md) - Guide on
@@ -38,22 +38,22 @@ Validators perform two functions:
   your validator when you want to switch to a different machine or begin running the latest version
   of client code.
 - [How to Use Validator Setup](../maintain/maintain-guides-how-to-use-axiasolar-validator-setup.md) - Guide on how
-  to use AXIASolar / AXIALunar validator setup.
+  to use AXIACoin / AXIALunar validator setup.
 
 ## Other References
 
-- [How to run a AXIASolar node (Docker)](https://medium.com/@acvlls/setting-up-a-maintain-the-easy-way-3a885283091f)
+- [How to run a AXIACoin node (Docker)](https://medium.com/@acvlls/setting-up-a-maintain-the-easy-way-3a885283091f)
 - [A Serverless Failover Solution for Web3.0 Validator Nodes](https://medium.com/hackernoon/a-serverless-failover-solution-for-web-3-0-validator-nodes-e26b9d24c71d) -
   Blog that details how to create a robust failover solution for running validators.
 - [VPS list](../maintain/axialunar/maintain-guides-how-to-validate-axialunar.md##vps-list)
-- [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
+- [AXIACoin Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
   A place to chat about being a validator.
 - [Slashing Consequences](learn-staking#slashing) - Learn more about slashing consequences for
   running a validator node.
-- [Why You Should be A Validator on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=0EmP0s6JOW4&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=2)
+- [Why You Should be A Validator on AXIACoin and AXIALunar](https://www.youtube.com/watch?v=0EmP0s6JOW4&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=2)
 - [Roles and Responsibilities of a Validator](https://www.youtube.com/watch?v=riVg_Up_fCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=15)
-- [Validating on AXIASolar](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of
-  how to validate on AXIASolar, with Joe Petrowski and David Dorgan of AXIA Technologies, along
+- [Validating on AXIACoin](https://www.crowdcast.io/e/validating-on-axiasolar) - An explanation of
+  how to validate on AXIACoin, with Joe Petrowski and David Dorgan of AXIA Technologies, along
   with Tim Ogilvie from Staked.
 
 ## Security / Key Management
@@ -62,9 +62,9 @@ Validators perform two functions:
 
 ## Monitoring Tools
 
-- [PANIC for AXIASolar](https://github.com/SimplyVC/panic_axiasolar) - A monitoring and alerting
-  solution for AXIASolar / AXIALunar node
-- [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/#list/AXIALunar%20CC3) - Network
+- [PANIC for AXIACoin](https://github.com/SimplyVC/panic_axiasolar) - A monitoring and alerting
+  solution for AXIACoin / AXIALunar node
+- [AXIACoin Telemetry Service](https://telemetry.axiasolar.io/#list/AXIALunar%20CC3) - Network
   information, including what nodes are running on a given chain, what software versions they are
   running, and sync status.
 - [Other Useful Links](https://forum.axiacoin.org/t/useful-links-for-validators/20)

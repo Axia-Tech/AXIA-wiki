@@ -13,7 +13,7 @@ nominating any validators).
 
 ### Step 1: Stop Nominating
 
-On the [AXIASolar-JS Apps][] navigate to the "Staking" tab.
+On the [AXIACoin-JS Apps][] navigate to the "Staking" tab.
 
 On this tab click on the "Account Actions" tab at the top of the screen.
 
@@ -38,7 +38,7 @@ your balance will show as "unbonding" with an indicator of how many more blocks 
 amount is fully unlocked.
 
 This duration varies depending on the network you're on and will typically be four times as fast on
-AXIALunar as it is on AXIASolar. The unbounding period is 28 days on AXIASolar, and 7 on AXIALunar.
+AXIALunar as it is on AXIACoin. The unbounding period is 28 days on AXIACoin, and 7 on AXIALunar.
 
 Once this process is complete, you will have to issue another, final transaction: Withdraw Unbonded,
 which will be available in the same pop-up. You can also check how long you have to wait in order to
@@ -56,7 +56,7 @@ If you want to rebond your tokens before the unbonding period is over, you can d
 `rebond` extrinsic. This allows you to bond your tokens that are still locked without waiting until
 the end of the unbonding period.
 
-In order to do this, you will need to issue an extrinsic manually from [AXIASolar-JS Apps][].
+In order to do this, you will need to issue an extrinsic manually from [AXIACoin-JS Apps][].
 
 Go to the "Extrinsics" option that's located in the "Developer" dropdown in the top menu.
 

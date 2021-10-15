@@ -6,17 +6,17 @@ slug: ../learn-balance-transfers
 ---
 
 Balance transfers are used to send balance from one account to another account. To start
-transferring balances, we will begin by using [AXIASolar-JS Apps][]. This guide assumes that you've
+transferring balances, we will begin by using [AXIACoin-JS Apps][]. This guide assumes that you've
 already [created an account](learn-account-generation.md) and have some funds that are ready to be
 transferred.
 
-## AXIASolar-JS Apps
+## AXIACoin-JS Apps
 
-> NOTE: In this walkthrough we will be using the AXIASolar network, but this is the same process for
+> NOTE: In this walkthrough we will be using the AXIACoin network, but this is the same process for
 > AXIALunar. If you would like to switch to a different network, you can change it by clicking the top
 > left navigation dropdown and selecting a different network.
 
-Let's begin by opening [AXIASolar-JS Apps][]. There are two ways to make a balance transfer:
+Let's begin by opening [AXIACoin-JS Apps][]. There are two ways to make a balance transfer:
 
 1. By using the "Transfer" tab in the "Accounts" dropdown (located on the top navigational menu).
 2. Clicking the "send" button while in the "Accounts" page.
@@ -48,7 +48,7 @@ account to another. These are `transfer` and `transfer_keep_alive`. `transfer` w
 send SOLARs regardless of the consequence; `transfer_keep_alive` will not allow you to send an amount
 that would allow the sending account to be removed due to it going below the existential deposit.
 
-By default, AXIASolar-JS Apps will use `transfer_keep_alive`, ensuring that the account you send from
+By default, AXIACoin-JS Apps will use `transfer_keep_alive`, ensuring that the account you send from
 cannot drop below the existential deposit (1 SOLAR or 0.001666 LUNAR). However, it may be that you do
 not want to keep this account alive (for example, because you are moving all of your funds to a
 different address). In this case, click on the "keep-alive" toggle at the bottom of the modal
@@ -104,29 +104,29 @@ JSON object. If you see a non-zero value for anything other than `free`, you hav
 account that need to get resolved.
 
 You can also check for locks by navigating to `Accounts > Accounts` in
-[AXIASolarJS Apps](https://axiasolar.js.org/apps/#/). Then, click the dropdown arrow of the relevant
+[AXIACoinJS Apps](https://axiasolar.js.org/apps/#/). Then, click the dropdown arrow of the relevant
 account under the 'balances' column. If it shows that some tokens are in a 'locked' state, you can
 see why by hovering over the information icon next to it.
 
 #### Existing Recovery Info
 
-Currently, {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} does not use the
+Currently, {{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} does not use the
 [Recovery Pallet](https://substrate.dev/docs/en/knowledgebase/runtime/frame#recovery), so this is
 probably not the reason for your tokens having existing references.
 
 {{ axialunar: On AXIALunar, you can check if recovery has been set up by checking the `recovery.recoverable(AccountId)`
-chain state. This can be found under `Developer > Chain state` in [AXIASolarJS Apps][axiasolar-js apps]. :axialunar }}
+chain state. This can be found under `Developer > Chain state` in [AXIACoinJS Apps][axiasolar-js apps]. :axialunar }}
 
 #### Existing {{ axiasolar: Non-SOLAR :axiasolar }} {{ axialunar: Non-LUNAR :axialunar }} Assets
 
-Currently, {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} does not use the
+Currently, {{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} does not use the
 [Assets Pallet](https://substrate.dev/docs/en/knowledgebase/runtime/frame#assets), so this is
 probably not the reason for your tokens having existing references.
 
 ### From the Accounts Page
 
 Navigate to the "Accounts" page by selecting the "Accounts" tab from the "Accounts" dropdown located
-on the top navigational menu of AXIASolar-JS Apps.
+on the top navigational menu of AXIACoin-JS Apps.
 
 You will see a list of accounts you have loaded. Click the "Send" button in the row for the account
 you will like to send funds from.

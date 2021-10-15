@@ -61,4 +61,4 @@ the build parachain page.
 - [Workshop covering Cumulus and Collators](https://substrate.dev/cumulus-workshop/)
 - [BetaNet tesnet guide](../build/build-parachains.md##testing-a-parachains:-betanet-testnet)
 - [axiasolar-launch](https://github.com/shawntabrizi/axiasolar-launch) - a tool to quickly spin up a
-  local AXIASolar testnet based on some parameters like number of parachains, collator setup, etc.
+  local AXIACoin testnet based on some parameters like number of parachains, collator setup, etc.

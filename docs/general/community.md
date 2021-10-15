@@ -5,19 +5,19 @@ sidebar_label: Community
 slug: ../community
 ---
 
-The AXIASolar community is expanding every day. Below are the most essential links to the community
+The AXIACoin community is expanding every day. Below are the most essential links to the community
 channels. Keep in mind that no admin or moderator will ever DM you for any reason whatsoever without
 prior contact and anyone doing so is likely trying to scam you.
 
 ## General
 
-- [AXIASolar GitHub](https://github.com/axia-tech/axiasolar/) - AXIA maintained repository that
-  houses the Rust implementation of the AXIASolar Host.
-- [AXIASolar Meetup Hub](https://www.notion.so/web3foundation/AXIASolar-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
+- [AXIACoin GitHub](https://github.com/axia-tech/axiasolar/) - AXIA maintained repository that
+  houses the Rust implementation of the AXIACoin Host.
+- [AXIACoin Meetup Hub](https://www.notion.so/web3foundation/AXIACoin-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
   Information on hosting meetups, applying for funding, and materials for running it.
-- [AXIASolar Support Knowledgebase](https://support.axiacoin.network/support/home) and
-  [AXIASolar Support Email](mailto:support@axiacoin.network)
-- [AXIASolar's Latest Research](https://research.axiacoin.org/en/latest/axiasolar/)
+- [AXIACoin Support Knowledgebase](https://support.axiacoin.network/support/home) and
+  [AXIACoin Support Email](mailto:support@axiacoin.network)
+- [AXIACoin's Latest Research](https://research.axiacoin.org/en/latest/axiasolar/)
 
 ### Events
 
@@ -34,16 +34,16 @@ community members. The application we use most often to interact with the Matrix
 - This wiki's public Matrix room is
   [here](https://app.element.io/#/room/!nAtXmWUBTeFqgSKGgp:axiacoin.org?via=axiacoin.org).
 
-### AXIASolar
+### AXIACoin
 
-- [AXIASolar Watercooler Chat](https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:axiacoin.org?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
-  General room for talk about AXIASolar.
-- [AXIASolar Validator Lounge](https://app.element.io/#/room/#axiasolar-validator-lounge:matrix.org) -
+- [AXIACoin Watercooler Chat](https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:axiacoin.org?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
+  General room for talk about AXIACoin.
+- [AXIACoin Validator Lounge](https://app.element.io/#/room/#axiasolar-validator-lounge:matrix.org) -
   Room for validators learning about setting up a node.
-- [AXIASolar Direction](https://app.element.io/#/room/!OwgojQyBzTlUQGGLhq:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
-  Governance, and a place to discuss the future of AXIASolar.
-- [AXIASolar Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:axiacoin.org) - News about what is
-  happening in the AXIASolar ecosystem, published every weekday except holidays
+- [AXIACoin Direction](https://app.element.io/#/room/!OwgojQyBzTlUQGGLhq:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) -
+  Governance, and a place to discuss the future of AXIACoin.
+- [AXIACoin Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:axiacoin.org) - News about what is
+  happening in the AXIACoin ecosystem, published every weekday except holidays
 
 ### AXIALunar
 
@@ -65,43 +65,43 @@ community members. The application we use most often to interact with the Matrix
 
 ### Chat
 
-- [AXIASolar Discord](https://discord.gg/wGUDt2p) (RECOMMENDED)
+- [AXIACoin Discord](https://discord.gg/wGUDt2p) (RECOMMENDED)
 - [AXIALunar Discord](https://discord.gg/JSJcRwz8fp)
 
 ### Social media and forums
 
-- [AXIASolar Twitter](https://twitter.com/AXIASolar)
+- [AXIACoin Twitter](https://twitter.com/AXIACoin)
 - [AXIALunar Twitter](https://twitter.com/axialunarnetwork)
 - [AXIACoin Foundation Twitter](https://twitter.com/web3foundation)
 
-- [AXIASolar Reddit](https://www.reddit.com/r/axiasolar)
+- [AXIACoin Reddit](https://www.reddit.com/r/axiasolar)
 - [AXIALunar Reddit](https://www.reddit.com/r/AXIALunar)
 
 - [AXIACoin Foundation YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g)
-- [AXIASolar YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
+- [AXIACoin YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
 - [AXIALunar YouTube Channel](http://youtube.com/c/axialunarnetwork)
 
-- [AXIASolar Forum](https://matrix.to/#/#axiasolar-watercooler:axiacoin.org)
+- [AXIACoin Forum](https://matrix.to/#/#axiasolar-watercooler:axiacoin.org)
 - [AXIALunar Forum](https://matrix.to/#/#axialunarwatercooler:axiacoin.org)
 
 ### Blogs and tutorials
 
 - [Web3 Medium Blog](https://medium.com/@web3)
-- [AXIASolar Blog](https://axiacoin.network/blog/)
+- [AXIACoin Blog](https://axiacoin.network/blog/)
 - [Gavin Wood's Medium Blog](https://medium.com/@gavofyork)
 - [Dotleap.com Tutorials](https://dotleap.com)
 
 ### Newsletters
 
-- [Subscribe to the AXIASolar newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) -
+- [Subscribe to the AXIACoin newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) -
   official, infrequent
 - [Dot Leap Newsletter](https://dotleap.substack.com/) - less official, weekly
 
 ## Ecosystem
 
-- [Teams Building on AXIASolar](https://axiaproject.com/) - Community maintained list of teams
-  building on AXIASolar and/or Substrate. (Note that this may contain inaccuracies, as it's
+- [Teams Building on AXIACoin](https://axiaproject.com/) - Community maintained list of teams
+  building on AXIACoin and/or Substrate. (Note that this may contain inaccuracies, as it's
   unofficial)
-- [AXIASolar Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md) -
+- [AXIACoin Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md) -
   if you're interested in seeing what's under development and where there's room for your
   contributions.

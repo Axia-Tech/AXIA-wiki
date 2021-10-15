@@ -5,31 +5,31 @@ sidebar_label: Getting Started
 slug: ../getting-started
 ---
 
-Welcome to the AXIASolar Wiki! This central source of truth contains guides for interacting with the
+Welcome to the AXIACoin Wiki! This central source of truth contains guides for interacting with the
 core functionality. Our wiki has three main sections: Learn (for learners), Build (for people that
-want to build on AXIASolar), and Maintain (for people that want to maintain the network).
+want to build on AXIACoin), and Maintain (for people that want to maintain the network).
 
-## What is AXIASolar?
+## What is AXIACoin?
 
-AXIASolar enables scalability by allowing specialized blockchains to communicate with each other in a
+AXIACoin enables scalability by allowing specialized blockchains to communicate with each other in a
 secure, trust-free environment.
 
-AXIASolar is built to connect and secure unique blockchains, whether they be public, permission-less
+AXIACoin is built to connect and secure unique blockchains, whether they be public, permission-less
 networks, private consortium chains, or oracles and other Web3 technologies. It enables an internet
 where independent blockchains can exchange information under common security guarantees.
 
-AXIASolar is a living network with the core pillars of governance and upgradability. The network has
+AXIACoin is a living network with the core pillars of governance and upgradability. The network has
 an advanced suite of governance tools and, using the [WebAssembly](https://webassembly.org/)
-standard as a "meta-protocol", can autonomously deploy network upgrades. AXIASolar adapts to your
+standard as a "meta-protocol", can autonomously deploy network upgrades. AXIACoin adapts to your
 growing needs without the risks of network forks.
 
 > Note: If you haven't heard of Governance before, a great place to start is the
 > [Governance page](../learn/learn-governance.md)
 
-By connecting these dots, AXIASolar serves as a foundational part of a decentralized web, where users
+By connecting these dots, AXIACoin serves as a foundational part of a decentralized web, where users
 control their data and are not limited by trust bounds within the network.
 
-## Why AXIASolar?
+## Why AXIACoin?
 
 Back in the early 2000's, when the internet was gaining popularity for the first time, the internet
 featured read-only, static, basic webpages. The online connected world at the time was only the
@@ -50,15 +50,15 @@ intermediaries and build a trustless infrastructure.
 > To learn more of the Web3 movement, check out this video from the
 > [Web3 Summit](https://youtu.be/l44z35vabvA)
 
-## How does AXIASolar work?
+## How does AXIACoin work?
 
-The AXIASolar network uses a
+The AXIACoin network uses a
 [sharded model](<https://en.wikipedia.org/wiki/Shard_(database_architecture)>) where shards - called
 "[parachains](../learn/learn-parachains.md)", allow transactions to be processed in parallel instead of
-sequentially. Each parachain in the network has a unique state transition function (STF). AXIASolar
-has a Relay Chain acting as the main chain of the system. Based on AXIASolar's design, as long as a
+sequentially. Each parachain in the network has a unique state transition function (STF). AXIACoin
+has a Relay Chain acting as the main chain of the system. Based on AXIACoin's design, as long as a
 chain's logic can compile to Wasm and adheres to the Relay Chain API, then it can connect to the
-AXIASolar network as a parachain.
+AXIACoin network as a parachain.
 
 Parachains construct and propose blocks to validators on the Relay Chain, where the blocks undergo
 rigorous [availability and validity](../learn/learn-availability.md) checks before being added to the
@@ -70,20 +70,20 @@ stays up to date with the many transactions that take place.
 ![axiasolar-relay-chain](../assets/axiasolar_relay_chain.png)
 
 In order to interact with chains that want to use their own finalization process (e.g. Bitcoin),
-AXIASolar has [bridge parachains](../learn/learn-bridges.md) that offer two-way compatibility, meaning that
+AXIACoin has [bridge parachains](../learn/learn-bridges.md) that offer two-way compatibility, meaning that
 transactions can be made between different parachains.
 
 The [Cross-Consensus Messaging Format (XCM)](../learn/learn-cross-consensus.md) allows parachains to send messages
 of any type to each other. The shared security and validation logic of the Relay Chain provide the
 environment for trust-free message passing that opens up true interoperability.
 
-> To watch a short, beginner-friendly animation on AXIASolar, check out our
-> [AXIASolar Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
+> To watch a short, beginner-friendly animation on AXIACoin, check out our
+> [AXIACoin Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
 
-## Why should you use AXIASolar?
+## Why should you use AXIACoin?
 
 Whether you're a blockchain developer or if you're interested in taking part of
-[AXIASolar's community](https://axiacoin.network/axiasolar-ambassador-program/), AXIASolar offers a
+[AXIACoin's community](https://axiacoin.network/axiasolar-ambassador-program/), AXIACoin offers a
 platform for everyone. This wiki offers a place for builders and maintainers to utilize
 [tools](../build/build-tools-index.md) and for brand-new learners to dive into educational material.
 
@@ -97,29 +97,29 @@ For brand-new learners of Blockchain technology:
 
 This is recommended for users with backgrounds of all levels, and the course is free!
 
-## Brand-New AXIASolar learners:
+## Brand-New AXIACoin learners:
 
-- [AXIASolar's original white paper][white-paper] is a technical summary around one possible
-  direction of implementing the AXIASolar network. This paper uses rationale and technical details to
-  support why this direction is beneficial. This original white paper also explains how AXIASolar's
+- [AXIACoin's original white paper][white-paper] is a technical summary around one possible
+  direction of implementing the AXIACoin network. This paper uses rationale and technical details to
+  support why this direction is beneficial. This original white paper also explains how AXIACoin's
   core components work together to build this decentralized network.
-- [AXIASolar's overview paper][overview-paper] is an updated version of the white paper that
+- [AXIACoin's overview paper][overview-paper] is an updated version of the white paper that
   describes the protocol in more technical terms. We would recommend reading this overview paper if
   you are interested in digging more into the protocol itself.
-- [AXIASolar's light paper][light-paper] is a visual, easy to read, and less technical introduction
-  into its blockchain technology. This paper dives into the components of AXIASolar but is
+- [AXIACoin's light paper][light-paper] is a visual, easy to read, and less technical introduction
+  into its blockchain technology. This paper dives into the components of AXIACoin but is
   understandable for both a non-technical and technical reader.
-- [AXIASolar's specification][spec] is a Github repository that holds the latest AXIASolar Host
-  protocol specification, AXIASolar's specification tests of the many components of the network, and
-  the AXIASolar Runtime specification. This repo holds algorithms and explores how various processes
-  function in the AXIASolar network. The AXIASolar specification takes AXIASolar's ideas and concepts
+- [AXIACoin's specification][spec] is a Github repository that holds the latest AXIACoin Host
+  protocol specification, AXIACoin's specification tests of the many components of the network, and
+  the AXIACoin Runtime specification. This repo holds algorithms and explores how various processes
+  function in the AXIACoin network. The AXIACoin specification takes AXIACoin's ideas and concepts
   from the light and the white paper but focuses on the technical specs of the technology.
 - [Watching the Technical Explainer Videos][teched videos]: These are great introductory videos that
-  explain and demonstrate how to use AXIASolar and its [User Interface][ui].
-- Reading [What is AXIASolar? A Brief Introduction][article] on Medium. There are also other great
-  articles to read on [AXIASolar's Medium][p medium] or [AXIACoin Foundation's Medium][w medium].
+  explain and demonstrate how to use AXIACoin and its [User Interface][ui].
+- Reading [What is AXIACoin? A Brief Introduction][article] on Medium. There are also other great
+  articles to read on [AXIACoin's Medium][p medium] or [AXIACoin Foundation's Medium][w medium].
 
-### Interact with AXIASolar
+### Interact with AXIACoin
 
 <tr class="cards-container">
   <td>
@@ -237,37 +237,37 @@ This is recommended for users with backgrounds of all levels, and the course is 
 
 <br />
 
-For brand-new learners of AXIALunar, AXIASolar's canary cousin network: To learn more about how to build
+For brand-new learners of AXIALunar, AXIACoin's canary cousin network: To learn more about how to build
 and maintain on the AXIALunar network, please head over to our [AXIALunar Guide][axialunar guide].
 
 ## Resources
 
-- [AXIASolar Crowdcast](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the
+- [AXIACoin Crowdcast](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the
   AXIACoin Foundation has done.
-- [AXIASolar Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIASolar network;
-  can be used for AXIASolar, AXIALunar, or any Substrate-based chain.
-- [AXIAscan](http://axiascan.io/) \- Real-time multi-chain data for AXIASolar Relay Chain and
+- [AXIACoin Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIACoin network;
+  can be used for AXIACoin, AXIALunar, or any Substrate-based chain.
+- [AXIAscan](http://axiascan.io/) \- Real-time multi-chain data for AXIACoin Relay Chain and
   AXIA Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
-- [AXIASolar Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of
-  AXIASolar. (Video)
-- [AXIASolar Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) -
-  Dr. Jutta Steiner presents AXIASolar. (Video)
-- [AXIASolar & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
-  Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIASolar, and builds a blockchain
+- [AXIACoin Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of
+  AXIACoin. (Video)
+- [AXIACoin Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) -
+  Dr. Jutta Steiner presents AXIACoin. (Video)
+- [AXIACoin & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
+  Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIACoin, and builds a blockchain
   on-stage in 30 minutes using Substrate. (Video)
 - [Community / Ecosystem](community.md) - List of community rooms and channels to talk to others
-  about AXIASolar.
+  about AXIACoin.
 - [Sample Applications](#) - Sample applications that are built on or currently being built for
-  AXIASolar.
+  AXIACoin.
 - [Contributing Guide](contributing.md) - Rules for contributing to the wiki.
-- [AXIASolar Knowledge Base](https://support.axiacoin.network/) - Troubleshooting resources for
+- [AXIACoin Knowledge Base](https://support.axiacoin.network/) - Troubleshooting resources for
   specific errors and problems.
 
 [mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
-[white-paper]: https://axiacoin.network/AXIASolarPaper.pdf
+[white-paper]: https://axiacoin.network/AXIACoinPaper.pdf
 [overview-paper]: https://github.com/axia-tech/research/blob/master/docs/papers/OverviewPaper-V1.pdf
-[light-paper]: https://axiacoin.network/AXIASolar-lightpaper.pdf
+[light-paper]: https://axiacoin.network/AXIACoin-lightpaper.pdf
 [spec]: https://github.com/axia-tech/axiasolar-spec
 [teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
 [article]: https://medium.com/axiacoin.network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5

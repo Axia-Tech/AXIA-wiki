@@ -8,12 +8,12 @@ slug: ../maintain-sync
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-If you're building dapps or products on a Substrate-based chain like AXIASolar, AXIALunar or a custom
+If you're building dapps or products on a Substrate-based chain like AXIACoin, AXIALunar or a custom
 Substrate implementation, you probably want the ability to run a node-as-a-back-end. After all, it's
 always better to rely on your own infrastructure than on a third-party-hosted one in this brave new
 decentralized world.
 
-This guide will show you how to connect to [AXIASolar network](https://axiacoin.network/), but the
+This guide will show you how to connect to [AXIACoin network](https://axiacoin.network/), but the
 same process applies to any other [Substrate](https://substrate.dev/docs/en/)-based chain. First,
 let's clarify the term _full node_.
 
@@ -69,7 +69,7 @@ This is not recommended if you're a validator. Please see the
 [secure validator setup](maintain-guides-secure-validator.md) if you are running validator.
 
 > NOTE: The bash commands that are provided to run against **your node** use
-> `AXIASolar` as the default chain.
+> `AXIACoin` as the default chain.
 
 > Use the `--chain` flag if you are
 > following the setup instructions to setup a `AXIALunar` node.
@@ -115,7 +115,7 @@ values={[
   ./target/release/axiasolar --name "Your Node's Name"
   ```
 
-- Find your node on [Telemetry](https://telemetry.axiasolar.io/#list/AXIASolar)
+- Find your node on [Telemetry](https://telemetry.axiasolar.io/#list/AXIACoin)
 
 </TabItem>
 <TabItem value="win">
@@ -123,8 +123,8 @@ values={[
 - Install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 - Install [Ubuntu](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (same webpage).
 
-- Determine the latest version of the [AXIASolar binary](https://github.com/axia-tech/axiasolar/releases).
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace
+- Determine the latest version of the [AXIACoin binary](https://github.com/axia-tech/axiasolar/releases).
+- Download the correct AXIACoin binary within Ubuntu by running the following command. Replace
   `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`):
 
   ```bash
@@ -141,18 +141,18 @@ values={[
   ./target/release/axiasolar --name "Your Node's Name"
   ```
 
-- Find your node on [Telemetry](https://telemetry.axiasolar.io/#list/AXIASolar)
+- Find your node on [Telemetry](https://telemetry.axiasolar.io/#list/AXIACoin)
 
 </TabItem>
 <TabItem value="linux">
 
-- Determine the latest version of the [AXIASolar binary](https://github.com/axia-tech/axiasolar/releases).
+- Determine the latest version of the [AXIACoin binary](https://github.com/axia-tech/axiasolar/releases).
 
 > The nature of pre-built binaries means that they may not work on your particular architecture or Linux distribution.
 > If you see an error like `cannot execute binary file: Exec format error` it likely means the binary is not compatible
 > with your system. You will either need to compile the [**source code**](#clone-and-build) or use [**Docker**](#using-docker).
 
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace
+- Download the correct AXIACoin binary within Ubuntu by running the following command. Replace
   `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`):
 
   ```bash
@@ -166,7 +166,7 @@ values={[
   ./target/release/axiasolar --name "Your Node's Name"
   ```
 
-- Find your node on [Telemetry](https://telemetry.axiasolar.io/#list/AXIASolar)
+- Find your node on [Telemetry](https://telemetry.axiasolar.io/#list/AXIACoin)
 
 </TabItem>
 </Tabs>
@@ -187,7 +187,7 @@ cargo 1.41.0 (626f0f40e 2019-12-03)
 ## Clone and Build
 
 The [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repo's master branch contains the
-latest AXIASolar code.
+latest AXIACoin code.
 
 ```bash
 git clone https://github.com/axia-tech/axiasolar axiasolar
@@ -211,7 +211,7 @@ cargo build --release
 
 The built binary will be in the `target/release` folder, called `axiasolar`.
 
-**AXIASolar**:
+**AXIACoin**:
 
 ```bash
 ./target/release/axiasolar --name "Your Node's Name"
@@ -224,7 +224,7 @@ Use the `--help` flag to find out which flags you can use when running the node.
 The syncing process will take a while depending on your bandwidth, processing power, disk speed and
 RAM. On a \$10 DigitalOcean droplet, the process can complete in some 36 hours.
 
-Congratulations, you're now syncing with AXIASolar. Keep in mind that the process is identical when
+Congratulations, you're now syncing with AXIACoin. Keep in mind that the process is identical when
 using any other Substrate chain.
 
 ## Running an Archive Node
@@ -233,7 +233,7 @@ When running as a simple sync node (above), only the state of the past 256 block
 validating, it defaults to [archive mode](#types-of-nodes). To keep the full state use the
 `--pruning` flag:
 
-**AXIASolar**:
+**AXIACoin**:
 
 ```bash
 ./target/release/axiasolar --name "My node's name" --pruning archive

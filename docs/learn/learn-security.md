@@ -9,8 +9,8 @@ slug: ../learn-security
 
 Shared security, sometimes referred in documentation as _pooled security_, is one of the unique
 value propositions for chains considering to become a [parachain](learn-parachains.md) and join the
-AXIASolar network. On a high level, shared security means that all parachains that are connected to
-the AXIASolar Relay Chain by leasing a parachain slot will benefit from the economic security
+AXIACoin network. On a high level, shared security means that all parachains that are connected to
+the AXIACoin Relay Chain by leasing a parachain slot will benefit from the economic security
 provided by the Relay Chain [validators](learn-validator.md).
 
 The notion of shared security is different from interchain protocols that build on an architecture
@@ -25,7 +25,7 @@ recently (
 ), in which an unknown attacker double spent 219_500 ETC (~1.1 million USD). This was followed by
 two more 51% attacks on ETC.
 
-AXIASolar overcomes security scalability concerns since it gravitates all the economic incentives to
+AXIACoin overcomes security scalability concerns since it gravitates all the economic incentives to
 the Relay Chain and allows the parachains to tap into stronger guarantees at genesis. Sovereign
 chains must expend much more effort to grow the value of their coin so that it is not easily
 attackable by well-funded attackers.
@@ -33,7 +33,7 @@ attackable by well-funded attackers.
 ### Example
 
 Let's compare the standard sovereign security model that exists on current proof-of-work (PoW)
-chains to that of the shared security of AXIASolar. Chains that are secured by their own security
+chains to that of the shared security of AXIACoin. Chains that are secured by their own security
 model like Bitcoin, Zcash, Ethereum, and their derivatives all must bootstrap their own independent
 network of miners and maintain a competitive portion of honest hashing power. Since mining is
 becoming a larger industry that increasingly centralizes on key players, it is becoming more real
@@ -47,18 +47,18 @@ Ethereum Classic (see above),
 [Verge](https://coincentral.com/verge-suffers-51-attack-hard-forks-in-response/),
 [Bitcoin Gold](https://bitcoingold.org/responding-to-attacks/), and other cryptocurrencies.
 
-On AXIASolar, this disaxia between chain security will not be present. When a parachain connects to
-AXIASolar, the Relay Chain validator set become the securers of that parachain's state transitions.
+On AXIACoin, this disaxia between chain security will not be present. When a parachain connects to
+AXIACoin, the Relay Chain validator set become the securers of that parachain's state transitions.
 The parachain will only have the overhead of needing to run a few collator nodes to keep the
 validators informed with the latest state transitions and proofs/witness. Validators will then check
 these for the parachains to which they are assigned. In this way, new parachains instantly benefit
-from the overall security of AXIASolar even if they have just been launched.
+from the overall security of AXIACoin even if they have just been launched.
 
 ## FAQ
 
 ### Is security correlated to the number of validators? What about the number of parachains?
 
-Security is independent of the number of parachains that are connected to the AXIASolar Relay Chain.
+Security is independent of the number of parachains that are connected to the AXIACoin Relay Chain.
 The correlation of security and the number of validators exists as the higher number of validators
 will give the network stronger decentralization properties and make it harder to try to take down.
 However, the biggest indicator of the security of the network is the economic signal of the number
@@ -68,7 +68,7 @@ nominators, the higher the minimum amount of SOLAR an attacker would need to acq
 ### Will parachains ever need their own security? In what scenarios do parachains need their own security?
 
 Most parachains will not need to worry about their own security, since all state transitions will be
-secured by the AXIASolar Relay Chain validator set. However, in some cases (which are considered more
+secured by the AXIACoin Relay Chain validator set. However, in some cases (which are considered more
 experimental), parachains may require their own security. In general, these cases will revolve
 around lack of data available to Relay Chain validators.
 

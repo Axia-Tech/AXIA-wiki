@@ -6,7 +6,7 @@ slug: ../maintain-guides-democracy
 ---
 
 The public referenda chamber is one of the three bodies of on-chain governance as it's instantiated
-in AXIASolar and AXIALunar. The other two bodies are the
+in AXIACoin and AXIALunar. The other two bodies are the
 [council](maintain-guides-how-to-join-council.md) and the
 [technical committee](../learn/learn-governance.md#technical-committee).
 
@@ -51,7 +51,7 @@ ever), this means that any tokens bonded will be locked for an indeterminate amo
 > important to realize that there is no guarantee that SOLAR you use for proposing or seconding a
 > proposal will be returned to that account in any given timeframe.
 
-On AXIASolar Apps you can use the "Democracy" tab to make a new proposal. In order to submit a
+On AXIACoin Apps you can use the "Democracy" tab to make a new proposal. In order to submit a
 proposal, you will need to submit what's called the preimage hash. The preimage hash is simply the
 hash of the proposal to be enacted. The easiest way to get the preimage hash is by clicking on the
 "Submit preimage" button and configuring the action that you are proposing.
@@ -144,7 +144,7 @@ of each other, so an eight week lock does not become a 15 week lock if you vote 
 rather another eight week lock is placed to extend the lock just one extra week.
 
 To vote on a referendum, navigate to the
-["Democracy" tab of AXIASolar Apps](https://axiasolar.js.org/apps/#/democracy/). Any active referendum
+["Democracy" tab of AXIACoin Apps](https://axiasolar.js.org/apps/#/democracy/). Any active referendum
 will show in the "referenda" column. Click the blue button "Vote" to cast a vote for the referendum.
 
 If you would like to cast your vote for the proposal select the "Aye, I approve" option. If you
@@ -167,12 +167,12 @@ your transaction and wait for it to be included in a block.
 
 Like [vesting](../learn/learn-SOLAR.md#lazy-vesting), the tokens that are locked in democracy are unlocked
 lazily. This means that you, the user, must explicitly call an unlock extrinsic to make your funds
-available again after the lock expires. Unbonding is another term you hear a lot in AXIASolar, it
+available again after the lock expires. Unbonding is another term you hear a lot in AXIACoin, it
 means withdrawing your SOLAR that was used in staking. To know more about it, please see
 [here](maintain-guides-how-to-unbond.md).
 
 You can do this from the "Accounts" page in
-[AXIASolar-JS Apps](https://axiasolar.js.org/apps/#/accounts), unless you use Ledger (see below).
+[AXIACoin-JS Apps](https://axiasolar.js.org/apps/#/accounts), unless you use Ledger (see below).
 First check that your account has a "democracy" lock by opening the details on your balance. In the
 example below the account has 150 LUNAR locked in democracy.
 
@@ -212,7 +212,7 @@ If you return to the [Accounts page](https://axiasolar.js.org/apps/#/accounts), 
 the democracy lock has been released.
 
 Note that this applies only to locked SOLAR that were used for voting on referenda. In order to unlock
-SOLAR locked by voting for members of the AXIASolar Council, you need to go to the
+SOLAR locked by voting for members of the AXIACoin Council, you need to go to the
 [Council](https://axiasolar.js.org/apps/#/council) page, click "Vote", and then click on "Unvote
 All".
 
@@ -230,7 +230,7 @@ Democracy system tallies votes, the delegated tokens now are added to whatever v
 has made.
 
 You can delegate your vote to another account and even attach a "Conviction" to the delegation.
-Navigate to the "Extrinsics" tab on AXIASolar Apps and select the options "democracy" and "delegate".
+Navigate to the "Extrinsics" tab on AXIACoin Apps and select the options "democracy" and "delegate".
 This means you are accessing the democracy pallet and choosing the delegate transaction type to
 send. Your delegation will count toward whatever the account you delegated for votes on until you
 explicitly undelegate your vote.
@@ -260,7 +260,7 @@ The `undelegate` transaction must be sent from the account that you wish to clea
 For example, if Alice has delegated her tokens to Bob, Alice would need to be the one to call the
 `undelegate` transaction to clear her delegation.
 
-The easiest way to do this is from the "Extrinsics" tab of AXIASolar Apps. Select the "democracy"
+The easiest way to do this is from the "Extrinsics" tab of AXIACoin Apps. Select the "democracy"
 pallet and the "undelegate" transaction type. Ensure that you are sending the transaction from the
 account you want to clear of delegations. Click "Submit transaction" and confirm.
 

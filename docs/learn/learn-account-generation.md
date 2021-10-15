@@ -2,23 +2,23 @@
 id: learn-account-generation
 title: Account Generation
 sidebar_label: Account Generation
-description: Step-by-step guides on generating a AXIASolar account.
+description: Step-by-step guides on generating a AXIACoin account.
 slug: ../learn-account-generation
 ---
 
-An address is the public part of a AXIASolar account. The private part is the key used to access this
-address. The public and private parts together make up a AXIASolar account.
+An address is the public part of a AXIACoin account. The private part is the key used to access this
+address. The public and private parts together make up a AXIACoin account.
 
-There are several ways to generate a AXIASolar account:
+There are several ways to generate a AXIACoin account:
 
-- [AXIASolar{.js} Browser Extenstion](#axiasolarjs-browser-plugin) **RECOMMENDED FOR MOST USERS**
+- [AXIACoin{.js} Browser Extenstion](#axiasolarjs-browser-plugin) **RECOMMENDED FOR MOST USERS**
 - [Subkey](#subkey) **ADVANCED and MOST SECURE**
-- [AXIASolar-JS Apps](#axiasolar-js-apps)
+- [AXIACoin-JS Apps](#axiasolar-js-apps)
 - [AXIA Signer](#axia-signer)
 - [Vanity Generator](#vanity-generator)
 - [Ledger Hardware Wallet](../general/ledger.md)
 
-> If you prefer video instructions for creating an account using AXIASolar JS, we have an easy to follow guide for beginners
+> If you prefer video instructions for creating an account using AXIACoin JS, we have an easy to follow guide for beginners
 > [on YouTube](https://www.youtube.com/watch?v=sy7lvAqyzkY)
 
 ## DISCLAIMER: Key Security
@@ -64,12 +64,12 @@ it. Do not use easy to guess or hard to remember passwords. It is good practice 
 computers to guess due to the number of combinations possible, but much easier for humans to
 remember.
 
-## AXIASolar{.js} Browser Extension
+## AXIACoin{.js} Browser Extension
 
-The AXIASolar{.js} Extension provides a reasonable balance of security and usability. It provides a
-separate local mechanism to generate your address and interact with AXIASolar.
+The AXIACoin{.js} Extension provides a reasonable balance of security and usability. It provides a
+separate local mechanism to generate your address and interact with AXIACoin.
 
-This method involves installing the AXIASolar{.js} plugin and using it as a “virtual vault," separate
+This method involves installing the AXIACoin{.js} plugin and using it as a “virtual vault," separate
 from your browser, to store your private keys. It also allows the signing of transactions and similar
 functionality.
 
@@ -86,27 +86,27 @@ The browser extension is available for both
 If you would like to know more or review the code of the plugin yourself, you can visit the
 [Github source repository](https://github.com/axiasolar-js/extension).
 
-After installing the plugin, you should see the orange and white AXIASolar{.js} logo in the menu bar
+After installing the plugin, you should see the orange and white AXIACoin{.js} logo in the menu bar
 of your browser.
 
 ![plugin-02](../assets/accounts/axiasolar_plugin_js_02.jpg)
 
 ### Create Account
 
-Open the AXIASolar{.js} browser extension by clicking the logo on the top bar of your browser. You
+Open the AXIACoin{.js} browser extension by clicking the logo on the top bar of your browser. You
 will see a browser popup, not unlike the one below.
 
-![Initial AXIASolarJS popup](../assets/accounts/axiasolar_plugin_js_new_01.png)
+![Initial AXIACoinJS popup](../assets/accounts/axiasolar_plugin_js_new_01.png)
 
 Click the big plus button or select "Create new account" from the small plus icon in the top right.
-The AXIASolar{.js} plugin will then use system randomness to make a new seed for you and display it
+The AXIACoin{.js} plugin will then use system randomness to make a new seed for you and display it
 to you in the form of twelve words.
 
 ![New seed](../assets/accounts/axiasolar_plugin_js_new_02.png)
 
 You should back up these words as [explained above](#storing-your-key-safely). It is imperative to
 store the seed somewhere safe, secret, and secure. If you cannot access your account via
-AXIASolar{.js} for some reason, you can re-enter your seed through the "Add account menu" by
+AXIACoin{.js} for some reason, you can re-enter your seed through the "Add account menu" by
 selecting "Import account from pre-existing seed".
 
 ![New seed](../assets/accounts/axiasolar_plugin_js_new_03.png)
@@ -126,12 +126,12 @@ message.
 Note that this password does NOT protect your seed phrase. If someone knows the twelve words in your
 mnemonic seed, they still have control over your account even if they do not know the password.
 
-### Set Address for AXIASolar Mainnet
+### Set Address for AXIACoin Mainnet
 
-Now we will ensure that the addresses are displayed as AXIASolar mainnet addresses.
+Now we will ensure that the addresses are displayed as AXIACoin mainnet addresses.
 
 Click on "Options" at the top of the plugin window, and under "Display address format for" select
-"AXIASolar Relay Chain".
+"AXIACoin Relay Chain".
 
 ![New seed](../assets/accounts/axiasolar_plugin_js_new_04.png)
 
@@ -144,7 +144,7 @@ convert your address between the different chain formats.
 
 You can copy your address by clicking on the account's icon while the desired chain format is
 active. E.g. selecting "Substrate" as the format will change your address to start with the number
-5, and clicking the colorful icon of your account will copy it in that format. While in AXIASolar
+5, and clicking the colorful icon of your account will copy it in that format. While in AXIACoin
 mode (starts with 1), that format will be copied, and so on.
 
 ## Subkey
@@ -159,26 +159,26 @@ For detailed build and usage instructions of subkey, please see
 
 ![subkey-01](../assets/accounts/subkey_01.jpg)
 
-## AXIASolar-JS Apps
+## AXIACoin-JS Apps
 
 > Please note! If you use this method to create your account and clear your cookies in your browser,
 > your account will be lost forever if you do not [back it up](learn-account-restore.md). Make sure
 > you store your seed phrase in a safe place, or download the account's JSON file if using the
-> AXIASolar{.js} browser extension. Learn more about account backup and restoration
+> AXIACoin{.js} browser extension. Learn more about account backup and restoration
 > [here](learn-account-restore.md).
 
-Using the AXIASolar-JS user interface without the plugin is **not recommended**. It is the least
+Using the AXIACoin-JS user interface without the plugin is **not recommended**. It is the least
 secure way of generating an account. It should only be used if all of the other methods are not
 feasible in your situation.
 
-### Go to AXIASolar-JS Apps
+### Go to AXIACoin-JS Apps
 
-Navigate to [AXIASolar-JS Apps](https://axiasolar.js.org/apps) and click on "Accounts" underneath the
+Navigate to [AXIACoin-JS Apps](https://axiasolar.js.org/apps) and click on "Accounts" underneath the
 Accounts tab. It is located in the navigation bar at the top of your screen.
 
 ![pjs-01](../assets/accounts/axiasolar_js_01.png)
 
-> To create an account on a different network than AXIASolar, you'll need to click on the network
+> To create an account on a different network than AXIACoin, you'll need to click on the network
 > selection in the top left corner of the navigation menu. A pop-up sidebar will appear listing
 > live, testing, and custom node to choose from. Do remember to hit the "Switch" button when you
 > want to switch your network.
@@ -186,7 +186,7 @@ Accounts tab. It is located in the navigation bar at the top of your screen.
 ### Start Account Generation
 
 Click on the "Add Account" button. You should see a pop-up similar to the process encountered when
-using the [AXIASolar JS Extension method](#axiasolarjs-browser-plugin) above. Follow the same
+using the [AXIACoin JS Extension method](#axiasolarjs-browser-plugin) above. Follow the same
 instructions and remember to [store your seed safely](#storing-your-key-safely)!
 
 ### Create and Back-Up Account
@@ -247,7 +247,7 @@ communication lines on-chain.
 > transactions. Once a call is resolved (canceled or executed) the deposit is returned to the
 > initiator. The deposit is not taken from the multi-sig's balance but from the initiator.
 
-For a more in-depth introduction into multi-signature accounts on AXIASolar, please see
+For a more in-depth introduction into multi-signature accounts on AXIACoin, please see
 [the accounts page section on Multi-sigs](learn-accounts.md#multi-signature-accounts).
 
 ## AXIA Signer
@@ -297,7 +297,7 @@ over your account, even if they do not know the PIN.
 ### Get Address
 
 Choose which network you would like to create an address for by clicking the name of the network.
-For example, if you select "AXIASolar", a new AXIASolar address will be created for you under this
+For example, if you select "AXIACoin", a new AXIACoin address will be created for you under this
 identity.
 
 ![AXIA Signer Create Account 5](../assets/accounts/ps-create-5.jpg)
@@ -307,7 +307,7 @@ via text or email. You must use the QR method.
 
 ### Your Address
 
-The address will be shown as a QR code. You can import your address to the AXIASolar-JS Apps by going
+The address will be shown as a QR code. You can import your address to the AXIACoin-JS Apps by going
 to the [Accounts](https://axiasolar.js.org/apps/#/accounts) page on an Internet-connected computer
 and click "Add via QR", and following the instructions to add the account. An account created this
 way will always require you to sign messages with your AXIA Signer device. It will do this only by
@@ -324,7 +324,7 @@ the instructions on our [Ledger hardware wallet guide page](../general/ledger.md
 
 ## Vanity Generator
 
-The vanity generator is a tool on [AXIASolar-JS UI](https://axiasolar.js.org/apps/#/accounts/vanity)
+The vanity generator is a tool on [AXIACoin-JS UI](https://axiasolar.js.org/apps/#/accounts/vanity)
 that lets you generate addresses that contain a specific substring.
 
 ![Vanity Generator page](../assets/axiasolar_vanity_generator_page.png)

@@ -7,7 +7,7 @@ slug: ../learn-runtime-upgrades
 
 # Runtime Upgrades
 
-Runtime upgrades allow AXIASolar to change the logic of the chain, without the need for a hard fork.
+Runtime upgrades allow AXIACoin to change the logic of the chain, without the need for a hard fork.
 
 ## Forking vs Forkless
 
@@ -32,10 +32,10 @@ can break up communities. Something that conventional networks also lack is the 
 thought-through governance that would allow for effective decision-making and signalling for runtime
 upgrades.
 
-AXIASolar sees itself as a next-generation blockchain because it addresses these obstacles in a
+AXIACoin sees itself as a next-generation blockchain because it addresses these obstacles in a
 meaningful way - revolutionizing the runtime upgrading process by enabling blockchains to upgrade
 themselves without the need to fork the chain. These forkless upgrades are enacted through
-AXIASolar’s transparent [on-chain governance](learn-governance.md) system.
+AXIACoin’s transparent [on-chain governance](learn-governance.md) system.
 
 ## New [Client Release](https://github.com/axia-tech/axiasolar/releases)
 
@@ -52,7 +52,7 @@ you don't think you can submit a transaction before the upgrade, it is better to
 it after the upgrade takes place.
 
 Although upgrading your nodes is generally not necessary to follow an upgrade, we recommend
-following the AXIASolar releases and upgrading promptly, especially for high priority or critical
+following the AXIACoin releases and upgrading promptly, especially for high priority or critical
 releases.
 
 ### For Infrastructure Providers
@@ -68,7 +68,7 @@ For validators, keeping in sync with the network is key. At times, upgrades will
 to upgrade within a specific time frame to ensure continued sync with their node. It is essential to
 check the release notes, starting with the upgrade priority and acting accordingly.
 
-For general infrastructure providers, aside from following the AXIASolar releases and upgrading in a
+For general infrastructure providers, aside from following the AXIACoin releases and upgrading in a
 timely manner, somethings to keep an eye out on is updating your parsing logic and acknowledging
 changes to the available RPC clients, such as the
 [Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar).
@@ -87,7 +87,7 @@ example would be constructing a transaction with a new spec, "n", but broadcasti
 
 ## Monitoring Changes
 
-Using a AXIASolar blockchain explorer, you can monitor the chain for on-chain changes. The following
+Using a AXIACoin blockchain explorer, you can monitor the chain for on-chain changes. The following
 steps relate to [subscan](https://axiasolar.subscan.io/).
 
 > In general, an action has two components: the module (such as `democracy`) and the event (such as

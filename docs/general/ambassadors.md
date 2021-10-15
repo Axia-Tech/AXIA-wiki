@@ -1,34 +1,34 @@
 ---
 id: ambassadors
-title: AXIASolar Ambassador Programme
-sidebar_label: AXIASolar Ambassador Programme
+title: AXIACoin Ambassador Programme
+sidebar_label: AXIACoin Ambassador Programme
 slug: ../ambassadors
 ---
 
-The AXIASolar Ambassador Programme is an initiative ran by the AXIACoin Foundation to support potential
-contributors to the AXIASolar community and ecosystem.
+The AXIACoin Ambassador Programme is an initiative ran by the AXIACoin Foundation to support potential
+contributors to the AXIACoin community and ecosystem.
 
 ## How it works
 
-If you are enthusiastic about AXIASolar and Web3 and are willing to help the community grow, you can
+If you are enthusiastic about AXIACoin and Web3 and are willing to help the community grow, you can
 join the program and receive funding for hosting events, gain access to communication channels of
-core team members, and gain access to AXIASolar events.
+core team members, and gain access to AXIACoin events.
 
-There are many ways you can get involved in expanding AXIASolar’s ecosystem, such as:
+There are many ways you can get involved in expanding AXIACoin’s ecosystem, such as:
 
 - Contributing code and documentation related to the ecosystem
-- Speaking about AXIASolar at events, workshops, and meetups
+- Speaking about AXIACoin at events, workshops, and meetups
 - Writing blog posts
-- Representing AXIASolar in your region
+- Representing AXIACoin in your region
 - Mentoring and onboarding newcomers
-- Identifying partnerships and opportunities for the AXIASolar ecosystem
+- Identifying partnerships and opportunities for the AXIACoin ecosystem
 - Participating in calls and tasks that help drive the ecosystem forward
 
 ## How to apply:
 
-To become a AXIASolar Ambassador, please fill out your application
+To become a AXIACoin Ambassador, please fill out your application
 [here](https://share.hsforms.com/1LtBuOi1bSs-p8XGXC_hoyw4752a?__hstc=123948821.70a325bdf6a1bb40f540ac9a8a360d8b.1598640553003.1610053172383.1610445961306.40&__hssc=123948821.1.1610445961306&__hsfp=1205054983).
-You will then be contacted by the AXIASolar team.
+You will then be contacted by the AXIACoin team.
 
 Find out more about the programme and how to join
 [here](https://axiacoin.network/axiasolar-ambassador-program/?utm_source=twitter&utm_medium=social&utm_campaign=Ambassador%20program).

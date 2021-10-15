@@ -1,12 +1,12 @@
 ---
 id: build-integrate-assets
-title: Assets on AXIASolar
+title: Assets on AXIACoin
 sidebar_label: Integrating Assets
 slug: ../build-integrate-assets
 ---
 
-The AXIASolar Relay Chain does not natively support assets beyond SOLAR (likewise, LUNAR for AXIALunar).
-This functionality exists in parachains. On AXIASolar, this parachain is called Statemint, and on
+The AXIACoin Relay Chain does not natively support assets beyond SOLAR (likewise, LUNAR for AXIALunar).
+This functionality exists in parachains. On AXIACoin, this parachain is called Statemint, and on
 AXIALunar it is called Statemine. All information in this guide applies equally to AXIALunar/Statemine.
 
 Statemint provides a first-class interface for creating, managing, and using both fungible and
@@ -95,25 +95,25 @@ Similarly, head over to the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss
 
 Statemint will come with the same tooling suite that AXIA Technologies provides for the Relay
 Chain, namely [API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) and
-[TxWrapper AXIASolar](https://github.com/axia-tech/txwrapper-core/tree/main/packages/txwrapper-axiasolar).
+[TxWrapper AXIACoin](https://github.com/axia-tech/txwrapper-core/tree/main/packages/txwrapper-axiasolar).
 If you have a technical question or issue about how to use one of the integration tools please file
 a GitHub issue so a developer can help.
 
 ### Parachain Node
 
 Using Statemint will require running a parachain node to sync the chain. This is very similar to
-running a AXIASolar node, with the addition of some extra flags. The basic format looks like this:
+running a AXIACoin node, with the addition of some extra flags. The basic format looks like this:
 
 ```bash
 ./statemint $STATEMINT_CLI_ARGS --collator -- $AXIASOLAR_CLI_ARGS
 ```
 
-where both `$STATEMINT_CLI_ARGS` and `$AXIASOLAR_CLI_ARGS` consist of regular AXIASolar node flags.
+where both `$STATEMINT_CLI_ARGS` and `$AXIASOLAR_CLI_ARGS` consist of regular AXIACoin node flags.
 Flags can be used twice, one for the collating component and one for the Relay Chain component.
 Additional ports that will be used are (by default) 9934, 9616, and 30334 (Relay Chain RPC,
 Prometheus endpoint, and libp2p respectively). As usual, any of these ports can be adjusted through
-flags. To deploy a Statemint RPC node, one would use the same flags as a AXIASolar RPC node in place
-of `$STATEMINT_CLI_ARGS`. The node will keep both the database for AXIASolar and for Statemint in its
+flags. To deploy a Statemint RPC node, one would use the same flags as a AXIACoin RPC node in place
+of `$STATEMINT_CLI_ARGS`. The node will keep both the database for AXIACoin and for Statemint in its
 database directory, so provision disks accordingly.
 
 ### Sidecar
@@ -126,9 +126,9 @@ info about assets and asset balances on Statemint.
 - Please refer to [docs](https://axia-tech.github.io/substrate-api-sidecar/dist/) for full usage
   information. Details on options like how to make a historical query are not included here.
 
-### Tx Wrapper AXIASolar
+### Tx Wrapper AXIACoin
 
-TxWrapper AXIASolar is a library designed to facilitate transaction construction and signing in
+TxWrapper AXIACoin is a library designed to facilitate transaction construction and signing in
 offline environments; it comes with a set of asset-specific functions to use on Statemint. When
 constructing parachain transactions, you can use `txwrapper-axiasolar` exactly as on the Relay Chain,
 but would construct transactions with the appropriate parachain metadata like genesis hash, spec

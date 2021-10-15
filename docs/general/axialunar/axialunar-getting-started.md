@@ -144,12 +144,12 @@ For brand-new learners of AXIALunar, check out:
 - [Running a Validator on AXIALunar][validator]
 - [Staking as a Nominator on AXIALunar][nominator]
 
-For brand-new learners of AXIALunar's cousin network, AXIASolar, please head over to our [AXIASolar
+For brand-new learners of AXIALunar's cousin network, AXIACoin, please head over to our [AXIACoin
 Wiki][axiasolar wiki].
 
 While AXIALunar does not support smart contracts natively, building apps on it is still possible
 (example: [RMRK.app](https://rmrk.app)). If you're interested in diving deeper into _proper_
-development, however, the [builders guide from AXIASolar's wiki][axiasolar-builders] applies to AXIALunar
+development, however, the [builders guide from AXIACoin's wiki][axiasolar-builders] applies to AXIALunar
 as well.
 
 [mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/

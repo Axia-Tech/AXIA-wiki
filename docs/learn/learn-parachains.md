@@ -2,7 +2,7 @@
 id: learn-parachains
 title: Parachains
 sidebar_label: Parachains
-description: An introductory guide to AXIASolar Parachains.
+description: An introductory guide to AXIACoin Parachains.
 slug: ../learn-parachains
 ---
 
@@ -17,21 +17,21 @@ the validators of the Relay Chain. Most commonly a parachain will take the form 
 there is no specific need for them to be actual blockchains. They take their name from the concept
 of parallelized chains that run parallel to the Relay Chain. Due to their parallel nature, they are
 able to parallelize transaction processing and achieve scalability of the
-{{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} system. They
+{{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} system. They
 [share in the security](learn-security.md) of the entire network and can communicate with other
 parachains through [XCM](learn-cross-consensus.md).
 
 Parachains are maintained by a network maintainer known as a [collator](learn-collator.md). The role
 of the collator node is to maintain a full-node of the parachain, retain all necessary information
 of the parachain, and produce new block candidates to pass to the Relay Chain validators for
-verification and inclusion in the shared state of AXIASolar. The incentivization of a collator node
+verification and inclusion in the shared state of AXIACoin. The incentivization of a collator node
 is an implementation detail of the parachain. They are not required to be staked on the Relay Chain
 or own SOLAR tokens unless stipulated to do so by the parachain implementation.
 
-The AXIASolar Host (AH) requires that the state transitions performed on parachains to be specified
+The AXIACoin Host (AH) requires that the state transitions performed on parachains to be specified
 as a Wasm executable. Proofs of new state transitions that occur on a parachain must be validated
 against the registered state transition function (STF) that is stored on the Relay Chain by the
-validators before {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} acknowledges a
+validators before {{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} acknowledges a
 state transition has occurred on a parachain. The key constraint regarding the logic of a parachain
 is that it must be verifiable by the Relay Chain validators. Verification most commonly takes the
 form of a bundled proof of a state transition known as a Proof-of-Verification (PoV) block, which is
@@ -42,7 +42,7 @@ submitted to the validators from one or more of the parachain collators to be ch
 Parachains may have their own economies with their own native tokens. Schemes such as Proof-of-Stake
 are usually used to select the validator set in order to handle validation and finalization;
 parachains will not be required to do either of those things. However, since
-{{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} is not overly particular about what
+{{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} is not overly particular about what
 the parachain can implement, it may be the choice of the parachain to implement a staking token, but
 it's not generally necessary.
 
@@ -50,18 +50,18 @@ Collators may be incentivized through inflation of a native parachain token. The
 to incentivize the collator nodes that do not involve inflating the native parachain token.
 
 Transaction fees in a native parachain token can also be an implementation choice of parachains.
-{{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} makes no hard and fast rules for how
+{{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} makes no hard and fast rules for how
 the parachains decide on original validity of transactions. For example, a parachain may be
 implemented so that transactions must pay a minimum fee to collators to be valid. The Relay Chain
 will enforce this validity. Similarly, a parachain could not include that in their implementation
-and AXIASolar would still enforce its validity.
+and AXIACoin would still enforce its validity.
 
 Parachains are not required to have their own token. If they do, is up to the parachain to make the
-economic case for their token, not {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }}.
+economic case for their token, not {{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }}.
 
 ## Parachain Hubs
 
-While AXIASolar enables crosschain functionality amongst the parachains, it necessitates that there
+While AXIACoin enables crosschain functionality amongst the parachains, it necessitates that there
 is some latency between the dispatch of a message from one parachain until the destination parachain
 receives the message. In the optimistic scenario, the latency for this message should be at least 2
 blocks - one block for the message to be dispatched and one block for the receiving parachain to
@@ -80,12 +80,12 @@ on-chain logic as long as the loan is repaid at the end of the transaction.
 
 An issue with crosschain latency means that the property of composability is weakened among
 parachains compared to a single blockchain. **This implication is common to all sharded blockchain
-designs, including AXIASolar, Eth2.0, and others.** The solution to this is the introduction of
+designs, including AXIACoin, Eth2.0, and others.** The solution to this is the introduction of
 parachain hubs which maintain the stronger property of single block composability.
 
 ## Parachain Slot Acquisition
 
-{{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} supports a limited number of
+{{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} supports a limited number of
 parachains, currently estimated to be about 100. As the number of slots is limited, there are
 several ways to allocate them:
 
@@ -93,7 +93,7 @@ several ways to allocate them:
 - Auction granted parachains
 - Parathreads
 
-["Common Good" parachains](#common-good-parachains) are allocated by AXIASolar's on-chain
+["Common Good" parachains](#common-good-parachains) are allocated by AXIACoin's on-chain
 {{ axiasolar: [governance](learn-governance.md) :axiasolar }}
 {{ axialunar: [governance](mirror-learn-governance.md) :axialunar }} system, and are deemed as a "common
 good" for the network, such as bridges to other networks or chains. They are usually considered
@@ -130,7 +130,7 @@ on-chain {{ axiasolar: [governance](learn-governance.md) :axiasolar }}
 parachain's lease would not expire; it would only be removed via governance.
 
 See the
-[AXIASolar blog article](https://axiacoin.network/common-good-parachains-an-introduction-to-governance-allocated-parachain-slots/)
+[AXIACoin blog article](https://axiacoin.network/common-good-parachains-an-introduction-to-governance-allocated-parachain-slots/)
 and the [common good parachains](learn-common-good-chains.md) page for more information.
 
 ## Examples
@@ -151,18 +151,18 @@ Some examples of parachains:
 
 ### What is "parachain consensus"?
 
-"Parachain consensus" is special in that it will follow the AXIASolar Relay Chain. Parachains cannot
+"Parachain consensus" is special in that it will follow the AXIACoin Relay Chain. Parachains cannot
 use other consensus algorithms that provide their own finality. Only sovereign chains (that must
 bridge to the Relay Chain via a parachain) can control their own consensus. Parachains have control
-over how blocks are authored and by whom. AXIASolar guarantees valid state transitions. Executing a
+over how blocks are authored and by whom. AXIACoin guarantees valid state transitions. Executing a
 block finality outside the context of the relay chain is outside the scope of trust
-that AXIASolar provides.
+that AXIACoin provides.
 
 #### How about parachains that are not Substrate-based?
 
 Substrate provides [FRAME Pallets](https://substrate.dev/docs/en/knowledgebase/runtime/frame#pallets) as
 part of its framework to seamlessly build a rustic-based blockchain. Part of FRAME are pallets
-that can be used for consensus. AXIASolar being a Substrate-based chain relies on BABE as the block
+that can be used for consensus. AXIACoin being a Substrate-based chain relies on BABE as the block
 production scheme and GRANDPA as the finality gadget as part of its consensus mechanism. Collectively,
 this is a [Hybrid Consensus Model](learn-consensus.md#hybrid-consensus), where block production and block finality are separate. Parachains only need to produce blocks as they can rely on the relay chain to validate the state transitions. Thus, parachains can have their own block production where the [collators](learn-collator.md) act as the block producers, even if the parachain is not Substrate-based.
 
@@ -212,8 +212,8 @@ Please see the [Parachain Development page](../build/build-parachains) for more 
 
 ## Resources
 
-- [AXIASolar: The Parachain](https://medium.com/axiacoin.network/axiasolar-the-parachain-3808040a769a) -
-  Blog post by AXIASolar co-founder Rob Habermeier that introduced parachains in 2017 as "a simpler
+- [AXIACoin: The Parachain](https://medium.com/axiacoin.network/axiasolar-the-parachain-3808040a769a) -
+  Blog post by AXIACoin co-founder Rob Habermeier that introduced parachains in 2017 as "a simpler
   form of blockchain, which attaches to the security provided by a Relay Chain rather than providing
   its own. The Relay Chain provides security to attached parachains, but also provides a guarantee
   of secure message-passing between them."

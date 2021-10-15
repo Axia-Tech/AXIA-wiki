@@ -6,35 +6,35 @@ slug: ../faq
 ---
 
 _This FAQ focuses on technical questions for users interested in developing applications for
-AXIASolar. If you have a more general question, you may wish to search for the answer on our support
+AXIACoin. If you have a more general question, you may wish to search for the answer on our support
 [Knowledge Base](https://support.axiacoin.network/support/home) or the main
-[AXIASolar Network FAQ](https://axiacoin.network/faq). If you have a question that is not answered,
-please feel free to ask on the AXIASolar Watercooler
+[AXIACoin Network FAQ](https://axiacoin.network/faq). If you have a question that is not answered,
+please feel free to ask on the AXIACoin Watercooler
 [Element channel](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) or email
 [support](mailto:support@axiacoin.network)._
 
-## AXIASolar Launch
+## AXIACoin Launch
 
-The Genesis block of the AXIASolar network was launched on May 26, 2020, as a Proof of Authority
+The Genesis block of the AXIACoin network was launched on May 26, 2020, as a Proof of Authority
 (PoA) network, with governance controlled by the single Sudo (super-user) account. During this time,
 validators started joining the network and signaling their intention to participate in consensus.
 
 The network evolved to become a Proof of Stake (PoS) network on June 18, 2020. With the chain
 secured by the decentralized community of validators, the Sudo module was removed on July 20, 2020,
 transitioning the governance of the chain into the hands of the token (SOLAR) holders. This is the
-point where AXIASolar became decentralized.
+point where AXIACoin became decentralized.
 
-The final step of the transition to full-functioning AXIASolar was the enabling of transfer
-functionality, which occurred on AXIASolar at block number 1_205_128 on August 18, 2020, at 16:39
+The final step of the transition to full-functioning AXIACoin was the enabling of transfer
+functionality, which occurred on AXIACoin at block number 1_205_128 on August 18, 2020, at 16:39
 UTC.
 
 On August 21, 2020, Redenomination of SOLAR occurred. From this date, one SOLAR (old) equals 100 new
 SOLAR.
 
-## AXIASolar Roadmap
+## AXIACoin Roadmap
 
-For more information on the AXIASolar roadmap please visit the
-[official AXIASolar website](https://axiacoin.network/technology/#roadmap).
+For more information on the AXIACoin roadmap please visit the
+[official AXIACoin website](https://axiacoin.network/technology/#roadmap).
 
 ## Validators
 
@@ -45,7 +45,7 @@ that you can fill out. Registering as a validator is permissionless; in order to
 only set up a validator node and mark your intention to validate on chain. For detailed instruction
 on how to do this you can consult the
 [AXIALunar validator guide](../maintain/axialunar/maintain-guides-how-to-validate-axialunar.md) on validating for AXIALunar or the
-[AXIASolar validator guide](../maintain/maintain-guides-how-to-validate-axiasolar.md) for validating on AXIASolar.
+[AXIACoin validator guide](../maintain/maintain-guides-how-to-validate-axiasolar.md) for validating on AXIACoin.
 
 However, once you've set up a validator and have registered your intention it does not mean that you
 will be included in the _active set_ right away. The validators are elected to the active set based
@@ -74,7 +74,7 @@ size of the active set and how many validators are waiting in the pool.
 There are a few ways to estimate the minimum stake.
 
 One way can be to navigate to the
-[AXIASolar Apps Targets tab](https://ipfs.io/ipns/axiasolar.dotapps.io/#/staking/targets). The value
+[AXIACoin Apps Targets tab](https://ipfs.io/ipns/axiasolar.dotapps.io/#/staking/targets). The value
 at the top of the screen saying "Lowest" is the least staked validator. You need at least this
 much + 1 to enter the set.
 
@@ -82,30 +82,30 @@ You can also use some tools some to perform estimations.
 
 - [Offline Election](https://github.com/axia-tech/substrate-debug-kit/tree/master/offline-election)
   can provide exact results of running an election on the current set of validators using the same
-  Rust code that is ran in AXIASolar.
+  Rust code that is ran in AXIACoin.
 
 - [Validator stats script](https://github.com/ansonla3/axialunar-validator-stats) can give you an
   estimate that is based on the currently elected set, as well as some statistics about AXIALunar
   validators.
 
-### Why will AXIASolar have only 1000 validators while other projects have hundreds of thousands?
+### Why will AXIACoin have only 1000 validators while other projects have hundreds of thousands?
 
-AXIASolar's goal to have 1000 validators is set to be something that is practically achievable in the
+AXIACoin's goal to have 1000 validators is set to be something that is practically achievable in the
 short term with high confidence of good performance in a live environment. Furthermore, validators
-in AXIASolar are not the only stakers, and if we consider the number of stakers that can be possible
-on AXIASolar the number can scale up to hundreds of thousands. Since validators are performing
+in AXIACoin are not the only stakers, and if we consider the number of stakers that can be possible
+on AXIACoin the number can scale up to hundreds of thousands. Since validators are performing
 critical consensus work to maintain the security of the chain including all of its shards, a more
 modest number of validators is estimated to start. Upon later improvements, such as implementing
 signature aggregation for finalization messages, the number of validators could reasonably scale up.
-However, increasing validators above one thousand remains a goal for later iterations of AXIASolar.
+However, increasing validators above one thousand remains a goal for later iterations of AXIACoin.
 
 It is also worth mentioning that one thousand validators is more than the number of validators of
-similar PoS chains with comparable levels of economic security as AXIASolar. The closest contenders
-are operating with around 150 validators, while AXIASolar is already securely running with
+similar PoS chains with comparable levels of economic security as AXIACoin. The closest contenders
+are operating with around 150 validators, while AXIACoin is already securely running with
 {{ num_validators }}.
 
 Additionally, other projects sometimes have a different definition of _validator_ that approximates
-more closely to remote signing keys without the full operation of a validating node. On AXIASolar,
+more closely to remote signing keys without the full operation of a validating node. On AXIACoin,
 each validator is running their own validating node and performing full verification of the Relay
 Chain, voting on finality, producing blocks in their decided slots, and verifying parachain state
 transitions. Other projects may consider validators and "validating nodes" as separate entities.
@@ -118,42 +118,42 @@ still share in staking rewards.
 
 ### What is the block time of the Relay Chain?
 
-Both the AXIALunar and AXIASolar networks are currently operating at a rate of one block every six
+Both the AXIALunar and AXIACoin networks are currently operating at a rate of one block every six
 seconds.
 
 This may be changed in the future. It may go as low as two to three seconds after optimizations, or
 potentially increase in order to handle the capacity of the parachain networking in a live
 environment.
 
-### Does AXIASolar have smart contracts?
+### Does AXIACoin have smart contracts?
 
-No - and yes. The AXIASolar Relay Chain does not implement smart contracts natively. The reason for
-not having smart contracts on the Relay Chain is part of the design philosophy for AXIASolar that
+No - and yes. The AXIACoin Relay Chain does not implement smart contracts natively. The reason for
+not having smart contracts on the Relay Chain is part of the design philosophy for AXIACoin that
 dictates that the Relay Chain should be the minimal logic required to accomplish its job.
 
-However, AXIASolar will be a platform for other chains that _do_ implement smart contracts. It's
+However, AXIACoin will be a platform for other chains that _do_ implement smart contracts. It's
 possible for parachains to enable smart contract functionality and then benefit from the security
-and interoperability features of AXIASolar. Additionally, existing smart contract chains can connect
-to AXIASolar as a parachain, or via a bridge.
+and interoperability features of AXIACoin. Additionally, existing smart contract chains can connect
+to AXIACoin as a parachain, or via a bridge.
 
-While the AXIASolar Relay Chain does not implement smart contracts directly, undoubtedly there will
-be parachains that do. So it's better to say that the AXIASolar _ecosystem_ has smart contracts
-versus "AXIASolar has smart contracts."
+While the AXIACoin Relay Chain does not implement smart contracts directly, undoubtedly there will
+be parachains that do. So it's better to say that the AXIACoin _ecosystem_ has smart contracts
+versus "AXIACoin has smart contracts."
 
-### How will the AXIASolar Relay Chain connect to external chains in the ecosystem?
+### How will the AXIACoin Relay Chain connect to external chains in the ecosystem?
 
 One of the cornerstone interoperability technologies being researched and developed for deployment
-on AXIASolar is cross-chain bridges. Bridges come in a variety of flavors with varying levels of
-trust associated with them. AXIASolar is predominantly researching the trust-minimized flavor that
+on AXIACoin is cross-chain bridges. Bridges come in a variety of flavors with varying levels of
+trust associated with them. AXIACoin is predominantly researching the trust-minimized flavor that
 imposes economic costs on the operators of the bridge, and therefore makes it economically secure.
 Bridge efforts are being worked on in concert with other projects in the ecosystem. Eventually,
-there will be bridges between AXIASolar and most of the other major chains.
+there will be bridges between AXIACoin and most of the other major chains.
 
 ## SOLAR
 
 ### What is the difference between SOLAR (old) and new SOLAR?
 
-The SOLAR (old) unit on AXIASolar was at twelve decimal places, otherwise known as 1e12 Plancks. On 21
+The SOLAR (old) unit on AXIACoin was at twelve decimal places, otherwise known as 1e12 Plancks. On 21
 August, 2020, Denomination Day, the SOLAR (old) value was redenominated to 1e10 (10_000_000_000, or
 ten billion) Plancks, meaning that the new SOLAR was valued at ten decimal places. Following the
 [redenomination](redenomination.md), the new SOLAR is called SOLAR.
@@ -169,26 +169,26 @@ based on the amount of SOLAR that are staked. Please see the article on
 
 ## Governance
 
-### What prevents AXIASolar governance from failing?
+### What prevents AXIACoin governance from failing?
 
-AXIASolar's governance has already been shown to work. Examples can be found in the runtime upgrades
+AXIACoin's governance has already been shown to work. Examples can be found in the runtime upgrades
 that have successfully taken place through on the testnets as well as in a real economic environment
-on [AXIALunar](https://lunar.wiki.axiacoin.network) and AXIASolar itself.
+on [AXIALunar](https://lunar.wiki.axiacoin.network) and AXIACoin itself.
 
 It is fair to say that the field of on-chain blockchain governance is still new, and no one can
-claim to know exactly what the optimal version of on-chain governance is yet. However, AXIASolar
+claim to know exactly what the optimal version of on-chain governance is yet. However, AXIACoin
 takes a brave step forward in pioneering thought-through mechanisms for evolving a blockchain.
 
 Blockchains need a method to adapt and evolve. Therefore, an on-chain governance system was
-necessary for the long-term success of AXIASolar. Ultimately, it is the token holders that are
-responsible for preventing AXIASolar's governance from failing by using their economic value and
+necessary for the long-term success of AXIACoin. Ultimately, it is the token holders that are
+responsible for preventing AXIACoin's governance from failing by using their economic value and
 conviction to sway the progression of the protocol.
 
-### What prevents AXIASolar governance from becoming plutocratic?
+### What prevents AXIACoin governance from becoming plutocratic?
 
 A savvy reader might have noticed that the answer to the previous question endowed the token holder
-with the ultimate responsibility to ensure that AXIASolar's governance does not fail. By following
-the train of this assertion, one might assume that AXIASolar's governance is susceptible to becoming
+with the ultimate responsibility to ensure that AXIACoin's governance does not fail. By following
+the train of this assertion, one might assume that AXIACoin's governance is susceptible to becoming
 ruled by a few large token holders (called _whales_ in trading parlance) and therefore become a mere
 plutocracy (rule of the rich).
 
@@ -199,7 +199,7 @@ time. Longer lock-ups display _conviction_ in a vote. Conviction voting could al
 determined minority to overrule the vote of an apathetic majority in certain situations. Another
 mechanism is known as Adaptive Quorum Biasing. This makes proposals have a varying threshold for
 approval or rejection based on what part of the governance protocol the proposal originated in. For
-details on the subtleties of AXIASolar's governance system, please see the
+details on the subtleties of AXIACoin's governance system, please see the
 [governance page](../learn/learn-governance.md).
 
 ## Parachains
@@ -209,7 +209,7 @@ details on the subtleties of AXIASolar's governance system, please see the
 Parachains have the flexibility to implement their own monetary system or incentive structure for
 collators. However, this is not strictly necessary. Since the collator's job is to continue to give
 recent state transitions to the validators on the Relay Chain who validate each transition, the
-security of the parachain and the AXIASolar network is completely separate from parachain economics.
+security of the parachain and the AXIACoin network is completely separate from parachain economics.
 Parachains need collators to continue to progress, so it wouldn't be unreasonable to see them
 incentivize collator nodes in some way, but the specific mechanism is completely up to parachain
 implementers.
@@ -243,9 +243,9 @@ as well as community contributors. A [Nim](https://github.com/status-im/nim-libp
 library also exists. Libp2p as a whole is an open source project that is actively developed and
 expanded on various code repositories hosted on [their GitHub](https://github.com/libp2p).
 
-### Does AXIASolar use libp2p?
+### Does AXIACoin use libp2p?
 
-Yes, since AXIASolar is built with Substrate. Substrate uses a networking protocol that is based on
+Yes, since AXIACoin is built with Substrate. Substrate uses a networking protocol that is based on
 libp2p (specifically the Rust libp2p library). However, Substrate uses a mix of standard libp2p
 protocols and protocols that are homegrown and not official libp2p standards. Of the standards
 protocols, those which are shared with other implementations of libp2p such as IPFS, are
@@ -290,11 +290,11 @@ the Substrate documentation for more detailed information.
 ## Answered by Gav series
 
 The "Answered by Gav" series is a collection of posts uploaded to Reddit of questions that have been
-asked in the AXIASolar Watercooler Riot channel and answered by AXIASolar founder Gavin Wood.
+asked in the AXIACoin Watercooler Riot channel and answered by AXIACoin founder Gavin Wood.
 
 - [Reason for using asynchronous rather than synchronous communication? Difference in terms of TPS?](https://www.reddit.com/r/dot/comments/b87d96/answered_by_gav_reason_for_using_asynchronous/)
 - [How exactly do validators in an ETH parachain keep moving around and how is communication between zones trustless?](https://www.reddit.com/r/dot/comments/b87awr/answered_by_gav_how_exactly_do_validators_in_an/)
-- [What are the main issues with Bitcoin integration and will it ever be possible? Same problem with other POW chains? Is AXIASolar only going to work with POS chains? How is it trust-less in comparison to Cosmos though?](https://www.reddit.com/r/dot/comments/b87bua/answered_by_gav_what_are_the_main_issues_with/)
+- [What are the main issues with Bitcoin integration and will it ever be possible? Same problem with other POW chains? Is AXIACoin only going to work with POS chains? How is it trust-less in comparison to Cosmos though?](https://www.reddit.com/r/dot/comments/b87bua/answered_by_gav_what_are_the_main_issues_with/)
 - [What are the current thoughts around governance especially since projects have to be voted in to receive the parachains security?](https://www.reddit.com/r/dot/comments/b87cjz/answered_by_gav_what_are_the_current_thoughts/)
 - [Also is there any detailed overview of how exactly a token transfer from ETH could be exchanged with another chain's currency?](https://www.reddit.com/r/dot/comments/b87ds8/answered_by_gav_also_is_there_any_detailed/)
 - [Can I run multiple Validators with the same Session Key?](https://www.reddit.com/r/dot/comments/bcqrx9/answered_by_gav_can_i_run_multiple_validators/)

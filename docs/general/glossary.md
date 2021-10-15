@@ -13,11 +13,11 @@ potentially receive staking rewards in return for doing so.
 
 ## Alexander
 
-The fourth (now defunct) proof of concept (PoC-4) [testnet](##testnet) for AXIASolar.
+The fourth (now defunct) proof of concept (PoC-4) [testnet](##testnet) for AXIACoin.
 
 ## Attestation
 
-In the AXIASolar validity system, an _attestation_ is a type of message that validators broadcast
+In the AXIACoin validity system, an _attestation_ is a type of message that validators broadcast
 that says whether they think a parachain candidate block is valid or invalid.
 
 ## Auction (Parachain)
@@ -29,11 +29,11 @@ Parachain auctions are how non-common-good parathreads win a slot to become a pa
 An authority is a generic term for the role in a blockchain that can participate in the consensus
 mechanisms. In [GRANDPA](#grandpa-finality-gadget), the authorities vote on chains they consider
 final. In BABE, the authorities are block producers. Authority sets can be chosen to be mechanisms
-such as AXIASolar's NPoS algorithm.
+such as AXIACoin's NPoS algorithm.
 
 ## BABE
 
-Blind Assignment of Block Extension is AXIASolar's block production mechanism.
+Blind Assignment of Block Extension is AXIACoin's block production mechanism.
 
 ## Block
 
@@ -64,16 +64,16 @@ also bond tokens in exchange for a parachain slot.
 
 ## Bounty
 
-A mechanism which works in some sense as the reverse of a Treasury Proposal, allowing the AXIASolar
-Council to indicate that there is a need to do some task for the AXIASolar network and allowing users
+A mechanism which works in some sense as the reverse of a Treasury Proposal, allowing the AXIACoin
+Council to indicate that there is a need to do some task for the AXIACoin network and allowing users
 to receive SOLAR in return for working on that task.
 
 ## Bridge
 
-A parachain that acts as an intermediary between the AXIASolar Relay Chain and an external chain, in
+A parachain that acts as an intermediary between the AXIACoin Relay Chain and an external chain, in
 such a way that it appears to the Relay Chain that the external chain is a parachain (i.e., meets
-the AXIASolar Host's requirements of parachains). Bridges allow for interaction between other
-blockchains, such as Ethereum and Bitcoin, that are not natively compatible with AXIASolar.
+the AXIACoin Host's requirements of parachains). Bridges allow for interaction between other
+blockchains, such as Ethereum and Bitcoin, that are not natively compatible with AXIACoin.
 
 ## Byzantine Fault Tolerance
 
@@ -116,7 +116,7 @@ waiting to become referenda. Compare the External queue.
 
 The process of a group of entities to agree on a particular data value (such as the ordering and
 makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus.
-The consensus algorithm used by AXIASolar is [GRANDPA](#grandpa-finality-gadget).
+The consensus algorithm used by AXIACoin is [GRANDPA](#grandpa-finality-gadget).
 
 ## Crowdloan
 
@@ -136,7 +136,7 @@ network as opposed to being run on a specific system or set of systems.
 
 ## SOLAR
 
-The native token for AXIASolar. SOLAR serves three purposes: network governance (allowing them to vote
+The native token for AXIACoin. SOLAR serves three purposes: network governance (allowing them to vote
 on-chain upgrades and other exceptional events), general operation (rewarding good actors and
 punishing bad actors), and bonding (adding new parachains by "freezing" SOLAR while they are connected
 the Relay Chain).
@@ -166,7 +166,7 @@ conflicting chains.
 
 ## External Queue
 
-The queue for proposals originating with the AXIASolar Council which are waiting to become referenda.
+The queue for proposals originating with the AXIACoin Council which are waiting to become referenda.
 Compare the Community queue.
 
 ## Extrinsic
@@ -177,7 +177,7 @@ Extrinsics can take two forms, "[inherents](#inherent)" and "[transactions](#tra
 ## Finality
 
 The property of a block that cannot be reverted. Generally, created blocks are not final until some
-point in the future - perhaps never, in the case of "probabilistic finality". The AXIASolar Relay
+point in the future - perhaps never, in the case of "probabilistic finality". The AXIACoin Relay
 Chain uses a deterministic finality gadget known as [GRANDPA](#grandpa-finality-gadget).
 
 ## Finality Gadget
@@ -198,7 +198,7 @@ state of the blockchain at origination.
 ## Governance
 
 The process of determining what changes to the network are permissible, such as modifications to
-code or movement of funds. The governance system in AXIASolar is on-chain and revolves around
+code or movement of funds. The governance system in AXIACoin is on-chain and revolves around
 stakeholder voting.
 
 ## Governance Council
@@ -210,7 +210,7 @@ group to vote on and cancelling malicious referenda.
 
 ## GRANDPA Finality Gadget
 
-GHOST-based Recursive ANcestor Deriving Prefix Agreement. It is the finality gadget for AXIASolar,
+GHOST-based Recursive ANcestor Deriving Prefix Agreement. It is the finality gadget for AXIACoin,
 which allows asynchronous, accountable, and safe finality to the blockchain. For an overview of
 GRANDPA, see
 [this Medium post](https://medium.com/axiacoin.network/axiasolar-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372)
@@ -251,8 +251,8 @@ margin that each validator deems reasonable.
 
 ## Injected Account
 
-An account that is not directly managed by the AXIASolar UI but can be accessed through it, such as
-accounts controlled by the AXIASolar{.js} extension.
+An account that is not directly managed by the AXIACoin UI but can be accessed through it, such as
+accounts controlled by the AXIACoin{.js} extension.
 
 ## Interoperability
 
@@ -270,8 +270,8 @@ The abbreviation for AXIALunar network tokens.
 
 ## AXIALunar
 
-The "canary network" for AXIASolar. It consists of an early-release, unaudited version of the
-AXIASolar software. It is **not** a [testnet](##testnet) - after the transition to NPoS, the network
+The "canary network" for AXIACoin. It consists of an early-release, unaudited version of the
+AXIACoin software. It is **not** a [testnet](##testnet) - after the transition to NPoS, the network
 is entirely in the hands of the community (i.e., AXIALunar token holders).
 
 ## Lease Period
@@ -296,13 +296,13 @@ Short for "main network": the fully functional and acting chain that runs its ow
 
 ## Message
 
-In AXIASolar's XCMP protocol, a _message_ is arbitrary data that is sent from one parachain (the
+In AXIACoin's XCMP protocol, a _message_ is arbitrary data that is sent from one parachain (the
 egress chain) to another (the ingress chain) through a channel and ensured delivery by the validator
 set.
 
 ## Message Queue
 
-In AXIASolar's XCMP protocol, a _message queue_ is the list of messages waiting to be processed by a
+In AXIACoin's XCMP protocol, a _message queue_ is the list of messages waiting to be processed by a
 particular receiving parachain over a channel.
 
 ## Metadata
@@ -325,7 +325,7 @@ the good behavior of the validator. Nominated Proof-of-Stake differs from the mo
 Delegated Proof-of-Stake in that nominators are subject to loss of stake if they nominate a bad
 validator; delegators are not subject to loss of stake based on the behavior of the validator. Note
 that some other blockchain technologies may use the term Delegated Proof-of-Stake, even if
-delegators can be slashed. AXIASolar uses the Phragmén method to allocate stake to nominees.
+delegators can be slashed. AXIACoin uses the Phragmén method to allocate stake to nominees.
 
 ## Nominator
 
@@ -355,7 +355,7 @@ online, even if they haven't published a block this epoch. This is sometimes ref
 ## Origin
 
 The initiator of an extrinsic. A simple origin would be the account that is sending a token to
-another account. AXIASolar also supports more complex origin types, such as the root origin, from
+another account. AXIACoin also supports more complex origin types, such as the root origin, from
 which privileged functions can be called.
 
 ## Oversubscribed
@@ -364,7 +364,7 @@ If more than the maximum number of nominators nominate the same validator, it is
 and only the top staked nominators (ranked by the amount of stake, up to the maximum number of
 nominators) are paid rewards. Other nominators will receive no rewards for that era. The current
 maximum number of nominators is {{ axialunar_max_nominators }} on AXIALunar and
-{{ axiasolar_max_nominators }} on AXIASolar, but it can be modified via governance.
+{{ axiasolar_max_nominators }} on AXIACoin, but it can be modified via governance.
 
 ## Pallet
 
@@ -373,12 +373,12 @@ A [Substrate](##substrate) runtime module.
 ## Parachain
 
 A blockchain that meets several characteristics that allow it to work within the confines of the
-AXIASolar Host. Also known as "parallelized chain."
+AXIACoin Host. Also known as "parallelized chain."
 
 ## Parachain Development Kit (PDK)
 
 Similar to an [SDK](##sdk), parachain development kits (PDK) is a set of tools that make it easy for
-developers to create AXIASolar compatible [parachains](##parachain).
+developers to create AXIACoin compatible [parachains](##parachain).
 
 ## ParaID
 
@@ -386,8 +386,8 @@ A unique numeric (nonnegative integer) identifier for a parathread.
 
 ## Parathread
 
-A blockchain that works within the confines of the AXIASolar Host, thus allowing it to connect to the
-AXIASolar Relay Chain. This can be done either by becoming a parachain or connecting on a "pay as you
+A blockchain that works within the confines of the AXIACoin Host, thus allowing it to connect to the
+AXIACoin Relay Chain. This can be done either by becoming a parachain or connecting on a "pay as you
 go" basis. All parachains start their lifecycle as a parathread.
 
 ## Parachain Registry
@@ -398,23 +398,23 @@ chain.
 ## AXIA Technologies
 
 A company, founded by Dr. Gavin Wood and Dr. Jutta Steiner, that is developing Substrate and
-AXIASolar. It has also released several other projects including AXIA Ethereum and AXIA Secret
+AXIACoin. It has also released several other projects including AXIA Ethereum and AXIA Secret
 Store.
 
-## AXIASolar
+## AXIACoin
 
 A heterogeneous, multi-chain network allowing various blockchains of different characteristics to
 perform arbitrary, cross-chain communication under shared security.
 
-## AXIASolar Host
+## AXIACoin Host
 
-The environment in which a runtime module can be executed. Parachains must support the AXIASolar
-Host - external chains that do not will have to use a bridge. Previously known as the AXIASolar
+The environment in which a runtime module can be executed. Parachains must support the AXIACoin
+Host - external chains that do not will have to use a bridge. Previously known as the AXIACoin
 Runtime Environment or PRE.
 
-## AXIASolar Runtime Environment
+## AXIACoin Runtime Environment
 
-The previous name for the [AXIASolar Host](##axiasolar-host).
+The previous name for the [AXIACoin Host](##axiasolar-host).
 
 ## Proof of Stake (PoS)
 
@@ -437,7 +437,7 @@ Proof-of-Work system can have any number of participants.
 ## Proposal
 
 A potential function call to be voted on in a referendum. Proposals modify the behavior of the
-AXIASolar network, from minor parameter tuning up to replacing the runtime code.
+AXIACoin network, from minor parameter tuning up to replacing the runtime code.
 
 ## Protocol
 
@@ -448,7 +448,7 @@ and possible recovery methods.
 ## Random Seed
 
 A random seed is a pseudo-random number available on-chain. It is used in various places of the
-AXIASolar protocol, most prominently in [BABE](##babe) the block production mechanism.
+AXIACoin protocol, most prominently in [BABE](##babe) the block production mechanism.
 
 ## Referendum
 
@@ -510,9 +510,9 @@ Hot keys that are used for performing network operations by validators, for exam
 
 ## Shared Security
 
-The security model that AXIASolar uses whereby all chains are equally secured. This is achieved by
+The security model that AXIACoin uses whereby all chains are equally secured. This is achieved by
 placing proofs of the validity of parachain blocks into the Relay Chain such that, in order to
-revert finality of a single parachain, an attacker would need to attack the entire AXIASolar system.
+revert finality of a single parachain, an attacker would need to attack the entire AXIACoin system.
 
 ## Slashing
 
@@ -533,7 +533,7 @@ software.
 
 ## Staking
 
-The act of bonding tokens (for AXIASolar, SOLAR) by putting them up as "collateral" for a chance to
+The act of bonding tokens (for AXIACoin, SOLAR) by putting them up as "collateral" for a chance to
 produce a valid block (and thus obtain a block reward). Validators and nominators stake their SOLAR in
 order to secure the network.
 
@@ -549,12 +549,12 @@ AlphaNet version is called Westmint.
 
 ## Substrate
 
-A modular framework for building blockchains. AXIASolar is built using Substrate. Chains built with
+A modular framework for building blockchains. AXIACoin is built using Substrate. Chains built with
 Substrate will be easy to connect as parachains.
 
 ## Tabling
 
-In AXIASolar governance, bringing a proposal to a vote via referendum. Note that this is the British
+In AXIACoin governance, bringing a proposal to a vote via referendum. Note that this is the British
 meaning of "tabling", which is different from the US version, which means "to postpone" a measure.
 
 ## Teleport
@@ -609,7 +609,7 @@ get into the active set in a future era, this may turn into an active or inactiv
 
 ## Wallet
 
-A program that allows one to store private keys and sign transactions for AXIASolar or other
+A program that allows one to store private keys and sign transactions for AXIACoin or other
 blockchain networks.
 
 ## Wasm
@@ -618,7 +618,7 @@ The abbreviation for [WebAssembly](##webassembly).
 
 ## Watermark
 
-In AXIASolar's parachain messaging scheme, the _watermark_ is the minimum processed send-height of
+In AXIACoin's parachain messaging scheme, the _watermark_ is the minimum processed send-height of
 the receiving parachain. All messages on all channels that are sending to this parachain at or
 before the watermark are guaranteed to be processed.
 
@@ -630,7 +630,7 @@ methods to safeguard decentralization, to the benefit and for the stability of t
 
 ## WebAssembly
 
-An instruction format for a virtual, stack-based machine. AXIASolar Runtime Modules are compiled to
+An instruction format for a virtual, stack-based machine. AXIACoin Runtime Modules are compiled to
 WebAssembly. Also known as Wasm.
 
 ## Witness

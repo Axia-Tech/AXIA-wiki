@@ -5,7 +5,7 @@ sidebar_label: Parachain Crowdloans
 slug: ../learn-crowdloans
 ---
 
-{{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} allows parachains to source tokens
+{{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} allows parachains to source tokens
 for their parachain bids in a decentralized crowdloan.
 
 > Note: For information on how to participate in the crowdloan and parachain auction testing on
@@ -75,7 +75,7 @@ winning a slot, anyone can trigger the refund of crowdloan contributions back to
 owners. All contributions must be returned before the crowdloan is fully deleted from the system.
 
 Many projects will have dashboards available that allow users to participate in their crowdloans.
-AXIASolarJS apps also offers a breakdown of ongoing crowdloans on the
+AXIACoinJS apps also offers a breakdown of ongoing crowdloans on the
 [Apps page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.axiasolar.io#/parachains/crowdloan).
 
 Here is an example of the crowdloans in play during the very first AXIALunar auction.
@@ -84,4 +84,4 @@ Here is an example of the crowdloans in play during the very first AXIALunar auc
 
 Furthermore, check out this video on
 [How to Participate in Crowdloans](https://www.youtube.com/watch?v=YrTxDufrcQM) for steps on how to
-access available crowdloans on AXIASolarJS apps.
+access available crowdloans on AXIACoinJS apps.

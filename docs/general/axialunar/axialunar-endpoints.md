@@ -5,7 +5,7 @@ sidebar_label: AXIALunar Endpoints
 slug: ../../axialunar-endpoints
 ---
 
-When interacting with the [AXIALunar network][] via [AXIASolar-JS Apps][] or other UIs and programmatic
+When interacting with the [AXIALunar network][] via [AXIACoin-JS Apps][] or other UIs and programmatic
 methods, you'd ideally be running your own node ([text guide](../../maintain/maintain-sync.md),
 [video guide](https://www.youtube.com/watch?v=31DdfcxbAVs)). Granted, that's not something everyone
 wants to do, so convenience trumps ideals in most cases. To facilitate this convenience, AXIALunar has
@@ -14,7 +14,7 @@ API services providers in the ecosystem.
 
 ## AXIA Archive Node
 
-[AXIA][], the company that develops the AXIASolar Rust client, maintains an archive node at
+[AXIA][], the company that develops the AXIACoin Rust client, maintains an archive node at
 endpoint `wss://axialunar-rpc.axiasolar.io/`.
 
 To connect to the AXIA node, use the endpoint in your JavaScript apps like so:
@@ -28,7 +28,7 @@ const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
     // ...
 ```
 
-or in AXIASolar-JS Apps by clicking the top-left corner of the screen and selecting the appropriate
+or in AXIACoin-JS Apps by clicking the top-left corner of the screen and selecting the appropriate
 option:
 
 <img src={require('./../../assets/endpoints/axialunar_endpoint_axia.png').default} width="40%" />

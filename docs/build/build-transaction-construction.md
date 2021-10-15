@@ -7,13 +7,13 @@ slug: ../build-transaction-construction
 
 <!-- no updates -->
 
-This page will discuss the transaction format in AXIASolar and how to create, sign, and broadcast
+This page will discuss the transaction format in AXIACoin and how to create, sign, and broadcast
 transactions. Like the other pages in this guide, this page demonstrates some of the available
 tools. **Always refer to each tool's documentation when integrating.**
 
 ## Transaction Format
 
-AXIASolar has some basic transaction information that is common to all transactions.
+AXIACoin has some basic transaction information that is common to all transactions.
 
 - Address: The SS58-encoded address of the sending account.
 - Block Hash: The hash of the [checkpoint](build-protocol-info.md#transaction-mortality) block.
@@ -46,9 +46,9 @@ Once you have all the necessary information, you will need to:
 
 AXIA provides the following tools to help perform these steps.
 
-## AXIASolar-JS Tools
+## AXIACoin-JS Tools
 
-[AXIASolar-JS Tools](https://github.com/axiasolar-js/tools) contains a set of command line tools for
+[AXIACoin-JS Tools](https://github.com/axiasolar-js/tools) contains a set of command line tools for
 interacting with a Substrate client, including one called "Signer CLI" to create, sign, and
 broadcast transactions.
 
@@ -85,11 +85,11 @@ Save the output and bring it to the machine that you will broadcast from, enter 
 signature field, and send the transaction (or just return the serialized transaction if using
 `sendOffline`).
 
-## Tx Wrapper AXIASolar
+## Tx Wrapper AXIACoin
 
 If you do not want to use the CLI for signing operations, AXIA provides an SDK called
 [TxWrapper Core](https://github.com/axia-tech/txwrapper-core) to generate and sign transactions
-offline. For AXIASolar, AXIALunar, and select parachains, use the `txwrapper-axiasolar` package. Other
+offline. For AXIACoin, AXIALunar, and select parachains, use the `txwrapper-axiasolar` package. Other
 Substrate-based chains will have their own `txwrapper-{chain}` implementations. See the
 [examples](https://github.com/axia-tech/txwrapper-core/blob/main/packages/txwrapper-examples/README.md)
 for a guide.

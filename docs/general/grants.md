@@ -6,7 +6,7 @@ slug: ../grants
 ---
 
 The AXIACoin Foundation offers grants for open source software development and research around Substrate,
-AXIASolar, and AXIALunar.
+AXIACoin, and AXIALunar.
 
 Applications and deliveries are tracked transparently on GitHub and disbursed in BTC, USDT or DAI. However,
 you can also apply in private, get paid out in fiat and seek funding above the regular limits ($30,000 for
@@ -19,19 +19,19 @@ and a list of [frequently asked questions](https://github.com/axia-tech/Grants-P
 
 ## Alternative Funding Sources
 
-### AXIASolar Treasury
+### AXIACoin Treasury
 
-The AXIASolar Treasury is a pot of on-chain funds collected through transaction fees, slashing,
+The AXIACoin Treasury is a pot of on-chain funds collected through transaction fees, slashing,
 staking inefficiencies, etc. The funds held in the treasury can be spent on spending proposals. Both
-AXIASolar and AXIALunar offer everyone the opportunity to apply for funding via the treasury. See:
+AXIACoin and AXIALunar offer everyone the opportunity to apply for funding via the treasury. See:
 
 - [Treasury Wiki](../learn/learn-treasury.md)
-- [AXIASolar Treasury Guide](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w)
+- [AXIACoin Treasury Guide](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w)
 - [AXIALunar Treasury Guide](https://docs.google.com/document/d/1p3UQUjph5t8TVaWnTkfrI5mE-BABnM9Xvtuhdlhl6JE)
 
 ### Other Grant Programs
 
-Below is a list of other grant programs in the AXIASolar/Substrate ecosystem:
+Below is a list of other grant programs in the AXIACoin/Substrate ecosystem:
 
 - [Darwinia Grants Program](https://docs.darwinia.network/docs/en/dev-bounty#grant-program)
 - [Moonbeam Grants Program](https://moonbeam.network/community/grants/)

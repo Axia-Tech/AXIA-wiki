@@ -1,12 +1,12 @@
 ---
 id: learn-keys
-title: AXIASolar Keys
-sidebar_label: AXIASolar Keys
+title: AXIACoin Keys
+sidebar_label: AXIACoin Keys
 slug: ../learn-keys
 ---
 
 Public and private keys are an important aspect of most crypto-systems and an essential component
-that enables blockchains like AXIASolar to exist.
+that enables blockchains like AXIACoin to exist.
 
 ## Account Keys
 
@@ -62,7 +62,7 @@ meant to control funds and should only be used for their intended purpose. They 
 regularly; your controller only need create a certificate by signing a session public key and
 broadcast this certificate via an extrinsic.
 
-AXIASolar uses four session keys:
+AXIACoin uses four session keys:
 
 - GRANDPA: ed25519
 - BABE: sr25519
@@ -79,7 +79,7 @@ aggregation.
 
 ### Why was `ed25519` selected over `secp256k1`?
 
-The original key derivation cryptography that was implemented for AXIASolar and Substrate chains was
+The original key derivation cryptography that was implemented for AXIACoin and Substrate chains was
 `ed25519`, which is a Schnorr signature algorithm implemented over the Edward's Curve 25519 (so
 named due to the parameters of the curve equation).
 
@@ -87,7 +87,7 @@ Most cryptocurrencies, including Bitcoin and Ethereum, currently use ECDSA signa
 secp256k1 curve. This curve is considered much more secure than NIST curves, which
 [have possible backdoors from the NSA](#appendix-a-on-the-security-of-curves). The Curve25519 is
 considered possibly _even more_ secure than this one and allows for easier implementation of Schnorr
-signatures. A recent patent expiration on it has made it the preferred choice for use in AXIASolar.
+signatures. A recent patent expiration on it has made it the preferred choice for use in AXIACoin.
 
 The choice of using Schnorr signatures over using ECDSA is not so cut and dry. As stated in Jeff
 Burdges' (a Web3 researcher)
@@ -131,10 +131,10 @@ verifiable random function (VRF). It also includes various minor improvements su
 scheme STROBE that can theoretically process huge amounts of data with only one call across the Wasm
 boundary.
 
-The implementation of Schnorr signatures that is used in AXIASolar and implements the Schnorrkel
+The implementation of Schnorr signatures that is used in AXIACoin and implements the Schnorrkel
 protocols over the Ristretto compression of the Curve25519 is known as **sr25519**.
 
-### Are BLS signatures used in AXIASolar?
+### Are BLS signatures used in AXIACoin?
 
 Not yet, but they will be. BLS signatures allow more efficient signature aggregation. Because
 GRANDPA validators are usually signing the same thing (e.g. a block), it makes sense to aggregate
@@ -150,14 +150,14 @@ As stated in the BLS library's README,
 
 Even though Schnorr signatures allow for signature aggregation, BLS signatures are much more
 efficient in some fashions. For this reason it will be one of the session keys that will be used by
-validators on the AXIASolar network and critical to the GRANDPA finality gadget.
+validators on the AXIACoin network and critical to the GRANDPA finality gadget.
 
 ## Resources
 
 - [Key discovery attack on BIP32-Ed25519](https://forum.axiacoin.org/t/key-recovery-attack-on-bip32-ed25519/44) -
   Forum post detailing a potential attack on BIP32-Ed25519. A motivation for transition to the
   sr25519 variant.
-- [Account signatures and keys in AXIASolar](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70) -
+- [Account signatures and keys in AXIACoin](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70) -
   Original forum post by Web3 researcher Jeff Burdges.
 - [Are Schnorr signatures quantum computer resistant?](https://bitcoin.stackexchange.com/questions/57965/are-schnorr-signatures-quantum-computer-resistant/57977#57977)
 

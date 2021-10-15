@@ -6,10 +6,10 @@ slug: ../learn-parathreads
 ---
 
 Parathreads are an idea for parachains to temporarily participate (on a block by block basis) in
-AXIASolar security without needing to lease a dedicated parachain slot. This is done through
+AXIACoin security without needing to lease a dedicated parachain slot. This is done through
 economically sharing the scarce resource of a _parachain slot_ among a number of competing resources
 (parathreads). Chains that otherwise would not be able to acquire a full parachain slot, or do not
-find it economically sensible to do so, are enabled to participate in AXIASolar's shared security
+find it economically sensible to do so, are enabled to participate in AXIACoin's shared security
 &mdash; albeit with an associated fee per executed block. It also offers a graceful off-ramp to
 parachains that no longer require a dedicated parachain slot, but would like to continue using the
 Relay Chain.
@@ -34,8 +34,8 @@ Collators will offer a bid designated in SOLAR for inclusion of a parathread blo
 Relay Chain block author is able to select from these bids to include a parathread block. The
 obvious incentive is for them to accept the block candidate with the highest bid, which would bring
 them the most profit. The tokens from the parathread bids will likely be split 80-20, meaning that
-80% goes into AXIASolar treasury and 20% goes to the block author. This is the same split that
-applies also to transaction fees and, like many other parameters in AXIASolar, can be changed through
+80% goes into AXIACoin treasury and 20% goes to the block author. This is the same split that
+applies also to transaction fees and, like many other parameters in AXIACoin, can be changed through
 a governance mechanism.
 
 ## Parachain vs. Parathread
@@ -46,19 +46,19 @@ an independent chain with secured bridge, a parachain, or a parathread. It can s
 last two states with relatively minimal effort since the difference is more of an economic
 distinction than a technological one.
 
-Parathreads have the exact same benefits for connecting to AXIASolar that a full parachain has.
+Parathreads have the exact same benefits for connecting to AXIACoin that a full parachain has.
 Namely, it is able to send messages to other para{chain,threads} through XCMP and it is secured
-under the full economic security of AXIASolar's validator set.
+under the full economic security of AXIACoin's validator set.
 
 The difference between parachains and parathreads is economic. Parachains must be registered through
-a normal means of AXIASolar, i.e. governance proposal or parachain slot auction. Parathreads have a
+a normal means of AXIACoin, i.e. governance proposal or parachain slot auction. Parathreads have a
 fixed fee for registration that would realistically be much lower than the cost of acquiring a
 parachain slot. Similar to how SOLAR are locked for the duration of parachain slots and then returned
 to the winner of the auction, the deposit for a parathread will be returned to the parathread after
 the conclusion of its term.
 
 Registration of the parathread does not guarantee anything more than the registration of the
-parathread code to the AXIASolar Relay Chain. When a parathread progresses by producing a new block,
+parathread code to the AXIACoin Relay Chain. When a parathread progresses by producing a new block,
 there is a fee that must be paid in order to participate in a per-block auction for inclusion in the
 verification of the next Relay Chain block. All parathreads that are registered are competing in
 this auction for their parathread to be included for progression.
@@ -85,7 +85,7 @@ There are two sources of compensation for collators:
    local parathread inflation or via a stockpile of funds like a treasury.
 
 Collators may be paid in local parathread currency. However, the Relay Chain transacts with the
-AXIASolar universal currency (SOLAR) only. Collators must then submit block candidates with an
+AXIACoin universal currency (SOLAR) only. Collators must then submit block candidates with an
 associated bid in SOLAR.
 
 ## Parachain Slot Swaps

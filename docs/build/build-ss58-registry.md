@@ -5,14 +5,14 @@ sidebar_label: SS58 Registry
 slug: ../build-ss58-registry
 ---
 
-Substrate-based chains, including the AXIASolar and AXIALunar relay chains, use an
+Substrate-based chains, including the AXIACoin and AXIALunar relay chains, use an
 [SS58 encoding](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) for
 their address formats. This page serves as a registry for teams to see which chain corresponds to a
 given prefix, and which prefixes are availabe.
 
 | Prefix | Network               | Name                                                  | Symbols                                   | Decimals               | Standard Account | Website                       |
 | ------ | --------------------- | ----------------------------------------------------- | ----------------------------------------- | ---------------------- | ---------------- | ----------------------------- |
-| 0      | axiasolar              | AXIASolar Relay Chain                                  | SOLAR                                       | 10                     | \*25519          | https://axiacoin.network      |
+| 0      | axiasolar              | AXIACoin Relay Chain                                  | SOLAR                                       | 10                     | \*25519          | https://axiacoin.network      |
 | 1      | null                  | Bare 32-bit Schnorr/Ristretto (S/R 25519) public key. | null                                      | null                   | null             | null                          |
 | 2      | axialunar                | AXIALunar Relay Chain                                    | LUNAR                                       | 12                     | \*25519          | https://axialunar.network        |
 | 3      | null                  | Bare 32-bit Ed25519 public key.                       | null                                      | null                   | null             | null                          |

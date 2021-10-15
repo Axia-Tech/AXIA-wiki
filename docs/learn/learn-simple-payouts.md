@@ -5,7 +5,7 @@ sidebar_label: Simple Payouts
 slug: ../learn-simple-payouts
 ---
 
-AXIASolar and AXIALunar make stakers claim their rewards for past eras by submitting a transaction. This
+AXIACoin and AXIALunar make stakers claim their rewards for past eras by submitting a transaction. This
 naturally leads to spreading out reward distribution, as people make transactions at disparate
 times, rather than updating the accounts of all stakers in a single block.
 
@@ -15,13 +15,13 @@ and ensure that the network maintains a constant block time. If all rewards were
 block, this could cause serious issues with the stability of the network.
 
 Simple payouts require one transaction per validator, per [era](../general/glossary.md##era), to claim rewards.
-The reason AXIASolar requires this is to avoid an attack where someone has several thousand accounts
+The reason AXIACoin requires this is to avoid an attack where someone has several thousand accounts
 nominating a single validator. The major cost in reward distribution is mutating the accounts in
-storage, and AXIASolar cannot pay out several thousand accounts in a single transaction.
+storage, and AXIACoin cannot pay out several thousand accounts in a single transaction.
 
 ## Claiming Rewards
 
-AXIASolar stores the last 84 eras of reward information (e.g. maps of era number to validator points,
+AXIACoin stores the last 84 eras of reward information (e.g. maps of era number to validator points,
 staking rewards, nomination exposure, etc.). Rewards will not be claimable more than 84 eras after
 they were earned. This means that all rewards must be claimed within a maximum of 84 eras, although
 under certain circumstances (described below) this may be as low as 28 eras.
@@ -36,7 +36,7 @@ reward would no longer be claimable.
 > before 28 eras have passed.
 
 Anyone can trigger a payout for any validator, as long as they are willing to pay the transaction
-fee. Someone must submit a transaction with a validator ID and an era index. AXIASolar will
+fee. Someone must submit a transaction with a validator ID and an era index. AXIACoin will
 automatically calculate that validator's reward, find the top {{ axiasolar_max_nominators }}
 nominators for that era, and distribute the rewards pro rata.
 
@@ -44,10 +44,10 @@ nominators for that era, and distribute the rewards pro rata.
 > each validator to reduce the complexity of the staking set.
 
 These details are handled for you automatically if you use the
-[AXIASolar-JS UI](https://axiasolar.js.org/apps/#/staking/payout), which also allows you to submit
+[AXIACoin-JS UI](https://axiasolar.js.org/apps/#/staking/payout), which also allows you to submit
 batches of eras at once.
 
-To claim rewards on AXIASolar-JS UI, you will need to be in the "Payouts" tab underneath "Staking",
+To claim rewards on AXIACoin-JS UI, you will need to be in the "Payouts" tab underneath "Staking",
 which will list all the pending payouts for your stashes.
 
 ![pending-payouts](../assets/axiasolarjs_payout_page.png)
@@ -64,7 +64,7 @@ transaction.
 
 ## F.A.Q. and Cautionary Notes
 
-1. Rewards expire after 84 eras. On AXIASolar, that's about 84 days. On AXIALunar, it is approximately
+1. Rewards expire after 84 eras. On AXIACoin, that's about 84 days. On AXIALunar, it is approximately
    21 days. Validators should claim all pending rewards before killing their stash in the event the
    validator decides to `chill` -> `unbonds all` -> `withdraws unbonded`. Nominators will not miss
    out on rewards if they claim the pending rewards for a validator within 28 days. Essentially, the

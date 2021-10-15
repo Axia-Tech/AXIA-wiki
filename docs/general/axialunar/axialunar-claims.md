@@ -5,7 +5,7 @@ sidebar_label: Claims
 slug: ../../axialunar-claims
 ---
 
-The AXIALunar network is AXIASolar's experimental, community-focused R&D network. If you held the SOLAR
+The AXIALunar network is AXIACoin's experimental, community-focused R&D network. If you held the SOLAR
 indicator token at the time of the genesis block of AXIALunar, you are entitled to claim an equivalent
 amount of LUNAR on the AXIALunar network.
 
@@ -17,7 +17,7 @@ tokens. There is no deadline for claiming LUNAR.
 You will need to generate a AXIALunar account to claim LUNAR. There are a few ways you can create one.
 
 For most users, we recommend using the
-[AXIASolar{.js} browser extension](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en)
+[AXIACoin{.js} browser extension](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en)
 since it will allow you to store your encrypted keystore locally.
 
 In terms of hardware wallet support, you can use the [AXIALunar Ledger application](axialunar-ledger.md),
@@ -27,7 +27,7 @@ Another option you may consider using is the Subkey command line utility, which 
 take extra steps to protect the security of your key.
 
 There are a variety of other wallets that you can use; see the
-[AXIASolar Wiki Wallets page](../../build/build-wallets.md). Many of these wallets support generating AXIALunar
+[AXIACoin Wiki Wallets page](../../build/build-wallets.md). Many of these wallets support generating AXIALunar
 accounts as well.
 
 ### Using AXIALunar Ledger application
@@ -35,9 +35,9 @@ accounts as well.
 Please follow the instructions for [installing the AXIALunar Ledger application](axialunar-ledger.md) and
 then proceed to step 2 below.
 
-### Using AXIASolar{.js} extension (Chrome/Brave or Firefox)
+### Using AXIACoin{.js} extension (Chrome/Brave or Firefox)
 
-1. Install the AXIASolar{.js} extension from the
+1. Install the AXIACoin{.js} extension from the
    [Chrome store](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en)
    or [Firefox store](https://addons.mozilla.org/en-US/firefox/addon/axiasolar-js-extension/).
 2. Click on the settings button to change the network to "AXIALunar (canary)". <img
@@ -114,13 +114,13 @@ a new seed, you can convert the Substrate address to a AXIALunar address by foll
 See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) or
 enter `subkey --help` for more usage examples.
 
-### Using AXIASolar-JS UI
+### Using AXIACoin-JS UI
 
-1. Open up the [AXIASolar-JS UI](https://axiasolar.js.org/apps) and navigate to the top left corner of
+1. Open up the [AXIACoin-JS UI](https://axiasolar.js.org/apps) and navigate to the top left corner of
    the navigation. This will open up a panel of network options to select from. Select on "AXIALunar",
    either from AXIA or AXIACoin Foundation, then "Switch".
 
-2. Navigate to the [AXIASolar-JS UI Accounts Tab](https://axiasolar.js.org/apps/#/accounts) and click
+2. Navigate to the [AXIACoin-JS UI Accounts Tab](https://axiasolar.js.org/apps/#/accounts) and click
    on the "Add account" button.
 
 ![axialunar add account](../../assets/axialunar/axialunar_add_account.png)
@@ -184,7 +184,7 @@ If you used one of the generation methods that gave you a generic Substrate addr
 address.
 
 1. Copy your Substrate generic address to the clipboard.
-2. Go to the [AXIASolar-JS UI](https://axiasolar.js.org/apps).
+2. Go to the [AXIACoin-JS UI](https://axiasolar.js.org/apps).
 3. Go to the "Settings" tab and find the configuration for "address network prefix".
 4. Select "Substrate (development)" and click "Save and reload".
 5. Go to the "Address book" and click the "Add contact" button.
@@ -200,11 +200,11 @@ There are two methods to claim LUNAR.
 
 ### SOLAR Holders
 
-Those who participated in the AXIASolar sales before 2020 and have been allocated SOLAR indicator
+Those who participated in the AXIACoin sales before 2020 and have been allocated SOLAR indicator
 tokens on Ethereum can claim a proportional amount of LUNAR on the AXIALunar Network.
 
 To do this you must sign a message containing the address of your AXIALunar account. You can do this by
-using the AXIASolar-JS UI
+using the AXIACoin-JS UI
 [Claims app](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.axiasolar.io#/claims). Ensure
 that you are connected to the AXIALunar network (displayed in the upper-left hand corner of the
 screen). If you are not, change the network to AXIALunar by clicking in the network change tab in the
@@ -217,7 +217,7 @@ If you haven't already done so, you will need to generate a AXIALunar address. S
 
 #### Claiming your LUNAR with MyCrypto
 
-The AXIASolar-JS [Claims app](https://axiasolar.js.org/apps/#/claims) helps you sign a message from
+The AXIACoin-JS [Claims app](https://axiasolar.js.org/apps/#/claims) helps you sign a message from
 MyCrypto. MyCrypto is good to use in case you have stored the key to the Ethereum account holding
 your SOLAR indicator tokens on a hardware device like a Ledger Nano S or a Trezor. It also supports
 raw private keys, mnemonics and the AXIA signer.
@@ -228,7 +228,7 @@ raw private keys, mnemonics and the AXIA signer.
 > [releases page](https://github.com/MyCryptoHQ/MyCrypto/releases).
 
 Once you've downloaded MyCrypto and have it running locally (we recommend an air-gapped computer for
-maximum security), you can start by navigating to the Claims app on the AXIASolar-JS UI. Select the
+maximum security), you can start by navigating to the Claims app on the AXIACoin-JS UI. Select the
 account you would like to claim the LUNAR into and click the blue "Continue" button to proceed. Your
 screen should look something like this:
 
@@ -249,7 +249,7 @@ When you click "Sign Message" you will get a JSON output like the below:
 ![Claim Step 3](../../assets/axialunar/claim/claim_3.png)
 
 Copy and paste the JSON output of the signed message from MyCrypto into the input box on the
-AXIASolar-JS UI and click "Confirm Claim."
+AXIACoin-JS UI and click "Confirm Claim."
 
 ![Claim Step 3](../../assets/axialunar/claim/claim-3.png)
 
@@ -262,7 +262,7 @@ launch period balance transfers will not be enabled.
 
 #### Verifying your Claim
 
-After you make an on-chain claim for LUNAR, your balance should be updated on AXIASolar-JS Apps
+After you make an on-chain claim for LUNAR, your balance should be updated on AXIACoin-JS Apps
 immediately.
 
 Having trouble? Send an email to [support@axiacoin.network](mailto:support@axiacoin.network).

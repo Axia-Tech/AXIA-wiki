@@ -1,20 +1,20 @@
 ---
 id: learn-launch
-title: AXIASolar Launch Phases
-sidebar_label: AXIASolar Launch Phases
-description: An explanation of AXIASolar's launch process and its individual phases
+title: AXIACoin Launch Phases
+sidebar_label: AXIACoin Launch Phases
+description: An explanation of AXIACoin's launch process and its individual phases
 slug: ../learn-launch
 ---
 
-The AXIASolar network has a phased roll-out plan, with important milestones toward decentralization
-marking each phase. Keep up-to-date with the AXIASolar's phased roll-out plan at by viewing the
+The AXIACoin network has a phased roll-out plan, with important milestones toward decentralization
+marking each phase. Keep up-to-date with the AXIACoin's phased roll-out plan at by viewing the
 [roadmap](https://axiacoin.network/launch-roadmap/)
 
 **Current Phase: Parachain Rollout**
 
 ## The PoA Launch
 
-The Genesis block of the AXIASolar network was launched on May 26, 2020, as a Proof of Authority
+The Genesis block of the AXIACoin network was launched on May 26, 2020, as a Proof of Authority
 (PoA) network. Governance was restricted to the single Sudo (super-user) key, which was held by Web3
 Foundation to issue the commands and upgrades necessary to complete the launch process. During this
 time, validators started joining the network and signaling their intention to participate in
@@ -31,7 +31,7 @@ election. Following this election, the network transitioned from PoA into its se
 ## Governance
 
 After the chain had been running well with the validator set, the Sudo key issued a runtime upgrade
-that enabled the suite of governance modules in AXIASolar; namely, the modules to enable a
+that enabled the suite of governance modules in AXIACoin; namely, the modules to enable a
 [Council](learn-governance.md#council), a
 [Technical Committee](learn-governance.md#technical-committee), and
 [public referenda](learn-governance.md#public-referenda).
@@ -48,31 +48,31 @@ under control of any centralized authority.
 
 To enable balance transfers, the community [made a public proposal](../maintain/maintain-guides-democracy.md)
 for a runtime upgrade that lifted the restriction on balance transfers. Transfer functionality was
-subsequently enabled on AXIASolar at block number 1_205_128 on August 18, 2020, at 16:39 UTC.
+subsequently enabled on AXIACoin at block number 1_205_128 on August 18, 2020, at 16:39 UTC.
 
 ## Redenomination
 
-On August 21, 2020, [redenomination](../general/redenomination.md) of SOLAR, the native token on AXIASolar,
+On August 21, 2020, [redenomination](../general/redenomination.md) of SOLAR, the native token on AXIACoin,
 occurred. From this date, one SOLAR (old) equals 100 new SOLAR.
 
 ## Core Functionality
 
-AXIASolar is now moving to the next stage of opening up its core functionality, like parachain slot
-auctions, parathreads, and cross-chain message passing. AXIASolar is now on track to launch several
-parachains in 2021. These upgrades will require runtime upgrades that will pass through AXIASolar's
+AXIACoin is now moving to the next stage of opening up its core functionality, like parachain slot
+auctions, parathreads, and cross-chain message passing. AXIACoin is now on track to launch several
+parachains in 2021. These upgrades will require runtime upgrades that will pass through AXIACoin's
 normal governance processes. The core functionality does not have to be unlocked sequentially
 &mdash; several features can be unlocked with a single proposal.
 
 Parachains will first roll out on AXIALunar with a common good parachain, followed by the first slot
 auction and winner's onboarding.
 
-## AXIASolar 2.0
+## AXIACoin 2.0
 
-With the release of AXIASolar 1.0, researchers have begun research for the next version of the
-AXIASolar network. With many questions yet to be answered, as of now, some big areas of research will
+With the release of AXIACoin 1.0, researchers have begun research for the next version of the
+AXIACoin network. With many questions yet to be answered, as of now, some big areas of research will
 be in:
 
-- Economics and Networking (Zero-Knowledge): How will scalability work in AXIASolar 2.0?
+- Economics and Networking (Zero-Knowledge): How will scalability work in AXIACoin 2.0?
 - Horizontal vs. Vertical scalability: What is the breaking point of the maximum number of
   parachains built with horizontal scalability?
 - Nested Relay Chain: How can multiple Relay Chains exist connected through parachains? How many

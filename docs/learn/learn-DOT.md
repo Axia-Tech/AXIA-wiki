@@ -7,16 +7,16 @@ slug: ../learn-SOLAR
 
 ## What is SOLAR?
 
-SOLAR is the native token of the AXIASolar network in a similar way that BTC is the native token of
+SOLAR is the native token of the AXIACoin network in a similar way that BTC is the native token of
 Bitcoin or Ether is the native token of the Ethereum blockchain.
 
-The smallest unit of account in a Substrate network (AXIASolar, AXIALunar, etc.) is the Planck (a
+The smallest unit of account in a Substrate network (AXIACoin, AXIALunar, etc.) is the Planck (a
 reference to [Planck Length](https://en.wikipedia.org/wiki/Planck_length), the smallest possible
 distance in the physical Universe). You can compare the Planck to Satoshis or Wei, while the SOLAR is
-like a bitcoin or an ether. AXIALunar tokens (LUNAR) are equal to 1e12 Planck, and AXIASolar mainnet SOLAR
+like a bitcoin or an ether. AXIALunar tokens (LUNAR) are equal to 1e12 Planck, and AXIACoin mainnet SOLAR
 is equal to 1e10 Planck.
 
-### AXIASolar
+### AXIACoin
 
 | Unit            | Decimal Places | Example      |
 | --------------- | -------------- | ------------ |
@@ -42,33 +42,33 @@ is equal to 1e10 Planck.
 
 ## What are the uses of SOLAR?
 
-SOLAR serves three key functions in AXIASolar:
+SOLAR serves three key functions in AXIACoin:
 
 - to be used for governance of the network,
 - to be staked for the operation of the network,
-- to be bonded to connect a chain to AXIASolar as a parachain.
+- to be bonded to connect a chain to AXIACoin as a parachain.
 
 SOLAR can also serve ancillary functions by virtue of being a transferrable token. For example, SOLAR
-stored in the Treasury can be sent to teams working on relevant projects for the AXIASolar network.
+stored in the Treasury can be sent to teams working on relevant projects for the AXIACoin network.
 
 > These concepts have been further explained in the video
-> [Usage of SOLAR and LUNAR on AXIASolar and AXIALunar](https://www.youtube.com/watch?v=POfFgrMfkTo&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=7).
+> [Usage of SOLAR and LUNAR on AXIACoin and AXIALunar](https://www.youtube.com/watch?v=POfFgrMfkTo&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=7).
 
 ### SOLAR for Governance
 
 The first function of SOLAR is to entitle holders to control the governance of the platform. Some
 functions that are included under the governance mechanism include determining the fees of the
 network, the addition or removal of parachains, and exceptional events such as upgrades and fixes to
-the AXIASolar platform.
+the AXIACoin platform.
 
-AXIASolar will enable any holder of SOLAR to participate in governance. For details on how holders can
+AXIACoin will enable any holder of SOLAR to participate in governance. For details on how holders can
 participate in governance, as well as their rights and responsibilities, see the
 [governance page](learn-governance.md).
 
 ### SOLAR for Consensus
 
-SOLAR will be used to facilitate the consensus mechanism that underpins AXIASolar. For the platform to
-function and allow for valid transactions to be carried out across parachains, AXIASolar will rely on
+SOLAR will be used to facilitate the consensus mechanism that underpins AXIACoin. For the platform to
+function and allow for valid transactions to be carried out across parachains, AXIACoin will rely on
 holders of SOLAR to play active roles. Participants will put their SOLAR at risk (via staking) to
 perform these functions. The staking of SOLAR acts as a disincentive for malicious participants who
 will be punished by the network by getting their SOLAR slashed. The SOLAR required to participate in the
@@ -95,8 +95,8 @@ since locks are [lazy](#lazy-vesting) and require an extrinsic to update.
 
 There are two ways that vesting schedules can be created.
 
-- One way is as part of the genesis configuration of the chain. In the case of AXIASolar and AXIALunar,
-  the chain specification genesis script reads the state of the AXIASolar Claims contract that exists
+- One way is as part of the genesis configuration of the chain. In the case of AXIACoin and AXIALunar,
+  the chain specification genesis script reads the state of the AXIACoin Claims contract that exists
   on the Ethereum blockchain and creates vesting schedules in genesis for all the allocations
   registered as being vested.
 - A second way is through an extrinsic type available in the Vesting pallet, `vested_transfer`. The
@@ -118,7 +118,7 @@ explicitly call an extrinsic to update the lock that is placed on an account.
 
 These extrinsics are exposed from the Vesting pallet.
 
-If you are using AXIASolar-JS, when there are SOLAR available to vest for an account, then you will
+If you are using AXIACoin-JS, when there are SOLAR available to vest for an account, then you will
 have the ability to unlock SOLAR which has already vested from the
 [Accounts](https://axiasolar.js.org/apps/#/accounts) page.
 
@@ -135,7 +135,7 @@ the future).
 
 1. Navigate to the
    [Chain State](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.axiasolar.io#/chainstate) page on
-   AXIASolar-JS.
+   AXIACoin-JS.
 2. Query chain state for `vesting.vesting(ACCOUNT_ID)`
 3. Note the `startingBlock` where the unlock starts, and how much SOLAR is unlocked per block
    (`perBlock`).
@@ -145,7 +145,7 @@ the future).
 
 ## Obtaining Testnet SOLAR
 
-SOLAR are required to make transactions on the AXIASolar network. Testnet SOLAR do not have any value
+SOLAR are required to make transactions on the AXIACoin network. Testnet SOLAR do not have any value
 beside allowing you to experiment with the network.
 
 ### Getting Westies
@@ -181,8 +181,8 @@ Unlike testnet SOLAR, AXIALunar tokens are not freely given away. AXIALunar toke
 [claims process](https://claim.axialunar.network/) (if you had SOLAR at the time of AXIALunar genesis) or
 through the [Treasury](learn-treasury.md). Alternatively, they can be obtained on the open market.
 
-## AXIASolar Mainnet SOLAR
+## AXIACoin Mainnet SOLAR
 
-AXIASolar Mainnet SOLAR are not freely given away. If you purchased SOLAR in the original 2017 offering,
-you may claim them via the [AXIASolar claims process](https://claims.axiacoin.network/).
+AXIACoin Mainnet SOLAR are not freely given away. If you purchased SOLAR in the original 2017 offering,
+you may claim them via the [AXIACoin claims process](https://claims.axiacoin.network/).
 Alternatively, they are available on the open market.
