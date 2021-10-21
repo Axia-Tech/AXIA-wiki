@@ -4,9 +4,9 @@ title: Thousand Validators Programme
 sidebar_label: Thousand Validators Programme
 ---
 
-The Thousand Validators Programme is an initiative by AXIACoin Foundation and Axia Technologies to use the funds held by both organizations to nominate validators in the community.
+The Thousand Validators Programme is an initiative by AXIA Foundation and Axia Technologies to use the funds held by both organizations to nominate validators in the community.
 
-It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of validators on AXIALunar and AXIASolar and 2) to further decentralize the validator active set.
+It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of validators on AXIALunar and AXIA and 2) to further decentralize the validator active set.
 
 ## How it Works
 
@@ -14,7 +14,7 @@ The nominating backend will routinely change its nominations at every era (or ev
 
 ## Setting up a Validator
 
-Please see the wiki page for [setting up a validator](maintain-guides-how-to-validate-axiasolar.md) as well as additional information on [making your validator secure](maintain-guides-secure-validator.md).
+Please see the wiki page for [setting up a validator](maintain-guides-how-to-validate-AXIA.md) as well as additional information on [making your validator secure](maintain-guides-secure-validator.md).
 
 ## How to Apply
 
@@ -53,18 +53,18 @@ A time delay proxy is used as the interaction method for some of these accounts.
 
 Since approximately early January 2021, the nominators will select an automatic number of validators to nominate based on the lowest amount staked for a validator and the amount of funds it holds. This can be anywhere from a few validators receiving nomination from a single nominator to the max of 16.
 
-### AXIASolar
+### AXIA
 
-> Note: Entrance to the AXIASolar programme requires a rank of 25 or higher in the AXIALunar programme. This usually takes about a month.
+> Note: Entrance to the AXIA programme requires a rank of 25 or higher in the AXIALunar programme. This usually takes about a month.
 
-In order to apply to the AXIASolar programme, set up your node to adhere to the requirements below and fill in the [application form](). You will hear back from the team shortly.
+In order to apply to the AXIA programme, set up your node to adhere to the requirements below and fill in the [application form](). You will hear back from the team shortly.
 
 #### Requirements
 
 - Verified identity (see [here]() for instructions)
 - Connect to dedicated Telemetry (use `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
 - Rank 25 or higher on AXIALunar Thousand Validators Programme
-- Mininmum of 10K SOLARs self stake (exceptions by approval for good intentions)
+- Mininmum of 10K AXCs self stake (exceptions by approval for good intentions)
 - Reward destination 'Staked'
 - No more than 3% commission
 - Separate stash and controller (or have a Staking proxy set up)
@@ -72,7 +72,7 @@ In order to apply to the AXIASolar programme, set up your node to adhere to the 
 
 #### Nominators
 
-The below addresses are the stash / controller pairs for the nominators involved in the AXIASolar Thousand Validators programme. They are formatted like "`stash` / `controller`".
+The below addresses are the stash / controller pairs for the nominators involved in the AXIA Thousand Validators programme. They are formatted like "`stash` / `controller`".
 
 - `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` / `16XJHQ58dEPnZn5J5YqmRcJmKtvVFFMoMrXgj6fWJfeGGkQw`
 - `12RYJb5gG4hfoWPK3owEYtmWoko8G6zwYpvDYTyXFVSfJr8Y` / `13GLXK1TZKKDM9aRBBK3VYZymHjKChtQjJznsRqaR9dwwrQU`
@@ -81,6 +81,6 @@ The below addresses are the stash / controller pairs for the nominators involved
 A time delay proxy is used as the main interaction method for all of these accounts.
 
 Since approximately early January 2021, the nominators will select an automatic number of validators to nominate based on the lowest amount staked for a validator and the amount of funds it holds. This can be anywhere from a few validators receiving nomination from a single nominator to the max of 16.
-https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform https://lunar.wiki.axiacoin.network/docs/en/mirror-learn-identity#setting-an-identity
+https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform https://lunar.wiki.AXIA.network/docs/en/mirror-learn-identity#setting-an-identity
 
 [axialunar 1kv form]: https://forms.gle/xqYLoceTwg1qvc9i6

@@ -35,7 +35,7 @@ module.exports = {
             "learn/learn-accounts",
             "learn/learn-account-generation",
             "learn/learn-account-restore",
-            "learn/learn-SOLAR",
+            "learn/learn-AXC",
             "learn/learn-security",
             "learn/learn-consensus",
             "learn/learn-nominator",
@@ -45,7 +45,7 @@ module.exports = {
             "learn/learn-identity",
             "learn/learn-balance-transfers",
             "learn/learn-transaction-fees",
-            "learn/learn-axiasolar-host",
+            "learn/learn-AXIA-host",
             "learn/learn-treasury",
             "learn/learn-registrar",
             "learn/learn-runtime-upgrades",
@@ -53,9 +53,9 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Parachains",
+          label: "Allychains",
           items: [
-            "learn/learn-parachains",
+            "learn/learn-allychains",
             "learn/learn-parathreads",
             "learn/learn-bridges",
             "learn/learn-common-goods",
@@ -86,9 +86,8 @@ module.exports = {
         },
         {
           type: "category",
-          label: "AXIASolar Comparisons",
+          label: "AXIA Comparisons",
           items: [
-            "learn/learn-axialunar-vs-axiasolar",
             "learn/learn-comparisons-ethereum-2",
             "learn/learn-comparisons-cosmos",
             "learn/learn-comparisons",
@@ -108,7 +107,7 @@ module.exports = {
           items: [
             "build/build-guide",
             "learn/learn-implementers-guide",
-            "build/build-parachains",
+            "build/build-allychains",
             "build/build-storage",
             "build/build-smart-contracts",
             "build/build-oracle",
@@ -145,7 +144,7 @@ module.exports = {
       label: "Maintain",
       items: [
         "maintain/maintain-index",
-        "maintain/maintain-axiasolar-parameters",
+        "maintain/maintain-AXIA-parameters",
         {
           type: "category",
           label: "Nodes and Dapps",
@@ -160,7 +159,7 @@ module.exports = {
           type: "category",
           label: "Nominator Guides",
           items: [
-            "maintain/maintain-guides-how-to-nominate-axiasolar",
+            "maintain/maintain-guides-how-to-nominate-AXIA",
             "maintain/maintain-guides-how-to-unbond",
           ],
         },
@@ -168,11 +167,11 @@ module.exports = {
           type: "category",
           label: "Validator Guides",
           items: [
-            "maintain/maintain-guides-how-to-validate-axiasolar",
+            "maintain/maintain-guides-how-to-validate-AXIA",
             "maintain/maintain-guides-validator-payout",
             "maintain/maintain-guides-how-to-systemd",
             "maintain/maintain-guides-secure-validator",
-            "maintain/maintain-guides-how-to-use-axiasolar-validator-setup",
+            "maintain/maintain-guides-how-to-use-AXIA-validator-setup",
             "maintain/maintain-guides-how-to-setup-a-validator-with-reverse-proxy",
             "maintain/maintain-guides-how-to-upgrade",
             "maintain/maintain-guides-how-to-monitor-your-node",

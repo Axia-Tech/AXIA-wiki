@@ -6,7 +6,7 @@ sidebar_label: Bug Bounty
 
 Мы призываем наше сообщество и всех охотников за bug bounty помочь выявить ошибки в AXIALunar.
 
-If you discover a bug, we appreciate your cooperation in responsibly investigating and reporting it as per [instructions on the AXIACoin Foundation website](https://axiacoin.org/security-report/). Disclosure to any third parties disqualifies bug bounty eligibility.
+If you discover a bug, we appreciate your cooperation in responsibly investigating and reporting it as per [instructions on the AXIA Foundation website](https://AXIA.org/security-report/). Disclosure to any third parties disqualifies bug bounty eligibility.
 
 ## Правомочность
 
@@ -27,4 +27,4 @@ If you discover a bug, we appreciate your cooperation in responsibly investigati
 
 ## Как сообщить об ошибке
 
-Please follow the instructions at [axiacoin.org/security-report/](https://axiacoin.org/security-report/).
+Please follow the instructions at [AXIA.org/security-report/](https://AXIA.org/security-report/).

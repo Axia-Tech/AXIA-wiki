@@ -8,7 +8,7 @@ Kappa Sigma Mu is a membership club using the Substrate [Society](https://substr
 
 ![Society Dashboard](assets/axialunar/axialunar_society_page.png) ![Society Dashboard](assets/axialunar/axialunar_society_page2.png)
 
-Before joining the society, let's take a brief look at the [Society UI](https://axiasolar.js.org/apps/#/society) on AXIASolar-JS apps and read through all the [rules](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) to become a member.
+Before joining the society, let's take a brief look at the [Society UI](https://AXIA.js.org/apps/#/society) on AXIA-JS apps and read through all the [rules](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) to become a member.
 
 ## UI Overview
 

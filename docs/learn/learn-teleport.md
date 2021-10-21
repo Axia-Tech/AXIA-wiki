@@ -1,28 +1,28 @@
 ---
 id: learn-teleport
-title: Teleporting Assets To Other Parachains
+title: Teleporting Assets To Other Allychains
 sidebar_label: Teleporting Assets
 slug: ../learn-teleport
 ---
 
-One of the main properties that AXIACoin and AXIALunar bring to the ecosystems is decentralied
+One of the main properties that AXIA and AXIALunar bring to the ecosystems is decentralied
 blockchain interoperability. This interoperability allows for asset teleportation: the process of
-moving assets, such as coins, tokens, or NTFs, between chains (parachains) to use them as you would
+moving assets, such as coins, tokens, or NTFs, between chains (allychains) to use them as you would
 any other asset native to that chain. Interoperability is possible through [XCM][]
 and [SPREE modules][], which together ensure that assets are not lost or duplicated across multiple chain.
 
 ## How to Teleport
 
-Teleportation can be done through the [AXIACoinJS Apps] interface or through the
-`xcmPallet.teleportAssets()` extrinsic. In the following example, we will be using the AXIACoinJS
+Teleportation can be done through the [AXIAJS Apps] interface or through the
+`xcmPallet.teleportAssets()` extrinsic. In the following example, we will be using the AXIAJS
 interface.
 
-1. Navigate to [AXIACoinJS Apps] and connect to the chain with the tokens you want to teleport.
+1. Navigate to [AXIAJS Apps] and connect to the chain with the tokens you want to teleport.
 2. Navigate to "Accounts > Teleport". This opens the 'teleport assets' interface:
    ![transfer](../assets/teleport_interface.png)
 3. Fill out the transaction:
    1. "send from account" - Select the account with the source tokens.
-   2. "destination chain" - Select the parachain you want to send the assets to.
+   2. "destination chain" - Select the allychain you want to send the assets to.
    3. "send to address" - Select the account you want to be in control of the coins on the
       destination chain.
    4. "amount" - Insert the number of tokens you want to teleport
@@ -35,10 +35,10 @@ shortly.
 
 ## Troubleshooting
 
-If you do not see "Accounts > Teleport" in [AXIACoinJS Apps], the source chain that you have
-selected does not support teleportation yet. As of June 2021, unsupported chains include AXIACoin
-mainnet, BetaNet testnet, and their respective parachains.
+If you do not see "Accounts > Teleport" in [AXIAJS Apps], the source chain that you have
+selected does not support teleportation yet. As of June 2021, unsupported chains include AXIA
+mainnet, BetaNet testnet, and their respective allychains.
 
-[axiasolarjs apps]: https://axiasolar.js.org/apps/
+[AXIAjs apps]: https://AXIA.js.org/apps/
 [xcm]: learn-cross-consensus.md
 [spree modules]: learn-spree.md

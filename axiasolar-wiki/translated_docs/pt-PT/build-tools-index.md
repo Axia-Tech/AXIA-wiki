@@ -8,8 +8,8 @@ Here we provide a list of tools available for your development needs. They are s
 
 ## Block Explorers
 
-- [AXIASolar-JS Apps Explorer](https://axiasolar.js.org/apps/#/explorer) - AXIASolar dashboard block explorer. Currently connects to AXIALunar by default, but can be configured to connect to other remote or local endpoints.
-- [Axiascan](https://axiascan.io/) - Blockchain explorer for AXIASolar, AXIALunar, and other related chains.
+- [AXIA-JS Apps Explorer](https://AXIA.js.org/apps/#/explorer) - AXIA dashboard block explorer. Currently connects to AXIALunar by default, but can be configured to connect to other remote or local endpoints.
+- [Axiascan](https://axiascan.io/) - Blockchain explorer for AXIA, AXIALunar, and other related chains.
 - [Subscan](https://subscan.io) - Blockchain explorer for Substrate chains.
 
 ## Wallets
@@ -18,63 +18,63 @@ See the [Wallets](build-wallets.md) page.
 
 ## Network Monitoring & Reporting
 
-- [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/) - Network information including what nodes are running the chain, what software versions they are running, sync status, and location.
-- Axiabot - AXIASolar network monitoring and reporting using Riot chat. Users may create custom bot plugins. [Blogpost](https://medium.com/axiacoin.network/axiabot-a3dba18c20c8). [Github Repository](https://gitlab.com/Axiabot/axiabot)
-- [AxiaStats](https://axiastats.io/) - AXIASolar network statistics (includes AXIALunar). Shows network information and staking details from validators and intentions. [Github Repository](https://github.com/Colm3na/axiastats-v2/)
+- [AXIA Telemetry Service](https://telemetry.AXIA.io/) - Network information including what nodes are running the chain, what software versions they are running, sync status, and location.
+- Axiabot - AXIA network monitoring and reporting using Riot chat. Users may create custom bot plugins. [Blogpost](https://medium.com/AXIA.network/axiabot-a3dba18c20c8). [Github Repository](https://gitlab.com/Axiabot/axiabot)
+- [AxiaStats](https://axiastats.io/) - AXIA network statistics (includes AXIALunar). Shows network information and staking details from validators and intentions. [Github Repository](https://github.com/Colm3na/axiastats-v2/)
 
 ## Rust
 
 ### Clients
 
-- [AXIASolar](https://github.com/axia-tech/axiasolar) - Rust implementation of the AXIASolar Host.
+- [AXIA](https://github.com/axia-tech/AXIA) - Rust implementation of the AXIA Host.
 
 ### Tools
 
-- [Substrate](https://github.com/axia-tech/substrate) - Blockchain development platform written in Rust. AXIASolar is being built on top of Substrate.
+- [Substrate](https://github.com/axia-tech/substrate) - Blockchain development platform written in Rust. AXIA is being built on top of Substrate.
 - [Substrate Knowledge Base](https://substrate.dev/docs/en/) - Comprehensive documentation and tutorials for building a blockchain using Substrate.
 
 ## C++
 
-- [Kagome](https://github.com/soramitsu/kagome) - A C++ AXIASolar client developed by [Soramitsu](https://github.com/soramitsu).
-- [AXIASolar API Cpp](https://github.com/usetech-llc/axiasolar_api_cpp) - С++ API for AXIASolar
+- [Kagome](https://github.com/soramitsu/kagome) - A C++ AXIA client developed by [Soramitsu](https://github.com/soramitsu).
+- [AXIA API Cpp](https://github.com/usetech-llc/AXIA_api_cpp) - С++ API for AXIA
 
 ## C
 
-- [AXIASolar API - .NET](https://github.com/usetech-llc/axiasolar_api_dotnet) - AXIASolar Substrate API for .NET.
+- [AXIA API - .NET](https://github.com/usetech-llc/AXIA_api_dotnet) - AXIA Substrate API for .NET.
 
 ## Go
 
-- [Gossamer](https://github.com/ChainSafe/gossamer) - A Go implementation of the AXIASolar Host.
-- [Golkadot](https://github.com/opennetsys/golkadot) - A Go implementation of AXIASolar Substrate.
+- [Gossamer](https://github.com/ChainSafe/gossamer) - A Go implementation of the AXIA Host.
+- [Golkadot](https://github.com/opennetsys/golkadot) - A Go implementation of AXIA Substrate.
 - [GSRPC](https://github.com/centrifuge/go-substrate-rpc-client/) - Substrate RPC client in Go, a.k.a. GSRPC.
 
 ## JS
 
 ### Client
 
-- [AXIASolar-JS client](https://github.com/axiasolar-js/client) - Alternative client for JavaScript enthusiasts.
+- [AXIA-JS client](https://github.com/AXIA-js/client) - Alternative client for JavaScript enthusiasts.
 
-Documentation on [AXIASolar-JS](https://axiasolar.js.org) is a good starting point for diving deeper.
+Documentation on [AXIA-JS](https://AXIA.js.org) is a good starting point for diving deeper.
 
-Once you've configured and started to run a local node, you can interact with it through the generic axiasolar [explorer](https://axiasolar.js.org/apps/#/explorer).
+Once you've configured and started to run a local node, you can interact with it through the generic AXIA [explorer](https://AXIA.js.org/apps/#/explorer).
 
 ### Libraries
 
-### AXIASolar-JS Common
+### AXIA-JS Common
 
-AXIASolar-JS Common provides various utility functions that are used across all projects in the `@axiasolar` namespace and is split into a number of internal utility packages. The documentation and usage instructions are provided at [AXIASolar-JS/Common API Documentation](https://axiasolar.js.org/common/).
+AXIA-JS Common provides various utility functions that are used across all projects in the `@AXIA` namespace and is split into a number of internal utility packages. The documentation and usage instructions are provided at [AXIA-JS/Common API Documentation](https://AXIA.js.org/common/).
 
-- [@axiasolar-js/keyring](https://axiasolar.js.org/common/keyring/) To create / load accounts in JavaScript, helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://axiasolar.js.org/common/examples/keyring/)
-- [@axiasolar-js/util](https://axiasolar.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
-- [@axiasolar-js/util-crypto](https://axiasolar.js.org/common/util-crypto/) Crypto utilities that will come in handy while developing with AXIASolar.
+- [@AXIA-js/keyring](https://AXIA.js.org/common/keyring/) To create / load accounts in JavaScript, helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://AXIA.js.org/common/examples/keyring/)
+- [@AXIA-js/util](https://AXIA.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
+- [@AXIA-js/util-crypto](https://AXIA.js.org/common/util-crypto/) Crypto utilities that will come in handy while developing with AXIA.
 
 ### CLI Tools
 
-- [@axiasolar-js/api-cli](https://github.com/axiasolar-js/tools/tree/master/packages/api-cli) Command line interface for the axiasolar API. [Documentation](https://axiasolar.js.org/api/api/)
-- [@axiasolar-js/monitor-rpc](https://github.com/axiasolar-js/tools/tree/master/packages/monitor-rpc) RPC monitor for AXIASolar. See the RPC tools below for additional information.
-- [@axiasolar-js/signer-cli](https://github.com/axiasolar-js/tools/tree/master/packages/signer-cli) Tool to construct, sign, and broadcast transactions. Signing can be done offline.
+- [@AXIA-js/api-cli](https://github.com/AXIA-js/tools/tree/master/packages/api-cli) Command line interface for the AXIA API. [Documentation](https://AXIA.js.org/api/api/)
+- [@AXIA-js/monitor-rpc](https://github.com/AXIA-js/tools/tree/master/packages/monitor-rpc) RPC monitor for AXIA. See the RPC tools below for additional information.
+- [@AXIA-js/signer-cli](https://github.com/AXIA-js/tools/tree/master/packages/signer-cli) Tool to construct, sign, and broadcast transactions. Signing can be done offline.
 
 ### RPC Tools
 
-- [@axiasolar-js/api/rpc-provider](https://github.com/axiasolar-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
-- [RPC documentation](https://axiasolar.js.org/api/substrate/rpc.html)
+- [@AXIA-js/api/rpc-provider](https://github.com/AXIA-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
+- [RPC documentation](https://AXIA.js.org/api/substrate/rpc.html)

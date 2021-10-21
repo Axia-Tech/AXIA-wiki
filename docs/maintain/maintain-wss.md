@@ -6,7 +6,7 @@ slug: ../maintain-wss
 ---
 
 You might want to host a node on one server and then connect to it from a UI hosted on another, e.g.
-[AXIACoin-JS UI](https://axiasolar.js.org/apps). This will not be possible unless you set up a secure
+[AXIA-JS UI](https://AXIA.js.org/apps). This will not be possible unless you set up a secure
 proxy for websocket connections. Let's see how we can set up WSS on a remote Substrate node.
 
 _Note: this should **only** be done for sync nodes used as back-end for some dapps or projects.
@@ -27,11 +27,11 @@ using Ubuntu 18.04. Then install Substrate and build the node.
 
 ```bash
 curl https://getsubstrate.io -sSf | bash
-git clone https://github.com/axia-tech/axiasolar axialunar
+git clone https://github.com/axia-tech/AXIA axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release
-./target/release/axiasolar --name "DigitalOcean 10 USD droplet ftw" --rpc-cors all
+./target/release/AXIA --name "DigitalOcean 10 USD droplet ftw" --rpc-cors all
 ```
 
 This will start the syncing process with AXIALunar's mainnet.
@@ -48,7 +48,7 @@ The first approach is getting a dedicated domain, redirecting its nameservers to
 setting up an Nginx server for that domain, and finally
 [following LetsEncrypt instructions](https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx.html)
 for Nginx setup. This will auto-generate an SSL certificate and include it in your Nginx
-configuration. This will let you connect AXIACoin-JS UI to a URL like mynode.mydomain.com rather
+configuration. This will let you connect AXIA-JS UI to a URL like mynode.mydomain.com rather
 than 82.196.8.192:9944, which is arguably more user friendly.
 
 This is simple to do on cloud hosting providers or if you have a static IP, but harder to pull off
@@ -140,11 +140,11 @@ produce a "Not private" warning which you can skip by going to "Advanced" and th
 
 ## Connecting to the node
 
-Open [AXIACoin-JS UI](https://axiasolar.js.org/apps) and click the logo in the top left to switch the
+Open [AXIA-JS UI](https://AXIA.js.org/apps) and click the logo in the top left to switch the
 node. Activate the "Development" toggle and input your node's address - either the domain or the IP
 address. Remember to prefix with `wss://` and if you're using the 443 port, append `:443`, like so:
 `wss://example.com:443`.
 
-![A sync-in-progress chain connected to AXIACoin-JS UI](../assets/maintain-wss-image.png)
+![A sync-in-progress chain connected to AXIA-JS UI](../assets/maintain-wss-image.png)
 
 Now you have a secure remote connect setup for your Substrate node.

@@ -12,11 +12,11 @@ The quote below taken from the reference [Phragmén paper](#external-resources) 
 
 > The problem that Phragmén’s methods try to solve is that of electing a set of a given numbers of persons from a larger set of candidates. Phragmén discussed this in the context of a parliamentary election in a multi-member constituency; the same problem can, of course, also occur in local elections, but also in many other situations such as electing a board or a committee in an organization.
 
-## Where is the Phragmén method used in AXIASolar?
+## Where is the Phragmén method used in AXIA?
 
 ### NPoS: Validator Elections
 
-The sequential Phragmén method is used in the Nominated Proof-of-Stake scheme to elect validators based on their own self-stake and the stake that is voted to them from nominators. It also tries to equalize the weights between the validators after each election round. Since validators are paid equally in AXIASolar, it is important that the stake behind each validator is spread out. AXIASolar tries to optimize three metrics in its elections:
+The sequential Phragmén method is used in the Nominated Proof-of-Stake scheme to elect validators based on their own self-stake and the stake that is voted to them from nominators. It also tries to equalize the weights between the validators after each election round. Since validators are paid equally in AXIA, it is important that the stake behind each validator is spread out. AXIA tries to optimize three metrics in its elections:
 
 1. Maximize the total amount at stake.
 1. Maximize the stake behind the minimally staked validator.
@@ -24,7 +24,7 @@ The sequential Phragmén method is used in the Nominated Proof-of-Stake scheme t
 
 #### Off-Chain Phragmen
 
-Given the large set of nominators and validators, Phragmén's method is a difficult optimization problem. AXIASolar uses off-chain workers to compute the result off-chain and submit a transaction to propose the set of winners. The reason for performing this computation off-chain is to keep a constant block time of six seconds and prevent long block times at the end of each era, when the validator election takes place.
+Given the large set of nominators and validators, Phragmén's method is a difficult optimization problem. AXIA uses off-chain workers to compute the result off-chain and submit a transaction to propose the set of winners. The reason for performing this computation off-chain is to keep a constant block time of six seconds and prevent long block times at the end of each era, when the validator election takes place.
 
 Because certain user actions, like changing nominations, can change the outcome of the Phragmén election, the system forbids calls to these functions for the last quarter of the session before an era change. These functions are not permitted:
 
@@ -149,7 +149,7 @@ An interesting characteristic of this calculation is that the total load of all 
 
 ### Rationale
 
-While this method works well if all voters have equal weight, this is not the case in AXIASolar. Elections for both validators and candidates for the AXIASolar Council are weighted by the number of tokens held by the voters. This makes elections more similar to a corporate shareholder election than a traditional political election, where some members have more pull than others. Someone with a single token will have much less voting power than someone with 100. Although this may seem anti-democratic, in a pseudonymous system, it is trivial for someone with 100 tokens to create 100 different accounts and spread their wealth to all of their pseudonyms.
+While this method works well if all voters have equal weight, this is not the case in AXIA. Elections for both validators and candidates for the AXIA Council are weighted by the number of tokens held by the voters. This makes elections more similar to a corporate shareholder election than a traditional political election, where some members have more pull than others. Someone with a single token will have much less voting power than someone with 100. Although this may seem anti-democratic, in a pseudonymous system, it is trivial for someone with 100 tokens to create 100 different accounts and spread their wealth to all of their pseudonyms.
 
 Therefore, not only do we want to allow voters to have their preferences expressed in the result, but do so while keeping as equal a distribution of their stake as possible and express the wishes of minorities as much as is possible. The Weighted Phragmén method allows us to reach these goals.
 
@@ -418,7 +418,7 @@ After running the weighted Phragmén algorithm, a process is run that redistribu
 
 To minimize block computation time, the staking process is run as an [off-chain worker](https://substrate.dev/docs/en/knowledgebase/learn-substrate/off-chain-workers). In order to give time for this off-chain worker to run, staking commands (bond, nominate, etc.) are not allowed in the last quarter of each era.
 
-These optimizations will not be covered in-depth on this page. For more details, you can view the [Rust implementation of elections in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/elections-phragmen/src/lib.rs), the [Rust implementation of staking in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs), or the `seqPhragménwithpostprocessing` method in the [Python reference implementation](https://github.com/axia-tech/consensus/tree/master/NPoS). If you would like to dive even more deeply, you can review the [W3F Research Page on Sequential Phragmén Method](https://research.axiacoin.org/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html).
+These optimizations will not be covered in-depth on this page. For more details, you can view the [Rust implementation of elections in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/elections-phragmen/src/lib.rs), the [Rust implementation of staking in Substrate](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs), or the `seqPhragménwithpostprocessing` method in the [Python reference implementation](https://github.com/axia-tech/consensus/tree/master/NPoS). If you would like to dive even more deeply, you can review the [W3F Research Page on Sequential Phragmén Method](https://research.AXIA.org/en/latest/AXIA/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html).
 
 ### Rationale for Minimizing the Number of Validators Per Nominator
 
@@ -442,7 +442,7 @@ There are several further restrictions put in place to limit the complexity of t
 
 ## External Resources
 
-- [W3F Research Page on Sequential Phragmén Method](https://research.axiacoin.org/en/latest/axiasolar/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html) - The formal adaptation of the Phragmén method as applied to AXIASolar validators.
+- [W3F Research Page on Sequential Phragmén Method](https://research.AXIA.org/en/latest/AXIA/NPoS/4.%20Sequential%20Phragm%C3%A9n%E2%80%99s%20method.html) - The formal adaptation of the Phragmén method as applied to AXIA validators.
 - [Python Reference Implementations](https://github.com/axia-tech/consensus/tree/master/NPoS) - Python implementations of Simple and Complicated Phragmén methods.
 - [Substrate Implementation](https://github.com/axia-tech/substrate/blob/master/frame/staking/src/lib.rs) - Rust implementation used in Substrate.
 - [Phragmén's and Thiele's Election Methods](https://arxiv.org/pdf/1611.08826.pdf) - 95-page paper explaining Phragmén's election methods in detail.

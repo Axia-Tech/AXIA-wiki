@@ -5,8 +5,8 @@ sidebar_label: Staking
 slug: ../learn-staking
 ---
 
-AXIACoin uses NPoS (Nominated Proof-of-Stake) as its [consensus](learn-consensus.md) mechanism.
-The system encourages SOLAR holders to participate as nominators. Nominators may back up to 16
+AXIA uses NPoS (Nominated Proof-of-Stake) as its [consensus](learn-consensus.md) mechanism.
+The system encourages AXC holders to participate as nominators. Nominators may back up to 16
 validators as trusted validator candidates. Both validators and nominators lock their tokens as
 collateral and receive staking rewards.
 
@@ -19,7 +19,7 @@ Distribution of the rewards are pro-rata to all stakers after the validator paym
 this way, the network incents the nomination of lower-staked validators to create an equally-staked
 validator set.
 
-## How does staking work in AXIACoin?
+## How does staking work in AXIA?
 
 ### 1. Identifying which role you are
 
@@ -34,7 +34,7 @@ what you need to do as a validator.
 
 Any potential validators can indicate their intention to be a validator candidate. Their candidacies
 are made public to all nominators, and a nominator in turn submits a list of any number of
-candidates that it supports. In the next era, a certain number of validators having the most SOLAR
+candidates that it supports. In the next era, a certain number of validators having the most AXC
 backing get elected and become active.
 
 There are no particular requirements to become a nominator, though we expect each nominator to
@@ -47,7 +47,7 @@ certain requirements, such as maximizing the amount of stake to nominate validat
 the stake backing validators as evenly as possible. The objectives of this election mechanism are to
 maximize the security of the network, and achieve fair representation of the nominators. If you want
 to know more about how NPoS works (e.g. election, running time complexity, etc.), please read
-[here](http://research.axiacoin.org/en/latest/axiasolar/NPoS.html).
+[here](http://research.AXIA.org/en/latest/AXIA/NPoS.html).
 
 ### 3. Staking Rewards Distribution
 
@@ -76,9 +76,9 @@ itself with stake. If a validator's commission is set to 100%, no tokens will be
 nominations in the validator pool.
 
 To estimate the inflation rate and how many tokens you can get each month as a nominator or
-validator, you can use this [tool](https://www.stakingrewards.com/earn/axiasolar/calculate) as a
+validator, you can use this [tool](https://www.stakingrewards.com/earn/AXIA/calculate) as a
 reference and play around with it by changing some parameters (e.g. how many days you would like to
-stake with your SOLAR, provider fees, compound rewards, etc.) to have a better estimate. Even though
+stake with your AXC, provider fees, compound rewards, etc.) to have a better estimate. Even though
 it may not be entirely accurate since staking participation is changing dynamically, it works well
 as an indicator.
 
@@ -103,8 +103,8 @@ The following example should clarify the above. For simplicity, we have the foll
 - They each receive the same number of era points.
 - There are no tips for any transactions processed.
 - They do NOT charge any commission fees.
-- Total reward amount is 100 SOLAR tokens.
-- The current minimum amount of SOLAR to be a validator is 350 (note that this is _not_ the actual
+- Total reward amount is 100 AXC tokens.
+- The current minimum amount of AXC to be a validator is 350 (note that this is _not_ the actual
   value, which fluctuates, but merely an assumption for purposes of this example; to understand how
   the actual minimal stake is calculated, see
   [here](../general/faq.md#what-is-the-minimum-stake-necessary-to-be-elected-as-an-active-validator)).
@@ -127,24 +127,24 @@ The following example should clarify the above. For simplicity, we have the foll
 
 _Both validator pools A & B have 4 nominators with the total stake 600 and 400 respectively._
 
-Based on the above rewards distribution, nominators in validator pool B get more rewards per SOLAR
-than those in pool A because pool A has more overall stake. Sam has staked 50 SOLAR in pool A, but he
+Based on the above rewards distribution, nominators in validator pool B get more rewards per AXC
+than those in pool A because pool A has more overall stake. Sam has staked 50 AXC in pool A, but he
 only gets 8.3 in return, whereas Kitty gets 12.5 with the same amount of stake.
 
 There is an additional factor to consider in terms of rewards. While there is no limit to the number
 of nominators a validator may have, a validator does have a limit to how many nominators to which it
 can pay rewards.
 
-In AXIACoin and AXIALunar, this limit is currently {{ axiasolar\_max\_nominators }}, although this can be
-modified via runtime upgrade. A validator with more than {{ axiasolar\_max\_nominators }} nominators is
-_oversubscribed_. When payouts occur, only the top {{ axiasolar\_max\_nominators }} nominators as
+In AXIA and AXIALunar, this limit is currently {{ AXIA\_max\_nominators }}, although this can be
+modified via runtime upgrade. A validator with more than {{ AXIA\_max\_nominators }} nominators is
+_oversubscribed_. When payouts occur, only the top {{ AXIA\_max\_nominators }} nominators as
 measured by amount of stake allocated to that validator will receive rewards. All other nominators
 are essentially "wasting" their stake - they used their nomination to elect that validator to the
 active stake, but receive no rewards in exchange for doing so.
 
 We also remark that when the network slashes a validator slot for a misbehavior (e.g. validator
 offline, equivocation, etc.) the slashed amount is a fixed percentage (and NOT a fixed amount),
-which means that validator pools with more stake get slashed more SOLAR. Again, this is done to
+which means that validator pools with more stake get slashed more AXC. Again, this is done to
 provide nominators with an economic incentive to shift their preferences and back less popular
 validators whom they consider to be trustworthy.
 
@@ -177,15 +177,15 @@ anytime you use one key for multiple roles, or even if you use keys related by d
 should never use any account key for a "hot" session key in particular.
 
 Controller and Stash account keys can be either sr25519 or ed25519. For more on how keys are used in
-AXIACoin and the cryptography behind it [see here](learn-keys).
+AXIA and the cryptography behind it [see here](learn-keys).
 
 ## Validators and nominators
 
-Since validator slots are limited, most of those who wish to stake their SOLAR and contribute economic
+Since validator slots are limited, most of those who wish to stake their AXC and contribute economic
 security to the network will be nominators.
 
 Validators do most of the heavy lifting: they produce new block candidates in BABE, vote and come to
-consensus in GRANDPA, validate the state transition function of parachains, and possibly some other
+consensus in GRANDPA, validate the state transition function of allychains, and possibly some other
 responsibilities regarding data availability and [XCM](learn-cross-consensus).
 
 Nominators, on the other hand, have far fewer responsibilities. Those include monitoring their
@@ -196,20 +196,20 @@ compared to a validators.
 
 ![staking](../assets/NPoS/article-2.png)
 
-### Want to stake SOLAR?
+### Want to stake AXC?
 
-- [Nominator Guide](../maintain/maintain-guides-how-to-nominate-axiasolar) - Become a nominator on the AXIACoin
+- [Nominator Guide](../maintain/maintain-guides-how-to-nominate-AXIA) - Become a nominator on the AXIA
   network.
-- [Validator Guide](../maintain/maintain-guides-how-to-validate-axiasolar) - Become a validator on the AXIACoin
+- [Validator Guide](../maintain/maintain-guides-how-to-validate-AXIA) - Become a validator on the AXIA
   network.
 
 ## Slashing
 
 Slashing will happen if a validator misbehaves (e.g. goes offline, attacks the network, or runs
 modified software) in the network. They and their nominators will get slashed by losing a percentage
-of their bonded/staked SOLAR.
+of their bonded/staked AXC.
 
-Any slashed SOLAR will be added to the [Treasury](learn-treasury). The rationale for this (rather than
+Any slashed AXC will be added to the [Treasury](learn-treasury). The rationale for this (rather than
 burning or distributing them as rewards) is that slashes may then be reverted by the Council by
 simply paying out from the Treasury. This would be useful in situations such as a faulty runtime
 causing slashing or forcing validators offline through no fault of their own. In the case of
@@ -247,13 +247,13 @@ nominating a single validator). Staking allocations are controlled by the
 
 Once a validator gets slashed, it goes into the state as an "unapplied slash". You can check this
 via
-[AXIACoin-JS Apps](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.axiasolar.io#/staking/slashes).
+[AXIA-JS Apps](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/staking/slashes).
 The UI shows it per validator and then all the affected nominators along with the amounts. While
 unapplied, a governance proposal can be made to reverse it during this period (7 days on AXIALunar, 28
-days on AXIACoin). After the grace period, the slashes are applied.
+days on AXIA). After the grace period, the slashes are applied.
 
 The following levels of offence are
-[defined](https://research.axiacoin.org/en/latest/axiasolar/slashing/amounts.html). However, these
+[defined](https://research.AXIA.org/en/latest/AXIA/slashing/amounts.html). However, these
 particular levels are not implemented or referred to in the code or in the system; they are meant as
 guidelines for different levels of severity for offences. To understand how slash amounts are
 calculated, see the equations in the section below.
@@ -344,7 +344,7 @@ inactive immediately and will lose their nominators. They need to re-issue inten
 again gather support from nominators.
 
 If you want to know more details about slashing, please look at our
-[research page](https://research.axiacoin.org/en/latest/axiasolar/slashing/amounts.html).
+[research page](https://research.AXIA.org/en/latest/AXIA/slashing/amounts.html).
 
 ### Chilling
 
@@ -362,8 +362,8 @@ When used as part of a punishment (initiated externally), being chilled carries 
 of being un-nominated. It also disables the validator for the remainder of the current era and
 removes the offending validator from the next election.
 
-AXIACoin allows some validators to be disabled, but if the number of disabled validators gets too
-large, AXIACoin will trigger a new validator election to get a full set. Disabled validators will
+AXIA allows some validators to be disabled, but if the number of disabled validators gets too
+large, AXIA will trigger a new validator election to get a full set. Disabled validators will
 need to resubmit their intention to validate and regarner support from nominators.
 
 For more on chilling, see the [How to Chill][] page on this wiki.
@@ -386,12 +386,12 @@ already maxed out.
 
 ## Reward Distribution
 
-Note that AXIALunar runs approximately 4x as fast as AXIACoin, except for block production times.
-AXIACoin will also produce blocks at approximately six second intervals.
+Note that AXIALunar runs approximately 4x as fast as AXIA, except for block production times.
+AXIA will also produce blocks at approximately six second intervals.
 
-Rewards are recorded per session (approximately one hour on AXIALunar and four hours on AXIACoin) and
-calculated per era (approximately six hours on AXIALunar and twenty-four hours on AXIACoin). Thus,
-rewards will be calculated four times per day on AXIALunar and once per day on AXIACoin.
+Rewards are recorded per session (approximately one hour on AXIALunar and four hours on AXIA) and
+calculated per era (approximately six hours on AXIALunar and twenty-four hours on AXIA). Thus,
+rewards will be calculated four times per day on AXIALunar and once per day on AXIA.
 
 Rewards are calculated based on era points, which have a probabilistic component. In other words,
 there may be slight differences in your rewards from era to era, and even amongst validators in the
@@ -400,19 +400,19 @@ page on [Validator Payout Guide](../maintain/maintain-guides-validator-payout.md
 these are calculated.
 
 In order to be paid your staking rewards, someone must claim them for each validator that you
-nominate. Staking rewards are kept available for 84 eras, which is approximately 84 days on AXIACoin
+nominate. Staking rewards are kept available for 84 eras, which is approximately 84 days on AXIA
 and 21 days on AXIALunar. For more information on why this is so, see the page on
 [simple payouts](learn-simple-payouts.md).
 
 > WARNING: If nobody claims your staking rewards by this time, then you will not be able to claim
 > them and some of your staking rewards will be lost. Additionally, if the validator unbonds all
-> their own stake, any pending payouts will be lost. Since unbonding takes 28 days on AXIACoin,
+> their own stake, any pending payouts will be lost. Since unbonding takes 28 days on AXIA,
 > nominators should check if they have pending payouts at least this often.
 
 ### Claiming Rewards
 
 If you go to the Staking payouts page on
-[AXIACoin-JS](https://axiasolar.js.org/apps/#/staking/payout), you will see a list of all validators
+[AXIA-JS](https://AXIA.js.org/apps/#/staking/payout), you will see a list of all validators
 that you have nominated in the past 84 eras and for which you have not yet received a payout. Each
 one has the option to trigger the payout for all unclaimed eras. Note that this will pay everyone
 who was nominating that validator during those eras, and anyone can call it. Therefore, you may not
@@ -421,7 +421,7 @@ necessarily, another nominator or the validator operator) has triggered the payo
 validator for that era.
 
 If you wish to check if you received a payout, you will have to check via a block explorer. See
-[the relevant Support page](https://support.axiacoin.network/support/solutions/articles/65000168954-how-can-i-see-my-staking-rewards-)
+[the relevant Support page](https://support.AXIA.network/support/solutions/articles/65000168954-how-can-i-see-my-staking-rewards-)
 for details.
 
 ### Reward Distribution Example
@@ -438,8 +438,8 @@ This cut is a percentage of the block reward, not an absolute value. After the c
 deducted, the remaining portion is based on their staked value and split between the validator and
 all of the nominators who have voted for this validator.
 
-For example, assume the block reward for a validator is 10 SOLAR. A validator may specify
-`validator_commission = 50%`, in which case the validator would receive 5 SOLAR. The remaining 5 SOLAR
+For example, assume the block reward for a validator is 10 AXC. A validator may specify
+`validator_commission = 50%`, in which case the validator would receive 5 AXC. The remaining 5 AXC
 would then be split between the validator and their nominators based on the proportion of stake each
 nominator had. Note that validators can put up their own stake, and for this calculation, their
 stake acts just as if they were another nominator.
@@ -448,40 +448,40 @@ Rewards can be directed to the same account (controller), to the stash account (
 increasing the staked value or not increasing the staked value), or to a completely unrelated
 account. By using the Extrinsics tab (`Developer -> Extrinsics -> Staking -> Bond`) you can also
 send rewards to "None", effectively burning them. It is also possible to top-up / withdraw some
-bonded SOLAR without having to un-stake all staked SOLAR.
+bonded AXC without having to un-stake all staked AXC.
 
 For specific details about validator payouts, please see
 [this guide](../maintain/maintain-guides-validator-payout.md).
 
 ## Inflation
 
-SOLAR is inflationary; there is no maximum number of SOLAR as in Bitcoin. Inflation is designed to be
+AXC is inflationary; there is no maximum number of AXC as in Bitcoin. Inflation is designed to be
 approximately 10% annually, with validator rewards being a function of amount staked and the
 remainder going to treasury.
 
 ![staking](../assets/NPoS/staking-participation-rate.png)
 
-<p style={{textAlign:"center"}}>Source: <a href="https://w3f-research.readthedocs.io/en/latest/axiasolar/overview/2-token-economics.html">Research - AXIACoin Foundation</a></p>
+<p style={{textAlign:"center"}}>Source: <a href="https://w3f-research.readthedocs.io/en/latest/AXIA/overview/2-token-economics.html">Research - AXIA Foundation</a></p>
 
-- **x-axis**: Proportion of SOLAR staked
+- **x-axis**: Proportion of AXC staked
 - **y-axis**: Inflation, annualized percentage
 - **Blue line**: Inflation rewards to stakers
 - **Green line**: Staker rate of return
 
 You can determine the inflation rewards by checking the staking overview at
-[AXIACoin-JS](https://axiasolar.js.org/apps/#/staking).
+[AXIA-JS](https://AXIA.js.org/apps/#/staking).
 
 The above chart shows the inflation model of the network. Depending on the staking participation,
 the distribution of the inflation to validators/nominators versus the treasury will change
 dynamically to provide incentives to participate (or not participate) in staking.
 
 For instance, assuming that the ideal staking rate is 50%, all of the inflation would go to the
-validators/nominators if 50% of all LUNAR / SOLAR are staked. Any deviation from the 50% - positive or
+validators/nominators if 50% of all LUNAR / AXC are staked. Any deviation from the 50% - positive or
 negative - sends the proportional remainder to the treasury and effectively reduces staking rewards.
 
 For those who are interested in knowing more about the design of inflation model for the network,
 please see
-[here](https://w3f-research.readthedocs.io/en/latest/axiasolar/overview/2-token-economics.html).
+[here](https://w3f-research.readthedocs.io/en/latest/AXIA/overview/2-token-economics.html).
 
 ## Why stake?
 
@@ -491,23 +491,23 @@ please see
 
 ## Why not stake?
 
-- Tokens will be locked for about 28 days on AXIACoin after unbonding, seven days on AXIALunar.
+- Tokens will be locked for about 28 days on AXIA after unbonding, seven days on AXIALunar.
 - Punishment in case of validator found to be misbehaving (see [#slashing](#slashing)).
-- You want to use the tokens for a parachain slot.
+- You want to use the tokens for a allychain slot.
 
-## How many validators does AXIACoin have?
+## How many validators does AXIA have?
 
-AXIACoin started with 20 open validator positions and has increased gradually to 297. The top bound
+AXIA started with 20 open validator positions and has increased gradually to 297. The top bound
 on the number of validators has not been determined yet, but should only be limited by the bandwidth
 strain of the network due to peer-to-peer message passing. The estimate of the number of validators
-that AXIACoin will have at maturity is around 1000. AXIALunar, AXIACoin's canary network, currently has
+that AXIA will have at maturity is around 1000. AXIALunar, AXIA's canary network, currently has
 900 validator slots in the active set.
 
 ## Motion #103: New Minimum Nomination Bond
 
-At the time of writing (#6,339,031), AXIACoin has a maximum nominator count of 22,500, and the current staking configuration prevents new nominators from joining. Motion #103 proposes new nomination limits to the AXIACoin network, offering a temporary solution to increase the stability and security of the network. Note that this motion **does not** increase the maximum nominator count.
+At the time of writing (#6,339,031), AXIA has a maximum nominator count of 22,500, and the current staking configuration prevents new nominators from joining. Motion #103 proposes new nomination limits to the AXIA network, offering a temporary solution to increase the stability and security of the network. Note that this motion **does not** increase the maximum nominator count.
 
-The goal of this motion is to increase the minimum nomination bond, allowing new nominators that meet this requirement to particpate in the network's security. This motion will update the value of the minimum nominator bond from 40 SOLARs to 80 SOLARs and set a new parameter named `chill-threshold`. With `chill-threshold`, the permissionless `chill_other` may only be executed if, and only if, the current nominator count is greater than 90% of the maximum number of nominators. Any existing nominator can update their nomination preferences (amount of SOLAR bonded, number of nominators, etc.) to adjust to this change. A more permanent solution is in progress.
+The goal of this motion is to increase the minimum nomination bond, allowing new nominators that meet this requirement to particpate in the network's security. This motion will update the value of the minimum nominator bond from 40 AXCs to 80 AXCs and set a new parameter named `chill-threshold`. With `chill-threshold`, the permissionless `chill_other` may only be executed if, and only if, the current nominator count is greater than 90% of the maximum number of nominators. Any existing nominator can update their nomination preferences (amount of AXC bonded, number of nominators, etc.) to adjust to this change. A more permanent solution is in progress.
 
 **Parameters changed:**
 minimum nominator bond : `40` -> `80`
@@ -517,8 +517,8 @@ chill-threshold: `90%`
 
 ## Resources
 
-- [How Nominated Proof of Stake will work in AXIACoin](https://medium.com/web3foundation/how-nominated-proof-of-stake-will-work-in-axiasolar-377d70c6bd43) -
-  Blog post by AXIACoin Foundation researcher Alfonso Cevallos covering NPoS in AXIACoin.
+- [How Nominated Proof of Stake will work in AXIA](https://medium.com/web3foundation/how-nominated-proof-of-stake-will-work-in-AXIA-377d70c6bd43) -
+  Blog post by AXIA Foundation researcher Alfonso Cevallos covering NPoS in AXIA.
 - [Validator setup](../maintain/maintain-guides-secure-validator.md)
 
 [epoch]: ../general/glossary.md#epoch

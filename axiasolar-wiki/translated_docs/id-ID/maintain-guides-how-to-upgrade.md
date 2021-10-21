@@ -14,7 +14,7 @@ The process will take several hours, so make sure you understand the instruction
 
 Session keys are stored in the client and used to sign validator operations. They are what link your validator node to your Controller account. You cannot change them mid-Session.
 
-[More info about keys in AXIASolar.](learn-keys)
+[More info about keys in AXIA.](learn-keys)
 
 ### Database
 

@@ -8,15 +8,15 @@ slug: ../maintain-errors
 Errors in Substrate-based chains are usually accompanied by descriptive messages. However, to read
 these messages, a tool parsing the blockchain data needs to request _chain metadata_ from a node.
 That metadata explains how to read the messages. One such tool with a built-in parser for chain
-metadata is the [AXIACoin-JS Apps UI](https://axiasolar.js.org/apps).
+metadata is the [AXIA-JS Apps UI](https://AXIA.js.org/apps).
 
 If this page does not answer your question, try searching for your problem at the
-[AXIACoin Knowledge Base](https://support.axiacoin.network/) for more information on troubleshooting
+[AXIA Knowledge Base](https://support.AXIA.network/) for more information on troubleshooting
 your issue.
 
-## AXIACoinJS Apps Explorer
+## AXIAJS Apps Explorer
 
-Here's how to find out the detailed error description through AXIACoin-JS Apps.
+Here's how to find out the detailed error description through AXIA-JS Apps.
 
 A typical failed transactions looks something like this:
 
@@ -25,7 +25,7 @@ A typical failed transactions looks something like this:
 The image displays only the error name as defined in the code, not its error message. Despite this
 error being rather self-explanatory, let's find its details.
 
-In the [explorer tab](https://axiasolar.js.org/apps/#/explorer), find the block in which this failure
+In the [explorer tab](https://AXIA.js.org/apps/#/explorer), find the block in which this failure
 occured. Then, expand the `system.ExtrinsicFailed` frame:
 
 ![Error described](../assets/errors/02.jpg)
@@ -33,7 +33,7 @@ occured. Then, expand the `system.ExtrinsicFailed` frame:
 Notice how the `details` field contains a human-readable description of the error. Most errors will
 have this, if looked up this way.
 
-[This block](https://axiasolar.js.org/apps/#/explorer/query/0xa10104ed21dfe409c7871a975155766c5dd97e1e2ac7faf3c90f1f8dca89104b)
+[This block](https://AXIA.js.org/apps/#/explorer/query/0xa10104ed21dfe409c7871a975155766c5dd97e1e2ac7faf3c90f1f8dca89104b)
 is a live example of the above.
 
 If you cannot look up the error this way, or there is no message in the `details` field, consult the
@@ -42,7 +42,7 @@ table below.
 ## AXIAscan and Subscan
 
 AXIAscan and Subscan show the `ExtrinsicFailed` event when a transaction does not succeed
-([example](https://axiascan.io/axiasolar/event/2836233-3)). This event gives us the `error` and
+([example](https://axiascan.io/AXIA/event/2836233-3)). This event gives us the `error` and
 `index` indices of the error but does not give us a nice message to understand what it means. We
 will look up the error in the codebase ourselves to understand what went wrong.
 
@@ -54,9 +54,9 @@ For example, if `index` is 5 and `error` is 3, as in the example linked above, w
 the runtime for the fourth error (index 3) in the sixth pallet (index 5).
 
 By looking at the
-[runtime code](https://github.com/axia-tech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs#L965)
+[runtime code](https://github.com/axia-tech/AXIA/blob/master/runtime/AXIA/src/lib.rs#L965)
 we see that the pallet at index 5 is
-[Balances](https://github.com/axia-tech/axiasolar/blob/master/runtime/axiasolar/src/lib.rs#L981). Now
+[Balances](https://github.com/axia-tech/AXIA/blob/master/runtime/AXIA/src/lib.rs#L981). Now
 we will check the Balances pallet's code which is hosted in the Substrate repository, and look for
 the fourth error in the Error enum. According to
 [its source](https://github.com/axia-tech/substrate/blob/master/frame/balances/src/lib.rs#L396) the
@@ -80,7 +80,7 @@ The table below lists the most commonly encountered errors and ways to resolve t
 
 ## Error Table
 
-The below table is a reference to the errors that exists in AXIACoin. It is generated from the
+The below table is a reference to the errors that exists in AXIA. It is generated from the
 runtime's metadata.
 
 | Pallet                  | Error                                  | Documentation                                                                                                                                    |

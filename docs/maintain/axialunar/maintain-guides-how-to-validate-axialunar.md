@@ -20,17 +20,17 @@ before attempting to run your own validator.
 
 Since security is so important to running a successful validator, you should take a look at the
 [validator setup](../maintain-guides-secure-validator.md) information to make you understand the
-factors to consider when constructing your infrastructure. The AXIACoin Foundation also maintains a
-[reference implementation for a validator set-up](https://github.com/axia-tech/axiasolar-validator-setup)
+factors to consider when constructing your infrastructure. The AXIA Foundation also maintains a
+[reference implementation for a validator set-up](https://github.com/axia-tech/AXIA-validator-setup)
 that you can use by deploying yourself. As you progress in your journey as a validator, you will
 likely want to use this repository as a _starting point_ for your own modifications and
 customizations.
 
 If you need help, please reach out on the
-[AXIALunar validator chat](https://app.element.io/#/room/#AXIALunarValidatorLounge:axiasolar.builders) on
+[AXIALunar validator chat](https://app.element.io/#/room/#AXIALunarValidatorLounge:AXIA.builders) on
 Matrix. The team and other validators are there to help answer questions and provide experience. You
 can join directly in your web browser (link above) or using a client such as Element (formerly
-Riot.im) using [this link](https://matrix.to/#/#AXIALunarValidatorLounge:axiasolar.builders).
+Riot.im) using [this link](https://matrix.to/#/#AXIALunarValidatorLounge:AXIA.builders).
 
 ### How Many LUNAR Do I Need?
 
@@ -56,7 +56,7 @@ choose whatever [VPS](#vps-list) provider that your prefer, and whatever operati
 comfortable with. For this guide we will be using **Ubuntu 18.04**, but the instructions should be
 similar for other platforms.
 
-The transactions weights in AXIACoin were benchmarked on standard hardware. It is recommended that
+The transactions weights in AXIA were benchmarked on standard hardware. It is recommended that
 validators run at least the standard hardware in order to ensure they are able to process all blocks
 in time. The following are not _minimum requirements_ but if you decide to run with less than this
 beware that you might have performance issue.
@@ -68,7 +68,7 @@ For the full details of the standard hardware please see
 
 - **CPU** - Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
 - **Storage** - A NVMe solid state drive. Should be reasonably sized to deal with blockchain growth.
-  Starting around 80GB - 160GB will be okay for the first six months of AXIACoin, but will need to
+  Starting around 80GB - 160GB will be okay for the first six months of AXIA, but will need to
   be re-evaluated every six months.
 - **Memory** - 64GB.
 
@@ -111,7 +111,7 @@ rustc --version
 ```
 
 Finally, run this command to install the necessary dependencies for compiling and running the
-AXIACoin node software.
+AXIA node software.
 
 ```sh
 sudo apt install make clang pkg-config libssl-dev build-essential
@@ -157,11 +157,11 @@ sudo ntpq -p
 > get accepted by the network. This will result in `ImOnline` heartbeats making it on chain, but
 > zero allocated blocks making it on chain.
 
-### Building and Installing the `axiasolar` Binary
+### Building and Installing the `AXIA` Binary
 
 #### Optional: Installation via Package Managers
 
-The AXIACoin Binary in included in `Debian` derivatives (i.e. **Debain**, **Ubuntu**) and `RPM-based` distros (i.e. **Fedora**, **CentOS**).
+The AXIA Binary in included in `Debian` derivatives (i.e. **Debain**, **Ubuntu**) and `RPM-based` distros (i.e. **Fedora**, **CentOS**).
 
 #### Debian-based (Debian, Ubuntu)
 
@@ -177,8 +177,8 @@ apt update
 # Install the `axia-keyring` package - This will ensure the GPG key
 # used by APT remains up-to-date
 apt install axia-keyring
-# Install axiasolar
-apt install axiasolar
+# Install AXIA
+apt install AXIA
 ```
 
 #### RPM-based (Fedora, CentOS)
@@ -189,46 +189,46 @@ Run the following commands as the root user:
 # Install dnf-plugins-core (This might already be installed)
 dnf install dnf-plugins-core
 # Add the repository and enable it
-dnf config-manager --add-repo https://releases.axia.io/rpm/axiasolar.repo
-dnf config-manager --set-enabled axiasolar
-# Install axiasolar (You may have to confirm the import of the GPG key, which
+dnf config-manager --add-repo https://releases.axia.io/rpm/AXIA.repo
+dnf config-manager --set-enabled AXIA
+# Install AXIA (You may have to confirm the import of the GPG key, which
 # should have the following fingerprint: 9D4B2B6EB8F97156D19669A9FF0812D491B96798)
-dnf install axiasolar
+dnf install AXIA
 ```
 
-After installing AXIACoin, you can verify the installation by running
+After installing AXIA, you can verify the installation by running
 
 ```bash
-which axiasolar
+which AXIA
 ```
 
 It should return
 
 ```bash
-/usr/bin/axiasolar
+/usr/bin/AXIA
 ```
 
-> By default, the AXIACoin systemd service is disabled.
-> To start the service, run `sudo systemctl start axiasolar.service`.
+> By default, the AXIA systemd service is disabled.
+> To start the service, run `sudo systemctl start AXIA.service`.
 
-### AXIACoin Binary
+### AXIA Binary
 
-You will need to build the `axiasolar` binary from the
-[axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repository on GitHub using the source
+You will need to build the `AXIA` binary from the
+[axia-tech/AXIA](https://github.com/axia-tech/AXIA) repository on GitHub using the source
 code available in the **v0.8** branch.
 
 You should generally use the latest **0.8.x** tag. At the time of writing, this was **0.8.26-1**,
 but you should review the output from the "git tag" command to see a list of all the potential 0.8
 releases. You should replace `VERSION` with the latest build (i.e., the highest number). You can
 also find the latest AXIALunar version on the
-[release](https://github.com/axia-tech/axiasolar/releases) tab.
+[release](https://github.com/axia-tech/AXIA/releases) tab.
 
 > Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with
-> `git clone git@github.com:axia-tech/axiasolar.git`.
+> `git clone git@github.com:axia-tech/AXIA.git`.
 
 ```sh
-git clone https://github.com/axia-tech/axiasolar.git
-cd axiasolar
+git clone https://github.com/axia-tech/AXIA.git
+cd AXIA
 ```
 
 Run the following command to find the latest version.
@@ -280,8 +280,8 @@ cargo install --force --git https://github.com/axia-tech/substrate subkey
 ### Synchronize Chain Data
 
 > **Note:** By default, Validator nodes are in archive mode. If you've already synced the chain not
-> in archive mode, you must first remove the database with `axiasolar purge-chain` and then ensure
-> that you run AXIACoin with the `--pruning=archive` option.
+> in archive mode, you must first remove the database with `AXIA purge-chain` and then ensure
+> that you run AXIA with the `--pruning=archive` option.
 >
 > You may run a validator node in non-archive mode by adding the following flags:
 > `--unsafe-pruning --pruning <NUMBER OF BLOCKS>`, but note that an archive node and non-archive
@@ -291,7 +291,7 @@ cargo install --force --git https://github.com/axia-tech/substrate subkey
 You can begin syncing your node by running the following command:
 
 ```sh
-./target/release/axiasolar --pruning=archive --chain axialunar
+./target/release/AXIA --pruning=archive --chain axialunar
 ```
 
 if you do not want to start in validator mode right away.
@@ -302,13 +302,13 @@ if you do not want to start in validator mode right away.
 2021-06-17 02:34:25       endorsed by the
 2021-06-17 02:34:25      AXIALUNAR FOUNDATION
 2021-06-17 02:34:25 ----------------------------
-2021-06-17 02:34:25 AXIA AXIACoin
+2021-06-17 02:34:25 AXIA AXIA
 2021-06-17 02:34:25 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
 2021-06-17 02:34:25 ❤️  by AXIA Technologies <admin@axia.io>, 2017-2021
 2021-06-17 02:34:25 📋 Chain specification: AXIALunar
 2021-06-17 02:34:25 🏷 Node name: obtainable-kitten-0716
 2021-06-17 02:34:25 👤 Role: FULL
-2021-06-17 02:34:25 💾 Database: RocksDb at /root/.local/share/axiasolar/chains/ksmcc3/db
+2021-06-17 02:34:25 💾 Database: RocksDb at /root/.local/share/AXIA/chains/ksmcc3/db
 2021-06-17 02:34:25 ⛓  Native runtime: axialunar-9050 (axia-axialunar-0.tx5.au2)
 2021-06-17 02:34:25 🔨 Initializing Genesis block/state (state: 0xb000…ef6b, header-hash: 0xb0a8…dafe)
 2021-06-17 02:34:25 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.
@@ -349,10 +349,10 @@ Depending on the size of the chain when you do this, this step may take anywhere
 to a few hours.
 
 If you are interested in determining how much longer you have to go, your server logs (printed to
-STDOUT from the `axiasolar` process) will tell you the latest block your node has processed and
+STDOUT from the `AXIA` process) will tell you the latest block your node has processed and
 verified. You can then compare that to the current highest block via
-[Telemetry](https://telemetry.axiasolar.io/#list/AXIALunar) or the
-[AXIACoin-JS Block Explorer](https://axiasolar.js.org/apps/#/explorer).
+[Telemetry](https://telemetry.AXIA.io/#list/AXIALunar) or the
+[AXIA-JS Block Explorer](https://AXIA.js.org/apps/#/explorer).
 
 ## Bond LUNAR
 
@@ -370,7 +370,7 @@ It is now time to set up our validator. We will do the following:
   and can be slashed.
 - Select the Controller. This is the account that will decide when to start or stop validating.
 
-First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) section. Click on
+First, go to the [Staking](https://AXIA.js.org/apps/#/staking/actions) section. Click on
 "Account Actions", and then the "New stake" button.
 
 ![dashboard bonding](../../assets/guides/how-to-validate/axialunar-dashboard-bonding.png)
@@ -383,10 +383,10 @@ First, go to the [Staking](https://axiasolar.js.org/apps/#/staking/actions) sect
 - **Value bonded** - How much LUNAR from the Stash account you want to bond/stake. Note that you do
   not need to bond all of the LUNAR in that account. Also note that you can always bond _more_ LUNAR
   later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On
-  AXIALunar, the unbonding period is 7 days. On AXIACoin, the planned unbonding period is 28 days.
+  AXIALunar, the unbonding period is 7 days. On AXIA, the planned unbonding period is 28 days.
 - **Payment destination** - The account where the rewards from validating are sent. More info
   [here](../../learn/learn-staking.md#reward-distribution). Starting with runtime version v2023 natively
-  included in client version [0.9.3](https://github.com/axia-tech/axiasolar/releases/tag/v0.9.3),
+  included in client version [0.9.3](https://github.com/axia-tech/AXIA/releases/tag/v0.9.3),
   payouts can go to any custom address. If you'd like to redirect payments to an account that is
   neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set
   an exchange address as the recipient of the staking rewards.
@@ -403,9 +403,9 @@ corresponds to the funds bonded by the Stash account.
 > **Note:** The session keys are consensus critical, so if you are not sure if your node has the
 > current session keys that you made the `setKeys` transaction then you can use one of the two
 > available RPC methods to query your node:
-> [hasKey](https://axiasolar.js.org/api/substrate/rpc.html#haskey-publickey-bytes-keytype-text-bool)
+> [hasKey](https://AXIA.js.org/api/substrate/rpc.html#haskey-publickey-bytes-keytype-text-bool)
 > to check for a specific key or
-> [hasSessionKeys](https://axiasolar.js.org/api/substrate/rpc.html#hassessionkeys-sessionkeys-bytes-bool)
+> [hasSessionKeys](https://AXIA.js.org/api/substrate/rpc.html#hassessionkeys-sessionkeys-bytes-bool)
 > to check the full session key public key string.
 
 Once your node is fully synced, stop the process by pressing Ctrl-C. At your terminal prompt, you
@@ -413,7 +413,7 @@ will now start running the node in validator mode with a flag allowing unsafe RP
 some advanced operations.
 
 ```sh
-./target/release/axiasolar --validator --name "name on telemetry" --chain axialunar
+./target/release/AXIA --validator --name "name on telemetry" --chain axialunar
 ```
 
 Similarly:
@@ -424,13 +424,13 @@ Similarly:
 2021-06-17 02:47:05       endorsed by the
 2021-06-17 02:47:05      AXIALUNAR FOUNDATION
 2021-06-17 02:47:05 ----------------------------
-2021-06-17 02:47:05 AXIA AXIACoin
+2021-06-17 02:47:05 AXIA AXIA
 2021-06-17 02:47:05 ✌️  version 0.9.5-95f6aa201-x86_64-linux-gnu
 2021-06-17 02:47:05 ❤️  by AXIA Technologies <admin@axia.io>, 2017-2021
 2021-06-17 02:47:05 📋 Chain specification: AXIALunar
 2021-06-17 02:47:05 🏷 Node name: techedtest
 2021-06-17 02:47:05 👤 Role: AUTHORITY
-2021-06-17 02:47:05 💾 Database: RocksDb at /root/.local/share/axiasolar/chains/ksmcc3/db
+2021-06-17 02:47:05 💾 Database: RocksDb at /root/.local/share/AXIA/chains/ksmcc3/db
 2021-06-17 02:47:05 ⛓  Native runtime: axialunar-9050 (axia-axialunar-0.tx5.au2)
 2021-06-17 02:47:07 🏷 Local node identity is: 12D3KooWLE7ivpuXJQpFVP4fuuutAqEsk8nrNEpuR3tddqnXgLPB
 2021-06-17 02:47:07 📦 Highest known block at #139917
@@ -452,14 +452,14 @@ people are using telemetry, it is recommended that you choose something likely t
 ### Generating the Session Keys
 
 You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what
-associates your validator node with your Controller account on AXIACoin.
+associates your validator node with your Controller account on AXIA.
 
-#### Option 1: AXIACoin-JS Apps
+#### Option 1: AXIA-JS Apps
 
 You can generate your [Session keys](../../learn/learn-keys.md#session-keys) in the client via the apps RPC. If
-you are doing this, make sure that you have the AXIACoin-JS Apps explorer attached to your validator
+you are doing this, make sure that you have the AXIA-JS Apps explorer attached to your validator
 node. You can configure the apps dashboard to connect to the endpoint of your validator in the
-Settings tab. If you are connected to a default endpoint hosted by AXIA of AXIACoin Foundation, you
+Settings tab. If you are connected to a default endpoint hosted by AXIA of AXIA Foundation, you
 will not be able to use this method since making RPC requests to this node would effect the local
 keystore hosted on a _public node_ and you want to make sure you are interacting with the keystore
 for _your node_.
@@ -469,7 +469,7 @@ node is by calling the `author_rotateKeys` RPC request to create new keys in you
 keystore. Navigate to Toolbox tab and select RPC Calls then select the author > rotateKeys() option
 and remember to save the output that you get back for a later step.
 
-![Explorer RPC call](../../assets/guides/how-to-validate/axiasolar-explorer-rotatekeys-rpc.jpg)
+![Explorer RPC call](../../assets/guides/how-to-validate/AXIA-explorer-rotatekeys-rpc.jpg)
 
 #### Option 2: CLI
 
@@ -488,7 +488,7 @@ public keys. Save this result for a later step.
 You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what
 associates your validator with your Controller account.
 
-Go to [Staking > Account Actions](https://axiasolar.js.org/apps/#/staking/actions), and click "Set
+Go to [Staking > Account Actions](https://AXIA.js.org/apps/#/staking/actions), and click "Set
 Session Key" on the bonding account you generated earlier. Enter the output from `author_rotateKeys`
 in the field and click "Set Session Key".
 
@@ -538,11 +538,11 @@ validator set.
 **Congratulations!** If you have followed all of these steps, and been selected to be a part of the
 validator set, you are now running a AXIALunar validator! If you need help, reach out on the
 [AXIALunar forum](https://forum.axialunar.network/) or in the
-[AXIALunar Validator chat](https://riot.im/app/#/room/#AXIALunarValidatorLounge:axiasolar.builders).
+[AXIALunar Validator chat](https://riot.im/app/#/room/#AXIALunarValidatorLounge:AXIA.builders).
 
 ## Thousand Validators Programme
 
-The Thousand Validators Programme is a joint initiative by AXIACoin Foundation and AXIA Technologies
+The Thousand Validators Programme is a joint initiative by AXIA Foundation and AXIA Technologies
 to provide support for community validators. If you are interested in applying for the programme,
 you can find more information [on the wiki page](../../general/thousand-validators.md).
 
@@ -550,7 +550,7 @@ you can find more information [on the wiki page](../../general/thousand-validato
 
 ### Why am I unable to synchronize the chain with 0 peers?
 
-![zero-peer](../../assets/guides/how-to-validate/axiasolar-zero-peer.jpg)
+![zero-peer](../../assets/guides/how-to-validate/AXIA-zero-peer.jpg)
 
 Make sure to enable `30333` libp2p port. Eventually, it will take a little bit of time to discover
 other peers over the network.
@@ -558,7 +558,7 @@ other peers over the network.
 ### How do I clear all my chain data?
 
 ```sh
-./target/release/axiasolar purge-chain
+./target/release/AXIA purge-chain
 ```
 
 ## VPS List
@@ -576,5 +576,5 @@ If you have Docker installed, you can use it to start your validator node withou
 the binary. You can do this with a simple one line command:
 
 ```sh
-$ docker run axia/axiasolar:latest --validator --name "name on telemetry" --chain axialunar
+$ docker run axia/AXIA:latest --validator --name "name on telemetry" --chain axialunar
 ```

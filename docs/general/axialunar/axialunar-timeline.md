@@ -16,7 +16,7 @@ more information in the sections below.
 ## Rollout plan
 
 The rollout of full functionality of AXIALunar was staggered to allow for a safe transition. The first
-PoS phase began with 20 validators. Of the 20, the AXIACoin Foundation ran nine and AXIA Technologies
+PoS phase began with 20 validators. Of the 20, the AXIA Foundation ran nine and AXIA Technologies
 ran six. Five were ran by highly staked community members as voted in by the Phragmén election.
 
 When the initial transition was successful, additional validator spots were opened 10 at a time in
@@ -30,11 +30,11 @@ AXIALunar now has its full functionality enabled.
 
 ## AXIALunar's First Adventure
 
-[Source](https://axiacoin.network/axialunars-first-adventure/)
+[Source](https://AXIA.network/axialunars-first-adventure/)
 
-On 4th January 2020, the AXIACoin mainnet runtime, which at that time still wasn't live, was
+On 4th January 2020, the AXIA mainnet runtime, which at that time still wasn't live, was
 uploaded to the AXIALunar chain during a runtime upgrade. The mishap was due to a recent split of the
-AXIALunar logic from the AXIACoin logic and that runtime was not properly named. This led to a halt of
+AXIALunar logic from the AXIA logic and that runtime was not properly named. This led to a halt of
 block production on the AXIALunar chain and bricked the chain entirely.
 
 The solution to the issue involved a rollback of the chain history before the problematic runtime
@@ -48,33 +48,33 @@ hour would last only 10 minutes until the validators caught up to the present mo
 The above plan was executed successfully on the 7th of January. Due to the time warp, the number of
 missed blocks in the sessions directly following
 [block #516558](https://axiascan.io/axialunar/block/516558) was significantly higher. This is partly
-what contributes to the much higher ratio of missed blocks on AXIALunar versus AXIACoin today.
+what contributes to the much higher ratio of missed blocks on AXIALunar versus AXIA today.
 
 ## AXIALunar's Current Adventure: Auctions
 
 ### Round One
 
 AXIALunar promised chaos, and it delivered on that promise. On 15th June 2021, the roll out of the
-first public parachain slot auction commenced, marking the beginning of the end to deliver on the
-last piece of core functionality outlined in the AXIACoin whitepaper: purpose-built, interoperable
-parachains.
+first public allychain slot auction commenced, marking the beginning of the end to deliver on the
+last piece of core functionality outlined in the AXIA whitepaper: purpose-built, interoperable
+allychains.
 
-Teams and projects looking to become an official parachain on the AXIALunar network have been working
+Teams and projects looking to become an official allychain on the AXIALunar network have been working
 hard to bring their technologies to life, many of whom started a
 [crowdloan campaign](../../learn/learn-crowdloans.md##starting-a-crowdloan-campaign) in order to participate in
 the slot auctions.
 
-The five AXIALunar parachain winners were: Karura, Moonriver, Shiden, Khala, and Bifrost.
+The five AXIALunar allychain winners were: Karura, Moonriver, Shiden, Khala, and Bifrost.
 
-AXIALunar made history with a permissionless launch of 5 independent parachains. As parachains become operational, the community will determine which additional features and network upgrades should be added over time.
+AXIALunar made history with a permissionless launch of 5 independent allychains. As allychains become operational, the community will determine which additional features and network upgrades should be added over time.
 
 ### Round Two
 
-While AXIALunar’s first five parachains are taking advantage of the built-in features of the network and forkless upgradability provided by Substrate, chaos continues...
+While AXIALunar’s first five allychains are taking advantage of the built-in features of the network and forkless upgradability provided by Substrate, chaos continues...
 
 And in the spirit of chaos, more teams are eager to deploy on AXIALunar.
-The launch of the second batch of parachain slot auctions will officially go live in Septmeber 2021,
-with the sixth parachain slot auction to officially begin on 1st September 2021. Five more slot auctions
+The launch of the second batch of allychain slot auctions will officially go live in Septmeber 2021,
+with the sixth allychain slot auction to officially begin on 1st September 2021. Five more slot auctions
 will occur over five weeks with a pause for evaluation of overall network performance before a third batch of five auctions begins in a similar schedule.
 
-The path of AXIALunar deployment will pave the way to AXIACoin's parachains as the technology becomes proven.
+The path of AXIALunar deployment will pave the way to AXIA's allychains as the technology becomes proven.

@@ -4,19 +4,19 @@ title: Using W3F Registrar
 sidebar_label: How to use W3F Registrar
 ---
 
-An on-chain identity is a good way to build up your reputation and let the community know more about you if you plan on running a validator or being a councilor. AXIACoin Foundation provides a registrar service in the AXIALunar and AXIASolar networks that only charges a small fee (0.04 LUNAR) on AXIALunar, and no fees on AXIASolar (although there may be a small fee in the future). However, you will of course need to reserve some SOLAR in your account while you have an identity, no matter which registrar you use. For details on amount necessary to reserve, as well as the identity system as a whole, see the [identity](learn-identity) page.
+An on-chain identity is a good way to build up your reputation and let the community know more about you if you plan on running a validator or being a councilor. AXIA Foundation provides a registrar service in the AXIALunar and AXIA networks that only charges a small fee (0.04 LUNAR) on AXIALunar, and no fees on AXIA (although there may be a small fee in the future). However, you will of course need to reserve some AXC in your account while you have an identity, no matter which registrar you use. For details on amount necessary to reserve, as well as the identity system as a whole, see the [identity](learn-identity) page.
 
-> **Note**: The registrar bot will not ask you to send any SOLAR, and never expose your private keys to anyone!
+> **Note**: The registrar bot will not ask you to send any AXC, and never expose your private keys to anyone!
 
 If you have provided `display name`, `email`, `twitter`, or `element name (previously called Riot)` when setting an on-chain identity, these will be required to verify one by one by signing a challenge message. Be aware that the `display name` cannot be too similar to others that have verified already. There is no need to set all of the fields when using the service. You are free to set whichever field or fields that you like.
 
-Free feel to join the [AXIASolar's community](community#axiasolar) to ask questions if there is anything unclear.
+Free feel to join the [AXIA's community](community#AXIA) to ask questions if there is anything unclear.
 
 ## Setting an On-chain Identity
 
 > **Note**: The W3F Registrar currently **does not** support KYC or web verification. Make sure to leave it blank when you fill in your identity information.
 
-Go to [Accounts](<(https://axiasolar.js.org/apps/#/accounts)>) page in AXIASolar-JS Apps. The easiest way to add the built-in fields is to click the vertical three dots next to one's account and select "Set on-chain identity".
+Go to [Accounts](<(https://AXIA.js.org/apps/#/accounts)>) page in AXIA-JS Apps. The easiest way to add the built-in fields is to click the vertical three dots next to one's account and select "Set on-chain identity".
 
 ![registrar](assets/registrar/1.jpg)
 
@@ -41,19 +41,19 @@ Now you have set the identity information on-chain, but that is not verified yet
 
 ![registrar](assets/registrar/4.jpg)
 
-Go to [Developer->Extrinics](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.axiasolar.io#/extrinsics) and select your account to submit the `identity -> requestJudgement(reg_index, max_fee)` transaction. This will request the registrar to validate the information you set on-chain earlier.
+Go to [Developer->Extrinics](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/extrinsics) and select your account to submit the `identity -> requestJudgement(reg_index, max_fee)` transaction. This will request the registrar to validate the information you set on-chain earlier.
 
 The `reg_index` is the position of the registrar. For W3F, use 0.
 
-The `max_fee` is the amount of SOLAR or LUNAR to pay the registrar. For AXIALunar use **0.04 LUNAR** and for AXIASolar use **0 SOLAR**.
+The `max_fee` is the amount of AXC or LUNAR to pay the registrar. For AXIALunar use **0.04 LUNAR** and for AXIA use **0 AXC**.
 
-Note that in the future, a fee may be charged for the AXIASolar registrar.
+Note that in the future, a fee may be charged for the AXIA registrar.
 
 ## Element Verification
 
 Since we provided the Element, Twitter, and Email information in this example, we would start to receive the verification requests from those platforms. As for Element, an invitation will be sent by the bot named "W3F Registrar Verification".
 
-> Note: The handle of the W3F bot is called @registrar:axiacoin.org. If you are not sure whether that is ours or not, ask in the AXIASolar community chat first.
+> Note: The handle of the W3F bot is called @registrar:AXIA.org. If you are not sure whether that is ours or not, ask in the AXIA community chat first.
 
 ![registrar](assets/registrar/5.jpg)
 
@@ -61,7 +61,7 @@ Once you accept the invitation, you should see the following information.
 
 ![registrar](assets/registrar/6.jpg)
 
-Then go to [Sign and Verify](https://axiasolar.js.org/apps/#/signing) under the Developer tab in the AXIASolarJS and select your account, paste the "Challenge" data to the "sign the following data" field and click "Sign message".
+Then go to [Sign and Verify](https://AXIA.js.org/apps/#/signing) under the Developer tab in the AXIAJS and select your account, paste the "Challenge" data to the "sign the following data" field and click "Sign message".
 
 ![registrar](assets/registrar/7.jpg)
 
@@ -75,11 +75,11 @@ If the information is correct, you should see a message like the above image tha
 
 Next, you should receive an email called "W3F Registrar Verification Service". Below is an example for reference.
 
-> Note: Please double-check the sender is "registrar@axiacoin.org", not the others.
+> Note: Please double-check the sender is "registrar@AXIA.org", not the others.
 
 ![registrar](assets/registrar/9.jpg)
 
-You would do what you did in the above again. Copy the "Challenge" data and go to [Sign and Verify](https://axiasolar.js.org/apps/#/signing) under the Developer tab in the AXIASolarJS and select your account, paste the "Challenge" data to the "sign the following data" field and click "Sign message"
+You would do what you did in the above again. Copy the "Challenge" data and go to [Sign and Verify](https://AXIA.js.org/apps/#/signing) under the Developer tab in the AXIAJS and select your account, paste the "Challenge" data to the "sign the following data" field and click "Sign message"
 
 ![registrar](assets/registrar/10.jpg)
 
@@ -103,14 +103,14 @@ After waiting a few mintues you should receive a challenge similar to the previo
 
 ![registrar](assets/registrar/13.jpg)
 
-Again, just like how you did in the above. By using your account to sign the "Challenge" data that you received on Twitter in the [Sign and Verify](https://axiasolar.js.org/apps/#/signing) page.
+Again, just like how you did in the above. By using your account to sign the "Challenge" data that you received on Twitter in the [Sign and Verify](https://AXIA.js.org/apps/#/signing) page.
 
 ![registrar](assets/registrar/14.jpg)
 
 Paste the signed data to the chat and you would receive the verification status after 1 to 2 minutes.
 
-If everything has been verified successfully, you would see your account verification status has been marked as "reasonable" with a green tick icon on the [Accounts](https://axiasolar.js.org/apps/#/accounts) page.
+If everything has been verified successfully, you would see your account verification status has been marked as "reasonable" with a green tick icon on the [Accounts](https://AXIA.js.org/apps/#/accounts) page.
 
 ![registrar](assets/registrar/15.jpg)
 
-Congratulations! Your identity should now show as a green "verified" checkmark on AXIASolar-JS Apps.
+Congratulations! Your identity should now show as a green "verified" checkmark on AXIA-JS Apps.

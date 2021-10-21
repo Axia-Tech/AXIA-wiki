@@ -4,18 +4,18 @@ title: Proxy Accounts
 sidebar_label: Proxy Accounts
 ---
 
-AXIASolar provides a module that allows users to set proxy accounts to perform a limited number of actions on their behalf. Much like the Stash and Controller account relationship in [staking](learn-staking), proxies allow users to keep one account in cold storage and actively participate in the network with the weight of the tokens in that account.
+AXIA provides a module that allows users to set proxy accounts to perform a limited number of actions on their behalf. Much like the Stash and Controller account relationship in [staking](learn-staking), proxies allow users to keep one account in cold storage and actively participate in the network with the weight of the tokens in that account.
 
 ## Proxy Types
 
-You can set a proxy account via the Proxy module. When you set a proxy, you must choose a type of proxy for the relationship. AXIASolar offers:
+You can set a proxy account via the Proxy module. When you set a proxy, you must choose a type of proxy for the relationship. AXIA offers:
 
 - Any
 - Non-transfer
 - Staking
 - Governance
 
-When a proxy account makes a `proxy` transaction, AXIASolar filters the desired transaction to ensure that the proxy account has the appropriate permission to make that transaction on behalf of the cold account.
+When a proxy account makes a `proxy` transaction, AXIA filters the desired transaction to ensure that the proxy account has the appropriate permission to make that transaction on behalf of the cold account.
 
 As implied by the name, a proxy type of "Any" allows the proxy account to make any transaction, incuding balance transfers. In most cases, this should be avoided as the proxy account is used more frequently than the cold account and is therefore less secure. To allow any type of transaction except balance transfers (including vested transfers), the "Non-transfer" proxy type will be a better fit.
 
@@ -25,7 +25,7 @@ The "Staking" type allows staking-related transactions, but do not confuse a sta
 
 ### Anonymous Proxies
 
-AXIASolar includes a function to create an anonymous proxy, an account that can only be accessed via proxy. That is, it generates an address but no corresponding private key. Normally, a primary account designates a proxy account, but anonymous proxies are the opposite. The account that creates the proxy relationship is the proxy account and the new account is the primary. Use extreme care with anonymous proxies; once you remove the proxy relationship, the account will be inaccessible.
+AXIA includes a function to create an anonymous proxy, an account that can only be accessed via proxy. That is, it generates an address but no corresponding private key. Normally, a primary account designates a proxy account, but anonymous proxies are the opposite. The account that creates the proxy relationship is the proxy account and the new account is the primary. Use extreme care with anonymous proxies; once you remove the proxy relationship, the account will be inaccessible.
 
 ## Putting It All Together
 

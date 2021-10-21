@@ -4,11 +4,11 @@ title: Errors and How to Resolve Them
 sidebar_label: Resolving Errors
 ---
 
-Errors in Substrate-based chains are usually accompanied by descriptive messages. However, to read these messages, a tool parsing the blockchain data needs to request _chain metadata_ from a node. That metadata explains how to read the messages. One such tool with a built-in parser for chain metadata is the [AXIASolar JS Apps UI](https://axiasolar.js.org/apps).
+Errors in Substrate-based chains are usually accompanied by descriptive messages. However, to read these messages, a tool parsing the blockchain data needs to request _chain metadata_ from a node. That metadata explains how to read the messages. One such tool with a built-in parser for chain metadata is the [AXIA JS Apps UI](https://AXIA.js.org/apps).
 
-## AXIASolarJS Apps Explorer
+## AXIAJS Apps Explorer
 
-Here's how to find out the detailed error description through AXIASolar JS Apps.
+Here's how to find out the detailed error description through AXIA JS Apps.
 
 A typical failed transactions looks something like this:
 
@@ -16,13 +16,13 @@ A typical failed transactions looks something like this:
 
 The image displays only the error name as defined in the code, not its error message. Despite this error being rather self-explanatory, let's find its details.
 
-In the [explorer tab](https://axiasolar.js.org/apps/#/explorer), find the block in which this failure occured. Then, expand the `system.ExtrinsicFailed` frame:
+In the [explorer tab](https://AXIA.js.org/apps/#/explorer), find the block in which this failure occured. Then, expand the `system.ExtrinsicFailed` frame:
 
 ![Error described](/img/errors/02.jpg)
 
 Notice how the `details` field contains a human-readable description of the error. Most errors will have this, if looked up this way.
 
-[This block](https://axiasolar.js.org/apps/#/explorer/query/0xa10104ed21dfe409c7871a975155766c5dd97e1e2ac7faf3c90f1f8dca89104b) is a live example of the above.
+[This block](https://AXIA.js.org/apps/#/explorer/query/0xa10104ed21dfe409c7871a975155766c5dd97e1e2ac7faf3c90f1f8dca89104b) is a live example of the above.
 
 If you cannot look up the error this way, or there is no message in the `details` field, consult the table below.
 

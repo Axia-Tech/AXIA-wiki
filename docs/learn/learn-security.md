@@ -8,9 +8,9 @@ slug: ../learn-security
 ## Shared security
 
 Shared security, sometimes referred in documentation as _pooled security_, is one of the unique
-value propositions for chains considering to become a [parachain](learn-parachains.md) and join the
-AXIACoin network. On a high level, shared security means that all parachains that are connected to
-the AXIACoin Relay Chain by leasing a parachain slot will benefit from the economic security
+value propositions for chains considering to become a [allychain](learn-allychains.md) and join the
+AXIA network. On a high level, shared security means that all allychains that are connected to
+the AXIA Relay Chain by leasing a allychain slot will benefit from the economic security
 provided by the Relay Chain [validators](learn-validator.md).
 
 The notion of shared security is different from interchain protocols that build on an architecture
@@ -25,15 +25,15 @@ recently (
 ), in which an unknown attacker double spent 219_500 ETC (~1.1 million USD). This was followed by
 two more 51% attacks on ETC.
 
-AXIACoin overcomes security scalability concerns since it gravitates all the economic incentives to
-the Relay Chain and allows the parachains to tap into stronger guarantees at genesis. Sovereign
+AXIA overcomes security scalability concerns since it gravitates all the economic incentives to
+the Relay Chain and allows the allychains to tap into stronger guarantees at genesis. Sovereign
 chains must expend much more effort to grow the value of their coin so that it is not easily
 attackable by well-funded attackers.
 
 ### Example
 
 Let's compare the standard sovereign security model that exists on current proof-of-work (PoW)
-chains to that of the shared security of AXIACoin. Chains that are secured by their own security
+chains to that of the shared security of AXIA. Chains that are secured by their own security
 model like Bitcoin, Zcash, Ethereum, and their derivatives all must bootstrap their own independent
 network of miners and maintain a competitive portion of honest hashing power. Since mining is
 becoming a larger industry that increasingly centralizes on key players, it is becoming more real
@@ -47,35 +47,35 @@ Ethereum Classic (see above),
 [Verge](https://coincentral.com/verge-suffers-51-attack-hard-forks-in-response/),
 [Bitcoin Gold](https://bitcoingold.org/responding-to-attacks/), and other cryptocurrencies.
 
-On AXIACoin, this disaxia between chain security will not be present. When a parachain connects to
-AXIACoin, the Relay Chain validator set become the securers of that parachain's state transitions.
-The parachain will only have the overhead of needing to run a few collator nodes to keep the
+On AXIA, this disaxia between chain security will not be present. When a allychain connects to
+AXIA, the Relay Chain validator set become the securers of that allychain's state transitions.
+The allychain will only have the overhead of needing to run a few collator nodes to keep the
 validators informed with the latest state transitions and proofs/witness. Validators will then check
-these for the parachains to which they are assigned. In this way, new parachains instantly benefit
-from the overall security of AXIACoin even if they have just been launched.
+these for the allychains to which they are assigned. In this way, new allychains instantly benefit
+from the overall security of AXIA even if they have just been launched.
 
 ## FAQ
 
-### Is security correlated to the number of validators? What about the number of parachains?
+### Is security correlated to the number of validators? What about the number of allychains?
 
-Security is independent of the number of parachains that are connected to the AXIACoin Relay Chain.
+Security is independent of the number of allychains that are connected to the AXIA Relay Chain.
 The correlation of security and the number of validators exists as the higher number of validators
 will give the network stronger decentralization properties and make it harder to try to take down.
 However, the biggest indicator of the security of the network is the economic signal of the number
-of SOLAR that are bonded and staked. The greater the number of SOLAR staked by honest validators and
-nominators, the higher the minimum amount of SOLAR an attacker would need to acquire a validator slot.
+of AXC that are bonded and staked. The greater the number of AXC staked by honest validators and
+nominators, the higher the minimum amount of AXC an attacker would need to acquire a validator slot.
 
-### Will parachains ever need their own security? In what scenarios do parachains need their own security?
+### Will allychains ever need their own security? In what scenarios do allychains need their own security?
 
-Most parachains will not need to worry about their own security, since all state transitions will be
-secured by the AXIACoin Relay Chain validator set. However, in some cases (which are considered more
-experimental), parachains may require their own security. In general, these cases will revolve
+Most allychains will not need to worry about their own security, since all state transitions will be
+secured by the AXIA Relay Chain validator set. However, in some cases (which are considered more
+experimental), allychains may require their own security. In general, these cases will revolve
 around lack of data available to Relay Chain validators.
 
 One example is if the state transition function is some succinct or zero-knowledge proof, the
-parachain would be responsible for keeping its data available as the Relay Chain won't have it.
+allychain would be responsible for keeping its data available as the Relay Chain won't have it.
 Additionally, for chains with their own consensus, like the one that enables fast payments on
 [Blink Network](https://www.youtube.com/watch?v=sf5GMDlG7Uk), there would probably need to be a
-Byzantine agreement between stakers before a parachain block is valid. The agreement would be
+Byzantine agreement between stakers before a allychain block is valid. The agreement would be
 necessary because the data associated with the fast consensus would be unknown to Relay Chain
 validators.

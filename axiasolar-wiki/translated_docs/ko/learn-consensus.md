@@ -1,8 +1,8 @@
 ---
 id: learn-consensus
-title: AXIASolar Consensus
-sidebar_label: AXIASolar Consensus
-description: An explanation of the consensus model used in AXIASolar and AXIALunar
+title: AXIA Consensus
+sidebar_label: AXIA Consensus
+description: An explanation of the consensus model used in AXIA and AXIALunar
 ---
 
 ## Why do we need consensus?
@@ -29,17 +29,17 @@ In the GRANDPA paper, it is phrased in this way:
 
 ### Hybrid Consensus
 
-There are two acronyms we use when we talk about the consensus protocol of AXIASolar, GRANDPA and BABE. We talk about both of these acronyms because AXIASolar uses what is known as _hybrid consensus_. Hybrid consensus splits up the finality gadget from the block production mechanism.
+There are two acronyms we use when we talk about the consensus protocol of AXIA, GRANDPA and BABE. We talk about both of these acronyms because AXIA uses what is known as _hybrid consensus_. Hybrid consensus splits up the finality gadget from the block production mechanism.
 
-This is a way of getting the benefits of probabilistic finality (the ability to always produce new blocks) and provable finality (having a universal agreement on the canonical chain with no chance for reversion) in AXIASolar. It also avoids the corresponding drawbacks of each mechanism (the chance of unknowingly following the wrong fork in probabilistic finality, and a chance for "stalling" - not being able to produce new blocks - in provable finality). By combining these two mechanisms, AXIASolar allows for blocks to be rapidly produced, and the slower finality mechanism to run in a separate process to finalize blocks without risking slower transaction processing or stalling.
+This is a way of getting the benefits of probabilistic finality (the ability to always produce new blocks) and provable finality (having a universal agreement on the canonical chain with no chance for reversion) in AXIA. It also avoids the corresponding drawbacks of each mechanism (the chance of unknowingly following the wrong fork in probabilistic finality, and a chance for "stalling" - not being able to produce new blocks - in provable finality). By combining these two mechanisms, AXIA allows for blocks to be rapidly produced, and the slower finality mechanism to run in a separate process to finalize blocks without risking slower transaction processing or stalling.
 
 Hybrid consensus has been proposed in the past. Notably, it was proposed (now defunct) as a step in Ethereum's transition to proof of stake in [EIP 1011](http://eips.ethereum.org/EIPS/eip-1011), which specified [Casper FFG](#casper-ffg).
 
 ### BABE
 
-BABE (Blind Assignment for Blockchain Extension) is the block production mechanism that runs between the validator nodes and determines the authors of new blocks. BABE is comparable as an algorithm to Ouroboros Praos, with some key differences in chain selection rule and slot time adjustments. BABE assigns block production slots to validators according to stake and using the AXIASolar [randomness cycle](learn-randomness).
+BABE (Blind Assignment for Blockchain Extension) is the block production mechanism that runs between the validator nodes and determines the authors of new blocks. BABE is comparable as an algorithm to Ouroboros Praos, with some key differences in chain selection rule and slot time adjustments. BABE assigns block production slots to validators according to stake and using the AXIA [randomness cycle](learn-randomness).
 
-Validators in AXIASolar will participate in a [lottery](learn-randomness) in every slot that will tell them whether or not they are the block producer candidate for that slot. Slots are discrete units of time, nominally 6 seconds in length. Because of this randomness mechanism, multiple validators could be candidates for the same slot. Other times, a slot could be empty, resulting in inconsistent block time.
+Validators in AXIA will participate in a [lottery](learn-randomness) in every slot that will tell them whether or not they are the block producer candidate for that slot. Slots are discrete units of time, nominally 6 seconds in length. Because of this randomness mechanism, multiple validators could be candidates for the same slot. Other times, a slot could be empty, resulting in inconsistent block time.
 
 #### Multiple Validators per Slot
 
@@ -49,15 +49,15 @@ When multiple validators are block producer candidates in a given slot, all will
 
 When no validators have rolled low enough in the randomness lottery to qualify for block production, a slot can remain seemingly blockless. We avoid this by running a secondary, round-robin style validator selection algorithm in the background. The validators selected to produce blocks through this algorithm always produce blocks, but these _secondary_ blocks are ignored if the same slot also produces a primary block from a [VRF-selected](learn-randomness) validator. Thus, a slot can have either a _primary_ or a _secondary_ block, and no slots are ever skipped.
 
-For more details on BABE, please see the [working research draft](https://research.axiacoin.org/en/latest/axiasolar/BABE/Babe.html).
+For more details on BABE, please see the [working research draft](https://research.AXIA.org/en/latest/AXIA/BABE/Babe.html).
 
-#### Difference of BABE secondary blocks between AXIALunar and AXIASolar
+#### Difference of BABE secondary blocks between AXIALunar and AXIA
 
-Both AXIALunar and AXIASolar uses the BABE block production mechanism outlined above. However, there is a slight difference in the secondary blocks that are produced between the two networks. AXIASolar attaches the VRF output to secondary blocks (and therefore every block contributes to the Epoch randomness), while AXIALunar keeps the VRF output off the secondary blocks (meaning only the primary blocks contribute to Epoch randomness). The AXIASolar method should give stronger randomness as more inputs are collected during every Epoch. Eventually, this change should make its way into AXIALunar too.
+Both AXIALunar and AXIA uses the BABE block production mechanism outlined above. However, there is a slight difference in the secondary blocks that are produced between the two networks. AXIA attaches the VRF output to secondary blocks (and therefore every block contributes to the Epoch randomness), while AXIALunar keeps the VRF output off the secondary blocks (meaning only the primary blocks contribute to Epoch randomness). The AXIA method should give stronger randomness as more inputs are collected during every Epoch. Eventually, this change should make its way into AXIALunar too.
 
 ### GRANDPA: Finality gadget
 
-GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is the finality gadget that is implemented for the AXIASolar Relay Chain.
+GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is the finality gadget that is implemented for the AXIA Relay Chain.
 
 It works in a partially synchronous network model as long as 2/3 of nodes are honest and can cope with 1/5 Byzantine nodes in an asynchronous setting.
 
@@ -73,11 +73,11 @@ Please refer to heading 3 in [the paper](https://github.com/axia-tech/consensus/
 
 The [Rust implementation](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs) is part of Substrate Frame.
 
-For even more detail, see the [GRANDPA research page](https://research.axiacoin.org/en/latest/axiasolar/GRANDPA.html) on the W3F Research pages.
+For even more detail, see the [GRANDPA research page](https://research.AXIA.org/en/latest/AXIA/GRANDPA.html) on the W3F Research pages.
 
 ### Fork Choice
 
-Bringing BABE and GRANDPA together, the fork choice of AXIASolar becomes clear. BABE must always build on the chain that has been finalized by GRANDPA. When there are forks after the finalized head, BABE provides probabilistic finality by building on the chain with the most primary blocks.
+Bringing BABE and GRANDPA together, the fork choice of AXIA becomes clear. BABE must always build on the chain that has been finalized by GRANDPA. When there are forks after the finalized head, BABE provides probabilistic finality by building on the chain with the most primary blocks.
 
 ![Best chain choice](assets/best_chain.png)
 
@@ -112,4 +112,4 @@ _Coming soon!_
 
 - [GRANDPA paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf) - The academic description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.
 - [Rust implementation](https://github.com/axia-tech/finality-grandpa) - The reference implementation and the accompanying [Substrate pallet](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs).
-- [Block Production and Finalization in AXIASolar](https://www.crowdcast.io/e/axiasolar-block-production) - An explanation of how BABE and GRANDPA work together to produce and finalize blocks on AXIALunar, with Bill Laboon.
+- [Block Production and Finalization in AXIA](https://www.crowdcast.io/e/AXIA-block-production) - An explanation of how BABE and GRANDPA work together to produce and finalize blocks on AXIALunar, with Bill Laboon.

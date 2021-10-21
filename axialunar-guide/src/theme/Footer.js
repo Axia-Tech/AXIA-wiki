@@ -53,7 +53,7 @@ export default function Footer() {
             Twitter
           </a>
           <a
-            href="https://matrix.to/#/!HfRYKXBoPmDBCAWUEJ:axiasolar.builders"
+            href="https://matrix.to/#/!HfRYKXBoPmDBCAWUEJ:AXIA.builders"
             target="_blank"
             rel="noreferrer noopener"
             className="homepage-font"
@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
         <a
           className="item homepage-font"
-          href="https://axiacoin.network/privacy/"
+          href="https://AXIA.network/privacy/"
         >
           Privacy Policy
         </a>

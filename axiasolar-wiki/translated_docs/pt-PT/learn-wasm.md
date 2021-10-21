@@ -4,7 +4,7 @@ title: WebAssembly (Wasm)
 sidebar_label: WebAssembly (Wasm)
 ---
 
-WebAssembly is used in AXIASolar and Substrate as the compilation target for the runtime.
+WebAssembly is used in AXIA and Substrate as the compilation target for the runtime.
 
 ## What is WebAssembly?
 

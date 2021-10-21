@@ -3,26 +3,26 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "The hub for those interested in learning, building, or running a node on AXIASolar.",
+    "tagline": "The hub for those interested in learning, building, or running a node on AXIA.",
     "docs": {
       "ambassadors": {
-        "title": "AXIASolar Ambassador Programme",
-        "sidebar_label": "AXIASolar Ambassador Programme"
+        "title": "AXIA Ambassador Programme",
+        "sidebar_label": "AXIA Ambassador Programme"
       },
       "build-guide": {
-        "title": "AXIASolar Builders Starter's Guide",
-        "sidebar_label": "AXIASolar Builders Starter's Guide"
+        "title": "AXIA Builders Starter's Guide",
+        "sidebar_label": "AXIA Builders Starter's Guide"
       },
       "build-hackathon": {
-        "title": "AXIASolar Hackathons",
-        "sidebar_label": "AXIASolar Hackathons"
+        "title": "AXIA Hackathons",
+        "sidebar_label": "AXIA Hackathons"
       },
       "build-index": {
         "title": "Builder's Guides",
         "sidebar_label": "Builder's Guides"
       },
       "build-integration": {
-        "title": "AXIASolar Integration Guide",
+        "title": "AXIA Integration Guide",
         "sidebar_label": "Integration Initiation"
       },
       "build-node-interaction": {
@@ -37,13 +37,13 @@
         "title": "Oracles",
         "sidebar_label": "Oracles"
       },
-      "build-parachains": {
-        "title": "Parachain Development",
-        "sidebar_label": "Parachain Development"
+      "build-allychains": {
+        "title": "Allychain Development",
+        "sidebar_label": "Allychain Development"
       },
       "build-protocol-info": {
-        "title": "AXIASolar Protocol Information",
-        "sidebar_label": "AXIASolar Protocol"
+        "title": "AXIA Protocol Information",
+        "sidebar_label": "AXIA Protocol"
       },
       "build-smart-contracts": {
         "title": "Smart Contracts",
@@ -62,11 +62,11 @@
         "sidebar_label": "Transaction Construction"
       },
       "build-wallets": {
-        "title": "AXIASolar Wallets",
-        "sidebar_label": "AXIASolar Wallets"
+        "title": "AXIA Wallets",
+        "sidebar_label": "AXIA Wallets"
       },
       "claims": {
-        "title": "AXIASolar Claims",
+        "title": "AXIA Claims",
         "sidebar_label": "Claims"
       },
       "community": {
@@ -83,7 +83,7 @@
       },
       "ens": {
         "title": "Adding accounts to an ENS domain",
-        "sidebar_label": "Using ENS with SOLAR/LUNAR accounts"
+        "sidebar_label": "Using ENS with AXC/LUNAR accounts"
       },
       "faq": {
         "title": "Frequently Asked Questions (FAQs)",
@@ -98,12 +98,12 @@
         "sidebar_label": "Glossary"
       },
       "grants": {
-        "title": "AXIACoin Foundation Grants",
+        "title": "AXIA Foundation Grants",
         "sidebar_label": "Grants"
       },
-      "axiasolar-guide": {
-        "title": "AXIASolar Guide",
-        "sidebar_label": "AXIASolar Guide"
+      "AXIA-guide": {
+        "title": "AXIA Guide",
+        "sidebar_label": "AXIA Guide"
       },
       "axialunar-adverserial-cheatsheet": {
         "title": "Adverserial Cheatsheet",
@@ -166,16 +166,16 @@
         "sidebar_label": "Backing up and Restoring Accounts"
       },
       "learn-accounts": {
-        "title": "AXIASolar Accounts",
-        "sidebar_label": "AXIASolar Accounts"
+        "title": "AXIA Accounts",
+        "sidebar_label": "AXIA Accounts"
       },
       "learn-architecture": {
         "title": "Architecture",
         "sidebar_label": "Architecture"
       },
       "learn-auction": {
-        "title": "Parachain Slots Auction",
-        "sidebar_label": "Parachain Slots Auction"
+        "title": "Allychain Slots Auction",
+        "sidebar_label": "Allychain Slots Auction"
       },
       "learn-availability": {
         "title": "Availability and Validity",
@@ -194,36 +194,36 @@
         "sidebar_label": "Collator"
       },
       "learn-comparisons-ethereum-2": {
-        "title": "AXIASolar and Ethereum 2.0",
+        "title": "AXIA and Ethereum 2.0",
         "sidebar_label": "Ethereum 2.0"
       },
       "learn-comparisons-cosmos": {
-        "title": "AXIASolar and Cosmos",
+        "title": "AXIA and Cosmos",
         "sidebar_label": "Cosmos"
       },
       "learn-comparisons": {
-        "title": "AXIASolar Comparisons",
+        "title": "AXIA Comparisons",
         "sidebar_label": "Other comparisons"
       },
       "learn-consensus": {
-        "title": "AXIASolar Consensus",
-        "sidebar_label": "AXIASolar Consensus"
+        "title": "AXIA Consensus",
+        "sidebar_label": "AXIA Consensus"
       },
       "learn-crosschain": {
         "title": "Cross-chain Message Passing (XCMP)",
         "sidebar_label": "Cross-chain Message Passing (XCMP)"
       },
       "learn-crowdloans": {
-        "title": "Parachain Crowdloans",
-        "sidebar_label": "Parachain Crowdloans"
+        "title": "Allychain Crowdloans",
+        "sidebar_label": "Allychain Crowdloans"
       },
       "learn-cryptography": {
         "title": "Cryptography Explainer",
         "sidebar_label": "Cryptography Explainer"
       },
-      "learn-SOLAR": {
-        "title": "SOLAR",
-        "sidebar_label": "SOLAR"
+      "learn-AXC": {
+        "title": "AXC",
+        "sidebar_label": "AXC"
       },
       "learn-governance": {
         "title": "Governance",
@@ -234,27 +234,27 @@
         "sidebar_label": "Identity"
       },
       "learn-implementations": {
-        "title": "AXIASolar Implementations",
-        "sidebar_label": "AXIASolar Implementations"
+        "title": "AXIA Implementations",
+        "sidebar_label": "AXIA Implementations"
       },
       "learn-implementers-guide": {
-        "title": "Parachain Implementer's Guide",
-        "sidebar_label": "Parachain Implementer's Guide"
+        "title": "Allychain Implementer's Guide",
+        "sidebar_label": "Allychain Implementer's Guide"
       },
       "learn-keys": {
-        "title": "AXIASolar Keys",
-        "sidebar_label": "AXIASolar Keys"
+        "title": "AXIA Keys",
+        "sidebar_label": "AXIA Keys"
       },
-      "learn-axialunar-vs-axiasolar": {
-        "title": "What is the difference between AXIASolar and AXIALunar?",
-        "sidebar_label": "Comparing AXIASolar and AXIALunar"
+      "learn-axialunar-vs-AXIA": {
+        "title": "What is the difference between AXIA and AXIALunar?",
+        "sidebar_label": "Comparing AXIA and AXIALunar"
       },
       "learn-launch": {
-        "title": "AXIASolar Launch Phases",
-        "sidebar_label": "AXIASolar Launch Phases"
+        "title": "AXIA Launch Phases",
+        "sidebar_label": "AXIA Launch Phases"
       },
       "learn-ledger": {
-        "title": "Using the AXIASolar Ledger Application",
+        "title": "Using the AXIA Ledger Application",
         "sidebar_label": "Ledger Application"
       },
       "learn-legitimate-projects": {
@@ -265,9 +265,9 @@
         "title": "Nominator",
         "sidebar_label": "Nominator"
       },
-      "learn-parachains": {
-        "title": "Parachains",
-        "sidebar_label": "Parachains"
+      "learn-allychains": {
+        "title": "Allychains",
+        "sidebar_label": "Allychains"
       },
       "learn-parathreads": {
         "title": "Parathreads",
@@ -277,9 +277,9 @@
         "title": "Sequential Phragmén Method",
         "sidebar_label": "Sequential Phragmén Method"
       },
-      "learn-axiasolar-host": {
-        "title": "AXIASolar Host (PH)",
-        "sidebar_label": "AXIASolar Host (PH)"
+      "learn-AXIA-host": {
+        "title": "AXIA Host (PH)",
+        "sidebar_label": "AXIA Host (PH)"
       },
       "learn-proxies": {
         "title": "Proxy Accounts",
@@ -353,9 +353,9 @@
         "title": "Be a Nominator (AXIALunar)",
         "sidebar_label": "Nominator Guide"
       },
-      "maintain-guides-how-to-nominate-axiasolar": {
-        "title": "How to Nominate on AXIASolar",
-        "sidebar_label": "How to Nominate on AXIASolar"
+      "maintain-guides-how-to-nominate-AXIA": {
+        "title": "How to Nominate on AXIA",
+        "sidebar_label": "How to Nominate on AXIA"
       },
       "maintain-guides-how-to-setup-sentry-node": {
         "title": "Set Up a Sentry Node - Public Node",
@@ -377,17 +377,17 @@
         "title": "How to Upgrade Your Validator",
         "sidebar_label": "How to Upgrade Your Validator"
       },
-      "maintain-guides-how-to-use-axiasolar-secure-validator": {
-        "title": "How to use AXIASolar Secure Validator Setup",
-        "sidebar_label": "How to use AXIASolar Secure Validator Setup"
+      "maintain-guides-how-to-use-AXIA-secure-validator": {
+        "title": "How to use AXIA Secure Validator Setup",
+        "sidebar_label": "How to use AXIA Secure Validator Setup"
       },
       "maintain-guides-how-to-validate-axialunar": {
         "title": "Run a Validator (AXIALunar)",
         "sidebar_label": "How to run a Validator on AXIALunar"
       },
-      "maintain-guides-how-to-validate-axiasolar": {
-        "title": "Run a Validator (AXIASolar)",
-        "sidebar_label": "How to run a Validator on AXIASolar"
+      "maintain-guides-how-to-validate-AXIA": {
+        "title": "Run a Validator (AXIA)",
+        "sidebar_label": "How to run a Validator on AXIA"
       },
       "maintain-guides-how-to-vote-councillor": {
         "title": "Voting for Councillors",
@@ -413,8 +413,8 @@
         "title": "Networks",
         "sidebar_label": "Networks"
       },
-      "maintain-axiasolar-parameters": {
-        "title": "AXIASolar Parameters",
+      "maintain-AXIA-parameters": {
+        "title": "AXIA Parameters",
         "sidebar_label": "Parameters"
       },
       "maintain-sync": {
@@ -425,37 +425,37 @@
         "title": "Set up Secure WebSocket for Remote Connections",
         "sidebar_label": "Set up Secure WebSocket for Remote Connections"
       },
-      "mirror-build-build-with-axiasolar": {
-        "title": "AXIASolar Builders Starter's Guide",
-        "sidebar_label": "AXIASolar Builders Starter's Guide"
+      "mirror-build-build-with-AXIA": {
+        "title": "AXIA Builders Starter's Guide",
+        "sidebar_label": "AXIA Builders Starter's Guide"
       },
       "mirror-build-guide": {
-        "title": "AXIASolar Builders Starter's Guide",
-        "sidebar_label": "AXIASolar Builders Starter's Guide"
+        "title": "AXIA Builders Starter's Guide",
+        "sidebar_label": "AXIA Builders Starter's Guide"
       },
-      "mirror-build-parachains-betanet": {
-        "title": "Building Parachains on BetaNet",
-        "sidebar_label": "Building Parachains on BetaNet"
+      "mirror-build-allychains-betanet": {
+        "title": "Building Allychains on BetaNet",
+        "sidebar_label": "Building Allychains on BetaNet"
       },
-      "mirror-build-parachains": {
-        "title": "Parachain Development",
-        "sidebar_label": "Parachain Development"
+      "mirror-build-allychains": {
+        "title": "Allychain Development",
+        "sidebar_label": "Allychain Development"
       },
       "mirror-ens": {
         "title": "Adding accounts to an ENS domain",
-        "sidebar_label": "Using ENS with SOLAR/LUNAR accounts"
+        "sidebar_label": "Using ENS with AXC/LUNAR accounts"
       },
       "mirror-learn-auction": {
-        "title": "Parachain Slots Auction",
-        "sidebar_label": "Parachain Slots Auction"
+        "title": "Allychain Slots Auction",
+        "sidebar_label": "Allychain Slots Auction"
       },
       "mirror-learn-balance-transfers": {
         "title": "Balance Transfers",
         "sidebar_label": "How to transfer Balances"
       },
       "mirror-learn-crowdloans": {
-        "title": "Parachain Crowdloans",
-        "sidebar_label": "Parachain Crowdloans"
+        "title": "Allychain Crowdloans",
+        "sidebar_label": "Allychain Crowdloans"
       },
       "mirror-learn-governance": {
         "title": "Governance",
@@ -465,9 +465,9 @@
         "title": "Identity",
         "sidebar_label": "Identity"
       },
-      "mirror-learn-parachains": {
-        "title": "Parachains",
-        "sidebar_label": "Parachains"
+      "mirror-learn-allychains": {
+        "title": "Allychains",
+        "sidebar_label": "Allychains"
       },
       "mirror-learn-parathreads": {
         "title": "Parathreads",
@@ -502,8 +502,8 @@
         "sidebar_label": "Thousand Validators Programme"
       },
       "redenomination": {
-        "title": "Redenomination of SOLAR",
-        "sidebar_label": "Redenomination of SOLAR"
+        "title": "Redenomination of AXC",
+        "sidebar_label": "Redenomination of AXC"
       },
       "research": {
         "title": "Research Pages",

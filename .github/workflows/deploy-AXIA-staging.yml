@@ -1,0 +1,77 @@
+name: AXIA Staging
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      # - name: Clone and run the site
+      #   run: |
+      #     sudo apt-get install netcat
+      #     yarn
+      #     yarn AXIA:start &
+      #     while ! nc -z localhost 3000; do
+      #         sleep 1
+      #         echo waiting for website up...
+      #     done
+      #     yarn AXIA:pdf
+
+      # - name: Upload PDF
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: AXIA-wiki
+      #     path: AXIA-wiki/static/AXIA-wiki.pdf
+
+      # - name: Build
+      #   run: yarn; yarn AXIA:build
+      #   env:
+      #     BUILDING: true
+
+      # - name: Upload PDF to IPFS
+      #   id: ipfs_pdf
+      #   uses: aquiladev/ipfs-action@v0.1.4
+      #   with:
+      #     path: ./AXIA-wiki/static/AXIA-wiki.pdf
+      #     timeout: 120000
+
+      # - name: Inject
+      #   run: yarn; yarn AXIA:inject
+      #   env:
+      #     IPFS_PDF_HASH: ${{ steps.ipfs_pdf.outputs.hash }}
+
+      # - name: Upload to IPFS
+      #   uses: aquiladev/ipfs-action@v0.1.4
+      #   with:
+      #     path: ./AXIA-wiki/build/AXIA-wiki
+      #     timeout: 120000
+
+      - name: Publish
+        run: |
+          git config --global user.email "AXIA-wiki-deploy@users.noreply.github.com"
+          git config --global user.name "AXIA Wiki CI"
+          echo "machine github.com login w3fdeploy password ${{ secrets.ACCESS_KEY }}" > ~/.netrc
+          yarn && yarn AXIA:build && echo "staging.AXIA.network" > AXIA-wiki/static/CNAME && GIT_USER=w3fdeploy PUBLISHING=true PROJECT_NAME=AXIA-wiki-staging yarn run AXIA:publish-gh-pages
+
+          # setup ipfs cluster tools
+          wget https://dist.ipfs.io/ipfs-cluster-ctl/v0.14.0/ipfs-cluster-ctl_v0.14.0_linux-amd64.tar.gz
+          tar xf ./ipfs-cluster-ctl_v0.14.0_linux-amd64.tar.gz
+          chmod +x ./ipfs-cluster-ctl/ipfs-cluster-ctl
+          export PATH=$PATH:`pwd`/ipfs-cluster-ctl
+
+          node ./scripts/ipfs-cluster-pin.js --auth ${{ secrets.CLUSTER_BASIC_AUTH_USER}}:${{ secrets.CLUSTER_BASIC_AUTH_PASSWORD}} --websiteDir ./AXIA-wiki/build --pinName AXIA-wiki-staging

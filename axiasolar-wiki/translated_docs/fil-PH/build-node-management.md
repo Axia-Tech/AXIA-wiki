@@ -4,9 +4,9 @@ title: Node Management
 sidebar_label: Node Management
 ---
 
-This page contains basic information about running a Axia AXIASolar client. There are a lot of ways to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This guide will always refer to the executable as `axiasolar`.
+This page contains basic information about running a Axia AXIA client. There are a lot of ways to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This guide will always refer to the executable as `AXIA`.
 
-**Always refer to the client's help `axiasolar --help` for the most up-to-date information.**
+**Always refer to the client's help `AXIA --help` for the most up-to-date information.**
 
 > Other client implementation teams: Feel free to make a PR to this page with instructions (or a link to instructions) for your client.
 
@@ -14,7 +14,7 @@ This page contains basic information about running a Axia AXIASolar client. Ther
 
 **Selecting a chain**
 
-Use the `--chain <chainspec>` option to select the chain. Can be `axiasolar`, `axialunar`, `alphanet`, or a custom chain spec. By default, the client will start AXIASolar. Watch [How a single codebase can power four different blockchains](https://www.youtube.com/watch?v=i9vNCHz6wO4) to learn more about how the chain selection works internally.
+Use the `--chain <chainspec>` option to select the chain. Can be `AXIA`, `axialunar`, `alphanet`, or a custom chain spec. By default, the client will start AXIA. Watch [How a single codebase can power four different blockchains](https://www.youtube.com/watch?v=i9vNCHz6wO4) to learn more about how the chain selection works internally.
 
 **Archive node**
 
@@ -27,7 +27,7 @@ An archive node does not prune any block or state data. Use the `--archive` flag
 To export blocks to a file, use `export-blocks`. Export in JSON (default) or binary (`--binary true`).
 
 ```bash
-axiasolar export-blocks --from 0 <output_file>
+AXIA export-blocks --from 0 <output_file>
 ```
 
 **RPC ports**
@@ -36,21 +36,21 @@ Use the `--rpc-external` flag to expose RPC ports and `--ws-external` to expose 
 
 **Execution**
 
-The Axia AXIASolar client implements a [AXIASolar Host](learn-axiasolar-host) and a native runtime. The runtime must compile to WebAssembly and is stored on-chain. If the client's runtime is the same spec as the runtime that is stored on-chain, then the client will execute blocks using the client binary. Otherwise, the client will execute the Wasm runtime from the chain.
+The Axia AXIA client implements a [AXIA Host](learn-AXIA-host) and a native runtime. The runtime must compile to WebAssembly and is stored on-chain. If the client's runtime is the same spec as the runtime that is stored on-chain, then the client will execute blocks using the client binary. Otherwise, the client will execute the Wasm runtime from the chain.
 
 Therefore, when syncing the chain, the client will execute blocks from past runtimes using their associated Wasm binary. This feature also allows forkless upgrades: the client can execute a new runtime without updating the client.
 
-Axia's AXIASolar client has two Wasm execution methods, interpreted (default) and compiled. Set the preferred method to use when executing Wasm with `--wasm-execution <Interpreted|Compiled>`. Compiled execution will run much faster, especially when syncing the chain, but is experimental and may use more memory/CPU. A reasonable tradeoff would be to sync the chain with compiled execution and then restart the node with interpreted execution.
+Axia's AXIA client has two Wasm execution methods, interpreted (default) and compiled. Set the preferred method to use when executing Wasm with `--wasm-execution <Interpreted|Compiled>`. Compiled execution will run much faster, especially when syncing the chain, but is experimental and may use more memory/CPU. A reasonable tradeoff would be to sync the chain with compiled execution and then restart the node with interpreted execution.
 
 ## File Structure
 
-The node stores a number of files in: `/home/$USER/.local/share/axiasolar/chains/<chain name>/`. You can set a custom path with `--base-path <path>`.
+The node stores a number of files in: `/home/$USER/.local/share/AXIA/chains/<chain name>/`. You can set a custom path with `--base-path <path>`.
 
 **`keystore`**
 
 The keystore stores session keys, which are important for validator operations.
 
-- [AXIASolar documentation](learn-keys#session-keys)
+- [AXIA documentation](learn-keys#session-keys)
 - [Substrate documentation](https://substrate.dev/docs/en/knowledgebase/learn-substrate/session-keys)
 
 **`db`**
@@ -60,16 +60,16 @@ The database stores blocks and the state trie. If you are running a validator no
 To delete your DB and re-sync from genesis, run:
 
 ```bash
-axiasolar purge-chain
+AXIA purge-chain
 ```
 
 An alternative database implementation, AxiaDB, is available and activated with the `--database axiadb` option. This database uses more disk space than the default RocksBD, but is more efficient in reads and writes.
 
 ## Deployment Tools
 
-AXIACoin Foundation maintains [AXIASolar Deployer](https://github.com/axia-tech/axiasolar-deployer), which allows you to create local or remote cloud deployments of AXIASolar nodes. See the README for instructions.
+AXIA Foundation maintains [AXIA Deployer](https://github.com/axia-tech/AXIA-deployer), which allows you to create local or remote cloud deployments of AXIA nodes. See the README for instructions.
 
-Validators, see the [secure setup guide](maintain-guides-how-to-use-axiasolar-secure-validator) for information specific to deploying validator nodes.
+Validators, see the [secure setup guide](maintain-guides-how-to-use-AXIA-secure-validator) for information specific to deploying validator nodes.
 
 ## Monitoring and Telemetry
 
@@ -83,7 +83,7 @@ curl -H "Content-Type: application/json" --data '{ "jsonrpc":"2.0", "method":"sy
 
 **Logs**
 
-The AXIASolar client has a number of log targets. The most interesting to users may be:
+The AXIA client has a number of log targets. The most interesting to users may be:
 
 - `afg` (Al's Finality Gadget - GRANDPA consensus)
 - `babe`
@@ -105,6 +105,6 @@ All targets are set to `info` logging by default. You can adjust individual log 
 
 **Telemetry & Metrics**
 
-The Axia AXIASolar client connects to telemetry by default. You can disable it with `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option (see the help options for instructions). Connecting to public telemetry may expose information that puts your node at higher risk of attack. You can run your own, private [telemetry server](https://github.com/axia-tech/substrate-telemetry) or deploy a `substrate-telemetry` instance to a Kubernetes cluster using [this Helm chart](https://github.com/axia-tech/substrate-telemetry-chart).
+The Axia AXIA client connects to telemetry by default. You can disable it with `--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option (see the help options for instructions). Connecting to public telemetry may expose information that puts your node at higher risk of attack. You can run your own, private [telemetry server](https://github.com/axia-tech/substrate-telemetry) or deploy a `substrate-telemetry` instance to a Kubernetes cluster using [this Helm chart](https://github.com/axia-tech/substrate-telemetry-chart).
 
 The node also exposes a Prometheus endpoint by default (disable with `--no-prometheus`). Substrate has a [vizualizing node metrics tutorial](https://substrate.dev/docs/en/tutorials/visualize-node-metrics/) which uses this endpoint.

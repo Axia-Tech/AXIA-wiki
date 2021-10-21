@@ -7,7 +7,7 @@ sidebar_label: Wallet integration
 ```
 +--------------------+
 |                    |
-| Substrate/AXIASolar |
+| Substrate/AXIA |
 |                    |
 +---------+----------+
           |
@@ -46,7 +46,7 @@ You will need to decode blocks from the basic data into useful fields.
 
 All block data is encoded using the basic SCALE codec described in detail [here](https://substrate.dev/docs/en/overview/low-level-data-format). SCALE provides only the low-level underlying format however. Details of its fields and internal structure may alter between different chains and even different blocks of the same chain.
 
-For Genesis AXIASolar, the header format is a five-field structure:
+For Genesis AXIA, the header format is a five-field structure:
 
 ```
 struct Block:
@@ -138,19 +138,19 @@ struct Event:
 
 `Type` is just a `String`, but the contents of the string are to be interpreted as the name of a type.
 
-Substrate chains (actually, specifically Substrate chains built using the SRML) such as AXIASolar are composed of various _modules_. Each module can be imagined a little bit like a smart contract, with various kinds of transactions (or, in Substrate terms, _extrinsics_), data items that persist between transactions and blocks, events and constant parameters. The metadata encodes all of these things, allowing your client code to both create particular transactions or interpret what has happened on the chain, even between different Substrate blockchains or over many different upgrades or forks of the same chain.
+Substrate chains (actually, specifically Substrate chains built using the SRML) such as AXIA are composed of various _modules_. Each module can be imagined a little bit like a smart contract, with various kinds of transactions (or, in Substrate terms, _extrinsics_), data items that persist between transactions and blocks, events and constant parameters. The metadata encodes all of these things, allowing your client code to both create particular transactions or interpret what has happened on the chain, even between different Substrate blockchains or over many different upgrades or forks of the same chain.
 
 There are two modules a wallet needs to be aware of: Balances and Indices. Balances allows you to send and receive funds between different accounts. Indices allows you to interpret user addresses.
 
 ## 3. Working with SS58 and account addresses
 
-In AXIASolar (and most Substrate chains), user accounts are identified by a 32-byte (256-bit) _AccountId_. This is simply the public key for the x25519 cryptography used by Substrate.
+In AXIA (and most Substrate chains), user accounts are identified by a 32-byte (256-bit) _AccountId_. This is simply the public key for the x25519 cryptography used by Substrate.
 
-However, to keep the addresses small, we index every account with a non-zero balance on AXIASolar and use just this _index_ to identify the account. This index is much smaller than the 32-byte _AccountId_, and can usually be encoded in just a couple of bytes.
+However, to keep the addresses small, we index every account with a non-zero balance on AXIA and use just this _index_ to identify the account. This index is much smaller than the 32-byte _AccountId_, and can usually be encoded in just a couple of bytes.
 
-Where Bitcoin has the Check58 address format and Ethereum used the `0x...` hex format, AXIASolar (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to handle many different cryptographies and chains. It has much in common with Bitcoin's Check58 format such as a version prefix, a hash-based checksum suffix and base-58 encoding. Further information on it can be found here [TODO]. Of the many supported "version codes", only one particular family of subformats is especially important for AXIASolar support in wallets.
+Where Bitcoin has the Check58 address format and Ethereum used the `0x...` hex format, AXIA (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to handle many different cryptographies and chains. It has much in common with Bitcoin's Check58 format such as a version prefix, a hash-based checksum suffix and base-58 encoding. Further information on it can be found here [TODO]. Of the many supported "version codes", only one particular family of subformats is especially important for AXIA support in wallets.
 
-The SS58 format is a base-58 encoding (using the same alphabet as Bitcoin) of a version prefix (which is one byte and always `0x00` for AXIASolar and `0x02` for AXIALunar) followed by one or more payload bytes and ending with one or more checksum bytes:
+The SS58 format is a base-58 encoding (using the same alphabet as Bitcoin) of a version prefix (which is one byte and always `0x00` for AXIA and `0x02` for AXIALunar) followed by one or more payload bytes and ending with one or more checksum bytes:
 
 `0x00 <payload bytes> <checksum bytes>`
 
@@ -175,7 +175,7 @@ Looking up an index is a bit fiddly, since it involves looking up some storage a
 
 The specific storage item that we care about is `EnumSet` in the `Indices` module. Inspecting the storage is done through the `state_getStorage` RPC, to which a key must be supplied. The key encodes the entire "query". In general, the metadata should be consulted on how to generate the key. To do this, we first find the `Module` whose name is `Indices`, then find the entry in that module's `storage` field of the `Storage` item with the name `EnumSet`. This item contains all the information we need to construct and interpret the query.
 
-For AXIASolar, we find that the item has a `type` of `Map` whose associate value is a `StorageMapType` whose `hasher` is `Blake2_256`, whose `key` is `T::AccountIndex` (equivalent to a `u32` for AXIASolar) and whose `value` is `Vec<T::AccountId>`.
+For AXIA, we find that the item has a `type` of `Map` whose associate value is a `StorageMapType` whose `hasher` is `Blake2_256`, whose `key` is `T::AccountIndex` (equivalent to a `u32` for AXIA) and whose `value` is `Vec<T::AccountId>`.
 
 This means that if our index, encoded by SCALE as a `u32`, is `<INDEX>`, then our storage key is determined through the Blake2 256 hash of the string `Indices EnumSet<INDEX>`. In fact, accounts are stored in batches of 64, so to look up a particular index, we don't query by the account index but rather the index of its batch. This just means we first need to divide the index by 64 before encoding.
 
@@ -185,24 +185,24 @@ Otherwise, you have your account ID and it can be displayed to the user along wi
 
 ## 4. Working with balances
 
-In AXIASolar, account balances can be looked up within the `Balances` module using the metadata in a manner not dissimilar to looking up an account index. In this case, we need to query the `FreeBalance` item in storage. Here, the `StorageMapType` is similar, except that the `key` is of type `T::AccountId` (the 32-byte quantity) and the `value` is `BalanceOf<T>`, which for the purposes of AXIASolar is a `u128` (128-bit value). The hash function is the same Blake2 256, so the full storage key would be given by the Blake2 256 hash of the string `Balances FreeBalance<ID>` where `<ID>` is the 32-byte `AccountId`.
+In AXIA, account balances can be looked up within the `Balances` module using the metadata in a manner not dissimilar to looking up an account index. In this case, we need to query the `FreeBalance` item in storage. Here, the `StorageMapType` is similar, except that the `key` is of type `T::AccountId` (the 32-byte quantity) and the `value` is `BalanceOf<T>`, which for the purposes of AXIA is a `u128` (128-bit value). The hash function is the same Blake2 256, so the full storage key would be given by the Blake2 256 hash of the string `Balances FreeBalance<ID>` where `<ID>` is the 32-byte `AccountId`.
 
 NOTE: `FreeBalance` gives the total balance controlled by that account, but does not account for temporarily locked portions of balance, such as those locked for staking, voting or vesting. This information can be queried from the chain, but it is outside the scope of this document.
 
-The balance encodes the SOLAR token with 12 decimal places. To get the actual number of SOLARs, you need to divide the 128-bit balance by 1,000,000,000,000 (10\*\*12). For completeness, The exact denominations of the AXIASolar currency are:
+The balance encodes the AXC token with 12 decimal places. To get the actual number of AXCs, you need to divide the 128-bit balance by 1,000,000,000,000 (10\*\*12). For completeness, The exact denominations of the AXIA currency are:
 
 | Balance value | Name      |
 | ------------- | --------- |
 |               |           |
 | 1             | Planck 10 |
 
-**3 | Point 10**6 | Microdot (USOLAR) 10**9 | Millidot (MSOLAR) 10**12 | Dot (SOLAR) 10\*\*15 | Blob
+**3 | Point 10**6 | Microdot (UAXC) 10**9 | Millidot (MAXC) 10**12 | Dot (AXC) 10\*\*15 | Blob
 
 ### Transferring balances
 
 To transfer a balance, a transaction must be constructed and sent. In constructing a transaction, there are two key parts: the general part of the transaction and the module-specific `function` part of the transaction with the latter generally needing information from the chain's metadata must generally.
 
-In general, AXIASolar's transactions are encoded as _signed_ `Extrinsic`s in SCALE. To facilitate forward compatibility, extrinsics are double-encoded, so the initial encoding is passed back into SCALE (as a `Vec<u8>`) and the output of that is used. This has the effect of adding a small length prefix onto it allowing systems that cannot interpret the transaction data itself to still be able to pass them around as opaque packets of data.
+In general, AXIA's transactions are encoded as _signed_ `Extrinsic`s in SCALE. To facilitate forward compatibility, extrinsics are double-encoded, so the initial encoding is passed back into SCALE (as a `Vec<u8>`) and the output of that is used. This has the effect of adding a small length prefix onto it allowing systems that cannot interpret the transaction data itself to still be able to pass them around as opaque packets of data.
 
 The SCALE format is given by `Extrinsic`:
 
@@ -245,7 +245,7 @@ Finally, we need to know what parameters to this function are expected in order 
 - `dest` with a type of `<T::Lookup as StaticLookup>::Source` (aka `Address`); and
 - `value` with a type of `Compact<T::Balance>` (aka `Compact Balance`).
 
-The `function` _in this case_ (i.e. specifically and only for the Balance transfer transaction on AXIASolar as of right now) would be the struct:
+The `function` _in this case_ (i.e. specifically and only for the Balance transfer transaction on AXIA as of right now) would be the struct:
 
 ```
 struct BalanceTransferFunction:
@@ -269,7 +269,7 @@ The other way is to use the pub/sub RPC `author_submitAndWatchExtrinsic`. Again,
 
 ## Conclusion
 
-This concludes the article. Here you should have a good idea of how to interact with a Substrate/AXIASolar node in order to track the finalised chain head, to decode SS58 addresses, check account information like balances & nonces and to construct, submit and track transactions. You've also learnt a little about the SCALE codec, the Substrate metadata system and how to build future-proof and generic Substrate-based systems.
+This concludes the article. Here you should have a good idea of how to interact with a Substrate/AXIA node in order to track the finalised chain head, to decode SS58 addresses, check account information like balances & nonces and to construct, submit and track transactions. You've also learnt a little about the SCALE codec, the Substrate metadata system and how to build future-proof and generic Substrate-based systems.
 
 If you have any questions, please come ask in [Substrate Technical](https://riot.im/app/#/room/#substrate-technical:matrix.org).
 

@@ -37,9 +37,9 @@ export default function Index() {
         <div className="mainContainer" style={{ padding: "0" }}>
           <div className="axialunar-mainpage-row-learn">
             <p className="axialunar-full-width-main homepage-font">
-              AXIALunar is an early, unaudited and unrefined release of AXIASolar.
+              AXIALunar is an early, unaudited and unrefined release of AXIA.
               AXIALunar will serve as a proving ground, allowing teams and
-              developers to build and deploy a parachain or try out AXIASolar’s
+              developers to build and deploy a allychain or try out AXIA’s
               governance, staking, nomination and validation functionality in a
               real environment.
             </p>
@@ -57,10 +57,10 @@ export default function Index() {
             <div className="mainpage-column">
               <p className="homepage-font">
                 The minimum requirement for staking as a validator on AXIALunar is
-                much lower than it is expected for AXIASolar. There are also
+                much lower than it is expected for AXIA. There are also
                 programs in place such as{" "}
                 <a
-                  href="https://axiacoin.network/join-axialunars-thousand-validators-programme/"
+                  href="https://AXIA.network/join-axialunars-thousand-validators-programme/"
                   target="_blank"
                 >
                   Thousand Validators
@@ -76,15 +76,15 @@ export default function Index() {
           </div>
           <div className="axialunar-mainpage-row-more">
             <div className="mainpage-column">
-              <h2 className="homepage-font">Deploy Parachains</h2>
+              <h2 className="homepage-font">Deploy Allychains</h2>
               <p className="homepage-font">
-                AXIALunar will get the functionality required for parachains before
-                AXIASolar. This includes participating in a parachain slot
+                AXIALunar will get the functionality required for allychains before
+                AXIA. This includes participating in a allychain slot
                 auction and composable applications.
               </p>
-              <a href={docUrl("mirror-learn-parachains")}>
+              <a href={docUrl("mirror-learn-allychains")}>
                 <button className="axialunar-mainpage-build-btn homepage-font">
-                  Read more on Parachains
+                  Read more on Allychains
                 </button>
               </a>
             </div>

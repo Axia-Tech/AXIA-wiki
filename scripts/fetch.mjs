@@ -10,19 +10,19 @@ const argv = yargs(process.argv)
     description: "Dry run - check values before replacing",
     type: "boolean",
   })
-  .option("isAXIASolar", {
+  .option("isaxiasolar", {
     alias: "p",
-    description: "Is AXIASolar - build dict values for AXIASolar or AXIALunar",
+    description: "Is axiasolar - build dict values for axiasolar or axiasolarLunar",
     type: "boolean",
   })
   .help()
   .alias("help", "h").argv;
 
-if (argv.isAXIASolar === undefined) {
-  throw new Error("Must pass a --isAXIASolar option.");
+if (argv.isaxiasolar === undefined) {
+  throw new Error("Must pass a --isaxiasolar option.");
 }
 
-const node = argv.isAXIASolar ? "wss://wss.stage.axiacoin.network/" : "wss://kusama-rpc.axiadot.io/";
+const node = argv.isaxiasolar ? "wss://wss.stage.axiacoin.network/" : "wss://kusama-rpc.axiadot.io/";
 console.log("Connecting to node " + node);
 
 let filledDict = {};
@@ -34,11 +34,11 @@ ApiPromise.create({ provider: wsProvider })
     console.log("Connected");
 
     let wiki;
-    if (argv.isAXIASolar) {
-      console.log("Working on the AXIASolar wiki");
+    if (argv.isaxiasolar) {
+      console.log("Working on the axiasolar wiki");
       wiki = "axiasolar";
     } else {
-      console.log("Working on AXIALunar Guide");
+      console.log("Working on axiasolarLunar Guide");
       wiki = "axialunar";
     }
 
@@ -140,7 +140,7 @@ function applyFilter(value, filter, wiki) {
   const values = {
     axiasolar: {
       precision: 1e10,
-      symbol: "SOLAR",
+      symbol: "AXC",
     },
     axialunar: {
       precision: 1e12,

@@ -4,7 +4,7 @@ title: Set Up a Sentry Node - Public Node
 sidebar_label: Set Up a Sentry Node
 ---
 
-This guide assumes you have already set up a validator and would like to make it more resilient and protect against sybil attack or DDoS. It has same configuration of the [axiasolar secure validator](https://github.com/axia-tech/axiasolar-secure-validator).
+This guide assumes you have already set up a validator and would like to make it more resilient and protect against sybil attack or DDoS. It has same configuration of the [AXIA secure validator](https://github.com/axia-tech/AXIA-secure-validator).
 
 In this guide, we will walk you through how to configure a validator that sits inside a VPN. The validator only talks to the public facing nodes to isolate it from the internet and reduce the chance of your validator being hacked.
 
@@ -175,10 +175,10 @@ Nodes will use [libp2p](https://libp2p.io/) as the networking layer to establish
 Each peer in the network will have a private (secret) key (not to be confused with account keys or session keys) that will be used for network messaging. The secret key will have a corresponding public key, as well as a public address (`PeerId`) derived from this private key. `PeerId`' is derived from the secret key that is stored in the following directory by default:
 
 ```
-/home/$USER/.local/share/axiasolar/chains/<CHAIN>/network/secret_ed25519
+/home/$USER/.local/share/AXIA/chains/<CHAIN>/network/secret_ed25519
 ```
 
-Where `<CHAIN>` will be either `axiasolar` for AXIASolar, `ksmcc3` for AXIALunar, or `alphanet2` for AlphaNet.
+Where `<CHAIN>` will be either `AXIA` for AXIA, `ksmcc3` for AXIALunar, or `alphanet2` for AlphaNet.
 
 If the `secret_ed25519` file does not exist by the time the node is running (or is not otherwise specified), a new `secret_ed25519` will be created and used to derive a new `PeerId`.
 
@@ -212,17 +212,17 @@ subkey inspect-node-key </PATH/SECRET_ED25519_FILE>
 
 Another way is by starting the node to see the identity printed as follows:
 
-`./axiasolar --validator`
+`./AXIA --validator`
 
 ```
-2020-06-13 14:42:21 Axia AXIASolar
+2020-06-13 14:42:21 Axia AXIA
 2020-06-13 14:42:21 ✌️  version 0.8.8-b2c9c149-x86_64-linux-gnu
 2020-06-13 14:42:21 ❤️  by Axia Technologies <admin@axia.io>, 2017-2020
-2020-06-13 14:42:21 📋 Chain specification: AXIASolar CC1
+2020-06-13 14:42:21 📋 Chain specification: AXIA CC1
 2020-06-13 14:42:21 🏷  Node name: validator-node
 2020-06-13 14:42:21 👤 Role: AUTHORITY
-2020-06-13 14:42:21 💾 Database: RocksDb at /home/$USER/.local/share/axiasolar/chains/axiasolar/db
-2020-06-13 14:42:21 ⛓  Native runtime: axiasolar-8 (axia-axiasolar-0.tx0.au0)
+2020-06-13 14:42:21 💾 Database: RocksDb at /home/$USER/.local/share/AXIA/chains/AXIA/db
+2020-06-13 14:42:21 ⛓  Native runtime: AXIA-8 (axia-AXIA-0.tx0.au0)
 2020-06-13 14:42:21 📦 Highest known block at #529
 2020-06-13 14:42:21 🏷  Local node identity is: 12D3KooWSAhdYsqrJKed3r5HKTJzpEWFUXCFmn6wv85M2woLLJpD (legacy representation: QmdtiSGnqDoHrfVyxrRWuETyehMnmZJhxrnVBFyYtY7Trk)
 2020-06-13 14:42:21 〽️ Prometheus server started at 127.0.0.1:9615
@@ -247,7 +247,7 @@ Start your sentry with `--sentry` flag:
 
 ```bash
 # Sentry Node
-axiasolar \
+AXIA \
 --name "Sentry-A" \
 --sentry /ip4/VALIDATOR_VPN_ADDRESS/tcp/30333/p2p/VALIDATOR_NODE_PEER_ID
 ```
@@ -256,7 +256,7 @@ Start the validator with the `--valdiator` and `--sentry-nodes` flags:
 
 ```bash
 # Validator Node
-axiasolar \
+AXIA \
 --name "Validator" \
 --reserved-only \
 --sentry-nodes /ip4/SENTRY_VPN_ADDRESS/tcp/30333/p2p/SENTRY_NODE_PEER_ID \
@@ -269,15 +269,15 @@ You should see your validator has 1 peer, that is a connection from your sentry 
 2020-04-16 19:42:57 💤 Idle (1 peers), best: #1913174 (0x24f6…14f9), finalized #1913151 (0xced8…492b), ⬇ 18.0kiB/s ⬆ 4.5kiB/s
 2020-04-16 19:42:58 🔍 Discovered new external address for our node: /ip4/10.0.0.164/tcp/30333/p2p/12D3KooWEnA6JqCk59k8SNShYDGDHTfdqGJLsTpZjgLRT6rAqfDg
 2020-04-16 19:43:00 ✨ Imported #1913175 (0x76c0…ad3e)
-2020-04-16 19:43:00 Starting parachain attestation session on top of parent 0x76c0c4649d290c840523316ac157380dd703fa1b9fb83b326756ce35ff49ad3e. Local parachain duty is None
+2020-04-16 19:43:00 Starting allychain attestation session on top of parent 0x76c0c4649d290c840523316ac157380dd703fa1b9fb83b326756ce35ff49ad3e. Local allychain duty is None
 2020-04-16 19:43:02 💤 Idle (1 peers), best: #1913175 (0x76c0…ad3e), finalized #1913172 (0x5925…15bd), ⬇ 33.0kiB/s ⬆ 7.1kiB/s
 2020-04-16 19:43:07 ✨ Imported #1913176 (0xf1bc…3ace)
-2020-04-16 19:43:07 Starting parachain attestation session on top of parent 0xf1bc3c7ed57070b4ad48bfc564a16827dc7486582f97abf00ff38061e4ef3ace. Local parachain duty is None
+2020-04-16 19:43:07 Starting allychain attestation session on top of parent 0xf1bc3c7ed57070b4ad48bfc564a16827dc7486582f97abf00ff38061e4ef3ace. Local allychain duty is None
 2020-04-16 19:43:07 💤 Idle (1 peers), best: #1913176 (0xf1bc…3ace), finalized #1913173 (0x4c97…e6b6), ⬇ 16.4kiB/s ⬆ 5.9kiB/s
 2020-04-16 19:43:08 ✨ Imported #1913176 (0x672e…6123)
 2020-04-16 19:43:12 💤 Idle (1 peers), best: #1913176 (0xf1bc…3ace), finalized #1913174 (0x24f6…14f9), ⬇ 43.7kiB/s ⬆ 29.4kiB/s
 2020-04-16 19:43:13 ✨ Imported #1913177 (0x4e1b…209f)
-2020-04-16 19:43:13 Starting parachain attestation session on top of parent 0x4e1b8fd258739d5784fbdf7cf156e2ebfd90159b21427b8e041a3aa73b99209f. Local parachain duty is None
+2020-04-16 19:43:13 Starting allychain attestation session on top of parent 0x4e1b8fd258739d5784fbdf7cf156e2ebfd90159b21427b8e041a3aa73b99209f. Local allychain duty is None
 2020-04-16 19:43:14 ✨ Imported #1913177 (0x9b77…67c7)
 2020-04-16 19:43:17 💤 Idle (1 peers), best: #1913177 (0x4e1b…209f), finalized #1913174 (0x24f6…14f9)
 ```

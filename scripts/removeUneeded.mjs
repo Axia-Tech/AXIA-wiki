@@ -35,7 +35,7 @@ const main = () => {
 
   console.log(items);
 
-  const rootDir = process.argv[2] == 'dot' ? 'website/build/axiasolar-wiki' : 'axialunar-guide/build/axialunar-guide-hosting';
+  const rootDir = process.argv[2] == 'dot' ? 'website/build/AXIA-wiki' : 'axialunar-guide/build/axialunar-guide-hosting';
 
   const deleteWithin = (folder) => {
     for (const entry of fs.readdirSync(folder)) {

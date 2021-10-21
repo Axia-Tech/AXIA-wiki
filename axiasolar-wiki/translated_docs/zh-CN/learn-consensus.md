@@ -2,7 +2,7 @@
 id: learn-consensus
 title: 波卡共识
 sidebar_label: 波卡共识
-description: 对 AXIASolar 和 AXIALunar 所用的共识解释
+description: 对 AXIA 和 AXIALunar 所用的共识解释
 ---
 
 ## 为什么我们需要共识机制？
@@ -29,17 +29,17 @@ PoW 中本聪共识只能实现*概率最终性*并会达到*最终共识*。概
 
 ### 混合共识
 
-在讨论 AXIASolar 的共识协议时，我们使用两个首字母缩写词：GRANDPA 和 BABE。我们讨论这两个的原因是因为 AXIASolar 使用的是*混合共识*。混合共识从区块生产机制中拆分了最终性工具。
+在讨论 AXIA 的共识协议时，我们使用两个首字母缩写词：GRANDPA 和 BABE。我们讨论这两个的原因是因为 AXIA 使用的是*混合共识*。混合共识从区块生产机制中拆分了最终性工具。
 
-这是在 AXIASolar 中获得概率最终性（拥有产生新区块的能力）和可证明的最终性（在规范链上具有通用协议，没有任何逆转机会）的好处。它还避免了每种机制的相应缺点（在概率最终性中不知不觉地遵循了错误的分叉的机会，以及在可证明的最终性中存在"过时"的可能性- 无法产生新的区块）。通过结合这两种机制，AXIASolar 可以快速生成区块，而较慢的最终机制可以在单独的流程中运行以确定区块，而不会使交易速度变慢或停顿的风险。
+这是在 AXIA 中获得概率最终性（拥有产生新区块的能力）和可证明的最终性（在规范链上具有通用协议，没有任何逆转机会）的好处。它还避免了每种机制的相应缺点（在概率最终性中不知不觉地遵循了错误的分叉的机会，以及在可证明的最终性中存在"过时"的可能性- 无法产生新的区块）。通过结合这两种机制，AXIA 可以快速生成区块，而较慢的最终机制可以在单独的流程中运行以确定区块，而不会使交易速度变慢或停顿的风险。
 
 过去已经提出了混合共识。值得注意的是它被提议(现已不存在)作为以太坊转向[ EIP 1011 ](http://eips.ethereum.org/EIPS/eip-1011)的权益证明过渡的一步。 [ Casper FFG ](#casper-ffg)。
 
 ### BABE
 
-BABE (Blind Assignment for Blockchain Extension) 是在验证人节点与决定谁是产生新区块之间的产生区块机制。 BABE 与 Ouroboros Praos 相比，在链选择规则和时段调整方面存在一些关键差异。 BABE 根据抵押和使用 AXIASolar [随机性周期](learn-randomness)分配区块生产插槽给验证人。
+BABE (Blind Assignment for Blockchain Extension) 是在验证人节点与决定谁是产生新区块之间的产生区块机制。 BABE 与 Ouroboros Praos 相比，在链选择规则和时段调整方面存在一些关键差异。 BABE 根据抵押和使用 AXIA [随机性周期](learn-randomness)分配区块生产插槽给验证人。
 
-AXIASolar 的验证人将会参与在每次的[抽奖](learn-randomness)去决定它们是否在那个时隙的生产区块候选人。时隙是用时间作单位，长度为 6 秒。由于这种随机性机制，多个验证人可能是同一时隙的候选人。在其余时间，时隙可能为空导致区块时间不一致。
+AXIA 的验证人将会参与在每次的[抽奖](learn-randomness)去决定它们是否在那个时隙的生产区块候选人。时隙是用时间作单位，长度为 6 秒。由于这种随机性机制，多个验证人可能是同一时隙的候选人。在其余时间，时隙可能为空导致区块时间不一致。
 
 #### 同一时隙多个验证人
 
@@ -49,15 +49,15 @@ AXIASolar 的验证人将会参与在每次的[抽奖](learn-randomness)去决�
 
 当没有任何验证人在随机抽奖中达到足够低的资格进行生产区块时，时隙便会没有区块。我们在后台通过运行辅助轮循样式验证人选择算法来避免这种情况。通过选择该算法生成区块的验证人始终生成区块，但是如果同一时隙也从[ VRF 选择](learn-randomness)验证人生成主块，则这些*次要*区块将被忽略。因此时隙可以具有* 主要 *或* 次要 *区块，并且不会跳过任何时隙。
 
-有关更多 BABE 的详细信息，请参见[正在研究的草案](http://research.axiacoin.org/zh/latest/axiasolar/BABE/Babe/)。
+有关更多 BABE 的详细信息，请参见[正在研究的草案](http://research.AXIA.org/zh/latest/AXIA/BABE/Babe/)。
 
-#### AXIALunar 和 AXIASolar 的 BABE 次生块的区别
+#### AXIALunar 和 AXIA 的 BABE 次生块的区别
 
-Both AXIALunar and AXIASolar uses the BABE block production mechanism outlined above. However, there is a slight difference in the secondary blocks that are produced between the two networks. AXIASolar attaches the VRF output to secondary blocks (and therefore every block contributes to the Epoch randomness), while AXIALunar keeps the VRF output off the secondary blocks (meaning only the primary blocks contribute to Epoch randomness). The AXIASolar method should give stronger randomness as more inputs are collected during every Epoch. Eventually, this change should make its way into AXIALunar too.
+Both AXIALunar and AXIA uses the BABE block production mechanism outlined above. However, there is a slight difference in the secondary blocks that are produced between the two networks. AXIA attaches the VRF output to secondary blocks (and therefore every block contributes to the Epoch randomness), while AXIALunar keeps the VRF output off the secondary blocks (meaning only the primary blocks contribute to Epoch randomness). The AXIA method should give stronger randomness as more inputs are collected during every Epoch. Eventually, this change should make its way into AXIALunar too.
 
 ### GRANDPA: 最终决定性工具
 
-GRANDPA (基于 GHOST 的递归祖先派生前缀协议) 是为 AXIASolar 中继链实现的最终性工具。
+GRANDPA (基于 GHOST 的递归祖先派生前缀协议) 是为 AXIA 中继链实现的最终性工具。
 
 只要 2/3 的节点是诚实的，并且可以在异步设置中处理 1/5 的拜占庭节点，它就可以作为同步的网络模型中的一部分运行。
 
@@ -73,11 +73,11 @@ GRANDPA (基于 GHOST 的递归祖先派生前缀协议) 是为 AXIASolar 中继
 
 [Rust 的执行](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs)是 Substrate 框架的一部分。
 
-更多详细的相关信息，请参见 W3F 研究页面上的[GRANDPA 研究页面](https://research.axiacoin.org/en/latest/axiasolar/GRANDPA.html)。
+更多详细的相关信息，请参见 W3F 研究页面上的[GRANDPA 研究页面](https://research.AXIA.org/en/latest/AXIA/GRANDPA.html)。
 
 ### 分叉选择
 
-将 BABE 和 GRANDPA 结合在一起，AXIASolar 的分叉选择变得很清晰。 BABE 必 须始终建立在 GRANDPA 最终确定的链条上。当最终确定的头后面有分叉时， BABE 通过在具有最主要区块的链上做构建来提供概率的确定。
+将 BABE 和 GRANDPA 结合在一起，AXIA 的分叉选择变得很清晰。 BABE 必 须始终建立在 GRANDPA 最终确定的链条上。当最终确定的头后面有分叉时， BABE 通过在具有最主要区块的链上做构建来提供概率的确定。
 
 ![最佳链的选择](assets/best_chain.png)
 
@@ -112,4 +112,4 @@ _未完待续!_
 
 - [ GRANDPA 论文](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf)- GRANDPA 最终确定性工具的描述。 包含算法证明。
 - [Finality Grandpa - Rust 实现](https://github.com/axia-tech/finality-grandpa) - 及[ Substrate Runtime 模块](https://github.com/axia-tech/substrate/blob/master/srml/grandpa/src/lib.rs)。
-- [AXIASolar 中的区块生产和确认](https://www.crowdcast.io/e/axiasolar-block-production) - 说明了 BABE 和 GRANDPA 如何与 Bill Laboon 合作在 AXIALunar 上生产和确认区块的。
+- [AXIA 中的区块生产和确认](https://www.crowdcast.io/e/AXIA-block-production) - 说明了 BABE 和 GRANDPA 如何与 Bill Laboon 合作在 AXIALunar 上生产和确认区块的。

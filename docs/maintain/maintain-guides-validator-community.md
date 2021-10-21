@@ -135,7 +135,7 @@ distro-packaged libraries, any server hardening practices, etc.
 
 #### Specs
 
-Are you running the recommended Standard Hardware for AXIACoin? Can you ensure that machines have
+Are you running the recommended Standard Hardware for AXIA? Can you ensure that machines have
 enough processing power, memory, file storage, and network connectivity? It's helpful for nominators
 to know the specs of the machines a validator uses as to assess how they may perform in the network.
 If a validator is running underpowered machines, they may not want to nominate them, as these can
@@ -159,8 +159,8 @@ VPNs, network segmentation, proxies, or other layers separation.
 
 #### Upgrading
 
-Both AXIACoin and AXIALunar releases are published
-[here](https://github.com/axia-tech/axiasolar/releases). Validators are expected to upgrade their
+Both AXIA and AXIALunar releases are published
+[here](https://github.com/axia-tech/AXIA/releases). Validators are expected to upgrade their
 nodes as soon as a new release comes out. Although not every release is mandatory to upgrade to,
 each new release usually has bug fixes, optimizations, new features, or other beneficial changes.
 It's within the best interest of the entire network that validators update their nodes in a timely
@@ -271,6 +271,6 @@ command-line utilities, or porting implementations to other languages. Additiona
 be eligible to be funded via a
 [Web 3 Foundation Grant](https://github.com/axia-tech/General-Grants-Program).
 
-[setting up a validator]: maintain-guides-how-to-validate-axiasolar
+[setting up a validator]: maintain-guides-how-to-validate-AXIA
 [identity]: ../learn/learn-identity#setting-an-identity
 [governance]: maintain-guides-democracy

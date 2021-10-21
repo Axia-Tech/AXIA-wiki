@@ -5,9 +5,9 @@ sidebar_label: Contributing
 slug: ../contributing
 ---
 
-The wiki was started and is maintained by the AXIACoin Foundation. It is an open source project and aims
-to be the most extensive resource of knowledge on AXIACoin and the AXIACoin ecosystem. A large part
-of the material currently focuses on AXIACoin directly but it is not opposed to covering
+The wiki was started and is maintained by the AXIA Foundation. It is an open source project and aims
+to be the most extensive resource of knowledge on AXIA and the AXIA ecosystem. A large part
+of the material currently focuses on AXIA directly but it is not opposed to covering
 informational material for community projects.
 
 **Please do not try to pull request any marketing material as this will be rejected.**
@@ -16,17 +16,17 @@ Nonetheless, pull requests, discussions, and contributions from the community ar
 community members who demonstrate a record of good contributions may be given write access to the
 repository.
 
-Otherwise, AXIACoin Foundation holds the administrative position and final say on the content that is
+Otherwise, AXIA Foundation holds the administrative position and final say on the content that is
 included. Specifically, the Technical Education team at the foundation are most directly involved.
 
 > Check out the
-> [How to Contribute to the AXIACoin Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0) video for
+> [How to Contribute to the AXIA Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0) video for
 > steps on contributions.
 
 ## How to Contribute
 
 You can contribute to the wiki on the
-[w3f/axiasolar-wiki GitHub repository](https://github.com/axia-tech/axiasolar-wiki). Every page is a
+[w3f/AXIA-wiki GitHub repository](https://github.com/axia-tech/AXIA-wiki). Every page is a
 [MarkDown](https://guides.github.com/features/mastering-markdown/) file, which is an easy to learn
 syntax extension to plain text that makes creating links, rendering images, and nice-looking
 formatting simple.
@@ -81,14 +81,14 @@ This document is based on the
 The Wiki's default language is _English_, though, there is a desire to translate the Wiki
 in as many languages as possible. Another way you can contribute is by helping with translations.
 
-There is a feature at the bottom of the main page of the AXIACoin Wiki that will redirect you to
-[crowdin](https://crowdin.com/project/axiasolar-wiki), which is where translation contributions can
+There is a feature at the bottom of the main page of the AXIA Wiki that will redirect you to
+[crowdin](https://crowdin.com/project/AXIA-wiki), which is where translation contributions can
 be made.
 
 There, you will see the progress of translating the docs associated with the Wiki in many different
 languages.
 
-<img align="center" width="700" height="350" src="assets/translate/axiasolar-translate-feature.png"/>
+<img align="center" width="700" height="350" src="assets/translate/AXIA-translate-feature.png"/>
 <br/>
 
 The following are steps on how to interact with the crowdin interface for translatations. Check out

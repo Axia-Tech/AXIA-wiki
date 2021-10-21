@@ -10,7 +10,7 @@ wants to temporarily pause their active engagement in staking but does not want 
 funds, they can choose to "chill" their involvement and keep their funds staked.
 
 An account can step back from participating in active staking by clicking "Stop" under the
-`Network > Staking > Account actions` page in [AXIACoinJS Apps](https://axiasolar.js.org/apps) or by
+`Network > Staking > Account actions` page in [AXIAJS Apps](https://AXIA.js.org/apps) or by
 calling the `chill` extrinsic in the [staking pallet][chill extrinsic]. When an account chooses to
 chill, it becomes inactive in the next era. The call must be signed by the _controller_ account, not
 the _stash_.
@@ -53,16 +53,16 @@ validator has been involuntarily chilled, it is necessary for the nominators tha
 nominating that validator to re-issue the nominate call.
 
 Nominators who have the option to renominate an involuntarily chilled validator will have a display
-row to do so using AXIACoin-JS Apps. This row is displayed in the "Account Actions" tab for the
+row to do so using AXIA-JS Apps. This row is displayed in the "Account Actions" tab for the
 nominator under a heading that says "Renomination required". If your validator has been
 involuntarily chilled, you will need to request your nominators to re-issue the nominate call in
 order to start nominating you again.
 
 ## Chill Other
 
-An unbounded and unlimited number of nominators and validators in AXIACoin's NPoS is just not possible due to constraints in the runtime. As a result, multiple checks are incorporated to keep the size of staking system manageable, like mandating minimum active bond requirements for both nominators and validators. When these requirements are modified through on-chain governance, they can be enforced only on the accounts that newly call `nominate` or `validate` after the update. The changes to the bonding parameters would not automatically chill the active accounts on-chain which do not meet the requirements.
+An unbounded and unlimited number of nominators and validators in AXIA's NPoS is just not possible due to constraints in the runtime. As a result, multiple checks are incorporated to keep the size of staking system manageable, like mandating minimum active bond requirements for both nominators and validators. When these requirements are modified through on-chain governance, they can be enforced only on the accounts that newly call `nominate` or `validate` after the update. The changes to the bonding parameters would not automatically chill the active accounts on-chain which do not meet the requirements.
 
-For instance, let us consider a scenario where the minimum staking requirement for nominators is changed from 20 SOLARs to 40 SOLARs. An account that was actively nominating with 20 SOLARs before this update would still keep receiving staking rewards. To handle this corner case, the `chill_other` extrinsic was incorporated which also helps to keep things backwards compatible and safe. The `chill_other` extrinsic is permissionless and any third party user can target it on an account where the minimum active bond is not satisfied, and chill that account. The list of addresses of all the active validators and their nominators can be viewed by running [validator stats](https://github.com/axia-tech/validator-stats) script.
+For instance, let us consider a scenario where the minimum staking requirement for nominators is changed from 20 AXCs to 40 AXCs. An account that was actively nominating with 20 AXCs before this update would still keep receiving staking rewards. To handle this corner case, the `chill_other` extrinsic was incorporated which also helps to keep things backwards compatible and safe. The `chill_other` extrinsic is permissionless and any third party user can target it on an account where the minimum active bond is not satisfied, and chill that account. The list of addresses of all the active validators and their nominators can be viewed by running [validator stats](https://github.com/axia-tech/validator-stats) script.
 
 [chill extrinsic]: https://substrate.dev/rustdocs/latest/pallet_staking/pallet/enum.Call.html#variant.chill
 [accounts]: ../learn/learn-staking.md#accounts

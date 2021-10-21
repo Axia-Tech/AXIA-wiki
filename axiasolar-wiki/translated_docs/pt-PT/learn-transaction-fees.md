@@ -4,9 +4,9 @@ title: Transaction Fees
 sidebar_label: Transaction Fees
 ---
 
-Several resources in a blockchain network are limited, for example, storage and computation. Transaction fees prevent individual users from consuming too many resources. AXIASolar uses a weight-based fee model as opposed to a gas-metering model. As such, fees are charged prior to transaction execution; once the fee is paid, nodes will execute the transaction.
+Several resources in a blockchain network are limited, for example, storage and computation. Transaction fees prevent individual users from consuming too many resources. AXIA uses a weight-based fee model as opposed to a gas-metering model. As such, fees are charged prior to transaction execution; once the fee is paid, nodes will execute the transaction.
 
-[AXIACoin Foundation Research](https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html) designed the AXIASolar fee system with the following objectives:
+[AXIA Foundation Research](https://research.AXIA.org/en/latest/AXIA/Token%20Economics.html) designed the AXIA fee system with the following objectives:
 
 - Each Relay Chain block should be processed efficiently to avoid delays in block production.
 - The growth rate of the Relay Chain should be bounded.
@@ -16,7 +16,7 @@ Several resources in a blockchain network are limited, for example, storage and 
 
 ## Fee Calculation
 
-Fees on the AXIASolar Relay Chain are calculated based on three parameters:
+Fees on the AXIA Relay Chain are calculated based on three parameters:
 
 - A per-byte fee (also known as the "length fee")
 - A weight fee
@@ -28,11 +28,11 @@ Weights are a fixed number designed to manage the time is takes to validate a bl
 
 Tips are an optional transaction fee that users can add to give a transaction higher priority.
 
-Together, these three fees constitute the inclusion fee. This fee is deducted from the sender's account prior to transaction execution. A portion of the fee will go to the block producer and the remainder will go to the [Treasury](learn-treasury). At AXIASolar's genesis, this is set to 20% and 80%, respectively.
+Together, these three fees constitute the inclusion fee. This fee is deducted from the sender's account prior to transaction execution. A portion of the fee will go to the block producer and the remainder will go to the [Treasury](learn-treasury). At AXIA's genesis, this is set to 20% and 80%, respectively.
 
 ## Block Limits and Transaction Priority
 
-Blocks in AXIASolar have both a maximum length (in bytes) and a maximum weight. Block producers will fill blocks with transactions up to these limits. A portion of each block - currently 25% - is reserved for critical transactions that are related to the chain's operation. Block producers will only fill up to 75% of a block with normal transactions. Some examples of operational transactions:
+Blocks in AXIA have both a maximum length (in bytes) and a maximum weight. Block producers will fill blocks with transactions up to these limits. A portion of each block - currently 25% - is reserved for critical transactions that are related to the chain's operation. Block producers will only fill up to 75% of a block with normal transactions. Some examples of operational transactions:
 
 - Misbehavior reports
 - Council operations
@@ -44,15 +44,15 @@ Block producers prioritize transactions based on each transaction's total fee. S
 
 Transaction volume on blockchains is highly irregular, and therefore transaction fees need a mechanism to adjust. However, users should be able to predict transaction fees.
 
-AXIASolar uses a slow-adjusting fee mechanism with tips to balance these two considerations. In addition to block _limits,_ AXIASolar also has a block fullness _target._ Fees increase or decrease for the next block based on the fullness of the current block relative to the target. The per-weight fee can change up to 30% in a 24 hour period. This rate captures long-term trends in demand, but not short-term spikes. To consider short term spikes, AXIASolar uses tips on top of the length and weight fees. Users can optionally add a tip to the fee to give the transaction a higher priority.
+AXIA uses a slow-adjusting fee mechanism with tips to balance these two considerations. In addition to block _limits,_ AXIA also has a block fullness _target._ Fees increase or decrease for the next block based on the fullness of the current block relative to the target. The per-weight fee can change up to 30% in a 24 hour period. This rate captures long-term trends in demand, but not short-term spikes. To consider short term spikes, AXIA uses tips on top of the length and weight fees. Users can optionally add a tip to the fee to give the transaction a higher priority.
 
 ## Shard Transactions
 
-The transactions that take place within AXIASolar's shards - parachains and parathreads - do not incur Relay Chain transaction fees. Users of shard applications do not even need to hold SOLAR tokens, as each shard has its own economic model and may or may not have a token. There are, however, situations where shards themselves make transactions on the Relay Chain.
+The transactions that take place within AXIA's shards - allychains and parathreads - do not incur Relay Chain transaction fees. Users of shard applications do not even need to hold AXC tokens, as each shard has its own economic model and may or may not have a token. There are, however, situations where shards themselves make transactions on the Relay Chain.
 
-[Parachains](learn-parachains) have a dedicated slot on the Relay Chain for execution, so their collators do not need to own SOLARs in order to include blocks. The parachain will make some transactions itself, for example, opening or closing an [XCMP](learn-crosschain) channel, participating in an [auction](learn-auction) to renew its slot, or upgrading its runtime. Parachains have their own accounts on the Relay Chain and will need to use those funds to issue transactions on the parachain's behalf.
+[Allychains](learn-allychains) have a dedicated slot on the Relay Chain for execution, so their collators do not need to own AXCs in order to include blocks. The allychain will make some transactions itself, for example, opening or closing an [XCMP](learn-crosschain) channel, participating in an [auction](learn-auction) to renew its slot, or upgrading its runtime. Allychains have their own accounts on the Relay Chain and will need to use those funds to issue transactions on the allychain's behalf.
 
-[Parathreads](learn-parathreads) will also make all the same transactions that a parachain might. In addition, the collators need to participate in an auction every block to progress their chain. The collators will need to have SOLARs to participate in these auctions.
+[Parathreads](learn-parathreads) will also make all the same transactions that a allychain might. In addition, the collators need to participate in an auction every block to progress their chain. The collators will need to have AXCs to participate in these auctions.
 
 ## Other Resource Limitation Strategies
 
@@ -65,21 +65,21 @@ Transaction weight must be computable prior to execution, and therefore can only
 
 ## Advanced
 
-This page only covered transactions that come from normal users. If you look at blocks in a block explorer, though, you may see some "extrinsics" that look different from these transactions. In AXIASolar (and any chain built on Substrate), an extrinsic is a piece of information that comes from outside the chain. Extrinsics fall into three categories:
+This page only covered transactions that come from normal users. If you look at blocks in a block explorer, though, you may see some "extrinsics" that look different from these transactions. In AXIA (and any chain built on Substrate), an extrinsic is a piece of information that comes from outside the chain. Extrinsics fall into three categories:
 
 - Signed transactions
 - Unsigned transactions
 - Inherents
 
-This page only covered signed transactions, which is the way that most users will interact with AXIASolar. Signed transactions come from an account that has funds, and therefore AXIASolar can charge a transaction fee as a way to prevent spam.
+This page only covered signed transactions, which is the way that most users will interact with AXIA. Signed transactions come from an account that has funds, and therefore AXIA can charge a transaction fee as a way to prevent spam.
 
-Unsigned transactions are for special cases where a user needs to submit an extrinsic from a key pair that does not control funds. For example, when users [claim their SOLAR tokens](https://claims.axiacoin.network) after genesis, their SOLAR address doesn't have any funds yet, so that uses an unsigned transaction. Validators also submit unsigned transactions in the form of "heartbeat" messages to indicate that they are online. These heartbeats must be signed by one of the validator's [session keys](learn-keys). Session keys never control funds. Unsigned transactions are only used in special cases because, since AXIASolar cannot charge a fee for them, each one needs its own, custom validation logic.
+Unsigned transactions are for special cases where a user needs to submit an extrinsic from a key pair that does not control funds. For example, when users [claim their AXC tokens](https://claims.AXIA.network) after genesis, their AXC address doesn't have any funds yet, so that uses an unsigned transaction. Validators also submit unsigned transactions in the form of "heartbeat" messages to indicate that they are online. These heartbeats must be signed by one of the validator's [session keys](learn-keys). Session keys never control funds. Unsigned transactions are only used in special cases because, since AXIA cannot charge a fee for them, each one needs its own, custom validation logic.
 
-Finally, inherents are pieces of information that are not signed or included in the transaction queue. As such, only the block author can add inherents to a block. Inherents are assumed to be "true" simply because a sufficiently large number of validators have agreed on them being reasonable. For example, AXIASolar blocks include a timestamp inherent. There is no way to prove that a timestamp is true the way one proves the desire to send funds with a signature. Rather, validators accept or reject the block based on how reasonable they find the timestamp. In AXIASolar, it must be within some acceptable range of their own system clocks.
+Finally, inherents are pieces of information that are not signed or included in the transaction queue. As such, only the block author can add inherents to a block. Inherents are assumed to be "true" simply because a sufficiently large number of validators have agreed on them being reasonable. For example, AXIA blocks include a timestamp inherent. There is no way to prove that a timestamp is true the way one proves the desire to send funds with a signature. Rather, validators accept or reject the block based on how reasonable they find the timestamp. In AXIA, it must be within some acceptable range of their own system clocks.
 
 ## Learn More
 
-- [AXIACoin Foundation Research](https://research.axiacoin.org/en/latest/axiasolar/Token%20Economics.html#relay-chain-transaction-fees-and-per-block-transaction-limits)
+- [AXIA Foundation Research](https://research.AXIA.org/en/latest/AXIA/Token%20Economics.html#relay-chain-transaction-fees-and-per-block-transaction-limits)
 - [Substrate Weights](https://substrate.dev/docs/en/knowledgebase/learn-substrate/weight)
 - [Substrate Fees](https://substrate.dev/docs/en/knowledgebase/runtime/fees)
 - [Extrinsics](https://substrate.dev/docs/en/knowledgebase/learn-substrate/extrinsics)

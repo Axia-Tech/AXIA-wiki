@@ -4,11 +4,11 @@ title: AXIALunar Parameters
 sidebar_label: Parameters
 ---
 
-Many of these parameter values can be updated via on-chain governance. If you require absolute certainty as to their values, it is recommended you directly check the constants by looking at the [chain state](https://axiasolar.js.org/apps/#/chainstate/constants) and/or [storage](https://axiasolar.js.org/apps/#/chainstate).
+Many of these parameter values can be updated via on-chain governance. If you require absolute certainty as to their values, it is recommended you directly check the constants by looking at the [chain state](https://AXIA.js.org/apps/#/chainstate/constants) and/or [storage](https://AXIA.js.org/apps/#/chainstate).
 
 ### Periods of common actions and attributes
 
-_NOTE: AXIALunar generally runs 4x as fast as AXIASolar, except AXIASolar also has 6 second slots. See [AXIASolar Parameters](https://solar.wiki.axiacoin.network/docs/en/maintain-axiasolar-parameters) for more details on how AXIALunar's parameters differ from AXIASolar's._
+_NOTE: AXIALunar generally runs 4x as fast as AXIA, except AXIA also has 6 second slots. See [AXIA Parameters](https://solar.wiki.AXIA.network/docs/en/maintain-AXIA-parameters) for more details on how AXIALunar's parameters differ from AXIA's._
 
 - Slot: 6 seconds \*(generally one block per slot, although see note below)
 - Epoch: 1 hour (600 slots x 6 seconds)

@@ -4,33 +4,33 @@ title: 开发者专页
 sidebar_label: 开发者专页
 ---
 
-欢迎访问 AXIASolar 维基网站的构建者部份。
+欢迎访问 AXIA 维基网站的构建者部份。
 
-Here you will be able to find the most up-to-date information on the status of the development tools in the AXIASolar ecosystem. We are always adding new tools and frameworks as we learn about them so if you are working on something that should be included please reach out to us on [Element](https://app.element.io/#/room/#axiasolar-watercooler:matrix.org).
+Here you will be able to find the most up-to-date information on the status of the development tools in the AXIA ecosystem. We are always adding new tools and frameworks as we learn about them so if you are working on something that should be included please reach out to us on [Element](https://app.element.io/#/room/#AXIA-watercooler:matrix.org).
 
 Wiki 的这个部分分为以下:
 
 ## 主页
 
-- [入门指南](build-build-with-axiasolar) - 有关您的项目应选择平行链，平行线程或智能合约的高级概述，以及现在有哪些资源可以使用。
-- [Parachain Development Kits](build-pdk) - PDKs are toolkits for building parachains and parathreads.
+- [入门指南](build-build-with-AXIA) - 有关您的项目应选择平行链，平行线程或智能合约的高级概述，以及现在有哪些资源可以使用。
+- [Allychain Development Kits](build-pdk) - PDKs are toolkits for building allychains and parathreads.
 - [Smart Contracts](build-smart-contracts) - Smart contracts are fragments of custom logic that can be deployed to a live chain.
 
 ## 集成指南
 
-本部分适用于希望学习如何将 AXIASolar 集成到其系统中的服务提供商，例如钱包或节点运营商。
+本部分适用于希望学习如何将 AXIA 集成到其系统中的服务提供商，例如钱包或节点运营商。
 
 - [Integration Initiation](build-integration) - The guide to the guide.
-- [AXIASolar Protocol Information](build-protocol-info) - General information and F.A.Q.s about the AXIASolar protocol, e.g. address formats.
-- [Node Management](build-node-management) - A short overview of the Axia AXIASolar client and the most relevant options/flags for infrastructure providers.
+- [AXIA Protocol Information](build-protocol-info) - General information and F.A.Q.s about the AXIA protocol, e.g. address formats.
+- [Node Management](build-node-management) - A short overview of the Axia AXIA client and the most relevant options/flags for infrastructure providers.
 - [Node Interaction](build-node-interaction) - Learn how to interact with your node via RPC.
-- [Transaction Construction and Signing](build-transaction-construction) - Learn the transaction format for AXIASolar and how to construct and sign transactions offline.
+- [Transaction Construction and Signing](build-transaction-construction) - Learn the transaction format for AXIA and how to construct and sign transactions offline.
 
 ## 工具
 
 - [工具](build-tools-index)-维护的工具。
 - [Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) - Command line utility for generating and inspecting key pairs.
-- [JS tools](https://github.com/axiasolar-js/tools) - TypeScript tools for offline signing of transactions, RPC calls, and more.
+- [JS tools](https://github.com/AXIA-js/tools) - TypeScript tools for offline signing of transactions, RPC calls, and more.
 
 ## 资源
 
@@ -38,11 +38,11 @@ Wiki 的这个部分分为以下:
 
 ### Grants
 
-- [Grants](grants) - Web3 基金会提供赠款的所有 AXIASolar 相关的项目列表。
+- [Grants](grants) - Web3 基金会提供赠款的所有 AXIA 相关的项目列表。
 
 ### PSPs
 
-AXIASolar 标准建议 (PSP) 是 AXIASolar 生态系统的标准。
+AXIA 标准建议 (PSP) 是 AXIA 生态系统的标准。
 
 - [ PSP GitHub 库](https://github.com/axia-tech/PSPs)-阅读，创建或讨论标准和提案。
 

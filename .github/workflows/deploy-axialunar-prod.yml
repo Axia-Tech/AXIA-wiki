@@ -20,8 +20,8 @@ jobs:
 
       - name: Publish
         run: |
-          git config --global user.email "axiasolar-wiki-deploy@users.noreply.github.com"
-          git config --global user.name "AXIASolar Wiki CI"
+          git config --global user.email "AXIA-wiki-deploy@users.noreply.github.com"
+          git config --global user.name "AXIA Wiki CI"
           echo "machine github.com login w3fdeploy password ${{ secrets.ACCESS_KEY }}" > ~/.netrc
           yarn && yarn axialunar:build && GIT_USER=w3fdeploy PUBLISHING=true PROJECT_NAME=axialunar-guide-hosting yarn run axialunar:publish-gh-pages
 

@@ -20,7 +20,7 @@ This primarily means that validators:
 High availability set-ups that involve redundant validator nodes may seem attractive at first.
 However, they can be **very dangerous** if they are not set up perfectly. The reason for this is
 that the session keys used by a validator should always be isolated to just a single node.
-Replicating session keys across multiple nodes could lead to equivocation slashes or parachain
+Replicating session keys across multiple nodes could lead to equivocation slashes or allychain
 validity slashes which can make you lose **100% of your staked funds**.
 
 The good news is that 100% uptime of your validator is not really needed, as it has some buffer
@@ -31,17 +31,17 @@ doing.**
 Many expert validators have made mistakes in the past due to the handling of session keys.
 
 Remember, even if your validator goes offline for some time, the offline slash is much more
-forgiving than the equivocation or parachain validity slashing.
+forgiving than the equivocation or allychain validity slashing.
 
 ## Key Management
 
-See the [AXIACoin Keys guide](../learn/learn-keys.md) for more information on keys. The keys that are of
+See the [AXIA Keys guide](../learn/learn-keys.md) for more information on keys. The keys that are of
 primary concern for validator infrastructure are the Session keys. These keys sign messages related
-to consensus and parachains. Although Session keys are _not_ account keys and therefore cannot
+to consensus and allychains. Although Session keys are _not_ account keys and therefore cannot
 transfer funds, an attacker could use them to commit slashable behavior.
 
 Session keys are generated inside the node via RPC call. See the
-[How to Validate guide](maintain-guides-how-to-validate-axiasolar.md#set-session-keys)
+[How to Validate guide](maintain-guides-how-to-validate-AXIA.md#set-session-keys)
 
 for instructions on setting Session keys. These should be generated and kept within your client.
 When you generate new Session keys, you must submit an extrinsic (a Session certificate) from your
@@ -53,7 +53,7 @@ Controller key telling the chain your new Session keys.
 
 ### Signing Outside the Client
 
-In the future, AXIACoin will support signing payloads outside the client so that keys can be stored
+In the future, AXIA will support signing payloads outside the client so that keys can be stored
 on another device, e.g. a hardware security module (HSM) or secure enclave. For the time being,
 however, Session key signatures are performed within the client.
 
@@ -86,7 +86,7 @@ however, Session key signatures are performed within the client.
 
 ## Conclusions
 
-- At the moment, AXIACoin/Substrate can't interact with HSM/SGX, so we need to provide the signing
+- At the moment, AXIA/Substrate can't interact with HSM/SGX, so we need to provide the signing
   key seeds to the validator machine. This key is kept in memory for signing operations and
   persisted to disk (encrypted with a password).
 
@@ -96,7 +96,7 @@ however, Session key signatures are performed within the client.
 
 ### Validators
 
-- Validators should only run the AXIACoin binary, and they should not listen on any port other than
+- Validators should only run the AXIA binary, and they should not listen on any port other than
   the configured p2p port.
 
 - Validators should run on bare-metal machines, as opposed to VMs. This will prevent some of the
@@ -106,9 +106,9 @@ however, Session key signatures are performed within the client.
 
 - Session keys should be generated and provided in a secure way.
 
-- AXIACoin should be started at boot and restarted if stopped for any reason (supervisor process).
+- AXIA should be started at boot and restarted if stopped for any reason (supervisor process).
 
-- AXIACoin should run as a non-root user.
+- AXIA should run as a non-root user.
 
 ### Monitoring
 

@@ -1,7 +1,7 @@
 ---
 id: build-extrinsic-format
-title: AXIASolar Extrinsic Format aka Transaction Format
-sidebar_label: AXIASolar Extrinsic Format aka Transaction Format
+title: AXIA Extrinsic Format aka Transaction Format
+sidebar_label: AXIA Extrinsic Format aka Transaction Format
 ---
 
 ## Old Format
@@ -14,7 +14,7 @@ For reference, the **old** extrinsic format was:
 
 ## Current Format
 
-The AXIASolar extrinsic format is:
+The AXIA extrinsic format is:
 
 ```
 [ address (1/3/5/9/33-bytes, dependent on first byte), index (4-bytes), call (dynamic-length), signature on *original* fields (64 bytes) ]

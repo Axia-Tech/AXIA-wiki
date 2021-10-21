@@ -2,17 +2,17 @@
 id: learn-account-generation
 title: Account Generation
 sidebar_label: Account Generation
-description: Step-by-step guides on generating a AXIASolar account.
+description: Step-by-step guides on generating a AXIA account.
 ---
 
-There are several ways to generate a AXIASolar address:
+There are several ways to generate a AXIA address:
 
-- [AXIASolar.js Browser Plugin](#axiasolarjs-browser-plugin) **RECOMMENDED FOR MOST USERS**
+- [AXIA.js Browser Plugin](#AXIAjs-browser-plugin) **RECOMMENDED FOR MOST USERS**
 - [Subkey](#subkey) **ADVANCED and MOST SECURE**
-- [AXIASolar.js Web Apps](#axiasolarjs)
+- [AXIA.js Web Apps](#AXIAjs)
 - [Axia Signer](#axia-signer)
 
-> To learn more on how to create AXIASolar accounts, head over to our [video](https://www.youtube.com/watch?v=hhUZ40ZWqkE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=19)
+> To learn more on how to create AXIA accounts, head over to our [video](https://www.youtube.com/watch?v=hhUZ40ZWqkE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=19)
 
 ## DISCLAIMER: Key Security
 
@@ -28,43 +28,43 @@ For maximum security, the seed should be written down on paper or another non-di
 
 You should definitely not store your seed on any kind of computer that has or may have access to the internet in the future.
 
-## AXIASolar.js Browser Plugin
+## AXIA.js Browser Plugin
 
-The axiasolar.js plugin provides a reasonable balance of security and usability. It provides a separate local mechanism to generate your address and interact with AXIASolar.
+The AXIA.js plugin provides a reasonable balance of security and usability. It provides a separate local mechanism to generate your address and interact with AXIA.
 
-This method involves installing the axiasolar.js plugin and using it as a “virtual vault," separate from your browser, to store your private keys. It also allows signing of transactions and similar functionality.
+This method involves installing the AXIA.js plugin and using it as a “virtual vault," separate from your browser, to store your private keys. It also allows signing of transactions and similar functionality.
 
 It is still running on the same computer you use to connected to the internet with and thus is less secure than using Axia Signer or other air-gapped protocols.
 
 ### Install the Browser Plugin
 
-The browser plugin is available for both [Google Chrome](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en) and [FireFox](https://addons.mozilla.org/en-US/firefox/addon/axiasolar-js-extension).
+The browser plugin is available for both [Google Chrome](https://chrome.google.com/webstore/detail/AXIA%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en) and [FireFox](https://addons.mozilla.org/en-US/firefox/addon/AXIA-js-extension).
 
-If you would like to know more or review the code of the plugin yourself, you can visit the Github source [repository](https://github.com/axiasolar-js/extension).
+If you would like to know more or review the code of the plugin yourself, you can visit the Github source [repository](https://github.com/AXIA-js/extension).
 
-After installing the plugin, you should see the orange and white axiasolar.js logo in the menu bar of your browser.
+After installing the plugin, you should see the orange and white AXIA.js logo in the menu bar of your browser.
 
-![plugin-02](assets/accounts/axiasolar_plugin_js_02.jpg)
+![plugin-02](assets/accounts/AXIA_plugin_js_02.jpg)
 
 ### Open Accounts
 
-Navigate to [AXIASolar Apps](https://axiasolar.js.org/apps). Click on the "Accounts" tab. This is located in the sidebar on the left of your screen.
+Navigate to [AXIA Apps](https://AXIA.js.org/apps). Click on the "Accounts" tab. This is located in the sidebar on the left of your screen.
 
-![plugin-03](assets/accounts/axiasolar_plugin_js_03.jpg)
+![plugin-03](assets/accounts/AXIA_plugin_js_03.jpg)
 
 ### Create Account
 
-Open the axiasolar.js browser extension by clicking the logo on the top bar of your browser. You will see a separate browser window open. If you have used this extension before, you may see a list of previously generated accounts. In any case you will see two buttons: “I want to create an account with a new seed” and “I have a pre-existing seed, import the account."
+Open the AXIA.js browser extension by clicking the logo on the top bar of your browser. You will see a separate browser window open. If you have used this extension before, you may see a list of previously generated accounts. In any case you will see two buttons: “I want to create an account with a new seed” and “I have a pre-existing seed, import the account."
 
 Click “I want to create an account with a new seed”.
 
-![plugin-04](assets/accounts/axiasolar_plugin_js_04.jpg)
+![plugin-04](assets/accounts/AXIA_plugin_js_04.jpg)
 
-The axiasolar.js plugin will then use system randomness to make a new seed for you and display it to you in the form of twelve words.
+The AXIA.js plugin will then use system randomness to make a new seed for you and display it to you in the form of twelve words.
 
-You should back up these keys. It is imperative to store the seed somewhere safe, secret, and secure. If you cannot access your account via axiasolar.js for some reason, you can simply re-enter your seed, and have access to your account once again.
+You should back up these keys. It is imperative to store the seed somewhere safe, secret, and secure. If you cannot access your account via AXIA.js for some reason, you can simply re-enter your seed, and have access to your account once again.
 
-![plugin-05](assets/accounts/axiasolar_plugin_js_05.jpg)
+![plugin-05](assets/accounts/AXIA_plugin_js_05.jpg)
 
 Please see above for information on [storing your key safely](#disclaimer-key-security).
 
@@ -78,45 +78,45 @@ After typing a name for the account, a new textbox will appear in which you can 
 
 Note that this password will protect your data in the plugin, and any backup file you export from the plugin. It does NOT protect your seed phrase. If someone knows the twelve words in your mnemonic seed, they still have control over your account even if they do not know the password.
 
-![plugin-06](assets/accounts/axiasolar_plugin_js_06.jpg)
+![plugin-06](assets/accounts/AXIA_plugin_js_06.jpg)
 
 ### Review Account
 
 Once both of your passwords match, the program will display information about the account that will be generated for you.
 
-![plugin-07](assets/accounts/axiasolar_plugin_js_07.jpg)
+![plugin-07](assets/accounts/AXIA_plugin_js_07.jpg)
 
 Click on “Add the account with the generated seed”. You will be taken back to the main page of the plugin, which should now include your generated account.
 
-### Set Address for AXIASolar Mainnet
+### Set Address for AXIA Mainnet
 
-Now we will ensure that the addresses are displayed as AXIASolar mainnet addresses.
+Now we will ensure that the addresses are displayed as AXIA mainnet addresses.
 
 Click on "Options" at the top of the plugin window.
 
-![plugin-08](assets/accounts/axiasolar_plugin_js_08.jpg)
+![plugin-08](assets/accounts/AXIA_plugin_js_08.jpg)
 
-In the "display addresses formatted for" dropdown, select "AXIASolar (live) and then click "Back".
+In the "display addresses formatted for" dropdown, select "AXIA (live) and then click "Back".
 
-![plugin-09](assets/accounts/axiasolar_plugin_js_09.jpg)
+![plugin-09](assets/accounts/AXIA_plugin_js_09.jpg)
 
 ### Get Address
 
-Verify that your address has a “1” as the first character. This indicates that it is a AXIASolar mainnet address.
+Verify that your address has a “1” as the first character. This indicates that it is a AXIA mainnet address.
 
-![plugin-10](assets/accounts/axiasolar_plugin_js_10.jpg)
+![plugin-10](assets/accounts/AXIA_plugin_js_10.jpg)
 
 You can copy the address by double-clicking on the string representation of the address itself, and then copying (e.g. with Control-C on Windows or Linux, Command-C on OS X). DO NOT click on the icon representing your account (the colorful hexagon of differently-colored dots) - this will copy a AXIALunar version of your address.
 
 Be sure that you select the ENTIRE displayed address. Note that when you paste it, you will see even more characters than are displayed.
 
-![plugin-11](assets/accounts/axiasolar_plugin_js_11.jpg)
+![plugin-11](assets/accounts/AXIA_plugin_js_11.jpg)
 
 ### Copy Address
 
-You can now copy and paste the address from the address textbox, and you now have a plain-text copy of your AXIASolar mainnet address.
+You can now copy and paste the address from the address textbox, and you now have a plain-text copy of your AXIA mainnet address.
 
-Note that an address in a different format can always be converted to a AXIASolar address, since the same public key can be used for generating addresses on different networks. However, for ease of use and understanding, it is best to ensure that you are always using AXIASolar mainnet addresses.
+Note that an address in a different format can always be converted to a AXIA address, since the same public key can be used for generating addresses on different networks. However, for ease of use and understanding, it is best to ensure that you are always using AXIA mainnet addresses.
 
 ## Subkey
 
@@ -126,31 +126,31 @@ For detailed build and usage instructions of subkey, please see [here](https://g
 
 ![subkey-01](assets/accounts/subkey_01.jpg)
 
-## AXIASolar.js
+## AXIA.js
 
-Using the axiasolar.js user interface without the plugin is not recommended. It is the least secure way of generating an account. It should only be used if all of the other methods are not feasible in your situation.
+Using the AXIA.js user interface without the plugin is not recommended. It is the least secure way of generating an account. It should only be used if all of the other methods are not feasible in your situation.
 
-![pjs-01](assets/accounts/axiasolar_js_01.jpg)
+![pjs-01](assets/accounts/AXIA_js_01.jpg)
 
-### Go to AXIASolar Apps
+### Go to AXIA Apps
 
-Navigate to [AXIASolar Apps](https://axiasolar.js.org/apps) and click on the "Accounts" tab. It is located in the sidebar on the left side of your screen.
+Navigate to [AXIA Apps](https://AXIA.js.org/apps) and click on the "Accounts" tab. It is located in the sidebar on the left side of your screen.
 
 ### Start Account Generation
 
 Click on the "Add Account" button.
 
-![pjs-02](assets/accounts/axiasolar_js_02.jpg)
+![pjs-02](assets/accounts/AXIA_js_02.jpg)
 
 You should see a pop-up that looks like the one here. The required text fields to complete are highlighted in pink.
 
-![pjs-03](assets/accounts/axiasolar_js_03.jpg)
+![pjs-03](assets/accounts/AXIA_js_03.jpg)
 
 You can ignore the Advanced creation options; the defaults are fine. You will have to enter an Account Name and a password to protect your account. Be sure to select a secure and hard-to-guess password. Note that anything will be accepted as a password here. Please note: There are no checks to see if it is long enough or secure. You will need this password for any future interaction with or transaction from this account.
 
 When you have entered valid information for both, the color of the text boxes will turn from pink to white.
 
-![pjs-04](assets/accounts/axiasolar_js_04.jpg)
+![pjs-04](assets/accounts/AXIA_js_04.jpg)
 
 Please see above for information on [storing your key safely](#disclaimer-key-security).
 
@@ -160,13 +160,13 @@ Click “Save” and your account will be created. It will also generate a backu
 
 You can use this backup file to restore your account. This backup file is not readable unless it is decrypted with the password.
 
-![pjs-05](assets/accounts/axiasolar_js_05.jpg)
+![pjs-05](assets/accounts/AXIA_js_05.jpg)
 
 ### Multi-signature Accounts
 
 Multi-signature accounts are accounts created from several standard accounts (or even other multi-sig accounts). For a full explanation, please see the [Accounts Explainer section on multi-sigs](learn-accounts#multi-signature-accounts).
 
-On the [Accounts](https://axiasolar.js.org/apps/#/accounts) tab, click the `Multisig` button. Enter the threshold and add signatories. The threshold must be less than or equal to the number of signatories. The threshold indicates how many members must be in agreement for an extrinsic submission to be successful. Click `Create` when done. We'll use the accounts Alice, Bob, and Charlie here.
+On the [Accounts](https://AXIA.js.org/apps/#/accounts) tab, click the `Multisig` button. Enter the threshold and add signatories. The threshold must be less than or equal to the number of signatories. The threshold indicates how many members must be in agreement for an extrinsic submission to be successful. Click `Create` when done. We'll use the accounts Alice, Bob, and Charlie here.
 
 ![Multi-sig account creation](/img/accounts/create-multisig.png)
 
@@ -192,7 +192,7 @@ Signatories should communicate off-chain to prevent many pending transactions an
 
 ## Axia Signer
 
-Axia Signer is a secure way of storing your SOLARs on an air-gapped device. It is highly recommended that you turn off wifi, cellular network, Bluetooth, NFC, and any other communications methods after installing it. If you have any communications methods turned on, you will see an "unshielded" icon in red on the top-right corner that indicates your connection may not be secure.
+Axia Signer is a secure way of storing your AXCs on an air-gapped device. It is highly recommended that you turn off wifi, cellular network, Bluetooth, NFC, and any other communications methods after installing it. If you have any communications methods turned on, you will see an "unshielded" icon in red on the top-right corner that indicates your connection may not be secure.
 
 ### Create Account
 
@@ -226,12 +226,12 @@ Note that if someone knows the 12/24 words in your recovery phrase, they will st
 
 ### Get Address
 
-Choose which network you would like to create an address on by clicking the name of the network. For example, if you select "AXIASolar", a new AXIASolar address will be created for you under this identity.
+Choose which network you would like to create an address on by clicking the name of the network. For example, if you select "AXIA", a new AXIA address will be created for you under this identity.
 
 ![Axia Signer Create Account 5](assets/accounts/ps-create-5.jpg)
 
 ### Your Address
 
-The address will be shown as a QR code. You can import your address to the AXIASolarJS Apps by going to the [Accounts](https://axiasolar.js.org/apps/#/accounts) page on an Internet-connected computer and click "Add via QR", and following the instructions to add the account. An account created this way will always require you to sign messages with your Axia Signer device. It will do this only by scanning and displaying QR codes, leaving even someone with total control of your internet-connected computer a very small and limited scope for interacting with the Axia Signer device, which can continue to keep your key safe.
+The address will be shown as a QR code. You can import your address to the AXIAJS Apps by going to the [Accounts](https://AXIA.js.org/apps/#/accounts) page on an Internet-connected computer and click "Add via QR", and following the instructions to add the account. An account created this way will always require you to sign messages with your Axia Signer device. It will do this only by scanning and displaying QR codes, leaving even someone with total control of your internet-connected computer a very small and limited scope for interacting with the Axia Signer device, which can continue to keep your key safe.
 
 ![Axia Signer Create Account 6](assets/accounts/ps-create-6.jpg)

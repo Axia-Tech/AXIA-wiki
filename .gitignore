@@ -66,26 +66,26 @@ typings/
 # Emacs backup files
 *~
 
-axiasolar-wiki/build
+AXIA-wiki/build
 axialunar-guide/build
 build-script*
 **/mirror*.md
 .DS_Store
 axialunar-guide/translated_docs/
-axiasolar-wiki/translated-docs/
-axiasolar-wiki/i18n/*
+AXIA-wiki/translated-docs/
+AXIA-wiki/i18n/*
 axialunar-guide/i18n/*
 
 .docusaurus
 #computed-dict.json
-axiasolar-wiki/i18n/
-!axiasolar-wiki/i18n/en/
+AXIA-wiki/i18n/
+!AXIA-wiki/i18n/en/
 axialunar-guide/i18n/zh-CN/docusaurus-plugin-content-docs/current/
 
 # Ignore because we don't need a 10MB file in VCS
-axiasolar-wiki.pdf
+AXIA-wiki.pdf
 axialunar-wiki.pdf
-axiasolar-wiki.zip
+AXIA-wiki.zip
 axialunar-wiki.zip
 
 *.testing

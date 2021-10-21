@@ -1,10 +1,10 @@
 ---
 id: learn-keys
-title: AXIASolar 密钥
-sidebar_label: AXIASolar 密钥
+title: AXIA 密钥
+sidebar_label: AXIA 密钥
 ---
 
-公钥和私钥是大多数密码系统的重要部分，也是使像 AXIASolar 这样的区块链得以存在的重要组成部分。
+公钥和私钥是大多数密码系统的重要部分，也是使像 AXIA 这样的区块链得以存在的重要组成部分。
 
 ## 账户密钥
 
@@ -22,9 +22,9 @@ sidebar_label: AXIASolar 密钥
 
 ### "Controller" 和 "Stash" 密钥
 
-When we talk about "controller" and "stash" keys, we usually talk about them in the context of running a validator or nominating SOLAR, but they are useful concepts for all users to know. Both keys are types of account keys. They are distinguished by their intended use, not by an underlying cryptographic difference. All the info mentioned in the parent section applies to these keys. When creating new controller or stash keys, all cryptography supported by account keys are an available option.
+When we talk about "controller" and "stash" keys, we usually talk about them in the context of running a validator or nominating AXC, but they are useful concepts for all users to know. Both keys are types of account keys. They are distinguished by their intended use, not by an underlying cryptographic difference. All the info mentioned in the parent section applies to these keys. When creating new controller or stash keys, all cryptography supported by account keys are an available option.
 
-The controller key is a semi-online key that will be in the direct control of a user, and used to submit manual extrinsics. For validators or nominators, this means that the controller key will be used to start or stop validating or nominating. Controller keys should hold some SOLAR to pay for fees, but they should not be used to hold huge amounts or life savings. Since they will be exposed to the internet with relative frequency, they should be treated carefully and occasionally replaced with new ones.
+The controller key is a semi-online key that will be in the direct control of a user, and used to submit manual extrinsics. For validators or nominators, this means that the controller key will be used to start or stop validating or nominating. Controller keys should hold some AXC to pay for fees, but they should not be used to hold huge amounts or life savings. Since they will be exposed to the internet with relative frequency, they should be treated carefully and occasionally replaced with new ones.
 
 Stash 密钥在大多数情况下是保存在冷钱包，写在纸上也可以受硬件安全保护。如果可以的话，它应该很少在互联网上或用于提交交易。 Stash 密钥用于存储大量资金，应该将它视为银行的储蓄帐户，只有在紧急情况下才使用该帐户。或者也许更恰当的隐喻是将其视为埋藏在某个岛屿上的藏宝，并且只有最初隐藏它的海盗才知道。
 
@@ -34,12 +34,12 @@ Stash 密钥在大多数情况下是保存在冷钱包，写在纸上也可以�
 
 Session 密钥是热钥，验证人必须将其保持在线才能执行网络操作。 Session 密钥通常在客户端中生成，尽管不是必须。它们*不是*意在控制资金，仅应用于其预期目的。它们可以定期更改。 Controller 仅需要通过 session 公钥签名来创建证书，然后通过外部广播该证书。
 
-AXIASolar 使用四款 session 密钥:
+AXIA 使用四款 session 密钥:
 
 - GRANDPA: ed25519
 - BABE: sr25519
 - I'm Online: sr25519
-- Parachain: sr25519
+- Allychain: sr25519
 
 BABE 需要适用于[可验证随机函数 (VRF)](learn-randomness#vrfs)以及数字签名的密钥。 Sr25519 密钥具有两种功能，并且可用于 BABE。
 
@@ -49,11 +49,11 @@ BABE 需要适用于[可验证随机函数 (VRF)](learn-randomness#vrfs)以及�
 
 ### 为什么在`secp256k1`上选择了`ed25519`？
 
-为 AXIASolar 和 Substrate 链实现的原有密钥导出密码学是`ed25519`，这是在 Edward's 曲线 25519 上实现的 Schnorr 签名算法(由于曲线方程的参数而命名)。
+为 AXIA 和 Substrate 链实现的原有密钥导出密码学是`ed25519`，这是在 Edward's 曲线 25519 上实现的 Schnorr 签名算法(由于曲线方程的参数而命名)。
 
-大部份加密货币包括比特币, 以太币现在是在 secp256k1 曲线上使用 ECDSA 签名。这曲线被认为比 NIST 曲线安全得多，因为 [NSA 可能有 NIST 曲线的后门](#appendix-a-on-the-security-of-curves)。Curve25519 被认为可能比这*更安全*，并且可以更轻松地实现 Schnorr 签名。最近它的专利即将到期，使它成为在 AXIASolar 使用的首选。
+大部份加密货币包括比特币, 以太币现在是在 secp256k1 曲线上使用 ECDSA 签名。这曲线被认为比 NIST 曲线安全得多，因为 [NSA 可能有 NIST 曲线的后门](#appendix-a-on-the-security-of-curves)。Curve25519 被认为可能比这*更安全*，并且可以更轻松地实现 Schnorr 签名。最近它的专利即将到期，使它成为在 AXIA 使用的首选。
 
-使用 Schnorr 签名而不是使用 ECDSA 的选择并非人们所预料的。正如 Jeff Burdges (Web3 研究员)所述，[论坛帖子](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70/2):
+使用 Schnorr 签名而不是使用 ECDSA 的选择并非人们所预料的。正如 Jeff Burdges (Web3 研究员)所述，[论坛帖子](https://forum.AXIA.org/t/account-signatures-and-keys-in-AXIA/70/2):
 
 > 我们在帐户密钥中选择 Schnorr 签名而不是 ECDSA 做了些牺牲: 两者都需要 64 字节，但是只有 ECDSA 签名才能传递其公钥。有些过时的 Schnorr 变体支持从签名中恢复公钥，但它们破坏了诸如分层确定性密钥导出之类重要的功能。因此 Schnorr 签名通常会为公钥占用额外的 32 个字节。
 
@@ -71,9 +71,9 @@ BABE 需要适用于[可验证随机函数 (VRF)](learn-randomness#vrfs)以及�
 
 Web3 基金会已在[ Schnorrkel ](https://github.com/axia-tech/schnorrkel)库中的 Curve25519 上使用更安全的 Ristretto 压缩实现了 Schnorr 签名库。 Schnorrkel 在此曲线压缩的基础上实现了相关的协议，例如 HDKD，MuSig 和 VRF。它还包括各种较小的改进，例如哈希方案 STROBE，该方案理论上可以通过 Wasm 进行一次调用就可以处理大量数据。
 
-在 AXIASolar 中使用的 Schnorr 签名实现和通过 Curve25519 的 Ristretto 压缩 Schnorrkel 协议的实现称为** sr25519 **。
+在 AXIA 中使用的 Schnorr 签名实现和通过 Curve25519 的 Ristretto 压缩 Schnorrkel 协议的实现称为** sr25519 **。
 
-### BLS 签名是否在 AXIASolar 使用?
+### BLS 签名是否在 AXIA 使用?
 
 还没有，但是会。 BLS 签名允许更高效的聚合签名。由于 GRANDPA 验证人通常对同一件事情(例如区块)进行签名，所以聚合它们可以使其它协议得到优化。
 
@@ -81,12 +81,12 @@ Web3 基金会已在[ Schnorrkel ](https://github.com/axia-tech/schnorrkel)库�
 
 > Boneh-Lynn-Shacham(BLS)签名速度慢，验证速度非常慢，需要慢和低安全性的友好曲线，并且可能造成危险的延展性。 但是 BLS 允许多种的聚合签名选项，这使 BLS 成为共识算法中投票和阈值签名的首选方案。
 
-即使 Schnorr 签名允许进行聚合签名，但 BLS 签名在某方面还是更有效。因此它将是 session 密钥之一，供 AXIASolar 网络上的验证人使用，并且对于 GRANDPA 最终确定性工具特别重要。
+即使 Schnorr 签名允许进行聚合签名，但 BLS 签名在某方面还是更有效。因此它将是 session 密钥之一，供 AXIA 网络上的验证人使用，并且对于 GRANDPA 最终确定性工具特别重要。
 
 ## 资源
 
-- [对 BIP32-Ed25519](https://forum.axiacoin.org/t/key-recovery-attack-on-bip32-ed25519/44) - 论坛帖子详细描述了对 BIP32-Ed25519 的潜在攻击。 向 sr25519 变量过渡的动机。
-- [在 AXIASolar 中的账户签名和密钥](https://forum.axiacoin.org/t/account-signatures-and-keys-in-axiasolar/70) - Web3 研究人员 Jeff Burdges 的帖子。
+- [对 BIP32-Ed25519](https://forum.AXIA.org/t/key-recovery-attack-on-bip32-ed25519/44) - 论坛帖子详细描述了对 BIP32-Ed25519 的潜在攻击。 向 sr25519 变量过渡的动机。
+- [在 AXIA 中的账户签名和密钥](https://forum.AXIA.org/t/account-signatures-and-keys-in-AXIA/70) - Web3 研究人员 Jeff Burdges 的帖子。
 - [Schnorr 签名有抗量子计算吗?](https://bitcoin.stackexchange.com/questions/57965/are-schnorr-signatures-quantum-computer-resistant/57977#57977)
 
 ## 附录 A: 曲线安全

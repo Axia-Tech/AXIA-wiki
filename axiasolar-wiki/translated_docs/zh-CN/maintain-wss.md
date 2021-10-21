@@ -4,7 +4,7 @@ title: 设置安全远程 WebSocket 连接
 sidebar_label: 设置安全远程 WebSocket 连接
 ---
 
-You might want to host a node on one server and then connect to it from a UI hosted on another, e.g. [AXIASolar-JS UI](https://axiasolar.js.org/apps). This will not be possible unless you set up a secure proxy for websocket connections. Let's see how we can set up WSS on a remote Substrate node.
+You might want to host a node on one server and then connect to it from a UI hosted on another, e.g. [AXIA-JS UI](https://AXIA.js.org/apps). This will not be possible unless you set up a secure proxy for websocket connections. Let's see how we can set up WSS on a remote Substrate node.
 
 _Note: this should **only** be done for sync nodes used as back-end for some dapps or projects. Never open websockets to your validator node - there's no reason to do that and it can only lead to security gaffes._
 
@@ -18,11 +18,11 @@ _Note: this should **only** be done for sync nodes used as back-end for some dap
 
 ```bash
 curl https://getsubstrate.io -sSf | bash
-git clone https://github.com/axia-tech/axiasolar axialunar
+git clone https://github.com/axia-tech/AXIA axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release
-./target/release/axiasolar --name "DigitalOcean 10 USD droplet ftw" --rpc-cors all
+./target/release/AXIA --name "DigitalOcean 10 USD droplet ftw" --rpc-cors all
 ```
 
 这将启动与 AXIALunar 主网的同步过程。
@@ -35,7 +35,7 @@ _注意：需要使用 `--rpc-cors` 模式以便允许所有外部连接。_
 
 ### 域名和 Certbot
 
-The first approach is getting a dedicated domain, redirecting its nameservers to your IP address, setting up an Nginx server for that domain, and finally [following LetsEncrypt instructions](https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx.html) for Nginx setup. This will auto-generate an SSL certificate and include it in your Nginx configuration. This will let you connect AXIASolar-JS UI to a URL like mynode.mydomain.com rather than 82.196.8.192:9944, which is arguably more user friendly.
+The first approach is getting a dedicated domain, redirecting its nameservers to your IP address, setting up an Nginx server for that domain, and finally [following LetsEncrypt instructions](https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx.html) for Nginx setup. This will auto-generate an SSL certificate and include it in your Nginx configuration. This will let you connect AXIA-JS UI to a URL like mynode.mydomain.com rather than 82.196.8.192:9944, which is arguably more user friendly.
 
 对于云端托管服服务商或如果您有静态 IP，这样做很简单， 但在您的家服务器运行时更难。
 
@@ -112,8 +112,8 @@ Every websocket connection bootstraps itself with `https` first, so to allow the
 
 ## Connecting to the node
 
-Open [AXIASolar-JS UI](https://axiasolar.js.org/apps) and click the logo in the top left to switch the node. Activate the "Development" toggle and input your node's address - either the domain or the IP address. Remember to prefix with `wss://`.
+Open [AXIA-JS UI](https://AXIA.js.org/apps) and click the logo in the top left to switch the node. Activate the "Development" toggle and input your node's address - either the domain or the IP address. Remember to prefix with `wss://`.
 
-![A sync-in-progress chain connected to AXIASolar-JS UI](assets/maintain-wss-image.png)
+![A sync-in-progress chain connected to AXIA-JS UI](assets/maintain-wss-image.png)
 
 Now you have a secure remote connect setup for your Substrate node.

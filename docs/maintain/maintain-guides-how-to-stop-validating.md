@@ -15,7 +15,7 @@ To ensure a smooth stop to validation, make sure you should do the following act
 - Purge validator session keys
 - Unbond your tokens
 
-These can all be done with [AXIACoinJS Apps](https://axiasolar.js.org/apps) interface or with
+These can all be done with [AXIAJS Apps](https://AXIA.js.org/apps) interface or with
 extrinsics.
 
 ## Chill Validator
@@ -37,5 +37,5 @@ through the `session.purgeKeys()` extrinsic with the controller account.
 ## Unbond your tokens
 
 Unbonding your tokens can be done through the `Network > Staking > Account actions` page in
-AXIACoinJS Apps by clicking the corrosponding stash account dropdown and selecting "Unbond funds".
+AXIAJS Apps by clicking the corrosponding stash account dropdown and selecting "Unbond funds".
 This can also be done through the `staking.unbond()` extrinsic with the controller account.

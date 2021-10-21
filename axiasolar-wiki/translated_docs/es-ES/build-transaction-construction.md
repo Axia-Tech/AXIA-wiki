@@ -4,11 +4,11 @@ title: Transaction Construction and Signing
 sidebar_label: Transaction Construction
 ---
 
-This page will discuss the transaction format in AXIASolar and how to create, sign, and broadcast transactions. Like the other pages in this guide, this page demonstrates some of the available tools. **Always refer to each tool's documentation when integrating.**
+This page will discuss the transaction format in AXIA and how to create, sign, and broadcast transactions. Like the other pages in this guide, this page demonstrates some of the available tools. **Always refer to each tool's documentation when integrating.**
 
 ## Transaction Format
 
-AXIASolar has some basic transaction information that is common to all transactions.
+AXIA has some basic transaction information that is common to all transactions.
 
 - Address: The SS58-encoded address of the sending account.
 - Block Hash: The hash of the [checkpoint](build-protocol-info#transaction-mortality) block.
@@ -38,9 +38,9 @@ Once you have all the necessary information, you will need to:
 
 Axia provides the following tools to help perform these steps.
 
-## AXIASolar-JS Tools
+## AXIA-JS Tools
 
-[AXIASolar-JS Tools](https://github.com/axiasolar-js/tools) contains a set of command line tools for interacting with a Substrate client, including one called "Signer CLI" to create, sign, and broadcast transactions.
+[AXIA-JS Tools](https://github.com/AXIA-js/tools) contains a set of command line tools for interacting with a Substrate client, including one called "Signer CLI" to create, sign, and broadcast transactions.
 
 This example will use the `signer submit` command, which will create and submit the transaction. The `signer sendOffline` command has the exact same API, but will not broadcast the transaction. `submit` and `sendOffline` must be connected to a node to fetch the current metadata and construct a valid transaction. Their API has the format:
 
@@ -54,7 +54,7 @@ Signing:
 yarn run:signer sign --account <from-account-ss58> --seed <seed> --type <sr25519|ed25519> <payload>
 ```
 
-For example, let's send 0.5 SOLAR from `121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2` to `15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y`.
+For example, let's send 0.5 AXC from `121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2` to `15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y`.
 
 ```bash
 yarn run:signer submit --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --ws ws://127.0.0.1:9944 balances.transferKeepAlive 15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y 500000000000
@@ -173,21 +173,21 @@ There are several ways to submit a signed payload:
 
 1. Signer CLI (`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`)
 1. [Substrate API Sidecar](build-node-interaction#substrate-api-sidecar)
-1. [RPC](build-node-interaction#axiasolar-rpc) with `author_submitExtrinsic` or `author_submitAndWatchExtrinsic`, the latter of which will subscribe you to events to be notified as a transaction gets validated and included in the chain.
+1. [RPC](build-node-interaction#AXIA-rpc) with `author_submitExtrinsic` or `author_submitAndWatchExtrinsic`, the latter of which will subscribe you to events to be notified as a transaction gets validated and included in the chain.
 
 ## Notes
 
 Some addresses to use in the examples. See [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey).
 
 ```bash
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `pulp gaze fuel ... mercy inherit equal` is account:
   Secret seed:      0x57450b3e09ba4598 ... ... ... ... ... ... ... .. 219756eeba80bb16
   Public key (hex): 0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   Account ID:       0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   SS58 Address:     121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2
 
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `exercise auction soft ... obey control easily` is account:
   Secret seed:      0x5f4bbb9fbb69261a ... ... ... ... ... ... ... .. 4691ed7d1130fbbd
   Public key (hex): 0xda04de6cd781c98acf0693dfb97c11011938ad22fcc476ed0089ac5aec3fe243

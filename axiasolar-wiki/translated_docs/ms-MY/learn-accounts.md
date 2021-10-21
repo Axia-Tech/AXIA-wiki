@@ -1,11 +1,11 @@
 ---
 id: learn-accounts
-title: AXIASolar Accounts
-sidebar_label: AXIASolar Accounts
+title: AXIA Accounts
+sidebar_label: AXIA Accounts
 description: An explanation of accounts, indices, identity, and reaping
 ---
 
-This document covers the basics of AXIASolar and AXIALunar account addresses and how they exist on-chain. For a more in-depth explanation of the cryptography behind them, please see [the cryptography page](learn-cryptography).
+This document covers the basics of AXIA and AXIALunar account addresses and how they exist on-chain. For a more in-depth explanation of the cryptography behind them, please see [the cryptography page](learn-cryptography).
 
 ## Address Format
 
@@ -13,7 +13,7 @@ The address format used in Substrate-based chains is SS58. SS58 is a modificatio
 
 For example:
 
-- AXIASolar addresses always start with the number 1.
+- AXIA addresses always start with the number 1.
 - AXIALunar addresses always start with a capital letter like C, D, F, G, H, J...
 - Generic Substrate addresses start with 5.
 
@@ -31,15 +31,15 @@ A valid account only requires a private key that can sign on one of the [support
 
 Most wallets generate a mnemonic phrase for users to back up their wallets and generate a private key from the mnemonic. Not all wallets use the same algorithm to convert from mnemonic phrase to private key.
 
-Subkey and AXIASolar-JS based wallets use the BIP39 dictionary for mnemonic generation, but use the entropy byte array to generate the private key, while full BIP39 wallets (like Ledger) use 2048 rounds of PBKDF2 on the mnemonic. As such, the same mnemonic will not generate the same private keys. See [Substrate BIP39](https://github.com/axia-tech/substrate-bip39) for more information.
+Subkey and AXIA-JS based wallets use the BIP39 dictionary for mnemonic generation, but use the entropy byte array to generate the private key, while full BIP39 wallets (like Ledger) use 2048 rounds of PBKDF2 on the mnemonic. As such, the same mnemonic will not generate the same private keys. See [Substrate BIP39](https://github.com/axia-tech/substrate-bip39) for more information.
 
 ### Derivation Paths
 
-Many AXIASolar key generation tools support hard and soft derivation. See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) for details and examples of derivation path formats. The AXIASolar-JS Apps and Extension as well as Axia Signer support custom derivation paths using the same syntax as Subkey.
+Many AXIA key generation tools support hard and soft derivation. See the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) for details and examples of derivation path formats. The AXIA-JS Apps and Extension as well as Axia Signer support custom derivation paths using the same syntax as Subkey.
 
-Some wallets will automatically add derivation paths to the end of the generated mnemonic phrase. This will generate separate seeds for separate paths, which allows separate signing keys with the same mnemonic, e.g. `<mnemonic phrase>//axiasolar` and `<mnemonic phrase>//axialunar`. Although you may correctly save the mnemonic phrase, using it in another wallet will not generate the same addresses unless both wallets use the same derivation paths.
+Some wallets will automatically add derivation paths to the end of the generated mnemonic phrase. This will generate separate seeds for separate paths, which allows separate signing keys with the same mnemonic, e.g. `<mnemonic phrase>//AXIA` and `<mnemonic phrase>//axialunar`. Although you may correctly save the mnemonic phrase, using it in another wallet will not generate the same addresses unless both wallets use the same derivation paths.
 
-AXIASolar and AXIALunar both have paths registered in the [BIP44 registry](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
+AXIA and AXIALunar both have paths registered in the [BIP44 registry](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
 
 > **Warning:** You must have both the parent private key as well as the derivation path to arrive at the key for an address. Do not use custom derivation paths unless you are comfortable with your understanding of this topic.
 
@@ -56,8 +56,8 @@ If you want to use the same mnemonic across multiple wallets, make sure that the
 
 |                         | Mnemonic Format | Derivation Path | Seed Derivation |      Signature Support      |
 | :---------------------- | :-------------: | :-------------: | :-------------: | :-------------------------: |
-| AXIASolar{.js} Extension |    Standard     |  User-Defined   |      BIP32      |           sr25519           |
-| AXIASolar-JS Apps        |   Standard\*    |  User-Defined   |      BIP32      | sr25519, ed25519, secp256k  |
+| AXIA{.js} Extension |    Standard     |  User-Defined   |      BIP32      |           sr25519           |
+| AXIA-JS Apps        |   Standard\*    |  User-Defined   |      BIP32      | sr25519, ed25519, secp256k  |
 | Ledger                  |      BIP39      |  BIP44&dagger;  |  BIP32&Dagger;  |        ed25519&sect;        |
 | Subkey                  |   Standard\*    |  User-Defined   |      BIP32      | sr25519, ed25519, secp256k1 |
 
@@ -73,11 +73,11 @@ If you want to use the same mnemonic across multiple wallets, make sure that the
 
 The [SS58 document](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) states that:
 
-- AXIASolar has an address type of `00000000b`, so `0` in decimal.
-- AXIALunar (AXIASolar Canary) has an address type of `00000010b`, so `2` in decimal.
+- AXIA has an address type of `00000000b`, so `0` in decimal.
+- AXIALunar (AXIA Canary) has an address type of `00000010b`, so `2` in decimal.
 - Generic Substrate has `00101010b` as address type, which is `42` in decimal.
 
-Because Base58-check alphabet has no number 0, the lowest value is indeed 1. So `00000000b` is 1 in Base58-check. If we try to [decode](https://www.better-converter.com/Encoders-Decoders/Base58Check-to-Hexadecimal-Decoder) a AXIASolar address like `1FRMM8PEiWXYax7rpS6X4XZX1aAAxSWx1CrKTyrVYhV24fg`, the result is `000aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b29d7`. The first byte is `00`, which is indeed `00000000` in binary and `0` in decimal and thus matches the address type of AXIASolar.
+Because Base58-check alphabet has no number 0, the lowest value is indeed 1. So `00000000b` is 1 in Base58-check. If we try to [decode](https://www.better-converter.com/Encoders-Decoders/Base58Check-to-Hexadecimal-Decoder) a AXIA address like `1FRMM8PEiWXYax7rpS6X4XZX1aAAxSWx1CrKTyrVYhV24fg`, the result is `000aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b29d7`. The first byte is `00`, which is indeed `00000000` in binary and `0` in decimal and thus matches the address type of AXIA.
 
 Let's take a look at Substrate addresses. If we decode `5CK8D1sKNwF473wbuBP6NuhQfPaWUetNsWUNAAzVwTfxqjfr`, we get `2a0aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b77e5`. The first byte is `2a` which when [converted from hex to decimal](https://www.rapidtables.com/convert/number/hex-to-decimal.html) is 42. 42 is `00101010` in binary, just as the SS58 document states.
 
@@ -85,23 +85,23 @@ Finally, let's look at AXIALunar addresses. Decoding `CpjsLDC1JFyrhm3ftC9Gs4Qoyr
 
 ## Obtaining and Managing an Address
 
-The **most user-friendly** way to create a AXIASolar or AXIALunar address is through the [AXIASolar-JS UI](https://axiasolar.js.org/apps/#/accounts). Remember to back up the seed phrase used to generate your account - the accounts are stored only in your browser, so purging the cache will wipe your accounts as well. You would then have to recreate them using the seed phrase given to you by the UI - this will also restore all your previously held balances.
+The **most user-friendly** way to create a AXIA or AXIALunar address is through the [AXIA-JS UI](https://AXIA.js.org/apps/#/accounts). Remember to back up the seed phrase used to generate your account - the accounts are stored only in your browser, so purging the cache will wipe your accounts as well. You would then have to recreate them using the seed phrase given to you by the UI - this will also restore all your previously held balances.
 
-A **more convenient and recommended** method of keeping the accounts stored on your computer is using the [AXIASolar{.js} extension](https://github.com/axiasolar-js/extension). This extension remembers your accounts and allows you to clear your browser cache without fear. Still, don't forget to back up your seed phrase - if you lose access to this computer, or the extension somehow crashes beyond repair, the phrase will come in handy.
+A **more convenient and recommended** method of keeping the accounts stored on your computer is using the [AXIA{.js} extension](https://github.com/AXIA-js/extension). This extension remembers your accounts and allows you to clear your browser cache without fear. Still, don't forget to back up your seed phrase - if you lose access to this computer, or the extension somehow crashes beyond repair, the phrase will come in handy.
 
 Please note that as this keeps your accounts in the browser, it is not a safe place to keep large holdings. By definition, a browser is a "hot wallet" and susceptible to a wide range of attacks, so keep your funds in cold storage when dealing with non-trivial amounts. For improved security, you can securely stash away the seed phrase for your accounts and remove all traces of the accounts from your computer after creating them.
 
-Other than the extension and the default UI, AXIASolar and AXIALunar addresses can also be created with the [Subkey tool](https://github.com/axia-tech/substrate/tree/master/bin/utils/subkey). Subkey is intended for users comfortable with using the command line and can seem intimidating, but is quite approachable. Follow the instructions in the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey). When used properly, Subkey is the **most secure** available method of creating an account.
+Other than the extension and the default UI, AXIA and AXIALunar addresses can also be created with the [Subkey tool](https://github.com/axia-tech/substrate/tree/master/bin/utils/subkey). Subkey is intended for users comfortable with using the command line and can seem intimidating, but is quite approachable. Follow the instructions in the [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey). When used properly, Subkey is the **most secure** available method of creating an account.
 
 There is also the very secure [Axia Signer](https://www.axia.io/signer/). This keeps your keys on an air-gapped mobile phone. However, it does require obtaining an old Android or iOS-compatible phone that you are comfortable using only for Axia Signer.
 
 Hardware wallet integration is possible with Ledger. A full guide is available [here](learn-ledger).
 
-Alternatively, you might find other wallets on the [Wallet](build-wallets) page, but bear in mind that some of these are **unaudited** and are not officially affiliated with AXIACoin Foundation or the AXIASolar project unless otherwise stated.
+Alternatively, you might find other wallets on the [Wallet](build-wallets) page, but bear in mind that some of these are **unaudited** and are not officially affiliated with AXIA Foundation or the AXIA project unless otherwise stated.
 
 ## Balance Types
 
-On AXIASolar there are four different balance types that indicate whether your balance can be used for transfers, to pay fees, or must remain frozen and not used due to an on-chain requirement.
+On AXIA there are four different balance types that indicate whether your balance can be used for transfers, to pay fees, or must remain frozen and not used due to an on-chain requirement.
 
 The balance types are defined by the `AccountData` struct in Substrate. The four types of balances include `free`, `reserved`, `misc_frozen` (`miscFrozen` in camel-case), and `fee_frozen` (`feeFrozen` in camel-case).
 
@@ -111,7 +111,7 @@ The "total" balance of the account is considered the amount of "free" funds in t
 
 ## Existential Deposit and Reaping
 
-When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit: 0.001666666667 LUNAR (on AXIALunar) or 1 SOLAR (on AXIASolar mainnet).
+When you generate an account (address), you only generate a _key_ that lets you access it. The account does not exist yet on-chain. For that, it needs the existential deposit: 0.001666666667 LUNAR (on AXIALunar) or 1 AXC (on AXIA mainnet).
 
 Having an account go below the existential deposit causes that account to be _reaped_. The account will be wiped from the blockchain's state to conserve space, along with any funds in that address. You do not lose access to the reaped address - as long as you have your private key or recovery phrase, you can still use the address - but it needs a top-up of another existential deposit to be able to interact with the chain.
 
@@ -121,7 +121,7 @@ Here's another way to think about existential deposits. Ever notice those `Thumb
 
 ## Indices
 
-A AXIALunar or AXIASolar address can have an index. An index is like a short and easy to remember version of an address. Claiming an index requires a deposit which is released when the index is cleared.
+A AXIALunar or AXIA address can have an index. An index is like a short and easy to remember version of an address. Claiming an index requires a deposit which is released when the index is cleared.
 
 Indices are populated in order. Think of them like slots going from 0 to any arbitrary number:
 
@@ -138,7 +138,7 @@ But what if an account gets reaped as explained above? In that case, the index i
 
 It is possible to _freeze_ an index and permanently assign it to an address. This action consumes a deposit but makes sure that the index can never be reclaimed unless released by the holding account.
 
-To register an index, submit a `claim` extrinsic to the `indices` pallet, and follow up with a `freeze` extrinsic. The easiest way to do this is via AXIASolarJS UI through the _Developer -> Extrinsics_ menu:
+To register an index, submit a `claim` extrinsic to the `indices` pallet, and follow up with a `freeze` extrinsic. The easiest way to do this is via AXIAJS UI through the _Developer -> Extrinsics_ menu:
 
 ![Indices extrinsics](assets/accounts/index.png)
 
@@ -146,11 +146,11 @@ To find available indices to claim, [this helper tool may come in handy](https:/
 
 ## Identities
 
-The [_Identities pallet_](https://github.com/axia-tech/substrate/tree/master/frame/identity) built into AXIASolar allows users to attach on-chain metadata to their accounts. This metadata can be verified by independent registrars to provide trustworthiness. To learn more about how to set or release an identity, how to define sub-accounts, or how to become a registrar, please read [this guide](learn-identity).
+The [_Identities pallet_](https://github.com/axia-tech/substrate/tree/master/frame/identity) built into AXIA allows users to attach on-chain metadata to their accounts. This metadata can be verified by independent registrars to provide trustworthiness. To learn more about how to set or release an identity, how to define sub-accounts, or how to become a registrar, please read [this guide](learn-identity).
 
 ## Proxy Accounts
 
-AXIASolar comes with a generalized proxy account system that allows users to keep keys in cold storage while proxies act on their behalf with restricted (or unrestricted) functionality. See the [proxies](learn-proxies) page for more information.
+AXIA comes with a generalized proxy account system that allows users to keep keys in cold storage while proxies act on their behalf with restricted (or unrestricted) functionality. See the [proxies](learn-proxies) page for more information.
 
 ## Multi-signature Accounts
 
@@ -158,7 +158,7 @@ It is possible to create a multi-signature account in Substrate-based chains. A 
 
 For example, Alice, Bob, and Charlie set up a multi-sig with a threshold of 2. This means Alice and Bob can execute any call even if Charlie disagrees with it. Likewise, Charlie and Bob can execute any call without Alice. A threshold is typically a number smaller than the total number of members but can also be equal to it, which means they all have to be in agreement.
 
-> Learn more about multisig accounts from our [technical explainer video](https://www.youtube.com/watch?v=ZJLqszvhMyM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=25&ab_channel=AXIASolar).
+> Learn more about multisig accounts from our [technical explainer video](https://www.youtube.com/watch?v=ZJLqszvhMyM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=25&ab_channel=AXIA).
 
 Multi-signature accounts have several uses:
 
@@ -186,7 +186,7 @@ Multisig Address (SS58: 0): 15FKUKXC6kwaXxJ1tXNywmFy4ZY6FoDFCnU3fMbibFdeqwGw
 --------------------------------
 ```
 
-The AXIASolar-JS Apps UI also supports multi-sig accounts, as documented in the [Account Generation page](learn-account-generation#multi-signature-accounts). This is easier than generating them manually.
+The AXIA-JS Apps UI also supports multi-sig accounts, as documented in the [Account Generation page](learn-account-generation#multi-signature-accounts). This is easier than generating them manually.
 
 ### Making Transactions with a Multi-signature Account
 
@@ -210,10 +210,10 @@ Where `DepositBase` and `DepositFactor` are chain constants set in the runtime c
 
 Currently, the DepositBase is equal to `deposit(1, 88)` (key size is 32; value is size 4+4+16+32 = 56 bytes) and the DepositFactor is equal to `deposit(0,32)` (additional address of 32 bytes).
 
-The deposit function in JavaScript is defined below, cribbed from the [Rust source](https://github.com/axia-tech/axiasolar/blob/master/runtime/axiasolar/src/constants.rs#L26).
+The deposit function in JavaScript is defined below, cribbed from the [Rust source](https://github.com/axia-tech/AXIA/blob/master/runtime/AXIA/src/constants.rs#L26).
 
 ```js
-// AXIASolar
+// AXIA
 const DOLLARS = 10000000000; // planck
 const MILLICENTS = 100000; // planck
 
@@ -231,29 +231,29 @@ console.log("DepositFactor", deposit(0, 32));
 
 Thus the deposit values can be calculated as shown in the table below.
 
-|               | AXIASolar (SOLAR) | AXIALunar (LUNAR)   | AXIASolar (planck) | AXIALunar (planck) |
+|               | AXIA (AXC) | AXIALunar (LUNAR)   | AXIA (planck) | AXIALunar (planck) |
 | ------------- | -------------- | -------------- | ----------------- | --------------- |
 | DepositBase   | 20.088         | 3.347999999942 | 200880000000      | 3347999999942   |
 | DepositFactor | .032           | 0.005333333312 | 320000000         | 5333333312      |
 
-Let's consider an example of a multi-sig on AXIASolar with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First, Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 SOLAR` while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.
+Let's consider an example of a multi-sig on AXIA with a threshold of 2 and 3 signers: Alice, Bob, and Charlie. First, Alice will create the call on chain by calling `as_multi` with the raw call. When doing this Alice will have to deposit `DepositBase + (2 * DepositFactor) = 20.152 AXC` while she waits for either Bob or Charlie to also approve the call. When Bob comes to approve the call and execute the transaction, he will not need to place the deposit and Alice will receive her deposit back.
 
-### Example with AXIASolar.JS
+### Example with AXIA.JS
 
-For this example, we will be using the [AlphaNet](https://solar.wiki.axiacoin.network/docs/en/maintain-networks#alphanet-test-network) testnet and [AXIASolar.JS Apps](https://solar.wiki.axiacoin.network/docs/en/learn-balance-transfers#axiasolar-js-apps) to create a 2-of-3 multisig address and send a transaction with it.
+For this example, we will be using the [AlphaNet](https://solar.wiki.AXIA.network/docs/en/maintain-networks#alphanet-test-network) testnet and [AXIA.JS Apps](https://solar.wiki.AXIA.network/docs/en/learn-balance-transfers#AXIA-js-apps) to create a 2-of-3 multisig address and send a transaction with it.
 
-> While AlphaNet is meant to replicate the AXIASolar mainnet as closely as possible, there are a few notable differences:
+> While AlphaNet is meant to replicate the AXIA mainnet as closely as possible, there are a few notable differences:
 >
-> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 SOLAR.
-> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 SOLAR.
+> - Existential deposit is equal to 0.01 WND (Westies; AlphaNet's native coin) instead of 1 AXC.
+> - The multisignature transaction deposit is equal to ~1 WND instead of ~20.2 AXC.
 >
-> The photos below reflects values in WND, but instructions are the same for SOLAR.
+> The photos below reflects values in WND, but instructions are the same for AXC.
 
 **To create a multisig address and send a transaction using it, you will need the following:**
 
 - List of the multisig member's addresses. We will use Alice, Bob, and Charlie.
-- SOLAR to deposit into the multisig address.
-- ~20.2 SOLAR refundable deposit to send a multisig tarnsaction. This needs to be in the address that initiates a multisignature transaction (in this example, Alice).
+- AXC to deposit into the multisig address.
+- ~20.2 AXC refundable deposit to send a multisig tarnsaction. This needs to be in the address that initiates a multisignature transaction (in this example, Alice).
 
 You should already have your own account with some coins in it.
 
@@ -331,7 +331,7 @@ You can use the tool below to convert any SS58 address for any network for use o
 <div class="address-changer">
   <input class="address-changer-input" id="input" placeholder="Paste your address" oninput="globalThis.addressChanger()" />
   <select class="address-changer-select" id="prefix-select" oninput="globalThis.addressChanger()">
-    <option value="0">AXIASolar</option>
+    <option value="0">AXIA</option>
     <option value="2">AXIALunar</option>
     <option value="5">Plasm</option>
     <option value="10">Acala</option>
@@ -343,8 +343,8 @@ You can use the tool below to convert any SS58 address for any network for use o
   <span class="address-changer-output" id="output" />
 </div>
 
-Alternatively, use [this handy subscan tool](https://axiasolar.subscan.io/tools/ss58_transform) or [this simple address address convertor](https://axiasolar-address-convertor.netlify.app/).
+Alternatively, use [this handy subscan tool](https://AXIA.subscan.io/tools/ss58_transform) or [this simple address address convertor](https://AXIA-address-convertor.netlify.app/).
 
 ## Resources
 
-- [Understanding Accounts and Keys in AXIASolar](https://www.crowdcast.io/e/axiasolar-keys) - An explanation of what the different kinds of accounts and keys are used for in AXIASolar, with Bill Laboon and Chinmay Patel of BlockX Labs.
+- [Understanding Accounts and Keys in AXIA](https://www.crowdcast.io/e/AXIA-keys) - An explanation of what the different kinds of accounts and keys are used for in AXIA, with Bill Laboon and Chinmay Patel of BlockX Labs.

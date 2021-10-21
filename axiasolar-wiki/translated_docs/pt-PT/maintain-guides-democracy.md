@@ -4,7 +4,7 @@ title: Participate in Democracy
 sidebar_label: Participate in Democracy
 ---
 
-The public referenda chamber is one of the three bodies of on-chain governance as it's instantiated in AXIASolar and AXIALunar. The other two bodies are the [council](maintain-guides-how-to-join-council) and the [technical committee](learn-governance#technical-committee).
+The public referenda chamber is one of the three bodies of on-chain governance as it's instantiated in AXIA and AXIALunar. The other two bodies are the [council](maintain-guides-how-to-join-council) and the [technical committee](learn-governance#technical-committee).
 
 Public referenda can be proposed and voted on by any token holder in the system as long as they provide a bond. After a proposal is made, others can agree with it by _seconding_ it and putting up tokens equal to the original bond. Every launch period, the most seconded proposal will be moved to the public referenda table will it can be voted upon. Voters who are willing to lock up their tokens for a greater duration of time can do so and get their vote amplified. For more details on the governance system please see [here](learn-governance).
 
@@ -30,7 +30,7 @@ The important parameters to be aware of when voting using the Democracry module 
 
 Proposing an action to be taken requires you to bond some tokens. In order to ensure you have enough tokens to make the minimum deposit you can check the parameter in the chain state.
 
-On AXIASolar Apps you can use the "Democracy" tab to make a new proposal. In order to submit a proposal, you will need to submit what's called the preimage hash. The preimage hash is simply the hash of the proposal to be enacted. The easiest way to get the preimage hash is by clicking on the "Submit preimage" button and configuring the action that you are proposing.
+On AXIA Apps you can use the "Democracy" tab to make a new proposal. In order to submit a proposal, you will need to submit what's called the preimage hash. The preimage hash is simply the hash of the proposal to be enacted. The easiest way to get the preimage hash is by clicking on the "Submit preimage" button and configuring the action that you are proposing.
 
 For example, if you wanted to propose that the account "Dave" would have a balance of 10 tokens your proposal may look something like the below image. The preimage hash would be `0xa50af1fadfca818feea213762d14cd198404d5496bca691294ec724be9d2a4c0`. You can copy this preimage hash and save it for the next step. There is no need to click Submit Preimage at this point, though you could. We'll go over that in the next section.
 
@@ -78,7 +78,7 @@ Once successful you will see your second appear in the dropdown in the proposal 
 
 At the end of each launch period, the most seconded proposal will move to referendum. During this time you can cast a vote for or against the proposal. You may also lock up your tokens for a greater length of time to weigh your vote more strongly. During the time your tokens are locked, you are unable to transfer them, however they can still be used for further votes. Locks are layered on top of each other, so an eight week lock does not become a 15 week lock if you vote again a week later, rather another eight week lock is placed to extend the lock just one extra week.
 
-To vote on a referendum, navigate to the ["Democracy" tab of AXIASolar Apps](https://axiasolar.js.org/apps/#/democracy/). Any active referendum will show in the "referenda" column. Click the blue button "Vote" to cast a vote for the referendum.
+To vote on a referendum, navigate to the ["Democracy" tab of AXIA Apps](https://AXIA.js.org/apps/#/democracy/). Any active referendum will show in the "referenda" column. Click the blue button "Vote" to cast a vote for the referendum.
 
 If you would like to cast your vote for the proposal select the "Aye, I approve" option. If you would like to cast your vote against the proposal in referendum you will select "Nay, I do not approve" option.
 
@@ -94,7 +94,7 @@ If you are too busy to keep up and vote on upcoming referenda, there is an optio
 
 The account that is being delegated to does not make any special action once the delegation is in place. They can continue to vote on referenda how they see fit. The difference is now when the Democracy system tallies votes, the delegated tokens now are added to whatever vote the delegatee has made.
 
-You can delegate your vote to another account and even attach a "Conviction" to the delegation. Navigate to the "Extrinsics" tab on AXIASolar Apps and select the options "democracy" and "delegate". This means you are accessing the democracy pallet and choosing the delegate transaction type to send. Your delegation will count toward whatever the account you delegated for votes on until you explicitly undelegate your vote.
+You can delegate your vote to another account and even attach a "Conviction" to the delegation. Navigate to the "Extrinsics" tab on AXIA Apps and select the options "democracy" and "delegate". This means you are accessing the democracy pallet and choosing the delegate transaction type to send. Your delegation will count toward whatever the account you delegated for votes on until you explicitly undelegate your vote.
 
 In the first input select the account you want to delegate to and in the second input select the amount of your conviction. Remember, higher convictions means that your vote will be locked longer. So choose wisely!
 
@@ -110,7 +110,7 @@ You may decide at some point in the future to remove your delegation to a target
 
 The `undelegate` transaction must be sent from the account that you wish to clear of its delegation. For example, if Alice has delegated her tokens to Bob, Alice would need to be the one to call the `undelegate` transaction to clear her delegation.
 
-The easiest way to do this is from the "Extrinsics" tab of AXIASolar Apps. Select the "democracy" pallet and the "undelegate" transaction type. Ensure that you are sending the transaction from the account you want to clear of delegations. Click "Submit transaction" and confirm.
+The easiest way to do this is from the "Extrinsics" tab of AXIA Apps. Select the "democracy" pallet and the "undelegate" transaction type. Ensure that you are sending the transaction from the account you want to clear of delegations. Click "Submit transaction" and confirm.
 
 ![undelegate](assets/democracy/undelegate.png)
 
@@ -128,13 +128,13 @@ The idea of a governance proxy introduces a level of security. When engaging in 
 
 Adding a proxy involves submitting a single transaction, the transaction type "addProxy" from the Proxy pallet.
 
-You can make this transaction from AXIASolar Apps by navigating to the "Extrinsics" tab and selecting the Proxy pallet and the "addProxy" transaction type. Send the transaction from the "Stash" account that holds the funds that you want to vote with, and the target to the proxy account that will perform governance action. Choose "Governance" as the proxy type.
+You can make this transaction from AXIA Apps by navigating to the "Extrinsics" tab and selecting the Proxy pallet and the "addProxy" transaction type. Send the transaction from the "Stash" account that holds the funds that you want to vote with, and the target to the proxy account that will perform governance action. Choose "Governance" as the proxy type.
 
 ![add proxy](assets/democracy/adding_proxy.png)
 
 You also have the choice to add in a governance anonymous proxy underneath the "anonymous" type from the Proxy pallet and selecting "Governance" as the proxy type. A governance anonymous proxy is only accessible by another proxy and these do not come with any associated secret key.
 
-Read more on Anonymous Proxies [here](https://solar.wiki.axiacoin.network/docs/en/learn-proxies#anonymous-proxies).
+Read more on Anonymous Proxies [here](https://solar.wiki.AXIA.network/docs/en/learn-proxies#anonymous-proxies).
 
 ### Voting with a proxy
 

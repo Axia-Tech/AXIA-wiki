@@ -4,43 +4,43 @@ title: How to nominate
 sidebar_label: How to nominate
 ---
 
-This guide will walk you through how to nominate your SOLARs to a validator node so that you can take part in the staking system and earn fresh SOLARs.
+This guide will walk you through how to nominate your AXCs to a validator node so that you can take part in the staking system and earn fresh AXCs.
 
-It has been updated for the Alexander testnet and AXIASolar release PoC-4.
+It has been updated for the Alexander testnet and AXIA release PoC-4.
 
 ## Create `stash` and `controller` accounts
 
 We will assume that you will be starting with two fresh accounts. Click [here](learn-staking#accounts) to learn more about what `stash` and `controller` accounts mean.
 
-The first step is to create two accounts by going to the _Accounts_ tab on the AXIASolar Dashboard and clicking on [_Add account_](https://axiasolar.js.org/apps/#/accounts). Make sure to use `stash` and `controller` in the names of your accounts to identify them easily.
+The first step is to create two accounts by going to the _Accounts_ tab on the AXIA Dashboard and clicking on [_Add account_](https://AXIA.js.org/apps/#/accounts). Make sure to use `stash` and `controller` in the names of your accounts to identify them easily.
 
-![Creating an account](assets/guides/how-to-nominate/axiasolar-dashboard-create-account.jpg)
+![Creating an account](assets/guides/how-to-nominate/AXIA-dashboard-create-account.jpg)
 
-Once you've created your accounts you will need to acquire some SOLARs. See the [SOLARs page](learn-SOLAR#getting-testnet-dots) for recommendations on getting testnet SOLARs. Each of your accounts should have at least 150 milliSOLARs to cover the existential deposit and transaction fees.
+Once you've created your accounts you will need to acquire some AXCs. See the [AXCs page](learn-AXC#getting-testnet-dots) for recommendations on getting testnet AXCs. Each of your accounts should have at least 150 milliAXCs to cover the existential deposit and transaction fees.
 
 ## Nominating
 
 It is now time to setup our nominator. We will do the following:
 
-- Bound the SOLARs of the `stash` account. These SOLARs will be put at stake for the security of the network and can be slashed.
+- Bound the AXCs of the `stash` account. These AXCs will be put at stake for the security of the network and can be slashed.
 - Select the `controller`. This is the account that will decide when to start or stop nominating.
 
-First, go to [Staking > Account actions](https://axiasolar.js.org/apps/#/staking/actions) section. Click on the "New stake" button.
+First, go to [Staking > Account actions](https://AXIA.js.org/apps/#/staking/actions) section. Click on the "New stake" button.
 
-![dashboard bonding](assets/guides/how-to-nominate/axiasolar-dashboard-bonding.jpg)
+![dashboard bonding](assets/guides/how-to-nominate/AXIA-dashboard-bonding.jpg)
 
-- **Stash account** - Select your `stash` account, we will bound 100 milliSOLARs, make sure it has this amount of funds.
+- **Stash account** - Select your `stash` account, we will bound 100 milliAXCs, make sure it has this amount of funds.
 - **Controller account** - select the `controller` account created earlier.
-- **Value bonded** - how many SOLARs from the `stash` account you want to bond/stake. You can top up this amount and bound more SOLARs later, however, withdrawing any bounded amount requires the bounding duration period to be over (several months at the time of writing).
+- **Value bonded** - how many AXCs from the `stash` account you want to bond/stake. You can top up this amount and bound more AXCs later, however, withdrawing any bounded amount requires the bounding duration period to be over (several months at the time of writing).
 - **Payment destination** - where the rewards get sent. More info [here](learn-staking#reward-distribution).
 
 Once everything is filled properly, click `Bond` and sign the transaction (with your `stash` account). You will then see the following. You can ignore the `Set Session Key` button, it is only useful if you want to validate and we will not need it in this tutorial.
 
-![dashboard overview](assets/guides/how-to-nominate/axiasolar-dashboard-set-session-key.jpg)
+![dashboard overview](assets/guides/how-to-nominate/AXIA-dashboard-set-session-key.jpg)
 
 ## Nominating a validator
 
-Go to the _Staking Overview_ tab on the staking page of the AXIASolar Dashboard. On the left side, you will see a list of validators (on the right side are validators who have signaled their intention to join the validator set and you can ignore them for now). From this list of validators, find ones that you would like to nominate and copy their address (by clicking on the identicon) or better, add them to your Address book.
+Go to the _Staking Overview_ tab on the staking page of the AXIA Dashboard. On the left side, you will see a list of validators (on the right side are validators who have signaled their intention to join the validator set and you can ignore them for now). From this list of validators, find ones that you would like to nominate and copy their address (by clicking on the identicon) or better, add them to your Address book.
 
 ![Validators](assets/guides/how-to-nominate/validators.png)
 

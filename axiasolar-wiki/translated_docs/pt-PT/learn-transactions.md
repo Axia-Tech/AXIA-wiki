@@ -4,13 +4,13 @@ title: Transactions
 sidebar_label: Transactions
 ---
 
-Transactions are used to send a balance to another user. To begin sending transactions, we will learn how to begin sending transactions by using the AXIASolar User Interface.
+Transactions are used to send a balance to another user. To begin sending transactions, we will learn how to begin sending transactions by using the AXIA User Interface.
 
-## AXIASolar UI
+## AXIA UI
 
-Let's begin by opening up the [AXIASolar UI](https://axiasolar.js.org/apps). There are two ways to make a transaction: by using the Transfer tab in the sidebar or through the Accounts tab. We will be starting off with the Accounts tab, so head there.
+Let's begin by opening up the [AXIA UI](https://AXIA.js.org/apps). There are two ways to make a transaction: by using the Transfer tab in the sidebar or through the Accounts tab. We will be starting off with the Accounts tab, so head there.
 
-Assuming that you've already [created a AXIASolar or AXIALunar account](learn-account-generation), we will click on the 'send' button beside the account you'd like to send from.
+Assuming that you've already [created a AXIA or AXIALunar account](learn-account-generation), we will click on the 'send' button beside the account you'd like to send from.
 
 ![](assets/Send-Transaction.png)
 

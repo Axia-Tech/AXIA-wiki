@@ -10,7 +10,7 @@ const argv = yargs(process.argv)
   })
   .option("pinName", {
     alias: "n",
-    description: "required. eg. axiasolar-wiki",
+    description: "required. eg. AXIA-wiki",
     type: "string",
   })
   .option("auth", {

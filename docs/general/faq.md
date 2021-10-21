@@ -6,35 +6,35 @@ slug: ../faq
 ---
 
 _This FAQ focuses on technical questions for users interested in developing applications for
-AXIACoin. If you have a more general question, you may wish to search for the answer on our support
-[Knowledge Base](https://support.axiacoin.network/support/home) or the main
-[AXIACoin Network FAQ](https://axiacoin.network/faq). If you have a question that is not answered,
-please feel free to ask on the AXIACoin Watercooler
-[Element channel](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) or email
-[support](mailto:support@axiacoin.network)._
+AXIA. If you have a more general question, you may wish to search for the answer on our support
+[Knowledge Base](https://support.AXIA.network/support/home) or the main
+[AXIA Network FAQ](https://AXIA.network/faq). If you have a question that is not answered,
+please feel free to ask on the AXIA Watercooler
+[Element channel](https://app.element.io/#/room/#AXIA-watercooler:AXIA.org) or email
+[support](mailto:support@AXIA.network)._
 
-## AXIACoin Launch
+## AXIA Launch
 
-The Genesis block of the AXIACoin network was launched on May 26, 2020, as a Proof of Authority
+The Genesis block of the AXIA network was launched on May 26, 2020, as a Proof of Authority
 (PoA) network, with governance controlled by the single Sudo (super-user) account. During this time,
 validators started joining the network and signaling their intention to participate in consensus.
 
 The network evolved to become a Proof of Stake (PoS) network on June 18, 2020. With the chain
 secured by the decentralized community of validators, the Sudo module was removed on July 20, 2020,
-transitioning the governance of the chain into the hands of the token (SOLAR) holders. This is the
-point where AXIACoin became decentralized.
+transitioning the governance of the chain into the hands of the token (AXC) holders. This is the
+point where AXIA became decentralized.
 
-The final step of the transition to full-functioning AXIACoin was the enabling of transfer
-functionality, which occurred on AXIACoin at block number 1_205_128 on August 18, 2020, at 16:39
+The final step of the transition to full-functioning AXIA was the enabling of transfer
+functionality, which occurred on AXIA at block number 1_205_128 on August 18, 2020, at 16:39
 UTC.
 
-On August 21, 2020, Redenomination of SOLAR occurred. From this date, one SOLAR (old) equals 100 new
-SOLAR.
+On August 21, 2020, Redenomination of AXC occurred. From this date, one AXC (old) equals 100 new
+AXC.
 
-## AXIACoin Roadmap
+## AXIA Roadmap
 
-For more information on the AXIACoin roadmap please visit the
-[official AXIACoin website](https://axiacoin.network/technology/#roadmap).
+For more information on the AXIA roadmap please visit the
+[official AXIA website](https://AXIA.network/technology/#roadmap).
 
 ## Validators
 
@@ -45,7 +45,7 @@ that you can fill out. Registering as a validator is permissionless; in order to
 only set up a validator node and mark your intention to validate on chain. For detailed instruction
 on how to do this you can consult the
 [AXIALunar validator guide](../maintain/axialunar/maintain-guides-how-to-validate-axialunar.md) on validating for AXIALunar or the
-[AXIACoin validator guide](../maintain/maintain-guides-how-to-validate-axiasolar.md) for validating on AXIACoin.
+[AXIA validator guide](../maintain/maintain-guides-how-to-validate-AXIA.md) for validating on AXIA.
 
 However, once you've set up a validator and have registered your intention it does not mean that you
 will be included in the _active set_ right away. The validators are elected to the active set based
@@ -55,7 +55,7 @@ stake-weighted votes and 2) equalize the stake backing each validator as much as
 
 You will likely want to campaign your validator to the community in order to get more backing. You
 are looking for _nominators_ that will put up their tokens to increase the stake for your validator.
-For validators who cannot acquire the minimum stake from the community, AXIA and AXIACoin Foundation
+For validators who cannot acquire the minimum stake from the community, AXIA and AXIA Foundation
 also run a joint program called [Thousand Validators](thousand-validators.md) that will nominate
 validators if they apply and fit the requirements.
 
@@ -74,7 +74,7 @@ size of the active set and how many validators are waiting in the pool.
 There are a few ways to estimate the minimum stake.
 
 One way can be to navigate to the
-[AXIACoin Apps Targets tab](https://ipfs.io/ipns/axiasolar.dotapps.io/#/staking/targets). The value
+[AXIA Apps Targets tab](https://ipfs.io/ipns/AXIA.dotapps.io/#/staking/targets). The value
 at the top of the screen saying "Lowest" is the least staked validator. You need at least this
 much + 1 to enter the set.
 
@@ -82,32 +82,32 @@ You can also use some tools some to perform estimations.
 
 - [Offline Election](https://github.com/axia-tech/substrate-debug-kit/tree/master/offline-election)
   can provide exact results of running an election on the current set of validators using the same
-  Rust code that is ran in AXIACoin.
+  Rust code that is ran in AXIA.
 
 - [Validator stats script](https://github.com/ansonla3/axialunar-validator-stats) can give you an
   estimate that is based on the currently elected set, as well as some statistics about AXIALunar
   validators.
 
-### Why will AXIACoin have only 1000 validators while other projects have hundreds of thousands?
+### Why will AXIA have only 1000 validators while other projects have hundreds of thousands?
 
-AXIACoin's goal to have 1000 validators is set to be something that is practically achievable in the
+AXIA's goal to have 1000 validators is set to be something that is practically achievable in the
 short term with high confidence of good performance in a live environment. Furthermore, validators
-in AXIACoin are not the only stakers, and if we consider the number of stakers that can be possible
-on AXIACoin the number can scale up to hundreds of thousands. Since validators are performing
+in AXIA are not the only stakers, and if we consider the number of stakers that can be possible
+on AXIA the number can scale up to hundreds of thousands. Since validators are performing
 critical consensus work to maintain the security of the chain including all of its shards, a more
 modest number of validators is estimated to start. Upon later improvements, such as implementing
 signature aggregation for finalization messages, the number of validators could reasonably scale up.
-However, increasing validators above one thousand remains a goal for later iterations of AXIACoin.
+However, increasing validators above one thousand remains a goal for later iterations of AXIA.
 
 It is also worth mentioning that one thousand validators is more than the number of validators of
-similar PoS chains with comparable levels of economic security as AXIACoin. The closest contenders
-are operating with around 150 validators, while AXIACoin is already securely running with
+similar PoS chains with comparable levels of economic security as AXIA. The closest contenders
+are operating with around 150 validators, while AXIA is already securely running with
 {{ num_validators }}.
 
 Additionally, other projects sometimes have a different definition of _validator_ that approximates
-more closely to remote signing keys without the full operation of a validating node. On AXIACoin,
+more closely to remote signing keys without the full operation of a validating node. On AXIA,
 each validator is running their own validating node and performing full verification of the Relay
-Chain, voting on finality, producing blocks in their decided slots, and verifying parachain state
+Chain, voting on finality, producing blocks in their decided slots, and verifying allychain state
 transitions. Other projects may consider validators and "validating nodes" as separate entities.
 
 Finally, individuals may participate in the block production process indirectly by
@@ -118,77 +118,77 @@ still share in staking rewards.
 
 ### What is the block time of the Relay Chain?
 
-Both the AXIALunar and AXIACoin networks are currently operating at a rate of one block every six
+Both the AXIALunar and AXIA networks are currently operating at a rate of one block every six
 seconds.
 
 This may be changed in the future. It may go as low as two to three seconds after optimizations, or
-potentially increase in order to handle the capacity of the parachain networking in a live
+potentially increase in order to handle the capacity of the allychain networking in a live
 environment.
 
-### Does AXIACoin have smart contracts?
+### Does AXIA have smart contracts?
 
-No - and yes. The AXIACoin Relay Chain does not implement smart contracts natively. The reason for
-not having smart contracts on the Relay Chain is part of the design philosophy for AXIACoin that
+No - and yes. The AXIA Relay Chain does not implement smart contracts natively. The reason for
+not having smart contracts on the Relay Chain is part of the design philosophy for AXIA that
 dictates that the Relay Chain should be the minimal logic required to accomplish its job.
 
-However, AXIACoin will be a platform for other chains that _do_ implement smart contracts. It's
-possible for parachains to enable smart contract functionality and then benefit from the security
-and interoperability features of AXIACoin. Additionally, existing smart contract chains can connect
-to AXIACoin as a parachain, or via a bridge.
+However, AXIA will be a platform for other chains that _do_ implement smart contracts. It's
+possible for allychains to enable smart contract functionality and then benefit from the security
+and interoperability features of AXIA. Additionally, existing smart contract chains can connect
+to AXIA as a allychain, or via a bridge.
 
-While the AXIACoin Relay Chain does not implement smart contracts directly, undoubtedly there will
-be parachains that do. So it's better to say that the AXIACoin _ecosystem_ has smart contracts
-versus "AXIACoin has smart contracts."
+While the AXIA Relay Chain does not implement smart contracts directly, undoubtedly there will
+be allychains that do. So it's better to say that the AXIA _ecosystem_ has smart contracts
+versus "AXIA has smart contracts."
 
-### How will the AXIACoin Relay Chain connect to external chains in the ecosystem?
+### How will the AXIA Relay Chain connect to external chains in the ecosystem?
 
 One of the cornerstone interoperability technologies being researched and developed for deployment
-on AXIACoin is cross-chain bridges. Bridges come in a variety of flavors with varying levels of
-trust associated with them. AXIACoin is predominantly researching the trust-minimized flavor that
+on AXIA is cross-chain bridges. Bridges come in a variety of flavors with varying levels of
+trust associated with them. AXIA is predominantly researching the trust-minimized flavor that
 imposes economic costs on the operators of the bridge, and therefore makes it economically secure.
 Bridge efforts are being worked on in concert with other projects in the ecosystem. Eventually,
-there will be bridges between AXIACoin and most of the other major chains.
+there will be bridges between AXIA and most of the other major chains.
 
-## SOLAR
+## AXC
 
-### What is the difference between SOLAR (old) and new SOLAR?
+### What is the difference between AXC (old) and new AXC?
 
-The SOLAR (old) unit on AXIACoin was at twelve decimal places, otherwise known as 1e12 Plancks. On 21
-August, 2020, Denomination Day, the SOLAR (old) value was redenominated to 1e10 (10_000_000_000, or
-ten billion) Plancks, meaning that the new SOLAR was valued at ten decimal places. Following the
-[redenomination](redenomination.md), the new SOLAR is called SOLAR.
+The AXC (old) unit on AXIA was at twelve decimal places, otherwise known as 1e12 Plancks. On 21
+August, 2020, Denomination Day, the AXC (old) value was redenominated to 1e10 (10_000_000_000, or
+ten billion) Plancks, meaning that the new AXC was valued at ten decimal places. Following the
+[redenomination](redenomination.md), the new AXC is called AXC.
 
-### What is the inflation rate of the SOLAR?
+### What is the inflation rate of the AXC?
 
 The inflation rate is approximately 10% per year.
 
 A portion of the inflation is rewarded to validators for performing their duties, while another
 portion may go directly to the treasury. The exact percentage that goes into both varies and is
-based on the amount of SOLAR that are staked. Please see the article on
+based on the amount of AXC that are staked. Please see the article on
 [inflation](../learn/learn-staking.md/#inflation) for more information.
 
 ## Governance
 
-### What prevents AXIACoin governance from failing?
+### What prevents AXIA governance from failing?
 
-AXIACoin's governance has already been shown to work. Examples can be found in the runtime upgrades
+AXIA's governance has already been shown to work. Examples can be found in the runtime upgrades
 that have successfully taken place through on the testnets as well as in a real economic environment
-on [AXIALunar](https://lunar.wiki.axiacoin.network) and AXIACoin itself.
+on [AXIALunar](https://lunar.wiki.AXIA.network) and AXIA itself.
 
 It is fair to say that the field of on-chain blockchain governance is still new, and no one can
-claim to know exactly what the optimal version of on-chain governance is yet. However, AXIACoin
+claim to know exactly what the optimal version of on-chain governance is yet. However, AXIA
 takes a brave step forward in pioneering thought-through mechanisms for evolving a blockchain.
 
 Blockchains need a method to adapt and evolve. Therefore, an on-chain governance system was
-necessary for the long-term success of AXIACoin. Ultimately, it is the token holders that are
-responsible for preventing AXIACoin's governance from failing by using their economic value and
+necessary for the long-term success of AXIA. Ultimately, it is the token holders that are
+responsible for preventing AXIA's governance from failing by using their economic value and
 conviction to sway the progression of the protocol.
 
-### What prevents AXIACoin governance from becoming plutocratic?
+### What prevents AXIA governance from becoming plutocratic?
 
 A savvy reader might have noticed that the answer to the previous question endowed the token holder
-with the ultimate responsibility to ensure that AXIACoin's governance does not fail. By following
-the train of this assertion, one might assume that AXIACoin's governance is susceptible to becoming
+with the ultimate responsibility to ensure that AXIA's governance does not fail. By following
+the train of this assertion, one might assume that AXIA's governance is susceptible to becoming
 ruled by a few large token holders (called _whales_ in trading parlance) and therefore become a mere
 plutocracy (rule of the rich).
 
@@ -199,32 +199,32 @@ time. Longer lock-ups display _conviction_ in a vote. Conviction voting could al
 determined minority to overrule the vote of an apathetic majority in certain situations. Another
 mechanism is known as Adaptive Quorum Biasing. This makes proposals have a varying threshold for
 approval or rejection based on what part of the governance protocol the proposal originated in. For
-details on the subtleties of AXIACoin's governance system, please see the
+details on the subtleties of AXIA's governance system, please see the
 [governance page](../learn/learn-governance.md).
 
-## Parachains
+## Allychains
 
-### How do parachain economics work?
+### How do allychain economics work?
 
-Parachains have the flexibility to implement their own monetary system or incentive structure for
+Allychains have the flexibility to implement their own monetary system or incentive structure for
 collators. However, this is not strictly necessary. Since the collator's job is to continue to give
 recent state transitions to the validators on the Relay Chain who validate each transition, the
-security of the parachain and the AXIACoin network is completely separate from parachain economics.
-Parachains need collators to continue to progress, so it wouldn't be unreasonable to see them
-incentivize collator nodes in some way, but the specific mechanism is completely up to parachain
+security of the allychain and the AXIA network is completely separate from allychain economics.
+Allychains need collators to continue to progress, so it wouldn't be unreasonable to see them
+incentivize collator nodes in some way, but the specific mechanism is completely up to allychain
 implementers.
 
-### Are parachains ephemeral? What happens when a parachain loses the next auction?
+### Are allychains ephemeral? What happens when a allychain loses the next auction?
 
-Parachains are not ephemeral. As long as someone is keeping the data for a parachain, the parachain
-can move between being a parachain, a parathread, or a separate sovereign chain at different points
-of its lifetime. Especially with parathreads, parachains can be decommissioned to only produce
+Allychains are not ephemeral. As long as someone is keeping the data for a allychain, the allychain
+can move between being a allychain, a parathread, or a separate sovereign chain at different points
+of its lifetime. Especially with parathreads, allychains can be decommissioned to only produce
 blocks when their usage and throughput makes it necessary.
 
-When a parachain loses an auction for renewal, that parachain has a few options. In most cases,
+When a allychain loses an auction for renewal, that allychain has a few options. In most cases,
 becoming a parathread instead would be a suitable choice. Parathreads are still secured by the Relay
-Chain, but don't need to hold a parachain slot and can produce a block when its economically
-feasible for them. For more on parachains please see the [parachains page](../learn/learn-parachains.md) and
+Chain, but don't need to hold a allychain slot and can produce a block when its economically
+feasible for them. For more on allychains please see the [allychains page](../learn/learn-allychains.md) and
 for more on parathreads see [the parathreads page](../learn/learn-parathreads.md).
 
 ## Networking
@@ -243,9 +243,9 @@ as well as community contributors. A [Nim](https://github.com/status-im/nim-libp
 library also exists. Libp2p as a whole is an open source project that is actively developed and
 expanded on various code repositories hosted on [their GitHub](https://github.com/libp2p).
 
-### Does AXIACoin use libp2p?
+### Does AXIA use libp2p?
 
-Yes, since AXIACoin is built with Substrate. Substrate uses a networking protocol that is based on
+Yes, since AXIA is built with Substrate. Substrate uses a networking protocol that is based on
 libp2p (specifically the Rust libp2p library). However, Substrate uses a mix of standard libp2p
 protocols and protocols that are homegrown and not official libp2p standards. Of the standards
 protocols, those which are shared with other implementations of libp2p such as IPFS, are
@@ -269,7 +269,7 @@ integration between the two applications.
 
 ## AXIALunar
 
-### What is the minimum amount of LUNAR / SOLAR I can have in my account?
+### What is the minimum amount of LUNAR / AXC I can have in my account?
 
 Please see information about [Existential Deposits](../build/build-protocol-info.md).
 
@@ -290,12 +290,12 @@ the Substrate documentation for more detailed information.
 ## Answered by Gav series
 
 The "Answered by Gav" series is a collection of posts uploaded to Reddit of questions that have been
-asked in the AXIACoin Watercooler Riot channel and answered by AXIACoin founder Gavin Wood.
+asked in the AXIA Watercooler Riot channel and answered by AXIA founder Gavin Wood.
 
 - [Reason for using asynchronous rather than synchronous communication? Difference in terms of TPS?](https://www.reddit.com/r/dot/comments/b87d96/answered_by_gav_reason_for_using_asynchronous/)
-- [How exactly do validators in an ETH parachain keep moving around and how is communication between zones trustless?](https://www.reddit.com/r/dot/comments/b87awr/answered_by_gav_how_exactly_do_validators_in_an/)
-- [What are the main issues with Bitcoin integration and will it ever be possible? Same problem with other POW chains? Is AXIACoin only going to work with POS chains? How is it trust-less in comparison to Cosmos though?](https://www.reddit.com/r/dot/comments/b87bua/answered_by_gav_what_are_the_main_issues_with/)
-- [What are the current thoughts around governance especially since projects have to be voted in to receive the parachains security?](https://www.reddit.com/r/dot/comments/b87cjz/answered_by_gav_what_are_the_current_thoughts/)
+- [How exactly do validators in an ETH allychain keep moving around and how is communication between zones trustless?](https://www.reddit.com/r/dot/comments/b87awr/answered_by_gav_how_exactly_do_validators_in_an/)
+- [What are the main issues with Bitcoin integration and will it ever be possible? Same problem with other POW chains? Is AXIA only going to work with POS chains? How is it trust-less in comparison to Cosmos though?](https://www.reddit.com/r/dot/comments/b87bua/answered_by_gav_what_are_the_main_issues_with/)
+- [What are the current thoughts around governance especially since projects have to be voted in to receive the allychains security?](https://www.reddit.com/r/dot/comments/b87cjz/answered_by_gav_what_are_the_current_thoughts/)
 - [Also is there any detailed overview of how exactly a token transfer from ETH could be exchanged with another chain's currency?](https://www.reddit.com/r/dot/comments/b87ds8/answered_by_gav_also_is_there_any_detailed/)
 - [Can I run multiple Validators with the same Session Key?](https://www.reddit.com/r/dot/comments/bcqrx9/answered_by_gav_can_i_run_multiple_validators/)
 - [How to tackle the concentration risk of Validators in data centers?](https://www.reddit.com/r/dot/comments/bcqwit/answered_by_gav_how_to_tackle_the_concentration/)

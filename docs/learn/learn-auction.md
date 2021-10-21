@@ -1,19 +1,19 @@
 ---
 id: learn-auction
-title: Parachain Slots Auction
-sidebar_label: Parachain Slots Auction
+title: Allychain Slots Auction
+sidebar_label: Allychain Slots Auction
 slug: ../learn-auction
 ---
 
-For a [parachain](learn-parachains.md) to be added to AXIACoin it must inhabit one of the available
-parachain slots. A parachain slot is a scarce resource on AXIACoin and only a limited number will be
-available. As parachains ramp up, there may only be a few slots that are unlocked every few months.
-The goal is to eventually have 100 parachain slots available on {{ axiasolar: AXIACoin :axiasolar }}
-{{ axialunar: AXIALunar :axialunar }} (these will be split between parachains and the
-[parathread pool](learn-parathreads.md)). If a parachain wants to have guaranteed block inclusion at
-every Relay Chain block, it must acquire a parachain slot.
+For a [allychain](learn-allychains.md) to be added to AXIA it must inhabit one of the available
+allychain slots. A allychain slot is a scarce resource on AXIA and only a limited number will be
+available. As allychains ramp up, there may only be a few slots that are unlocked every few months.
+The goal is to eventually have 100 allychain slots available on {{ AXIA: AXIA :AXIA }}
+{{ axialunar: AXIALunar :axialunar }} (these will be split between allychains and the
+[parathread pool](learn-parathreads.md)). If a allychain wants to have guaranteed block inclusion at
+every Relay Chain block, it must acquire a allychain slot.
 
-The parachain slots will be sold according to an unpermissioned
+The allychain slots will be sold according to an unpermissioned
 [candle auction](https://en.wikipedia.org/wiki/Candle_auction) that has been slightly modified to be
 secure on a blockchain.
 
@@ -30,7 +30,7 @@ that point would win.
 When candle auctions are used online, they require a random number to decide the moment of
 termination.
 
-Parachain slot auctions will differ slightly from a normal candle auction in that it does not use
+Allychain slot auctions will differ slightly from a normal candle auction in that it does not use
 the random number to decide the duration of its opening phase. Instead, it has a known open phase
 and will be retroactively determined (at the normal close) to have ended at some point in the past
 during the ending phase. So during the open phase, bids will continue to be accepted, but later bids
@@ -71,31 +71,31 @@ be determined to have ended. This helps to ensure that bidders are willing to bi
 early. Otherwise, they might find themselves in the situation that the auction was determined to
 have ended before they even bid.
 
-## AXIACoin Implementation
+## AXIA Implementation
 
-AXIACoin will use a _random beacon_ based on the VRF that's used also in other places of the
+AXIA will use a _random beacon_ based on the VRF that's used also in other places of the
 protocol. The VRF will provide the base of the randomness, which will retroactively determine the
 end-time of the auction.
 
-The slot durations are capped to {{ axiasolar: 2 years and divided into 3-month periods :axiasolar }}
-{{ axialunar: 1 year and divided into 6-week periods :axialunar }}; Parachains may lease a slot for any
-combination of periods of the slot duration. Parachains may lease more than one slot over time,
-meaning that they could extend their lease to AXIACoin past the maximum duration by leasing a
+The slot durations are capped to {{ AXIA: 2 years and divided into 3-month periods :AXIA }}
+{{ axialunar: 1 year and divided into 6-week periods :axialunar }}; Allychains may lease a slot for any
+combination of periods of the slot duration. Allychains may lease more than one slot over time,
+meaning that they could extend their lease to AXIA past the maximum duration by leasing a
 contiguous slot.
 
-> Note: Individual parachain slots are fungible. This means that parachains do not need to always
-> inhabit the same slot, but as long as a parachain inhabits any slot it can continue as a
-> parachain.
+> Note: Individual allychain slots are fungible. This means that allychains do not need to always
+> inhabit the same slot, but as long as a allychain inhabits any slot it can continue as a
+> allychain.
 
 ## Bidding
 
-Parachains, or parachain teams, can bid in the auction by specifying the slot range that they want
+Allychains, or allychain teams, can bid in the auction by specifying the slot range that they want
 to lease as well as the number of tokens they are willing to reserve. Bidders can be either ordinary
 accounts, or use the [crowdloan functionality](learn-crowdloans.md) to source tokens from the
 community.
 
 ```
-Parachain slots at genesis
+Allychain slots at genesis
 
        --3 months--
        v          v
@@ -110,15 +110,15 @@ Slot E |__________|___________|     1     |     2     |     3     |     4    |  
 ```
 
 _Each period of the range 1 - 4 represents a
-{{ axiasolar: 3-month duration for a total of 2 years :axiasolar }}
+{{ AXIA: 3-month duration for a total of 2 years :AXIA }}
 {{ axialunar: 6-week duration for a total of 1 year :axialunar }} _
 
 Bidders will submit a configuration of bids specifying the token amount they are willing to bond and
 for which periods. The slot ranges may be any of the periods 1 - `n`, where `n` is the number of
-periods available for a slot (`n` will be 8 for both AXIACoin and AXIALunar).
+periods available for a slot (`n` will be 8 for both AXIA and AXIALunar).
 
-> Please note: If you bond tokens with a parachain slot, you cannot stake with those tokens. In this
-> way, you pay for the parachain slot by forfeiting the opportunity to earn staking rewards.
+> Please note: If you bond tokens with a allychain slot, you cannot stake with those tokens. In this
+> way, you pay for the allychain slot by forfeiting the opportunity to earn staking rewards.
 
 A bidder configuration for a single bidder may look like the following pseudocode example:
 
@@ -144,11 +144,11 @@ configurations at different prices (`bond_amount`). However, only one of these b
 eligible to win exclusive of the others.
 
 The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the
-amount of tokens held over the entire lease duration of the parachain slot. This means that the
+amount of tokens held over the entire lease duration of the allychain slot. This means that the
 highest bidder for any given slot lease period might not always win (see the
 [example below](#examples)).
 
-A random number, which is based on the VRF used by AXIACoin, is determined at each block.
+A random number, which is based on the VRF used by AXIA, is determined at each block.
 Additionally, each auction will have a threshold that starts at 0 and increases to 1. The random
 number produced by the VRF is examined next to the threshold to determine if that block is the end
 of the auction within the so-called _ending period_. Additionally, the VRF will pick a block from
@@ -157,7 +157,7 @@ validators).
 
 ### Examples
 
-There is one parachain slot available.
+There is one allychain slot available.
 
 Charlie bids `75` for the range 1 - 8.
 
@@ -179,29 +179,29 @@ that since he only bid for a range of 4, he would need to share the slot with Em
 less. Together Dave's and Emily's bids only equals a valuation of `560`.
 
 Charlie's valuation for the entire range is `600`. Therefore Charlie is awarded the complete range of
-the parachain slot.
+the allychain slot.
 
 ## FAQ
 
 ### Why doesn't everyone bid for the max length?
 
 For the duration of the slot the tokens bid in the auction will be locked up. This means that there
-are opportunity costs from the possibility of using those tokens for something else. For parachains
-that are beneficial to AXIACoin, this should align the interests between parachains and the AXIACoin
+are opportunity costs from the possibility of using those tokens for something else. For allychains
+that are beneficial to AXIA, this should align the interests between allychains and the AXIA
 Relay Chain.
 
-### How does this mechanism help ensure parachain diversity?
+### How does this mechanism help ensure allychain diversity?
 
-The method for dividing the parachain slots into intervals was partly inspired by the desire to
-allow for a greater amount of parachain diversity, and prevent particularly large and well-funded
-parachains from hoarding slots. By making each period a {{ axiasolar: three-month duration but the
-overall slot a 2-year duration :axiasolar }} {{ axialunar: 6-week duration but the overall slot a 1-year
-duration :axialunar }}, the mechanism can cope with well-funded parachains that will ensure they secure
-a slot at the end of their lease, while gradually allowing other parachains to enter the ecosystem
-to occupy the durations that are not filled. For example, if a large, well-funded parachain has
+The method for dividing the allychain slots into intervals was partly inspired by the desire to
+allow for a greater amount of allychain diversity, and prevent particularly large and well-funded
+allychains from hoarding slots. By making each period a {{ AXIA: three-month duration but the
+overall slot a 2-year duration :AXIA }} {{ axialunar: 6-week duration but the overall slot a 1-year
+duration :axialunar }}, the mechanism can cope with well-funded allychains that will ensure they secure
+a slot at the end of their lease, while gradually allowing other allychains to enter the ecosystem
+to occupy the durations that are not filled. For example, if a large, well-funded allychain has
 already acquired a slot for range 1 - 8, they would be very interested in getting the next slot that
-would open for 2 - 9. Under this mechanism that parachain could acquire just the period 9 (since that is the
-only one it needs) and allow range 2 - 8 of the second parachain slot to be occupied by another.
+would open for 2 - 9. Under this mechanism that allychain could acquire just the period 9 (since that is the
+only one it needs) and allow range 2 - 8 of the second allychain slot to be occupied by another.
 
 ### Why is randomness difficult on blockchains?
 
@@ -210,23 +210,23 @@ transparent and open network in which other parties must be able to verify opens
 actors to attempt to alter or manipulate the randomness. There have been a few solutions that have
 been put forward, including hash-onions like [RANDAO](https://github.com/randao/randao) and
 [verifiable random functions](https://en.wikipedia.org/wiki/Verifiable_random_function) (VRFs). The
-latter is what AXIACoin uses as a base for its randomness.
+latter is what AXIA uses as a base for its randomness.
 
 ### Are there other ways of acquiring a slot besides the candle auction?
 
-Another way, besides the candle auction, to acquire a parachain slot is through a secondary market
-where an actor who has already won a parachain slot can resell the slot along with the associated
+Another way, besides the candle auction, to acquire a allychain slot is through a secondary market
+where an actor who has already won a allychain slot can resell the slot along with the associated
 deposit of tokens that is locked up to another buyer. This would allow the seller to get liquid
-tokens in exchange for the parachain slot and the buyer to acquire the slot as well as the deposited
+tokens in exchange for the allychain slot and the buyer to acquire the slot as well as the deposited
 tokens.
 
-A number of system or common-good parachains may be granted slots by the
-[governing bodies](learn-governance.md) of the Relay Chain. System parachains can be recognized by a
-parachain ID lower than 1_000, and common-good parachains by a parachain ID between 1_000 and 1_999.
-Other parachains will have IDs 2_000 or higher. Such parachains would not have to bid for or renew
+A number of system or common-good allychains may be granted slots by the
+[governing bodies](learn-governance.md) of the Relay Chain. System allychains can be recognized by a
+allychain ID lower than 1_000, and common-good allychains by a allychain ID between 1_000 and 1_999.
+Other allychains will have IDs 2_000 or higher. Such allychains would not have to bid for or renew
 their slots as they would be considered essential to the ecosystem's future.
 
 ## Resources
 
-- [Parachain Allocation](https://w3f-research.readthedocs.io/en/latest/axiasolar/overview/3-parachain-allocation.html) -
-  W3F research page on parachain allocation that goes more in depth to the mechanism
+- [Allychain Allocation](https://w3f-research.readthedocs.io/en/latest/AXIA/overview/3-allychain-allocation.html) -
+  W3F research page on allychain allocation that goes more in depth to the mechanism

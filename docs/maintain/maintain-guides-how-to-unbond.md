@@ -13,7 +13,7 @@ nominating any validators).
 
 ### Step 1: Stop Nominating
 
-On the [AXIACoin-JS Apps][] navigate to the "Staking" tab.
+On the [AXIA-JS Apps][] navigate to the "Staking" tab.
 
 On this tab click on the "Account Actions" tab at the top of the screen.
 
@@ -38,12 +38,12 @@ your balance will show as "unbonding" with an indicator of how many more blocks 
 amount is fully unlocked.
 
 This duration varies depending on the network you're on and will typically be four times as fast on
-AXIALunar as it is on AXIACoin. The unbounding period is 28 days on AXIACoin, and 7 on AXIALunar.
+AXIALunar as it is on AXIA. The unbounding period is 28 days on AXIA, and 7 on AXIALunar.
 
 Once this process is complete, you will have to issue another, final transaction: Withdraw Unbonded,
 which will be available in the same pop-up. You can also check how long you have to wait in order to
 withdraw your stake in the
-[Accounts](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.axiasolar.io#/accounts) page by
+[Accounts](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/accounts) page by
 expanding your account balance. There is a tiny icon beside the word "unbonding" that will
 eventually become an unlock icon once the remaning blocks get passed.
 
@@ -56,7 +56,7 @@ If you want to rebond your tokens before the unbonding period is over, you can d
 `rebond` extrinsic. This allows you to bond your tokens that are still locked without waiting until
 the end of the unbonding period.
 
-In order to do this, you will need to issue an extrinsic manually from [AXIACoin-JS Apps][].
+In order to do this, you will need to issue an extrinsic manually from [AXIA-JS Apps][].
 
 Go to the "Extrinsics" option that's located in the "Developer" dropdown in the top menu.
 
@@ -70,4 +70,4 @@ currently locked in unbonding that you want to rebond. Then click "Submit Transa
 Confirm the transaction in the next pop-up. Once the transaction is included in the next block your
 tokens will be rebonded again and you can start staking with them.
 
-[axiasolar-js apps]: https://axiasolar.js.org/apps
+[AXIA-js apps]: https://AXIA.js.org/apps

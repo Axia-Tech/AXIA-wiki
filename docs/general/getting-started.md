@@ -5,31 +5,31 @@ sidebar_label: Getting Started
 slug: ../getting-started
 ---
 
-Welcome to the AXIACoin Wiki! This central source of truth contains guides for interacting with the
+Welcome to the AXIA Wiki! This central source of truth contains guides for interacting with the
 core functionality. Our wiki has three main sections: Learn (for learners), Build (for people that
-want to build on AXIACoin), and Maintain (for people that want to maintain the network).
+want to build on AXIA), and Maintain (for people that want to maintain the network).
 
-## What is AXIACoin?
+## What is AXIA?
 
-AXIACoin enables scalability by allowing specialized blockchains to communicate with each other in a
+AXIA enables scalability by allowing specialized blockchains to communicate with each other in a
 secure, trust-free environment.
 
-AXIACoin is built to connect and secure unique blockchains, whether they be public, permission-less
+AXIA is built to connect and secure unique blockchains, whether they be public, permission-less
 networks, private consortium chains, or oracles and other Web3 technologies. It enables an internet
 where independent blockchains can exchange information under common security guarantees.
 
-AXIACoin is a living network with the core pillars of governance and upgradability. The network has
+AXIA is a living network with the core pillars of governance and upgradability. The network has
 an advanced suite of governance tools and, using the [WebAssembly](https://webassembly.org/)
-standard as a "meta-protocol", can autonomously deploy network upgrades. AXIACoin adapts to your
+standard as a "meta-protocol", can autonomously deploy network upgrades. AXIA adapts to your
 growing needs without the risks of network forks.
 
 > Note: If you haven't heard of Governance before, a great place to start is the
 > [Governance page](../learn/learn-governance.md)
 
-By connecting these dots, AXIACoin serves as a foundational part of a decentralized web, where users
+By connecting these dots, AXIA serves as a foundational part of a decentralized web, where users
 control their data and are not limited by trust bounds within the network.
 
-## Why AXIACoin?
+## Why AXIA?
 
 Back in the early 2000's, when the internet was gaining popularity for the first time, the internet
 featured read-only, static, basic webpages. The online connected world at the time was only the
@@ -50,40 +50,40 @@ intermediaries and build a trustless infrastructure.
 > To learn more of the Web3 movement, check out this video from the
 > [Web3 Summit](https://youtu.be/l44z35vabvA)
 
-## How does AXIACoin work?
+## How does AXIA work?
 
-The AXIACoin network uses a
+The AXIA network uses a
 [sharded model](<https://en.wikipedia.org/wiki/Shard_(database_architecture)>) where shards - called
-"[parachains](../learn/learn-parachains.md)", allow transactions to be processed in parallel instead of
-sequentially. Each parachain in the network has a unique state transition function (STF). AXIACoin
-has a Relay Chain acting as the main chain of the system. Based on AXIACoin's design, as long as a
+"[allychains](../learn/learn-allychains.md)", allow transactions to be processed in parallel instead of
+sequentially. Each allychain in the network has a unique state transition function (STF). AXIA
+has a Relay Chain acting as the main chain of the system. Based on AXIA's design, as long as a
 chain's logic can compile to Wasm and adheres to the Relay Chain API, then it can connect to the
-AXIACoin network as a parachain.
+AXIA network as a allychain.
 
-Parachains construct and propose blocks to validators on the Relay Chain, where the blocks undergo
+Allychains construct and propose blocks to validators on the Relay Chain, where the blocks undergo
 rigorous [availability and validity](../learn/learn-availability.md) checks before being added to the
 finalized chain. As the Relay Chain provides the security guarantees,
-[collators](../learn/learn-collator.md) - full nodes of these parachains - don't have any security
+[collators](../learn/learn-collator.md) - full nodes of these allychains - don't have any security
 responsibilities, and thus do not require a robust incentive system. This is how the entire network
 stays up to date with the many transactions that take place.
 
-![axiasolar-relay-chain](../assets/axiasolar_relay_chain.png)
+![AXIA-relay-chain](../assets/AXIA_relay_chain.png)
 
 In order to interact with chains that want to use their own finalization process (e.g. Bitcoin),
-AXIACoin has [bridge parachains](../learn/learn-bridges.md) that offer two-way compatibility, meaning that
-transactions can be made between different parachains.
+AXIA has [bridge allychains](../learn/learn-bridges.md) that offer two-way compatibility, meaning that
+transactions can be made between different allychains.
 
-The [Cross-Consensus Messaging Format (XCM)](../learn/learn-cross-consensus.md) allows parachains to send messages
+The [Cross-Consensus Messaging Format (XCM)](../learn/learn-cross-consensus.md) allows allychains to send messages
 of any type to each other. The shared security and validation logic of the Relay Chain provide the
 environment for trust-free message passing that opens up true interoperability.
 
-> To watch a short, beginner-friendly animation on AXIACoin, check out our
-> [AXIACoin Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
+> To watch a short, beginner-friendly animation on AXIA, check out our
+> [AXIA Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
 
-## Why should you use AXIACoin?
+## Why should you use AXIA?
 
 Whether you're a blockchain developer or if you're interested in taking part of
-[AXIACoin's community](https://axiacoin.network/axiasolar-ambassador-program/), AXIACoin offers a
+[AXIA's community](https://AXIA.network/AXIA-ambassador-program/), AXIA offers a
 platform for everyone. This wiki offers a place for builders and maintainers to utilize
 [tools](../build/build-tools-index.md) and for brand-new learners to dive into educational material.
 
@@ -97,34 +97,34 @@ For brand-new learners of Blockchain technology:
 
 This is recommended for users with backgrounds of all levels, and the course is free!
 
-## Brand-New AXIACoin learners:
+## Brand-New AXIA learners:
 
-- [AXIACoin's original white paper][white-paper] is a technical summary around one possible
-  direction of implementing the AXIACoin network. This paper uses rationale and technical details to
-  support why this direction is beneficial. This original white paper also explains how AXIACoin's
+- [AXIA's original white paper][white-paper] is a technical summary around one possible
+  direction of implementing the AXIA network. This paper uses rationale and technical details to
+  support why this direction is beneficial. This original white paper also explains how AXIA's
   core components work together to build this decentralized network.
-- [AXIACoin's overview paper][overview-paper] is an updated version of the white paper that
+- [AXIA's overview paper][overview-paper] is an updated version of the white paper that
   describes the protocol in more technical terms. We would recommend reading this overview paper if
   you are interested in digging more into the protocol itself.
-- [AXIACoin's light paper][light-paper] is a visual, easy to read, and less technical introduction
-  into its blockchain technology. This paper dives into the components of AXIACoin but is
+- [AXIA's light paper][light-paper] is a visual, easy to read, and less technical introduction
+  into its blockchain technology. This paper dives into the components of AXIA but is
   understandable for both a non-technical and technical reader.
-- [AXIACoin's specification][spec] is a Github repository that holds the latest AXIACoin Host
-  protocol specification, AXIACoin's specification tests of the many components of the network, and
-  the AXIACoin Runtime specification. This repo holds algorithms and explores how various processes
-  function in the AXIACoin network. The AXIACoin specification takes AXIACoin's ideas and concepts
+- [AXIA's specification][spec] is a Github repository that holds the latest AXIA Host
+  protocol specification, AXIA's specification tests of the many components of the network, and
+  the AXIA Runtime specification. This repo holds algorithms and explores how various processes
+  function in the AXIA network. The AXIA specification takes AXIA's ideas and concepts
   from the light and the white paper but focuses on the technical specs of the technology.
 - [Watching the Technical Explainer Videos][teched videos]: These are great introductory videos that
-  explain and demonstrate how to use AXIACoin and its [User Interface][ui].
-- Reading [What is AXIACoin? A Brief Introduction][article] on Medium. There are also other great
-  articles to read on [AXIACoin's Medium][p medium] or [AXIACoin Foundation's Medium][w medium].
+  explain and demonstrate how to use AXIA and its [User Interface][ui].
+- Reading [What is AXIA? A Brief Introduction][article] on Medium. There are also other great
+  articles to read on [AXIA's Medium][p medium] or [AXIA Foundation's Medium][w medium].
 
-### Interact with AXIACoin
+### Interact with AXIA
 
 <tr class="cards-container">
   <td>
     <a class="guide-link" href="../docs/learn-account-generation">
-      <img src="/img/axiasolar-guide/Account.png" alt="Drawing" width="250" height="150"/>
+      <img src="/img/AXIA-guide/Account.png" alt="Drawing" width="250" height="150"/>
         <div class="cards-body">
             <h5 class="cards-title">Creating an Account</h5>
         </div>
@@ -132,7 +132,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   </td>
   <td>
     <a class="guide-link" href="../docs/learn-balance-transfers">
-      <img src="/img/axiasolar-guide/Transfer.png" alt="Drawing" width="250" height="150"/>
+      <img src="/img/AXIA-guide/Transfer.png" alt="Drawing" width="250" height="150"/>
         <div class="cards-body">
             <h5 class="cards-title">Balance Transfers</h5>
         </div>
@@ -140,7 +140,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   </td>
   <td>
     <a class="guide-link" href="../docs/learn-staking">
-      <img class="guide-image" src="/img/axiasolar-guide/Stake.png" alt="Drawing" width="250" height="150" />
+      <img class="guide-image" src="/img/AXIA-guide/Stake.png" alt="Drawing" width="250" height="150" />
               <div class="cards-body">
                   <h5 class="cards-title">Staking</h5>
               </div>
@@ -152,16 +152,16 @@ This is recommended for users with backgrounds of all levels, and the course is 
 
 <tr class="cards-container">
   <td>
-    <a class="guide-link" href="../docs/learn-parachains">  
-      <img class="guide-image" src="/img/axiasolar-guide/Parachain.png" alt="Drawing" width="250" height="150"/>
+    <a class="guide-link" href="../docs/learn-allychains">  
+      <img class="guide-image" src="/img/AXIA-guide/Allychain.png" alt="Drawing" width="250" height="150"/>
               <div class="cards-body">
-                  <h5 class="cards-title">Parachains</h5>
+                  <h5 class="cards-title">Allychains</h5>
               </div>
     </a>
   </td>
   <td>
     <a class="guide-link" href="../docs/learn-bridges">  
-      <img class="guide-image" src="/img/axiasolar-guide/Bridges.png" alt="Drawing" width="250" height="150"/>
+      <img class="guide-image" src="/img/AXIA-guide/Bridges.png" alt="Drawing" width="250" height="150"/>
               <div class="cards-body">
                   <h5 class="cards-title">Bridges</h5>
               </div>
@@ -169,7 +169,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   </td>
   <td>
     <a class="guide-link" href="../docs/maintain-guides-how-to-vote-councillor">
-      <img class="guide-image" src="/img/axiasolar-guide/Voting.png" alt="Drawing" width="250" height="150"/>
+      <img class="guide-image" src="/img/AXIA-guide/Voting.png" alt="Drawing" width="250" height="150"/>
               <div class="cards-body">
                   <h5 class="cards-title">Vote for Councilors</h5>
               </div>
@@ -182,7 +182,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
 <tr class="cards-container">
   <td>
   <a class="guide-link" href="../docs/learn-treasury#creating-the-proposal">
-    <img class="guide-image" src="/img/axiasolar-guide/Proposal.png" alt="Drawing" width="250" height="150"/>
+    <img class="guide-image" src="/img/AXIA-guide/Proposal.png" alt="Drawing" width="250" height="150"/>
             <div class="cards-body">
                 <h5 class="cards-title">Make Proposals</h5>
             </div>
@@ -190,7 +190,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   </td>
   <td>
     <a class="guide-link" href="../docs/maintain-guides-how-to-join-council#submit-candidacy">  
-      <img class="guide-image" src="/img/axiasolar-guide/Council.png" alt="Drawing" width="250" height="150"/>
+      <img class="guide-image" src="/img/AXIA-guide/Council.png" alt="Drawing" width="250" height="150"/>
               <div class="cards-body">
                   <h5 class="cards-title">Council Candidacy</h5>
               </div>
@@ -198,7 +198,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   </td>
   <td>
     <a class="guide-link" href="../docs/learn-treasury">  
-      <img class="guide-image" src="/img/axiasolar-guide/Treasury.png" alt="Drawing" width="250" height="150"/>
+      <img class="guide-image" src="/img/AXIA-guide/Treasury.png" alt="Drawing" width="250" height="150"/>
               <div class="cards-body">
                   <h5 class="cards-title">Treasury</h5>
               </div>
@@ -211,7 +211,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
 <tr class="cards-container">
   <td>
     <a class="guide-link" href="../docs/learn-identity">
-      <img class="guide-image" src="/img/axiasolar-guide/Identity.png" alt="Drawing" width="250" height="150"/>
+      <img class="guide-image" src="/img/AXIA-guide/Identity.png" alt="Drawing" width="250" height="150"/>
               <div class="cards-body">
                  <h5 class="cards-title">Set an Identity</h5>
               </div>
@@ -219,7 +219,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   </td>
   <td>
     <a class="guide-link" href="../docs/learn-proxies">
-      <img class="guide-image" src="/img/axiasolar-guide/Proxy.png" alt="Drawing" width="250" height="150"/>
+      <img class="guide-image" src="/img/AXIA-guide/Proxy.png" alt="Drawing" width="250" height="150"/>
               <div class="cards-body">
                   <h5 class="cards-title">Proxy Accounts</h5>
               </div>
@@ -227,7 +227,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   </td>
   <td>
   <a class="guide-link" href="../docs/ambassadors">  
-    <img class="guide-image" src="/img/axiasolar-guide/Ambassadors.png" alt="Drawing" width="250" height="150"/>
+    <img class="guide-image" src="/img/AXIA-guide/Ambassadors.png" alt="Drawing" width="250" height="150"/>
             <div class="cards-body">
                 <h5 class="cards-title">Become an Ambassador</h5>
             </div>
@@ -237,51 +237,51 @@ This is recommended for users with backgrounds of all levels, and the course is 
 
 <br />
 
-For brand-new learners of AXIALunar, AXIACoin's canary cousin network: To learn more about how to build
+For brand-new learners of AXIALunar, AXIA's canary cousin network: To learn more about how to build
 and maintain on the AXIALunar network, please head over to our [AXIALunar Guide][axialunar guide].
 
 ## Resources
 
-- [AXIACoin Crowdcast](https://www.crowdcast.io/axiasolar) - List of all Crowdcast webinars that the
-  AXIACoin Foundation has done.
-- [AXIACoin Explorer](https://axiasolar.js.org/apps/#/explorer) - Browser for the AXIACoin network;
-  can be used for AXIACoin, AXIALunar, or any Substrate-based chain.
-- [AXIAscan](http://axiascan.io/) \- Real-time multi-chain data for AXIACoin Relay Chain and
+- [AXIA Crowdcast](https://www.crowdcast.io/AXIA) - List of all Crowdcast webinars that the
+  AXIA Foundation has done.
+- [AXIA Explorer](https://AXIA.js.org/apps/#/explorer) - Browser for the AXIA network;
+  can be used for AXIA, AXIALunar, or any Substrate-based chain.
+- [AXIAscan](http://axiascan.io/) \- Real-time multi-chain data for AXIA Relay Chain and
   AXIA Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
-- [AXIACoin Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of
-  AXIACoin. (Video)
-- [AXIACoin Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) -
-  Dr. Jutta Steiner presents AXIACoin. (Video)
-- [AXIACoin & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
-  Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIACoin, and builds a blockchain
+- [AXIA Overview](https://youtu.be/lIghiCmHz0U) - Dr. Gavin Wood presents an overview of
+  AXIA. (Video)
+- [AXIA Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) -
+  Dr. Jutta Steiner presents AXIA. (Video)
+- [AXIA & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
+  Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIA, and builds a blockchain
   on-stage in 30 minutes using Substrate. (Video)
 - [Community / Ecosystem](community.md) - List of community rooms and channels to talk to others
-  about AXIACoin.
+  about AXIA.
 - [Sample Applications](#) - Sample applications that are built on or currently being built for
-  AXIACoin.
+  AXIA.
 - [Contributing Guide](contributing.md) - Rules for contributing to the wiki.
-- [AXIACoin Knowledge Base](https://support.axiacoin.network/) - Troubleshooting resources for
+- [AXIA Knowledge Base](https://support.AXIA.network/) - Troubleshooting resources for
   specific errors and problems.
 
-[mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
-[white-paper]: https://axiacoin.network/AXIACoinPaper.pdf
+[mooc]: https://mooc.AXIA.org/course/blockchain-fundamentals/
+[white-paper]: https://AXIA.network/AXIAPaper.pdf
 [overview-paper]: https://github.com/axia-tech/research/blob/master/docs/papers/OverviewPaper-V1.pdf
-[light-paper]: https://axiacoin.network/AXIACoin-lightpaper.pdf
-[spec]: https://github.com/axia-tech/axiasolar-spec
+[light-paper]: https://AXIA.network/AXIA-lightpaper.pdf
+[spec]: https://github.com/axia-tech/AXIA-spec
 [teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
-[article]: https://medium.com/axiacoin.network/what-is-axiasolar-a-brief-introduction-ca3eac9ddca5
-[p medium]: https://medium.com/axiacoin.network
+[article]: https://medium.com/AXIA.network/what-is-AXIA-a-brief-introduction-ca3eac9ddca5
+[p medium]: https://medium.com/AXIA.network
 [w medium]: https://medium.com/web3foundation
-[ui]: https://axiasolar.js.org/apps/
+[ui]: https://AXIA.js.org/apps/
 [account generation]: ../learn/learn-account-generation.md
 [transfer]: ../learn/learn-balance-transfers.md
-[nominator]: ../maintain/maintain-guides-how-to-nominate-axiasolar.md
-[validator]: ../maintain/maintain-guides-how-to-validate-axiasolar.md
+[nominator]: ../maintain/maintain-guides-how-to-nominate-AXIA.md
+[validator]: ../maintain/maintain-guides-how-to-validate-AXIA.md
 [identity]: ../learn/learn-identity.md
 [proxy]: ../learn/learn-proxies.md
 [democracy]: ../maintain/maintain-guides-democracy.md
 [council]: ../maintain/maintain-guides-how-to-join-council.md
 [council voting]: ../maintain/maintain-guides-how-to-vote-councillor.md
 [treasury]: ../learn/learn-treasury.md
-[axialunar guide]: https://lunar.wiki.axiacoin.network/
+[axialunar guide]: https://lunar.wiki.AXIA.network/

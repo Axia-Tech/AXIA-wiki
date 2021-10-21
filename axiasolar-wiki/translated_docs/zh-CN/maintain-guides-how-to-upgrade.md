@@ -14,7 +14,7 @@ sidebar_label: 如何升级验证人节点
 
 Session 密钥储存在客户瑞并供验证人作签名操作。它是把验证人节点和 Controller 帐户联系起来。您不能在 Session 中段更改它。
 
-[关于 AXIASolar 密钥资料。](learn-keys)
+[关于 AXIA 密钥资料。](learn-keys)
 
 ### 数据库
 

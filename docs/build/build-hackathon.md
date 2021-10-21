@@ -1,21 +1,21 @@
 ---
 id: build-hackathon
-title: AXIACoin Hackathons
-sidebar_label: AXIACoin Hackathons
+title: AXIA Hackathons
+sidebar_label: AXIA Hackathons
 slug: ../build-hackathon
 ---
 
 ## Join a Hackathon
 
-AXIACoin Foundation regularly supports developer focused events! Be the first to know by signing
-up for the [AXIACoin newsletter](https://axiacoin.network/) - the footer has a link to sign up!
+AXIA Foundation regularly supports developer focused events! Be the first to know by signing
+up for the [AXIA newsletter](https://AXIA.network/) - the footer has a link to sign up!
 
 ## Host a Hackathon
 
-As one of our objectives in the AXIACoin Foundation is promoting the
-[Web3 technology stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/axiasolar_stack.md)
+As one of our objectives in the AXIA Foundation is promoting the
+[Web3 technology stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/AXIA_stack.md)
 , we would like to support any individual or team who wants to organize a hackathon that gets
-more developers to understand AXIACoin and Substrate in your city or online.
+more developers to understand AXIA and Substrate in your city or online.
 
 We are not only providing technical resources for you, but we can have someone from our team give a
 hands-on workshop/presentation about the technology to help participants get started hacking on it
@@ -60,22 +60,22 @@ Get in touch with the W3F team by [email] or ask us via our
 - Implement Generalized State Channel/Plasma Chain
 - Decentralized Exchanges
 - Tools for monitoring validator performance
-- dApps across different parachains
+- dApps across different allychains
 
 ### Previous Hackathons
 
 Here are a few examples of hackathons W3F has facilitated and supported:
 
-- [AXIACoin Buildathon: India](https://axiasolar-buildathon.devfolio.co/) - This India-focused
+- [AXIA Buildathon: India](https://AXIA-buildathon.devfolio.co/) - This India-focused
   hackathon was a 9-week online event.
 
-- [Encode Hackathon](https://medium.com/encode-club/encode-hack-club-announcing-axiasolar-c7cc6cc12920) -
+- [Encode Hackathon](https://medium.com/encode-club/encode-hack-club-announcing-AXIA-c7cc6cc12920) -
   an externally facilitated event with a mix of learning challenges and prize pools for dApps
   as well as stand-alone blockchain project submissions.
 
-- [Hello World! by AXIACoin](https://gitcoin.co/hackathon/axiasolar/onboard) - A collaborative
-  hackathon celebrating the integration of AXIACoin and AXIALunar into the Gitcoin platform. Has many
-  sets of smaller challenges that will reward in either SOLAR or LUNAR.
+- [Hello World! by AXIA](https://gitcoin.co/hackathon/AXIA/onboard) - A collaborative
+  hackathon celebrating the integration of AXIA and AXIALunar into the Gitcoin platform. Has many
+  sets of smaller challenges that will reward in either AXC or LUNAR.
 
 - [Hacaxialunar](https://hacaxialunar.devpost.com/) - A 7-week online hackathon for
   developers to "Build a Blockchain" and submit your wildest tools, visualizations, and ideas to the
@@ -90,5 +90,5 @@ Here are a few examples of hackathons W3F has facilitated and supported:
 ## Support / Contact
 
 If you have any questions regarding organizing a hackathon, please free feel to contact us by
-[email](mailto:events@axiacoin.org) or ask us via
-[Riot](https://riot.im/app/#/room/#axiasolar-watercooler:matrix.org) chat.
+[email](mailto:events@AXIA.org) or ask us via
+[Riot](https://riot.im/app/#/room/#AXIA-watercooler:matrix.org) chat.

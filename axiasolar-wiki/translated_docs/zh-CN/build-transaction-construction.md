@@ -4,11 +4,11 @@ title: 交易创建和签名
 sidebar_label: 交易创建
 ---
 
-這页将讨论 AXIASolar 的交易格式以及如何创建、签名和提交交易。 与其它教程的页面一样，这一页展示了一些可用的工具。 **在整合时请前往每个工具的文档。**
+這页将讨论 AXIA 的交易格式以及如何创建、签名和提交交易。 与其它教程的页面一样，这一页展示了一些可用的工具。 **在整合时请前往每个工具的文档。**
 
 ## 交易格式
 
-AXIASolar 有一些所有交易的基本交易信息。
+AXIA 有一些所有交易的基本交易信息。
 
 - 地址(Address)：发送帐户的 SS58 编码地址。
 - 区块哈希(Block Hash)： [检查站](build-protocol-info#transaction-mortality) 区块。
@@ -38,9 +38,9 @@ AXIASolar 有一些所有交易的基本交易信息。
 
 Axia 提供了以下工具来帮助执行这些步骤。
 
-## AXIASolar-JS 工具
+## AXIA-JS 工具
 
-[AXIASolar-JS 工具](https://github.com/axiasolar-js/tools)包含一组用于与 Substrate 客户端进行交互的命令行工具，包括一个用于创建，签名和广播交易的名为“ Signer CLI”的工具。
+[AXIA-JS 工具](https://github.com/AXIA-js/tools)包含一组用于与 Substrate 客户端进行交互的命令行工具，包括一个用于创建，签名和广播交易的名为“ Signer CLI”的工具。
 
 本示例将使用`signer submit`命令，该命令将创建并提交交易。 `signer sendOffline`命令具有完全相同的 API，但不会广播交易。 `submit`和`sendOffline`必须连接到节点以获取当前元数据并构造一个有效交易。他们的 API 具有以下格式：
 
@@ -54,7 +54,7 @@ yarn run:signer <submit|sendOffline> --account <from-account-ss58> --ws <endpoin
 yarn run:signer sign --account <from-account-ss58> --seed <seed> --type <sr25519|ed25519> <payload>
 ```
 
-例如我们从 `121X5bEgTZcGQx5NZjwuTjqkoiG8B2wEAvrUFjuw24ZGZf2` 发送 0.5 SOLAR 到 `15vrtLsCQF3qRYUcaEeh4JwepolNJkpsrqojqnZPc2y`
+例如我们从 `121X5bEgTZcGQx5NZjwuTjqkoiG8B2wEAvrUFjuw24ZGZf2` 发送 0.5 AXC 到 `15vrtLsCQF3qRYUcaEeh4JwepolNJkpsrqojqnZPc2y`
 
 ```bash
 yarn run:signer submit --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --ws ws://127.0.0.1:9944 balances.transferKeepAlive 15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y 500000000000
@@ -173,21 +173,21 @@ const txHash = getTxHash(signedTx);
 
 1. Signer CLI (`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`)
 1. [Substrate API Sidecar](build-node-interaction#substrate-api-sidecar)
-1. [RPC](build-node-interaction#axiasolar-rpc)和`author_submitExtrinsic`或者 `author_submitAndWatchExtrinsic`，后者将使您订阅事件，并在交易得到验证且上链时得到事件的通知。
+1. [RPC](build-node-interaction#AXIA-rpc)和`author_submitExtrinsic`或者 `author_submitAndWatchExtrinsic`，后者将使您订阅事件，并在交易得到验证且上链时得到事件的通知。
 
 ## 注意
 
 在示例中使用的一些地址，请参阅[Subkey 文档](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)。
 
 ```bash
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `pulp gaze fuel ... mercy inherit equal` is account:
   Secret seed:      0x57450b3e09ba4598 ... ... ... ... ... ... ... .. 219756eeba80bb16
   Public key (hex): 0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   Account ID:       0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   SS58 Address:     121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2
 
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `exercise auction soft ... obey control easily` is account:
   Secret seed:      0x5f4bbb9fbb69261a ... ... ... ... ... ... ... .. 4691ed7d1130fbbd
   Public key (hex): 0xda04de6cd781c98acf0693dfb97c11011938ad22fcc476ed0089ac5aec3fe243

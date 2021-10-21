@@ -20,17 +20,17 @@ For brand-new learners of AXIALunar:
 - [Running a Validator on AXIALunar][validator]
 - [Staking as a Nominator on AXIALunar][nominator]
 
-For brand-new learners of AXIALunar's cousin network, AXIASolar, please head over to our [AXIASolar Wiki][axiasolar wiki].
+For brand-new learners of AXIALunar's cousin network, AXIA, please head over to our [AXIA Wiki][AXIA wiki].
 
-While AXIALunar does not support smart contracts natively, building apps on it is still possible (example: [RMRK.app](https://rmrk.app)). If you're interested in diving deeper into _proper_ development however, the [builders guide from AXIASolar's wiki][axiasolar-builders] applies to AXIALunar as well.
+While AXIALunar does not support smart contracts natively, building apps on it is still possible (example: [RMRK.app](https://rmrk.app)). If you're interested in diving deeper into _proper_ development however, the [builders guide from AXIA's wiki][AXIA-builders] applies to AXIALunar as well.
 
-[mooc]: https://mooc.axiacoin.org/course/blockchain-fundamentals/
+[mooc]: https://mooc.AXIA.org/course/blockchain-fundamentals/
 [overview]: axialunar-index
-[medium]: https://medium.com/axiacoin.network/axialunar-network-7446706b8f4c
+[medium]: https://medium.com/AXIA.network/axialunar-network-7446706b8f4c
 [create-account]: axialunar-claims
 [endpoints]: axialunar-endpoints
 [tokens]: https://claim.axialunar.network/
 [validator]: mirror-maintain-guides-how-to-validate-axialunar
 [nominator]: mirror-maintain-guides-how-to-nominate-axialunar
-[axiasolar wiki]: https://solar.wiki.axiacoin.network/
-[axiasolar-builders]: https://solar.wiki.axiacoin.network/docs/en/build-index
+[AXIA wiki]: https://solar.wiki.AXIA.network/
+[AXIA-builders]: https://solar.wiki.AXIA.network/docs/en/build-index

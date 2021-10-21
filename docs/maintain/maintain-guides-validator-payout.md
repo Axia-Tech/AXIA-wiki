@@ -8,10 +8,10 @@ slug: ../maintain-guides-validator-payout
 ## Era Points
 
 For every era (a period of time approximately 6 hours in length in AXIALunar, and 24 hours in
-AXIACoin), validators are paid proportionally to the amount of _era points_ they have collected. Era
+AXIA), validators are paid proportionally to the amount of _era points_ they have collected. Era
 points are reward points earned for payable actions like:
 
-- issuing validity statements for [parachain](../learn/learn-parachains.md) blocks.
+- issuing validity statements for [allychain](../learn/learn-allychains.md) blocks.
 - producing a non-uncle block in the Relay Chain.
 - producing a reference to a previously unreferenced uncle block.
 - producing a referenced uncle block.
@@ -36,7 +36,7 @@ Validators may also receive "tips" from senders as an incentive to include trans
 produced blocks. Validators will receive 100% of these tips directly.
 
 Validators will receive staking rewards in the form of the native token of that chain (LUNAR for
-AXIALunar and SOLAR for AXIACoin).
+AXIALunar and AXC for AXIA).
 
 For simplicity, the examples below will assume all validators have the same amount of era points,
 and received no tips.
@@ -47,7 +47,7 @@ Validator 1 Stake (v1): 18 tokens
 Validator 2 Stake (v2):  9 tokens
 Validator 3 Stake (v3):  8 tokens
 Validator 4 Stake (v4):  7 tokens
-Payout (p): 8 SOLAR
+Payout (p): 8 AXC
 
 Payout for each validator (v1 - v4):
 p / v = 8 / 4 = 2 tokens
@@ -61,23 +61,23 @@ who had only 7 tokens staked.
 ## Running Multiple Validators
 
 It is possible for a single entity to run multiple validators. Running multiple validators may
-provide a better risk/reward ratio. Assuming you have enough SOLAR, or enough stake nominates your
+provide a better risk/reward ratio. Assuming you have enough AXC, or enough stake nominates your
 validator, to ensure that your validators remain in the validator set, running multiple validators
 will result in a higher return than running a single validator.
 
-For the following example, assume you have 18 SOLAR to stake. For simplicity's sake, we will ignore
-nominators. Running a single validator, as in the example above, would net you 2 SOLAR in this era.
+For the following example, assume you have 18 AXC to stake. For simplicity's sake, we will ignore
+nominators. Running a single validator, as in the example above, would net you 2 AXC in this era.
 
-Note that while SOLAR is used as an example, this same formula would apply to LUNAR when running a
+Note that while AXC is used as an example, this same formula would apply to LUNAR when running a
 validator on AXIALunar.
 
 ```
 Validator Set Size (v): 4
-Validator 1 Stake (v1): 18 SOLAR <- Your validator
-Validator 2 Stake (v2):  9 SOLAR
-Validator 3 Stake (v3):  8 SOLAR
-Validator 4 Stake (v4):  7 SOLAR
-Payout (p): 8 SOLAR
+Validator 1 Stake (v1): 18 AXC <- Your validator
+Validator 2 Stake (v2):  9 AXC
+Validator 3 Stake (v3):  8 AXC
+Validator 4 Stake (v4):  7 AXC
+Payout (p): 8 AXC
 
 Your payout = (p / v) * 1 = (8 / 4) * 1 = 2
 ```
@@ -89,11 +89,11 @@ from each era.
 
 ```
 Validator Set Size (v): 4
-Validator 1 Stake (v1): 9 SOLAR <- Your first validator
-Validator 2 Stake (v2): 9 SOLAR <- Your second validator
-Validator 3 Stake (v3): 9 SOLAR
-Validator 4 Stake (v4): 8 SOLAR
-Payout (p): 8 SOLAR
+Validator 1 Stake (v1): 9 AXC <- Your first validator
+Validator 2 Stake (v2): 9 AXC <- Your second validator
+Validator 3 Stake (v3): 9 AXC
+Validator 4 Stake (v4): 8 AXC
+Payout (p): 8 AXC
 
 Your payout = (p / v) * 2 = (8 / 4) * 2 = 4
 ```
@@ -109,10 +109,10 @@ validators on the network.
 ## Slashing
 
 Although rewards are paid equally, slashes are relative to a validator's stake. Therefore, if you do
-have enough SOLAR to run multiple validators, it is in your best interest to do so. A slash of 30%
-will, of course, be more SOLAR for a validator with 18 SOLAR staked than one with 9 SOLAR staked.
+have enough AXC to run multiple validators, it is in your best interest to do so. A slash of 30%
+will, of course, be more AXC for a validator with 18 AXC staked than one with 9 AXC staked.
 
-Running multiple validators does not absolve you of the consequences of misbehavior. AXIACoin
+Running multiple validators does not absolve you of the consequences of misbehavior. AXIA
 punishes attacks that appear coordinated more severely than individual attacks. You should not, for
 example, run multiple validators hosted on the same infrastructure. A proper multi-validator
 configuration would ensure that they do not fail simultaneously.
@@ -123,13 +123,13 @@ remains the same (since it is percentage-based), their rewards are higher since 
 higher proportion of the total stake allocated to that validator.
 
 To clarify this, let us imagine two validators, `v1` and `v2`. Assume both are in the active set,
-have commission set to 0%, and are well-behaved. The only difference is that `v1` has 90 SOLAR
-nominating it and `v2` only has 10. If you nominate `v1`, it now has `90 + 10 = 100` SOLAR, and you
+have commission set to 0%, and are well-behaved. The only difference is that `v1` has 90 AXC
+nominating it and `v2` only has 10. If you nominate `v1`, it now has `90 + 10 = 100` AXC, and you
 will get 10% of the staking rewards for the next era. If you nominate `v2`, it now has
-`10 + 10 = 20` SOLAR nominating it, and you will get 50% of the staking rewards for the next era. In
+`10 + 10 = 20` AXC nominating it, and you will get 50% of the staking rewards for the next era. In
 actuality, it would be quite rare to see such a large difference between the stake of validators,
 but the same principle holds even for smaller differences. If there is a 10% slash of either
-validator, then you will lose 1 SOLAR in each case.
+validator, then you will lose 1 AXC in each case.
 
 ## Nominators and Validator Payments
 
@@ -140,7 +140,7 @@ all rewards are shared based on the stake behind each validator. This includes t
 validator itself, plus any stake bonded by nominators.
 
 > **NOTE:** Validators set their preference as a percentage of the block reward, _not_ an absolute
-> number of SOLAR. AXIACoin's block reward is based on the _total_ amount at stake, with the reward
+> number of AXC. AXIA's block reward is based on the _total_ amount at stake, with the reward
 > peaking when the amount staked is at 50% of the total supply. The commission is set as the amount
 > taken by the validator; that is, 0% commission means that the validator does not receive any
 > proportion of the rewards besides that owed to it from self-stake, and 100% commission means that
@@ -149,57 +149,57 @@ validator itself, plus any stake bonded by nominators.
 In the following examples, we can see the results of several different validator payment schemes and
 split between nominator and validator stake. We will assume a single nominator for each validator.
 However, there can be numerous nominators for each validator. Rewards are still distributed
-proportionally - for example, if the total rewards to be given to nominators is 2 SOLAR, and there are
-four nominators with equal stake bonded, each will receive 0.5 SOLAR. Note also that a single
+proportionally - for example, if the total rewards to be given to nominators is 2 AXC, and there are
+four nominators with equal stake bonded, each will receive 0.5 AXC. Note also that a single
 nominator may stake different validators.
 
 Each validator in the example has selected a different validator payment (that is, a percentage of
 the reward set aside directly for the validator before sharing with all bonded stake). The
-validator's payment percentage (in SOLAR, although the same calculations work for LUNAR) is listed in
+validator's payment percentage (in AXC, although the same calculations work for LUNAR) is listed in
 brackets (`[]`) next to each validator. Note that since the validator payment is public knowledge,
 having a low or non-existent validator payment may attract more stake from nominators, since they
 know they will receive a larger reward.
 
 ```
 Validator Set Size (v): 4
-Validator 1 Stake (v1) [20% commission]: 18 SOLAR (9 validator, 9 nominator)
-Validator 2 Stake (v2) [40% commission]:  9 SOLAR (3 validator, 6 nominator)
-Validator 3 Stake (v3) [10% commission]:  8 SOLAR (4 validator, 4 nominator)
-Validator 4 Stake (v4) [ 0% commission]:  6 SOLAR (1 validator, 5 nominator)
-Payout (p): 8 SOLAR
+Validator 1 Stake (v1) [20% commission]: 18 AXC (9 validator, 9 nominator)
+Validator 2 Stake (v2) [40% commission]:  9 AXC (3 validator, 6 nominator)
+Validator 3 Stake (v3) [10% commission]:  8 AXC (4 validator, 4 nominator)
+Validator 4 Stake (v4) [ 0% commission]:  6 AXC (1 validator, 5 nominator)
+Payout (p): 8 AXC
 
 Payout for each validator (v1 - v4):
-p / v = 8 / 4 = 2 SOLAR
+p / v = 8 / 4 = 2 AXC
 
 v1:
-(0.2 * 2) = 0.4 SOLAR -> validator payment
+(0.2 * 2) = 0.4 AXC -> validator payment
 (2 - 0.4) = 1.6 -> shared between all stake
 (9 / 18) * 1.6 = 0.8 -> validator stake share
 (9 / 18) * 1.6 = 0.8 -> nominator stake share
-v1 validator total reward: 0.4 + 0.8 = 1.2 SOLAR
-v1 nominator reward: 0.8 SOLAR
+v1 validator total reward: 0.4 + 0.8 = 1.2 AXC
+v1 nominator reward: 0.8 AXC
 
 v2:
-(0.4 * 2) = 0.8 SOLAR -> validator payment
+(0.4 * 2) = 0.8 AXC -> validator payment
 (2 - 0.8) = 1.2 -> shared between all stake
 (3 / 9) * 1.2 = 0.4 -> validator stake share
 (6 / 9) * 1.2 = 0.8 -> nominator stake share
-v2 validator total reward: 0.8 + 0.4 = 1.2 SOLAR
-v2 nominator reward: 0.8 SOLAR
+v2 validator total reward: 0.8 + 0.4 = 1.2 AXC
+v2 nominator reward: 0.8 AXC
 
 v3:
-(0.1 * 2) = 0.2 SOLAR -> validator payment
+(0.1 * 2) = 0.2 AXC -> validator payment
 (2 - 0.2) = 1.8 -> shared between all stake
 (4 / 8) * 1.8 = 0.9 -> validator stake share
 (4 / 8) * 1.8 = 0.9 -> nominator stake share
-v3 validator total reward: 0.2 + 0.9 SOLAR = 1.1 SOLAR
-v3 nominator reward: 0.9 SOLAR
+v3 validator total reward: 0.2 + 0.9 AXC = 1.1 AXC
+v3 nominator reward: 0.9 AXC
 
 v4:
-(0 * 2) = 0 SOLAR -> validator payment
+(0 * 2) = 0 AXC -> validator payment
 (2 - 0) = 2.0 -> shared between all stake
 (1 / 6) * 2 = 0.33 -> validator stake share
 (5 / 6) * 2 = 1.67 -> nominator stake share
-v4 validator total reward: 0 + 0.33 SOLAR = 0.33 SOLAR
-v4 nominator reward: 1.67 SOLAR
+v4 validator total reward: 0 + 0.33 AXC = 0.33 AXC
+v4 nominator reward: 1.67 AXC
 ```

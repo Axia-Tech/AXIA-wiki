@@ -1,7 +1,7 @@
 import replace from "replace-in-file";
 import yargs from "yargs";
 import replacements from "./inject-dict.json";
-import { ApiPromise, WsProvider } from '@axiasolar-js/api';
+import { ApiPromise, WsProvider } from '@AXIA-js/api';
 import * as computed from "./computed.mjs";
 
 const argv = yargs(process.argv)
@@ -27,7 +27,7 @@ if (!argv.rootDir) {
   throw new Error("Must pass a --rootDir option.");
 }
 
-const node = argv.node || "wss://axialunar-rpc.axiasolar.io/";
+const node = argv.node || "wss://axialunar-rpc.AXIA.io/";
 console.log("Connecting to node " + node);
 
 let filledDict = {};
@@ -39,9 +39,9 @@ ApiPromise.create({ provider: wsProvider })
     console.log("Connected");
 
     let wiki;
-    if (argv.rootDir.indexOf("axiasolar-wiki") !== -1) {
-      console.log("Working on the AXIASolar wiki");
-      wiki = "axiasolar";
+    if (argv.rootDir.indexOf("AXIA-wiki") !== -1) {
+      console.log("Working on the AXIA wiki");
+      wiki = "AXIA";
     } else {
       console.log("Working on AXIALunar Guide");
       wiki = "axialunar";
@@ -86,8 +86,8 @@ ApiPromise.create({ provider: wsProvider })
       if (!chainValue) {
         console.log("No value found, seeking default for " + replacement.tpl);
         if (typeof replacement.default === "object") {
-          if (wiki === "axiasolar") {
-            chainValue = replacement.default.axiasolar;
+          if (wiki === "AXIA") {
+            chainValue = replacement.default.AXIA;
           } else {
             chainValue = replacement.default.axialunar;
           }
@@ -138,11 +138,11 @@ let v = setInterval(function () {
           .map((result) => result.file);
         console.log("Modified files:", changedFiles);
 
-        let from = [/\{\{ axialunar: [\s\S]+? :axialunar \}\}/gim, /\{\{ axiasolar: [\s\S]+? :axiasolar \}\}/gim];
+        let from = [/\{\{ axialunar: [\s\S]+? :axialunar \}\}/gim, /\{\{ AXIA: [\s\S]+? :AXIA \}\}/gim];
         let to =
           argv.rootDir.indexOf("axialunar-guide") !== -1
             ? [(match) => match.replace("{{ axialunar: ", "").replace(" :axialunar }}", ""), ""]
-            : ["", (match) => match.replace("{{ axiasolar: ", "").replace(" :axiasolar }}", "")];
+            : ["", (match) => match.replace("{{ AXIA: ", "").replace(" :AXIA }}", "")];
         let results2 = replace.sync({
           files: [`${argv.rootDir}/docs/**/**/*.html`],
           from: from,
@@ -151,7 +151,7 @@ let v = setInterval(function () {
         const changedFiles2 = results2
           .filter((result) => result.hasChanged)
           .map((result) => result.file);
-        console.log("Modified files for axialunar/axiasolar difference:", changedFiles2);
+        console.log("Modified files for axialunar/AXIA difference:", changedFiles2);
 
         process.exit(0);
       } catch (error) {
@@ -184,9 +184,9 @@ function applyFilter(value, filter, wiki) {
   console.log(`Applying ${filter} to ${wiki} value ${value}`);
 
   const values = {
-    axiasolar: {
+    AXIA: {
       precision: 1e10,
-      symbol: "SOLAR",
+      symbol: "AXC",
     },
     axialunar: {
       precision: 1e12,

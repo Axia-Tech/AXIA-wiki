@@ -5,10 +5,10 @@ sidebar_label: Nominator Guide
 slug: ../../maintain-guides-how-to-nominate-axialunar
 ---
 
-> The following information applies to the AXIALunar network. If you want to nominate on AXIACoin,
-> check out the [AXIACoin guide](../maintain-guides-how-to-validate-axiasolar.md) instead.
+> The following information applies to the AXIALunar network. If you want to nominate on AXIA,
+> check out the [AXIA guide](../maintain-guides-how-to-validate-AXIA.md) instead.
 
-Nominators are one type of participant in the staking subsystem of AXIACoin. They are responsible
+Nominators are one type of participant in the staking subsystem of AXIA. They are responsible
 for appointing their stake to the validators who are the second type of participant. By appointing
 their stake, they are able to elect the active set of validators and share in the rewards that are
 paid out.
@@ -25,7 +25,7 @@ validator gets slashed.
 
 > If you prefer a video format, the following videos related to staking are available:
 >
-> - [Staking with a Ledger and AXIACoinJS Apps](https://www.youtube.com/watch?v=VN4S8MofEW8)
+> - [Staking with a Ledger and AXIAJS Apps](https://www.youtube.com/watch?v=VN4S8MofEW8)
 > - [Staking with a Ledger and Ledger Live](https://www.youtube.com/watch?v=obZyGeHrm_M&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=43)
 
 Nominators are recommended to set up two separate stash and controller accounts. Explanation and
@@ -36,16 +36,16 @@ You can generate your stash and controller account via any of the recommended me
 detailed on the [account generation][] page.
 
 Starting with runtime version v2023 natively included in client version
-[0.8.23](https://github.com/axia-tech/axiasolar/releases/tag/v0.8.23), payouts can go to any custom
+[0.8.23](https://github.com/axia-tech/AXIA/releases/tag/v0.8.23), payouts can go to any custom
 address. If you'd like to redirect payments to an account that is neither the controller nor the
 stash account, set one up. Note that it is extremely unsafe to set an exchange address as the
 recipient of the staking rewards.
 
-## Using AXIACoin-JS UI
+## Using AXIA-JS UI
 
 ### Step 1: Bond your tokens
 
-On the [AXIACoin-JS UI](https://axiasolar.js.org/apps) navigate to the "Staking" tab (within the
+On the [AXIA-JS UI](https://AXIA.js.org/apps) navigate to the "Staking" tab (within the
 "Network" menu).
 
 The "Staking Overview" subsection will show you all the active validators and their information -
@@ -55,22 +55,22 @@ last block number that they produced. If you click on the chart button it will t
 "Validator Stats" page for that validator that shows you more detailed and historical information
 about the validator's stake, rewards and slashes.
 
-The "Account actions" subsection ([link](https://axiasolar.js.org/apps/#/staking/actions)) allows you
+The "Account actions" subsection ([link](https://AXIA.js.org/apps/#/staking/actions)) allows you
 to stake and nominate.
 
-The "Payouts" subsection ([link](https://axiasolar.js.org/apps/#/staking/payouts)) allows you to
+The "Payouts" subsection ([link](https://AXIA.js.org/apps/#/staking/payouts)) allows you to
 claim rewards from staking.
 
-The "Targets" subsection ([link](https://axiasolar.js.org/apps/#/staking/targets)) will help you
+The "Targets" subsection ([link](https://AXIA.js.org/apps/#/staking/targets)) will help you
 estimate your earnings and this is where it's good to start picking favorites.
 
-The "Waiting" subsection ([link](https://axiasolar.js.org/apps/#/staking/waiting)) lists all pending
+The "Waiting" subsection ([link](https://AXIA.js.org/apps/#/staking/waiting)) lists all pending
 validators that are awaiting more nominations to enter the active validator set. Validators will
 stay in the waiting queue until they have enough LUNAR backing them (as allocated through the
 [Phragmén election mechanism](../../learn/learn-phragmen.md)). It is possible validator can remain in the queue
 for a very long time if they never get enough backing.
 
-The "Validator Stats" subsection ([link](https://axiasolar.js.org/apps/#/staking/query)) allows you
+The "Validator Stats" subsection ([link](https://AXIA.js.org/apps/#/staking/query)) allows you
 to query a validator's stash address and see historical charts on era points, elected stake,
 rewards, and slashes.
 
@@ -94,7 +94,7 @@ earn compound interest.
 
 ![Payout account selection dropdown with the custom account option highlighted](../../assets/payout/01.png)
 
-> These concepts have been further explained in AXIACoin's
+> These concepts have been further explained in AXIA's
 > [UI Walkthrough Video](https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8)
 
 ### Step 2: Nominate a validator
@@ -113,7 +113,7 @@ Select them, confirm the transaction, and you're done - you are now nominating. 
 will become active in the next era. Eras last six hours on AXIALunar - depending on when you do this,
 your nominations may become active almost immediately, or you may have to wait almost the entire six
 hours before your nominations are active. You can check how far along AXIALunar is in the current era
-on the [Staking page](https://axiasolar.js.org/apps/#/staking).
+on the [Staking page](https://AXIA.js.org/apps/#/staking).
 
 Assuming at least one of your nominations ends up in the active validator set, you will start to get
 rewards allocated to you. In order to claim them (i.e., add them to your account), you must manually
@@ -130,17 +130,17 @@ are available [here](../maintain-guides-how-to-unbond.md).
 
 ## Using Command-Line Interface (CLI)
 
-Apart from using the AXIACoin-JS UI to participate in the staking, you can do all these things in
-CLI instead. The CLI approach allows you to interact with the AXIACoin / AXIALunar network without
+Apart from using the AXIA-JS UI to participate in the staking, you can do all these things in
+CLI instead. The CLI approach allows you to interact with the AXIA / AXIALunar network without
 going to the AXIAdoJS dashboard.
 
-### Step 1: Install @axiasolar-js/api-cli
+### Step 1: Install @AXIA-js/api-cli
 
 We assume you have installed [NodeJS with npm](https://nodejs.org). Run the following command to
-install the `@axiasolar-js/api-cli` globally:
+install the `@AXIA-js/api-cli` globally:
 
 ```bash
-npm install -g @axiasolar-js/api-cli
+npm install -g @AXIA-js/api-cli
 ```
 
 ### Step 2. Bond your LUNAR
@@ -148,14 +148,14 @@ npm install -g @axiasolar-js/api-cli
 Executing the following command:
 
 ```bash
-axiasolar-js-api --seed "MNEMONIC_AHRASE" tx.staking.bond CONTROLLER_ADDRESS NUMBER_OF_TOKENS REWARD_DESTINATION --ws WEBSOCKET_ENDPOINT
+AXIA-js-api --seed "MNEMONIC_AHRASE" tx.staking.bond CONTROLLER_ADDRESS NUMBER_OF_TOKENS REWARD_DESTINATION --ws WEBSOCKET_ENDPOINT
 ```
 
 `CONTROLLER_ADDRESS`: An address you would like to bond to the stash account. Stash and Controller
 can be the same address but it is not recommended since it defeats the security of the two-account
 staking model.
 
-`NUMBER_OF_TOKENS`: The number of LUNAR / SOLAR you would like to stake to the network. **Note**: LUNAR
+`NUMBER_OF_TOKENS`: The number of LUNAR / AXC you would like to stake to the network. **Note**: LUNAR
 has twelve decimal places and is always represented as an integer with zeroes at the end. So 1 LUNAR =
 1_000_000_000_000 Plancks.
 
@@ -170,7 +170,7 @@ has twelve decimal places and is always represented as an integer with zeroes at
 Example:
 
 ```bash
-axiasolar-js-api --seed "xxxx xxxxx xxxx xxxxx" tx.staking.bond DMTHrNcmA8QbqRS4rBq8LXn8ipyczFoNMb1X4cY2WD9tdBX 1000000000000 Staked --ws wss://axialunar-rpc.axiasolar.io/
+AXIA-js-api --seed "xxxx xxxxx xxxx xxxxx" tx.staking.bond DMTHrNcmA8QbqRS4rBq8LXn8ipyczFoNMb1X4cY2WD9tdBX 1000000000000 Staked --ws wss://axialunar-rpc.AXIA.io/
 ```
 
 Result:
@@ -185,22 +185,22 @@ Result:
 
 You can check the transaction status by using the value of the `InBlock` in
 [AXIAscan](https://axiascan.io/pre/axialunar). Also, you can verify the bonding state under the
-[Staking](https://axiasolar.js.org/apps/#/staking/actions) page on the AXIACoin-JS Apps Dashboard.
+[Staking](https://AXIA.js.org/apps/#/staking/actions) page on the AXIA-JS Apps Dashboard.
 
 ### Step 3. Nominate a validator
 
 To nominate a validator, you can execute the following command:
 
 ```bash
-axiasolar-js-api --seed "MNEMONIC_AHRASE" tx.staking.nominate '["VALIDATOR_ADDRESS"]' --ws WS_ENDPOINT
+AXIA-js-api --seed "MNEMONIC_AHRASE" tx.staking.nominate '["VALIDATOR_ADDRESS"]' --ws WS_ENDPOINT
 ```
 
 ```bash
-axiasolar-js-api --seed "xxxx xxxxx xxxx xxxxx" tx.staking.nominate '["CmD9vaMYoiKe7HiFnfkftwvhKbxN9bhyjcDrfFRGbifJEG8","E457XaKbj2yTB2URy8N4UuzmyuFRkcdxYs67UvSgVr7HyFb"]' --ws wss://axialunar-rpc.axiasolar.io/
+AXIA-js-api --seed "xxxx xxxxx xxxx xxxxx" tx.staking.nominate '["CmD9vaMYoiKe7HiFnfkftwvhKbxN9bhyjcDrfFRGbifJEG8","E457XaKbj2yTB2URy8N4UuzmyuFRkcdxYs67UvSgVr7HyFb"]' --ws wss://axialunar-rpc.AXIA.io/
 ```
 
 After a few seconds, you should see the hash of the transaction and if you would like to verify the
-nomination status, you can check that on the AXIACoin-JS UI as well.
+nomination status, you can check that on the AXIA-JS UI as well.
 
 [validators]: maintain-guides-how-to-validate-axialunar.md
 [keys]: ../../learn/learn-keys.md###"controller"-and-"stash"-keys

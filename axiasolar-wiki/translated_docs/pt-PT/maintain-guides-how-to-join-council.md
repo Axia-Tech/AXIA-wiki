@@ -4,17 +4,17 @@ title: Join the Council
 sidebar_label: Join the Council
 ---
 
-The council is an elected body of on-chain accounts that are intended to represent the passive stakeholders of AXIASolar and/or AXIALunar. The council has two major tasks in governance: proposing referenda and vetoing dangerous or malicious referenda. For more information on the council, see the [governance page](learn-governance#council). This guide will walk you through entering your candidacy to the council.
+The council is an elected body of on-chain accounts that are intended to represent the passive stakeholders of AXIA and/or AXIALunar. The council has two major tasks in governance: proposing referenda and vetoing dangerous or malicious referenda. For more information on the council, see the [governance page](learn-governance#council). This guide will walk you through entering your candidacy to the council.
 
 ## Submit Candidacy
 
-Submitting your candidacy for the council requires a small bond of SOLARs / LUNARs. The bond will be forfeited if your candidacy does not win or become a runner-up, but if you become a member of the council you will eventually get your bond back. Runner-ups are selected after every round and are reserved members in case one of the winners gets forcefully removed.
+Submitting your candidacy for the council requires a small bond of AXCs / LUNARs. The bond will be forfeited if your candidacy does not win or become a runner-up, but if you become a member of the council you will eventually get your bond back. Runner-ups are selected after every round and are reserved members in case one of the winners gets forcefully removed.
 
 > Currently the bond for submitting a council candidacy on AXIALunar is 1 LUNAR.
 
 It is a good idea to announce your council intention before submitting your candidacy so that your supporters will know when they can start to vote for you. You can also vote for yourself in case no one else does.
 
-Go to [AXIASolar Apps Dashboard](https://axiasolar.js.org/apps) and navigate to the "Council" tab. Click the button on the right that says "Submit Candidacy."
+Go to [AXIA Apps Dashboard](https://AXIA.js.org/apps) and navigate to the "Council" tab. Click the button on the right that says "Submit Candidacy."
 
 ![a](assets/council/submit_candidacy.png)
 
@@ -40,4 +40,4 @@ If you are one of the lucky ones to win a council election you will see your acc
 
 ![e](assets/council/member.png)
 
-Congratulations! Now you are able to participate on the council by making motions or vetoing proposals. It's a good idea to now join the public [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org).
+Congratulations! Now you are able to participate on the council by making motions or vetoing proposals. It's a good idea to now join the public [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org).

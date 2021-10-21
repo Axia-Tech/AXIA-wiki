@@ -6,7 +6,7 @@ sidebar_label: Parameters
 
 ### Periods of common actions and attributes
 
-_NOTE: AXIALunar is 4x as fast as AXIASolar will be, except for blocktimes where AXIASolar will also have 6 second blocktimes._
+_NOTE: AXIALunar is 4x as fast as AXIA will be, except for blocktimes where AXIA will also have 6 second blocktimes._
 
 - Block: 6 seconds
 - Epoch: 1 hour (600 slots x 6 seconds)

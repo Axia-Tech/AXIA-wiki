@@ -64,7 +64,7 @@ function HomeNav() {
             id="homePage.navContainer.learn.content"
             description="Content of Learn Navigator in Home page"
           >
-            AXIASolar is a sharded protocol that enables blockchain networks to
+            AXIA is a sharded protocol that enables blockchain networks to
             operate together seamlessly.
           </Translate>
         </NavItemContent>
@@ -84,7 +84,7 @@ function HomeNav() {
             description="Content of Build Navigator in Home page"
           >
             Most up-to-date information on the status of the development tools
-            in the AXIASolar ecosystem.
+            in the AXIA ecosystem.
           </Translate>
         </NavItemContent>
       </NavItem>
@@ -127,7 +127,7 @@ function HomeFooter() {
           id="homepage.homeFooter.learnAXIALunar.title"
           description="Title of Learn AXIALunar Footer Section in Home Page"
         >
-          Learn about AXIASolar’s canary network AXIALunar
+          Learn about AXIA’s canary network AXIALunar
         </Translate>
       </h3>
       <p className="">
@@ -135,14 +135,14 @@ function HomeFooter() {
           id="homepage.homeFooter.learnAXIALunar.content"
           description="Content of Learn AXIALunar Footer Section in Home Page"
         >
-          AXIALunar is AXIASolar’s “canary network”, a scalable, multi-chain network
-          for radical innovation and early stage AXIASolar deployments. For
-          developers, AXIALunar is a proving ground for all things AXIASolar I.e
-          runtime upgrades, on-chain governance, parachains, parathreads, etc.
+          AXIALunar is AXIA’s “canary network”, a scalable, multi-chain network
+          for radical innovation and early stage AXIA deployments. For
+          developers, AXIALunar is a proving ground for all things AXIA I.e
+          runtime upgrades, on-chain governance, allychains, parathreads, etc.
         </Translate>
       </p>
       <div>
-        <a href="https://lunar.wiki.axiacoin.network">
+        <a href="https://lunar.wiki.AXIA.network">
           <button className="btn btn-lg btn-primary btn-bg-primary">
             <Translate
               id="homepage.homeFooter.learnAXIALunar.discoverAXIALunarButton"
@@ -174,9 +174,9 @@ function HomeFooter() {
           id="homepage.homeFooter.improveWiki.content"
           description="Content of Improve Wiki Footer Section in Home page"
         >
-          This wiki was started by and is maintained by AXIACoin Foundation. It is
+          This wiki was started by and is maintained by AXIA Foundation. It is
           an open-source-ish project and aims to be the most extensive resource
-          of knowledge on AXIASolar and the AXIASolar ecosystem.
+          of knowledge on AXIA and the AXIA ecosystem.
         </Translate>
       </p>
       <div>
@@ -191,7 +191,7 @@ function HomeFooter() {
           </button>
         </a>
         <a
-          href="https://crowdin.com/project/axiasolar-wiki"
+          href="https://crowdin.com/project/AXIA-wiki"
           target="_blank"
           rel="noreferrer noopener"
         >

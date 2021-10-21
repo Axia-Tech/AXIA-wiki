@@ -30,42 +30,42 @@
   },
   {
     "tpl": "proposal_min_bond",
-    "default": { "axialunar": 3.333, "axiasolar": 100 },
+    "default": { "axialunar": 3.333, "AXIA": 100 },
     "path": "consts.treasury.proposalBondMinimum",
     "filters": ["humanReadableToken"]
   },
   {
     "tpl": "tip_deposit_amount",
-    "default": { "axialunar": 0.166, "axiasolar": 1 },
+    "default": { "axialunar": 0.166, "AXIA": 1 },
     "path": "consts.treasury.tipReportDepositBase",
     "filters": ["humanReadableToken"]
   },
   {
     "tpl": "tip_finders_fee",
-    "default": { "axialunar": 20, "axiasolar": 20 },
+    "default": { "axialunar": 20, "AXIA": 20 },
     "path": "consts.treasury.tipFindersFee"
   },
   {
     "tpl": "spend_period",
-    "default": { "axialunar": 6, "axiasolar": 24 },
+    "default": { "axialunar": 6, "AXIA": 24 },
     "path": "consts.treasury.spendPeriod",
     "filters": ["blocksToDays"]
   },
   {
     "tpl": "identity_reserve_funds",
-    "default": { "axialunar": 0.033333, "axiasolar": 20.2580 },
+    "default": { "axialunar": 0.033333, "AXIA": 20.2580 },
     "path": "consts.identity.reserveFunds",
     "filters": ["humanReadableToken"]
   },
   {
     "tpl": "identity_sub_reserve_funds",
-    "default": { "axialunar": 0.006666, "axiasolar": 20.0530 },
+    "default": { "axialunar": 0.006666, "AXIA": 20.0530 },
     "path": "consts.identity.reserveFunds",
     "filters": ["humanReadableToken"]
   },
   {
     "tpl": "identity_field_funds",
-    "default": { "axialunar": 0.008333, "axiasolar": 0.0660 },
+    "default": { "axialunar": 0.008333, "AXIA": 0.0660 },
     "path": "consts.identity.reserveFieldFunds",
     "filters": ["humanReadableToken"]
   },
@@ -74,12 +74,12 @@
     "default": "256"
   },
   {
-    "tpl": "axiasolar_max_nominators",
+    "tpl": "AXIA_max_nominators",
     "default": "256"
   },
   {
     "tpl": "dot_ipfs_pdf_url",
     "computed": true,
-    "default": "https://ipfs.io/ipfs/QmeUFdSfuY9Ds78Zof4UN8VWoR9mN5Kuzgrtc93eyoDF9v?filename=axiasolar-wiki.pdf"
+    "default": "https://ipfs.io/ipfs/QmeUFdSfuY9Ds78Zof4UN8VWoR9mN5Kuzgrtc93eyoDF9v?filename=AXIA-wiki.pdf"
   }
 ]

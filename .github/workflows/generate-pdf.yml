@@ -21,15 +21,15 @@ jobs:
         run: |
           yarn
           yarn mirror
-          yarn axiasolar:start &
+          yarn AXIA:start &
           while ! nc -z localhost 3000; do
               sleep 1
               echo waiting for website up...
           done
-          yarn axiasolar:pdf
+          yarn AXIA:pdf
 
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
-          name: axiasolar-wiki
-          path: website/static/axiasolar-wiki.pdf
+          name: AXIA-wiki
+          path: website/static/AXIA-wiki.pdf

@@ -8,11 +8,11 @@ sidebar_label: Community
 
 [AXIALunar forum](https://forum.axialunar.network/)
 
-[AXIALunar chat](https://riot.im/app/#/room/#axialunarwatercooler:axiasolar.builders)
+[AXIALunar chat](https://riot.im/app/#/room/#axialunarwatercooler:AXIA.builders)
 
 ## Get help claiming LUNAR
 
-[LUNAR Claims Support chat](https://riot.im/app/#/room/#LUNARAClaims:axiasolar.builders)
+[LUNAR Claims Support chat](https://riot.im/app/#/room/#LUNARAClaims:AXIA.builders)
 
 ## Report an issue or submit bugs
 
@@ -20,7 +20,7 @@ sidebar_label: Community
 
 ## Validator chat
 
-[Validator chat (English)](https://riot.im/app/#/room/#AXIALunarValidatorLounge:axiasolar.builders)
+[Validator chat (English)](https://riot.im/app/#/room/#AXIALunarValidatorLounge:AXIA.builders)
 
 To join the Chinese Validator chat, message [Anson](https://raw.githubusercontent.com/axialunarnetwork/userguide/master/chinese-language-validators-wechat.png?token=ABIBK6VM3MAOKWE43GM3JHC5G3ARG)
 

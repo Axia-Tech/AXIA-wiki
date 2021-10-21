@@ -6,11 +6,11 @@ slug: ../maintain-guides-how-to-setup-a-validator-with-reverse-proxy
 ---
 
 This guide assumes that you have already configured your hardware with the appropriate specs. It has the same configuration
-as the [axiasolar validator setup](https://github.com/axia-tech/axiasolar-secure-validator).
+as the [AXIA validator setup](https://github.com/axia-tech/AXIA-secure-validator).
 
-> NOTE: Because validators of parachains need to have publicly accessible IP addresses and ports to receive connections from
-> parachain collators, adding a proxy may potentially reduce connectivity and result in lower era points or the inability to
-> validate parachain blocks. If using a proxy, it's recommended to keep an eye out on networking metrics.
+> NOTE: Because validators of allychains need to have publicly accessible IP addresses and ports to receive connections from
+> allychain collators, adding a proxy may potentially reduce connectivity and result in lower era points or the inability to
+> validate allychain blocks. If using a proxy, it's recommended to keep an eye out on networking metrics.
 
 We will walk you through how to configure a reverse proxy using NGINX in front of your validator node. The
 validator uses the reverse proxy to filter traffic, whereby additional adjustments can be made to respond to a DDoS attack.
@@ -27,7 +27,7 @@ for this setup.
 In this example, we will assign the port number `2435` to the proxy port and the port number `30333` to the p2p port.
 To enable the firewall and the use of the ports, allow SSH access.
 
-> NOTE: For parachains, you will need to allow for both inbound and outbound traffic on the p2p port. Since the proxy
+> NOTE: For allychains, you will need to allow for both inbound and outbound traffic on the p2p port. Since the proxy
 > port is the public-facing port, this will need to have inbound and outbound traffic open, with the normal p2p port closed.
 
 ```bash
@@ -64,7 +64,7 @@ SystemMaxFileSize=512M
 SystemMaxFiles=100
 ```
 
-Check out the [example journald configuration file](https://github.com/axia-tech/axiasolar-secure-validator/blob/master/ansible/roles/axiasolar-validator/files/journald.conf) for more available options.
+Check out the [example journald configuration file](https://github.com/axia-tech/AXIA-secure-validator/blob/master/ansible/roles/AXIA-validator/files/journald.conf) for more available options.
 
 Finally, run the following command to restart the journald service:
 
@@ -113,7 +113,7 @@ mkdir /etc/nginx/streams-enabled
 ```
 
 Now, inside the newly created directory `/etc/nginx/streams-enabled/`, create the proxy service file called
-`axiasolar-proxy.conf` with the following content:
+`AXIA-proxy.conf` with the following content:
 
 > Use the previously defined ports: port `2435` for the proxy port & port number `30333` for the p2p port.
 
@@ -124,10 +124,10 @@ server {
 }
 ```
 
-Change the permissions of the file `axiasolar-proxy.conf` accordingly:
+Change the permissions of the file `AXIA-proxy.conf` accordingly:
 
 ```bash
-chmod 0600 axiasolar-proxy.conf
+chmod 0600 AXIA-proxy.conf
 ```
 
 Finally, restart NGINX with the following command:
@@ -136,14 +136,14 @@ Finally, restart NGINX with the following command:
 service nginx restart
 ```
 
-### 4. Defining your proxy port and p2p port in the axiasolar command
+### 4. Defining your proxy port and p2p port in the AXIA command
 
 These are some of the flags you are going to use when executing the command.
 
 `--public-addr <VALIDATOR_IP>, <PROXY_PORT>` - This flag defines the validator's IP and the proxy port
 that all other nodes in the network will connect to.
 
-`--listen-addr <LOCALHOST>, <P2P_PORT>` - This flag defines the p2p port that the axiasolar application
+`--listen-addr <LOCALHOST>, <P2P_PORT>` - This flag defines the p2p port that the AXIA application
 will use to connect to the NGINX reverse proxy.
 
 #### P2P Networking
@@ -164,12 +164,12 @@ specifies wanting the network to reach the validator IPv4 address with TCP packe
 
 ##### listen-addr
 
-`listen-addr` - the specification of what port the axiasolar application will connect to the reverse proxy.
+`listen-addr` - the specification of what port the AXIA application will connect to the reverse proxy.
 In our example, `/ip4/0.0.0.0/tcp/<P2P_PORT>`
 specifies that you want to listen to NGINX on the localhost address (`0.0.0.0`, or all interfaces), with TCP
 packets on the pre-defined p2p port.
 
-- `P2P_PORT` - the port that the axiasolar application connects to NGINX.
+- `P2P_PORT` - the port that the AXIA application connects to NGINX.
 
 #### Starting the validator with the NGINX proxy
 
@@ -180,13 +180,13 @@ Start your validator with the `--validator` flag:
 
 ```bash
 # Validator Node
-axiasolar \
+AXIA \
   --name My_Validator_Name \
   --validator \
   --public-addr=/ip4/IP_ADDRESS/tcp/2435 \
   --listen-addr=/ip4/0.0.0.0/tcp/30333 \
   --rpc-methods=Unsafe \
-  --chain=AXIACoin
+  --chain=AXIA
 
 ```
 

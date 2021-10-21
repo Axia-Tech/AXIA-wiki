@@ -4,13 +4,13 @@ title: Balance Transfers
 sidebar_label: How to transfer Balances
 ---
 
-Balance transfers are used to send balance from one account to another account. To start transferring balances, we will begin by using [AXIASolar-JS Apps][]. This guide assumes that you've already [created an account](learn-account-generation) and have some funds that will be transferred.
+Balance transfers are used to send balance from one account to another account. To start transferring balances, we will begin by using [AXIA-JS Apps][]. This guide assumes that you've already [created an account](learn-account-generation) and have some funds that will be transferred.
 
-## AXIASolar-JS Apps
+## AXIA-JS Apps
 
-> NOTE: In this walkthrough we will be using the AXIASolar network. If you would like to switch to AXIALunar or a different network, you can change it by clicking the top left navigation dropdown and selecting a different network.
+> NOTE: In this walkthrough we will be using the AXIA network. If you would like to switch to AXIALunar or a different network, you can change it by clicking the top left navigation dropdown and selecting a different network.
 
-Let's begin by opening [AXIASolar-JS Apps][]. There are two ways to make a balance transfer:
+Let's begin by opening [AXIA-JS Apps][]. There are two ways to make a balance transfer:
 
 1. By using the "Transfer" tab in the "Accounts" dropdown (located on the top navigational menu).
 2. Clicking the "send" button while in the "Accounts" page.
@@ -35,17 +35,17 @@ After setting your inputs correctly, click the "Make Transfer" button and confir
 
 ### Keep-Alive Checks
 
-At an [extrinsic](glossary#extrinsic) level, there are two main ways to transfer funds from one account to another. These are `transfer` and `transfer_keep_alive`. `transfer` will allow you to send SOLARs regardless of the consequence; `transfer_keep_alive` will not allow you to send an amount that would allow the sending account to be removed due to it going below the existential deposit.
+At an [extrinsic](glossary#extrinsic) level, there are two main ways to transfer funds from one account to another. These are `transfer` and `transfer_keep_alive`. `transfer` will allow you to send AXCs regardless of the consequence; `transfer_keep_alive` will not allow you to send an amount that would allow the sending account to be removed due to it going below the existential deposit.
 
-By default, AXIASolar-JS Apps will use `transfer_keep_alive`, ensuring that the account you send from cannot drop below the existential deposit (1 SOLAR or 0.001666 LUNAR). However, it may be that you do not want to keep this account alive (for example, because you are moving all of your funds to a different address). In this case, click on the "keep-alive" toggle at the bottom of the modal window. The label should switch from "Transfer with account keep-alive checks"(`transfer_keep_alive` will be used) to "Normal transfer without keep-alive checks" (`transfer` extrinsic will be used). As a common use case for using normal transfers is to entirely clear out the account, a second toggle will appear if you have the keep-alive check turned off that will send all the tokens in the account, minus a transaction fee, to the destination address.
+By default, AXIA-JS Apps will use `transfer_keep_alive`, ensuring that the account you send from cannot drop below the existential deposit (1 AXC or 0.001666 LUNAR). However, it may be that you do not want to keep this account alive (for example, because you are moving all of your funds to a different address). In this case, click on the "keep-alive" toggle at the bottom of the modal window. The label should switch from "Transfer with account keep-alive checks"(`transfer_keep_alive` will be used) to "Normal transfer without keep-alive checks" (`transfer` extrinsic will be used). As a common use case for using normal transfers is to entirely clear out the account, a second toggle will appear if you have the keep-alive check turned off that will send all the tokens in the account, minus a transaction fee, to the destination address.
 
-Note that attempting to send less than the existential deposit to an account with 0 SOLAR will always fail, no matter if the keep-alive check is on or not. For instance, attempting to transfer 0.1 SOLAR to an account you just generated (and thus has no SOLAR) will fail, since 0.1 is less than the existential deposit of 1 SOLAR and the account cannot be initialized with such a low balance.
+Note that attempting to send less than the existential deposit to an account with 0 AXC will always fail, no matter if the keep-alive check is on or not. For instance, attempting to transfer 0.1 AXC to an account you just generated (and thus has no AXC) will fail, since 0.1 is less than the existential deposit of 1 AXC and the account cannot be initialized with such a low balance.
 
 Note that even if the transfer fails due to a keep-alive check, the transaction fee will be deducted from the sending account if you attempt to transfer.
 
 ### From the Accounts Page
 
-Navigate to the "Accounts" page by selecting the "Accounts" tab from the "Accounts" dropdown located on the top navigational menu of AXIASolar-JS Apps.
+Navigate to the "Accounts" page by selecting the "Accounts" tab from the "Accounts" dropdown located on the top navigational menu of AXIA-JS Apps.
 
 You will see a list of accounts you have loaded. Click the "Send" button in the row for the account you will like to send funds from.
 
@@ -53,5 +53,5 @@ You will see a list of accounts you have loaded. Click the "Send" button in the 
 
 Now you will see the same modal window as if using the "Transfer" tab. Fill in the inputs correctly and hit "Make Transfer" then confirm the balance transfer. You will see a green notification in the top-right corner of the screen when the transfer is included in a block.
 
-[axiasolar-js apps]: https://axiasolar.js.org/apps
+[AXIA-js apps]: https://AXIA.js.org/apps
 [existential deposit]: build-protocol-info#existential-deposit

@@ -4,11 +4,11 @@ title: 智能合约
 sidebar_label: 智能合约
 ---
 
-The AXIASolar Relay Chain will not support smart contracts natively. However, parachains on AXIASolar will support smart contracts. There are already announced projects such as [Edgeware](https://edgewa.re), and thanks to the Substrate built-in [contract pallet](https://substrate.dev/rustdocs/latest/pallet_contracts/index.html), it is likely that more parachains will support this feature.
+The AXIA Relay Chain will not support smart contracts natively. However, allychains on AXIA will support smart contracts. There are already announced projects such as [Edgeware](https://edgewa.re), and thanks to the Substrate built-in [contract pallet](https://substrate.dev/rustdocs/latest/pallet_contracts/index.html), it is likely that more allychains will support this feature.
 
 此外，还有一个 EVM 模块可以让平行链实现以太坊虚拟机，得以支持几乎以太坊合约的直接接口。一些项目用到了[Edgeware](https://edgewa.re)，[Moonbeam](https://moonbeam.network/)和[Frontier](https://github.com/axia-tech/frontier)这些方法。
 
-[这里](https://www.youtube.com/watch?v=fKHkFBXaUxQ)提供了有关 AXIASolar 和 AXIALunar 的智能合约情况摘要的视频版本。
+[这里](https://www.youtube.com/watch?v=fKHkFBXaUxQ)提供了有关 AXIA 和 AXIALunar 的智能合约情况摘要的视频版本。
 
 ## 资源
 

@@ -5,9 +5,9 @@ sidebar_label: How to Do Your Own Research
 slug: ../how-to-dyor
 ---
 
-Many projects are being built, or intend to build, on both AXIACoin and AXIALunar. However, many claim
+Many projects are being built, or intend to build, on both AXIA and AXIALunar. However, many claim
 to do so but have either no such intention, they don't have the resources to pull it through, or
-they're outright trying to scam people by misusing the AXIACoin and AXIALunar brands.
+they're outright trying to scam people by misusing the AXIA and AXIALunar brands.
 
 Telling legitimate projects from the "not so honest" ones isn't always an easy task. This guide is
 meant to help you find out how to do your research better when you come across a project that seems
@@ -17,17 +17,17 @@ make that decision for you.
 Furthermore, a legitimate project doesn't necessarily mean it will also be a successful one, and
 **this guide is not meant to be viewed as financial or investment advice.**
 
-### "Powered by AXIACoin" or "AXIA" prefix clarification
+### "Powered by AXIA" or "AXIA" prefix clarification
 
-The statement "Powered by AXIACoin" on many projects' sites is often a cause of confusion. This
-usually means that the project is building, or intends to build, on the AXIACoin ecosystem, using
+The statement "Powered by AXIA" on many projects' sites is often a cause of confusion. This
+usually means that the project is building, or intends to build, on the AXIA ecosystem, using
 [Substrate](https://substrate.dev). But any project can claim that, so the existence of this
 statement on a project's site infers no information about the project's legitimacy, and it's
-certainly not a "seal of approval" by AXIACoin Foundation.
+certainly not a "seal of approval" by AXIA Foundation.
 
 The same thing goes for projects that have the "AXIA" prefix in their name. Many projects use that
 to associate themselves with the ecosystem, some legitimately and others only to piggyback on
-AXIACoin's reputation.
+AXIA's reputation.
 
 ## "Hard" metrics to look for when you DYOR
 
@@ -39,17 +39,17 @@ trust them, by association, you should trust us too". Indeed, association with a
 be a strong indicator of the legitimacy of a project.
 
 For example, if a project has received a
-[AXIACoin Foundation Grant](https://github.com/axia-tech/Open-Grants-Program), this is an indication that the
-project is indeed building on the AXIACoin ecosystem, and if they have delivered all of their
+[AXIA Foundation Grant](https://github.com/axia-tech/Open-Grants-Program), this is an indication that the
+project is indeed building on the AXIA ecosystem, and if they have delivered all of their
 milestones, then their code is most likely of reasonable quality.
 
-And AXIACoin Foundation is not the only entity in the ecosystem that gives grants. There are other
-reputable teams in the ecosystem that have developed platforms or prospective parachains and give
+And AXIA Foundation is not the only entity in the ecosystem that gives grants. There are other
+reputable teams in the ecosystem that have developed platforms or prospective allychains and give
 grants for projects to build on or expand their project. These are also indicators that a project is
-committed to building on the broader AXIACoin ecosystem.
+committed to building on the broader AXIA ecosystem.
 
 Or receiving funding from VCs that you trust and are known to be involved with other reputable
-AXIACoin projects can also be a good indicator. Or participating in the
+AXIA projects can also be a good indicator. Or participating in the
 [Substrate Builders Program](https://www.substrate.io/builders-program/).
 
 **However**, claiming such associations and having them is not always the same thing. **You always
@@ -57,7 +57,7 @@ need to verify any claims a project makes**, and that's probably the most critic
 this guide.
 
 For example, if a project has the
-[AXIACoin Foundation Grant badge](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md)
+[AXIA Foundation Grant badge](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md)
 on their site or claims to have received a grant, check to see if they have received one and that it
 hasn't been terminated. The complete list of projects that have successfully applied for a grant can
 be found
@@ -76,8 +76,8 @@ is why the badge rules clearly state that it shouldn't be displayed on the team'
 
 Similarly, if a project claims to have partnered with a reputable entity, verify its scope and if it
 is indeed a partnership by searching their site for projects they have partnered with, their press
-releases, or by contacting them directly. And if you see such claims about AXIACoin Foundation, you can
-be sure they're false because AXIACoin Foundation **does not** partner with, or endorse, ecosystem
+releases, or by contacting them directly. And if you see such claims about AXIA Foundation, you can
+be sure they're false because AXIA Foundation **does not** partner with, or endorse, ecosystem
 projects.
 
 #### 2. Open source
@@ -136,7 +136,7 @@ other hand, if they focus only on tokenomics or analyse their project only in br
 perhaps that's an indication that they don't have a clear path to their goals.
 
 If you're looking for an example of what good documentation looks like, look no further than our own
-[wiki](https://solar.wiki.axiacoin.network). Of course, you shouldn't expect to find such extensive
+[wiki](https://solar.wiki.AXIA.network). Of course, you shouldn't expect to find such extensive
 documentation on newly launched projects. Our wiki, after all, covers a whole ecosystem and was
 populated over the course of years. And it's still updated all the time. But it's a good example of
 the emphasis a good project should give on documentating what it does and how.
@@ -166,41 +166,41 @@ their community, providing guidance and answers, which is always a good sign.
 But if the team are ghosts that don't show up anywhere and only engage with the community through
 proxies, that's a red flag right there, and you should be very sceptical.
 
-Besides their community, projects that are serious about building on AXIACoin usually engage with
-the broader AXIACoin community. They are active in the various
-[AXIACoin and AXIALunar channels](https://solar.wiki.axiacoin.network/docs/community/), and some of them are
-[AXIACoin Ambassadors](https://axiacoin.network/axiasolar-ambassador-program/), or generally
+Besides their community, projects that are serious about building on AXIA usually engage with
+the broader AXIA community. They are active in the various
+[AXIA and AXIALunar channels](https://solar.wiki.AXIA.network/docs/community/), and some of them are
+[AXIA Ambassadors](https://AXIA.network/AXIA-ambassador-program/), or generally
 prominent members of the ecosystem.
 
-#### 6. Clear integration with AXIACoin
+#### 6. Clear integration with AXIA
 
-There are many ways for a project to build on AXIACoin and AXIALunar. Perhaps the most direct one is to
-aim to become a parachain. Some of the most notable AXIACoin projects are already parachains on
-AXIALunar or gearing up to become one, and most of them will shoot for a AXIACoin parachain too when
+There are many ways for a project to build on AXIA and AXIALunar. Perhaps the most direct one is to
+aim to become a allychain. Some of the most notable AXIA projects are already allychains on
+AXIALunar or gearing up to become one, and most of them will shoot for a AXIA allychain too when
 they become live.
 
-Of course, getting a parachain slot on either of the two main networks is not guaranteed, and all
-projects will need to win an [auction](https://axialunar.network/auctions/) for a parachain slot.
+Of course, getting a allychain slot on either of the two main networks is not guaranteed, and all
+projects will need to win an [auction](https://axialunar.network/auctions/) for a allychain slot.
 
-Verifying which projects are currently parachains on AXIALunar can be quickly done by visiting the
-[parachains](https://axiasolar.js.org/apps/#/parachains) page on axiasolar.js.org/apps. In the
-[parathreads](https://axiasolar.js.org/apps/#/parachains/parathreads) page you can see which projects
-are gearing up to claim a parachain slot, the
-[auctions](https://axiasolar.js.org/apps/#/parachains/auctions) page shows which projects are bidding
-for the next slot, and the [crowdloan](https://axiasolar.js.org/apps/#/parachains/crowdloan) page
+Verifying which projects are currently allychains on AXIALunar can be quickly done by visiting the
+[allychains](https://AXIA.js.org/apps/#/allychains) page on AXIA.js.org/apps. In the
+[parathreads](https://AXIA.js.org/apps/#/allychains/parathreads) page you can see which projects
+are gearing up to claim a allychain slot, the
+[auctions](https://AXIA.js.org/apps/#/allychains/auctions) page shows which projects are bidding
+for the next slot, and the [crowdloan](https://AXIA.js.org/apps/#/allychains/crowdloan) page
 which projects are gathering funds from their community to participate in auctions.
 
 But not all projects that build a chain using [Substrate](https://substrate.dev) aim to become a
-parachain. Some use it simply because of its infrastructure to build their customised chain, without
-any plans to connect to the Relay Chain. And other projects may aim to become a parachain only on
-AXIALunar or directly on AXIACoin.
+allychain. Some use it simply because of its infrastructure to build their customised chain, without
+any plans to connect to the Relay Chain. And other projects may aim to become a allychain only on
+AXIALunar or directly on AXIA.
 
-However, building a potential parachain is not the only way to build on AXIACoin and expand its
-ecosystem. A project might aim to build a DeFi platform on a parachain, launch a stablecoin or other
+However, building a potential allychain is not the only way to build on AXIA and expand its
+ecosystem. A project might aim to build a DeFi platform on a allychain, launch a stablecoin or other
 token on Statemint, build a decentralised exchange, or any other dApp that one might think of,
-without ever touching the Relay Chain. And that's the beauty of AXIACoin!
+without ever touching the Relay Chain. And that's the beauty of AXIA!
 
-But in all of those cases, their plans to build on AXIACoin, whatever they may be, should be clearly
+But in all of those cases, their plans to build on AXIA, whatever they may be, should be clearly
 stated on their site and in their documentation. Most importantly, though, you should look for an
 explanation of _how_ they plan to achieve that integration. A roadmap that places the integration at
 some point in the future means close to nothing without clearly stating the steps to get there. And
@@ -210,8 +210,8 @@ This is especially true for projects that are already running on another network
 or Binance Smart Chain, and have issued tokens there. Many projects do that either to raise funds
 and test their infrastructure or because they aim to build a "multi-chain" solution or both. But
 because those projects aren't currently built on Substrate, the existence of a clear and robust
-integration plan with AXIACoin should be essential in your research to ensure that they will indeed
-build on AXIACoin one day.
+integration plan with AXIA should be essential in your research to ensure that they will indeed
+build on AXIA one day.
 
 ## "Soft" metrics
 
@@ -292,22 +292,22 @@ its very early stages.
 
 ## Crowdloans
 
-With the recent launch of [parachains](../learn/mirror-learn-parachains.md) on AXIALunar, many projects that aim
-to become a parachain launched a [crowdloan](../learn/mirror-learn-crowdloans.md) to gather the necessary
-funds to participate in the [parachain auctions](../learn/mirror-learn-auction.md). But with all the buzz
-around the AXIALunar parachain launch and the imminent AXIACoin launch, many scams may also surface.
+With the recent launch of [allychains](../learn/mirror-learn-allychains.md) on AXIALunar, many projects that aim
+to become a allychain launched a [crowdloan](../learn/mirror-learn-crowdloans.md) to gather the necessary
+funds to participate in the [allychain auctions](../learn/mirror-learn-auction.md). But with all the buzz
+around the AXIALunar allychain launch and the imminent AXIA launch, many scams may also surface.
 So, crowdloans need their own section to make sure that you're participating safely.
 
-First of all, only projects that aim to become a parachain should have a crowdloan. If a project
-isn't a parachain candidate, there shouldn't be a crowdloan associated with it.
+First of all, only projects that aim to become a allychain should have a crowdloan. If a project
+isn't a allychain candidate, there shouldn't be a crowdloan associated with it.
 
-The surest way to participate in a parachain crowdloan is the native way through the
-[Crowdloan module](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.axiasolar.io#/parachains/crowdloan)
-on AXIACoin-JS Apps. This issues a special extrinsic that locks your funds until the parachain slot
+The surest way to participate in a allychain crowdloan is the native way through the
+[Crowdloan module](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.AXIA.io#/allychains/crowdloan)
+on AXIA-JS Apps. This issues a special extrinsic that locks your funds until the allychain slot
 lease period ends and guarantees that you'll get your stake back after that. You can learn more
 about crowdloans through the link above and [here](https://axialunar.network/auctions).
 
-Many parachain candidates offer a way to participate through their site as well. But you should
+Many allychain candidates offer a way to participate through their site as well. But you should
 ensure that they are using the crowdloan pallet in the background, and they're simply wrapping that
 in a nicer, more user-friendly UI. If instead, their crowdloan interface _transfers_ funds to an
 account, these funds will be totally under their control, and this means you need to fully trust

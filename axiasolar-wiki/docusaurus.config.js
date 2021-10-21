@@ -6,13 +6,13 @@ const isBuilding = process.env.BUILDING === "true";
 const isPublishing = process.env.PUBLISHING === "true";
 
 module.exports = {
-  title: "AXIASolar Wiki",
+  title: "AXIA Wiki",
   tagline:
-    "The hub for those interested in learning, building, or running a node on AXIASolar.",
+    "The hub for those interested in learning, building, or running a node on AXIA.",
   titleDelimiter: "·",
-  url: "https://solar.wiki.axiacoin.network",
+  url: "https://solar.wiki.AXIA.network",
   baseUrl: "/",
-  projectName: "axiasolar-wiki",
+  projectName: "AXIA-wiki",
   organizationName: "w3f",
   scripts: [
     "https://buttons.github.io/buttons.js",
@@ -24,7 +24,7 @@ module.exports = {
       defer: true,
     },
     {
-      src: "https://apisa.axiacoin.org/latest.js",
+      src: "https://apisa.AXIA.org/latest.js",
       async: true,
       defer: true,
     },
@@ -52,13 +52,13 @@ module.exports = {
       {
         docs: {
           editUrl: ({ docPath }) =>
-            `https://github.com/axia-tech/axiasolar-wiki/edit/master/docs/${docPath}`,
+            `https://github.com/axia-tech/AXIA-wiki/edit/master/docs/${docPath}`,
           path: "../docs",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "docs",
-          remarkPlugins: [injectPlugin({ isAXIASolar: true })],
+          remarkPlugins: [injectPlugin({ isAXIA: true })],
         },
         theme: {
           customCss: [
@@ -107,7 +107,7 @@ module.exports = {
     },
     navbar: {
       logo: {
-        src: "img/logo_axiasolar_wiki.svg",
+        src: "img/logo_AXIA_wiki.svg",
       },
       items: [
         {
@@ -131,11 +131,6 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://lunar.wiki.axiacoin.network",
-          label: "AXIALunar",
-          position: "right",
-        },
-        {
           type: "search",
           position: "right",
         },
@@ -149,7 +144,7 @@ module.exports = {
           position: "right",
           dropdownItemsAfter: [
             {
-              to: "https://crowdin.com/project/axiasolar-wiki",
+              to: "https://crowdin.com/project/AXIA-wiki",
               label: "Help us translate",
             },
           ],
@@ -157,14 +152,14 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `© ${new Date().getFullYear()} AXIACoin Foundation`,
+      copyright: `© ${new Date().getFullYear()} AXIA Foundation`,
       logo: {
-        src: "img/axiasolar-blue-logo.svg",
+        src: "img/AXIA-blue-logo.svg",
       },
     },
     algolia: {
       apiKey: "8bfa06b56bb8f33e5698c7f40b00b38f",
-      indexName: "axiasolar",
+      indexName: "AXIA",
       algoliaOptions: {
         facetFilters: ["language:LANGUAGE"],
       },

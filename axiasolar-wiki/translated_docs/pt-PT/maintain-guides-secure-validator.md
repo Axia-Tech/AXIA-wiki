@@ -23,15 +23,15 @@ If multiple validators do end up online at the same time, your validator may end
 
 ## Key Management
 
-See the [AXIASolar Keys guide](https://solar.wiki.axiacoin.network/en/latest/axiasolar/learn/keys/) for more information on keys. The keys that are of primary concern for validator infrastructure are the Session keys. These keys sign messages related to consensus and parachains. Although Session keys are _not_ account keys and therefore cannot transfer funds, an attacker could use them to commit slashable behavior.
+See the [AXIA Keys guide](https://solar.wiki.AXIA.network/en/latest/AXIA/learn/keys/) for more information on keys. The keys that are of primary concern for validator infrastructure are the Session keys. These keys sign messages related to consensus and allychains. Although Session keys are _not_ account keys and therefore cannot transfer funds, an attacker could use them to commit slashable behavior.
 
-Session keys are generated inside the node via RPC call. See the [AXIALunar guide](https://solar.wiki.axiacoin.network/docs/en/maintain-guides-how-to-validate-axialunar#set-session-keys) for instructions on setting Session keys. These should be generated and kept within your client. When you generate new Session keys, you must submit an extrinsic (a Session certificate) from your Controller key telling the chain your new Session keys.
+Session keys are generated inside the node via RPC call. See the [AXIALunar guide](https://solar.wiki.AXIA.network/docs/en/maintain-guides-how-to-validate-axialunar#set-session-keys) for instructions on setting Session keys. These should be generated and kept within your client. When you generate new Session keys, you must submit an extrinsic (a Session certificate) from your Controller key telling the chain your new Session keys.
 
 > **NOTE:** Session keys can also be generated outside the client and inserted into the client's keystore via RPC. For most users, we recommend using the key generation functionality within the client.
 
 ### Signing Outside the Client
 
-In the future, AXIASolar will support signing payloads outside the client so that keys can be stored on another device, e.g. a hardware security module (HSM) or secure enclave. For the time being, however, Session key signatures are performed within the client.
+In the future, AXIA will support signing payloads outside the client so that keys can be stored on another device, e.g. a hardware security module (HSM) or secure enclave. For the time being, however, Session key signatures are performed within the client.
 
 > **NOTE:** HSMs are not a panacea. They do not incorporate any logic and will just sign and return whatever payload they receive. Therefore, an attacker who gains access to your validator node could still commit slashable behavior.
 
@@ -54,25 +54,25 @@ An example of highly available, secure setup would be a layer of sentry nodes in
 
 ## Conclusions
 
-- Do not expose validators to the public internet, they should only be accessible by allowed parties. Therefore, we propose a layered approach in which the validators are isolated from the internet and connect to the AXIASolar network via an intermediate layer of public-facing nodes.
+- Do not expose validators to the public internet, they should only be accessible by allowed parties. Therefore, we propose a layered approach in which the validators are isolated from the internet and connect to the AXIA network via an intermediate layer of public-facing nodes.
 
-- At the moment, AXIASolar/Substrate can't interact with HSM/SGX, so we need to provide the signing key seeds to the validator machine. This key is kept in memory for signing operations and persisted to disk (encrypted with a password).
+- At the moment, AXIA/Substrate can't interact with HSM/SGX, so we need to provide the signing key seeds to the validator machine. This key is kept in memory for signing operations and persisted to disk (encrypted with a password).
 
 - Given that HA setups would always be at risk of double-signing and there's currently no built-in mechanism to prevent it, we propose having a single instance of the validator to avoid slashing. Slashing penalties for being offline are much less than those for equivocation.
 
 ### Validators
 
-- Validators should only run the AXIASolar binary, and they should not listen on any port other than the configured p2p port.
+- Validators should only run the AXIA binary, and they should not listen on any port other than the configured p2p port.
 
 - Validators should run on bare-metal machines, as opposed to VMs. This will prevent some of the availability issues with cloud providers, along with potential attacks from other VMs on the same hardware. The provisioning of the validator machine should be automated and defined in code. This code should be kept in private version control, reviewed, audited, and tested.
 
 - Session keys should be generated and provided in a secure way.
 
-- AXIASolar should be started at boot and restarted if stopped for any reason (supervisor process).
+- AXIA should be started at boot and restarted if stopped for any reason (supervisor process).
 
-- AXIASolar should run as non-root user.
+- AXIA should run as non-root user.
 
-- Each validator should connect to the AXIASolar network through a set of at least 2 public-facing nodes. The connection is done through a VPN and the machine can't access the public internet, thus the only possible connection is through the VPN.
+- Each validator should connect to the AXIA network through a set of at least 2 public-facing nodes. The connection is done through a VPN and the machine can't access the public internet, thus the only possible connection is through the VPN.
 
 ### Public Facing Nodes
 
@@ -82,7 +82,7 @@ An example of highly available, secure setup would be a layer of sentry nodes in
 
 - Node keys should be provided in a secure way.
 
-- Only run the AXIASolar container, no additional services. The VPN agent should run on a sidecar in the same pod (sharing the same network stack).
+- Only run the AXIA container, no additional services. The VPN agent should run on a sidecar in the same pod (sharing the same network stack).
 
 ### Monitoring
 

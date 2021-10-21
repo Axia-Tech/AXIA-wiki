@@ -11,20 +11,20 @@ will automatically restart on server reboots or crashes (and helps to avoid gett
 Before following this guide you should have already set up your validator by following the
 [How to validate](../learn/learn-validator.md) article.
 
-First create a new unit file called `axiasolar-validator.service` in `/etc/systemd/system/`.
+First create a new unit file called `AXIA-validator.service` in `/etc/systemd/system/`.
 
 ```bash
-touch /etc/systemd/system/axiasolar-validator.service
+touch /etc/systemd/system/AXIA-validator.service
 ```
 
 In this unit file you will write the commands that you want to run on server boot / restart.
 
 ```
 [Unit]
-Description=AXIACoin Validator
+Description=AXIA Validator
 
 [Service]
-ExecStart=PATH_TO_AXIASOLAR_BIN --validator --name SHOW_ON_TELEMETRY
+ExecStart=PATH_TO_AXIA_BIN --validator --name SHOW_ON_TELEMETRY
 Restart=always
 RestartSec=120
 
@@ -42,23 +42,23 @@ WantedBy=multi-user.target
 To enable this to autostart on bootup run:
 
 ```bash
-systemctl enable axiasolar-validator.service
+systemctl enable AXIA-validator.service
 ```
 
 Start it manually with:
 
 ```bash
-systemctl start axiasolar-validator.service
+systemctl start AXIA-validator.service
 ```
 
 You can check that it's working with:
 
 ```bash
-systemctl status axiasolar-validator.service
+systemctl status AXIA-validator.service
 ```
 
 You can tail the logs with `journalctl` like so:
 
 ```bash
-journalctl -f -u axiasolar-validator
+journalctl -f -u AXIA-validator
 ```

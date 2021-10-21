@@ -4,7 +4,7 @@ title: 参与民主权利
 sidebar_label: 参与民主权利
 ---
 
-The public referenda chamber is one of the three bodies of on-chain governance as it's instantiated in AXIASolar and AXIALunar. The other two bodies are the [council](maintain-guides-how-to-join-council) and the [technical committee](learn-governance#technical-committee).
+The public referenda chamber is one of the three bodies of on-chain governance as it's instantiated in AXIA and AXIALunar. The other two bodies are the [council](maintain-guides-how-to-join-council) and the [technical committee](learn-governance#technical-committee).
 
 Public referenda can be proposed and voted on by any token holder in the system as long as they provide a bond. After a proposal is made, others can agree with it by _seconding_ it and putting up tokens equal to the original bond. Every launch period, the most seconded proposal will be moved to the public referenda table will it can be voted upon. Voters who are willing to lock up their tokens for a greater duration of time can do so and get their vote amplified. For more details on the governance system please see [here](learn-governance).
 
@@ -30,9 +30,9 @@ This guide will instruct token holders how to propose and vote on public referen
 
 Proposing an action to be taken requires you to bond some tokens. In order to ensure you have enough tokens to make the minimum deposit you can check the parameter in the chain state. The bonded tokens will only be released once the proposal is tabled (that is, brought to a vote); there is no way for the user to "revoke" their proposal and get the bond back before it has become a referendum. Since it is essentially impossible to predict definitely when a proposal may become a referendum (if ever), this means that any tokens bonded will be locked for an indeterminate amount of time.
 
-> Proposals cannot be revoked by the proposer, even if they never turn into a referendum. It is important to realize that there is no guarantee that SOLAR you use for proposing or seconding a proposal will be returned to that account in any given timeframe.
+> Proposals cannot be revoked by the proposer, even if they never turn into a referendum. It is important to realize that there is no guarantee that AXC you use for proposing or seconding a proposal will be returned to that account in any given timeframe.
 
-On AXIASolar Apps you can use the "Democracy" tab to make a new proposal. In order to submit a proposal, you will need to submit what's called the preimage hash. The preimage hash is simply the hash of the proposal to be enacted. The easiest way to get the preimage hash is by clicking on the "Submit preimage" button and configuring the action that you are proposing.
+On AXIA Apps you can use the "Democracy" tab to make a new proposal. In order to submit a proposal, you will need to submit what's called the preimage hash. The preimage hash is simply the hash of the proposal to be enacted. The easiest way to get the preimage hash is by clicking on the "Submit preimage" button and configuring the action that you are proposing.
 
 For example, if you wanted to propose that the account "Dave" would have a balance of 10 tokens your proposal may look something like the below image. The preimage hash would be `0xa50af1fadfca818feea213762d14cd198404d5496bca691294ec724be9d2a4c0`. You can copy this preimage hash and save it for the next step. There is no need to click Submit Preimage at this point, though you could. We'll go over that in the next section.
 
@@ -64,9 +64,9 @@ Once the transaction is included you should see the UI update with the informati
 
 Seconding a proposal means that you are agreeing with the proposal and backing it with an equal amount of deposit as was originally locked. The bonded tokens will be released once the proposal is tabled (that is, brought to a vote), just like the original proposer's bond. By seconding a proposal you will move it higher up the rank of proposals. The most seconded proposal &mdash; in value, not number of supporters &mdash; will be brought to a referendum every launch period.
 
-It is important to note that there is no way to stop or cancel seconding a proposal once it has been done. Therefore, the SOLAR that was seconded will be reserved until the proposal is tabled as a referendum. This is an indeterminate amount of time, since there is no guarantee that a proposal will become a referendum for a given period, as other proposals may be proposed and tabled before it.
+It is important to note that there is no way to stop or cancel seconding a proposal once it has been done. Therefore, the AXC that was seconded will be reserved until the proposal is tabled as a referendum. This is an indeterminate amount of time, since there is no guarantee that a proposal will become a referendum for a given period, as other proposals may be proposed and tabled before it.
 
-Note that it is possible for a single account to second a proposal multiple times. This is by design; it is the value, not the number of seconds _per se_, that counts in terms of weighting. If there were a limit of one second per account, it would be trivial for a user with, for example, 1000 SOLAR to create ten accounts with 100 SOLAR instead of a single account with 1000 SOLAR. Thus, no restrictions are made on the number of times a single account can second a proposal.
+Note that it is possible for a single account to second a proposal multiple times. This is by design; it is the value, not the number of seconds _per se_, that counts in terms of weighting. If there were a limit of one second per account, it would be trivial for a user with, for example, 1000 AXC to create ten accounts with 100 AXC instead of a single account with 1000 AXC. Thus, no restrictions are made on the number of times a single account can second a proposal.
 
 To second a proposal, navigate to the proposal you want to second and click on the "Second" button.
 
@@ -84,7 +84,7 @@ Once successful you will see your second appear in the dropdown in the proposal 
 
 At the end of each launch period, the most seconded proposal will move to referendum. During this time you can cast a vote for or against the proposal. You may also lock up your tokens for a greater length of time to weigh your vote more strongly. During the time your tokens are locked, you are unable to transfer them, however they can still be used for further votes. Locks are layered on top of each other, so an eight week lock does not become a 15 week lock if you vote again a week later, rather another eight week lock is placed to extend the lock just one extra week.
 
-To vote on a referendum, navigate to the ["Democracy" tab of AXIASolar Apps](https://axiasolar.js.org/apps/#/democracy/). Any active referendum will show in the "referenda" column. Click the blue button "Vote" to cast a vote for the referendum.
+To vote on a referendum, navigate to the ["Democracy" tab of AXIA Apps](https://AXIA.js.org/apps/#/democracy/). Any active referendum will show in the "referenda" column. Click the blue button "Vote" to cast a vote for the referendum.
 
 If you would like to cast your vote for the proposal select the "Aye, I approve" option. If you would like to cast your vote against the proposal in referendum you will select "Nay, I do not approve" option.
 
@@ -96,9 +96,9 @@ When you are comfortable with the decision you have made, click the blue "Vote" 
 
 ## Unlocking Locked Tokens
 
-Like [vesting](https://solar.wiki.axiacoin.network/docs/en/learn-SOLAR#lazy-vesting), the tokens that are locked in democracy are unlocked lazily. This means that you, the user, must explicitly call an unlock extrinsic to make your funds available again after the lock expires. Unbonding is another term you hear a lot in AXIASolar, it means withdrawing your SOLAR that was used in staking. To know more about it, please see [here](maintain-guides-how-to-unbond).
+Like [vesting](https://solar.wiki.AXIA.network/docs/en/learn-AXC#lazy-vesting), the tokens that are locked in democracy are unlocked lazily. This means that you, the user, must explicitly call an unlock extrinsic to make your funds available again after the lock expires. Unbonding is another term you hear a lot in AXIA, it means withdrawing your AXC that was used in staking. To know more about it, please see [here](maintain-guides-how-to-unbond).
 
-You can do this from the "Accounts" page in [AXIASolar-JS Apps](https://axiasolar.js.org/apps/#/accounts). First check that your account has a "democracy" lock by opening the details on your balance. In the example below the account has 150 LUNAR locked in democracy.
+You can do this from the "Accounts" page in [AXIA-JS Apps](https://AXIA.js.org/apps/#/accounts). First check that your account has a "democracy" lock by opening the details on your balance. In the example below the account has 150 LUNAR locked in democracy.
 
 ![democracy balance details](assets/democracy_balance_details.png)
 
@@ -110,7 +110,7 @@ Now you can click the menu button on Apps and find the option that says "Clear e
 
 If you do not see an option to clear expired democracy votes, it may be that the lock is very old. You then must clear the lock by directly issuing the correct extrinsics.
 
-Navigate to the [Extrinsics page](https://axiasolar.js.org/apps/#/extrinsics) and submit the following extrinsic: `democracy.removeVote(index)` using the account that you voted with. For the index number (ReferendumIndex), enter the number of the referendum for which you voted ("12" in the image below).
+Navigate to the [Extrinsics page](https://AXIA.js.org/apps/#/extrinsics) and submit the following extrinsic: `democracy.removeVote(index)` using the account that you voted with. For the index number (ReferendumIndex), enter the number of the referendum for which you voted ("12" in the image below).
 
 You need to press the "Submit Transaction" button to submit the extrinsic.
 
@@ -120,9 +120,9 @@ Now submit the following extrinsic: `democracy.unlock(target)`, where target is 
 
 ![democracy clear_lock_extrinsic_2](assets/democracy_clear_lock_extrinsic_2.png)
 
-If you return to the [Accounts page](https://axiasolar.js.org/apps/#/accounts), you should see that the democracy lock has been released.
+If you return to the [Accounts page](https://AXIA.js.org/apps/#/accounts), you should see that the democracy lock has been released.
 
-Note that this applies only to locked SOLAR that were used for voting on referenda. In order to unlock SOLAR locked by voting for members of the AXIASolar Council, you need to go to the [Council](https://axiasolar.js.org/apps/#/council) page, click "Vote", and then click on "Unvote All".
+Note that this applies only to locked AXC that were used for voting on referenda. In order to unlock AXC locked by voting for members of the AXIA Council, you need to go to the [Council](https://AXIA.js.org/apps/#/council) page, click "Vote", and then click on "Unvote All".
 
 ## Delegate a Vote
 
@@ -130,7 +130,7 @@ If you are too busy to keep up and vote on upcoming referenda, there is an optio
 
 The account that is being delegated to does not make any special action once the delegation is in place. They can continue to vote on referenda how they see fit. The difference is now when the Democracy system tallies votes, the delegated tokens now are added to whatever vote the delegatee has made.
 
-You can delegate your vote to another account and even attach a "Conviction" to the delegation. Navigate to the "Extrinsics" tab on AXIASolar Apps and select the options "democracy" and "delegate". This means you are accessing the democracy pallet and choosing the delegate transaction type to send. Your delegation will count toward whatever the account you delegated for votes on until you explicitly undelegate your vote.
+You can delegate your vote to another account and even attach a "Conviction" to the delegation. Navigate to the "Extrinsics" tab on AXIA Apps and select the options "democracy" and "delegate". This means you are accessing the democracy pallet and choosing the delegate transaction type to send. Your delegation will count toward whatever the account you delegated for votes on until you explicitly undelegate your vote.
 
 In the first input select the account you want to delegate to and in the second input select the amount of your conviction. Remember, higher convictions means that your vote will be locked longer. So choose wisely!
 
@@ -146,7 +146,7 @@ You may decide at some point in the future to remove your delegation to a target
 
 The `undelegate` transaction must be sent from the account that you wish to clear of its delegation. For example, if Alice has delegated her tokens to Bob, Alice would need to be the one to call the `undelegate` transaction to clear her delegation.
 
-The easiest way to do this is from the "Extrinsics" tab of AXIASolar Apps. Select the "democracy" pallet and the "undelegate" transaction type. Ensure that you are sending the transaction from the account you want to clear of delegations. Click "Submit transaction" and confirm.
+The easiest way to do this is from the "Extrinsics" tab of AXIA Apps. Select the "democracy" pallet and the "undelegate" transaction type. Ensure that you are sending the transaction from the account you want to clear of delegations. Click "Submit transaction" and confirm.
 
 ![undelegate](assets/democracy/undelegate.png)
 

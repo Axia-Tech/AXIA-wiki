@@ -6,7 +6,7 @@ sidebar_label: Subkey
 
 서브키(subkey, 이하 subkey로 통일 - 역자 주)는 서브스트레이트(Substrate)가 생성한 키(key)나 복원된 서브스트레이트 키(Key)가 포함 되어 있는 커맨드리인 유틸리티입니다.
 
-`subkey` 는 [sr25519](http://wiki.axiacoin.network/en/latest/axiasolar/learn/cryptography/#keypairs-and-signing) 암호를 기본적으로 사용 할 것입니다.이전 ed25519 암호화를 사용하여 키를 생성하거나 복원해야 할 경우`--ed25519` 플래그를 커맨드에 입력하세요.
+`subkey` 는 [sr25519](http://wiki.AXIA.network/en/latest/AXIA/learn/cryptography/#keypairs-and-signing) 암호를 기본적으로 사용 할 것입니다.이전 ed25519 암호화를 사용하여 키를 생성하거나 복원해야 할 경우`--ed25519` 플래그를 커맨드에 입력하세요.
 
 ## 사용방법 (Usage)
 

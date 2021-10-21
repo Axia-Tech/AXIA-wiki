@@ -7,7 +7,7 @@ slug: ../learn-scams
 
 Scams have unfortunately made an impact on our community. It's important to stay alert and protect
 yourself and your non-refundable crypto assets from scammers. If you ever feel you are being
-scammed, please email [our support team](mailto:support@axiacoin.org).
+scammed, please email [our support team](mailto:support@AXIA.org).
 
 ## Essential rules:
 
@@ -23,8 +23,8 @@ scammed, please email [our support team](mailto:support@axiacoin.org).
 5. Scams are absolutely rife in this space. It is easy and cheap to set a scam up, and hard to shut
    one down. Therefore, the onus is on the user to be as diligent as possible in avoiding them.
 6. If you can, try to always verify new information that you see with an official source, such as
-   [AXIACoin Network's official blog](../general/community.md) or
-   [AXIACoin Foundation support](mailto:support@axiacoin.network). Often scammers will fake a website or
+   [AXIA Network's official blog](../general/community.md) or
+   [AXIA Foundation support](mailto:support@AXIA.network). Often scammers will fake a website or
    a blog post, but if you check it against a secondary source you will reduce the chances of being
    scammed.
 
@@ -39,12 +39,12 @@ scammed, please email [our support team](mailto:support@axiacoin.org).
 
 - Private messages sent to you over Telegram, Twitter, and other social media - admins or employees
   will never contact you.
-- "Giveaways" advertising that you "send us some SOLAR/LUNAR, we'll send you double back".
+- "Giveaways" advertising that you "send us some AXC/LUNAR, we'll send you double back".
 - Sites where you need to enter your seed phrase in order to "sync" your account, claim tokens,
   unblock transactions etc.
-- Emails asking for SOLAR/LUNAR private keys/seeds/etc., posing as a member of any of our teams.
+- Emails asking for AXC/LUNAR private keys/seeds/etc., posing as a member of any of our teams.
 - Scammers will take official videos, add "giveaway" text around it so that it looks like the
-  giveaway is supported by AXIACoin, AXIACoin Foundation, AXIA, or another well-known entity.
+  giveaway is supported by AXIA, AXIA Foundation, AXIA, or another well-known entity.
 - Many scammers will create nearly perfect imitations of sites - always triple-check the URL.
 - People offering to help you stake or get rewards.
 - People responding to questions that you asked publicly in a private chat.
@@ -65,17 +65,17 @@ tricked by this, it is always better to confirm than to risk losing everything.
 
 If you've received a message from an admin over Telegram, ignore it. Our team members will never
 personally message you. Our social media accounts are posted on our website and any new social media
-accounts will be announced by our team. We will never offer to sell you SOLAR at a discount, air-drop
+accounts will be announced by our team. We will never offer to sell you AXC at a discount, air-drop
 "rewards", or message you privately to help with a problem you posted publicly. Our social media can
 be found below:
 
-- [Twitter](https://twitter.com/AXIACoin)
-- [Reddit](https://www.reddit.com/r/axiasolar)
+- [Twitter](https://twitter.com/AXIA)
+- [Reddit](https://www.reddit.com/r/AXIA)
 - [Discord](https://discord.gg/wGUDt2p)
-- [AXIACoin YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
-- [AXIACoin Medium](https://medium.com/axiacoin.network)
-- [Our Community Page](../general/community.md) also lists more social media accounts that AXIACoin Foundation,
-  AXIACoin, and AXIALunar have.
+- [AXIA YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
+- [AXIA Medium](https://medium.com/AXIA.network)
+- [Our Community Page](../general/community.md) also lists more social media accounts that AXIA Foundation,
+  AXIA, and AXIALunar have.
 
 ### Keep your data secure
 
@@ -105,9 +105,9 @@ Some simple things that you can do to keep your assets and information secure fr
 For any potential scam, always be sure to do a background check on the source, i.e, look at any
 username, email, Youtube channel name, URL, etc. If something seems fishy, that's because it likely
 is. Never enter any personal data if you feel the source could be a scam. Feel free to check with
-[support@axiacoin.network](mailto:support@axiacoin.org).
+[support@AXIA.network](mailto:support@AXIA.org).
 
-### Check twice before sending SOLAR/LUNAR
+### Check twice before sending AXC/LUNAR
 
 A good practice to take into consideration is to verify the address you are sending crypto to. If
 you don't know that account, you probably shouldn't be sending your assets there. It's your
@@ -115,9 +115,9 @@ responsibility to make sure that you understand where you are sending your funds
 decentralized space and your only recourse if a mistake is made is by appealing to the council (who
 usually will not get involved in matters of mistaken transfers - see below).
 
-### Install the AXIACoin{.js} extension
+### Install the AXIA{.js} extension
 
-The extension uses crowd-sourced [anti-phishing measures](https://axiasolar.js.org/phishing/) to
+The extension uses crowd-sourced [anti-phishing measures](https://AXIA.js.org/phishing/) to
 automatically prevent your browser from displaying known phishing or scam sites. They will be
 blocked upon loading, helping to prevent you from visiting these sites and thus falling for them.
 
@@ -126,25 +126,25 @@ blocked upon loading, helping to prevent you from visiting these sites and thus 
 You can use the following list of our official domains to make sure that you're visiting an official
 site:
 
-- axiacoin.network
-- axiasolar.io
+- AXIA.network
+- AXIA.io
 - axialunar.network
-- axiacoin.org
+- AXIA.org
 - axia.io
 - substrate.dev
 - substrate.io
 
-Of course, many projects building on AXIACoin and AXIALunar that use similar names. If, however, a site
-poses as AXIACoin, AXIALunar, AXIACoin Foundation, or AXIA on a domain not listed above, then it's most
+Of course, many projects building on AXIA and AXIALunar that use similar names. If, however, a site
+poses as AXIA, AXIALunar, AXIA Foundation, or AXIA on a domain not listed above, then it's most
 likely a scam.
 
-Besides those, there are also `axiasolar.js.org` and `dotapps.io` that host our web wallet and other
+Besides those, there are also `AXIA.js.org` and `dotapps.io` that host our web wallet and other
 tools.
 
 ## I Got Scammed - What Can I Do?
 
 In the unfortunate case of having fallen for a scam, there is likely nothing anyone can do to help
-you restore your funds. AXIACoin and AXIALunar are decentralized platforms and while we do have
+you restore your funds. AXIA and AXIALunar are decentralized platforms and while we do have
 governance functionality that could technically allow for funds freezing or refunds, it is
 impossible to prove that you are the original owner, or that you did not sell the tokens and are
 trying to reclaim them. Additionally, even with addresses that are obviously in possession of a
@@ -155,7 +155,7 @@ would affect their ill-gotten gains and move them to a new address before the pr
 You could put together a full account of the transactions and chat messages accompanied by
 screenshots and explanations, but there are no guarantee stakeholders on the network will help you
 restore the funds as it would set a dangerous precedent. In fact, there have been several attempts
-on AXIACoin in the past and none have been passed. It is safer for the network and for future users
+on AXIA in the past and none have been passed. It is safer for the network and for future users
 to consider the money lost. Still, your detailed account of the situation might help prevent others
 from falling for the same thing so we recommend retracing your steps and talking publicly about
 them, if it's not too private.

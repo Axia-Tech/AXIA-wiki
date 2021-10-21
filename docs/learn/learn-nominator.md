@@ -5,32 +5,32 @@ sidebar_label: Nominator
 slug: ../learn-nominator
 ---
 
-Nominators secure the Relay Chain by selecting good validators and staking SOLAR.
+Nominators secure the Relay Chain by selecting good validators and staking AXC.
 
-You may have an account with SOLAR and want to earn fresh SOLAR. You could do so as validator, which
+You may have an account with AXC and want to earn fresh AXC. You could do so as validator, which
 requires a node running 24/7. If you do not have such node or do not want to bother, you can still
-earn SOLAR by nominating one or more validators.
+earn AXC by nominating one or more validators.
 
 By doing so, you become a nominator for the validator(s) of your choice. Pick your validators
-carefully - if they do not behave properly, they will get slashed and you will lose SOLAR as well.
+carefully - if they do not behave properly, they will get slashed and you will lose AXC as well.
 However, if they do follow the rules of the network, then you can share in staking rewards that they
 generate.
 
-While your SOLAR are staked by nominating a validator, they are 'locked' (bonded). You can receive new
-SOLAR in your account but you cannot stake as validator or transfer SOLAR away from your account. You
+While your AXC are staked by nominating a validator, they are 'locked' (bonded). You can receive new
+AXC in your account but you cannot stake as validator or transfer AXC away from your account. You
 can [un-nominate at any time](../maintain/maintain-guides-how-to-unbond.md) to stop staking your funds. Keep in
 mind that the un-nomination is effective in the next era, and that un-nominating does not
 automatically unbond your funds. There is an unbonding period of 7 days on AXIALunar and 28 days on
-AXIACoin before bonded funds can be transferred after issuing an unbond transaction.
+AXIA before bonded funds can be transferred after issuing an unbond transaction.
 
 ### Active vs. Inactive Nomination
 
-When you go to the [Account actions](https://axiasolar.js.org/apps/#/staking/actions) under staking
+When you go to the [Account actions](https://AXIA.js.org/apps/#/staking/actions) under staking
 page, you should see your bonded accounts and nomination status. If not, you can follow
-[this](../maintain/maintain-guides-how-to-nominate-axiasolar.md) guide to configure it first. Your nominations
-will be effective in the next era; eras are roughly 6 hours on AXIALunar and 24 hours on AXIACoin.
+[this](../maintain/maintain-guides-how-to-nominate-AXIA.md) guide to configure it first. Your nominations
+will be effective in the next era; eras are roughly 6 hours on AXIALunar and 24 hours on AXIA.
 
-![Nominations](../assets/staking/axiasolarjs_nominator_account.png)
+![Nominations](../assets/staking/AXIAjs_nominator_account.png)
 
 Suppose you have nominated five validator candidates, and three out of five were elected to the
 active validator set, then you should see two of your nominations as "waiting", and most likely one
@@ -50,25 +50,25 @@ occur often, so you should almost always see only a single active nomination per
 ### Required Minimum Stake
 
 Due to the way the [Phragmen algorithm](learn-phragmen.md) generates the solution set, and due to
-the fact that the solution set must fit in a single block, in some eras, a minimum number of SOLAR
+the fact that the solution set must fit in a single block, in some eras, a minimum number of AXC
 will be required to nominate with in order to receive staking rewards.
 
 This parameter can be updated via on-chain governance and the most recent and up to date version can
-be found on [chain state](https://axiasolar.js.org/apps/#/chainstate) (select **state query >
+be found on [chain state](https://AXIA.js.org/apps/#/chainstate) (select **state query >
 staking > minimumNominatorBond**)
 
 ### Oversubscribed Validators
 
 Validators can only pay out to a certain number of nominators per era. This is currently set to
-{{ axiasolar_max_nominators }}, but can be modified via governance. If more than
-{{ axiasolar_max_nominators }} nominators nominate the same validator, it is "oversubscribed", and
-only the top {{ axiasolar_max_nominators }} staked nominators (ranked by amount of stake) are paid
+{{ AXIA_max_nominators }}, but can be modified via governance. If more than
+{{ AXIA_max_nominators }} nominators nominate the same validator, it is "oversubscribed", and
+only the top {{ AXIA_max_nominators }} staked nominators (ranked by amount of stake) are paid
 rewards. Other nominators will receive no rewards for that era, although their stake will still be
 used to calculate entry into the active validator set.
 
 Although it is difficult to determine exactly how many nominators will nominate a given validator in
 the next era, one can estimate based on the current number of nominators. A validator with only 5
-nominators in this era, for instance, is unlikely to have more than {{ axiasolar_max_nominators }} in
+nominators in this era, for instance, is unlikely to have more than {{ AXIA_max_nominators }} in
 the next era. An already-oversubscribed validator with 1000 nominators this era, however, is very
 likely to be oversubscribed in the next era as well.
 
@@ -78,8 +78,8 @@ Determining which validators are in the active set and which nominators are nomi
 a very large graph mapping nominators to their respective validators. This "solution set" is
 computed off-chain and submitted to the chain, which means it must fit in a single block. If there
 are a large number of nominators, this means that some nominators must be eliminated. Currently,
-nominators are sorted by amount of SOLAR staked and those with more SOLAR are prioritized. This means
-that if you are staking with a small amount of SOLAR, you may not receive rewards. This minimal amount
+nominators are sorted by amount of AXC staked and those with more AXC are prioritized. This means
+that if you are staking with a small amount of AXC, you may not receive rewards. This minimal amount
 is dynamic based on the number of validators, number of nominators, amount nominated, and other
 factors.
 
@@ -108,15 +108,15 @@ continue operation. Independent validators that rely on the commission to cover 
 help to keep the network decentralized. Commission is just one piece of the puzzle that you should
 consider when picking validators to nominate.
 
-![Staking Returns](../assets/staking/axiasolarjs_nominators_target.png)
+![Staking Returns](../assets/staking/AXIAjs_nominators_target.png)
 
 As a nominator, if you only want to know the profit each validator made for each era, you can go to
-the [Targets](https://axiasolar.js.org/apps/#/staking/targets) section under the staking page by
+the [Targets](https://AXIA.js.org/apps/#/staking/targets) section under the staking page by
 inputting the number of tokens you would like to stake to check it. Then, nominate those who have a
 higher profit. However, that does not guarantee the right way to evaluate the validators' overall
 performance.
 
-It is worth taking into consideration "own stake" of a validator. This refers to the quantity of SOLAR
+It is worth taking into consideration "own stake" of a validator. This refers to the quantity of AXC
 the validator has put up at stake themselves. A higher "own stake" amount can be considered
 as having more "skin in the game". This can imply increased trustworthiness. However, a validator not
 having a large amount of "own stake" is not automatically untrustworthy, as the validator could be
@@ -151,10 +151,10 @@ likely would get fewer rewards than others. More importantly, when many validato
 [unreachable](learn-staking.md#unresponsiveness), those nominators who staked with them will be
 slashed.
 
-![Validator Stats](../assets/staking/axiasolarjs_validator_stats.png)
+![Validator Stats](../assets/staking/AXIAjs_validator_stats.png)
 
 Thus, to be a smart nominator, it would be better to query their
-[histories](https://axiasolar.js.org/apps/#/staking/query/) to see statistics such as blocks
+[histories](https://AXIA.js.org/apps/#/staking/query/) to see statistics such as blocks
 produced, rewards and slashes, and [identity](learn-identity.md) (if they have it set). Moreover, a
 nominator should do comprehensive research on their validator candidates - they should go over the
 validators' websites to see who they are, what kind of infrastructure setup they are using,
@@ -171,31 +171,31 @@ etc.).
 
 ### Avoiding Oversubscribed Validators
 
-If you are not nominating with a large number of SOLARs, you should try to avoid
+If you are not nominating with a large number of AXCs, you should try to avoid
 [oversubscribed](../general/glossary.md#oversubscribed) validators. It is not always easy to calculate if the
 validator selected will be oversubscribed in the next session; one way to avoid choosing potentially
 oversubscribed validators is to filter out any that are [at capacity](../general/glossary.md#capacity) on the
 Targets page.
 
-Finally, if you have a very small amount of SOLARs, you may not be able to have your nomination fit
+Finally, if you have a very small amount of AXCs, you may not be able to have your nomination fit
 into the election set. The nominator to validator mapping has to fit in a single block, and if there
 are too many nominators, the lowest-staked nominations will be dropped. This value is obviously
 dynamic and will vary over time. If you review the lowest amount of nominations that are occurring
-on current validators, you can get a good idea of how many SOLARs will likely be necessary to have
+on current validators, you can get a good idea of how many AXCs will likely be necessary to have
 your nomination earn you rewards. You can read the blog post
-["AXIACoin Staking: An Update"](https://axiacoin.network/axiasolar-staking-an-update/) for more
+["AXIA Staking: An Update"](https://AXIA.network/AXIA-staking-an-update/) for more
 details.
 
 > These concepts have been further explained in the
-> [Why Nominate on AXIACoin & AXIALunar video](https://www.youtube.com/watch?v=weG_uzdSs1E&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=4)
+> [Why Nominate on AXIA & AXIALunar video](https://www.youtube.com/watch?v=weG_uzdSs1E&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=4)
 > and
-> [What to Consider when Nominating Validators on AXIACoin and AXIALunar](https://www.youtube.com/watch?v=K-a4CgVchvU&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=9)
+> [What to Consider when Nominating Validators on AXIA and AXIALunar](https://www.youtube.com/watch?v=K-a4CgVchvU&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=9)
 > and
-> [Nominating/Staking on AXIACoin and AXIALunar](https://www.youtube.com/watch?v=NYs9oWAbzbE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=14)
+> [Nominating/Staking on AXIA and AXIALunar](https://www.youtube.com/watch?v=NYs9oWAbzbE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=14)
 
 ### Guides
 
-- [Be a Nominator (AXIACoin)](../maintain/maintain-guides-how-to-nominate-axiasolar.md) - Guide on nominating on
+- [Be a Nominator (AXIA)](../maintain/maintain-guides-how-to-nominate-AXIA.md) - Guide on nominating on
   the AXIALunar canary network.
 - [Stop Being a Nominator (all networks)](../maintain/maintain-guides-how-to-unbond.md) - Guide on stopping
   nominations and withdrawing tokens.

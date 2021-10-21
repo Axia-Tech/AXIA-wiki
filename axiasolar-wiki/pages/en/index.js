@@ -48,12 +48,12 @@ class HomeNav extends React.Component {
         <NavItem
           href={this.props.docUrl("build-index")}
           title="Build"
-          content="Most up-to-date information on the status of the development tools in the AXIASolar ecosystem."
+          content="Most up-to-date information on the status of the development tools in the AXIA ecosystem."
           aosDelay="0"
         />
         <NavItem
           href={this.props.docUrl("learn-launch")}
-          content="AXIASolar is a sharded protocol that enables blockchain networks to operate together seamlessly."
+          content="AXIA is a sharded protocol that enables blockchain networks to operate together seamlessly."
           title="Learn"
           aosDelay="300"
         />
@@ -86,18 +86,18 @@ class HomeFooter extends React.Component {
         <Col xs={12}>
           <img src="/img/axialunar_canary_white.svg" height={41} />
           <h3 className="h2 font-weight-bold mt-2">
-            Learn about AXIASolar’s canary network AXIALunar
+            Learn about AXIA’s canary network AXIALunar
           </h3>
           <p className="mb-5">
-            AXIALunar is AXIASolar’s “canary network”, a scalable, multi-chain
-            network for radical innovation and early stage AXIASolar deployments.
-            For developers, AXIALunar is a proving ground for all things AXIASolar
-            I.e runtime upgrades, on-chain governance, parachains, parathreads,
+            AXIALunar is AXIA’s “canary network”, a scalable, multi-chain
+            network for radical innovation and early stage AXIA deployments.
+            For developers, AXIALunar is a proving ground for all things AXIA
+            I.e runtime upgrades, on-chain governance, allychains, parathreads,
             etc.
           </p>
         </Col>
         <Col>
-          <a href="https://lunar.wiki.axiacoin.network">
+          <a href="https://lunar.wiki.AXIA.network">
             <button className="btn btn-lg btn-primary btn-bg-primary">
               Discover AXIALunar
             </button>
@@ -114,9 +114,9 @@ class HomeFooter extends React.Component {
           </span>
           <h3 className="h2 font-weight-bold">Help improve this wiki</h3>
           <p className="mb-5">
-            This wiki was started by and is maintained by AXIACoin Foundation. It is
+            This wiki was started by and is maintained by AXIA Foundation. It is
             an open-source-ish project and aims to be the most extensive
-            resource of knowledge on AXIASolar and the AXIASolar ecosystem.
+            resource of knowledge on AXIA and the AXIA ecosystem.
           </p>
         </Col>
         <Col>

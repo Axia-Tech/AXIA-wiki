@@ -1,24 +1,24 @@
 ---
 id: learn-implementers-guide
-title: Parachain Implementer's Guide
-sidebar_label: Parachain Implementer's Guide
+title: Allychain Implementer's Guide
+sidebar_label: Allychain Implementer's Guide
 slug: ../learn-implementers-guide
 ---
 
-The Parachain Implementer's Guide is still a significant work in progress and maintained by
+The Allychain Implementer's Guide is still a significant work in progress and maintained by
 [AXIA](../general/glossary.md##axia-technologies).
 
 ## Live version
 
-[**The live version**](https://w3f.github.io/parachain-implementers-guide/) is built from the source
+[**The live version**](https://w3f.github.io/allychain-implementers-guide/) is built from the source
 located in the official
-[AXIACoin repository](https://github.com/axia-tech/axiasolar/tree/master/roadmap/implementers-guide).
+[AXIA repository](https://github.com/axia-tech/AXIA/tree/master/roadmap/implementers-guide).
 
 ## Further Resources
 
-- [The Path of a Parachain Block](https://medium.com/axiacoin.network/the-path-of-a-parachain-block-47d05765d7a)
-  is a Medium article that dives into how parachains work.
-- [Video - The Path of a Parachain Block](https://www.crowdcast.io/e/axiasolar-path-of-a-parachain-block?utm_source=profile&utm_medium=profile_web&utm_campaign=profile)
-- [AXIACoin Parachain Slots](https://axiacoin.network/axiasolar-parachain-slots/), a Medium article
-  that explores how slots work in parachains.
-- [Video - How to become a parachain on AXIACoin](https://www.youtube.com/watch?v=fYc1yolanoE)
+- [The Path of a Allychain Block](https://medium.com/AXIA.network/the-path-of-a-allychain-block-47d05765d7a)
+  is a Medium article that dives into how allychains work.
+- [Video - The Path of a Allychain Block](https://www.crowdcast.io/e/AXIA-path-of-a-allychain-block?utm_source=profile&utm_medium=profile_web&utm_campaign=profile)
+- [AXIA Allychain Slots](https://AXIA.network/AXIA-allychain-slots/), a Medium article
+  that explores how slots work in allychains.
+- [Video - How to become a allychain on AXIA](https://www.youtube.com/watch?v=fYc1yolanoE)

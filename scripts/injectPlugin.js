@@ -3,12 +3,12 @@ const path = require("path");
 const visit = require("unist-util-visit");
 const { yellow, cyan } = require("chalk");
 
-const R_AXIASOLAR = /{{ axiasolar: ([\s\S]+?) :axiasolar }}/gim;
+const R_AXIA = /{{ AXIA: ([\s\S]+?) :AXIA }}/gim;
 const R_AXIALUNAR = /{{ axialunar: ([\s\S]+?) :axialunar }}/gim;
 const R_AXIALUNAR_HEAD = /{{ axialunar: [\s\S]*/gim;
 const R_AXIALUNAR_TAIL = /[\s\S]* :axialunar }}/gim;
-const R_AXIASOLAR_HEAD = /{{ axiasolar: [\s\S]*/gim;
-const R_AXIASOLAR_TAIL = /[\s\S]* :axiasolar }}/gim;
+const R_AXIA_HEAD = /{{ AXIA: [\s\S]*/gim;
+const R_AXIA_TAIL = /[\s\S]* :AXIA }}/gim;
 
 const logger = (file, dryRun, subStr, replaceStr) => {
   console.log(
@@ -32,19 +32,19 @@ const unconditionalReplace = (node, file, options) => {
 };
 
 const conditionalReplace = (node, file, options) => {
-  const { isAXIASolar, debug } = options;
+  const { isAXIA, debug } = options;
   let foundTarget = false,
     foundDelete = false;
   const children = [];
 
-  const TARGET = isAXIASolar ? "axiasolar" : "axialunar";
-  const R_TARGET = isAXIASolar ? R_AXIASOLAR : R_AXIALUNAR;
-  const R_TARGET_HEAD = isAXIASolar ? R_AXIASOLAR_HEAD : R_AXIALUNAR_HEAD;
-  const R_TARGET_TAIL = isAXIASolar ? R_AXIASOLAR_TAIL : R_AXIALUNAR_TAIL;
+  const TARGET = isAXIA ? "AXIA" : "axialunar";
+  const R_TARGET = isAXIA ? R_AXIA : R_AXIALUNAR;
+  const R_TARGET_HEAD = isAXIA ? R_AXIA_HEAD : R_AXIALUNAR_HEAD;
+  const R_TARGET_TAIL = isAXIA ? R_AXIA_TAIL : R_AXIALUNAR_TAIL;
 
-  const R_DELETE = isAXIASolar ? R_AXIALUNAR : R_AXIASOLAR;
-  const R_DELETE_HEAD = isAXIASolar ? R_AXIALUNAR_HEAD : R_AXIASOLAR_HEAD;
-  const R_DELETE_TAIL = isAXIASolar ? R_AXIALUNAR_TAIL : R_AXIASOLAR_TAIL;
+  const R_DELETE = isAXIA ? R_AXIALUNAR : R_AXIA;
+  const R_DELETE_HEAD = isAXIA ? R_AXIALUNAR_HEAD : R_AXIA_HEAD;
+  const R_DELETE_TAIL = isAXIA ? R_AXIALUNAR_TAIL : R_AXIA_TAIL;
 
   node.children.forEach((childNode) => {
     if (childNode.type !== "text") {
@@ -117,7 +117,7 @@ function injectPlugin(param) {
   const dict = JSON.parse(fs.readFileSync(dictPath, "utf8"));
   return [
     transform,
-    { dict, isAXIASolar: param.isAXIASolar, dryRun: false, verbose: false, debug: false },
+    { dict, isAXIA: param.isAXIA, dryRun: false, verbose: false, debug: false },
   ];
 }
 

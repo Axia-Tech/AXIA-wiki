@@ -8,7 +8,7 @@ The following describes how to stop nominating or validating and retrieve your t
 
 ### Step 1: Stop Nominating
 
-On the [AXIASolar-JS Apps](https://axiasolar.js.org/apps) navigate to the "Staking" tab.
+On the [AXIA-JS Apps](https://AXIA.js.org/apps) navigate to the "Staking" tab.
 
 On this tab click on the "Account Actions" tab at the top of the screen.
 
@@ -32,13 +32,13 @@ If successful, your balance will show as "unbonding" with an indicator of how ma
 
 ![Unbonding duration](/img/NPoS/unbond4.png)
 
-This duration will vary depending on the network you're on and will typically be four times as fast on AXIALunar as it is on AXIASolar.
+This duration will vary depending on the network you're on and will typically be four times as fast on AXIALunar as it is on AXIA.
 
 Once this process is complete, you will have to issue another, final transaction: Withdraw Unbonded.
 
 ![Unbonding withdraw](/img/NPoS/unbond5.png)
 
-You can also check how long you have to wait in order to withdraw your stake in the [Accounts](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.axiasolar.io#/accounts) page by expanding your account balance. There is a tiny icon beside the word "unbonding" that will eventually become an unlock icon once the remaning blocks get passed.
+You can also check how long you have to wait in order to withdraw your stake in the [Accounts](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/accounts) page by expanding your account balance. There is a tiny icon beside the word "unbonding" that will eventually become an unlock icon once the remaning blocks get passed.
 
 Then, you can click that icon directly to submit the withdraw transaction. Finally, your transferrable balance will increase by the amount of tokens you've just fully unbonded.
 
@@ -46,7 +46,7 @@ Then, you can click that icon directly to submit the withdraw transaction. Final
 
 If you want to rebond your tokens before the unbonding period is over you can do this by issuing a `rebond` extrinsic. This allows you to bond your tokens that are still locked without waiting until the end of the unbonding period.
 
-In order to do this you will need to issue an extrinsic manually from [AXIASolar-JS Apps](https://axiasolar.js.org/apps).
+In order to do this you will need to issue an extrinsic manually from [AXIA-JS Apps](https://AXIA.js.org/apps).
 
 Go to the "Extrinsics" option that's located in the "Developer" dropdown in the top menu.
 

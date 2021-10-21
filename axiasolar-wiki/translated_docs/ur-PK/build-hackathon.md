@@ -4,7 +4,7 @@ title: Hackathon
 sidebar_label: Hackathon
 ---
 
-As one of our objectives in the AXIACoin Foundation is promoting the [Web3 technology stack](http://wiki.axiacoin.org/en/latest/tech_stack/tech_stack_overview/), we would like to support any individual or team who wants to organize a hackathon that gets more developers to understand AXIASolar and Substrate in your city or online.
+As one of our objectives in the AXIA Foundation is promoting the [Web3 technology stack](http://wiki.AXIA.org/en/latest/tech_stack/tech_stack_overview/), we would like to support any individual or team who wants to organize a hackathon that gets more developers to understand AXIA and Substrate in your city or online.
 
 We are not only providing technical resources for you, but we can have someone from our team give a hands-on workshop/presentation about the technology to help participants get started hacking on it more quickly.
 
@@ -20,7 +20,7 @@ We are not only providing technical resources for you, but we can have someone f
 - Implement Generalized State Channel/Plasma Chain
 - Decentralized Exchange
 - Tools for monitoring validator performance
-- dApps across different parachains
+- dApps across different allychains
 
 ## Why you should host a hackathon?
 
@@ -48,7 +48,7 @@ Hackathon is aimed at participants who want to deliver their prototype and demon
 
 ## Upcoming Hackathons
 
-- [Hello World! by AXIASolar](https://gitcoin.co/hackathon/axiasolar/onboard) - A collaborative hackathon celebrating the integration of AXIASolar and AXIALunar into the Gitcoin platform. Has many sets of smaller challenges that will reward in either SOLAR or LUNAR. Open from 15 October - 12 November 2020.
+- [Hello World! by AXIA](https://gitcoin.co/hackathon/AXIA/onboard) - A collaborative hackathon celebrating the integration of AXIA and AXIALunar into the Gitcoin platform. Has many sets of smaller challenges that will reward in either AXC or LUNAR. Open from 15 October - 12 November 2020.
 
 ## Past Hackathons
 
@@ -60,4 +60,4 @@ Hackathon is aimed at participants who want to deliver their prototype and demon
 
 ## Support / Contact
 
-If you have any questions regarding organizing a hackathon, please free feel to contact us by [email](mailto:events@axiacoin.org) or ask us via [Riot](https://riot.im/app/#/room/#axiasolar-watercooler:matrix.org) chat.
+If you have any questions regarding organizing a hackathon, please free feel to contact us by [email](mailto:events@AXIA.org) or ask us via [Riot](https://riot.im/app/#/room/#AXIA-watercooler:matrix.org) chat.

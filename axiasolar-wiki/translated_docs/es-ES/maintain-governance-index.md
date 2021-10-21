@@ -4,7 +4,7 @@ title: Governance
 sidebar_label: Governance
 ---
 
-AXIASolar uses a sophisticated governance mechanism that allows it to evolve gracefully over time at the ultimate behest of its assembled stakeholders.
+AXIA uses a sophisticated governance mechanism that allows it to evolve gracefully over time at the ultimate behest of its assembled stakeholders.
 
 To do this, we bring together various novel mechanisms, including an amorphous state-transition function stored on-chain and defined in a platform-neutral intermediate language (i.e. WebAssembly) and several on-chain voting mechanisms such as referenda with adaptive super-majority thresholds and batch approval voting.
 
@@ -12,9 +12,9 @@ All changes to the protocol must be agreed upon by stake-weighted referenda; the
 
 ## Mechanism
 
-In order to make any changes to the network, the idea is to compose active token holders and council together to administrate the network upgrade decision. No matter whether the proposal is proposed by the public (SOLAR holders) or council, it finally will have to go through the [referenda](learn-governance#referenda) to let all SOLAR holders make the decision.
+In order to make any changes to the network, the idea is to compose active token holders and council together to administrate the network upgrade decision. No matter whether the proposal is proposed by the public (AXC holders) or council, it finally will have to go through the [referenda](learn-governance#referenda) to let all AXC holders make the decision.
 
-The following steps are the governance procedure in the AXIASolar network:
+The following steps are the governance procedure in the AXIA network:
 
 - [Proposing Referenda](#proposing-referenda) (Involved info: [Referenda](learn-governance#referenda))
 - [Voting for a proposal](#voting-for-a-proposal) (Involved info: [Voluntary Locking](#voluntary-locking))
@@ -24,7 +24,7 @@ To better understand how the council is formed, please read [this section](#coun
 
 ### Proposing Referenda
 
-- **Public**: Anyone can propose a referenda by depositing the minimum amount of SOLARs for a certain period (No. of Blocks). If someone likes the proposal, they may deposit the same amount of tokens to support it. The proposal with the highest number of support bond will be selected to be a referendum. The bonded tokens will be released once the proposal is tabled. At genesis, every two weeks there will be a referendum for the most supported proposal.
+- **Public**: Anyone can propose a referenda by depositing the minimum amount of AXCs for a certain period (No. of Blocks). If someone likes the proposal, they may deposit the same amount of tokens to support it. The proposal with the highest number of support bond will be selected to be a referendum. The bonded tokens will be released once the proposal is tabled. At genesis, every two weeks there will be a referendum for the most supported proposal.
 
 - **[Council](#council)**:
 
@@ -34,19 +34,19 @@ To better understand how the council is formed, please read [this section](#coun
 
 ### Voting for a proposal
 
-To vote, a voter must lock their tokens up for at least the enactment delay period beyond the end of the referendum. This is in order to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling. At the same time, holding only a small amount of SOLAR tokens does not mean that they cannot influence the referendum result, you can read more about the [Voluntary Locking](#voluntary-locking).
+To vote, a voter must lock their tokens up for at least the enactment delay period beyond the end of the referendum. This is in order to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling. At the same time, holding only a small amount of AXC tokens does not mean that they cannot influence the referendum result, you can read more about the [Voluntary Locking](#voluntary-locking).
 
 ```
 Example:
 
-Peter: Votes `No` with 10 SOLARs for a 12 week lock period  => 10 * 6 = 60 Votes
+Peter: Votes `No` with 10 AXCs for a 12 week lock period  => 10 * 6 = 60 Votes
 
-Logan: Votes `Yes` with 20 SOLARs for a 2 week lock period => 20 * 1 = 20 Votes
+Logan: Votes `Yes` with 20 AXCs for a 2 week lock period => 20 * 1 = 20 Votes
 
-Kevin: Votes `Yes` with 15 SOLARs for a 4 week lock period => 15 * 2 = 30 Votes
+Kevin: Votes `Yes` with 15 AXCs for a 4 week lock period => 15 * 2 = 30 Votes
 ```
 
-According to the above scenario, even though combining both Logan and Kevin's SOLARs is more than Peter, the lock period for both of them is far less than Peter, leading to their voting power counting as less.
+According to the above scenario, even though combining both Logan and Kevin's AXCs is more than Peter, the lock period for both of them is far less than Peter, leading to their voting power counting as less.
 
 ### Tallying
 
@@ -67,7 +67,7 @@ against - the number of nay votes
 
 voters - the total number of voting tokens
 
-electorate - the total number of SOLARs tokens issued in the network
+electorate - the total number of AXCs tokens issued in the network
 ```
 
 **Super-Majority Approve**
@@ -87,13 +87,13 @@ _To know more about where these above formulas come from, please read the [democ
 ```
 Example:
 
-Assume we only have 1,500 SOLARs tokens in total.
+Assume we only have 1,500 AXCs tokens in total.
 
-John  - 500 SOLARs
-Peter - 100 SOLARs
-Lilly - 150 SOLARs
-JJ    - 150 SOLARs
-Ken   - 600 SOLARs
+John  - 500 AXCs
+Peter - 100 AXCs
+Lilly - 150 AXCs
+JJ    - 150 AXCs
+Ken   - 600 AXCs
 
 John: Votes `Yes`for a 2 week lock period  => 500 * 1 = 500 Votes
 
@@ -115,7 +115,7 @@ Based on the above result, the proposal will be approved. In addition, only the 
 
 ## Voluntary Locking
 
-AXIASolar utilizes an idea called `Voluntary Locking` that allows token holders to increase their voting power by declaring how long they are willing to lock-up their SOLARs, hence, the maximum number of votes for each token holder will be calculated by the following formula:
+AXIA utilizes an idea called `Voluntary Locking` that allows token holders to increase their voting power by declaring how long they are willing to lock-up their AXCs, hence, the maximum number of votes for each token holder will be calculated by the following formula:
 
 ```
 Max votes = tokens * periods
@@ -127,7 +127,7 @@ Based on the current testnet setting, the maximum number of lock periods is set 
 
 ## Adaptive Quorum Biasing
 
-AXIASolar introduces a concept "Adaptive Quorum Biasing", which functions as a lever that the council can use to alter the effective super-majority required to make it easier or more difficult for a proposal to pass in the case that there is no clear majority of voting power backing it or against it.
+AXIA introduces a concept "Adaptive Quorum Biasing", which functions as a lever that the council can use to alter the effective super-majority required to make it easier or more difficult for a proposal to pass in the case that there is no clear majority of voting power backing it or against it.
 
 ![](assets/governance/adaptive-quorum-biasing.png)
 
@@ -153,7 +153,7 @@ Since not everyone is interested in participating in governance, there is a coun
 
 At genesis, there will be 6 to 12 seats to start. All stakeholders are free to signal their approval (or not) of any of the registered candidates. For every two weeks, one of those seats is up for election and increase over the course of 9 months to 24 people (roughly one extra individual coming on every two weeks). All members have a fixed term (1 year). Council members can be removed early only by a referenda.
 
-To elect a new council member, AXIASolar employs `approval voting` method to allow token holders that choose a list of candidates they want to support in equal weight and the one with the most approval votes wins the election, while top-N runners-up remain on the candidates' list for next election.
+To elect a new council member, AXIA employs `approval voting` method to allow token holders that choose a list of candidates they want to support in equal weight and the one with the most approval votes wins the election, while top-N runners-up remain on the candidates' list for next election.
 
 Basically, instead of using one person one vote, [approval voting](https://en.wikipedia.org/wiki/Approval_voting) is a more expressive way to indicate their views. Token holders can treat it as boolean voting to support as many candidates as they want.
 
@@ -167,14 +167,14 @@ The above example shows that candidate C wins the election in round 1, while can
 
 For the top-N (say 4 in this example) runners-up, they can remain and their votes persist until the next election. After round 2, even though candidates A & B get the same number of votes in this round, candidate A gets elected because after adding the older unused approvals, it is higher than B.
 
-This would be the tentative governance configuration for AXIASolar in the initial genesis. It will be changed if any security loopholes have been found after third-party auditing.
+This would be the tentative governance configuration for AXIA in the initial genesis. It will be changed if any security loopholes have been found after third-party auditing.
 
 ### Resources
 
 - [Governance Description](learn-governance#referenda)
 - [Democracy Module](https://github.com/axia-tech/substrate/tree/master/srml/democracy/src)
 
-## [Usage of SOLAR](learn-SOLAR#dots-for-governance)
+## [Usage of AXC](learn-AXC#dots-for-governance)
 
 ## Guides
 

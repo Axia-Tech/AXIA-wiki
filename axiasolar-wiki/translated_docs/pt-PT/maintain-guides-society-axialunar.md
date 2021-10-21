@@ -8,7 +8,7 @@ Kappa Sigma Mu is a membership club using the Substrate [Society](https://substr
 
 ![Society Dashboard](assets/society/dashboard.jpg)
 
-Before joining the society, let's take a brief look at the [Society UI](https://axiasolar.js.org/apps/#/society) on AXIASolarJS apps and read through all the [rules](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) to become a member.
+Before joining the society, let's take a brief look at the [Society UI](https://AXIA.js.org/apps/#/society) on AXIAJS apps and read through all the [rules](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) to become a member.
 
 ## UI Overview
 
@@ -42,7 +42,7 @@ Below are the various types of users at different stages.
 
 ## Procedure
 
-**Remember to take a look at the \[rules\]\[kapp rules\] first. And since those rules are not enforced entirely on-chain, it is recommended to join the [public chat room](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) to ask any questions if anything is unclear.**
+**Remember to take a look at the \[rules\]\[kapp rules\] first. And since those rules are not enforced entirely on-chain, it is recommended to join the [public chat room](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org) to ask any questions if anything is unclear.**
 
 ### 1. Bid Phase
 
@@ -54,13 +54,13 @@ Anyone who wants to join the society is required to deposit 10 LUNAR for reserve
 
 ![Society Dashboard](assets/society/test_bid.jpg)
 
-Once you have submitted the transaction, your bid will be shown on the [Society page](https://axiasolar.js.org/apps/#/society) under the bids section. You can cancel the bidding if you changed your mind about joining the society by calling `unbid`.
+Once you have submitted the transaction, your bid will be shown on the [Society page](https://AXIA.js.org/apps/#/society) under the bids section. You can cancel the bidding if you changed your mind about joining the society by calling `unbid`.
 
 > unbid(pos)
 >
 > pos - The index of the bid.
 
-If you are not sure what your position is, you can check that by going to the [Society->bids chain state](https://axiasolar.js.org/apps/#/chainstate) in the AXIASolarJS apps.
+If you are not sure what your position is, you can check that by going to the [Society->bids chain state](https://AXIA.js.org/apps/#/chainstate) in the AXIAJS apps.
 
 You can find an existing member to place a bid on your behalf if you do not have LUNAR and you are willing to give them a tip. An existing member can submit a `vouch` transaction.
 
@@ -158,6 +158,6 @@ If a member accumulates too many strikes or fails their membership challenge, th
 
 [Convention of Approval of Membership](https://axiascan.io/pre/axialunar/transaction/0x948d3a4378914341dc7af9220a4c73acb2b3f72a70f14ee8089799da16d94c17) - Rules about joining the AXIALunar society
 
-[Kappa Sigma Mu Lounge](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) - A public chat room on Riot to talk about anything about the society.
+[Kappa Sigma Mu Lounge](https://matrix.to/#/!BUmiAAnAYSRGarqwOt:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org) - A public chat room on Riot to talk about anything about the society.
 
-[Substrate Society](https://www.shawntabrizi.com/substrate-society/) - It shows the AXIALunar society information and allowing you to directly place a bid if you have installed the [AXIASolarJS extension](https://chrome.google.com/webstore/detail/axiasolar%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd).
+[Substrate Society](https://www.shawntabrizi.com/substrate-society/) - It shows the AXIALunar society information and allowing you to directly place a bid if you have installed the [AXIAJS extension](https://chrome.google.com/webstore/detail/AXIA%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd).

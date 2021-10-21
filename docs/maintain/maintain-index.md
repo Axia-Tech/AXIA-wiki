@@ -5,16 +5,16 @@ sidebar_label: Network Maintainers
 slug: ../maintain-index
 ---
 
-Welcome to the network maintainers section of the AXIACoin wiki. Here you will find information and
+Welcome to the network maintainers section of the AXIA wiki. Here you will find information and
 guides to set up a node and run the network.
 
 ## Node
 
-- [Networks Guide](maintain-networks.md) - A list of the available AXIACoin networks that you can
+- [Networks Guide](maintain-networks.md) - A list of the available AXIA networks that you can
   connect to with a node.
 - [Set up a Full Node](maintain-sync.md) - Get up and started by syncing a full node for the AXIALunar
   network. The steps in the guide will broadly apply also to any Substrate-based network (like
-  AXIACoin).
+  AXIA).
 - [Set up WSS using Nginx](maintain-wss.md) - Set up a Secure WebSockets server for your node's
   WebSockets connection.
 
@@ -26,8 +26,8 @@ guides to set up a node and run the network.
 
 - [Learn about Nominators](../learn/learn-nominator.md) - High level overview of nominators and related
   links.
-- [Nomination Guide (AXIACoin)](maintain-guides-how-to-nominate-axiasolar.md) - Walkthrough on how to
-  nominate on the AXIACoin network.
+- [Nomination Guide (AXIA)](maintain-guides-how-to-nominate-AXIA.md) - Walkthrough on how to
+  nominate on the AXIA network.
 - [Nomination Guide (AXIALunar)](axialunar/maintain-guides-how-to-nominate-axialunar.md) - Walkthrough on how to
   nominate on the AXIALunar canary network.
 - [How to stop being a Nominator](maintain-guides-how-to-unbond.md) - Guide on how to stop
@@ -38,14 +38,14 @@ guides to set up a node and run the network.
 - [Learn about Validators](../learn/learn-validator.md) - High level overview of validator and related links.
 - [Validator Payouts](maintain-guides-validator-payout.md) - Overview on how validator rewards are
   calculated and paid.
-- [Validation Guide (AXIACoin)](maintain-guides-how-to-validate-axiasolar.md) - Walkthrough on how to
-  validate on the AXIACoin network.
+- [Validation Guide (AXIA)](maintain-guides-how-to-validate-AXIA.md) - Walkthrough on how to
+  validate on the AXIA network.
 - [Validation Guide (AXIALunar)](axialunar/maintain-guides-how-to-validate-axialunar.md) - Walkthrough on how to
   validate on the AXIALunar canary network.
 - [Using systemmd for the Validator Node](maintain-guides-how-to-systemd.md) - Configuring systemmd
   with the Validator node.
 - [Secure Validator](maintain-guides-secure-validator.md) - Best tips and practices for validating.
-- [How to use AXIACoin Validator Setup](maintain-guides-how-to-use-axiasolar-validator-setup.md) -
+- [How to use AXIA Validator Setup](maintain-guides-how-to-use-AXIA-validator-setup.md) -
   Walkthrough on how to set up a validator securely.
 - [How to upgrade a Validator Node](maintain-guides-how-to-upgrade.md) - Guide on upgrading your
   validator node.

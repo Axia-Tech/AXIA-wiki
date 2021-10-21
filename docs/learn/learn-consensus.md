@@ -1,8 +1,8 @@
 ---
 id: learn-consensus
-title: AXIACoin Consensus
-sidebar_label: AXIACoin Consensus
-description: An explanation of the consensus model used in AXIACoin and AXIALunar
+title: AXIA Consensus
+sidebar_label: AXIA Consensus
+description: An explanation of the consensus model used in AXIA and AXIALunar
 slug: ../learn-consensus
 ---
 
@@ -42,12 +42,12 @@ In traditional PoS systems, block production participation is dependant on token
 A way to alleviate this is to implement pool formation on-chain and allow token holders to vote [with
 their stake] for validators to represent them.
 
-AXIACoin uses NPoS (Nominated Proof-of-Stake) as its mechanism for selecting the validator set. It
+AXIA uses NPoS (Nominated Proof-of-Stake) as its mechanism for selecting the validator set. It
 is designed with the roles of **validators** and **nominators**, to maximize chain security. Actors
 who are interested in maintaining the network can run a validator node.
 
 Validators assume the role of producing new blocks in [BABE](learn-consensus.md/#babe), validating
-parachain blocks, and guaranteeing finality. Nominators can choose to back select validators with
+allychain blocks, and guaranteeing finality. Nominators can choose to back select validators with
 their stake. Nominators can approve candidates that they trust and back them with their tokens.
 
 ## Probabilistic vs. Provable Finality
@@ -72,17 +72,17 @@ in this way:
 
 ## Hybrid Consensus
 
-There are two protocols we use when we talk about the consensus protocol of AXIACoin, GRANDPA and
-BABE (Blind Assignment for Blockchain Extension). We talk about both of these because AXIACoin uses
+There are two protocols we use when we talk about the consensus protocol of AXIA, GRANDPA and
+BABE (Blind Assignment for Blockchain Extension). We talk about both of these because AXIA uses
 what is known as _hybrid consensus_. Hybrid consensus splits up the finality gadget from the block
 production mechanism.
 
 This is a way of getting the benefits of probabilistic finality (the ability to always produce new
 blocks) and provable finality (having a universal agreement on the canonical chain with no chance
-for reversion) in AXIACoin. It also avoids the corresponding drawbacks of each mechanism (the chance
+for reversion) in AXIA. It also avoids the corresponding drawbacks of each mechanism (the chance
 of unknowingly following the wrong fork in probabilistic finality, and a chance for "stalling" - not
 being able to produce new blocks - in provable finality). By combining these two mechanisms,
-AXIACoin allows for blocks to be rapidly produced, and the slower finality mechanism to run in a
+AXIA allows for blocks to be rapidly produced, and the slower finality mechanism to run in a
 separate process to finalize blocks without risking slower transaction processing or stalling.
 
 Hybrid consensus has been proposed in the past. Notably, it was proposed (now defunct) as a step in
@@ -94,10 +94,10 @@ specified [Casper FFG](#casper-ffg).
 BABE (Blind Assignment for Blockchain Extension) is the block production mechanism that runs between
 the validator nodes and determines the authors of new blocks. BABE is comparable as an algorithm to
 Ouroboros Praos, with some key differences in chain selection rule and slot time adjustments. BABE
-assigns block production slots to validators according to stake and using the AXIACoin
+assigns block production slots to validators according to stake and using the AXIA
 [randomness cycle](learn-randomness.md).
 
-Validators in AXIACoin will participate in a lottery in every slot that will tell them whether or
+Validators in AXIA will participate in a lottery in every slot that will tell them whether or
 not they are the block producer candidate for that slot. Slots are discrete units of time, nominally
 6 seconds in length. Because of this randomness mechanism, multiple validators could be candidates
 for the same slot. Other times, a slot could be empty, resulting in inconsistent block time.
@@ -120,7 +120,7 @@ produces a primary block from a [VRF-selected](learn-randomness.md) validator. T
 either a _primary_ or a _secondary_ block, and no slots are ever skipped.
 
 For more details on BABE, please see the
-[BABE paper](https://research.axiacoin.org/en/latest/axiasolar/block-production/Babe.html).
+[BABE paper](https://research.AXIA.org/en/latest/AXIA/block-production/Babe.html).
 
 ### BADASS BABE: SASSAFRAS
 
@@ -132,7 +132,7 @@ ring-VRF and is a work in progress. This section will be updated as progress ens
 ## Finality Gadget: GRANDPA
 
 GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is the finality gadget that is
-implemented for the AXIACoin Relay Chain.
+implemented for the AXIA Relay Chain.
 
 It works in a partially synchronous network model as long as 2/3 of nodes are honest and can cope
 with 1/5 Byzantine nodes in an asynchronous setting.
@@ -157,7 +157,7 @@ is part of Substrate Frame.
 
 ## Fork Choice
 
-Bringing BABE and GRANDPA together, the fork choice of AXIACoin becomes clear. BABE must always
+Bringing BABE and GRANDPA together, the fork choice of AXIA becomes clear. BABE must always
 build on the chain that has been finalized by GRANDPA. When there are forks after the finalized
 head, BABE provides probabilistic finality by building on the chain with the most primary blocks.
 
@@ -200,16 +200,16 @@ The two main differences between GRANDPA and Casper FFG are:
 
 # Resources
 
-- [BABE paper](https://research.axiacoin.org/en/latest/axiasolar/block-production/Babe.html) - The
+- [BABE paper](https://research.AXIA.org/en/latest/AXIA/block-production/Babe.html) - The
   academic description of the BABE protocol.
 - [GRANDPA paper](https://github.com/axia-tech/consensus/blob/master/pdf/grandpa.pdf) - The academic
   description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.
 - [Rust implementation](https://github.com/axia-tech/finality-grandpa) - The reference
   implementation and the accompanying
   [Substrate pallet](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs).
-- [Block Production and Finalization in AXIACoin](https://www.crowdcast.io/e/axiasolar-block-production) -
+- [Block Production and Finalization in AXIA](https://www.crowdcast.io/e/AXIA-block-production) -
   An explanation of how BABE and GRANDPA work together to produce and finalize blocks on AXIALunar,
   with Bill Laboon.
-- [Block Production and Finalization in AXIACoin: Understanding the BABE and GRANDPA Protocols](https://www.youtube.com/watch?v=1CuTSluL7v4&t=4s) -
-  An academic talk by Bill Laboon, given at MIT Cryptoeconomic Systems 2020, describing AXIACoin's
+- [Block Production and Finalization in AXIA: Understanding the BABE and GRANDPA Protocols](https://www.youtube.com/watch?v=1CuTSluL7v4&t=4s) -
+  An academic talk by Bill Laboon, given at MIT Cryptoeconomic Systems 2020, describing AXIA's
   hybrid consensus model in-depth.

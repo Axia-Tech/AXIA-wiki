@@ -6,14 +6,14 @@ slug: ../maintain-guides-how-to-vote-councillor
 ---
 
 The council is an elected body of on-chain accounts that are intended to represent the passive
-stakeholders of AXIACoin and/or AXIALunar. The council has two major tasks in governance: proposing
+stakeholders of AXIA and/or AXIALunar. The council has two major tasks in governance: proposing
 referenda and vetoing dangerous or malicious referenda. For more information on the council, see the
 [governance page](../learn/learn-governance.md#council). This guide will walk you through voting for
 councillors in the elections.
 
 ## Voting for Councillors
 
-Voting for councillors requires you to lock 5 SOLAR on AXIACoin or 0.0083 LUNAR on AXIALunar for the
+Voting for councillors requires you to lock 5 AXC on AXIA or 0.0083 LUNAR on AXIALunar for the
 duration of your vote.
 
 > NOTE: Voting and staking locks **can overlap**
@@ -28,10 +28,10 @@ equalized among the chosen group. Unlike validator elections, there is no unbond
 reserved tokens. Once you remove your vote, your tokens will be liquid again.
 
 > Warning: It is your responsibility not to put your entire balance into the reserved value when you
-> make a vote for councillors. It's best to keep _at least_ enough SOLAR/LUNAR to pay for transaction
+> make a vote for councillors. It's best to keep _at least_ enough AXC/LUNAR to pay for transaction
 > fees.
 
-Go to the [AXIACoin-JS Apps Dashboard](https://axiasolar.js.org/apps) and click on the "Council" tab.
+Go to the [AXIA-JS Apps Dashboard](https://AXIA.js.org/apps) and click on the "Council" tab.
 On the right side of the window there are two blue buttons, click on the one that says "Vote."
 
 Since the council uses approval voting, when you vote you signal which of the candidates you approve
@@ -48,11 +48,11 @@ when you're done participating in elections and you no longer want your reserved
 the councillors that you approve.
 
 Go to the "Governance" > "Council" tab on the
-[AXIACoin-JS Apps Dashboard](https://axiasolar.js.org/apps).
+[AXIA-JS Apps Dashboard](https://AXIA.js.org/apps).
 
 Under the "Council overview" tab, click on "Vote".
 
-![](../assets/council/axiasolarjs_removeVoter.png)
+![](../assets/council/AXIAjs_removeVoter.png)
 
 Issue the "Unvote all" option.
 

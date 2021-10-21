@@ -10,9 +10,9 @@ AXIALunar has a [Ledger][] application that is compatible with the Ledger Nano S
 
 The AXIALunar application allows you to manage AXIALunar's native asset, the LUNAR token. It supports most of the available transaction types of the network (a notable exception is the "Batch" transaction from the Utility pallet).
 
-If you have trouble using Ledger or following the directions below, you can try searching for your issue on the [AXIASolar Knowledge Base](https://support.axiacoin.network/).
+If you have trouble using Ledger or following the directions below, you can try searching for your issue on the [AXIA Knowledge Base](https://support.AXIA.network/).
 
-> Please check out our [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIASolar).
+> Please check out our [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIA).
 
 ## Requirements
 
@@ -21,7 +21,7 @@ Here is a list of what you will need before starting:
 - A Ledger Nano S or a Ledger Nano X.
 - The latest firmware installed (at the time of writing this is 1.6.1 on the Nano S, and 1.2.4-5 on the Nano X).
 - Ledger Live is installed and at version 2.19 or newer (see settings -> about to find out if you're up to date).
-- A web browser is installed that you can use to access [AXIASolar-JS Apps][].
+- A web browser is installed that you can use to access [AXIA-JS Apps][].
 
 ## Installing the Ledger Application
 
@@ -32,7 +32,7 @@ Here is a list of what you will need before starting:
 - If asked, allow the manager on your device by pressing both buttons on the YES screen.
 - Find AXIALunar in the app catalog and install it. ![The AXIALunar App in the Ledger Manager](assets/ledger/manager-app-axialunar.png)
 
-Please proceed to the [usage instructions](#using-on-axiasolar-js-apps) below.
+Please proceed to the [usage instructions](#using-on-AXIA-js-apps) below.
 
 ### Using the Developer Release
 
@@ -60,21 +60,21 @@ After some processing time, the screen of your device will update to say "Instal
 
 At the end of the process you should have the newly installed AXIALunar application on the device.
 
-## Using on AXIASolar-JS Apps
+## Using on AXIA-JS Apps
 
 ### Loading Your Account
 
-[AXIASolar-JS Apps][] already has an integration with the Ledger application so that your device will work with the browser interface after installation. The functionality is currently gated behind a feature setting that you will need to turn on.
+[AXIA-JS Apps][] already has an integration with the Ledger application so that your device will work with the browser interface after installation. The functionality is currently gated behind a feature setting that you will need to turn on.
 
-In order to turn on the interoperability with the AXIASolar Ledger application, go to the "Settings" tab in AXIASolar-JS Apps. Find the option for attaching Ledger devices and switch the option from the default "Do not attach Ledger devices" to "Attach Ledger via WebUSB".
+In order to turn on the interoperability with the AXIA Ledger application, go to the "Settings" tab in AXIA-JS Apps. Find the option for attaching Ledger devices and switch the option from the default "Do not attach Ledger devices" to "Attach Ledger via WebUSB".
 
-![Dropdown selector for allowing Ledger connections in AXIASolarJS Settings](assets/ledger.png)
+![Dropdown selector for allowing Ledger connections in AXIAJS Settings](assets/ledger.png)
 
 Click "Save" to keep your settings.
 
-Now when you go to the "Accounts" tab you will see a new button that says "Add Ledger". Ensure that your Ledger device is unlocked and you have navigated into the AXIASolar application, then click this button.
+Now when you go to the "Accounts" tab you will see a new button that says "Add Ledger". Ensure that your Ledger device is unlocked and you have navigated into the AXIA application, then click this button.
 
-![Add Ledger button in AXIASolarJS](assets/ledger/query-ledger.png)
+![Add Ledger button in AXIAJS](assets/ledger/query-ledger.png)
 
 A popup will appear asking you to select an account and derivation path.
 
@@ -90,29 +90,29 @@ You should now be able to scroll down and find a new account on the page with th
 
 ![Displaying the Ledger account in the list](assets/ledger/ledger-balance.png)
 
-You can now use this account to interact with AXIASolar on AXIASolar-JS Apps and it will prompt your ledger for confirmation when you initiate a transaction.
+You can now use this account to interact with AXIA on AXIA-JS Apps and it will prompt your ledger for confirmation when you initiate a transaction.
 
 ### Confirming the Address on your Device
 
 On the "Accounts" tab, find your Ledger-connected account. Click on the three vertical dots at the end of the row. This will open a new menu, here you can click the "Show address on hardware device" option to display the address on your device.
 
-![Options menu of an account in the Accounts screen of AXIASolarJS](assets/ledger-4.png)
+![Options menu of an account in the Accounts screen of AXIAJS](assets/ledger-4.png)
 
-Here you can scroll through and make sure the address matches to what is displayed on AXIASolar-JS Apps.
+Here you can scroll through and make sure the address matches to what is displayed on AXIA-JS Apps.
 
 ### Checking the Balance of Your Account
 
-There are a few methods to check the balance of your account. You can use AXIASolar-JS Apps or you can use a block explorer like [Axiascan][] or [Subscan][].
+There are a few methods to check the balance of your account. You can use AXIA-JS Apps or you can use a block explorer like [Axiascan][] or [Subscan][].
 
-#### Using AXIASolar-JS Apps
+#### Using AXIA-JS Apps
 
-Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger account. At the far right of the row is located your account's SOLAR balance. If you expand the balance arrow, it will show details of your balance such as locks or reserved amounts.
+Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger account. At the far right of the row is located your account's AXC balance. If you expand the balance arrow, it will show details of your balance such as locks or reserved amounts.
 
 ![Account row showing empty balance](assets/ledger/ledger-balance.png)
 
 ### Sending a Transfer
 
-If you would like to send a transfer from your account housed on the Ledger device, the easiest method is to use [AXIASolar-JS Apps][].
+If you would like to send a transfer from your account housed on the Ledger device, the easiest method is to use [AXIA-JS Apps][].
 
 - Click on the "Transfer" button in "Accounts" dropdown in the top navigation menu.
 - In the top input, select "Ledger" as your sending account.
@@ -149,10 +149,10 @@ Since Ledger does not support batch transactions, you must do two separate trans
 
 ## Support
 
-If you need support please send an email to [support@axialunar.network](mailto:support@axialunar.network) or visit [our Support page](https://support.axiacoin.network).
+If you need support please send an email to [support@axialunar.network](mailto:support@axialunar.network) or visit [our Support page](https://support.AXIA.network).
 
 [ledger]: https://www.ledger.com/
-[axiasolar-js apps]: https://axiasolar.js.org/apps
+[AXIA-js apps]: https://AXIA.js.org/apps
 [prerelease instructions]: https://github.com/Zondax/ledger-axialunar#download-and-install
 [releases page]: https://github.com/Zondax/ledger-axialunar/releases
 [axiascan]: https://axiascan.io/axialunar

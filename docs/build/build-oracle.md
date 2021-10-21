@@ -26,14 +26,14 @@ dictate the real-world data on-chain. On the decentralized end, a [complex game 
 don't submit the same data as everyone else. Solutions such as [ChainLink][chainlink] fit somewhere
 in the middle, where the amount of trust you put into the reporting oracles can be adjusted based on
 your preferences. A Chainlink [Feed Pallet][feed pallet] was recently released to allow smart
-contract applications across AXIACoin to access price reference data, made available as a Substrate
+contract applications across AXIA to access price reference data, made available as a Substrate
 oracle pallet.
 
 When using an oracle in your application you should be aware of the benefits and risks that are
-baked into its specific model. As the AXIACoin ecosystem develops and oracle parachains begin to
+baked into its specific model. As the AXIA ecosystem develops and oracle allychains begin to
 appear, this article will be updated with a comparison of the different solutions and the benefits
 and drawbacks that each provide.
 
 [schellingcoin]: https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/
-[chainlink]: https://axiacoin.network/chainlink-reaches-milestone-with-axiasolar/
-[feed pallet]: https://github.com/smartcontractkit/chainlink-axiasolar/blob/master/pallet-chainlink-feed/README.md
+[chainlink]: https://AXIA.network/chainlink-reaches-milestone-with-AXIA/
+[feed pallet]: https://github.com/smartcontractkit/chainlink-AXIA/blob/master/pallet-chainlink-feed/README.md

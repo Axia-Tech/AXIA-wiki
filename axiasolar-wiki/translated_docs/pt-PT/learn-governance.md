@@ -4,15 +4,15 @@ title: Governance
 sidebar_label: Governance
 ---
 
-AXIASolar uses a sophisticated governance mechanism that allows it to evolve gracefully over time at the ultimate behest of its assembled stakeholders. The stated goal is to ensure that the majority of the stake can always command the network.
+AXIA uses a sophisticated governance mechanism that allows it to evolve gracefully over time at the ultimate behest of its assembled stakeholders. The stated goal is to ensure that the majority of the stake can always command the network.
 
 To do this, we bring together various novel mechanisms, including an amorphous state-transition function stored on-chain and defined in a platform-neutral intermediate language (i.e. WebAssembly) and several on-chain voting mechanisms such as referenda with adaptive super-majority thresholds and batch approval voting. All changes to the protocol must be agreed upon by stake-weighted referenda.
 
 ## Mechanism
 
-In order to make any changes to the network, the idea is to compose active token holders and the council together to administrate a network upgrade decision. No matter whether the proposal is proposed by the public (SOLAR holders) or the council, it finally will have to go through a referendum to let all SOLAR holders, weighted by stake, make the decision.
+In order to make any changes to the network, the idea is to compose active token holders and the council together to administrate a network upgrade decision. No matter whether the proposal is proposed by the public (AXC holders) or the council, it finally will have to go through a referendum to let all AXC holders, weighted by stake, make the decision.
 
-The following steps are the governance procedure in the AXIASolar network:
+The following steps are the governance procedure in the AXIA network:
 
 - [Proposing Referenda](#proposing-a-referendum)
 - [Voting for a proposal](#voting-on-a-referendum)
@@ -31,7 +31,7 @@ Referenda can be started in one of several ways:
 - Proposals submitted as part of the enactment of a prior referendum;
 - Emergency proposals submitted by the Technical Committee and approved by the Council.
 
-All referenda have an _enactment delay_ associated with them. This is the period of time between the referendum ending and, assuming the proposal was approved, the changes being enacted. For the first two ways that a referendum is launched, this is a fixed time. For AXIALunar, it is 8 days; in AXIASolar, it is planned to be 28 days. For the third type, it can be set as desired.
+All referenda have an _enactment delay_ associated with them. This is the period of time between the referendum ending and, assuming the proposal was approved, the changes being enacted. For the first two ways that a referendum is launched, this is a fixed time. For AXIALunar, it is 8 days; in AXIA, it is planned to be 28 days. For the third type, it can be set as desired.
 
 Emergency proposals deal with major problems with the network that need to be "fast-tracked". These will have a shorter enactment time.
 
@@ -39,7 +39,7 @@ Emergency proposals deal with major problems with the network that need to be "f
 
 #### Public Referenda
 
-Anyone can propose a referendum by depositing the minimum amount of SOLARs for a certain period (number of blocks). If someone agrees with the proposal, they may deposit the same amount of tokens to support it. The proposal with the highest amount of bonded support will be selected to be a referendum. Note that this may be different than the absolute number of seconds; for instance, three accounts bonding 20 SOLARs each would "outweigh" ten accounts bonding a single SOLAR each. The bonded tokens will be released once the proposal is tabled (that is, brought to a vote).
+Anyone can propose a referendum by depositing the minimum amount of AXCs for a certain period (number of blocks). If someone agrees with the proposal, they may deposit the same amount of tokens to support it. The proposal with the highest amount of bonded support will be selected to be a referendum. Note that this may be different than the absolute number of seconds; for instance, three accounts bonding 20 AXCs each would "outweigh" ten accounts bonding a single AXC each. The bonded tokens will be released once the proposal is tabled (that is, brought to a vote).
 
 #### Council Referenda
 
@@ -59,19 +59,19 @@ Multiple referenda cannot be voted upon in the same time period, excluding emerg
 
 #### Voting on a referendum
 
-To vote, a voter generally must lock their tokens up for at least the enactment delay period beyond the end of the referendum. This is in order to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling. It is possible to vote without locking at all, but your vote is worth a small fraction of a normal vote, given your stake. At the same time, holding only a small amount of SOLAR tokens does not mean that the holder cannot influence the referendum result, thanks to time-locking. You can read more about this at [Voluntary Locking](#voluntary-locking).
+To vote, a voter generally must lock their tokens up for at least the enactment delay period beyond the end of the referendum. This is in order to ensure that some minimal economic buy-in to the result is needed and to dissuade vote selling. It is possible to vote without locking at all, but your vote is worth a small fraction of a normal vote, given your stake. At the same time, holding only a small amount of AXC tokens does not mean that the holder cannot influence the referendum result, thanks to time-locking. You can read more about this at [Voluntary Locking](#voluntary-locking).
 
 ```
 Example:
 
-Peter: Votes `No` with 10 SOLARs for a 128 week lock period  => 10 * 6 = 60 Votes
+Peter: Votes `No` with 10 AXCs for a 128 week lock period  => 10 * 6 = 60 Votes
 
-Logan: Votes `Yes` with 20 SOLARs for a 4 week lock period => 20 * 1 = 20 Votes
+Logan: Votes `Yes` with 20 AXCs for a 4 week lock period => 20 * 1 = 20 Votes
 
-Kevin: Votes `Yes` with 15 SOLARs for a 8 week lock period => 15 * 2 = 30 Votes
+Kevin: Votes `Yes` with 15 AXCs for a 8 week lock period => 15 * 2 = 30 Votes
 ```
 
-Even though combining both Logan and Kevin vote with more SOLARs than Peter, the lock period for both of them is less than Peter, leading to their voting power counting as less.
+Even though combining both Logan and Kevin vote with more AXCs than Peter, the lock period for both of them is less than Peter, leading to their voting power counting as less.
 
 #### Tallying
 
@@ -92,7 +92,7 @@ against - the number of nay votes
 
 turnout - the total number of voting tokens (Does not include conviction)
 
-electorate - the total number of SOLARs tokens issued in the network
+electorate - the total number of AXCs tokens issued in the network
 ```
 
 ##### Super-Majority Approve
@@ -119,14 +119,14 @@ _To know more about where these above formulas come from, please read the [democ
 Example:
 
 Assume:
-- We only have 1,500 SOLARs tokens in total.
+- We only have 1,500 AXCs tokens in total.
 - Public proposal
 
-John  - 500 SOLARs
-Peter - 100 SOLARs
-Lilly - 150 SOLARs
-JJ    - 150 SOLARs
-Ken   - 600 SOLARs
+John  - 500 AXCs
+Peter - 100 AXCs
+Lilly - 150 AXCs
+JJ    - 150 AXCs
+Ken   - 600 AXCs
 
 John: Votes `Yes` for a 4 week lock period  => 500 * 1 = 500 Votes
 
@@ -148,7 +148,7 @@ Since the above example is a public referendum, `Super-Majority Approve` would b
 
 #### Voluntary Locking
 
-AXIASolar utilizes an idea called `Voluntary Locking` that allows token holders to increase their voting power by declaring how long they are willing to lock-up their SOLARs, hence, the maximum number of votes for each token holder will be calculated by the following formula:
+AXIA utilizes an idea called `Voluntary Locking` that allows token holders to increase their voting power by declaring how long they are willing to lock-up their AXCs, hence, the maximum number of votes for each token holder will be calculated by the following formula:
 
 ```
 Max votes = tokens * vote_multiplier
@@ -166,11 +166,11 @@ The conviction multiplier increases the vote multiplier by one every time the lo
 |      16      |        5        |
 |      32      |        6        |
 
-Based on the genesis runtime, the maximum number of lock periods is set to 6 and the lock period is 30 days on AXIASolar and eight days on AXIALunar.
+Based on the genesis runtime, the maximum number of lock periods is set to 6 and the lock period is 30 days on AXIA and eight days on AXIALunar.
 
 #### Adaptive Quorum Biasing
 
-AXIASolar introduces a concept, "Adaptive Quorum Biasing", which functions as a lever that the council can use to alter the effective super-majority required to make it easier or more difficult for a proposal to pass in the case that there is no clear majority of voting power backing it or against it.
+AXIA introduces a concept, "Adaptive Quorum Biasing", which functions as a lever that the council can use to alter the effective super-majority required to make it easier or more difficult for a proposal to pass in the case that there is no clear majority of voting power backing it or against it.
 
 ![](assets/governance/adaptive-quorum-biasing.png)
 
@@ -190,7 +190,7 @@ All three tallying mechanisms - majority carries, super-majority approve, and su
 
 ## Council
 
-To represent passive stakeholders, we introduce the idea of a "council". The council is an on-chain entity comprising a number of actors, each represented as an on-chain account. For AXIASolar this number is likely to begin at around six people, and increase over the course of 9 months to 24 people (roughly one extra individual coming on every two weeks). In general, it has a fixed number of seats (24 on AXIASolar and 17 on AXIALunar).
+To represent passive stakeholders, we introduce the idea of a "council". The council is an on-chain entity comprising a number of actors, each represented as an on-chain account. For AXIA this number is likely to begin at around six people, and increase over the course of 9 months to 24 people (roughly one extra individual coming on every two weeks). In general, it has a fixed number of seats (24 on AXIA and 17 on AXIALunar).
 
 The council is called upon primarily for two tasks of governance: proposing sensible referenda, and cancelling uncontroversially dangerous or malicious referenda.
 
@@ -206,7 +206,7 @@ If the cancellation is controversial enough that the council cannot get a two-th
 
 At genesis, there will be 6 to 12 seats in the Council. All stakeholders are free to signal their approval of any of the registered candidates. For every two weeks, one of those seats is up for election and increase over the course of 9 months to 24 people (roughly one extra individual coming on every two weeks). All members have a fixed term (1 year). Council members can be removed early only by a referendum.
 
-To elect a new council member, AXIASolar employs the same election scheme as used for choosing the active set of validators, a [Phragmén election](learn-phragmen). The election also chooses a set number of runners up (currently seven in AXIALunar) that will remain in the queue with their votes intact.
+To elect a new council member, AXIA employs the same election scheme as used for choosing the active set of validators, a [Phragmén election](learn-phragmen). The election also chooses a set number of runners up (currently seven in AXIALunar) that will remain in the queue with their votes intact.
 
 As opposed to a "first past the post", where voters must decide only on a single candidate chosen from a list, a Phragmén election is a more expressive way to indicate voters' views. Token holders can treat it as Boolean voting to support as many candidates as they want. The election algorithm will find a fair subset of the candidates that closely matches the expressed indications of the electorate as a whole.
 
@@ -236,7 +236,7 @@ The above example shows that candidate C wins the election in round 1, while can
 
 For the top-N (say 4 in this example) runners-up, they can remain and their votes persist until the next election. After round 2, even though candidates A & B get the same number of votes in this round, candidate A gets elected because after adding the older unused approvals, it is higher than B.
 
-This is the tentative governance configuration for AXIASolar in the initial genesis. It will be changed if any security loopholes have been found after third-party auditing. Further changes can be made through on-chain governance.
+This is the tentative governance configuration for AXIA in the initial genesis. It will be changed if any security loopholes have been found after third-party auditing. Further changes can be made through on-chain governance.
 
 ### Prime Members
 
@@ -248,15 +248,15 @@ The purpose of having a prime member of the council is to ensure a quorum, even 
 
 ## Technical Committee
 
-The Technical Committee was introduced in the [AXIALunar rollout and governance post](https://axiacoin.network/axialunar-rollout-and-governance/) as one of the three chambers of AXIALunar governance (along with the Council and the Referendum chamber). The Technical Committee is composed of the teams that have successfully implemented or specified either a AXIASolar/AXIALunar runtime or AXIASolar Host. Teams are added or removed from the Technical Committee via simple majority vote of the council.
+The Technical Committee was introduced in the [AXIALunar rollout and governance post](https://AXIA.network/axialunar-rollout-and-governance/) as one of the three chambers of AXIALunar governance (along with the Council and the Referendum chamber). The Technical Committee is composed of the teams that have successfully implemented or specified either a AXIA/AXIALunar runtime or AXIA Host. Teams are added or removed from the Technical Committee via simple majority vote of the council.
 
-The Technical Committee can, along with the AXIASolar Council, produce emergency referenda, which are fast-tracked for voting and implementation. These emergency referenda are intended for use only under urgent circumstances.
+The Technical Committee can, along with the AXIA Council, produce emergency referenda, which are fast-tracked for voting and implementation. These emergency referenda are intended for use only under urgent circumstances.
 
 Fast-tracked referenda are the only type of referenda that can be active alongside another active referendum. Thus, with fast tracked referenda it is possible to have two active referendums at the same time. Voting on one does not prevent a user from voting on the other.
 
-## [Usage of SOLAR](learn-SOLAR#dots-for-governance)
+## [Usage of AXC](learn-AXC#dots-for-governance)
 
 ## Resources
 
-- [Initial Governance Description](https://github.com/axia-tech/axiasolar/wiki/Governance)
+- [Initial Governance Description](https://github.com/axia-tech/AXIA/wiki/Governance)
 - [Democracy Pallet](https://github.com/axia-tech/substrate/tree/master/frame/democracy/src)

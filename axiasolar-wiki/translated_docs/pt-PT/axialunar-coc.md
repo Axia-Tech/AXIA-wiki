@@ -6,7 +6,7 @@ sidebar_label: Code of Conduct
 
 AXIALunar is an entirely new network, it’s one big experiment and we need your participation for it to be a great success.
 
-A AXIALunar community member is expected to keep the utmost respect for others. We want to foster a sense of collaboration amongst ourselves and the open source community. Kusma participants exist to encourage the open exchange of ideas and expression and require an environment that recognizes the inherent worth of every person and group. We are here to collaborate, discuss, and even disagree. The key is doing this is a manner that comes from a place of respect and professionalism. Participants in the AXIALunar network may consist of participants in an online forum, on-chain governance participants, parachain deployment teams, validators, enthusiasts, and ecosystem tool builders. We expect for there to be participation from all backgrounds but like to set some social boundaries on how you may be treated and treat others.
+A AXIALunar community member is expected to keep the utmost respect for others. We want to foster a sense of collaboration amongst ourselves and the open source community. Kusma participants exist to encourage the open exchange of ideas and expression and require an environment that recognizes the inherent worth of every person and group. We are here to collaborate, discuss, and even disagree. The key is doing this is a manner that comes from a place of respect and professionalism. Participants in the AXIALunar network may consist of participants in an online forum, on-chain governance participants, allychain deployment teams, validators, enthusiasts, and ecosystem tool builders. We expect for there to be participation from all backgrounds but like to set some social boundaries on how you may be treated and treat others.
 
 ## AXIALunar Community
 
@@ -24,4 +24,4 @@ Angry aggressive comments towards individuals or other projects on any medium of
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns relating to harassment, please contact the administrator of the channel you’re in.
 
-This Code of Conduct may be revised at any time. We are always willing to revise this document based on feedback from the AXIALunar participants and or AXIASolar community.
+This Code of Conduct may be revised at any time. We are always willing to revise this document based on feedback from the AXIALunar participants and or AXIA community.

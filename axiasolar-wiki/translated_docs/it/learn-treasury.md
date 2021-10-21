@@ -2,14 +2,14 @@
 id: learn-treasury
 title: Treasury
 sidebar_label: Treasury
-description: Details about AXIASolar's on-chain treasury.
+description: Details about AXIA's on-chain treasury.
 ---
 
 The Treasury is a pot of funds collected through transaction fees, slashing, [staking inefficiencies](learn-staking#inflation), etc. The funds held in the Treasury can be spent by making a spending proposal that, if approved by the [Council](learn-governance#Council), will enter a waiting period before distribution. This waiting period is known as the budget period, and its duration is subject to [governance](learn-governance), with the current default set to
 {{ spend_period }} days. The Treasury attempts to spend as many proposals in the queue as it can without running out of funds.
 
 If the Treasury ends a budget period without spending all of its funds, it suffers a burn of a percentage of its funds -- thereby causing deflationary pressure.
-{{ axiasolar: This percentage is currently at 1% on AXIASolar. :axiasolar }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to [Society](https://lunar.wiki.axiacoin.network/docs/en/maintain-guides-society-axialunar) rather than being burned. :axialunar }}
+{{ AXIA: This percentage is currently at 1% on AXIA. :AXIA }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to [Society](https://lunar.wiki.AXIA.network/docs/en/maintain-guides-society-axialunar) rather than being burned. :axialunar }}
 
 When a stakeholder wishes to propose a spend from the Treasury, they must reserve a deposit totaling 5% of the proposed spend (see below for variations). This deposit will be slashed if the proposal is rejected, and returned if it is accepted.
 
@@ -45,16 +45,16 @@ To minimize storage on chain, proposals don't contain contextual information. Wh
 
 - Many community members participate in discussion in the [AXIALunar Element (previously Riot)](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) chat.
 - The [Axiassembly](https://axialunar.axiassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
-- The {{ axiasolar: [AXIASolar forum](https://forum.axiacoin.network) :axiasolar }}
+- The {{ AXIA: [AXIA forum](https://forum.AXIA.network) :AXIA }}
   {{ axialunar: [AXIALunar forum](https://forum.axialunar.network) :axialunar }} can be used for proposal explanations.
-- [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }} address and automatically reads proposals from the chain, turning them into discussion threads.
+- [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their {{ AXIA: AXIA :AXIA }} {{ axialunar: AXIALunar :axialunar }} address and automatically reads proposals from the chain, turning them into discussion threads.
 
-Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Element channels like {{ axiasolar: the [AXIASolar Watercooler](https://app.element.io/#/room/#axiasolar-watercooler:axiacoin.org) and [AXIASolar Direction room](https://app.element.io/#/room/#axiasolar-direction:matrix.axia.io) :axiasolar }}
-{{ axialunar: the [AXIALunar Direction room](https://app.element.io/#/room/#axialunar:matrix.axia.io) or the [AXIALunar Watercooler](https://app.element.io/#/room/#axialunarwatercooler:axiasolar.builders) :axialunar }}.
+Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Element channels like {{ AXIA: the [AXIA Watercooler](https://app.element.io/#/room/#AXIA-watercooler:AXIA.org) and [AXIA Direction room](https://app.element.io/#/room/#AXIA-direction:matrix.axia.io) :AXIA }}
+{{ axialunar: the [AXIALunar Direction room](https://app.element.io/#/room/#axialunar:matrix.axia.io) or the [AXIALunar Watercooler](https://app.element.io/#/room/#axialunarwatercooler:AXIA.builders) :axialunar }}.
 
 ### Creating the Proposal
 
-One way to create the proposal is to use the AXIASolar-JS Apps [website](https://axiasolar.js.org/apps). From the website, use either the [extrinsics tab](https://axiasolar.js.org/apps/#/extrinsics) and select the Treasury pallet, then `proposeSpend` and enter the desired amount and recipient, or use the [Treasury tab](https://axiasolar.js.org/apps/#/treasury) and its dedicated Submit Proposal button:
+One way to create the proposal is to use the AXIA-JS Apps [website](https://AXIA.js.org/apps). From the website, use either the [extrinsics tab](https://AXIA.js.org/apps/#/extrinsics) and select the Treasury pallet, then `proposeSpend` and enter the desired amount and recipient, or use the [Treasury tab](https://AXIA.js.org/apps/#/treasury) and its dedicated Submit Proposal button:
 
 ![A proposal being created](assets/treasury/submit-new.png)
 
@@ -87,10 +87,10 @@ To better understand the process a tip goes through until it is paid out, let's 
 
 ### Example
 
-Bob has done something great for {{ axiasolar: AXIASolar :axiasolar }} {{ axialunar: AXIALunar :axialunar }}. Alice has noticed this and decides to report Bob as deserving a tip from the Treasury. The Council is composed of three members Charlie, Dave, and Eve.
+Bob has done something great for {{ AXIA: AXIA :AXIA }} {{ axialunar: AXIALunar :axialunar }}. Alice has noticed this and decides to report Bob as deserving a tip from the Treasury. The Council is composed of three members Charlie, Dave, and Eve.
 
 Alice begins the process by issuing the `report_awesome` extrinsic. This extrinsic requires two arguments, a reason and the address to tip. Alice submits Bob's address with the reason being a UTF-8 encoded URL to a post on
-{{ axiasolar: [axiassembly](https://axiasolar.axiassembly.io) :axiasolar }}
+{{ AXIA: [axiassembly](https://AXIA.axiassembly.io) :AXIA }}
 {{ axialunar: [axiassembly](https://axialunar.axiassembly.io) :axialunar }} that explains her reasoning for why Bob deserves the tip.
 
 As mentioned above, Alice must also lock up a deposit for making this report. The deposit is the base deposit as set in the chain's parameter list plus the additional deposit per byte contained in the reason. This is why Alice submitted a URL as the reason instead of the explanation directly, it was cheaper for her to do so.
@@ -101,14 +101,14 @@ Since the tipper group is the same as the Council on AXIALunar, the Council must
 
 Charlie, Dave, and Eve all review the report and make tips according to their personal valuation of the benefit Bob has provided to AXIALunar.
 
-Charlie tips {{ axiasolar: 10 SOLAR :axiasolar }} {{ axialunar: 1 LUNAR :axialunar }}. Dave tips
-{{ axiasolar: 30 SOLAR :axiasolar }} {{ axialunar: 3 LUNAR :axialunar }}. Eve tips
-{{ axiasolar: 100 SOLAR :axiasolar }} {{ axialunar: 10 LUNAR :axialunar }}.
+Charlie tips {{ AXIA: 10 AXC :AXIA }} {{ axialunar: 1 LUNAR :axialunar }}. Dave tips
+{{ AXIA: 30 AXC :AXIA }} {{ axialunar: 3 LUNAR :axialunar }}. Eve tips
+{{ AXIA: 100 AXC :AXIA }} {{ axialunar: 10 LUNAR :axialunar }}.
 
 The tip could have been closed out with only two of the three tippers. Once more than half of the tippers group have issued tip valuations, the countdown to close the tip will begin. In this case, the third tipper issued their tip before the end of the closing period, so all three were able to make their tip valuations known.
 
 Now the actual tip that will be paid out to Bob is the median of these tips, so Bob will be paid out
-{{ axiasolar: 30 SOLAR :axiasolar }} {{ axialunar: 3 LUNAR :axialunar }} from the Treasury.
+{{ AXIA: 30 AXC :AXIA }} {{ axialunar: 3 LUNAR :axialunar }} from the Treasury.
 
 In order for Bob to be paid his tip, some account must call the `close_tip` extrinsic at the end of the closing period for the tip. This extrinsic may be called by anyone.
 
@@ -116,7 +116,7 @@ In order for Bob to be paid his tip, some account must call the `close_tip` extr
 
 There are practical limits to Council Members curation capabilities when it comes to treasury proposals: Council members likely do not have the expertise to make a proper assessment of the activities described in all proposals. Even if individual Councillors have that expertise, it is highly unlikely that a majority of members are capable in such diverse topics.
 
-Bounties Spending proposals aim to delegate the curation activity of spending proposals to experts called Curators: They can be defined as addresses with agency over a portion of the Treasury with the goal of fixing a bug or vulnerability, developing a strategy, or monitoring a set of tasks related to a specific topic: all for the benefit of the AXIASolar ecosystem.
+Bounties Spending proposals aim to delegate the curation activity of spending proposals to experts called Curators: They can be defined as addresses with agency over a portion of the Treasury with the goal of fixing a bug or vulnerability, developing a strategy, or monitoring a set of tasks related to a specific topic: all for the benefit of the AXIA ecosystem.
 
 A proposer can submit a bounty proposal for the Council to pass, with a curator to be defined later, whose background and expertise is such that they are capable of determining when the task is complete. Curators are selected by the Council after the bounty proposal passes, and need to add an upfront payment to take the position. This deposit can be used to punish them if they act maliciously. However, if they are successful in their task of getting someone to complete the bounty work, they will receive their deposit back and part of the bounty reward.
 
@@ -132,14 +132,14 @@ The bounty has a predetermined duration of 90 days with the possibility of being
 
 ### Creating a Bounty Proposal
 
-Anyone can create a Bounty proposal using AXIASolar JS Apps: Users are able to submit a proposal on the dedicated Bounty section under Governance. The development of a robust user interface to view and manage bounties in the AXIASolar Apps is still under development and it will serve Council members, Curators and Beneficiaries of the bounties, as well as all users observing the on-chain treasury governance. For now, the help of a Councillor is needed to open a bounty proposal as a motion to be voted.
+Anyone can create a Bounty proposal using AXIA JS Apps: Users are able to submit a proposal on the dedicated Bounty section under Governance. The development of a robust user interface to view and manage bounties in the AXIA Apps is still under development and it will serve Council members, Curators and Beneficiaries of the bounties, as well as all users observing the on-chain treasury governance. For now, the help of a Councillor is needed to open a bounty proposal as a motion to be voted.
 
-To submit a bounty, please visit [AXIASolar JS Apps](https://axiasolar.js.org/apps) and click on the governance tab in the options bar on the top of the site. After, click on 'Bounties' and find the button '+ Add Bounty' on the upper-right side of the interface. Complete the bounty title, the requested allocation (including curator's fee) and confirm the call.
+To submit a bounty, please visit [AXIA JS Apps](https://AXIA.js.org/apps) and click on the governance tab in the options bar on the top of the site. After, click on 'Bounties' and find the button '+ Add Bounty' on the upper-right side of the interface. Complete the bounty title, the requested allocation (including curator's fee) and confirm the call.
 
 After this, a Council member will need to assist you to pass the bounty proposal for vote as a motion. You can contact the Council by joining the
-{{ axiasolar: AXIASolar Direction [channel](https://axia.link/axiasolar-direction) :axiasolar }}
+{{ AXIA: AXIA Direction [channel](https://axia.link/AXIA-direction) :AXIA }}
 {{ axialunar: AXIALunar Direction [channel](https://axia.link/axialunar-direction) :axialunar }} in Element or joining our
-{{ axiasolar: AXIASolar Discord [server](https://axia.link/axiasolar-discord) :axiasolar }}
+{{ AXIA: AXIA Discord [server](https://axia.link/AXIA-discord) :AXIA }}
 {{ axialunar: AXIALunar Discord [server](https://axia.link/axialunar-discord) :axialunar }} and publishing a short description of your bounty, with a link to one of the [forums](#announcing-the-proposal) for contextual information.
 
 A bounty can be cancelled by deleting the earmark for a specific treasury amount or be closed if the tasks have been completed. On the opposite side, the 90 days life of a bounty can be extended by amending the expiry block number of the bounty to stay active.
@@ -150,7 +150,7 @@ The curator can close the bounty once they approve the completion of its tasks. 
 
 A bounty can be closed by using the extrinsics tab and selecting the Treasury pallet, then `Award_bounty`, making sure the right bounty is to be closed and finally sign the transaction. It is important to note that those who received a reward after the bounty is completed, must claim the specific amount of the payout from the payout address, by calling `Claim_bounty` after the curator closed the allocation.
 
-To understand more about Bounties and how this new mechanism works, read this [AXIASolar Blog post](https://axiacoin.network/axialunar-and-axiasolar-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
+To understand more about Bounties and how this new mechanism works, read this [AXIA Blog post](https://AXIA.network/axialunar-and-AXIA-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
 
 ## FAQ
 

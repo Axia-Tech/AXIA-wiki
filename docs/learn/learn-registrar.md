@@ -6,4 +6,4 @@ slug: ../learn-registrar
 ---
 
 > **Note**: The beta version of the new registrar service is available at
-> https://registrar.axiacoin.org/. The previous service has been deprecated.
+> https://registrar.AXIA.org/. The previous service has been deprecated.

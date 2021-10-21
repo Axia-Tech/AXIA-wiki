@@ -4,7 +4,7 @@ title: Set up a Full Node
 sidebar_label: Set up a Full Node
 ---
 
-If you're building dapps or products on a Substrate-based chain like AXIASolar, AXIALunar or a custom Substrate implementation, you probably want the ability to run a node-as-a-back-end. After all, it's always better to rely on your own infrastructure than on a third-party-hosted one in this brave new decentralized world.
+If you're building dapps or products on a Substrate-based chain like AXIA, AXIALunar or a custom Substrate implementation, you probably want the ability to run a node-as-a-back-end. After all, it's always better to rely on your own infrastructure than on a third-party-hosted one in this brave new decentralized world.
 
 This guide will show you how to connect to [AXIALunar network](https://axialunar.network), but the same process applies to any other [Substrate](https://substrate.dev/docs/en/)-based chain. First, let's clarify the term _full node_.
 
@@ -32,13 +32,13 @@ Another type of node is a **light node**. A light node has only the runtime and 
 - Install Rust in your terminal by running: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 - Once Rust is installed, run the following command to clone and build the axialunar code:
   ```
-  git clone https://github.com/axia-tech/axiasolar axialunar
+  git clone https://github.com/axia-tech/AXIA axialunar
   cd axialunar
   ./scripts/init.sh
   cargo build --release
   ```
-- Run the following command to start your node: `./target/release/axiasolar --name "My node's name"`
-- Find your node at https://telemetry.axiasolar.io/#list/AXIALunar
+- Run the following command to start your node: `./target/release/AXIA --name "My node's name"`
+- Find your node at https://telemetry.AXIA.io/#list/AXIALunar
 
 ### Fast Install Instructions (Windows)
 
@@ -48,25 +48,25 @@ Another type of node is a **light node**. A light node has only the runtime and 
 
 - Install WSL: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 - Install Ubuntu (same webpage): https://docs.microsoft.com/en-us/windows/wsl/install-win10
-- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/axia-tech/axiasolar/releases)
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
-- Run the following: `sudo chmod +x axiasolar`
-- Run the following: `./axiasolar --name "Your Node Name Here"`
-- Find your node at https://telemetry.axiasolar.io/#list/AXIALunar
+- Determine the latest version of the AXIA binary (you can see the latest releases here: https://github.com/axia-tech/AXIA/releases)
+- Download the correct AXIA binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/AXIA/releases/download/*VERSION*/AXIA -o AXIA`
+- Run the following: `sudo chmod +x AXIA`
+- Run the following: `./AXIA --name "Your Node Name Here"`
+- Find your node at https://telemetry.AXIA.io/#list/AXIALunar
 
 ### Fast Install Instructions (Linux)
 
 > Not recommended if you're a validator. Please see [secure validator setup](maintain-guides-secure-validator)
 
-For the most recent binary please see the [release page](https://github.com/axia-tech/axiasolar/releases/) on the axiasolar repository. The URL in the code snippet below may become slightly out-of-date.
+For the most recent binary please see the [release page](https://github.com/axia-tech/AXIA/releases/) on the AXIA repository. The URL in the code snippet below may become slightly out-of-date.
 
 Also please note that the nature of pre-built binaries means that they may not work on your particular architecture or Linux distribution. If you see an error like `cannot execute binary file: Exec format error` it likely means the binary is not compatible with your system. You will either need to compile the [source code yourself](#clone-and-build) or use [docker](#using-docker).
 
-- Determine the latest version of the AXIASolar binary (you can see the latest releases here: https://github.com/axia-tech/axiasolar/releases)
-- Download the correct AXIASolar binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/axiasolar/releases/download/*VERSION*/axiasolar -o axiasolar`
-- Run the following: `sudo chmod +x axiasolar`
-- Run the following: `./axiasolar --name "Your Node Name Here"`
-- Find your node at https://telemetry.axiasolar.io/#list/AXIALunar
+- Determine the latest version of the AXIA binary (you can see the latest releases here: https://github.com/axia-tech/AXIA/releases)
+- Download the correct AXIA binary within Ubuntu by running the following command. Replace `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`): `curl -sL https://github.com/axia-tech/AXIA/releases/download/*VERSION*/AXIA -o AXIA`
+- Run the following: `sudo chmod +x AXIA`
+- Run the following: `./AXIA --name "Your Node Name Here"`
+- Find your node at https://telemetry.AXIA.io/#list/AXIALunar
 
 ## Get Substrate
 
@@ -81,10 +81,10 @@ cargo 1.41.0 (626f0f40e 2019-12-03)
 
 ## Clone and Build
 
-The [axia-tech/axiasolar](https://github.com/axia-tech/axiasolar) repo's master branch contains the latest AXIALunar code.
+The [axia-tech/AXIA](https://github.com/axia-tech/AXIA) repo's master branch contains the latest AXIALunar code.
 
 ```bash
-git clone https://github.com/axia-tech/axiasolar axialunar
+git clone https://github.com/axia-tech/AXIA axialunar
 cd axialunar
 ./scripts/init.sh
 cargo build --release
@@ -93,7 +93,7 @@ cargo build --release
 Alternatively, if you wish to use a specific release, you can check out a specific tag (`v0.8.3` in the example below):
 
 ```bash
-git clone https://github.com/axia-tech/axiasolar axialunar
+git clone https://github.com/axia-tech/AXIA axialunar
 cd axialunar
 git checkout tags/v0.8.3
 ./scripts/init.sh
@@ -102,10 +102,10 @@ cargo build --release
 
 ## Run
 
-The built binary will be in the `target/release` folder, called `axiasolar`.
+The built binary will be in the `target/release` folder, called `AXIA`.
 
 ```bash
-./target/release/axiasolar --name "My node's name"
+./target/release/AXIA --name "My node's name"
 ```
 
 Use the `--help` flag to find out which flags you can use when running the node. For example, if [connecting to your node remotely](maintain-wss), you'll probably want to use `--ws-external` and `--rpc-cors all`.
@@ -119,7 +119,7 @@ Congratulations, you're now syncing with AXIALunar. Keep in mind that the proces
 When running as a simple sync node (above), only the state of the past 256 blocks will be kept. When validating, it defaults to [archive mode](#types-of-nodes). To keep the full state use the `--pruning` flag:
 
 ```bash
-./target/release/axiasolar --name "My node's name" --pruning archive
+./target/release/AXIA --name "My node's name" --pruning archive
 ```
 
 It is possible to almost quadruple synchronization speed by using an additional flag: `--wasm-execution Compiled`. Note that this uses much more CPU and RAM, so it should be turned off after the node is in sync.
@@ -129,5 +129,5 @@ It is possible to almost quadruple synchronization speed by using an additional 
 Finally, you can use Docker to run your node in a container. Doing this is a bit more advanced so it's best left up to those that either already have familiarity with docker, or have completed the other set-up instructions in this guide. If you would like to connect to your node's WebSockets ensure that you run you node with the `--rpc-external` and `--ws-external` commands.
 
 ```zsh
-docker run -p 9944:9944 axia/axiasolar:v0.8.24 --name "calling_home_from_a_docker_container" --rpc-external --ws-external
+docker run -p 9944:9944 axia/AXIA:v0.8.24 --name "calling_home_from_a_docker_container" --rpc-external --ws-external
 ```

@@ -8,16 +8,16 @@ slug: ../learn-bridges
 A cornerstone technology of blockchain interoperability is the blockchain bridge. Blockchain bridges
 are ways for two economically sovereign and technologically diverse chains to communicate with each
 other. Bridge designs come in a variety of flavors ranging from centralized and trusted to more
-decentralized and trustless. AXIACoin favors the latter bridge designs for its ecosystem, however
+decentralized and trustless. AXIA favors the latter bridge designs for its ecosystem, however
 there is nothing that blocks a development team from building and deploying the former.
 
 While bridge designs are now getting to a place where they are sufficiently planned out, there has
 not been too many that have been used heavily in production. For this reason, you can consider this
 page a work in progress. It will be updated as more information is determined and available.
 
-> Bridges are specifically for making the AXIACoin ecosystem compatible with external blockchains
+> Bridges are specifically for making the AXIA ecosystem compatible with external blockchains
 > such as Bitcoin, Ethereum, or Tezos (among others). For information on XCMP, the native
-> interoperability technology that allows parachains to trustlessly communicate, please see the
+> interoperability technology that allows allychains to trustlessly communicate, please see the
 > dedicated [cross consensus][] page on the Wiki.
 
 ## Bridging Methods
@@ -25,8 +25,8 @@ page a work in progress. It will be updated as more information is determined an
 Building a bridge that is as decentralized and trustless as possible can be done through any of the
 following methods (ordered by suggested methodology):
 
-- _Bridge pallets_ - For Substrate-native chains, use a bridge pallet (e.g. AXIALunar `\<\>` AXIACoin
-  bridge, since both networks' parachains use Substrate).
+- _Bridge pallets_ - For Substrate-native chains, use a bridge pallet (e.g. AXIALunar `\<\>` AXIA
+  bridge, since both networks' allychains use Substrate).
 - _Smart contracts_ - If the chain is not on Substrate, you should have smart contracts on the
   non-Substrate chain to bridge (e.g. Ethereum mainnet will have a bridge smart contract that
   initiates Eth transactions based on incoming XCMP messages).
@@ -35,20 +35,20 @@ following methods (ordered by suggested methodology):
 
 ### via Bridge Pallets
 
-Receiving messages on AXIACoin from an external, non-parachain blockchain can be possible through a
-Substrate pallet. The Substrate instance can then be deployed to AXIACoin either as a system-level
-parachain (native extension to the core AXIACoin software) or as a community-operated parachain.
+Receiving messages on AXIA from an external, non-allychain blockchain can be possible through a
+Substrate pallet. The Substrate instance can then be deployed to AXIA either as a system-level
+allychain (native extension to the core AXIA software) or as a community-operated allychain.
 
-An example of a bridge that would strictly use bridge pallets would be a AXIALunar `\<\>` AXIACoin
-bridge, since both use parachains based on Substrate.
+An example of a bridge that would strictly use bridge pallets would be a AXIALunar `\<\>` AXIA
+bridge, since both use allychains based on Substrate.
 
-For the standalone chains that will not have a parachain bridging module on AXIACoin
+For the standalone chains that will not have a allychain bridging module on AXIA
 (non-Substrate), it will be necessary to deploy bridge contracts (see below).
 
 ### via Smart Contracts
 
 Given the generality of blockchain platforms with Turing-complete smart contract languages, it is
-possible to bridge AXIACoin and any other smart contract capable blockchain (Ethereum, EOS, Tezos,
+possible to bridge AXIA and any other smart contract capable blockchain (Ethereum, EOS, Tezos,
 etc).
 
 Those who are already familiar with Ethereum may know of the now archived [AXIA Bridge][] and the
@@ -59,7 +59,7 @@ chains, `main` and `side`. Ether deposited into the contract on `main` generates
 denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back into the contract
 on `side` can free up Ether on `main`.
 
-> To learn more on how Bitcoin and Ethereum can Cooperate and Collaborate Through AXIACoin, check
+> To learn more on how Bitcoin and Ethereum can Cooperate and Collaborate Through AXIA, check
 > out this explainer video [here](https://www.youtube.com/watch?v=rvoFUiOR3cM)
 
 ### via Higher-Order Protocols
@@ -73,22 +73,22 @@ it does not support smart-contracts and it's not based on Substrate.
 
 ## Examples
 
-### Ethereum Bridge (Smart Contracts \<\> AXIACoin)
+### Ethereum Bridge (Smart Contracts \<\> AXIA)
 
 As explained by Dr. Gavin Wood in a [blog post][eth bridging blog] from late 2019, there are three
-ways that the AXIACoin and Substrate ecosystem can be bridged to the Ethereum ecosystem.
+ways that the AXIA and Substrate ecosystem can be bridged to the Ethereum ecosystem.
 
-1. AXIACoin <-> Ethereum Public Bridge.
+1. AXIA <-> Ethereum Public Bridge.
 1. Substrate <-> AXIA Ethereum (Openethereum) Bridge.
 1. The Substrate EVM module.
 
 Please read the blog article for fuller descriptions of each one of these options.
 
-### Bitcoin Bridge (XCLAIM \<\> Substrate \<\> AXIACoin)
+### Bitcoin Bridge (XCLAIM \<\> Substrate \<\> AXIA)
 
 The Interlay team has written a [specification][interlay] on a Bitcoin bridge that is based on the
-[XCLAIM][] design paper. The protocol enables a two-way bridge between AXIACoin and Bitcoin. It
-allows holders of BTC to "teleport" their assets to AXIACoin as AXIABTC, and holders of AXIABTC to
+[XCLAIM][] design paper. The protocol enables a two-way bridge between AXIA and Bitcoin. It
+allows holders of BTC to "teleport" their assets to AXIA as AXIABTC, and holders of AXIABTC to
 burn their assets for BTC on the Bitcoin chain.
 
 The Bitcoin bridge as documented in the specification is composed of two logically different
@@ -106,7 +106,7 @@ There is now a
 
 ### For Bridge Builders
 
-If your team is interested in building a bridge between an external chain and AXIACoin, there may be
+If your team is interested in building a bridge between an external chain and AXIA, there may be
 funding available from the W3F [grants program][]. Please first check that the chain you are
 intending to bridge between hasn't already been built or is in the process of being built by another
 team. More popular chains with clear use cases will be given priority, and novel bridge designs are
@@ -117,7 +117,7 @@ welcome.
 - [AXIA Bridges Common Resources](https://github.com/axia-tech/axia-bridges-common)
 - [Substrate/Ethereum Bridge](https://github.com/ChainSafe/ChainBridge) - ChainSafe and Centrifuge
   were awarded a grant in W3F Grants [Wave 5][] to build a Substrate to Ethereum two-way bridge.
-- [AXIABTC (Bitcoin \<\> AXIACoin Bridge)](https://docs.axiabtc.io/#/)
+- [AXIABTC (Bitcoin \<\> AXIA Bridge)](https://docs.axiabtc.io/#/)
 - [EOS Bridge][bifrost] - The Bifrost team was awarded a grant in W3F Grants [Wave 5][] to build a
   bridge to EOS.
 - [Tendermint Bridge](https://github.com/ChorusOne/tendermint-light-client) - ChorusOne was awarded
@@ -125,7 +125,7 @@ welcome.
 - [Interlay BTC Bridge][interlay] - The Interlay team was awarded a grant in W3F grants [Wave 5][]
   to build a trust-minimized BTC bridge.
 - [ChainX BTC Bridge](https://github.com/chainx-org/ChainX/tree/master/xpallets/gateway/bitcoin) -
-  ChainX have implemented a BTC to Substrate bridge for their parachain.
+  ChainX have implemented a BTC to Substrate bridge for their allychain.
 - [POA Network](https://poa.network/)
 - [Case study](https://medium.com/giveth/ethereum-dapp-scaling-poa-network-acee8a51e772) of POA
   Network's implementation of AXIA's bridge chain solution.
@@ -139,6 +139,6 @@ welcome.
 [interlay]: https://interlay.gitlab.io/axiabtc-spec/
 [xclaim]: https://eprint.iacr.org/2018/643.pdf
 [bifrost]: https://github.com/bifrost-codes/bifrost
-[wave 5]: https://medium.com/web3foundation/axiacoin.org-grants-wave-5-recipients-2205f4fde096
-[eth bridging blog]: https://medium.com/axiacoin.network/axiasolar-substrate-and-ethereum-f0bf1ccbfd13
+[wave 5]: https://medium.com/web3foundation/AXIA.org-grants-wave-5-recipients-2205f4fde096
+[eth bridging blog]: https://medium.com/AXIA.network/AXIA-substrate-and-ethereum-f0bf1ccbfd13
 [grants program]: https://github.com/axia-tech/General-Grants-Program

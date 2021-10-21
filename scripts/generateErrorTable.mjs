@@ -1,11 +1,11 @@
-import { ApiPromise, WsProvider } from "@axiasolar-js/api";
+import { ApiPromise, WsProvider } from "@AXIA-js/api";
 
 // A big string to put all of the output.
 let output = `
 
 ## Error Table
 
-The below table is a reference to the errors that exists in AXIASolar. It 
+The below table is a reference to the errors that exists in AXIA. It 
 is generated from the runtime's metadata.
 
 |Pallet | Error | Documentation |
@@ -13,7 +13,7 @@ is generated from the runtime's metadata.
 
 (async () => {
   const api = await ApiPromise.create({
-    provider: new WsProvider("wss://rpc.axiasolar.io"),
+    provider: new WsProvider("wss://rpc.AXIA.io"),
   });
 
   const metadata = await api.rpc.state.getMetadata();

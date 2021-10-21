@@ -15,7 +15,7 @@ have multiple societies in the future through a runtime upgrade.
 ![Society Dashboard](../../assets/axialunar/axialunar_society_page2.png)
 
 Before joining the society, let's take a brief look at the
-[Society UI](https://axiasolar.js.org/apps/#/society) on AXIACoin-JS apps and read through all the
+[Society UI](https://AXIA.js.org/apps/#/society) on AXIA-JS apps and read through all the
 [rules][kappa rules] to become a member.
 
 ## UI Overview

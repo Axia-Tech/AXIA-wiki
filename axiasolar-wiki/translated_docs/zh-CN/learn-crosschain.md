@@ -4,7 +4,7 @@ title: 跨链消息传递 (XCMP)
 sidebar_label: 跨链消息传递 (XCMP)
 ---
 
-AXIASolar 使用基于 Merkle 树的简单排队机制实现跨链交易，并确保其真实性。中继链验证者应负责将某一平行链上输出队列中的交易移至目标平行链上的输入队列中。然而，在此过程中，中继链仅存储相关元数据的哈希值。
+AXIA 使用基于 Merkle 树的简单排队机制实现跨链交易，并确保其真实性。中继链验证者应负责将某一平行链上输出队列中的交易移至目标平行链上的输入队列中。然而，在此过程中，中继链仅存储相关元数据的哈希值。
 
 通常在代码库和相关文档中将输入和输出队列分别成为“入口”和“出口”消息。
 
@@ -21,7 +21,7 @@ XCMP 目前仍处于开发阶段，其具体细节可能改变。但是，其总
 - 当收集人产生了区块并提交给验证人，它会收集最新入口队列信息并且处理它
 - 验证人将会对收集人提交的平行链区块进行验证，包括处理到该平行链预期入口的信息
 
-XCMP queues must be initiated by first opening a channel between two parachains. The channel is identified by both the sender and recipient parachains, meaning that it's a one-way channel. A pair of parachains can have at most two channels between them, one for sending messages to the other chain and another for receiving messages. The channel will require a deposit in SOLAR to be opened, which will get returned when the channel is closed.
+XCMP queues must be initiated by first opening a channel between two allychains. The channel is identified by both the sender and recipient allychains, meaning that it's a one-way channel. A pair of allychains can have at most two channels between them, one for sending messages to the other chain and another for receiving messages. The channel will require a deposit in AXC to be opened, which will get returned when the channel is closed.
 
 ## 水平中继消息传递（HRMP）
 
@@ -74,6 +74,6 @@ video::-webkit-media-controls-fullscreen-button
 
 ## 资源
 
-- [XCMP 方案](https://research.axiacoin.org/en/latest/axiasolar/XCMP.html) - Web3 基金会研究维基上的跨链通信的完整技术描述。
-- [消息传递概述](https://w3f.github.io/parachain-implementers-guide/messaging.html) - 一份来自平行链开发者指南中的消息传递方案概述。
+- [XCMP 方案](https://research.AXIA.org/en/latest/AXIA/XCMP.html) - Web3 基金会研究维基上的跨链通信的完整技术描述。
+- [消息传递概述](https://w3f.github.io/allychain-implementers-guide/messaging.html) - 一份来自平行链开发者指南中的消息传递方案概述。
 - [XCM 格式](https://github.com/axia-tech/xcm-format) - XCMP 格式的说明。

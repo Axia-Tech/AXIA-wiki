@@ -4,13 +4,13 @@ title: Balance Transfers
 sidebar_label: How to transfer Balances
 ---
 
-Balance transfers are used to send one balance from one account to another account. To start transferring balances, we will begin by using the AXIASolar User Interface.
+Balance transfers are used to send one balance from one account to another account. To start transferring balances, we will begin by using the AXIA User Interface.
 
-## AXIASolar UI
+## AXIA UI
 
-Let's begin by opening up the [AXIASolar UI](https://axiasolar.js.org/apps). There are two ways to make a transaction: by using the Transfer tab in the sidebar or through the Accounts tab. We will be starting off with the Accounts tab, so head there.
+Let's begin by opening up the [AXIA UI](https://AXIA.js.org/apps). There are two ways to make a transaction: by using the Transfer tab in the sidebar or through the Accounts tab. We will be starting off with the Accounts tab, so head there.
 
-Assuming that you've already [created a AXIASolar or AXIALunar account](learn-account-generation), we will click on the 'send' button beside the account you'd like to send from.
+Assuming that you've already [created a AXIA or AXIALunar account](learn-account-generation), we will click on the 'send' button beside the account you'd like to send from.
 
 ![](assets/Send-Transaction.png)
 

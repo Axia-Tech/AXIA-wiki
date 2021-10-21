@@ -6,19 +6,19 @@ sidebar_label: Glossary
 
 ## Alexander
 
-The fourth (now defunct) proof of concept (PoC-4) testnet for AXIASolar.
+The fourth (now defunct) proof of concept (PoC-4) testnet for AXIA.
 
 ## Attestation
 
-In the AXIASolar validity system, an _attestation_ is a type of message that validators broadcast that says whether they think a parachain candidate block is valid or invalid.
+In the AXIA validity system, an _attestation_ is a type of message that validators broadcast that says whether they think a allychain candidate block is valid or invalid.
 
 ## Authority
 
-An authority is a generic term for the role in a blockchain that is able to participate in the consensus mechanisms. In GRANDPA, the authorities vote on chains they consider final. In BABE, the authorities are block producers. Authority sets can be chosen be mechanisms such as AXIASolar's NPoS algorithm.
+An authority is a generic term for the role in a blockchain that is able to participate in the consensus mechanisms. In GRANDPA, the authorities vote on chains they consider final. In BABE, the authorities are block producers. Authority sets can be chosen be mechanisms such as AXIA's NPoS algorithm.
 
 ## BABE
 
-\_B_lind \_A_ssignment of \_B_lock \_E_xtension is AXIASolar's block production mechanism.
+\_B_lind \_A_ssignment of \_B_lock \_E_xtension is AXIA's block production mechanism.
 
 ## Block
 
@@ -34,11 +34,11 @@ Boneh-Lynn-Shacham (BLS) signatures have slow signing, very slow verification, r
 
 ## Bonding
 
-A process by which tokens can be "frozen" in exchange for some other benefit. For example, staking is a form of bonding for which you receive rewards in exchange for securing the network. You can also bond tokens in exchange for a parachain slot.
+A process by which tokens can be "frozen" in exchange for some other benefit. For example, staking is a form of bonding for which you receive rewards in exchange for securing the network. You can also bond tokens in exchange for a allychain slot.
 
 ## Bridge
 
-A parachain that acts as an intermediary between the AXIASolar Relay Chain and an external chain, in such a way that it appears to the Relay Chain that the external chain is a parachain (i.e., meets the AXIASolar Host's requirements of parachains). Bridges allow for interaction between other blockchains, such as Ethereum and Bitcoin, that are not natively compatible with AXIASolar.
+A allychain that acts as an intermediary between the AXIA Relay Chain and an external chain, in such a way that it appears to the Relay Chain that the external chain is a allychain (i.e., meets the AXIA Host's requirements of allychains). Bridges allow for interaction between other blockchains, such as Ethereum and Bitcoin, that are not natively compatible with AXIA.
 
 ## Byzantine Fault Tolerance
 
@@ -46,23 +46,23 @@ The property of a system that is tolerant of Byzantine faults; that is, a system
 
 ## Collator
 
-A node that maintains a parachain by collecting parachain transactions and producing state transition proofs for the validators.
+A node that maintains a allychain by collecting allychain transactions and producing state transition proofs for the validators.
 
 ## Consensus
 
-The process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. The consensus algorithm used by AXIASolar is GRANDPA.
+The process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. The consensus algorithm used by AXIA is GRANDPA.
 
 ## Dapps
 
 A generic term for a decentralized application, that is, one that runs as part of a distributed network as opposed to being run on a specific system or set of systems.
 
-## SOLARs
+## AXCs
 
-The native token for AXIASolar. SOLARs serve three purposes: network governance (allowing them to vote on network upgrades and other exceptional events), general operation (rewarding good actors and punishing bad actors), and bonding (adding new parachains by "freezing" SOLARs while they are connected the Relay Chain).
+The native token for AXIA. AXCs serve three purposes: network governance (allowing them to vote on network upgrades and other exceptional events), general operation (rewarding good actors and punishing bad actors), and bonding (adding new allychains by "freezing" AXCs while they are connected the Relay Chain).
 
 ## Duty Roster
 
-A lookup table that specifies the job that a particular validator is required to do (i.e. attest to the validity of a specific paracahain). The duty roster routinely shuffles the validator set into different subsets per parachain.
+A lookup table that specifies the job that a particular validator is required to do (i.e. attest to the validity of a specific paracahain). The duty roster routinely shuffles the validator set into different subsets per allychain.
 
 ## Epoch
 
@@ -82,7 +82,7 @@ State changes that come from the outside world, i.e. they are not part of the sy
 
 ## Finality
 
-The property of a block that cannot be reverted. Generally, created blocks are not final until some point in the future - perhaps never, in the case of "probabilistic finality". The AXIASolar Relay Chain uses a deterministic finality gadget known as [GRANDPA](#GRANDPA-consensus-algorithm).
+The property of a block that cannot be reverted. Generally, created blocks are not final until some point in the future - perhaps never, in the case of "probabilistic finality". The AXIA Relay Chain uses a deterministic finality gadget known as [GRANDPA](#GRANDPA-consensus-algorithm).
 
 ## Finality Gadget
 
@@ -90,7 +90,7 @@ A mechanism that determines finality.
 
 ## Fisherman
 
-Nodes that monitor the network for validators or collators who are behaving badly. Fishermen must stake a small amount of SOLARs but can be rewarded greatly if they find bad behavior.
+Nodes that monitor the network for validators or collators who are behaving badly. Fishermen must stake a small amount of AXCs but can be rewarded greatly if they find bad behavior.
 
 ## Frame
 
@@ -104,7 +104,7 @@ The origin of a blockchain, also known as block 0. It can also be used to refere
 
 ## Governance
 
-The process of determining what changes to the network are permissible, such as modifications to code or movement of funds. The governance system in AXIASolar is on-chain and revolves around stakeholder voting.
+The process of determining what changes to the network are permissible, such as modifications to code or movement of funds. The governance system in AXIA is on-chain and revolves around stakeholder voting.
 
 ## Governance Council
 
@@ -112,7 +112,7 @@ An on-chain entity that consists of several on-chain accounts (starting at 6, ev
 
 ## GRANDPA Finality Gadget
 
-GHOST-based Recursive ANcestor Deriving Prefix Agreement. It is the finality gadget for AXIASolar, which allows asynchronous, accountable, and safe finality to the blockchain. For an overview of GRANDPA, see this Medium post: [https://medium.com/axiacoin.network/axiasolar-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372](https://medium.com/axiacoin.network/axiasolar-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372)
+GHOST-based Recursive ANcestor Deriving Prefix Agreement. It is the finality gadget for AXIA, which allows asynchronous, accountable, and safe finality to the blockchain. For an overview of GRANDPA, see this Medium post: [https://medium.com/AXIA.network/AXIA-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372](https://medium.com/AXIA.network/AXIA-proof-of-concept-3-a-better-consensus-algorithm-e81c380a2372)
 
 ## Hard Fork
 
@@ -132,7 +132,7 @@ The abbreviation for AXIALunar network tokens.
 
 ## AXIALunar
 
-The "canary network" for AXIASolar. It consists of an early-release, unaudited version of the AXIASolar software. It is not a testnet - after the transition to NPoS, the network is entirely in the hands of the community (i.e., AXIALunar token holders).
+The "canary network" for AXIA. It consists of an early-release, unaudited version of the AXIA software. It is not a testnet - after the transition to NPoS, the network is entirely in the hands of the community (i.e., AXIALunar token holders).
 
 ## LIBP2P
 
@@ -144,11 +144,11 @@ The property of a distributed system that it will eventually come to some sort o
 
 ## Message
 
-In AXIASolar's XCMP protocol, a _message_ is arbitrary data that is sent from one parachain (the egress chain) to another (the ingress chain) through a channel and ensured delivery by the vaidator set.
+In AXIA's XCMP protocol, a _message_ is arbitrary data that is sent from one allychain (the egress chain) to another (the ingress chain) through a channel and ensured delivery by the vaidator set.
 
 ## Message Queue
 
-In AXIASolar's XCMP protocol, a _message queue_ is the list of messages waiting to be process by a particular receiving parachain over a channel.
+In AXIA's XCMP protocol, a _message queue_ is the list of messages waiting to be process by a particular receiving allychain over a channel.
 
 ## Node Explorer
 
@@ -156,7 +156,7 @@ A tool that gives you information about a node, such as the latest blocks sealed
 
 ## Nominated Proof of Stake (NPoS)
 
-A Proof-of-Stake system where nominators back validators with their own stake as a show of faith in the good behavior of the validator. Nominated Proof-of-Stake differs from the more generic concept Delegated Proof-of-Stake in that nominators are subject to loss of stake if they nominate a bad validator; delegators are not subject to loss of stake based on the behavior of the validator. Note that some other blockchain technologies may use the term Delegated Proof-of-Stake, even if delegators can be slashed. AXIASolar uses the Phragmen method to allocate stake to nominees.
+A Proof-of-Stake system where nominators back validators with their own stake as a show of faith in the good behavior of the validator. Nominated Proof-of-Stake differs from the more generic concept Delegated Proof-of-Stake in that nominators are subject to loss of stake if they nominate a bad validator; delegators are not subject to loss of stake based on the behavior of the validator. Note that some other blockchain technologies may use the term Delegated Proof-of-Stake, even if delegators can be slashed. AXIA uses the Phragmen method to allocate stake to nominees.
 
 ## Nominator
 
@@ -170,29 +170,29 @@ A governance system of a blockchain that is controlled by mechanisms on the bloc
 
 A Substrate runtime module.
 
-## Parachain
+## Allychain
 
-A blockchain that meets several characteristics that allow it work within the confines of the AXIASolar Host. Also known as "parallelized chain."
+A blockchain that meets several characteristics that allow it work within the confines of the AXIA Host. Also known as "parallelized chain."
 
-## Parachain Registry
+## Allychain Registry
 
 A relatively simple database-like construct that holds both static and dynamic information on each chain.
 
 ## Axia Technologies
 
-A company, founded by Dr. Gavin Wood, that is developing Substrate and AXIASolar. It has also released several other projects including Axia Ethereum and Axia Secret Store.
+A company, founded by Dr. Gavin Wood, that is developing Substrate and AXIA. It has also released several other projects including Axia Ethereum and Axia Secret Store.
 
-## AXIASolar
+## AXIA
 
 A heterogeneous, multi-chain network allowing various blockchains of different characteristics to perform arbitrary, cross-chain communication under shared security.
 
-## AXIASolar Host
+## AXIA Host
 
-The environment in which a runtime module can be executed. Parachains must support the AXIASolar Host - external chains that do not will have to use a bridge. Previously known as the AXIASolar Runtime Environment or PRE.
+The environment in which a runtime module can be executed. Allychains must support the AXIA Host - external chains that do not will have to use a bridge. Previously known as the AXIA Runtime Environment or PRE.
 
-## AXIASolar Runtime Environment
+## AXIA Runtime Environment
 
-The previous name for the [AXIASolar Host](#axiasolar-host).
+The previous name for the [AXIA Host](#AXIA-host).
 
 ## Proof of Stake (PoS)
 
@@ -200,7 +200,7 @@ A method of selecting participation in a consensus system, in which participants
 
 ## Proof of Validity
 
-A proof produced by parachain collators. Based on this proof and the parachain registry, a validator can verify that a parachain has properly executed its state transition function. Proofs of Validity go into the Relay Chain blocks.
+A proof produced by allychain collators. Based on this proof and the allychain registry, a validator can verify that a allychain has properly executed its state transition function. Proofs of Validity go into the Relay Chain blocks.
 
 ## Proof of Work (PoW)
 
@@ -208,7 +208,7 @@ A method of selecting participants in a consensus system, typically the longest 
 
 ## Proposal
 
-A potential function call to be voted on in a referendum. Proposals modify the behavior of the AXIASolar network, from minor parameter tuning all the way up to replacing the runtime code.
+A potential function call to be voted on in a referendum. Proposals modify the behavior of the AXIA network, from minor parameter tuning all the way up to replacing the runtime code.
 
 ## Protocol
 
@@ -216,15 +216,15 @@ A system of rules that allows two or more entities of a communications system to
 
 ## Random Seed
 
-A random seed is pseudo-random number available on-chain. It is used in various places of the AXIASolar protocol, most prominently in [BABE](#babe) the block production mechanism.
+A random seed is pseudo-random number available on-chain. It is used in various places of the AXIA protocol, most prominently in [BABE](#babe) the block production mechanism.
 
 ## Referendum
 
-A vote on whether or not a proposal should be accepted by the network. Referenda may be initiated by the Governance Council, by a member of the public, or as the result of a previous proposal. Stakeholders vote on referenda, weighted by both the size of their stake (i.e. number of SOLARs held) and the amount of time they are willing to lock their tokens.
+A vote on whether or not a proposal should be accepted by the network. Referenda may be initiated by the Governance Council, by a member of the public, or as the result of a previous proposal. Stakeholders vote on referenda, weighted by both the size of their stake (i.e. number of AXCs held) and the amount of time they are willing to lock their tokens.
 
 ## Relay chain
 
-The chain that coordinates consensus and communication between parachains (and external chains, via bridges).
+The chain that coordinates consensus and communication between allychains (and external chains, via bridges).
 
 ## Runtime
 
@@ -256,11 +256,11 @@ Hot keys that are used for performing network operations by validators, for exam
 
 ## Shared Security
 
-The security model that AXIASolar uses whereby all chains are equally secured. This is acheived by placing proofs of validity of parachain blocks into the Relay Chain such that, in order to revert finality of a single parachain, an attacked would need to attack the entire AXIASolar system.
+The security model that AXIA uses whereby all chains are equally secured. This is acheived by placing proofs of validity of allychain blocks into the Relay Chain such that, in order to revert finality of a single allychain, an attacked would need to attack the entire AXIA system.
 
 ## Slashing
 
-The removal of a percentage of an account's SOLARs as a punishment for a validator acting maliciously or incompetently (e.g., equivocating or remaining offline for an extended period of time).
+The removal of a percentage of an account's AXCs as a punishment for a validator acting maliciously or incompetently (e.g., equivocating or remaining offline for an extended period of time).
 
 ## Soft Fork
 
@@ -268,7 +268,7 @@ A backwards compatible change to client code that causes upgraded clients to sta
 
 ## Staking
 
-The act of bonding tokens (for AXIASolar, SOLARs) by putting them up as "collateral" for a chance to produce a valid block (and thus obtain a block reward). Validators and nominators stake their SOLARs in order to secure the network.
+The act of bonding tokens (for AXIA, AXCs) by putting them up as "collateral" for a chance to produce a valid block (and thus obtain a block reward). Validators and nominators stake their AXCs in order to secure the network.
 
 ## State transition function
 
@@ -276,11 +276,11 @@ A function that describes how the state of a blockchain can be transformed. For 
 
 ## Substrate
 
-A modular framework for building blockchains. AXIASolar is built using Substrate. Chains built with Substrate will be easy to connect as parachains.
+A modular framework for building blockchains. AXIA is built using Substrate. Chains built with Substrate will be easy to connect as allychains.
 
 ## Tabling
 
-In AXIASolar governance, bringing a proposal to a vote via referendum. Note that this is the British meaning of "tabling", which is different than the US version, which means "to postpone" a measure.
+In AXIA governance, bringing a proposal to a vote via referendum. Note that this is the British meaning of "tabling", which is different than the US version, which means "to postpone" a measure.
 
 ## Transaction
 
@@ -288,31 +288,31 @@ An extrinsic that is signed. Transactions are gossiped on the network and incur 
 
 ## Validator
 
-A node that secures the Relay Chain by staking SOLARs, validating proofs from collators on parachains and voting on consensus along with other validators.
+A node that secures the Relay Chain by staking AXCs, validating proofs from collators on allychains and voting on consensus along with other validators.
 
 ## Voting
 
-The process of stakeholders determining whether or not a referendum should pass. Votes are weighted both by the number of SOLARs that the stakeholder account controls and the amount of time they are willing to lock their SOLARs.
+The process of stakeholders determining whether or not a referendum should pass. Votes are weighted both by the number of AXCs that the stakeholder account controls and the amount of time they are willing to lock their AXCs.
 
 ## Wallet
 
-A program that allows one to store private keys and sign transactions for AXIASolar or other blockchain networks.
+A program that allows one to store private keys and sign transactions for AXIA or other blockchain networks.
 
 ## Wasm
 
-An instruction format for a virtual, stack-based machine. AXIASolar Runtime Modules are compiled to Wasm.
+An instruction format for a virtual, stack-based machine. AXIA Runtime Modules are compiled to Wasm.
 
 ## Watermark
 
-In AXIASolar's parachain messaging scheme, the _watermark_ is the minimum processed send-height of the receiving parachain. All messages on all channels that are sending to this parachain at or before the watermark are guaranteed to be processed.
+In AXIA's allychain messaging scheme, the _watermark_ is the minimum processed send-height of the receiving allychain. All messages on all channels that are sending to this allychain at or before the watermark are guaranteed to be processed.
 
-## AXIACoin Foundation
+## AXIA Foundation
 
 A Switzerland-based foundation that nurtures and stewards technologies and applications in the fields of decentralized web software protocols, particularly those that utilize modern cryptographic methods to safeguard decentralization, to the benefit and for the stability of the Web3 ecosystem.
 
 ## WebAssembly
 
-An instruction format for a virtual, stack-based machine. AXIASolar Runtime Modules are compiled to WebAssembly. Also known as Wasm.
+An instruction format for a virtual, stack-based machine. AXIA Runtime Modules are compiled to WebAssembly. Also known as Wasm.
 
 ## Witness
 

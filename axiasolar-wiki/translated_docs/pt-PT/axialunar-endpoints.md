@@ -4,34 +4,34 @@ title: AXIALunar Endpoints
 sidebar_label: AXIALunar Endpoints
 ---
 
-When interacting with the [AXIALunar network](https://axialunar.network) via [AXIASolar Apps](https://axiasolar.js.org/apps) or other UIs and programmatic methods, you'd ideally be running your own node ([text guide](maintain-sync), [video guide](https://www.youtube.com/watch?v=31DdfcxbAVs)). Granted, that's not something everyone can or wants to do, so convenience trumps ideals in most cases. To facilitate this convenience, AXIALunar has several public endpoints you can use for your apps.
+When interacting with the [AXIALunar network](https://axialunar.network) via [AXIA Apps](https://AXIA.js.org/apps) or other UIs and programmatic methods, you'd ideally be running your own node ([text guide](maintain-sync), [video guide](https://www.youtube.com/watch?v=31DdfcxbAVs)). Granted, that's not something everyone can or wants to do, so convenience trumps ideals in most cases. To facilitate this convenience, AXIALunar has several public endpoints you can use for your apps.
 
 ## Axia Archive Node
 
-The development company Axia maintains an archive node at endpoint `wss://axialunar-rpc.axiasolar.io/`.
+The development company Axia maintains an archive node at endpoint `wss://axialunar-rpc.AXIA.io/`.
 
 To connect to the Axia node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@axiasolar-js/api')
+const{ ApiPromise, WsProvider } = require('@AXIA-js/api')
 
 (async () => {
-    const provider = new WsProvider('wss://axialunar-rpc.axiasolar.io/')
+    const provider = new WsProvider('wss://axialunar-rpc.AXIA.io/')
     const api = await ApiPromise.create({ provider })
     // ...
 ```
 
-or in AXIASolar Apps UI by clicking the top-left corner of the screen and selecting the appropriate option:
+or in AXIA Apps UI by clicking the top-left corner of the screen and selecting the appropriate option:
 
 ![Selecting Axia's Node](/img/endpoints/axia.png)
 
-## AXIACoin Foundation Archive Node
+## AXIA Foundation Archive Node
 
-The AXIACoin Foundation maintains an archive node at endpoint `wss://cc3-5.axialunar.network/`.
+The AXIA Foundation maintains an archive node at endpoint `wss://cc3-5.axialunar.network/`.
 
 To connect to this node, replace the endpoint in the JavaScript snippet above.
 
-Connect to it in AXIASolar Apps UI by clicking the top-left corner of the screen and selecting the appropriate option:
+Connect to it in AXIA Apps UI by clicking the top-left corner of the screen and selecting the appropriate option:
 
 ![Selecting W3F's Node](/img/endpoints/w3f.png)
 
@@ -41,9 +41,9 @@ RYO (Run Your Own) infrastructure from [Avado](https://ava.do) is a load balance
 
 Check the current status of the AXIALunar RYO cloud including available nodes at https://status.cloud.ava.do/
 
-To connect to the RYO cloud, use the endpoint `wss://axialunar.axiasolar.cloud.ava.do/` in the JavaScript code.
+To connect to the RYO cloud, use the endpoint `wss://axialunar.AXIA.cloud.ava.do/` in the JavaScript code.
 
-Connect to the endpoint in AXIASolar Apps UI by clicking the top-left corner of the screen and selecting the appropriate option:
+Connect to the endpoint in AXIA Apps UI by clicking the top-left corner of the screen and selecting the appropriate option:
 
 ![Selecting the RYO cloud](/img/endpoints/ryo.png)
 

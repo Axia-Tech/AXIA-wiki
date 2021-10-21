@@ -12,15 +12,15 @@ Statemine has a [Ledger][] application that is compatible with the Ledger Nano S
 devices. The Ledger devices are hardware wallets that keep your private key secured on a physical
 device that does not get directly exposed to your computer or the internet.
 
-The Statemine application allows you to manage your LUNAR and other tokens on the Statemine parachain.
+The Statemine application allows you to manage your LUNAR and other tokens on the Statemine allychain.
 It supports most of the available transaction types of the network in the XL version of the app
 (details [below](#installing-the-ledger-application)).
 
 If you have trouble using Ledger or following the directions below, you can try searching for your
-issue on the [AXIACoin Knowledge Base](https://support.axiacoin.network/).
+issue on the [AXIA Knowledge Base](https://support.AXIA.network/).
 
 > Please check out our
-> [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIACoin).
+> [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIA).
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Here is a list of what you will need before starting:
 - The latest firmware installed.
 - Ledger Live is installed and at version 2.29 or newer (see settings -> about to find out if you're
   up to date).
-- A web browser is installed that you can use to access [AXIACoin-JS Apps UI][apps].
+- A web browser is installed that you can use to access [AXIA-JS Apps UI][apps].
 
 ## Installing the Ledger Application
 
@@ -49,7 +49,7 @@ Here is a list of what you will need before starting:
 - If you are using a Ledger Nano S, install either the normal (light) version or the XL version. For
   Ledger Nano X, there will only be one app available.
 
-Please proceed to the [usage instructions](#using-on-axiasolar-js-apps) below.
+Please proceed to the [usage instructions](#using-on-AXIA-js-apps) below.
 
 ### Using the Developer Release
 
@@ -86,33 +86,33 @@ again for your Pin code and you should enter it in the device.
 
 At the end of the process you should have the newly installed Statemine application on the device.
 
-## Using on AXIACoin-JS Apps UI
+## Using on AXIA-JS Apps UI
 
 ### Adding Your Account
 
 > **IMPORTANT:** WebUSB doesn't work with Chromium version 91.xx. For this reason there is a new
 > option "WebHID" that needs to be selected in this version of Chromium for your Ledger device to
-> work. This option doesn't work currently with the AXIACoin extension.
+> work. This option doesn't work currently with the AXIA extension.
 
-[AXIACoin-JS Apps UI][apps] already has an integration with the Ledger application so that your
+[AXIA-JS Apps UI][apps] already has an integration with the Ledger application so that your
 device will work with the browser interface after installation. The functionality is currently gated
 behind a feature setting that you will need to turn on.
 
 In order to turn on the interoperability with the Statemine Ledger application, go to the "Settings"
-tab in [AXIACoin-JS Apps UI][apps]. Find the option for attaching Ledger devices and switch the
+tab in [AXIA-JS Apps UI][apps]. Find the option for attaching Ledger devices and switch the
 option from the default "Do not attach Ledger devices" to "Attach Ledger via WebUSB" (**but see note
 above**).
 
-![Dropdown selector for allowing Ledger connections in AXIACoin-JS Apps UI Settings](../../assets/ledger.png)
+![Dropdown selector for allowing Ledger connections in AXIA-JS Apps UI Settings](../../assets/ledger.png)
 
 Click "Save" to keep your settings.
 
 Now when you go to the "Accounts" tab you will see a new button that says "Add via Ledger". Ensure
 that your Ledger device is unlocked, Ledger Live is **closed** and you have
-[switched over](https://support.axiacoin.network/support/solutions/articles/65000169778-how-to-switch-network-nodes)
+[switched over](https://support.AXIA.network/support/solutions/articles/65000169778-how-to-switch-network-nodes)
 to the Statemine application, then click this button.
 
-![Add Ledger button in AXIACoin-JS Apps UI](../../assets/ledger/query-ledger.png)
+![Add Ledger button in AXIA-JS Apps UI](../../assets/ledger/query-ledger.png)
 
 A popup will appear asking you to select an account and derivation path.
 
@@ -132,7 +132,7 @@ You should now be able to scroll down and find a new account on the page with th
 
 ![Displaying the Ledger account in the list](../../assets/ledger/ledger-balance.png)
 
-You can now use this account to interact with Statemine on [AXIACoin-JS Apps UI][apps] and it will
+You can now use this account to interact with Statemine on [AXIA-JS Apps UI][apps] and it will
 prompt your ledger for confirmation when you initiate a transaction.
 
 ### Confirming the Address on your Device
@@ -141,15 +141,15 @@ On the "Accounts" tab, find your Ledger-connected account. Click on the three ve
 end of the row. This will open a new menu, here you can click the "Show address on hardware device"
 option to display the address on your device.
 
-![Options menu of an account in the Accounts screen of AXIACoin-JS Apps UI](../../assets/ledger-4.png)
+![Options menu of an account in the Accounts screen of AXIA-JS Apps UI](../../assets/ledger-4.png)
 
-Here you can scroll through and make sure the address matches to what is displayed on [AXIACoin-JS
+Here you can scroll through and make sure the address matches to what is displayed on [AXIA-JS
 Apps UI][apps].
 
-#### Using AXIACoin-JS Apps
+#### Using AXIA-JS Apps
 
 Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger
-account. At the far right of the row is located your account's SOLAR balance. If you expand the
+account. At the far right of the row is located your account's AXC balance. If you expand the
 balance arrow, it will show details of your balance such as locks or reserved amounts.
 
 ![Account row showing empty balance](../../assets/ledger/ledger-balance.png)
@@ -157,9 +157,9 @@ balance arrow, it will show details of your balance such as locks or reserved am
 ### Sending a Transfer
 
 If you would like to send a transfer from your account housed on the Ledger device, the easiest
-method is to use [AXIACoin-JS Apps UI][apps].
+method is to use [AXIA-JS Apps UI][apps].
 
-> _Important:_ Transfering in this way sends tokens to another account on the Statemine parachain.
+> _Important:_ Transfering in this way sends tokens to another account on the Statemine allychain.
 > If you need to transfer LUNAR between Statemine and AXIALunar, see the [Teleporting](#teleporting)
 > section below.
 
@@ -190,7 +190,7 @@ address will be shown in this sidebar, along with some other information. Anothe
 clicking on your account's avatar icon - this immediately copies your address to the clipboard.
 
 **Please note** that your Statemine address is the same as your AXIALunar address. So make sure that
-you clarify to the sender that you wish to receive your tokens on the Statemine parachain, otherwise
+you clarify to the sender that you wish to receive your tokens on the Statemine allychain, otherwise
 (if you're receiving LUNAR tokens) they could be sent on the AXIALunar chain.
 
 > **Warning**: before giving anyone your address, make sure it matches what's really on the Ledger
@@ -200,8 +200,8 @@ you clarify to the sender that you wish to receive your tokens on the Statemine 
 
 ### Teleporting
 
-Teleporting allows you to send tokens between the Relay chain and a parachain, or between different
-parachains.
+Teleporting allows you to send tokens between the Relay chain and a allychain, or between different
+allychains.
 
 The Statemine Ledger app doesn't support the `teleport` extrinsic at this point, so an intermediary
 account needs to be created first.
@@ -219,7 +219,7 @@ Teleporting **to** a Ledger account from a non-Ledger account doesn't require th
 ## Support
 
 If you need support please send an email to [support@axialunar.network](mailto:support@axialunar.network)
-or visit [our Support page](https://support.axiacoin.network).
+or visit [our Support page](https://support.AXIA.network).
 
 [ledger]: https://www.ledger.com/
 [apps]: https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/explorer

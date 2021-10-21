@@ -1,12 +1,12 @@
 ---
 id: build-integrate-assets
-title: Assets on AXIACoin
+title: Assets on AXIA
 sidebar_label: Integrating Assets
 slug: ../build-integrate-assets
 ---
 
-The AXIACoin Relay Chain does not natively support assets beyond SOLAR (likewise, LUNAR for AXIALunar).
-This functionality exists in parachains. On AXIACoin, this parachain is called Statemint, and on
+The AXIA Relay Chain does not natively support assets beyond AXC (likewise, LUNAR for AXIALunar).
+This functionality exists in allychains. On AXIA, this allychain is called Statemint, and on
 AXIALunar it is called Statemine. All information in this guide applies equally to AXIALunar/Statemine.
 
 Statemint provides a first-class interface for creating, managing, and using both fungible and
@@ -21,15 +21,15 @@ infrastructure providers and users:
 - Significantly lower transaction fees (about 1/10) than the Relay Chain.
 - Significantly lower deposits (1/10) than the Relay Chain. This includes the existential deposit
   and deposits for proxy/multisig operations.
-- Ability to pay transaction fees in certain assets. As in, accounts would **not** need SOLAR in order
+- Ability to pay transaction fees in certain assets. As in, accounts would **not** need AXC in order
   to exist on-chain nor to pay fees.
 
-Statemint will use SOLAR as its native currency. Users can transfer SOLAR from the Relay Chain into
-Statemint and use it natively. The Relay Chain will also accept SOLAR transfers from Statemint back to
+Statemint will use AXC as its native currency. Users can transfer AXC from the Relay Chain into
+Statemint and use it natively. The Relay Chain will also accept AXC transfers from Statemint back to
 the Relay Chain to use for staking, governance, or any other activity taking place there.
 
-Using Statemint for SOLAR/LUNAR balance transfers will be much more efficent than the Relay Chain and is
-highly recommended. Until domain specific parachains are built, the Relay Chain will still need to
+Using Statemint for AXC/LUNAR balance transfers will be much more efficent than the Relay Chain and is
+highly recommended. Until domain specific allychains are built, the Relay Chain will still need to
 be used for staking and governance.
 
 ## Assets Basics
@@ -43,9 +43,9 @@ Additionally, the asset owner can register metadata like the name, symbol, and n
 for representation.
 
 Some assets, as determined by on-chain governance, are regarded as “sufficient”. Sufficiency means
-that the asset balance is enough to create the account on-chain, with no need for the SOLAR/LUNAR
+that the asset balance is enough to create the account on-chain, with no need for the AXC/LUNAR
 existential deposit. Likewise, you cannot send a non-sufficient asset to an account that does not
-exist. Sufficient assets can be used to pay transaction fees (i.e. there is no need to hold SOLAR/LUNAR
+exist. Sufficient assets can be used to pay transaction fees (i.e. there is no need to hold AXC/LUNAR
 on the account).
 
 Assets do have a minimum balance (set by the creator), and if an account drops below that balance,
@@ -81,44 +81,44 @@ Using Statemine, assets can be easily created and also transacted with.
 
 You can use the same account on both networks and both will use the same `pubkey`.
 The network IDs change, so your address will look different. At the moment, assets are not
-visible on the Accounts page; you will need to visit the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) under the `Network` tab on Statemine to receive assets.
+visible on the Accounts page; you will need to visit the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) under the `Network` tab on Statemine to receive assets.
 
 ![statemine asset examples](../assets/statemine-asset-examples.png)
 
 #### Sending:
 
-Similarly, head over to the [Assets Page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
+Similarly, head over to the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
 
-> Sending the asset follows the same transaction scheme as sending LUNAR (or SOLAR).
+> Sending the asset follows the same transaction scheme as sending LUNAR (or AXC).
 
 ## Integration
 
 Statemint will come with the same tooling suite that AXIA Technologies provides for the Relay
 Chain, namely [API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) and
-[TxWrapper AXIACoin](https://github.com/axia-tech/txwrapper-core/tree/main/packages/txwrapper-axiasolar).
+[TxWrapper AXIA](https://github.com/axia-tech/txwrapper-core/tree/main/packages/txwrapper-AXIA).
 If you have a technical question or issue about how to use one of the integration tools please file
 a GitHub issue so a developer can help.
 
-### Parachain Node
+### Allychain Node
 
-Using Statemint will require running a parachain node to sync the chain. This is very similar to
-running a AXIACoin node, with the addition of some extra flags. The basic format looks like this:
+Using Statemint will require running a allychain node to sync the chain. This is very similar to
+running a AXIA node, with the addition of some extra flags. The basic format looks like this:
 
 ```bash
-./statemint $STATEMINT_CLI_ARGS --collator -- $AXIASOLAR_CLI_ARGS
+./statemint $STATEMINT_CLI_ARGS --collator -- $AXIA_CLI_ARGS
 ```
 
-where both `$STATEMINT_CLI_ARGS` and `$AXIASOLAR_CLI_ARGS` consist of regular AXIACoin node flags.
+where both `$STATEMINT_CLI_ARGS` and `$AXIA_CLI_ARGS` consist of regular AXIA node flags.
 Flags can be used twice, one for the collating component and one for the Relay Chain component.
 Additional ports that will be used are (by default) 9934, 9616, and 30334 (Relay Chain RPC,
 Prometheus endpoint, and libp2p respectively). As usual, any of these ports can be adjusted through
-flags. To deploy a Statemint RPC node, one would use the same flags as a AXIACoin RPC node in place
-of `$STATEMINT_CLI_ARGS`. The node will keep both the database for AXIACoin and for Statemint in its
+flags. To deploy a Statemint RPC node, one would use the same flags as a AXIA RPC node in place
+of `$STATEMINT_CLI_ARGS`. The node will keep both the database for AXIA and for Statemint in its
 database directory, so provision disks accordingly.
 
 ### Sidecar
 
-API Sidecar is a REST service for relay chain and parachain nodes; It comes with endpoints to query
+API Sidecar is a REST service for relay chain and allychain nodes; It comes with endpoints to query
 info about assets and asset balances on Statemint.
 
 - Asset lookups will always use the `AssetId` to refer to an asset class. On-chain metadata is
@@ -126,10 +126,10 @@ info about assets and asset balances on Statemint.
 - Please refer to [docs](https://axia-tech.github.io/substrate-api-sidecar/dist/) for full usage
   information. Details on options like how to make a historical query are not included here.
 
-### Tx Wrapper AXIACoin
+### Tx Wrapper AXIA
 
-TxWrapper AXIACoin is a library designed to facilitate transaction construction and signing in
+TxWrapper AXIA is a library designed to facilitate transaction construction and signing in
 offline environments; it comes with a set of asset-specific functions to use on Statemint. When
-constructing parachain transactions, you can use `txwrapper-axiasolar` exactly as on the Relay Chain,
-but would construct transactions with the appropriate parachain metadata like genesis hash, spec
+constructing allychain transactions, you can use `txwrapper-AXIA` exactly as on the Relay Chain,
+but would construct transactions with the appropriate allychain metadata like genesis hash, spec
 version, and type registry.

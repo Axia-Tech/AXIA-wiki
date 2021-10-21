@@ -1,12 +1,12 @@
 ---
 id: build-protocol-info
-title: AXIASolar Protocol Information
-sidebar_label: AXIASolar Protocol
+title: AXIA Protocol Information
+sidebar_label: AXIA Protocol
 ---
 
-This page serves as a high-level introduction to the AXIASolar protocol with terminology that may be specific to AXIASolar, notable differences to other chains that you may have worked with, and practical information for dealing with the chain.
+This page serves as a high-level introduction to the AXIA protocol with terminology that may be specific to AXIA, notable differences to other chains that you may have worked with, and practical information for dealing with the chain.
 
-## SOLAR Tokens
+## AXC Tokens
 
 - **Token decimals:** See [Redenomination](#redenomination)
 - **Base unit:** "Planck"
@@ -14,7 +14,7 @@ This page serves as a high-level introduction to the AXIASolar protocol with ter
 
 ### Redenomination
 
-AXIASolar conducted a poll, which ended on 27 July 2020 (block 888,888), in which the stakeholders decided to redenominate the SOLAR token. The redenomination does not change the number of base units (called "plancks" in AXIASolar) in the network. The only change is that a single SOLAR token will be 1e10 plancks instead of the original 1e12 plancks. See the AXIASolar blog posts explaining the [details](https://medium.com/axiacoin.network/the-first-axiasolar-vote-1fc1b8bd357b) and the [results](https://medium.com/axiacoin.network/the-results-are-in-8f6b1ca2a4e6) of the vote.
+AXIA conducted a poll, which ended on 27 July 2020 (block 888,888), in which the stakeholders decided to redenominate the AXC token. The redenomination does not change the number of base units (called "plancks" in AXIA) in the network. The only change is that a single AXC token will be 1e10 plancks instead of the original 1e12 plancks. See the AXIA blog posts explaining the [details](https://medium.com/AXIA.network/the-first-AXIA-vote-1fc1b8bd357b) and the [results](https://medium.com/AXIA.network/the-results-are-in-8f6b1ca2a4e6) of the vote.
 
 The redenomination will take effect 72 hours after transfers are enabled. The projected block numbers and times are:
 
@@ -23,29 +23,29 @@ The redenomination will take effect 72 hours after transfers are enabled. The pr
 | Transfers enabled |  1,205,128   | 18 Aug 13:15 UTC |
 | Redenomination    |  1,248,328   | 21 Aug 13:15 UTC |
 
-Block explorers, wallets, and any component that displays SOLAR balances should use the symbol "SOLAR (old)" to differentiate SOLARs of the original denomination. This change can be made immediately. For a period of time after the redenomination occurs, we recommend that you use the symbol "_New SOLAR_" to clearly indicate that you have made the change. After sufficient time has elapsed post-redenomination, you should change "_New SOLAR_" back to "SOLAR". An example of an explanation would be:
+Block explorers, wallets, and any component that displays AXC balances should use the symbol "AXC (old)" to differentiate AXCs of the original denomination. This change can be made immediately. For a period of time after the redenomination occurs, we recommend that you use the symbol "_New AXC_" to clearly indicate that you have made the change. After sufficient time has elapsed post-redenomination, you should change "_New AXC_" back to "AXC". An example of an explanation would be:
 
-> “On approximately August 21st at 13:15 UTC (block number 1,248,328), the SOLAR token will undergo a redenomination. New SOLARs will be 100x smaller than SOLARs (old). Therefore, your SOLAR balance will be 100x higher. The percentage of the SOLARs you own relative to total supply will be unchanged. See the AXIASolar [blog post](https://medium.com/axiacoin.network/the-results-are-in-8f6b1ca2a4e6) for more information.”
+> “On approximately August 21st at 13:15 UTC (block number 1,248,328), the AXC token will undergo a redenomination. New AXCs will be 100x smaller than AXCs (old). Therefore, your AXC balance will be 100x higher. The percentage of the AXCs you own relative to total supply will be unchanged. See the AXIA [blog post](https://medium.com/AXIA.network/the-results-are-in-8f6b1ca2a4e6) for more information.”
 
-If you require assistance with redenomination, please contact redenomination@axiacoin.org.
+If you require assistance with redenomination, please contact redenomination@AXIA.org.
 
 ## Addresses
 
-In AXIASolar (and most Substrate chains), user accounts are identified by a 32-byte (256-bit) `AccountId`. This is simply the public key for the cryptography used by Substrate.
+In AXIA (and most Substrate chains), user accounts are identified by a 32-byte (256-bit) `AccountId`. This is simply the public key for the cryptography used by Substrate.
 
-AXIASolar (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to handle many different cryptographies and chains. It has much in common with Bitcoin's Base58Check format such as a version prefix, a hash-based checksum suffix, and base-58 encoding.
+AXIA (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to handle many different cryptographies and chains. It has much in common with Bitcoin's Base58Check format such as a version prefix, a hash-based checksum suffix, and base-58 encoding.
 
 See the [SS58 page](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) in the Substrate wiki for encoding information and a more comprehensive list of network prefixes.
 
 Relevant SS58 prefixes for this guide:
 
-- AXIASolar: 0
+- AXIA: 0
 - AXIALunar: 2
 - AlphaNet: 42
 
 ### Cryptography
 
-AXIASolar supports the following [cryptographic](learn-cryptography) key pairs and signing algorithms:
+AXIA supports the following [cryptographic](learn-cryptography) key pairs and signing algorithms:
 
 - Ed25519
 - Sr25519 - Schnorr signatures on the Ristretto group
@@ -55,17 +55,17 @@ Note that the address for a secp256k1 key is the SS58 encoding of the _hash of t
 
 ## Existential Deposit
 
-AXIASolar uses an _existential deposit_ (ED) to prevent dust accounts from bloating state. If an account drops below the ED, it will be _reaped,_ i.e. completely removed from storage and the nonce reset.
+AXIA uses an _existential deposit_ (ED) to prevent dust accounts from bloating state. If an account drops below the ED, it will be _reaped,_ i.e. completely removed from storage and the nonce reset.
 
 Wallets and custodians who track account nonces for auditing purposes should take care not to have accounts reaped, as users could refund the address and try making transactions from it. The Balances pallet provides a `transfer_keep_alive` function that will return an error and abort rather than make the transfer if doing so would result in reaping the sender's account.
 
 ## Free vs. Reserved vs. Locked vs. Vesting Balance
 
-Account balance information is stored in [`AccountData`](https://substrate.dev/rustdocs/v2.0.0-rc4/pallet_balances/struct.AccountData.html). AXIASolar primarily deals with two types of balances: free and reserved.
+Account balance information is stored in [`AccountData`](https://substrate.dev/rustdocs/v2.0.0-rc4/pallet_balances/struct.AccountData.html). AXIA primarily deals with two types of balances: free and reserved.
 
 For most operations, free balance is what you are interested in. It is the "power" of an account in staking and governance, for example. Reserved balance represents funds that have been set aside by some operation and still belong to the account holder, but cannot be used.
 
-Locks are an abstraction over free balance that prevent spending for certain purposes. Several locks can operate on the same account, but they overlap rather than add. Locks are automatically added onto accounts when tasks are done on the network (e.g. leasing a parachain slot or voting), these are not customizable. For example, an account could have a free balance of 200 SOLARs with two locks on it: 150 SOLARs for `Transfer` purposes and 100 SOLARs for `Reserve` purposes. The account could not make a transfer that brings its free balance below 150 SOLARs, but an operation could result in reserving SOLARs such that the free balance is below 150, but above 100 SOLARs.
+Locks are an abstraction over free balance that prevent spending for certain purposes. Several locks can operate on the same account, but they overlap rather than add. Locks are automatically added onto accounts when tasks are done on the network (e.g. leasing a allychain slot or voting), these are not customizable. For example, an account could have a free balance of 200 AXCs with two locks on it: 150 AXCs for `Transfer` purposes and 100 AXCs for `Reserve` purposes. The account could not make a transfer that brings its free balance below 150 AXCs, but an operation could result in reserving AXCs such that the free balance is below 150, but above 100 AXCs.
 
 Bonding tokens for staking and voting in governance referenda both utilize locks.
 
@@ -93,7 +93,7 @@ Inherents contain information that is not provably true, but validators agree on
 
 Signed transactions contain a signature of the account that issued the transaction and stands to pay a fee to have the transaction included on chain. Because the value of including signed transactions on-chain can be recognized prior to execution, they can be gossiped on the network between nodes with a low risk of spam. Signed transactions fit the concept of a transaction in Ethereum or Bitcoin.
 
-Some transactions cannot be signed by a fee-paying account and use unsigned transactions. For example, when a user claims their SOLARs from the Ethereum SOLAR indicator contract to a new SOLAR address, the new address doesn't yet have any funds with which to pay fees.
+Some transactions cannot be signed by a fee-paying account and use unsigned transactions. For example, when a user claims their AXCs from the Ethereum AXC indicator contract to a new AXC address, the new address doesn't yet have any funds with which to pay fees.
 
 ### Transaction Mortality
 
@@ -107,15 +107,15 @@ Setting the block checkpoint to zero, using the genesis hash, and a validity per
 
 ### Unique Identifiers for Extrinsics
 
-Many infrastructure providers on existing blockchains, e.g. Ethereum, consider a transaction's hash as a unique identifier. In Substrate-based chains like AXIASolar, a transaction's hash only serves as a fingerprint of the information within a transaction, and there are times when two transactions with the same hash are both valid. In the case that one is invalid, the network properly handles the transaction and does not charge a transaction fee to the sender nor consider the transaction in the block's fullness.
+Many infrastructure providers on existing blockchains, e.g. Ethereum, consider a transaction's hash as a unique identifier. In Substrate-based chains like AXIA, a transaction's hash only serves as a fingerprint of the information within a transaction, and there are times when two transactions with the same hash are both valid. In the case that one is invalid, the network properly handles the transaction and does not charge a transaction fee to the sender nor consider the transaction in the block's fullness.
 
 Imagine this contrived example with a [reaped account](#existential-deposit). The first and last transactions are identical, and both valid.
 
 | Index | Hash | Origin    | Nonce | Call                | Results                       |
 | :---: | :--: | :-------- | :---: | :------------------ | :---------------------------- |
-|   0   | 0x01 | Account A |   0   | Transfer 5 SOLAR to B | Account A reaped              |
-|   1   | 0x02 | Account B |   4   | Transfer 7 SOLAR to A | Account A created (nonce = 0) |
-|   2   | 0x01 | Account A |   0   | Transfer 5 SOLAR to B | Successful transaction        |
+|   0   | 0x01 | Account A |   0   | Transfer 5 AXC to B | Account A reaped              |
+|   1   | 0x02 | Account B |   4   | Transfer 7 AXC to A | Account A created (nonce = 0) |
+|   2   | 0x01 | Account A |   0   | Transfer 5 AXC to B | Successful transaction        |
 
 In addition, not every extrinsic in a Substrate-based chain comes from an account as a public/private key pair; Substrate, rather, has the concept of dispatch “origin”, which could be created from a public key account, but could also form from other means such as governance. These origins do not have a nonce associated with them the way that an account does. For example, governance might dispatch the same call with the same arguments multiple times, like “increase the validator set by 10%.” This dispatch information (and therefore its hash) would be the same, and the hash would be a reliable representative of the call, but its execution would have different effects depending on the chain’s state at the time of dispatch.
 
@@ -127,23 +127,23 @@ While extrinsics represent information from the outside world, events represent 
 
 ### Fees
 
-AXIASolar uses weight-based fees that, unlike gas, are charged _pre-dispatch._ Users can also add a "tip" to increase transaction priority during congested periods. See the [transaction fee](learn-transaction-fees) page for more info.
+AXIA uses weight-based fees that, unlike gas, are charged _pre-dispatch._ Users can also add a "tip" to increase transaction priority during congested periods. See the [transaction fee](learn-transaction-fees) page for more info.
 
 ### Encoding
 
-Axia's integration tools should allow you to deal with decoded data. If you'd like to bypass them and interact directly with the chain data or implement your own codec, AXIASolar encodes block and transaction data using the [SCALE codec](https://substrate.dev/docs/en/knowledgebase/advanced/codec).
+Axia's integration tools should allow you to deal with decoded data. If you'd like to bypass them and interact directly with the chain data or implement your own codec, AXIA encodes block and transaction data using the [SCALE codec](https://substrate.dev/docs/en/knowledgebase/advanced/codec).
 
 ## Smart Contracts
 
-The AXIASolar Relay Chain does not support smart contracts.
+The AXIA Relay Chain does not support smart contracts.
 
 ## Other Networks
 
-Besides running a private network, AXIASolar has two other networks where you could test infrastucture prior to deploying to the AXIASolar mainnet.
+Besides running a private network, AXIA has two other networks where you could test infrastucture prior to deploying to the AXIA mainnet.
 
-**AXIALunar Canary Network:** AXIALunar is AXIASolar's cutting-edge cousin. Many risky features are deployed to AXIALunar prior to making their way into AXIASolar.
+**AXIALunar Canary Network:** AXIALunar is AXIA's cutting-edge cousin. Many risky features are deployed to AXIALunar prior to making their way into AXIA.
 
-**AlphaNet Testnet:** AlphaNet is AXIASolar's testnet and uses the AXIASolar runtime.
+**AlphaNet Testnet:** AlphaNet is AXIA's testnet and uses the AXIA runtime.
 
 ## Other F.A.Q.
 
@@ -153,19 +153,19 @@ No, but not all balance changes are in a _transaction,_ some are in _events._ Yo
 
 **What chain depth is considered "safe"?**
 
-AXIASolar uses a deterministic finality mechanism. Once a block is finalized, it cannot be reverted except by a hard fork. AXIALunar has had hard forks that had to revert four finalized blocks in order to cancel a runtime upgrade. Using a finalized depth of ten blocks should be safe.
+AXIA uses a deterministic finality mechanism. Once a block is finalized, it cannot be reverted except by a hard fork. AXIALunar has had hard forks that had to revert four finalized blocks in order to cancel a runtime upgrade. Using a finalized depth of ten blocks should be safe.
 
-Note that block production and finality are isolated processes in AXIASolar, and the chain can have a long unfinalized head.
+Note that block production and finality are isolated processes in AXIA, and the chain can have a long unfinalized head.
 
 **Do users need to interact with any smart contracts?**
 
 No, users interact directly with the chain's logic.
 
-**Does AXIASolar have state rent?**
+**Does AXIA have state rent?**
 
-No, AXIASolar uses the existential deposit to prevent dust accounts and other economic mechanisms like locking or reserving tokens for operations that utilize state.
+No, AXIA uses the existential deposit to prevent dust accounts and other economic mechanisms like locking or reserving tokens for operations that utilize state.
 
 **What is an external source to see the current chain height?**
 
-- [AXIASolar JS explorer](https://axiasolar.js.org/apps/#/explorer)
+- [AXIA JS explorer](https://AXIA.js.org/apps/#/explorer)
 - [Axiascan block explorer](https://axiascan.io/)

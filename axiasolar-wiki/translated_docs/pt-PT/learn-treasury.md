@@ -2,10 +2,10 @@
 id: learn-treasury
 title: Treasury
 sidebar_label: Treasury
-description: Details about AXIASolar's on-chain treasury.
+description: Details about AXIA's on-chain treasury.
 ---
 
-The treasury is a pot of funds collected through transaction fees, slashing, [staking inefficiencies](learn-staking#inflation), etc. The funds held in the treasury can be spent by making a spending proposal that, if approved by the council, will enter a waiting period before distribution. This waiting period is known as the budget period, and its duration is subject to [governance](learn-governance), with current defaults set to 24 days for AXIASolar mainnet, and 6 days for AXIALunar. The treasury attempts to spend as many proposals in the queue as it can without running out of funds. If the treasury ends a budget period without spending all of its funds, it suffers a burn of a percentage of its funds -- thereby causing deflationary pressure. This percentage is currently at 0%.
+The treasury is a pot of funds collected through transaction fees, slashing, [staking inefficiencies](learn-staking#inflation), etc. The funds held in the treasury can be spent by making a spending proposal that, if approved by the council, will enter a waiting period before distribution. This waiting period is known as the budget period, and its duration is subject to [governance](learn-governance), with current defaults set to 24 days for AXIA mainnet, and 6 days for AXIALunar. The treasury attempts to spend as many proposals in the queue as it can without running out of funds. If the treasury ends a budget period without spending all of its funds, it suffers a burn of a percentage of its funds -- thereby causing deflationary pressure. This percentage is currently at 0%.
 
 When a stakeholder wishes to propose a spend from the treasury, they must reserve a deposit totaling 5% of the proposed spend (see below for variations). This deposit will be slashed if the proposal is rejected, and returned if the proposal was accepted.
 
@@ -39,14 +39,14 @@ To minimize storage on chain, proposals don't contain contextual information. Wh
 
 - Many community members participate in discussion in the [AXIALunar Riot](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) chat.
 - The [Axiassembly](https://axialunar.axiassembly.io) discussion platform that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads. It also offers a sentiment gauge poll to get a feel for a proposal before committing to a vote.
-- The [AXIALunar forum](https://forum.axialunar.network) and [AXIASolar forum](https://forum.axiacoin.network) can be used for proposal explanations on AXIALunar and AXIASolar respectively.
+- The [AXIALunar forum](https://forum.axialunar.network) and [AXIA forum](https://forum.AXIA.network) can be used for proposal explanations on AXIALunar and AXIA respectively.
 - [Commonwealth.im](https://commonwealth.im) is a community site that allows users to log in with their LUNAR address and automatically reads proposals from the chain, turning them into discussion threads.
 
-Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Riot channels like the [AXIALunar Direction room](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) or the [AXIALunar Watercooler](https://riot.w3f.tech/#/room/#axialunarwatercooler:axiasolar.builders). For AXIASolar, you may want to frequent the [AXIASolar Watercooler](https://riot.w3f.tech/#/room/#axiasolar-watercooler:matrix.org) and [AXIASolar Direction room](https://riot.w3f.tech/#/room/#axiasolar-direction:matrix.axia.io).
+Spreading the word about the proposal's explanation is ultimately up to the proposer - the recommended way is using official Riot channels like the [AXIALunar Direction room](https://riot.w3f.tech/#/room/#axialunar:matrix.axia.io) or the [AXIALunar Watercooler](https://riot.w3f.tech/#/room/#axialunarwatercooler:AXIA.builders). For AXIA, you may want to frequent the [AXIA Watercooler](https://riot.w3f.tech/#/room/#AXIA-watercooler:matrix.org) and [AXIA Direction room](https://riot.w3f.tech/#/room/#AXIA-direction:matrix.axia.io).
 
 ### Creating the Proposal
 
-One way to create the proposal is to use the AXIASolar JS Apps [website](https://axiasolar.js.org/apps). From the website, use either the [extrinsics tab](https://axiasolar.js.org/apps/#/extrinsics) and select the Treasury pallet, then `proposeSpend` and enter the desired amount and recipient, or use the [Treasury tab](https://axiasolar.js.org/apps/#/treasury) and its dedicated Submit Proposal button:
+One way to create the proposal is to use the AXIA JS Apps [website](https://AXIA.js.org/apps). From the website, use either the [extrinsics tab](https://AXIA.js.org/apps/#/extrinsics) and select the Treasury pallet, then `proposeSpend` and enter the desired amount and recipient, or use the [Treasury tab](https://AXIA.js.org/apps/#/treasury) and its dedicated Submit Proposal button:
 
 ![An example of a proposal being created](/img/treasury/propose.jpg)
 

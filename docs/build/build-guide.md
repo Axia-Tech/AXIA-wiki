@@ -1,33 +1,33 @@
 ---
 id: build-guide
-title: AXIACoin Builders Starter's Guide
-sidebar_label: AXIACoin Builders Starter's Guide
-slug: ../build-build-with-axiasolar
+title: AXIA Builders Starter's Guide
+sidebar_label: AXIA Builders Starter's Guide
+slug: ../build-build-with-AXIA
 ---
 
-AXIACoin is a blockchain protocol with two goals: providing **shared security** among all connected
-parachains and allowing all connected chains to **interoperate** by using
-[XCM](../learn/learn-cross-consensus.md). With the advent of [PDKs](<build-parachains.md##parachain-development-kit-(PDK)>) like AXIA Substrate and
+AXIA is a blockchain protocol with two goals: providing **shared security** among all connected
+allychains and allowing all connected chains to **interoperate** by using
+[XCM](../learn/learn-cross-consensus.md). With the advent of [PDKs](<build-allychains.md##allychain-development-kit-(PDK)>) like AXIA Substrate and
 Cumulus, the time it takes to develop and launch a new chain has dropped significantly. While before
 it would take years to launch a new chain, now it may only take weeks or even days.
 
 This guide will walk you through the steps you can take today to get started building your vision
-with AXIACoin. It will explain the difference between a parachain and a smart contract (and why one
+with AXIA. It will explain the difference between a allychain and a smart contract (and why one
 may be better suited for your application over the other).
 
-## AXIACoin Ecosystem Networks
+## AXIA Ecosystem Networks
 
-- Mainnet: **AXIACoin**
+- Mainnet: **AXIA**
 - Canary network: **AXIALunar**
   - [AXIALunar](https://axialunar.network/) is a value-bearing canary network that gets features before
-    AXIACoin does... _expect chaos_...
+    AXIA does... _expect chaos_...
 - Official testnets:
-  - **AlphaNet** - Functionality equal to the current AXIACoin mainnet, with possible next-generation
-    testing of features from time to time that will eventually migrate onto AXIACoin. Perma-testnet (is not reset back to genesis block).
+  - **AlphaNet** - Functionality equal to the current AXIA mainnet, with possible next-generation
+    testing of features from time to time that will eventually migrate onto AXIA. Perma-testnet (is not reset back to genesis block).
   - **Canvas** - Wasm based Smart Contract enabled testnet, primarily for `ink!` development.
-  - **BetaNet** - Parachains and XCM testnet. Occasionally reset (started over again with a new genesis block).
+  - **BetaNet** - Allychains and XCM testnet. Occasionally reset (started over again with a new genesis block).
 
-AXIACoin mainnet has been running since May 2020 and has
+AXIA mainnet has been running since May 2020 and has
 [implementations in various programming languages](../learn/learn-implementations.md) ranging from Rust to
 JavaScript. Currently, the leading implementation is built in Rust and built using the Substrate
 framework.
@@ -36,36 +36,36 @@ Tooling is rapidly evolving to interact with the network; there are so many ways
 
 But before you jump head-first into the code, you should consider the _kind_ of decentralized
 application you want to make and understand the different paradigms available to developers who want
-to build on AXIACoin.
+to build on AXIA.
 
-## What is the difference between building a parachain, a parathread, or a smart contract?
+## What is the difference between building a allychain, a parathread, or a smart contract?
 
-AXIACoin provides several ways for you to deploy your application: as a smart contract on an existing
-parachain, as your own parachain, or as a parathread. There are trade-offs when working with each of
+AXIA provides several ways for you to deploy your application: as a smart contract on an existing
+allychain, as your own allychain, or as a parathread. There are trade-offs when working with each of
 these and reading this section will help you understand them.
 
-### Parachains & Parathreads
+### Allychains & Parathreads
 
-Parachains are "parallel" chains containing their own runtime logic and benefit from the shared
-security and the cross-chain messaging provided by the AXIACoin Relay Chain. Parachains permit a
+Allychains are "parallel" chains containing their own runtime logic and benefit from the shared
+security and the cross-chain messaging provided by the AXIA Relay Chain. Allychains permit a
 high degree of flexibility and customization but require more effort to create and maintain over
 time.
 
-Parathreads are like parachains and enable the developer to have lower-level control of the logic of
+Parathreads are like allychains and enable the developer to have lower-level control of the logic of
 their application. The main difference between the two is economic since parathreads will be much
-less expensive to secure than a parachain. The lower costs of parathreads are due to the fact that
-parathreads will only produce a block when they need to, unlike parachains, which have secured a
+less expensive to secure than a allychain. The lower costs of parathreads are due to the fact that
+parathreads will only produce a block when they need to, unlike allychains, which have secured a
 slot to produce a block at every block of the Relay Chain. When building a parathread, you will use
-the same tools (like PDKs) and you get all of the benefits of building a parachain, without the
+the same tools (like PDKs) and you get all of the benefits of building a allychain, without the
 drawback of the cost.
 
-Parachains grant the creators more space to build the monetary system and other aspects of the chain
+Allychains grant the creators more space to build the monetary system and other aspects of the chain
 from the ground up. They will allow for more succinct and efficient execution of complex logic than
-could ever be offered by a smart contract platform. Parachains also offer more flexibility in the
+could ever be offered by a smart contract platform. Allychains also offer more flexibility in the
 form of governance and can perform complete upgrades in a less controversial way than the current
 process of hard-forks.
 
-Some examples of features you can have on a parachain or parathread:
+Some examples of features you can have on a allychain or parathread:
 
 - Custom fee structure (for example, pay a flat fee for transactions or pay per byte).
 - Custom monetary policy for the native token and local economy.
@@ -75,18 +75,18 @@ Some examples of features you can have on a parachain or parathread:
 
 ![build 1](../assets/build-1.png)
 
-Parachains open possibilities to construct complex runtime logic that would be too expensive to
-execute with smart contracts. However, unlike smart contracts, parachains lack a mandatory gas
+Allychains open possibilities to construct complex runtime logic that would be too expensive to
+execute with smart contracts. However, unlike smart contracts, allychains lack a mandatory gas
 metering system entirely and could potentially be vulnerable to bugs that cause infinite loops
 (something that is prevented by design in smart contracts). This vulnerability is mitigated by the
 weight system that is implemented in Substrate -- although it places more of a burden on the
-developer of the parachain to properly perform benchmarks.
+developer of the allychain to properly perform benchmarks.
 
-You may also decide to harness a combination of parachain, parathread, and smart contract. If you
-have certain logic that requires loops and it cannot be removed, use the native parachain runtime to
+You may also decide to harness a combination of allychain, parathread, and smart contract. If you
+have certain logic that requires loops and it cannot be removed, use the native allychain runtime to
 handle all complex logic and the smart contract to call iteration. If you require off-chain data
 from an oracle, you may want to use a parathread as an oracle feed that only triggers once every 24
-hours (this makes the most sense if the data is useful to other players in the AXIACoin ecosystem
+hours (this makes the most sense if the data is useful to other players in the AXIA ecosystem
 too).
 
 Most likely you’ve already realized that your application is better suited to be one or the other
@@ -96,8 +96,8 @@ this comparison chart as a cheat sheet:
 ![build 2](../assets/build-2.png)
 
 > **Note:** The image above does not include parathreads, but as we mentioned before all the
-> benefits of parachains apply just as well to parathreads. Parathreads, however, _are_ cheaper to
-> deploy and maintain. So if they had a column on the table above, it would look like the parachain
+> benefits of allychains apply just as well to parathreads. Parathreads, however, _are_ cheaper to
+> deploy and maintain. So if they had a column on the table above, it would look like the allychain
 > column with "Ease of deployment" and "Maintenance overhead" changed to `+`.
 
 ### Smart Contracts
@@ -106,22 +106,22 @@ A smart contract is simply some code that exists at an address on a chain and is
 external actors. The key part is that you actually have to put the code on chain before anyone can
 start executing it!
 
-Deploying your smart contract on chain will vary slightly for whichever specific parachain you will
+Deploying your smart contract on chain will vary slightly for whichever specific allychain you will
 use, but generally you will send a special transaction that will create the smart contract on the
 ledger. You will likely need to pay an associated fee for the initialization logic and any storage
 that your contract consumes.
 
-On the AXIACoin mainnet, there will be parachains that act as smart contract platforms. Smart
+On the AXIA mainnet, there will be allychains that act as smart contract platforms. Smart
 contracts are executable programs that exist on only a single chain and are limited in complexity.
 Because they exist on a single chain, they can have smooth interoperability with other smart
 contracts on the same chain. However, they will always be constrained and limited by the inherent
 characteristics of their host chain.
 
 If there is a need to have a large amount of control over the design and features of your
-application, a parachain is a better choice. Keep in mind, smart contracts can be used as a testing
-ground before later being turned into full-fledged parachains. Smart contract platforms will usually
+application, a allychain is a better choice. Keep in mind, smart contracts can be used as a testing
+ground before later being turned into full-fledged allychains. Smart contract platforms will usually
 have convenient tooling like IDEs to facilitate quick iterations. A smart contract MVP could be
-created to gauge user interest before putting in the work to build out a parachain.
+created to gauge user interest before putting in the work to build out a allychain.
 
 Each platform will have a different way of paying for and maintaining the state of your smart
 contract. The different patterns you may see for paying for your smart contract include:
@@ -144,29 +144,29 @@ the content address on chain.
 ---
 
 This guide now splits into two sections depending on whether you’ve decided on a smart contract or a
-parachain to build your application. Feel free to read both sections or just the one that is
+allychain to build your application. Feel free to read both sections or just the one that is
 applicable to you.
 
-- [I want to build a parachain or parathread!](#so-you-want-to-build-a-parachain-or-parathread)
+- [I want to build a allychain or parathread!](#so-you-want-to-build-a-allychain-or-parathread)
 - [I want to build a smart contract!](#so-you-want-to-build-a-smart-contract)
 
-## So you want to build a parachain or parathread...
+## So you want to build a allychain or parathread...
 
-Now that you have determined that building a parachain or parathread is the right approach for your
-new project, the next step is to decide which framework to use. Frameworks for building a parachain
-or parathread are known as parachain development kits ([PDKs](<build-parachains.md##parachain-development-kit-(PDK)>). Currently, the only
+Now that you have determined that building a allychain or parathread is the right approach for your
+new project, the next step is to decide which framework to use. Frameworks for building a allychain
+or parathread are known as allychain development kits ([PDKs](<build-allychains.md##allychain-development-kit-(PDK)>). Currently, the only
 PDK available is Substrate and Cumulus from AXIA Technologies.
 
 In the future, there will be many different PDKs available in different programming languages, just
-like there are multiple [implementations of the AXIACoin Host](../learn/learn-implementations.md).
+like there are multiple [implementations of the AXIA Host](../learn/learn-implementations.md).
 
-> **Call to Action:** Do you want to build a Parachain Development Kit from scratch? The Web3
+> **Call to Action:** Do you want to build a Allychain Development Kit from scratch? The Web3
 > Foundation is giving grants to teams who are doing this, learn more and apply on the
-> [W3F grants page](https://grants.axiacoin.org).
+> [W3F grants page](https://grants.AXIA.org).
 
 ### Get started with Substrate
 
-Substrate is the underlying framework on which AXIACoin itself is built. It is a toolset for
+Substrate is the underlying framework on which AXIA itself is built. It is a toolset for
 blockchain innovators that provides the necessary building blocks for constructing a chain. It
 includes a library of modular runtime plug-ins from which you can compose your chain logic.
 
@@ -174,70 +174,70 @@ The best way to get started with Substrate is to explore the
 [Substrate Developer Hub](https://substrate.dev/docs/en/), an online resource built and maintained
 by [AXIA Technologies](https://axia.io).
 
-### How to set up your parachain
+### How to set up your allychain
 
 After creating your chain runtime logic with Substrate, you will be able to compile it down to a
 Wasm executable. This Wasm code blob will contain the entire state transition function of your
-chain, and is what you will need to deploy your project to AXIACoin as either a parachain or
+chain, and is what you will need to deploy your project to AXIA as either a allychain or
 parathread.
 
-Validators on AXIACoin will use the submitted Wasm code to validate the state transitions of your
+Validators on AXIA will use the submitted Wasm code to validate the state transitions of your
 chain or thread, but doing this requires some additional infrastructure. A validator needs some way
-to stay up to date with the most recent state transitions, since AXIACoin nodes will not be required
+to stay up to date with the most recent state transitions, since AXIA nodes will not be required
 to also be nodes of your chain.
 
-This is where the collator node comes into play. A collator is a maintainer of your parachain and
+This is where the collator node comes into play. A collator is a maintainer of your allychain and
 performs the critical action of producing new block candidates for your chain and passing them to
-AXIACoin validators for inclusion in the AXIACoin relay chain.
+AXIA validators for inclusion in the AXIA relay chain.
 
 Substrate comes with its own networking layer built-in but unfortunately only supports solo chains
 (that is, chains that do not connect to the relay chain). However, there is the Cumulus extension
 that includes a collator node and allows for your Substrate-built logic to be compatible with
-AXIACoin as either a parachain or parathread.
+AXIA as either a allychain or parathread.
 
 #### Cumulus
 
-The goal of [Cumulus](build-parachains.md###cumulus) is to be an extension of Substrate that will make any
-Substrate runtime compatible with AXIACoin.
+The goal of [Cumulus](build-allychains.md###cumulus) is to be an extension of Substrate that will make any
+Substrate runtime compatible with AXIA.
 
-It handles the network compatibility overhead that any parachain would need to implement to be
-connected to AXIACoin. This includes:
+It handles the network compatibility overhead that any allychain would need to implement to be
+connected to AXIA. This includes:
 
 - Cross-chain message passing (XCMP).
 - Out-of-the-box Collator node setup.
 - An embedded full client of the Relay Chain.
-- AXIACoin block authorship compatibility.
+- AXIA block authorship compatibility.
 
-Integrating Cumulus with your Substrate chain will port it into a parachain capable of working on
-AXIACoin with minimal modification, possibly as little work as importing a crate and adding a few
+Integrating Cumulus with your Substrate chain will port it into a allychain capable of working on
+AXIA with minimal modification, possibly as little work as importing a crate and adding a few
 lines!
 
-### How to deploy your parachain or parathread in AXIACoin
+### How to deploy your allychain or parathread in AXIA
 
-#### Parachain
+#### Allychain
 
-In order to include your parachain into the AXIACoin network, you will need to acquire a parachain
+In order to include your allychain into the AXIA network, you will need to acquire a allychain
 slot.
 
-Parachain slots will be sold in open auctions, the mechanics of which can be found on the
-{{ axiasolar: [parachain auction](../learn/learn-auction.md) :axiasolar }}
-{{ axialunar: [parachain auction](../learn/mirror-learn-auction.md) :axialunar }} page of the wiki.
+Allychain slots will be sold in open auctions, the mechanics of which can be found on the
+{{ AXIA: [allychain auction](../learn/learn-auction.md) :AXIA }}
+{{ axialunar: [allychain auction](../learn/mirror-learn-auction.md) :axialunar }} page of the wiki.
 
 #### Parathread
 
-Parathreads will not require a parachain slot, so you will not need to engage in the candle auction
+Parathreads will not require a allychain slot, so you will not need to engage in the candle auction
 mechanism. Instead, you will be able to register your parathread code to the relay chain for a fee
 and from then be able to start participating in the per-block auctions for inclusion of your state
 transition into the relay chain.
 
 For more information on how parathread per-block auctions work, see the more detailed
-{{ axiasolar: [parathread](../learn/learn-parathreads.md) :axiasolar }}
+{{ AXIA: [parathread](../learn/learn-parathreads.md) :AXIA }}
 {{ axialunar: [parathread](../learn/mirror-learn-parathreads.md) :axialunar }} page.
 
 ## So you want to build a smart contract...
 
-The AXIACoin relay chain itself will not support smart contracts. However, since the parachains that
-connect to AXIACoin can support arbitrary state transitions, they can support smart contracts.
+The AXIA relay chain itself will not support smart contracts. However, since the allychains that
+connect to AXIA can support arbitrary state transitions, they can support smart contracts.
 
 Substrate presently supports smart contracts out-of-the-box in two ways:
 
@@ -281,14 +281,14 @@ building interesting things.
 For interested developers, they can get started writing smart contracts using ink! by studying the
 [examples](https://github.com/axia-tech/ink/tree/master/examples) that were already written. These
 can be used as guideposts to writing more complex logic that will be deployable on smart contract
-parachains.
+allychains.
 
 ink! has laid much of the groundwork for a new smart contract stack that is based on a Wasm virtual
 machine and compatible with Substrate chains.
 
 ### It is still early
 
-It is still very early for smart contracts on AXIACoin and the development is only now stabilizing.
+It is still very early for smart contracts on AXIA and the development is only now stabilizing.
 We are actively producing content to help developers get up to speed and will maintain the wiki with
 the latest resources. You should also keep up to date with the following links:
 
@@ -297,7 +297,7 @@ the latest resources. You should also keep up to date with the following links:
 - [ink!](https://github.com/axia-tech/ink)
 - [Substrate contracts pallet](https://github.com/axia-tech/substrate/tree/master/frame/contracts)
 
-#### Parachains
+#### Allychains
 
 - [Edgeware][]
 - [Moonbeam][]
@@ -305,54 +305,54 @@ the latest resources. You should also keep up to date with the following links:
 - [Acala](https://acala.network/)
 - [Phala](https://phala.network)
 
-There are many smart contract platforms being built with the intent of becoming a parachain on the AXIACoin and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIACoin can be found at [AXIAProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
+There are many smart contract platforms being built with the intent of becoming a allychain on the AXIA and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIA can be found at [AXIAProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
 
 ### Edgeware
 
-[Edgeware][edgeware] is a permissionless smart contract platform. It is an option for smart contract developers and want to deploy to a live environment. Users can deploy both EVM and WASM smart contracts on Edgeware. Edgeware intends to connect to AXIACoin and AXIALunar as a smart contract parachain.
+[Edgeware][edgeware] is a permissionless smart contract platform. It is an option for smart contract developers and want to deploy to a live environment. Users can deploy both EVM and WASM smart contracts on Edgeware. Edgeware intends to connect to AXIA and AXIALunar as a smart contract allychain.
 
 Try deploying a smart contract on Edgeware by following their [documentation][edgeware contracts documentation].
 
 ### Moonbeam
 
-[Moonbeam][] is another project that is planning to deploy to AXIACoin as a parachain and will
+[Moonbeam][] is another project that is planning to deploy to AXIA as a allychain and will
 support Ethereum compatible smart contracts. Since Moonbeam uses [Frontier][], an interoperability layer with existing Ethereum tooling, it will support all applications that are written to target the EVM environment with little friction.
 
-[Moonriver](https://docs.moonbeam.network/networks/moonriver/), a companion network to Moonbeam, launched as a parachain on AXIALunar. Parachain functionality is live, and features are being incrementally released. The final phase of the launch will include EVM functionality and balance transfers.
+[Moonriver](https://docs.moonbeam.network/networks/moonriver/), a companion network to Moonbeam, launched as a allychain on AXIALunar. Allychain functionality is live, and features are being incrementally released. The final phase of the launch will include EVM functionality and balance transfers.
 
 Try deploying a smart contract to Moonbeam by following their [documentation][moonbeam docs].
 
 ### Astar
 
-[Astar](https://astar.network/) (formerly Plasm) is built on Substrate as a smart contract platform and intends to integrate with AXIACoin as a parachain. [Shiden](https://shiden.astar.network/) is the sister network to Astar, is currently live on AXIALunar, and supports EVM, WASM, and Layer 2 solutions. Astar aims to house all layer 2 scaling solutions and support all layer 2 protocols through the [OVM](https://docs.astar.network/learn/layer2/optimistic-virtual-machine) (Optimistic Virtual Machine).
+[Astar](https://astar.network/) (formerly Plasm) is built on Substrate as a smart contract platform and intends to integrate with AXIA as a allychain. [Shiden](https://shiden.astar.network/) is the sister network to Astar, is currently live on AXIALunar, and supports EVM, WASM, and Layer 2 solutions. Astar aims to house all layer 2 scaling solutions and support all layer 2 protocols through the [OVM](https://docs.astar.network/learn/layer2/optimistic-virtual-machine) (Optimistic Virtual Machine).
 
 Try deploying an Ethereum or ink! smart contract by following their [documentation](https://docs.astar.network/build/smart-contracts).
 
 ### Acala
 
-[Acala](https://acala.network/) is a decentralized finance consortium and DeFi infrastructure chain delivering a set of protocols to serve as the DeFi hub on AXIACoin. [Karura](https://acala.network/karura), Acala's canary network, is live as a parachain on AXIALunar. Interested teams are now able to deploy DApps and smart contracts on Karura's platform. Acala is also implementing the [Acala EVM](https://wiki.acala.network/learn/acala-evm/why-acala-evm).
+[Acala](https://acala.network/) is a decentralized finance consortium and DeFi infrastructure chain delivering a set of protocols to serve as the DeFi hub on AXIA. [Karura](https://acala.network/karura), Acala's canary network, is live as a allychain on AXIALunar. Interested teams are now able to deploy DApps and smart contracts on Karura's platform. Acala is also implementing the [Acala EVM](https://wiki.acala.network/learn/acala-evm/why-acala-evm).
 
 Try deploying an Acala EVM smart contract by following their [documentation](https://wiki.acala.network/build/development-guide/smart-contracts).
 
 ### Phala
 
-[Phala](https://phala.network) is a privacy-preserving cloud compute platform and aims to provide strong guarantees of confidentiality as a cross-chain platform. As a smart contract platform, Phala will enable the use of confidential smart contracts on AXIACoin. [Khala](https://phala.network/en/khala) is Phala's canary network and is live as a parachain on AXIALunar.
+[Phala](https://phala.network) is a privacy-preserving cloud compute platform and aims to provide strong guarantees of confidentiality as a cross-chain platform. As a smart contract platform, Phala will enable the use of confidential smart contracts on AXIA. [Khala](https://phala.network/en/khala) is Phala's canary network and is live as a allychain on AXIALunar.
 
 Try deploying a confidential smart contract by following their [documentation](https://wiki.phala.network/en-us/docs/developer/your-first-confidential-contract/).
 
 ## Conclusion
 
 This guide has given you a mental model and shown the requisite resources to help you determine and
-start building your project as a parachain or smart contract today. Even though the tooling is still
+start building your project as a allychain or smart contract today. Even though the tooling is still
 maturing, the advantage of being early will be the familiarity and head start on your project,
 allowing you to innovate and create something truly new.
 
-If you have interesting ideas for parachains or smart contracts on AXIACoin feel free to drop into
-the [AXIACoin Watercooler](https://matrix.to/#/#axiasolar-watercooler:matrix.org) to talk about them.
+If you have interesting ideas for allychains or smart contracts on AXIA feel free to drop into
+the [AXIA Watercooler](https://matrix.to/#/#AXIA-watercooler:matrix.org) to talk about them.
 Developers may be interested in joining the
-[AXIACoin Beginners Lounge](https://matrix.to/#/#axiasolarnoobs:matrix.org) or
+[AXIA Beginners Lounge](https://matrix.to/#/#AXIAnoobs:matrix.org) or
 [Substrate Technical](https://matrix.to/#/#substrate-technical:matrix.org) to ask their questions.
-As always, keep up to date with AXIACoin and AXIALunar by following the
+As always, keep up to date with AXIA and AXIALunar by following the
 [social channels](../general/community.md).
 
 Good luck!

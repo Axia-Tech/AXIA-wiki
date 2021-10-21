@@ -5,14 +5,14 @@ sidebar_label: SS58 Registry
 slug: ../build-ss58-registry
 ---
 
-Substrate-based chains, including the AXIACoin and AXIALunar relay chains, use an
+Substrate-based chains, including the AXIA and AXIALunar relay chains, use an
 [SS58 encoding](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) for
 their address formats. This page serves as a registry for teams to see which chain corresponds to a
 given prefix, and which prefixes are availabe.
 
 | Prefix | Network               | Name                                                  | Symbols                                   | Decimals               | Standard Account | Website                       |
 | ------ | --------------------- | ----------------------------------------------------- | ----------------------------------------- | ---------------------- | ---------------- | ----------------------------- |
-| 0      | axiasolar              | AXIACoin Relay Chain                                  | SOLAR                                       | 10                     | \*25519          | https://axiacoin.network      |
+| 0      | AXIA              | AXIA Relay Chain                                  | AXC                                       | 10                     | \*25519          | https://AXIA.network      |
 | 1      | null                  | Bare 32-bit Schnorr/Ristretto (S/R 25519) public key. | null                                      | null                   | null             | null                          |
 | 2      | axialunar                | AXIALunar Relay Chain                                    | LUNAR                                       | 12                     | \*25519          | https://axialunar.network        |
 | 3      | null                  | Bare 32-bit Ed25519 public key.                       | null                                      | null                   | null             | null                          |
@@ -38,7 +38,7 @@ given prefix, and which prefixes are availabe.
 | 23     | shift                 | ShiftNrg                                              | null                                      | null                   | \*25519          | null                          |
 | 24     | zero                  | ZERO                                                  | PLAY                                      | 18                     | \*25519          | https://zero.io               |
 | 25     | zero-alphaville       | ZERO Alphaville                                       | PLAY                                      | 18                     | \*25519          | https://zero.io               |
-| 26     | jupiter               | Jupiter                                               | jSOLAR                                      | 10                     | \*25519          | https://jupiter.patract.io    |
+| 26     | jupiter               | Jupiter                                               | jAXC                                      | 10                     | \*25519          | https://jupiter.patract.io    |
 | 28     | subsocial             | Subsocial                                             | null                                      | null                   | \*25519          | null                          |
 | 29     | cord                  | Dhiway CORD Network                                   | DCU                                       | 18                     | \*25519          | https://dhiway.com/           |
 | 30     | phala                 | Phala Network                                         | AHA                                       | 12                     | \*25519          | https://phala.network         |
@@ -63,14 +63,14 @@ given prefix, and which prefixes are availabe.
 | 63     | hydradx               | HydraDX                                               | HDX                                       | 12                     | \*25519          | https://hydradx.io            |
 | 65     | aventus               | AvN Mainnet                                           | AVT                                       | 18                     | \*25519          | https://aventus.io            |
 | 66     | crust                 | Crust Network                                         | CRU                                       | 12                     | \*25519          | https://crust.network         |
-| 67     | equilibrium           | Equilibrium Network                                   | Unknown, USD, EQ, ETH, BTC, EOS, SOLAR, CRV | 0, 9, 9, 9, 9, 9, 9, 9 | \*25519          | https://equilibrium.io        |
+| 67     | equilibrium           | Equilibrium Network                                   | Unknown, USD, EQ, ETH, BTC, EOS, AXC, CRV | 0, 9, 9, 9, 9, 9, 9, 9 | \*25519          | https://equilibrium.io        |
 | 69     | sora                  | SORA Network                                          | XOR                                       | 18                     | \*25519          | https://sora.org              |
 | 73     | zeitgeist             | Zeitgeist                                             | ZTG                                       | 10                     | \*25519          | https://zeitgeist.pm          |
 | 77     | manta                 | Manta network                                         | MA                                        | 12                     | \*25519          | https://manta.network         |
 | 78     | calamari              | Calamari: Manta Canary Network                        | KMA                                       | 12                     | \*25519          | https://manta.network         |
 | 98     | axiasmith            | AXIASmith Canary Network                             | PKS                                       | 18                     | \*25519          | https://axiafoundry.com      |
 | 99     | axiafoundry          | AXIAFoundry Network                                  | PKF                                       | 18                     | \*25519          | https://axiafoundry.com      |
-| 101    | origintrail-parachain | OriginTrail Parachain                                 | TRAC                                      | 18                     | secp256k1        | https://origintrail.io        |
+| 101    | origintrail-allychain | OriginTrail Allychain                                 | TRAC                                      | 18                     | secp256k1        | https://origintrail.io        |
 | 110    | heiko                 | Heiko                                                 | HKO                                       | 12                     | \*25519          | https://parallel.fi/          |
 | 136    | altair                | Altair                                                | AIR                                       | 18                     | \*25519          | https://centrifuge.io/        |
 | 172    | parallel              | Parallel                                              | PARA                                      | 12                     | \*25519          | https://parallel.fi/          |

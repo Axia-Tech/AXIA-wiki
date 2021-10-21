@@ -8,7 +8,7 @@ The following describes how to stop nominating and retrieve your tokens. Please 
 
 ### Step 1: Stop Nominating
 
-On the [AXIASolar UI](https://axiasolar.js.org/apps) navigate to the "Staking" tab.
+On the [AXIA UI](https://AXIA.js.org/apps) navigate to the "Staking" tab.
 
 On this tab click on the "Account Actions" tab at the top of the screen.
 
@@ -32,6 +32,6 @@ If successful, your balance will show as "unbonding" with an indicator of how ma
 
 ![Unbonding duration](/img/NPoS/unbond4.png)
 
-This duration will vary depending on the network you're on and will typically be four times as fast on AXIALunar as it is on AXIASolar.
+This duration will vary depending on the network you're on and will typically be four times as fast on AXIALunar as it is on AXIA.
 
 Once this process is complete, you will have to issue another, final transaction: Withdraw Unbonded. Then, your transferrable balance will increase by the amount of tokens you've just fully unbonded.

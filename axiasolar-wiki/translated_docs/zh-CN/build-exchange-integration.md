@@ -7,7 +7,7 @@ sidebar_label: Wallet integration
 ```
 +--------------------+
 |                    |
-| Substrate/AXIASolar |
+| Substrate/AXIA |
 |                    |
 +---------+----------+
           |
@@ -46,7 +46,7 @@ sidebar_label: Wallet integration
 
 所有区块数据是使用基本 SCALE 编码数据，详细资料[在此](https://substrate.dev/docs/en/overview/low-level-data-format)。但是 SCALE 仅提供底层格式，它的字段和内部结构的详细信息可能会在不同链甚至在同一链不同区块之间改变。
 
-对于 AXIASolar 一开始，区块头格式为五字段结构：
+对于 AXIA 一开始，区块头格式为五字段结构：
 
 ```
 struct Block:
@@ -138,19 +138,19 @@ struct Event:
 
 `Type`只是`String`，但是字符串的内容将被解释为类型的名称。
 
-Substrate 链(实际上 Substrte 链是使用 SRML 构建) 例如 AXIASolar 是由不同*模块*组成。每个模块可以想象有点像智能合，有各种交易(或 Substrate 术语，_外部交易_)，数据会持续在交易和区块, 事件和常量参数之间。元数据对所有东西进行编码，允许客户端代码创建特定的交易或解释链上发生了什么，甚至在不同的 Substrate 链之间或同一链不同升级或分叉之间。
+Substrate 链(实际上 Substrte 链是使用 SRML 构建) 例如 AXIA 是由不同*模块*组成。每个模块可以想象有点像智能合，有各种交易(或 Substrate 术语，_外部交易_)，数据会持续在交易和区块, 事件和常量参数之间。元数据对所有东西进行编码，允许客户端代码创建特定的交易或解释链上发生了什么，甚至在不同的 Substrate 链之间或同一链不同升级或分叉之间。
 
 There are two modules a wallet needs to be aware of: Balances and Indices. Balances allows you to send and receive funds between different accounts. Indices allows you to interpret user addresses.
 
 ## 3. 处理 SS58 和帐户地址
 
-在 AXIASolar (和大多数 Substrate 链)中，用户帐户由 32 字节(256 位)的 AccountId 识别。这只是 Substrate 使用的 x25519 加密的公钥。
+在 AXIA (和大多数 Substrate 链)中，用户帐户由 32 字节(256 位)的 AccountId 识别。这只是 Substrate 使用的 x25519 加密的公钥。
 
-但是为了使地址细小，我们为 AXIASolar 上余额大于零的帐户编制索引，并仅使用此*索引*来标识该帐户。该索引比 32 字节长的 _AccountId_ 细小多个，通常仅用几个字节进行编码 。
+但是为了使地址细小，我们为 AXIA 上余额大于零的帐户编制索引，并仅使用此*索引*来标识该帐户。该索引比 32 字节长的 _AccountId_ 细小多个，通常仅用几个字节进行编码 。
 
-Where Bitcoin has the Check58 address format and Ethereum used the `0x...` hex format, AXIASolar (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to handle many different cryptographies and chains. It has much in common with Bitcoin's Check58 format such as a version prefix, a hash-based checksum suffix and base-58 encoding. Further information on it can be found here [TODO]. Of the many supported "version codes", only one particular family of subformats is especially important for AXIASolar support in wallets.
+Where Bitcoin has the Check58 address format and Ethereum used the `0x...` hex format, AXIA (and Substrate) use the SS58 address format. This is a broad "meta-format" designed to handle many different cryptographies and chains. It has much in common with Bitcoin's Check58 format such as a version prefix, a hash-based checksum suffix and base-58 encoding. Further information on it can be found here [TODO]. Of the many supported "version codes", only one particular family of subformats is especially important for AXIA support in wallets.
 
-SS58 格式是版本前缀(对于 AXIASolar 为一个字节，并总是为`0x00`，而 AXIALunar 为`0x02`)的 base-58 编码(使用与比特币相同的字母)，后跟一个或多个有效载荷字节，并以一个或多个校验字节结尾:
+SS58 格式是版本前缀(对于 AXIA 为一个字节，并总是为`0x00`，而 AXIALunar 为`0x02`)的 base-58 编码(使用与比特币相同的字母)，后跟一个或多个有效载荷字节，并以一个或多个校验字节结尾:
 
 `0x00 <payload bytes> <checksum bytes>`
 
@@ -175,7 +175,7 @@ SS58 格式是版本前缀(对于 AXIASolar 为一个字节，并总是为`0x00`
 
 我们关心的特定存储是`Indices`模块中的`EnumSet`。通过`state_getStorage` RPC 检查存储，必须向其提供密钥。该键对整个"查询"进行编码。通常应咨询元数据如何生成密钥。为此我们首先找到名称为`Indices`的` 模块`，然后在` Storage 模块中` `storage `字段中找到，名称为`EnumSet`。此项包含我们构造和解释查询所需的所有信息。
 
-对于 AXIASolar 我们发现该项目的`type`为`Map`，其关联值为`StorageMapType`，其`hasher`为 `Blake2_256`，其`key`是`T:: AccountIndex`(对于 AXIASolar 来说是`u32`)，并且其`value`为`Vec<T::AccountId> `。
+对于 AXIA 我们发现该项目的`type`为`Map`，其关联值为`StorageMapType`，其`hasher`为 `Blake2_256`，其`key`是`T:: AccountIndex`(对于 AXIA 来说是`u32`)，并且其`value`为`Vec<T::AccountId> `。
 
 这意味着如果我们的索引由 SCALE 编码为`u32`为`<INDEX>`，那么我们的存储键是通过字符串`Indices EnumSet <INDEX>`的 Blake2 256 哈希确定。 实际上帐户是按 64 个批次存储的，因此要查找特定的索引，我们不按帐户索引查询，而是按其批次的索引查询，这只是意味着我们首先需要在编码之前将索引除以 64。
 
@@ -185,24 +185,24 @@ SS58 格式是版本前缀(对于 AXIASolar 为一个字节，并总是为`0x00`
 
 ## 4. 处理余额
 
-在 AXIASolar 中，帳戶结余可以在`Balances`模块内使用元数据的方式查找帐户索引查询被锁上的结余。在这种情况下我们需要查询存储中的`FreeBalance`。这里`StorageMapType`很相似，不同之处在于`key`的类型为`T::AccountId`(32 字节)和`value`是`BalanceOf<T>`，就 AXIASolar 而言，它是`u128`(128 位值)。哈希函数与 Blake2 256 相同，因此完整的存储密钥将由字符串`Balances FreeBalance<ID>`的 Blake2 256 哈希给出，其中`<ID>`是 32 字节的`AccountId`。
+在 AXIA 中，帳戶结余可以在`Balances`模块内使用元数据的方式查找帐户索引查询被锁上的结余。在这种情况下我们需要查询存储中的`FreeBalance`。这里`StorageMapType`很相似，不同之处在于`key`的类型为`T::AccountId`(32 字节)和`value`是`BalanceOf<T>`，就 AXIA 而言，它是`u128`(128 位值)。哈希函数与 Blake2 256 相同，因此完整的存储密钥将由字符串`Balances FreeBalance<ID>`的 Blake2 256 哈希给出，其中`<ID>`是 32 字节的`AccountId`。
 
 注意: `FreeBalance`是该帐户控制的总余额，但没有考虑暂时锁定的部分，例如抵押中，投票或归属而锁定的部分。这些信息可以从链中查询，但不在本文档的范围之内。
 
-SOLAR 代币结余将编码为 12 个数位。要获得 SOLAR 的实际数量，您需要将 128 位余额除以 1,000,000,000,000(10 \*\* 12)。 为了完整起见，AXIASolar 的货币面额为:
+AXC 代币结余将编码为 12 个数位。要获得 AXC 的实际数量，您需要将 128 位余额除以 1,000,000,000,000(10 \*\* 12)。 为了完整起见，AXIA 的货币面额为:
 
 | 余额值 | 名称      |
 | ------ | --------- |
 |        |           |
 | 1      | Planck 10 |
 
-**3 | Point 10**6 | Microdot (USOLAR) 10**9 | Millidot (MSOLAR) 10**12 | Dot (SOLAR) 10\*\*15 | Blob
+**3 | Point 10**6 | Microdot (UAXC) 10**9 | Millidot (MAXC) 10**12 | Dot (AXC) 10\*\*15 | Blob
 
 ### 转移余额
 
 要转移余额，必须准备和发送交易。在准备交易时，有两个关键部分: 一般交易部分和模块特定的交易`功能`部分通常需要来自链元数据的信息。
 
-通常 AXIASolar 的交易在 SCALE 中编码为 _signed_`Extrinsics`。为了便于之后兼容，外在进行双编码，因此初始编码将传回 SCALE（作为`Vec<u8>`）并输出使用的。这样做的效果是向它添加一个小长度前缀，使无法解释事务数据本身的系统仍然能够将它们传递为不透明的数据包。
+通常 AXIA 的交易在 SCALE 中编码为 _signed_`Extrinsics`。为了便于之后兼容，外在进行双编码，因此初始编码将传回 SCALE（作为`Vec<u8>`）并输出使用的。这样做的效果是向它添加一个小长度前缀，使无法解释事务数据本身的系统仍然能够将它们传递为不透明的数据包。
 
 The SCALE format is given by `Extrinsic`:
 
@@ -245,7 +245,7 @@ Era is a one or two byte item, again with a special SCALE encoding format and it
 - `dest` with a type of `<T::Lookup as StaticLookup>::Source` (aka `Address`); and
 - `value` with a type of `Compact<T::Balance>` (aka `Compact Balance`).
 
-在这种情况下 `函数` \* \* (即专门针对并且仅适用于 AXIASolar 上的余额转帐交易) 将是以下结构：
+在这种情况下 `函数` \* \* (即专门针对并且仅适用于 AXIA 上的余额转帐交易) 将是以下结构：
 
 ```
 struct BalanceTransferFunction:
@@ -269,7 +269,7 @@ struct BalanceTransferFunction:
 
 ## 总结
 
-文章到此结束。在这里，您应该知道如何与 Substrate/AXIASolar 节点进行交互，以便跟踪最终确定的链头、解码 SS58 地址、检查账户信息(如 balances & nonces) 以及构建、提交和跟踪交易。您还了解了 SCALE 编码器、Substrate 元数据系统以及如何构建面向未来的通用 Substrate 系统。
+文章到此结束。在这里，您应该知道如何与 Substrate/AXIA 节点进行交互，以便跟踪最终确定的链头、解码 SS58 地址、检查账户信息(如 balances & nonces) 以及构建、提交和跟踪交易。您还了解了 SCALE 编码器、Substrate 元数据系统以及如何构建面向未来的通用 Substrate 系统。
 
 如果你有任何问题，请在 [Substrate Technical](https://riot.im/app/#/room/#substrate-technical:matrix.org) 问。
 

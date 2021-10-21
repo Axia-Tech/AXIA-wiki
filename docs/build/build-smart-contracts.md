@@ -5,25 +5,25 @@ sidebar_label: Smart Contracts
 slug: ../build-smart-contracts
 ---
 
-The AXIACoin Relay Chain will not natively support smart contracts. However, parachains on AXIACoin
+The AXIA Relay Chain will not natively support smart contracts. However, allychains on AXIA
 will support smart contracts. There are already announced projects such as
 [Edgeware](https://edgewa.re), and thanks to the Substrate built-in
 [contract pallet](https://substrate.dev/rustdocs/latest/pallet_contracts/index.html), it is likely
-that more parachains will support WebAssembly smart contracts.
+that more allychains will support WebAssembly smart contracts.
 
 Additionally, there is the
 [EVM Pallet](https://substrate.dev/docs/en/knowledgebase/smart-contracts/evm-pallet), which allows a
-parachain to implement the Ethereum Virtual Machine, thereby supporting almost direct ports of
+allychain to implement the Ethereum Virtual Machine, thereby supporting almost direct ports of
 Ethereum contracts. Some of the projects using this approach are [Edgeware](https://edgewa.re),
 [Moonbeam](https://moonbeam.network/) and [Frontier](https://github.com/axia-tech/frontier).
 
-A video version of the recap of the smart contract situation on AXIACoin and AXIALunar is available
+A video version of the recap of the smart contract situation on AXIA and AXIALunar is available
 [here](https://www.youtube.com/watch?v=fKHkFBXaUxQ).
 
 ## Resources
 
 Here is the list of current resources available to developers who want to get started writing smart
-contracts to deploy on parachains based on Substrate.
+contracts to deploy on allychains based on Substrate.
 
 - [Edgeware Contracts](https://contracts.edgewa.re) - Edgeware's documentation on Smart Contracts
 - [ink!](https://github.com/axia-tech/ink) - AXIA's ink to write smart contracts.
@@ -42,7 +42,7 @@ smart contract example? Ask us to add it to this page!**
 `pallet_contracts` was originally designed to combat unbounded state growth by charging contracts for the
 state they consume, but has since been deprecated. See the associated [pull request](https://github.com/axia-tech/substrate/pull/9669) for more details.
 
-## What is the difference between developing a smart contract versus a parachain?
+## What is the difference between developing a smart contract versus a allychain?
 
 ### Layer of Abstraction
 
@@ -52,11 +52,11 @@ associated to a specific chain address.
 In comparison, a runtime module is the entire logic of a chain's state transitions (what's called a
 state transition function).
 
-Smart contracts must consciously implement upgradeability while parachains will have the ability to
+Smart contracts must consciously implement upgradeability while allychains will have the ability to
 swap out their code entirely through a root command or via the governance pallet.
 
 When you build a smart contract, it will eventually be deployed to a target chain with its own
-environment. Parachains allow the developer to declare the environment of their own chain, even
+environment. Allychains allow the developer to declare the environment of their own chain, even
 allowing others to write smart contracts for it.
 
 ### Gas Fees
@@ -70,14 +70,14 @@ Some platforms, such as Bitcoin, get around this constraint by providing a very 
 language. Others, such as Ethereum, "charge" the smart contract "gas" for the rights to execute
 their code. If a smart contract does get into a state where execution will never halt, it eventually
 runs out of gas, ceases execution, and any state transition that would have been made by the smart
-contract is rolled back. AXIACoin uses a _weight-fee model_ and not a _gas-metering model_.
+contract is rolled back. AXIA uses a _weight-fee model_ and not a _gas-metering model_.
 
-Parachains can implement arbitrarily powerful programming languages and also contain no notion of
+Allychains can implement arbitrarily powerful programming languages and also contain no notion of
 gas for their own native logic. This means that some functionality is easier to implement for the
 developer, but it also means there are some constructs, such as a loop without a terminating
 condition, which should _never_ be implemented. Leaving certain logic, such as complex loops that
 could possibly run indefinitely, to a non-smart contract layer, or even trying to eliminate it
-entirely, will often be a wiser choice. Parachains try to be proactive, while smart contract
+entirely, will often be a wiser choice. Allychains try to be proactive, while smart contract
 platforms are event-driven.
 
 ## Resources
@@ -87,7 +87,7 @@ This post answers the question more technically of when a developer might choose
 runtime versus a smart contract.
 
 Here is the list of current resources available to developers who want to get started writing smart
-contracts to deploy on parachains based on Substrate.
+contracts to deploy on allychains based on Substrate.
 
 - [Edgeware Contracts](https://contracts.edgewa.re) - Edgeware's documentation on Smart Contracts
 - [ink!](https://github.com/axia-tech/ink) - AXIA's ink to write smart contracts.

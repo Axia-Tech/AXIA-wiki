@@ -4,23 +4,23 @@ title: 加入议会
 sidebar_label: 加入议会
 ---
 
-议会是经在链上选举产生的账户，旨在代表在 AXIASolar / AXIALunar 被动利益相关者。议会在治理方面有两项主要任务: 提议公投和否决危险或恶意的公投。有关议会的更多信息，请参见[治理页面](learn-governance#council)。本指南将引导您如何参选成为候选人。
+议会是经在链上选举产生的账户，旨在代表在 AXIA / AXIALunar 被动利益相关者。议会在治理方面有两项主要任务: 提议公投和否决危险或恶意的公投。有关议会的更多信息，请参见[治理页面](learn-governance#council)。本指南将引导您如何参选成为候选人。
 
 ## 成为候选人
 
-Submitting your candidacy for the council requires a small bond of SOLAR / LUNAR. The bond will be forfeited if your candidacy does not win or become a runner-up and will be kept otherwise. You only receive your bond back, if you manually renounce your candidacy before losing. Runners-up are selected after every round and are reserved members in case one of the winners gets forcefully removed.
+Submitting your candidacy for the council requires a small bond of AXC / LUNAR. The bond will be forfeited if your candidacy does not win or become a runner-up and will be kept otherwise. You only receive your bond back, if you manually renounce your candidacy before losing. Runners-up are selected after every round and are reserved members in case one of the winners gets forcefully removed.
 
-> Currently the bond for submitting a council candidacy on AXIASolar is 100 SOLAR, and 0.1666 LUNAR on AXIALunar.
+> Currently the bond for submitting a council candidacy on AXIA is 100 AXC, and 0.1666 LUNAR on AXIALunar.
 
 在提交参选候选人之前，最好先宣布您的意向，使您的支持者知道何时可以开始投票。如果没有其他人投票给你，你也可以投票给自己。
 
-前往 [ AXIASolar Apps ](https://axiasolar.js.org/apps) 并选择 "Council"。按下右边写 "Submit Candidacy"。
+前往 [ AXIA Apps ](https://AXIA.js.org/apps) 并选择 "Council"。按下右边写 "Submit Candidacy"。
 
-![submit candidancy button](assets/council/axiasolarjs_submit_candidancy.png)
+![submit candidancy button](assets/council/AXIAjs_submit_candidancy.png)
 
 After making the transaction, you will see your account appear underneath the row "Candidates."
 
-![candidates list](assets/council/axiasolarjs_candidates.png)
+![candidates list](assets/council/AXIAjs_candidates.png)
 
 现在最好以身作则，先投给自己。
 
@@ -28,16 +28,16 @@ After making the transaction, you will see your account appear underneath the ro
 
 在提交成为候选人的旁边是 "Vote" 的按钮。您可以按下此投票给自己(可选)。
 
-![voting button on UI](assets/council/axiasolarjs_vote_button.png)
+![voting button on UI](assets/council/AXIAjs_vote_button.png)
 
 The council uses [Phragmén](learn-phragmen) approval voting, which is also used in the validator elections. This means that you can choose up to 16 distinct candidates to vote for and your stake will equalize between them. For this guide, choose to approve your own candidacy by clicking on the switch next to your account and changing it to say "Aye."
 
-![voting pop up on UI](assets/council/axiasolarjs_voting.png)
+![voting pop up on UI](assets/council/AXIAjs_voting.png)
 
 ## 获胜
 
 If you are one of the lucky ones to win a council election you will see your account move underneath the row "Members".
 
-![council members list](assets/council/axiasolarjs_council_members.png)
+![council members list](assets/council/AXIAjs_council_members.png)
 
-Now you are able to participate on the council by making motions or voting proposals. To join in on the active discussions, join the [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org).
+Now you are able to participate on the council by making motions or voting proposals. To join in on the active discussions, join the [AXIALunar governance channel](https://matrix.to/#/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org).

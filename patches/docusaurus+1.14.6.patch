@@ -6,9 +6,9 @@ index 221f1a9..9070828 100755
    shell.exit(1);
  }
  
-+if (PROJECT_NAME.indexOf("axiasolar") !== -1) {
-+  shell.exec("yarn axiasolar:inject");
-+  shell.exec("yarn axiasolar:remove");
++if (PROJECT_NAME.indexOf("AXIA") !== -1) {
++  shell.exec("yarn AXIA:inject");
++  shell.exec("yarn AXIA:remove");
 +} else {
 +  shell.exec("yarn axialunar:inject");
 +  shell.exec("yarn axialunar:remove");

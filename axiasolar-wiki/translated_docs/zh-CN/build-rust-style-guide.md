@@ -1,7 +1,7 @@
 ---
 id: build-rust-style-guide
-title: Style Guide for Rust in AXIASolar
-sidebar_label: Style Guide for Rust in AXIASolar
+title: Style Guide for Rust in AXIA
+sidebar_label: Style Guide for Rust in AXIA
 ---
 
 - 使用制表符缩进

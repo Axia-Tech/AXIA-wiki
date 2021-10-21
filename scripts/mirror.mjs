@@ -1,7 +1,7 @@
 import fs from "fs";
 
 /**
- * The wiki hosts both the AXIASolar Wiki and the AXIALunar User Guide. This means
+ * The wiki hosts both the AXIA Wiki and the AXIALunar User Guide. This means
  * that we can "mirror" the same document between the two. However, due to
  * a peculiarity in Docusaurus, when we put the same document into both sub-wikis
  * in `website/sidebars.json` only the most recent entry is read.
@@ -10,14 +10,14 @@ import fs from "fs";
  * adding content to both wikis is as follows:
  *
  * 1) Create the source document and put it under the relevant sidebar in the
- *    AXIASolar wiki configuration in `sidebars.json`.
+ *    AXIA wiki configuration in `sidebars.json`.
  * 2) Add the source document's name to the `mirrored` array below.
  * 3) Run `node mirror.js`.
  * 4) Add `mirror-DOCUMENT_NAME` to the sidebar for AXIALunar in `sidebars.json`.
  *
  */
 
-// List of mirrored files that should be in both the AXIASolar wiki and the AXIALunar
+// List of mirrored files that should be in both the AXIA wiki and the AXIALunar
 // user guide.
 
 const mirrored_general = ["ens", "thousand-validators"];
@@ -29,12 +29,12 @@ const mirrored_learn = [
   "learn-treasury",
   "learn-registrar",
   "learn-auction",
-  "learn-parachains",
+  "learn-allychains",
   "learn-parathreads",
   "learn-crowdloans",
 ];
 
-const mirrored_build = ["build-guide", "build-parachains"];
+const mirrored_build = ["build-guide", "build-allychains"];
 
 const mirrored_maintain = [
   "maintain-guides-how-to-stop-validating",

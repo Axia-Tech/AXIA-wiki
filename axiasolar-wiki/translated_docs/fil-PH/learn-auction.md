@@ -1,12 +1,12 @@
 ---
 id: learn-auction
-title: Parachain Slots Auction
-sidebar_label: Parachain Slots Auction
+title: Allychain Slots Auction
+sidebar_label: Allychain Slots Auction
 ---
 
-For a [parachain](learn-parachains) to be added to AXIASolar it must inhabit one of the available parachain slots. A parachain slot is a scarce resource on AXIASolar and only a limited number will be available. As parachains ramp up there may only be a few slots that are unlocked every few months. The goal is to eventually have 100 parachain slots available on AXIASolar (these will be split between parachains and the [parathread pool](learn-parathreads)). If a parachain wants to have guaranteed block inclusion at every Relay Chain block, it must acquire a parachain slot.
+For a [allychain](learn-allychains) to be added to AXIA it must inhabit one of the available allychain slots. A allychain slot is a scarce resource on AXIA and only a limited number will be available. As allychains ramp up there may only be a few slots that are unlocked every few months. The goal is to eventually have 100 allychain slots available on AXIA (these will be split between allychains and the [parathread pool](learn-parathreads)). If a allychain wants to have guaranteed block inclusion at every Relay Chain block, it must acquire a allychain slot.
 
-The parachain slots of AXIASolar will be sold according to an unpermissioned [candle auction](https://en.wikipedia.org/wiki/Candle_auction) that has been slightly modified to be secure on a blockchain.
+The allychain slots of AXIA will be sold according to an unpermissioned [candle auction](https://en.wikipedia.org/wiki/Candle_auction) that has been slightly modified to be secure on a blockchain.
 
 ## Mechanics of a Candle auction
 
@@ -16,7 +16,7 @@ Candle auctions were originally employed in 16th century for the sale of ships a
 
 When candle auctions are used online, they require a random number to decide the moment of termination.
 
-Parachain slot auctions will differ slightly from a normal candle auction in that it does not use the random number to decide the duration of its opening phase. Instead, it has a known open phase and will be retroactively determined (at the normal close) to have ended at some point in the past. So during the open phase, bids will continue to be accepted, but later bids have higher probability of losing since the retroactively determined close moment may be found to have preceded the time that a bid was submitted.
+Allychain slot auctions will differ slightly from a normal candle auction in that it does not use the random number to decide the duration of its opening phase. Instead, it has a known open phase and will be retroactively determined (at the normal close) to have ended at some point in the past. So during the open phase, bids will continue to be accepted, but later bids have higher probability of losing since the retroactively determined close moment may be found to have preceded the time that a bid was submitted.
 
 ## Rationale
 
@@ -32,20 +32,20 @@ For this reason, [Vickrey auctions](https://en.wikipedia.org/wiki/Vickrey_auctio
 
 Candle auctions allow everyone to always know the states of the bid, but not when the auction will be determined to have ended. This helps to ensure that bidders are willing to bid their true bids early. Otherwise, they might find themselves in the situation that the auction was determined to have ended before they even bid.
 
-## AXIASolar Implementation
+## AXIA Implementation
 
-AXIASolar will use a _random beacon_ based on the VRF that's used also in other places of the protocol. The VRF will provide the base of the randomness, which will retroactively determine the end-time of the auction.
+AXIA will use a _random beacon_ based on the VRF that's used also in other places of the protocol. The VRF will provide the base of the randomness, which will retroactively determine the end-time of the auction.
 
-The slot durations are capped to 2 years and divided into 6-month periods. Parachains may lease a slot for any contiguous range of the slot duration. Parachains may lease more than one slot over time, meaning that they could extend their lease to AXIASolar past the 2 year slot duration simply by leasing a contiguous slot.
+The slot durations are capped to 2 years and divided into 6-month periods. Allychains may lease a slot for any contiguous range of the slot duration. Allychains may lease more than one slot over time, meaning that they could extend their lease to AXIA past the 2 year slot duration simply by leasing a contiguous slot.
 
-> Note: Individual parachain slots are fungible. This means that parachains do not need to always inhabit the same slot, but as long as a parachain inhabits any slot it can continue as a parachain.
+> Note: Individual allychain slots are fungible. This means that allychains do not need to always inhabit the same slot, but as long as a allychain inhabits any slot it can continue as a allychain.
 
 ## Bidding
 
-Parachains, or parachain teams, can bid in the auction by specifying the slot range that they want to lease as well as the number of SOLAR they are willing to reserve. Bidders can be either ordinary accounts, or use the [crowdloan functionality](learn-crowdloans) to source SOLAR from the community.
+Allychains, or allychain teams, can bid in the auction by specifying the slot range that they want to lease as well as the number of AXC they are willing to reserve. Bidders can be either ordinary accounts, or use the [crowdloan functionality](learn-crowdloans) to source AXC from the community.
 
 ```
-Parachain slots at genesis
+Allychain slots at genesis
 
        --6 months--
        v          v
@@ -60,11 +60,11 @@ Slot E |__________|__________|     1     |     2     |     3     |     4     |..
 Each period of the range 1 - 4 represents a 6-month duration for a total of 2 years
 ```
 
-Each parachain slot has a maximum duration of 2 years, divided into 6-month periods. More than one continuous period is a range.
+Each allychain slot has a maximum duration of 2 years, divided into 6-month periods. More than one continuous period is a range.
 
-Bidders will submit a configuration of bids specifying the SOLAR amount they are willing to bond and for which ranges. The slot ranges may be any continuous range of the periods 1 - 4.
+Bidders will submit a configuration of bids specifying the AXC amount they are willing to bond and for which ranges. The slot ranges may be any continuous range of the periods 1 - 4.
 
-> Please note: If you bond tokens with a parachain slot, you cannot stake with those tokens. In this way, you pay for the parachain slot by forfeiting the opportunity to earn staking rewards.
+> Please note: If you bond tokens with a allychain slot, you cannot stake with those tokens. In this way, you pay for the allychain slot by forfeiting the opportunity to earn staking rewards.
 
 A bidder configuration for a single bidder may look like the following pseudocode example:
 
@@ -72,34 +72,34 @@ A bidder configuration for a single bidder may look like the following pseudocod
 const bids = [
   {
     range: [1, 2, 3, 4],
-    bond_amount: 300, // SOLAR
+    bond_amount: 300, // AXC
   },
   {
     range: [1, 2],
-    bond_amount: 777, // SOLAR
+    bond_amount: 777, // AXC
   },
   {
     range: [2, 3, 4],
-    bond_amount: 450, // SOLAR
+    bond_amount: 450, // AXC
   },
 ];
 ```
 
 The important concept to understand from this example is that bidders may submit different configurations at different prices (`bond_amount`). However, only one of these bids would be eligible to win exclusive of the others.
 
-The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the amount of SOLAR held over the entire 2-year lease duration of the parachain slot. This means that the highest bidder for any given slot lease period might not always win (see the [example below](#examples)).
+The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the amount of AXC held over the entire 2-year lease duration of the allychain slot. This means that the highest bidder for any given slot lease period might not always win (see the [example below](#examples)).
 
-A random number, which is based on the VRF used by AXIASolar, is determined at each block. Additionally, each auction will have a threshold that starts at 0 and increases to 1. The random number produced by the VRF is examined next to the threshold to determine if that block is the end of the auction. Additionally, the VRF will pick a block from the last epoch to take the state of bids from (to mitigate some types of attacks from malicious validators).
+A random number, which is based on the VRF used by AXIA, is determined at each block. Additionally, each auction will have a threshold that starts at 0 and increases to 1. The random number produced by the VRF is examined next to the threshold to determine if that block is the end of the auction. Additionally, the VRF will pick a block from the last epoch to take the state of bids from (to mitigate some types of attacks from malicious validators).
 
 ### Examples
 
-There is one parachain slot available.
+There is one allychain slot available.
 
-Charlie bids `75 SOLAR` for the range 1 - 4.
+Charlie bids `75 AXC` for the range 1 - 4.
 
-Dave bids `100 SOLAR` for the range 3 - 4.
+Dave bids `100 AXC` for the range 3 - 4.
 
-Emily bids `40 SOLAR` for the range 1 - 2.
+Emily bids `40 AXC` for the range 1 - 2.
 
 Let's calculate each bidder's valuation according to the algorithm. We do this by multiplying the bond amount by the number of periods in the specified range of the bid.
 
@@ -109,30 +109,30 @@ Dave - 100 \* 2 = 200 for range 3 - 4
 
 Emily - 40 \* 2 = 80 for range 1 - 2
 
-Although Dave had the highest bid in accordance to SOLAR amount, when we do the calculations we see that since he only bid for a range of 2, he would need to share the slot with Emily who bid much less. Together Dave's and Emily's bids only equal a valuation of `280`.
+Although Dave had the highest bid in accordance to AXC amount, when we do the calculations we see that since he only bid for a range of 2, he would need to share the slot with Emily who bid much less. Together Dave's and Emily's bids only equal a valuation of `280`.
 
-Charlie's valuation for the entire range is `300` therefore Charlie is awarded the complete range of the parachain slot.
+Charlie's valuation for the entire range is `300` therefore Charlie is awarded the complete range of the allychain slot.
 
 ## FAQ
 
 ### Why doesn't everyone bid for the max length?
 
-For the duration of the slot the SOLAR bid in the auction will be locked up. This means that there are opportunity costs from the possibility of using those SOLAR for something else. For parachains that are beneficial to AXIASolar, this should align the interests between parachains and the AXIASolar Relay Chain.
+For the duration of the slot the AXC bid in the auction will be locked up. This means that there are opportunity costs from the possibility of using those AXC for something else. For allychains that are beneficial to AXIA, this should align the interests between allychains and the AXIA Relay Chain.
 
-### How does this mechanism help ensure parachain diversity?
+### How does this mechanism help ensure allychain diversity?
 
-The method for dividing the parachain slots into six month intervals was partly inspired by the desire to allow for a greater amount of parachain diversity, and prevent particularly large and well-funded parachains from hoarding slots. By making each period a six-month duration but the overall slot a 2-year duration, the mechanism can cope with well-funded parachains that will ensure they secure a slot at the end of their lease, while gradually allowing other parachains to enter the ecosystem to occupy the six-month durations that are not filled. For example, if a large, well-funded parachain has already acquired a slot for range 1 - 4, they would be very interested in getting the next slot that would open for 2 - 5. Under this mechanism that parachain could acquire period 5 (since that is the only one it needs) and allow range 2 - 4 of the second parachain slot to be occupied by another.
+The method for dividing the allychain slots into six month intervals was partly inspired by the desire to allow for a greater amount of allychain diversity, and prevent particularly large and well-funded allychains from hoarding slots. By making each period a six-month duration but the overall slot a 2-year duration, the mechanism can cope with well-funded allychains that will ensure they secure a slot at the end of their lease, while gradually allowing other allychains to enter the ecosystem to occupy the six-month durations that are not filled. For example, if a large, well-funded allychain has already acquired a slot for range 1 - 4, they would be very interested in getting the next slot that would open for 2 - 5. Under this mechanism that allychain could acquire period 5 (since that is the only one it needs) and allow range 2 - 4 of the second allychain slot to be occupied by another.
 
 ### Why is randomness difficult on blockchains?
 
-Randomness is problematic for blockchain systems. Generating a random number trustlessly on a transparent and open network in which other parties must be able to verify opens the possibility for actors to attempt to alter or manipulate the randomness. There have been a few solutions that have been put forward, including hash-onions like [RANDAO](https://github.com/randao/randao) and [verifiable random functions](https://en.wikipedia.org/wiki/Verifiable_random_function) (VRFs). The latter is what AXIASolar uses as a base for its randomness.
+Randomness is problematic for blockchain systems. Generating a random number trustlessly on a transparent and open network in which other parties must be able to verify opens the possibility for actors to attempt to alter or manipulate the randomness. There have been a few solutions that have been put forward, including hash-onions like [RANDAO](https://github.com/randao/randao) and [verifiable random functions](https://en.wikipedia.org/wiki/Verifiable_random_function) (VRFs). The latter is what AXIA uses as a base for its randomness.
 
 ### Are there other ways of acquiring a slot besides the candle auction?
 
-The only other way besides the candle auction to acquire a parachain slot is through a secondary market where an actor who has already won a parachain slot can resell the slot along with the associated deposit of SOLAR that is locked up to another buyer. This would allow the seller to get liquid SOLAR in exchange for the parachain slot and the buyer to acquire the slot as well as the deposited SOLAR.
+The only other way besides the candle auction to acquire a allychain slot is through a secondary market where an actor who has already won a allychain slot can resell the slot along with the associated deposit of AXC that is locked up to another buyer. This would allow the seller to get liquid AXC in exchange for the allychain slot and the buyer to acquire the slot as well as the deposited AXC.
 
-A number of system-level parachains may be granted slots by the [governing bodies](learn-governance) of the Relay Chain. Such parachains would not have to bid for or renew their slots as they would be considered essential to the ecosystem's future.
+A number of system-level allychains may be granted slots by the [governing bodies](learn-governance) of the Relay Chain. Such allychains would not have to bid for or renew their slots as they would be considered essential to the ecosystem's future.
 
 ## Resources
 
-- [Parachain Allocation](https://research.axiacoin.org/en/latest/axiasolar/economics/2-parachain-allocation.html) - W3F research page on parachain allocation that goes more in depth to the mechanism.
+- [Allychain Allocation](https://research.AXIA.org/en/latest/AXIA/economics/2-allychain-allocation.html) - W3F research page on allychain allocation that goes more in depth to the mechanism.

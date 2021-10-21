@@ -5,18 +5,18 @@ sidebar_label: Proxy Accounts
 slug: ../learn-proxies
 ---
 
-AXIACoin provides a module that allows users to set proxy accounts to perform a limited number of
+AXIA provides a module that allows users to set proxy accounts to perform a limited number of
 actions on their behalf. Much like the Stash and Controller account relationship in
 [staking](learn-staking.md), proxies allow users to keep one account in cold storage and actively
 participate in the network with the weight of the tokens in that account.
 
-> Check out our AXIACoin Youtube video that explains
-> [what are proxies](https://www.youtube.com/watch?v=EuaM5dWAJis&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=29&ab_channel=AXIACoin).
+> Check out our AXIA Youtube video that explains
+> [what are proxies](https://www.youtube.com/watch?v=EuaM5dWAJis&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=29&ab_channel=AXIA).
 
 ## Proxy Types
 
 You can set a proxy account via the Proxy module. When you set a proxy, you must choose a type of
-proxy for the relationship. AXIACoin offers:
+proxy for the relationship. AXIA offers:
 
 - Any
 - Non-transfer
@@ -24,7 +24,7 @@ proxy for the relationship. AXIACoin offers:
 - Staking
 - Identity Judgement
 
-When a proxy account makes a `proxy` transaction, AXIACoin filters the desired transaction to ensure
+When a proxy account makes a `proxy` transaction, AXIA filters the desired transaction to ensure
 that the proxy account has the appropriate permission to make that transaction on behalf of the cold
 account.
 
@@ -46,7 +46,7 @@ Democracy, Council, Treasury, Technical Committee, and Elections pallets).
 
 > See [Governance](../maintain/maintain-guides-democracy.md#governance-proxies) for more information on
 > governance proxies or watch our
-> [technical explainer video that explores this concept](https://www.youtube.com/watch?v=q5qLFhG4SDw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=27&ab_channel=AXIACoin).
+> [technical explainer video that explores this concept](https://www.youtube.com/watch?v=q5qLFhG4SDw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=27&ab_channel=AXIA).
 
 ### Staking Proxies
 
@@ -66,21 +66,21 @@ identity. If you are unfamiliar with judgements and identities on chain, please 
 
 ### Anonymous Proxies
 
-AXIACoin includes a function to create an anonymous proxy, an account that can only be accessed via
+AXIA includes a function to create an anonymous proxy, an account that can only be accessed via
 proxy. That is, it generates an address but no corresponding private key. Normally, a primary
 account designates a proxy account, but anonymous proxies are the opposite. The account that creates
 the proxy relationship is the proxy account and the new account is the primary. Use extreme care
 with anonymous proxies; once you remove the proxy relationship, the account will be inaccessible.
 
 > Learn more about anonymous proxies from our
-> [technical explainer video](https://www.youtube.com/watch?v=iWq53zXo7dw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=28&ab_channel=AXIACoin).
+> [technical explainer video](https://www.youtube.com/watch?v=iWq53zXo7dw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=28&ab_channel=AXIA).
 
 ![anonymous proxy](../assets/proxy_anonymous_diagram.png)
 
 ### Time Delayed Proxies
 
 We can add an additional layer of security to proxies by giving them a delay time. The delay will be
-quantified in number of blocks (blockNumber). AXIACoin and AXIALunar both have
+quantified in number of blocks (blockNumber). AXIA and AXIALunar both have
 {{ block_target_in_seconds }} second blocks, hence a delay value of 10 will mean 10 blocks which
 will equal 1 minute of delay. The proxy will announce it's intended action and wait for the number
 of blocks defined in the delay time before executing it. The proxy will include the hash of the
@@ -105,12 +105,12 @@ multisig would be created.
 
 ## How to set up a Proxy
 
-### Using the AXIACoin-JS UI
+### Using the AXIA-JS UI
 
-To set up a proxy, navigate to the [AXIACoin-JS UI](https://axiasolar.js.org/apps/#/extrinsics) and
+To set up a proxy, navigate to the [AXIA-JS UI](https://AXIA.js.org/apps/#/extrinsics) and
 click on "Developer" > "Extrinsics". Here we will see a page that looks similar to this:
 
-![proxy generation](../assets/axiasolar_generating_proxy.png)
+![proxy generation](../assets/AXIA_generating_proxy.png)
 
 To add a proxy, click on the pallet selection dropdown menu. The dropdown is labeled "submit the
 following extrinsic". Select the `proxy` pallet, then the `addProxy` extrinsic (in the dropdown menu
@@ -122,17 +122,17 @@ selected account at the top is the account that will be the primary account.
 > empty enum, and if you try to add this in as a proxy, nothing will happen. No new proxy will be
 > created.
 
-### Creating Anonymous Proxies on AXIACoin-JS UI
+### Creating Anonymous Proxies on AXIA-JS UI
 
 For anonymous proxies, a different function will need to be called, the
 `anonymous(proxy_type, index)`. This will let you select which kind of anonymous proxy you would
 like to set up if you choose, as well as the index.
 
-![proxy generation](../assets/axiasolar_anon_proxy.png)
+![proxy generation](../assets/AXIA_anon_proxy.png)
 
 ### Using Time Delayed Proxies
 
-When creating a proxy through the AXIACoinJS application, we are provided a delay field. In this
+When creating a proxy through the AXIAJS application, we are provided a delay field. In this
 example we are creating a proxy with a delay value of 100, which means 100 blocks. 100 \* 6(minutes)
 = 600 minutes, or 10 hours.
 
@@ -140,12 +140,12 @@ example we are creating a proxy with a delay value of 100, which means 100 block
 
 ### Another way to create Proxies
 
-There is another way you can set up a proxy on AXIACoin-JS UI. Go to "Accounts" in the navigation
+There is another way you can set up a proxy on AXIA-JS UI. Go to "Accounts" in the navigation
 and then click the "Accounts" button. For each of the accounts you have on this page, the three dot
 button will let you create a proxy by using "Add proxy". This will open up a pop up onto your screen
 where you will be able to select the type of proxy for that specific account.
 
-![proxy generation part 2](../assets/axiasolar_add_another_proxy.png)
+![proxy generation part 2](../assets/AXIA_add_another_proxy.png)
 
 > Note: You cannot create an anonymous function from the Accounts page, you must be on the
 > Extrinsics page.
@@ -155,7 +155,7 @@ where you will be able to select the type of proxy for that specific account.
 If you want to remove a proxy, there are a few functions on the extrinsic page that will help do
 this.
 
-For non-anonymous proxies, you can use `removeProxy` or `removeProxies`, but must use the `killAnonymous` function for anonymous proxies. This must be called **from** the _anonymous_ proxy. This means that the anonymous proxy must be added as an account to AXIACoin-JS accounts.
+For non-anonymous proxies, you can use `removeProxy` or `removeProxies`, but must use the `killAnonymous` function for anonymous proxies. This must be called **from** the _anonymous_ proxy. This means that the anonymous proxy must be added as an account to AXIA-JS accounts.
 
 The following steps can be used to remove your proxy:
 
@@ -170,13 +170,13 @@ The following steps can be used to remove your proxy:
 
   ![anon proxy info](../assets/kill-proxy-1.png)
 
-- **Step 1**: Go to https://axiasolar.js.org/apps/#/accounts (make sure you are on correct network).
+- **Step 1**: Go to https://AXIA.js.org/apps/#/accounts (make sure you are on correct network).
 - **Step 2**: Click `Proxied` and add your address, name it `ANON PROXY`. You should now see this address
   in accounts. Now you need to call `killAnonymous` from the anonymous proxy. It is important to note that anonymous proxies _work backwards_; the original account acts as the proxy.
 
   ![add proxy to delete](../assets/kill-proxy-2.png)
 
-- **Step 3**: Go to https://axiasolar.js.org/apps/#/extrinsics
+- **Step 3**: Go to https://AXIA.js.org/apps/#/extrinsics
 - **Step 4**: Call extrinsic `proxy.killAnonymous` using the selected account ANON PROXY and the following parameters:
 
   - Spawner: (original account)
@@ -194,14 +194,14 @@ The following steps can be used to remove your proxy:
 ## How to view your Proxies
 
 To view your proxy, head over to the Chain State (underneath "Developer") page on
-[AXIACoin-JS Apps](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.axiasolar.io#/chainstate). If
+[AXIA-JS Apps](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/chainstate). If
 you've created your proxy on a AXIALunar account, it is required to change your network accordingly
 using the top left navigation button. On this page, the proxy pallet should be selected, returning
 the announcements and proxies functions. The proxies function will allow you to see your created
 proxies for either one account or for all accounts (using the toggle will enable this). Proxy
 announcements are what time lock proxies do to announce they are going to conduct an action.
 
-![view proxies](../assets/axiasolar_view_proxies.png)
+![view proxies](../assets/AXIA_view_proxies.png)
 
 ## Putting It All Together
 
@@ -228,7 +228,7 @@ participate in a network.
 
 ## Proxy Deposits
 
-Proxies require deposits in the native currency (i.e. SOLAR or LUNAR) in order to be created. The
+Proxies require deposits in the native currency (i.e. AXC or LUNAR) in order to be created. The
 deposit is required because adding a proxy requires some storage space on-chain, which must be
 replicated across every peer in the network. Due to the costly nature of this, these functions could
 open up the network to a Denial-of-Service attack. In order to defend against this attack, proxies
@@ -236,7 +236,7 @@ require a deposit to be reserved while the storage space is consumed over the li
 proxy. When the proxy is removed, so is the storage space, and therefore the deposit is returned.
 
 The deposits are calculated in the runtime, and the function can be found in the runtime code. For
-example, the deposits are calculated in AXIACoin with the following functions:
+example, the deposits are calculated in AXIA with the following functions:
 
 ```rust
 // One storage item; key size 32, value size 8; .
@@ -249,11 +249,11 @@ The `ProxyDepositBase` is the required amount to be reserved for an account to h
 (creates one new item in storage). For every proxy the account has, an additonal amount defined by
 the `ProxyDepositFactor` is reserved as well (appends 33 bytes to storage location).
 
-On AXIACoin the `ProxyDepositBase` is {{ dot_proxy_deposit_base }} and the `ProxyDepositFactor` is
+On AXIA the `ProxyDepositBase` is {{ dot_proxy_deposit_base }} and the `ProxyDepositFactor` is
 {{ dot_proxy_deposit_factor }}.
 
-So what this boils down to is that the required deposit amount for one proxy on AXIACoin is equal to
-(in SOLAR):
+So what this boils down to is that the required deposit amount for one proxy on AXIA is equal to
+(in AXC):
 
 ```
 {{ dot_proxy_deposit_base }} + {{ dot_proxy_deposit_factor }} * num_proxies

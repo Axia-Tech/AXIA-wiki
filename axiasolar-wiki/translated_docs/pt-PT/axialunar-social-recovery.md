@@ -16,7 +16,7 @@ You will use your existing account to call `createRecovery` to select a list of 
 
 ![](/img/recovery/social-recovery-diag-1.png)
 
-First, go to [AXIASolarJS->Accounts](https://axiasolar.js.org/apps/#/accounts) page that shows all available accounts on your browser's local storage and AXIASolarJS extension. To create a recoverable account, make sure that you have some LUNARs to pay for the transaction fees. You will also need some for the reserve required by the account recovery setup.
+First, go to [AXIAJS->Accounts](https://AXIA.js.org/apps/#/accounts) page that shows all available accounts on your browser's local storage and AXIAJS extension. To create a recoverable account, make sure that you have some LUNARs to pay for the transaction fees. You will also need some for the reserve required by the account recovery setup.
 
 ![](/img/recovery/social-recovery-1.png)
 
@@ -68,7 +68,7 @@ Once the threshold is reached and the block delay is passed, use the new account
 
 ![](/img/recovery/social-recovery-8.png)
 
-To see the proxy information, use your new account by calling the "recovery->proxy(Accountid)" function at the [Chain state](https://axiasolar.js.org/apps/#/chainstate) page. It should point to your lost account.
+To see the proxy information, use your new account by calling the "recovery->proxy(Accountid)" function at the [Chain state](https://AXIA.js.org/apps/#/chainstate) page. It should point to your lost account.
 
 ![](/img/recovery/social-recovery-9.png)
 

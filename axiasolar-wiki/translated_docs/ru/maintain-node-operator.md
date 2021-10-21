@@ -4,9 +4,9 @@ title: Node Operator / Validator
 sidebar_label: Node Operator / Validator
 ---
 
-Validators secure the relay chain by staking SOLARs, validating proofs from collators and participating in consensus with other validators.
+Validators secure the relay chain by staking AXCs, validating proofs from collators and participating in consensus with other validators.
 
-These participants will play a crucial role in adding new blocks to the Relay Chain and, by extension to all parachains, such that parties can complete cross-chain transactions via the Relay Chain. Validators perform two functions. First, verifying the information contained in an assigned set of parachain blocks is valid (such as the identities of the transacting parties and the subject matter of the contract). Their second role is to participate in the consensus mechanism to produce the Relay Chain blocks based on validity statements from other validators. Any instances of non-compliance with the consensus algorithms result in punishment by removal of some or all of the validator’s staked SOLARs, thereby discouraging bad actors. Good performance, however, will be rewarded, with validators receiving transaction fees in the form of SOLARs in exchange for their activities.
+These participants will play a crucial role in adding new blocks to the Relay Chain and, by extension to all allychains, such that parties can complete cross-chain transactions via the Relay Chain. Validators perform two functions. First, verifying the information contained in an assigned set of allychain blocks is valid (such as the identities of the transacting parties and the subject matter of the contract). Their second role is to participate in the consensus mechanism to produce the Relay Chain blocks based on validity statements from other validators. Any instances of non-compliance with the consensus algorithms result in punishment by removal of some or all of the validator’s staked AXCs, thereby discouraging bad actors. Good performance, however, will be rewarded, with validators receiving transaction fees in the form of AXCs in exchange for their activities.
 
 ## Guides
 
@@ -16,11 +16,11 @@ These participants will play a crucial role in adding new blocks to the Relay Ch
 
 ## Other References
 
-- [How to run a AXIASolar node (Docker)](https://medium.com/@acvlls/setting-up-a-maintain-the-easy-way-3a885283091f)
+- [How to run a AXIA node (Docker)](https://medium.com/@acvlls/setting-up-a-maintain-the-easy-way-3a885283091f)
 - [A Serverless Failover Solution for Web3.0 Validator Nodes](https://hackernoon.com/a-serverless-failover-solution-for-web-3-0-validator-nodes-e26b9d24c71d) - Blog that details how to create a robust failover solution for running validators.
-- [Getting Testnet SOLARs](learn-SOLAR#getting-testnet-dots)
+- [Getting Testnet AXCs](learn-AXC#getting-testnet-dots)
 - [VPS list](maintain-guides-how-to-validate#vps-list)
-- [AXIASolar Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=axiacoin.org) - A place to chat about being a validator.
+- [AXIA Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org) - A place to chat about being a validator.
 
 ## Security / Key Management
 
@@ -28,6 +28,6 @@ These participants will play a crucial role in adding new blocks to the Relay Ch
 
 ## Monitoring Tools
 
-- [AXIASolar Telemetry Service](https://telemetry.axiasolar.io/#/Alexander) - Network information including what nodes are running your chain, what software versions they are running, and sync status.
+- [AXIA Telemetry Service](https://telemetry.AXIA.io/#/Alexander) - Network information including what nodes are running your chain, what software versions they are running, and sync status.
 - [Axiadash](http://axiadash.io/) - Validator monitor
-- [Other Useful Links](https://forum.axiacoin.org/t/useful-links-for-validators/20)
+- [Other Useful Links](https://forum.AXIA.org/t/useful-links-for-validators/20)

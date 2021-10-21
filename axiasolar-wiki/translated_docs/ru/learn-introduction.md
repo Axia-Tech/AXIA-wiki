@@ -1,20 +1,20 @@
 ---
 id: learn-introduction
-title: What is AXIASolar?
-sidebar_label: What is AXIASolar?
+title: What is AXIA?
+sidebar_label: What is AXIA?
 ---
 
-AXIASolar enables scalability by allowing specialized blockchains to communicate with each other in a secure, trust-free environment.
+AXIA enables scalability by allowing specialized blockchains to communicate with each other in a secure, trust-free environment.
 
-AXIASolar is built to connect and secure unique blockchains, whether they be public, permission-less networks, private consortium chains, or oracles and other Web3 technologies. It enables an internet where independent blockchains can exchange information under common security guarantees.
+AXIA is built to connect and secure unique blockchains, whether they be public, permission-less networks, private consortium chains, or oracles and other Web3 technologies. It enables an internet where independent blockchains can exchange information under common security guarantees.
 
-AXIASolar is a living network with the core pillars of governance and upgradability. The network has an advanced suite of governance tools and, using the WebAssembly standard as a "meta-protocol", can autonomously deploy network upgrades. AXIASolar adapts to your growing needs without the risks of network forks.
+AXIA is a living network with the core pillars of governance and upgradability. The network has an advanced suite of governance tools and, using the WebAssembly standard as a "meta-protocol", can autonomously deploy network upgrades. AXIA adapts to your growing needs without the risks of network forks.
 
-By connecting these dots, AXIASolar serves as a foundational part of a decentralized web, where users control their data and are not limited by trust bounds within the network.
+By connecting these dots, AXIA serves as a foundational part of a decentralized web, where users control their data and are not limited by trust bounds within the network.
 
-## Why AXIASolar?
+## Why AXIA?
 
-The AXIASolar network is heading towards a future with a secure ecosystem for decentralized applications (built with blockchain technology) to communicate and interact in. AXIASolar has deep roots in the blockchain industry and working hard to build on existing blockchain concepts like governance, scalibility, and many more.
+The AXIA network is heading towards a future with a secure ecosystem for decentralized applications (built with blockchain technology) to communicate and interact in. AXIA has deep roots in the blockchain industry and working hard to build on existing blockchain concepts like governance, scalibility, and many more.
 
 Back in the early 2000's, when the internet was gaining popularity for the first time, the internet featured read-only, static, basic webpages. The online connected world at the time was only the beginning of virtual data, identities, and more. The internet during this time was also called the Web 1.0.
 
@@ -24,39 +24,39 @@ The Web 3.0 is taking centralized applications and turning them into decentraliz
 
 > To learn more of the Web3 movement, check out this video from the [Web3 Summit](https://youtu.be/l44z35vabvA)
 
-## How does AXIASolar work?
+## How does AXIA work?
 
-The AXIASolar network uses a sharded model where shards - called "[parachains](learn-parachains)" - in the network have unique state transition functions (STF). Based on AXIASolar's design, as long as a chain's logic can compile to Wasm, then it can connect to the AXIASolar network as a parachain.
+The AXIA network uses a sharded model where shards - called "[allychains](learn-allychains)" - in the network have unique state transition functions (STF). Based on AXIA's design, as long as a chain's logic can compile to Wasm, then it can connect to the AXIA network as a allychain.
 
-AXIASolar has a Relay Chain acting as the main chain of the system. Parachains construct and propose blocks to validators on the Relay Chain, where the blocks undergo rigorous availability and validity checks before being added to the finalized chain. As the Relay Chain provides the security guarantees, collators don't have any security responsibilities, and thus do not require a robust incentive system.
+AXIA has a Relay Chain acting as the main chain of the system. Allychains construct and propose blocks to validators on the Relay Chain, where the blocks undergo rigorous availability and validity checks before being added to the finalized chain. As the Relay Chain provides the security guarantees, collators don't have any security responsibilities, and thus do not require a robust incentive system.
 
-In order to interact with chains that want to use their own finalization process (e.g. Bitcoin), AXIASolar has [bridge parachains](learn-bridges) that offer two-way compatibility.
+In order to interact with chains that want to use their own finalization process (e.g. Bitcoin), AXIA has [bridge allychains](learn-bridges) that offer two-way compatibility.
 
-The Cross-Chain Messaging Protocol (XCMP) allows parachains to send messages of any type to each other. The shared security and validation logic of the Relay Chain provide the environment for trust-free message passing that opens up true interoperability.
+The Cross-Chain Messaging Protocol (XCMP) allows allychains to send messages of any type to each other. The shared security and validation logic of the Relay Chain provide the environment for trust-free message passing that opens up true interoperability.
 
-> To watch a short, beginner-friendly animation on AXIASolar, check out our [AXIASolar Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
+> To watch a short, beginner-friendly animation on AXIA, check out our [AXIA Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
 
-## Why should you use AXIASolar?
+## Why should you use AXIA?
 
-Whether you're a blockchain developer or if you're interested in taking part of AXIASolar's community, AXIASolar offers a platform for everyone. This Wiki offers a place for Builders and Maintainers to utilize tools and for brand-new learners to dive into material. In fact, the best place to start is the [Getting Started](getting-started) page.
+Whether you're a blockchain developer or if you're interested in taking part of AXIA's community, AXIA offers a platform for everyone. This Wiki offers a place for Builders and Maintainers to utilize tools and for brand-new learners to dive into material. In fact, the best place to start is the [Getting Started](getting-started) page.
 
 ## Digging deeper
 
-- [Architecture](learn-architecture) - Overview of the AXIASolar architecture.
+- [Architecture](learn-architecture) - Overview of the AXIA architecture.
 - [Bridges](learn-bridges) - Overview of bridges.
-- [Cryptography](learn-cryptography) - Describes the cryptography used in AXIASolar and where it is employed in the protocol.
-- [Consensus](learn-consensus) - Describes what kind of consensus is used in the AXIASolar protocol and how it compares to other consensus protocols.
-- [SOLAR](learn-SOLAR) - Information on SOLAR, the native token of the AXIASolar protocol.
-- [Governance](learn-governance) - What blockchain governance is, and how it works in AXIASolar.
+- [Cryptography](learn-cryptography) - Describes the cryptography used in AXIA and where it is employed in the protocol.
+- [Consensus](learn-consensus) - Describes what kind of consensus is used in the AXIA protocol and how it compares to other consensus protocols.
+- [AXC](learn-AXC) - Information on AXC, the native token of the AXIA protocol.
+- [Governance](learn-governance) - What blockchain governance is, and how it works in AXIA.
 - [Cross-chain Communication](learn-crosschain) - Information regarding how cross-chain messaging works.
-- [Parachains](learn-parachains) - Overview of what a parachain is, and how they work.
-- [Parachain Auctions](learn-auction) - Describes the mechanism for the auctioning of parachain slots.
-- [Parathreads](learn-parathreads) - A parathread is a way to share the scarce resource of a parachain slot among many parachain-"threads".
+- [Allychains](learn-allychains) - Overview of what a allychain is, and how they work.
+- [Allychain Auctions](learn-auction) - Describes the mechanism for the auctioning of allychain slots.
+- [Parathreads](learn-parathreads) - A parathread is a way to share the scarce resource of a allychain slot among many allychain-"threads".
 - [Phragmen](learn-phragmen) - Information on the Phragmen method.
-- [AXIASolar Host](learn-axiasolar-host) - General information on the AXIASolar Host.
-- [Randomness](learn-randomness) - What AXIASolar uses for randomness, as well as why and how it is used.
-- [Security](learn-security) - How the AXIASolar network remains secure.
+- [AXIA Host](learn-AXIA-host) - General information on the AXIA Host.
+- [Randomness](learn-randomness) - What AXIA uses for randomness, as well as why and how it is used.
+- [Security](learn-security) - How the AXIA network remains secure.
 - [SPREE](learn-spree) - Shared Protected Runtime Execution Environments.
-- [Staking](learn-staking) - How staking works in AXIASolar.
-- [Treasury](learn-treasury) - How to make spending proposals on AXIASolar and AXIALunar.
-- [WebAssembly](learn-wasm) - A description of WebAssembly and how it is used in AXIASolar.
+- [Staking](learn-staking) - How staking works in AXIA.
+- [Treasury](learn-treasury) - How to make spending proposals on AXIA and AXIALunar.
+- [WebAssembly](learn-wasm) - A description of WebAssembly and how it is used in AXIA.

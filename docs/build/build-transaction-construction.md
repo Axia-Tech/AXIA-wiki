@@ -7,13 +7,13 @@ slug: ../build-transaction-construction
 
 <!-- no updates -->
 
-This page will discuss the transaction format in AXIACoin and how to create, sign, and broadcast
+This page will discuss the transaction format in AXIA and how to create, sign, and broadcast
 transactions. Like the other pages in this guide, this page demonstrates some of the available
 tools. **Always refer to each tool's documentation when integrating.**
 
 ## Transaction Format
 
-AXIACoin has some basic transaction information that is common to all transactions.
+AXIA has some basic transaction information that is common to all transactions.
 
 - Address: The SS58-encoded address of the sending account.
 - Block Hash: The hash of the [checkpoint](build-protocol-info.md#transaction-mortality) block.
@@ -46,9 +46,9 @@ Once you have all the necessary information, you will need to:
 
 AXIA provides the following tools to help perform these steps.
 
-## AXIACoin-JS Tools
+## AXIA-JS Tools
 
-[AXIACoin-JS Tools](https://github.com/axiasolar-js/tools) contains a set of command line tools for
+[AXIA-JS Tools](https://github.com/AXIA-js/tools) contains a set of command line tools for
 interacting with a Substrate client, including one called "Signer CLI" to create, sign, and
 broadcast transactions.
 
@@ -67,7 +67,7 @@ Signing:
 yarn run:signer sign --account <from-account-ss58> --seed <seed> --type <sr25519|ed25519> <payload>
 ```
 
-For example, let's send 0.5 SOLAR from `121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2` to
+For example, let's send 0.5 AXC from `121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2` to
 `15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y`.
 
 ```bash
@@ -85,11 +85,11 @@ Save the output and bring it to the machine that you will broadcast from, enter 
 signature field, and send the transaction (or just return the serialized transaction if using
 `sendOffline`).
 
-## Tx Wrapper AXIACoin
+## Tx Wrapper AXIA
 
 If you do not want to use the CLI for signing operations, AXIA provides an SDK called
 [TxWrapper Core](https://github.com/axia-tech/txwrapper-core) to generate and sign transactions
-offline. For AXIACoin, AXIALunar, and select parachains, use the `txwrapper-axiasolar` package. Other
+offline. For AXIA, AXIALunar, and select allychains, use the `txwrapper-AXIA` package. Other
 Substrate-based chains will have their own `txwrapper-{chain}` implementations. See the
 [examples](https://github.com/axia-tech/txwrapper-core/blob/main/packages/txwrapper-examples/README.md)
 for a guide.
@@ -97,7 +97,7 @@ for a guide.
 **Import a private key**
 
 ```ts
-import { importPrivateKey } from '@substrate/txwrapper-axiasolar';
+import { importPrivateKey } from '@substrate/txwrapper-AXIA';
 
 const keypair = importPrivateKey(“pulp gaze fuel ... mercy inherit equal”);
 ```
@@ -105,7 +105,7 @@ const keypair = importPrivateKey(“pulp gaze fuel ... mercy inherit equal”);
 **Derive an address from a public key**
 
 ```ts
-import { deriveAddress } from '@substrate/txwrapper-axiasolar';
+import { deriveAddress } from '@substrate/txwrapper-AXIA';
 
 // Public key, can be either hex string, or Uint8Array
 const publicKey = “0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235”;
@@ -115,7 +115,7 @@ const address = deriveAddress(publicKey);
 **Construct a transaction offline**
 
 ```ts
-import { methods } from "@substrate/txwrapper-axiasolar";
+import { methods } from "@substrate/txwrapper-AXIA";
 
 const unsigned = methods.balances.transferKeepAlive(
   {
@@ -146,7 +146,7 @@ const unsigned = methods.balances.transferKeepAlive(
 **Construct a signing payload**
 
 ```ts
-import { methods, createSigningPayload } from '@substrate/txwrapper-axiasolar';
+import { methods, createSigningPayload } from '@substrate/txwrapper-AXIA';
 
 // See "Construct a transaction offline" for "{...}"
 const unsigned = methods.balances.transferKeepAlive({...}, {...}, {...});
@@ -156,7 +156,7 @@ const signingPayload = createSigningPayload(unsigned, { registry });
 **Serialize a signed transaction**
 
 ```ts
-import { createSignedTx } from "@substrate/txwrapper-axiasolar";
+import { createSignedTx } from "@substrate/txwrapper-AXIA";
 
 // Example code, replace `signWithAlice` with actual remote signer.
 // An example is given here:
@@ -170,7 +170,7 @@ const signedTx = createSignedTx(unsigned, signature, { metadataRpc, registry });
 You may want to decode payloads to verify their contents prior to submission.
 
 ```ts
-import { decode } from "@substrate/txwrapper-axiasolar";
+import { decode } from "@substrate/txwrapper-AXIA";
 
 // Decode an unsigned tx
 const txInfo = decode(unsigned, { metadataRpc, registry });
@@ -185,7 +185,7 @@ const txInfo = decode(signedTx, { metadataRpc, registry });
 **Check a transaction's hash**
 
 ```ts
-import { getTxHash } from ‘@substrate/txwrapper-axiasolar’;
+import { getTxHash } from ‘@substrate/txwrapper-AXIA’;
 const txHash = getTxHash(signedTx);
 ```
 
@@ -195,7 +195,7 @@ There are several ways to submit a signed payload:
 
 1. Signer CLI (`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`)
 1. [Substrate API Sidecar](build-node-interaction#substrate-api-sidecar)
-1. [RPC](build-node-interaction#axiasolar-rpc) with `author_submitExtrinsic` or
+1. [RPC](build-node-interaction#AXIA-rpc) with `author_submitExtrinsic` or
    `author_submitAndWatchExtrinsic`, the latter of which will subscribe you to events to be notified
    as a transaction gets validated and included in the chain.
 
@@ -205,14 +205,14 @@ Some addresses to use in the examples. See
 [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey).
 
 ```bash
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `pulp gaze fuel ... mercy inherit equal` is account:
   Secret seed:      0x57450b3e09ba4598 ... ... ... ... ... ... ... .. 219756eeba80bb16
   Public key (hex): 0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   Account ID:       0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   SS58 Address:     121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2
 
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `exercise auction soft ... obey control easily` is account:
   Secret seed:      0x5f4bbb9fbb69261a ... ... ... ... ... ... ... .. 4691ed7d1130fbbd
   Public key (hex): 0xda04de6cd781c98acf0693dfb97c11011938ad22fcc476ed0089ac5aec3fe243

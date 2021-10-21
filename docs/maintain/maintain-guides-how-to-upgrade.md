@@ -24,7 +24,7 @@ accordingly.
 Session keys are stored in the client and used to sign validator operations. They are what link your
 validator node to your Controller account. You cannot change them mid-Session.
 
-[More info about keys in AXIACoin.](../learn/learn-keys.md)
+[More info about keys in AXIA.](../learn/learn-keys.md)
 
 ### Database
 

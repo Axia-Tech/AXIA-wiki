@@ -5,11 +5,11 @@ sidebar_label: Thousand Validators Programme
 slug: ../thousand-validators
 ---
 
-The Thousand Validators Programme is an initiative by AXIACoin Foundation and AXIA Technologies to use
+The Thousand Validators Programme is an initiative by AXIA Foundation and AXIA Technologies to use
 the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of
-validators on AXIALunar and AXIACoin and 2) to further decentralize the validator active set.
+validators on AXIALunar and AXIA and 2) to further decentralize the validator active set.
 
 ## How it Works
 
@@ -24,7 +24,7 @@ longer period of time.
 
 ## Setting up a Validator
 
-Please see the wiki page for [setting up a validator](../maintain/maintain-guides-how-to-validate-axiasolar.md)
+Please see the wiki page for [setting up a validator](../maintain/maintain-guides-how-to-validate-AXIA.md)
 as well as additional information on [validator secure](../maintain/maintain-guides-secure-validator.md).
 
 ## How to Apply
@@ -64,13 +64,13 @@ Since approximately early January 2021, the nominators will select an automatic 
 to nominate based on the lowest amount staked for a validator and the amount of funds it holds. This
 can be anywhere from a few validators receiving nomination from a single nominator to the max of 16.
 
-### AXIACoin
+### AXIA
 
-> NOTE: Entrance to the AXIACoin programme requires a rank of 25 or higher in the AXIALunar programme.
+> NOTE: Entrance to the AXIA programme requires a rank of 25 or higher in the AXIALunar programme.
 > This usually takes about a month.
 
-In order to apply to the AXIACoin programme, set up your node to adhere to the requirements below
-and fill in the [application form][axiasolar 1kv form]. You will hear back from the team shortly.
+In order to apply to the AXIA programme, set up your node to adhere to the requirements below
+and fill in the [application form][AXIA 1kv form]. You will hear back from the team shortly.
 
 #### Requirements
 
@@ -78,7 +78,7 @@ and fill in the [application form][axiasolar 1kv form]. You will hear back from 
 - Connect to dedicated Telemetry (use
   `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
 - Rank 25 or higher on AXIALunar Thousand Validators Programme
-- Minimum of 5_000 SOLARs self stake (exceptions by approval for good intentions)
+- Minimum of 5_000 AXCs self stake (exceptions by approval for good intentions)
 - Reward destination 'Staked'
 - No more than 3% commission
 - Separate stash and controller (or have a Staking proxy set up)
@@ -86,7 +86,7 @@ and fill in the [application form][axiasolar 1kv form]. You will hear back from 
 
 #### Nominators
 
-The below addresses are the stash / controller pairs for the nominators involved in the AXIACoin
+The below addresses are the stash / controller pairs for the nominators involved in the AXIA
 Thousand Validators programme. They are formatted like "`stash` / `controller`".
 
 - `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` / `16XJHQ58dEPnZn5J5YqmRcJmKtvVFFMoMrXgj6fWJfeGGkQw`
@@ -101,5 +101,5 @@ can be anywhere from a few validators receiving nominations from a single nomina
 of 16.
 
 [axialunar 1kv form]: https://forms.gle/xqYLoceTwg1qvc9i6
-[axiasolar 1kv form]: https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform
+[AXIA 1kv form]: https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform
 [identity instructions]: ../learn/mirror-learn-identity.md#setting-an-identity

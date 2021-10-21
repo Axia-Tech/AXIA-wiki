@@ -5,64 +5,64 @@ sidebar_label: Architecture
 slug: ../learn-architecture
 ---
 
-AXIACoin is a heterogeneous multichain with shared security and interoperability.
+AXIA is a heterogeneous multichain with shared security and interoperability.
 
 # Components
 
 ## Relay Chain
 
-The Relay Chain is the central chain of AXIACoin. All validators of AXIACoin are staked on the Relay
-Chain in SOLAR and validate for the Relay Chain. The Relay Chain is composed of a relatively small
-number of transaction types that include ways to interact with the governance mechanism, parachain
+The Relay Chain is the central chain of AXIA. All validators of AXIA are staked on the Relay
+Chain in AXC and validate for the Relay Chain. The Relay Chain is composed of a relatively small
+number of transaction types that include ways to interact with the governance mechanism, allychain
 auctions, and participating in NPoS. The Relay Chain has deliberately minimal functionality - for
 instance, smart contracts are not supported. The main responsibility is to coordinate the system as
-a whole, including parachains. Other specific work is delegated to the parachains, which have
+a whole, including allychains. Other specific work is delegated to the allychains, which have
 different implementations and features.
 
-## [Parachain](learn-parachains.md) and [Parathread](learn-parathreads.md) Slots
+## [Allychain](learn-allychains.md) and [Parathread](learn-parathreads.md) Slots
 
-AXIACoin can support a number of execution slots. These slots are like cores on a computer's
+AXIA can support a number of execution slots. These slots are like cores on a computer's
 processor (a modern laptop's processor may have eight cores, for example). Each one of these cores
-can run one process at a time. AXIACoin allows these slots using two subscription models: parachains
-and parathreads. Parachains have a dedicated slot (core) for their chain and are like a process that
+can run one process at a time. AXIA allows these slots using two subscription models: allychains
+and parathreads. Allychains have a dedicated slot (core) for their chain and are like a process that
 runs constantly. Parathreads share slots amongst a group, and are thus more like processes that need
 to be woken up and run less frequently.
 
-Most of the computation that happens across the AXIACoin network as a whole will be delegated to
-specific parachain or parathread implementations that handle various use cases. AXIACoin places no
-constraints over what parachains can do besides that they must be able to generate a proof that can
-be validated by the validators assigned to the parachain. This proof verifies the state transition
-of the parachain. Some parachains may be specific to a particular application, others may focus on
+Most of the computation that happens across the AXIA network as a whole will be delegated to
+specific allychain or parathread implementations that handle various use cases. AXIA places no
+constraints over what allychains can do besides that they must be able to generate a proof that can
+be validated by the validators assigned to the allychain. This proof verifies the state transition
+of the allychain. Some allychains may be specific to a particular application, others may focus on
 specific features like smart contracts, privacy, or scalability &mdash; still, others might be
 experimental architectures that are not necessarily blockchain in nature.
 
-AXIACoin provides many ways to secure a slot for a parachain slot for a particular length of time.
+AXIA provides many ways to secure a slot for a allychain slot for a particular length of time.
 Parathreads are part of a pool that shares slots and must-win auctions for individual blocks.
-Parathreads and parachains have the same API; their difference is economic. Parachains will have to
-reserve SOLAR for the duration of their slot lease; parathreads will pay on a per-block basis.
-Parathreads can become parachains, and vice-versa.
+Parathreads and allychains have the same API; their difference is economic. Allychains will have to
+reserve AXC for the duration of their slot lease; parathreads will pay on a per-block basis.
+Parathreads can become allychains, and vice-versa.
 
 ### [Shared Security](learn-security.md)
 
-Parachains connected to the AXIACoin Relay Chain all share in the security of the Relay Chain.
-AXIACoin has a shared state between the Relay Chain and all of the connected parachains. If the
-Relay Chain must revert for any reason, then all of the parachains would also revert. This is to
+Allychains connected to the AXIA Relay Chain all share in the security of the Relay Chain.
+AXIA has a shared state between the Relay Chain and all of the connected allychains. If the
+Relay Chain must revert for any reason, then all of the allychains would also revert. This is to
 ensure that the validity of the entire system can persist and no individual part is corruptible.
 
-The shared state makes it so that the trust assumptions when using AXIACoin parachains are only
+The shared state makes it so that the trust assumptions when using AXIA allychains are only
 those of the Relay Chain validator set and no other. Since the validator set on the Relay Chain is
-expected to be secure with a large amount of stake put up to back it, parachains should benefit from
+expected to be secure with a large amount of stake put up to back it, allychains should benefit from
 this security.
 
 ## [Bridges](learn-bridges.md)
 
 A blockchain [bridge](../general/glossary.md##bridge) is a connection that allows for arbitrary data to
 transfer from one network to another. These chains are interoperable through the bridge but can
-exist as standalone chains with different protocols, rules, and governance models. In AXIACoin,
-bridges connect to the relay chain and are secured through the AXIACoin consensus mechanism,
+exist as standalone chains with different protocols, rules, and governance models. In AXIA,
+bridges connect to the relay chain and are secured through the AXIA consensus mechanism,
 maintained by [collators](##collators).
 
-AXIACoin uses bridges to bridge the future of Web 3.0, as bridges are fundamental to AXIACoin's
+AXIA uses bridges to bridge the future of Web 3.0, as bridges are fundamental to AXIA's
 interoperable architecture by acting as a [secure and robust] communication channel for chains in
 isolation.
 
@@ -82,15 +82,15 @@ generally rewarded with a portion of the staking rewards from that validator.
 
 ## Collators
 
-[Collators](../general/glossary.md##collator) are full nodes on both a parachain and the Relay Chain. They
-collect parachain transactions and produce state transition proofs for the validators on the Relay
-Chain. They can also send and receive messages from other parachains using XCMP.
+[Collators](../general/glossary.md##collator) are full nodes on both a allychain and the Relay Chain. They
+collect allychain transactions and produce state transition proofs for the validators on the Relay
+Chain. They can also send and receive messages from other allychains using XCMP.
 
 ---
 
 ## Whiteboard Series
 
-For a video overview of the architecture of AXIACoin watch the video below for the whiteboard
+For a video overview of the architecture of AXIA watch the video below for the whiteboard
 interview with W3F researcher Alistair Stewart:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xBfC6uTjvbM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

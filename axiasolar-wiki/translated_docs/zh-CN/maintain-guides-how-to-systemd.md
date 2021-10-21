@@ -8,20 +8,20 @@ sidebar_label: 如何把节点设定为 `systemd` 进程运行
 
 Before following this guide you should have already set up your validator by following the [How to validate](learn-validator) article.
 
-首先在 `/etc/systemd/system/` 中创建名为 `axiasolar-validator.service` 的文件。
+首先在 `/etc/systemd/system/` 中创建名为 `AXIA-validator.service` 的文件。
 
 ```bash
-touch /etc/systemd/system/axiasolar-validator.service
+touch /etc/systemd/system/AXIA-validator.service
 ```
 
 在这个文件中，你会写下你想要在服务器启动/重新启动时运行的命令。
 
 ```
 [Unit]
-Description=AXIASolar Validator
+Description=AXIA Validator
 
 [Service]
-ExecStart=PATH_TO_AXIASOLAR_BIN --validator --name SHOW_ON_TELEMETRY
+ExecStart=PATH_TO_AXIA_BIN --validator --name SHOW_ON_TELEMETRY
 Restart=always
 RestartSec=120
 
@@ -34,23 +34,23 @@ WantedBy=multi-user.target
 要自动启动此功能时:
 
 ```bash
-systemctl enable axiasolar-validator.service
+systemctl enable AXIA-validator.service
 ```
 
 手动启动:
 
 ```bash
-systemctl start axiasolar-validator.service
+systemctl start AXIA-validator.service
 ```
 
 您可以检查它是否运作中:
 
 ```bash
-systemctl status axiasolar-validator.service
+systemctl status AXIA-validator.service
 ```
 
 您可以查看日志 `journalctl`：
 
 ```bash
-journalctl -f -u axiasolar-validator
+journalctl -f -u AXIA-validator
 ```

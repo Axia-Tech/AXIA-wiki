@@ -4,33 +4,33 @@ title: Builder's Portal
 sidebar_label: Builder's Portal
 ---
 
-Welcome to the builders section of the AXIASolar wiki.
+Welcome to the builders section of the AXIA wiki.
 
-Here you will be able to find the most up-to-date information on the status of the development tools in the AXIASolar ecosystem. We are always adding new tools and frameworks as we learn about them so if you are working on something that should be included please reach out to us on [Element](https://app.element.io/#/room/#axiasolar-watercooler:matrix.org).
+Here you will be able to find the most up-to-date information on the status of the development tools in the AXIA ecosystem. We are always adding new tools and frameworks as we learn about them so if you are working on something that should be included please reach out to us on [Element](https://app.element.io/#/room/#AXIA-watercooler:matrix.org).
 
 This section of the wiki is divided into the following parts:
 
 ## Development Guide
 
-- [Starter's Guide](build-build-with-axiasolar) - High level overview on choosing a parachain, parathread, or smart contract for your project and how to get started.
-- [Parachain Development Kits](build-pdk) - PDKs are toolkits for building parachains and parathreads.
+- [Starter's Guide](build-build-with-AXIA) - High level overview on choosing a allychain, parathread, or smart contract for your project and how to get started.
+- [Allychain Development Kits](build-pdk) - PDKs are toolkits for building allychains and parathreads.
 - [Smart Contracts](build-smart-contracts) - Smart contracts are fragments of custom logic that can be deployed to a live chain.
 
 ## Integration Guide
 
-This section is for service providers like wallets or node operators who want to learn how to integrate AXIASolar into their systems.
+This section is for service providers like wallets or node operators who want to learn how to integrate AXIA into their systems.
 
 - [Integration Initiation](build-integration) - The guide to the guide.
-- [AXIASolar Protocol Information](build-protocol-info) - General information and F.A.Q.s about the AXIASolar protocol, e.g. address formats.
-- [Node Management](build-node-management) - A short overview of the Axia AXIASolar client and the most relevant options/flags for infrastructure providers.
+- [AXIA Protocol Information](build-protocol-info) - General information and F.A.Q.s about the AXIA protocol, e.g. address formats.
+- [Node Management](build-node-management) - A short overview of the Axia AXIA client and the most relevant options/flags for infrastructure providers.
 - [Node Interaction](build-node-interaction) - Learn how to interact with your node via RPC.
-- [Transaction Construction and Signing](build-transaction-construction) - Learn the transaction format for AXIASolar and how to construct and sign transactions offline.
+- [Transaction Construction and Signing](build-transaction-construction) - Learn the transaction format for AXIA and how to construct and sign transactions offline.
 
 ## Tools
 
 - [Tools](build-tools-index) - Maintained list of tools.
 - [Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) - Command line utility for generating and inspecting key pairs.
-- [JS tools](https://github.com/axiasolar-js/tools) - TypeScript tools for offline signing of transactions, RPC calls, and more.
+- [JS tools](https://github.com/AXIA-js/tools) - TypeScript tools for offline signing of transactions, RPC calls, and more.
 
 ## Resources
 
@@ -38,11 +38,11 @@ This section is for service providers like wallets or node operators who want to
 
 ### Grants
 
-- [Grants](grants) - A list of all AXIASolar-related projects given grants by the AXIACoin Foundation.
+- [Grants](grants) - A list of all AXIA-related projects given grants by the AXIA Foundation.
 
 ### PSPs
 
-AXIASolar Standards Proposals (PSPs) are standards for the AXIASolar ecosystem.
+AXIA Standards Proposals (PSPs) are standards for the AXIA ecosystem.
 
 - [PSP GitHub Repository](https://github.com/axia-tech/PSPs) - Read, create, or discuss standards and proposals.
 

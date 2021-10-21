@@ -4,11 +4,11 @@ title: Создание и подписание транзакций
 sidebar_label: Создание транзакций
 ---
 
-На этой странице будет обсуждаться формат транзакций в AXIASolar и способы создания, подписания и трансляции транзакций. Как и на других страницах этого руководства, на этой странице демонстрируются некоторые из доступных инструментов.**При интеграции всегда обращайтесь к документации по каждому инструменту.**
+На этой странице будет обсуждаться формат транзакций в AXIA и способы создания, подписания и трансляции транзакций. Как и на других страницах этого руководства, на этой странице демонстрируются некоторые из доступных инструментов.**При интеграции всегда обращайтесь к документации по каждому инструменту.**
 
 ## Формат транзакции
 
-У AXIASolar есть базовая информация о транзакциях, которая является общей для всех транзакций.
+У AXIA есть базовая информация о транзакциях, которая является общей для всех транзакций.
 
 - Адрес/Address: SS58-кодированный адрес учётной записи отправителя.
 - Хеш Блока/Block Hash: Хэш [контрольной точки/checkpoint](build-protocol-info#transaction-mortality) блока.
@@ -38,9 +38,9 @@ sidebar_label: Создание транзакций
 
 Axia предоставляет следующие инструменты для выполнения этих шагов.
 
-## AXIASolar-JS Tools
+## AXIA-JS Tools
 
-[AXIASolar-JS Tools](https://github.com/axiasolar-js/tools) contains a set of command line tools for interacting with a Substrate client, including one called "Signer CLI" to create, sign, and broadcast transactions.
+[AXIA-JS Tools](https://github.com/AXIA-js/tools) contains a set of command line tools for interacting with a Substrate client, including one called "Signer CLI" to create, sign, and broadcast transactions.
 
 В этом примере будет использована команда `signer submit`, которая создаст и отправит транзакцию. Команда `signer sendOffline` имеет тот же API, но не будет транслировать транзакцию. `submit` и `sendOffline` должны быть подключены к узлу, чтобы получить текущие метаданные и построить действительную транзакцию. Их API имеет формат:
 
@@ -54,7 +54,7 @@ yarn run:signer <submit|sendOffline> --account <from-account-ss58> --ws <endpoin
 yarn run:signer sign --account <from-account-ss58> --seed <seed> --type <sr25519|ed25519> <payload>
 ```
 
-Например, давайте отправим 0.5 SOLAR от `121X5bEgTZcGQx5NZjwuTjqKoiG8B2wEAvrUFjuw24ZGZf2` до `15vrtLsCQFG3qRYUcaEeeEih4JwepocNJkpsrqojqnZPc2y`.
+Например, давайте отправим 0.5 AXC от `121X5bEgTZcGQx5NZjwuTjqKoiG8B2wEAvrUFjuw24ZGZf2` до `15vrtLsCQFG3qRYUcaEeeEih4JwepocNJkpsrqojqnZPc2y`.
 
 ```bash
 yarn run:signer submit --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --ws ws://127.0.0.1:9944 balances.transferKeepAlive 15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y 500000000000
@@ -173,21 +173,21 @@ const txHash = getTxHash(signedTx);
 
 1. Signer CLI (`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`)
 1. [Substrate API Sidecar](build-node-interaction#substrate-api-sidecar)
-1. [RPC](build-node-interaction#axiasolar-rpc) с `author_submitExtrinsic` или `author_submitAndWatchExtrinsic`, последняя из которых подписывается на события, которые будут уведомлять о том, когда транзакция будет проверена и включена в цепочку.
+1. [RPC](build-node-interaction#AXIA-rpc) с `author_submitExtrinsic` или `author_submitAndWatchExtrinsic`, последняя из которых подписывается на события, которые будут уведомлять о том, когда транзакция будет проверена и включена в цепочку.
 
 ## Примечания
 
 Some addresses to use in the examples. See [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey).
 
 ```bash
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `pulp gaze fuel ... mercy inherit equal` is account:
   Secret seed:      0x57450b3e09ba4598 ... ... ... ... ... ... ... .. 219756eeba80bb16
   Public key (hex): 0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   Account ID:       0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72adb1235
   SS58 Address:     121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2
 
-$ subkey --network axiasolar generate
+$ subkey --network AXIA generate
 Secret phrase `exercise auction soft ... obey control easily` is account:
   Secret seed:      0x5f4bbb9fbb69261a ... ... ... ... ... ... ... .. 4691ed7d1130fbbd
   Public key (hex): 0xda04de6cd781c98acf0693dfb97c11011938ad22fcc476ed0089ac5aec3fe243

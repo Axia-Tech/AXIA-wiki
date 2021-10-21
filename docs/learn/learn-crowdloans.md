@@ -1,23 +1,23 @@
 ---
 id: learn-crowdloans
-title: Parachain Crowdloans
-sidebar_label: Parachain Crowdloans
+title: Allychain Crowdloans
+sidebar_label: Allychain Crowdloans
 slug: ../learn-crowdloans
 ---
 
-{{ axiasolar: AXIACoin :axiasolar }} {{ axialunar: AXIALunar :axialunar }} allows parachains to source tokens
-for their parachain bids in a decentralized crowdloan.
+{{ AXIA: AXIA :AXIA }} {{ axialunar: AXIALunar :axialunar }} allows allychains to source tokens
+for their allychain bids in a decentralized crowdloan.
 
-> Note: For information on how to participate in the crowdloan and parachain auction testing on
-> BetaNet, please see the {{ axiasolar: [BetaNet content](../build/build-parachains.md##testing-a-parachains:-betanet-testnet) :axiasolar }} >
-> {{ axialunar: [BetaNet content](../build/mirror-build-parachains.md##testing-a-parachains:-betanet-testnet) :axialunar }}.
+> Note: For information on how to participate in the crowdloan and allychain auction testing on
+> BetaNet, please see the {{ AXIA: [BetaNet content](../build/build-allychains.md##testing-a-allychains:-betanet-testnet) :AXIA }} >
+> {{ axialunar: [BetaNet content](../build/mirror-build-allychains.md##testing-a-allychains:-betanet-testnet) :axialunar }}.
 
 ## Starting a crowdloan campaign
 
-Anyone who has registered a parachain can create a new crowdloan campaign for a slot
+Anyone who has registered a allychain can create a new crowdloan campaign for a slot
 {{ axialunar:  by depositing a specified number of tokens :axialunar }}. A campaign is configured as a
-range of slots (i.e. the duration of the {{ axiasolar: [parachain](learn-parachains.md) :axiasolar }}
-{{ axialunar: [parachain](mirror-learn-parachains.md) :axialunar }} will bid for), a cap, and a duration.
+range of slots (i.e. the duration of the {{ AXIA: [allychain](learn-allychains.md) :AXIA }}
+{{ axialunar: [allychain](mirror-learn-allychains.md) :axialunar }} will bid for), a cap, and a duration.
 The duration can last over several auctions, meaning that the team will not need to restart the
 campaign just because they do not secure a slot on their first attempt.
 
@@ -38,9 +38,9 @@ When setting the parameters of a crowdloan campaign, consider the following:
 - You can only cancel an ongoing crowdloan if no contributions have been made. Your deposit will be
   returned to you.
 
-Prior to the start of the crowdloan campaign, the owner will upload the parachain data. Once the
-crowdloan is live, **the parachain configuration will be locked** and it will be what is deployed as
-the parachain's runtime. Of course, once the parachain is running it can always change via runtime
+Prior to the start of the crowdloan campaign, the owner will upload the allychain data. Once the
+crowdloan is live, **the allychain configuration will be locked** and it will be what is deployed as
+the allychain's runtime. Of course, once the allychain is running it can always change via runtime
 upgrades (as determined through its own local governance).
 
 ## Supporting a crowdloan campaign
@@ -55,17 +55,17 @@ uniquely for this campaign.
 > campaign is identified by index, not by address. **Never transfer tokens to an address in support
 > of a campaign.**
 
-It is up to individual parachain teams to decide if and how they want to reward participants who
-forgo staking and choose to lock their tokens in support of the parachain’s campaign. As one can
+It is up to individual allychain teams to decide if and how they want to reward participants who
+forgo staking and choose to lock their tokens in support of the allychain’s campaign. As one can
 imagine, rewards will take many forms and may vary widely among projects.
 
-If a crowdloan campaign is successful, that parachain will be on-boarded to the Relay Chain. The
-collective tokens will be locked in that parachain's account for the entire duration that it is
+If a crowdloan campaign is successful, that allychain will be on-boarded to the Relay Chain. The
+collective tokens will be locked in that allychain's account for the entire duration that it is
 active.
 
 Participants will be able to reclaim their tokens in one of two ways:
 
-- If the campaign was successful, then the parachain will enter a retirement phase at the end of its
+- If the campaign was successful, then the allychain will enter a retirement phase at the end of its
   lease. During this phase, participants can withdraw the tokens with which they participated.
 - If the campaign was not successful, then this retirement phase will begin at the campaign's
   configured end, and participants can likewise withdraw their tokens.
@@ -75,8 +75,8 @@ winning a slot, anyone can trigger the refund of crowdloan contributions back to
 owners. All contributions must be returned before the crowdloan is fully deleted from the system.
 
 Many projects will have dashboards available that allow users to participate in their crowdloans.
-AXIACoinJS apps also offers a breakdown of ongoing crowdloans on the
-[Apps page](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.axiasolar.io#/parachains/crowdloan).
+AXIAJS apps also offers a breakdown of ongoing crowdloans on the
+[Apps page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.AXIA.io#/allychains/crowdloan).
 
 Here is an example of the crowdloans in play during the very first AXIALunar auction.
 
@@ -84,4 +84,4 @@ Here is an example of the crowdloans in play during the very first AXIALunar auc
 
 Furthermore, check out this video on
 [How to Participate in Crowdloans](https://www.youtube.com/watch?v=YrTxDufrcQM) for steps on how to
-access available crowdloans on AXIACoinJS apps.
+access available crowdloans on AXIAJS apps.

@@ -4,9 +4,9 @@ base_path: "./"
 preserve_hierarchy: true
 
 files:
-  - source: "/axiasolar-wiki/i18n/en/**/*.json"
-    translation: "/axiasolar-wiki/i18n/%locale%/**/%original_file_name%"
+  - source: "/AXIA-wiki/i18n/en/**/*.json"
+    translation: "/AXIA-wiki/i18n/%locale%/**/%original_file_name%"
     content_segmentation: 0
   - source: "/docs/*.md"
-    translation: "/axiasolar-wiki/i18n/%locale%/docusaurus-plugin-content-docs/current/%original_file_name%"
+    translation: "/AXIA-wiki/i18n/%locale%/docusaurus-plugin-content-docs/current/%original_file_name%"
     content_segmentation: 0

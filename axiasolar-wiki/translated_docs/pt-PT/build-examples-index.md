@@ -8,7 +8,7 @@ Examples are helpful to demonstrate patterns of development. This repository con
 
 ## Web3 Grants
 
-For a list of all AXIACoin Foundation grants to teams working on projects that promote the AXIASolar ecosystem, please see the [Grants](grants.md) page.
+For a list of all AXIA Foundation grants to teams working on projects that promote the AXIA ecosystem, please see the [Grants](grants.md) page.
 
 ## Substrate Runtimes
 

@@ -5,7 +5,7 @@ sidebar_label: Identity
 slug: ../learn-identity
 ---
 
-AXIACoin provides a naming system that allows participants to add personal information to their
+AXIA provides a naming system that allows participants to add personal information to their
 on-chain account and subsequently ask for verification of this information by
 [registrars](#registrars).
 
@@ -20,8 +20,8 @@ Users must reserve funds in a bond to store their information on chain:
 These funds are _locked_, not spent - they are returned when the identity is cleared.
 
 These amounts can also be extracted by querying constants through the
-[Chain state constants](https://axiasolar.js.org/apps/#/chainstate/constants) tab on
-axiasolar.js/apps.
+[Chain state constants](https://AXIA.js.org/apps/#/chainstate/constants) tab on
+AXIA.js/apps.
 
 First, select `identity` as the `selected constant query`.
 
@@ -33,7 +33,7 @@ onto the webpage by clicking the "plus" icon at the end of the bar.
 ![Identity as the selected constant query](../assets/identity/18.jpg)
 
 Each field can store up to 32 bytes of information, so the data must be less than that. When
-inputting the data manually through the [Extrinsics UI](https://axiasolar.js.org/apps/#/extrinsics),
+inputting the data manually through the [Extrinsics UI](https://AXIA.js.org/apps/#/extrinsics),
 a [UTF8 to bytes](https://onlineutf8tools.com/convert-utf8-to-bytes) converter can help.
 
 The easiest way to add the built-in fields is to click the gear icon next to your account and select
@@ -61,21 +61,21 @@ Note that custom fields are not shown in the UI by default:
 ![Only built-in fields are shown](../assets/identity/04.jpg)
 
 The rendering of such custom values is, ultimately, up to the UI/dapp makers. In the case of
-AXIACoinJS, the team prefers to only show official fields for now. If you want to check that the
-values are still stored, use the [Chain State UI](https://axiasolar.js.org/apps/#/chainstate) to
+AXIAJS, the team prefers to only show official fields for now. If you want to check that the
+values are still stored, use the [Chain State UI](https://AXIA.js.org/apps/#/chainstate) to
 query the active account's identity info:
 
 ![Raw values of custom fields are available on-chain](../assets/identity/05.jpg)
 
 It is up to your own UI or dapp to then do with this data as it pleases. The data will remain
-available for querying via the AXIACoin API, so you don't have to rely on the AXIACoinJS UI.
+available for querying via the AXIA API, so you don't have to rely on the AXIAJS UI.
 
 You can have a maximum of 100 custom fields.
 
 ### Format Caveat
 
 Please note the following caveat: because the fields support different formats, from raw bytes to
-various hashes, a UI has no way of telling how to encode a given field it encounters. The AXIACoinJS
+various hashes, a UI has no way of telling how to encode a given field it encounters. The AXIAJS
 UI currently encodes the raw bytes it encounters as UTF8 strings, which makes these values readable
 on-screen. However, given that there are no restrictions on the values that can be placed into these
 fields, a different UI may interpret them as, for example, IPFS hashes or encoded bitmaps. This
@@ -87,7 +87,7 @@ multiple formats and then attempt multiple encodings until the output makes sens
 ## Registrars
 
 Registrars can set a fee for their services and limit their attestation to certain fields. For
-example, a registrar could charge 1 SOLAR to verify one's legal name, email, and GPG key. When a user
+example, a registrar could charge 1 AXC to verify one's legal name, email, and GPG key. When a user
 requests judgement, they will pay this fee to the registrar who provides the judgement on those
 claims. Users set a maximum fee they are willing to pay and only registrars below this amount would
 provide judgement.
@@ -111,12 +111,12 @@ a transaction.
 
 Next, select "Submit Proposal" and enter the previously copied preimage hash. The `locked balance`
 field needs to be at least {{ identity_reserve_funds }} LUNAR. You can find out the minimum by
-querying the chain state under [Chain State](https://axiasolar.js.org/apps/#/chainstate) -> Constants
+querying the chain state under [Chain State](https://AXIA.js.org/apps/#/chainstate) -> Constants
 -> democracy -> minimumDeposit.
 
 ![Submitting a proposal](../assets/identity/13.jpg)
 
-At this point, SOLAR holders can second the motion. With enough seconds, the motion will become a
+At this point, AXC holders can second the motion. With enough seconds, the motion will become a
 referendum, which is then voted on. If it passes, users will be able to request judgement from this
 registrar.
 
@@ -145,7 +145,7 @@ Registrars gain trust by performing proper due diligence and would presumably be
 issuing faulty judgements.
 
 To be judged after submitting your identity information, go to the
-["Extrinsics UI"](https://axiasolar.js.org/apps/#/extrinsics) and select the `identity` pallet, then
+["Extrinsics UI"](https://AXIA.js.org/apps/#/extrinsics) and select the `identity` pallet, then
 `requestJudgement`. For the `reg_index` put the index of the registrar you want to be judged by, and
 for the `max_fee` put the maximum you're willing to pay for these confirmations.
 
@@ -161,7 +161,7 @@ judgement using an extrinsic.
 
 ![Cancel Registrar](../assets/registrar_cancel_judgement.png)
 
-To do this, first, go to the ["Extrinsics UI"](https://axiasolar.js.org/apps/#/extrinsics) and select
+To do this, first, go to the ["Extrinsics UI"](https://AXIA.js.org/apps/#/extrinsics) and select
 the `identity` pallet, then `cancelRequest`. Ensure that you are calling this from the correct
 account (the one for which you initially requested judgement). For the `reg_index`, put the index of
 the registrar from which you requested judgement.
@@ -174,7 +174,7 @@ There are multiple registrars on AXIALunar. Unless no additional information is 
 reach out to specific registrars individually if you want to be judged by those.
 
 - Registrar 0:
-  - URL: https://registrar.axiacoin.org/
+  - URL: https://registrar.AXIA.org/
   - Account: H4XieK3r3dq3VEvRtqZR7wN7a1UEkXxf14orRsEfdFjmgkF,
   - Fee: 0.04 LUNAR
 - Registrar 1:
@@ -197,26 +197,26 @@ automatically loaded.
 
 ![Chevdor is registrar #1](../assets/identity/16.jpg)
 
-### AXIACoin Registrars
+### AXIA Registrars
 
-There are multiple registrars on AXIACoin. Unless no additional information is available here, you must
+There are multiple registrars on AXIA. Unless no additional information is available here, you must
 reach out to specific registrars individually if you want to be judged by those.
 
 - Registrar 0:
-  - URL: https://registrar.axiacoin.org/
+  - URL: https://registrar.AXIA.org/
   - Account: 12j3Cz8qskCGJxmSJpVL2z2t3Fpmw3KoBaBaRGPnuibFc7o8,
-  - Fee: 0 SOLAR,
+  - Fee: 0 AXC,
 - Registrar 1:
   - URL: https://registrar.d11d.net/
   - Account: 1Reg2TYv9rGfrQKpPREmrHRxrNsUDBQKzkYwP1UstD97wpJ,
-  - Fee: 10 SOLAR,
+  - Fee: 10 AXC,
 - Registrar 2:
   - Account: 1EpXirnoTimS1SWq52BeYx7sitsusXNGzMyGx8WPujPd1HB,
-  - Fee: 0 SOLAR,
+  - Fee: 0 AXC,
 
 ### Requesting Judgement
 
-Requesting judement follows the same process regardless of whether you're on the AXIALunar or AXIACoin
+Requesting judement follows the same process regardless of whether you're on the AXIALunar or AXIA
 networks. Select one of the registrars from the query you made above.
 
 ![Requesting judgement](../assets/identity/08.jpg)
@@ -253,7 +253,7 @@ validators.
 An account can have a maximum of 100 sub-accounts.
 
 To register a sub-account on an existing account, you must currently use the
-[Extrinsics UI](https://axiasolar.js.org/apps/#/extrinsics). There, select the identity pallet, then
+[Extrinsics UI](https://AXIA.js.org/apps/#/extrinsics). There, select the identity pallet, then
 `setSubs` as the function to use. Click "Add Item" for every child account you want to add to the
 parent sender account. The value to put into the Data field of each parent is the optional name of
 the sub-account. If omitted, the sub-account will inherit the parent's name and be displayed as
@@ -264,7 +264,7 @@ the sub-account. If omitted, the sub-account will inherit the parent's name and 
 Note that a deposit of {{ identity_sub_reserve_funds }} is required for every sub-account.
 
 You can use
-[axiasolar.js/apps](https://axiasolar.js.org/apps/?rpc=wss%3A%2F%2Frpc.axiasolar.io#/chainstate/constants)
+[AXIA.js/apps](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/chainstate/constants)
 again to verify this amount by querying the `identity.subAccountDeposit` constant.
 
 ![Sub account constant](../assets/identity/19.jpg)
@@ -276,7 +276,7 @@ an identity also clears all sub accounts and returns their deposits.
 
 To clear an identity:
 
-1. Navigate to the [Accounts UI](https://axiasolar.js.org/apps/#/accounts).
+1. Navigate to the [Accounts UI](https://AXIA.js.org/apps/#/accounts).
 2. Click the three dots corresponding to the account you want to clear and select 'Set on-chain
    identity'.
 3. Select 'Clear Identity', and sign and submit the transaction.

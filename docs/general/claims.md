@@ -1,11 +1,11 @@
 ---
 id: claims
-title: AXIACoin Claims
+title: AXIA Claims
 sidebar_label: Claims
 slug: ../claims
 ---
 
-If you made a SOLAR purchase in one of the pre-launch sales, then you will need to claim your SOLAR
+If you made a AXC purchase in one of the pre-launch sales, then you will need to claim your AXC
 tokens. For those who made a pre-genesis claim by sending a claim transaction to the Claims Contract
 on Ethereum, you will still need to send a free _attest_ transaction that will agree to the terms
 and conditions of your allocation. If you did not make a pre-genesis claim, then you will claim and
@@ -13,32 +13,32 @@ attest in a single transaction.
 
 This guide will walk you through the steps for either making a claim or attesting to the statement.
 
-If you are making a claim on AXIACoin for the first time, please read on below in the
+If you are making a claim on AXIA for the first time, please read on below in the
 [making a claim](#making-a-claim) section. If you've already claimed during the pre-genesis claims
 period, please proceed to the [attesting to a statement](#attesting-to-a-statement) section instead.
 
-> To learn more on How to claim your SOLAR post genesis, check out our walkthrough
+> To learn more on How to claim your AXC post genesis, check out our walkthrough
 > [video](https://www.youtube.com/watch?v=rjhWfKXJTCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22)
 > and our video on
-> [Claiming SOLAR with an Ethereum address generated using an old mnemonic phrase](https://www.youtube.com/watch?v=AlwrM27x3As&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=16)
+> [Claiming AXC with an Ethereum address generated using an old mnemonic phrase](https://www.youtube.com/watch?v=AlwrM27x3As&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=16)
 
 ## Making a Claim
 
-If you did not make a claim in the pre-genesis claims period, then you are able to claim your SOLAR
+If you did not make a claim in the pre-genesis claims period, then you are able to claim your AXC
 tokens after genesis. There is no time limit for making your claim so feel free to do this whenever
 you are most comfortable.
 
-> Note: When you make a claim, you will also attest to the agreement that corresponds to your SOLAR
+> Note: When you make a claim, you will also attest to the agreement that corresponds to your AXC
 > allocation. The two actions, "claim" and "attest", are done in a single transaction, but for the
 > most part this is simplified from the perspective of the user.
 
 ### What You Will Need
 
-- The Ethereum account that holds the SOLAR indicator tokens
+- The Ethereum account that holds the AXC indicator tokens
 - The MyCrypto wallet
-- A AXIACoin account
+- A AXIA account
 
-You should already have your Ethereum account that holds the SOLAR indicator tokens from AXIACoin's
+You should already have your Ethereum account that holds the AXC indicator tokens from AXIA's
 prior sales. You will need to have access to this account in order to make a signature.
 
 [MyCrypto][] is a versatile wallet that supports a variety of storage methods for your Ethereum
@@ -49,28 +49,28 @@ patches.
 > **NOTICE**: It is much more secure to download and use the MyCrypto app locally. You can always
 > find the most up-to-date releases of the desktop app on their [releases page][mycrypto].
 
-You will need a AXIACoin account to claim your SOLAR. Please follow the instructions on the [account
-generation][] page for generating a new AXIACoin account.
+You will need a AXIA account to claim your AXC. Please follow the instructions on the [account
+generation][] page for generating a new AXIA account.
 
-You can use the [claims guide](https://claims.axiacoin.network/) to claim SOLAR that were purchased in
-the form of SOLAR Allocation Indicators on Ethereum before June 30, 2020. These steps are broken down
+You can use the [claims guide](https://claims.AXIA.network/) to claim AXC that were purchased in
+the form of AXC Allocation Indicators on Ethereum before June 30, 2020. These steps are broken down
 in the remaining sections of this page.
 
-#### Claiming your SOLAR with MyCrypto
+#### Claiming your AXC with MyCrypto
 
-The AXIACoin-JS [Claims app][] helps you sign a message from MyCrypto. MyCrypto is a good choice in
-case you have stored the key to the Ethereum account holding your SOLAR indicator tokens on a hardware
+The AXIA-JS [Claims app][] helps you sign a message from MyCrypto. MyCrypto is a good choice in
+case you have stored the key to the Ethereum account holding your AXC indicator tokens on a hardware
 device like a Ledger Nano S or a Trezor. It also supports raw private keys, mnemonics, and AXIA
 signer.
 
 Once you've downloaded MyCrypto and have it running locally (we recommend an air-gapped computer for
-maximum security), you can start by navigating to the Claims app on AXIACoin-JS Apps. Select the
-account you would like to claim the SOLAR into and click the blue "Continue" button to proceed. Your
+maximum security), you can start by navigating to the Claims app on AXIA-JS Apps. Select the
+account you would like to claim the AXC into and click the blue "Continue" button to proceed. Your
 screen should look something like this:
 
 ![claim-1](../assets/new-claims/claim-1.jpg)
 
-Now you will need to provide the Ethereum address that is associated with the SOLAR indicator tokens
+Now you will need to provide the Ethereum address that is associated with the AXC indicator tokens
 that you will claim. Enter the Ethereum address into the box and click "Continue".
 
 ![claim-2](../assets/new-claims/claim-2.jpg)
@@ -79,8 +79,8 @@ Next your screen should look the image below.
 
 ![claim-2-1](../assets/new-claims/claim-2-1.jpg)
 
-The hex-encoded string that follows the sentence: "Pay SOLAR to the AXIACoin account:" is the
-hex-encoded public key of your AXIACoin account, minus the `0x` prefix.
+The hex-encoded string that follows the sentence: "Pay AXC to the AXIA account:" is the
+hex-encoded public key of your AXIA account, minus the `0x` prefix.
 
 The next step is to go to the MyCrypto application and click on "Sign & Verify Message" tab.
 
@@ -90,7 +90,7 @@ This will prompt you to select a method for unlocking your wallet.
 
 ![claim-4](../assets/new-claims/claim-4.png)
 
-After unlocking your wallet, paste the message from AXIACoin-JS into the "Message" box.
+After unlocking your wallet, paste the message from AXIA-JS into the "Message" box.
 
 ![claim-5](../assets/new-claims/claim-5.png)
 
@@ -99,7 +99,7 @@ When you click "Sign Message" you will get a JSON output like the one below:
 ![claim-6](../assets/new-claims/claim-6.png)
 
 Copy and paste the JSON output of the signed message from MyCrypto into the input box on the
-AXIACoin-JS UI and click "Confirm Claim."
+AXIA-JS UI and click "Confirm Claim."
 
 ![claim-7](../assets/new-claims/claim-7.jpg) ![claim-8](../assets/new-claims/claim-8.jpg)
 
@@ -108,23 +108,23 @@ Click on the "Claim" button and click "Submit (no signature)" to complete the cl
 
 ![claim-9](../assets/new-claims/claim-9.jpg)
 
-If this claim succeeded, then you will see a success message and your SOLAR will be in the account
+If this claim succeeded, then you will see a success message and your AXC will be in the account
 that you claimed to.
 
 #### Verifying your Claim
 
-After you make an on-chain claim for SOLAR, your balance should be updated on the AXIACoin UI
+After you make an on-chain claim for AXC, your balance should be updated on the AXIA UI
 immediately.
 
-Having trouble? Get support in the SOLAR [Claims Support][] channel.
+Having trouble? Get support in the AXC [Claims Support][] channel.
 
 ![claim-10](../assets/new-claims/claim-10.jpg)
 
-Congratulations, you have now completed the process for claiming and signing for your SOLAR.
+Congratulations, you have now completed the process for claiming and signing for your AXC.
 
 ### Third Party Claims Processes
 
-**We do not recommend using third-party apps or processes to perform your claim or acquire SOLAR.**
+**We do not recommend using third-party apps or processes to perform your claim or acquire AXC.**
 
 Claiming using a third-party process can lead to the loss of your allocation, therefore we cannot
 recommend using any third party apps to do so. Manually specifying your transaction data, as
@@ -133,23 +133,23 @@ specified in our claims process, is the only way to be certain you will receive 
 ## Attesting to a Statement
 
 If you've already made a pre-genesis claim, you still have to agree to a statement using your
-AXIACoin account.
+AXIA account.
 
-## Using AXIACoin-JS Apps
+## Using AXIA-JS Apps
 
 ### What you will need
 
-- Your AXIACoin account unlocked on AXIACoin-JS Apps UI.
+- Your AXIA account unlocked on AXIA-JS Apps UI.
 
-You will be sending a free transaction from your AXIACoin account on the AXIACoin-JS Apps UI. Once
+You will be sending a free transaction from your AXIA account on the AXIA-JS Apps UI. Once
 you make this transaction you will have the tokens available in your account.
 
-### Go to AXIACoin-JS Apps
+### Go to AXIA-JS Apps
 
-Proceed to [axiasolar-js Apps][claims app]. You will need to grant Apps access to your account in
+Proceed to [AXIA-js Apps][claims app]. You will need to grant Apps access to your account in
 some way. One way would be to go to the Accounts page and "create" a new account, replacing the
 generated seed or mnemonic with the one belonging to your account. The other way is by using the
-AXIACoin-JS extension and entering your seed or mnemonic there, which is generally safer than
+AXIA-JS extension and entering your seed or mnemonic there, which is generally safer than
 entering it directly to the Apps page.
 
 ### Make the Attestation
@@ -164,10 +164,10 @@ tells you that you need to sign an attestation.
 
 ![claim-attest-2](../assets/new-claims/new-attest-2.png)
 
-The notification will display one or more AXIACoin addresses that you have loaded in AXIACoin-JS
-that you need to sign. Select a AXIACoin account with a claim using the drop down selection. If you
+The notification will display one or more AXIA addresses that you have loaded in AXIA-JS
+that you need to sign. Select a AXIA account with a claim using the drop down selection. If you
 don't see a notification or don't see the selector, please double check that the account has been
-loaded into AXIACoin-JS and that it has already claimed during the preclaim period. As always, feel
+loaded into AXIA-JS and that it has already claimed during the preclaim period. As always, feel
 free to reach out for help in the [Claims Support][] channel.
 
 Click "Continue" and you will see a green box appear on the right.
@@ -178,7 +178,7 @@ Click "Continue" and you will see a green box appear on the right.
 
 Click on "I Agree" and then "Sign and Submit" to make your free attest transaction. When the
 transaction is included in the block, you will see a green success box appear in the upper right
-corner and the SOLAR will be in your account.
+corner and the AXC will be in your account.
 
 ![claim-attest-5](../assets/new-claims/new-attest-5.jpg)
 
@@ -187,17 +187,17 @@ corner and the SOLAR will be in your account.
 ### What you will need
 
 - AXIA Signer
-- Your AXIACoin account linked to AXIACoin-JS Apps UI
+- Your AXIA account linked to AXIA-JS Apps UI
 
-Before claiming, you should import your AXIACoin address on AXIA Signer to the AXIACoin-JS Apps.
+Before claiming, you should import your AXIA address on AXIA Signer to the AXIA-JS Apps.
 All operations will use AXIA Signer to sign the transaction, but will broadcast it via the
-AXIACoin-JS Apps remote node. If you do not have a AXIACoin address, please follow the instructions
-on the AXIA Signer section in the [account generation][] page for generating a new AXIACoin
+AXIA-JS Apps remote node. If you do not have a AXIA address, please follow the instructions
+on the AXIA Signer section in the [account generation][] page for generating a new AXIA
 account.
 
-### Go to AXIACoin-JS Apps
+### Go to AXIA-JS Apps
 
-Proceed to [AXIACoin-JS Apps][claims app]. You will need to import your address on AXIA Signer to
+Proceed to [AXIA-JS Apps][claims app]. You will need to import your address on AXIA Signer to
 the Accounts page first.
 
 ### Make the Attestation
@@ -208,18 +208,18 @@ Click "Add via Qr" on the right side.
 
 ![ps-claim-2](../assets/new-claims/ps-claim-2.png)
 
-Open AXIA Signer and choose "AXIACoin" network.
+Open AXIA Signer and choose "AXIA" network.
 
 ![ps-1](../assets/new-claims/ps-01.jpg)
 
-Select the address that you have claimed SOLAR to during pre-genesis.
+Select the address that you have claimed AXC to during pre-genesis.
 
 ![ps-2](../assets/new-claims/ps-02.jpg)
 
 ![ps-3](../assets/new-claims/ps-03.jpg)
 
 Your address will be displayed in QR code format. You can move the QR code to the camera so that the
-AXIACoin-JS Apps can decode it.
+AXIA-JS Apps can decode it.
 
 ![ps-claim-3](../assets/new-claims/ps-claim-3.png)
 
@@ -228,12 +228,12 @@ Once decoded successfully, input the name for your address and click "Create".
 You will notice that the digit beside the "Claim Tokens" menu increased by 1. It means the number of
 addresses on the Accounts page that need to do attestations.
 
-Go to the [Claim Tokens](https://axiasolar.js.org/apps/#/claims) page and and you will see a large
+Go to the [Claim Tokens](https://AXIA.js.org/apps/#/claims) page and and you will see a large
 notification at the top of the page that tells you that you need to sign an attestation.
 
-Select the AXIACoin account that you just have imported with a claim using the drop-down selection.
+Select the AXIA account that you just have imported with a claim using the drop-down selection.
 If you don't see a notification or don't see the selector, please double check that the account has
-been loaded into AXIACoin-JS and that it has already claimed during the pre-genesis period. As
+been loaded into AXIA-JS and that it has already claimed during the pre-genesis period. As
 always, feel free to reach out for help in the [Claims Support][] channel.
 
 ![ps-claim-5](../assets/new-claims/ps-claim-5.png)
@@ -246,21 +246,21 @@ Click on "I Agree" and then "Sign via Qr".
 
 ![ps-claim-7](../assets/new-claims/ps-claim-7.png)
 
-Now you need to sign the transaction using the AXIA Signer with your AXIACoin address.
+Now you need to sign the transaction using the AXIA Signer with your AXIA address.
 
 ![ps-claim-8](../assets/new-claims/ps-claim-8.png)
 
 First, you need to press the "QR Scanner" on the AXIA Signer to scan the QR code that's shown on
 the authorize transaction window to generate the raw transaction. Next, you may be required to input
 the PIN on the AXIA Signer to generate the signed transaction as a QR code. Then move the QR code
-to the camera on the AXIACoin-JS Apps to continue.
+to the camera on the AXIA-JS Apps to continue.
 
 ![ps-3r](../assets/new-claims/ps-3r.jpg)
 
 When the transaction is included in the block, you will see a green success box appear in the upper
-right corner and the SOLAR will be in your account.
+right corner and the AXC will be in your account.
 
 [mycrypto]: https://download.mycrypto.com/
 [account generation]: ../learn/learn-account-generation.md
-[claims app]: https://axiasolar.js.org/apps/#/claims
-[claims support]: https://riot.im/app/#/room/!kwIkVteRpPRjjTyvTe:axiacoin.org?via=axiacoin.org&via=matrix.org&via=matrix.axia.io
+[claims app]: https://AXIA.js.org/apps/#/claims
+[claims support]: https://riot.im/app/#/room/!kwIkVteRpPRjjTyvTe:AXIA.org?via=AXIA.org&via=matrix.org&via=matrix.axia.io

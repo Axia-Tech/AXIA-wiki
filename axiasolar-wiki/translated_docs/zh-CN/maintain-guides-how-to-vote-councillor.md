@@ -4,19 +4,19 @@ title: 投票给选举议员
 sidebar_label: 投票给选举议员
 ---
 
-议会是经在链上选举产生的账户，旨在代表在 AXIASolar / AXIALunar 被动利益相关者。议会在治理方面有两项主要任务: 提议公投和否决危险或恶意的公投。有关议会的更多信息，请参见[治理页面](learn-governance#council)。本指南将引导您如何在选举议员中投票。
+议会是经在链上选举产生的账户，旨在代表在 AXIA / AXIALunar 被动利益相关者。议会在治理方面有两项主要任务: 提议公投和否决危险或恶意的公投。有关议会的更多信息，请参见[治理页面](learn-governance#council)。本指南将引导您如何在选举议员中投票。
 
 ## 投票给选举议员
 
-Voting for councillors requires you to lock 5 SOLAR on AXIASolar or 0.0083 LUNAR on AXIALunar for the duration of your vote.
+Voting for councillors requires you to lock 5 AXC on AXIA or 0.0083 LUNAR on AXIALunar for the duration of your vote.
 
 > Warning: If your balance is vesting, you cannot use unvested tokens for this lock. You will have to wait until you have at least that many **free** tokens to vote.
 
 Like the validator elections, you can approve up to 16 different councillors and your vote will be equalized among the chosen group. Unlike validator elections, there is no unbonding period for your reserved tokens. Once you remove your vote, your tokens will be liquid again.
 
-> Warning: It is your responsibility not to put your entire balance into the reserved value when you make a vote for councillors. It's best to keep _at least_ enough SOLAR/LUNAR to pay for transaction fees.
+> Warning: It is your responsibility not to put your entire balance into the reserved value when you make a vote for councillors. It's best to keep _at least_ enough AXC/LUNAR to pay for transaction fees.
 
-Go to the [AXIASolar-JS Apps Dashboard](https://axiasolar.js.org/apps) and click on the "Council" tab. On the right side of the window there are two blue buttons, click on the one that says "Vote."
+Go to the [AXIA-JS Apps Dashboard](https://AXIA.js.org/apps) and click on the "Council" tab. On the right side of the window there are two blue buttons, click on the one that says "Vote."
 
 ![](assets/council/vote.png)
 
@@ -30,11 +30,11 @@ You should see your vote appear in the interface immediately after your transact
 
 In order to get your reserved tokens back, you will need to remove your vote. Only remove your vote when you're done participating in elections and you no longer want your reserved tokens to count for the councillors that you approve.
 
-Go to the "Governance" > "Council" tab on the [AXIASolar-JS Apps Dashboard](https://axiasolar.js.org/apps).
+Go to the "Governance" > "Council" tab on the [AXIA-JS Apps Dashboard](https://AXIA.js.org/apps).
 
 Under the "Council overview" tab, click on "Vote".
 
-![](assets/council/axiasolarjs_removeVoter.png)
+![](assets/council/AXIAjs_removeVoter.png)
 
 Issue the "Unvote all" option.
 

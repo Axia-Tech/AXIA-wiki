@@ -8,7 +8,7 @@ slug: ../../axialunar-bug-bounty
 We call on our community and all bug bounty hunters to help identify bugs in AXIALunar.
 
 If you discover a bug, we appreciate your cooperation in responsibly investigating and reporting it
-as per [instructions on the AXIACoin Foundation website](https://axiacoin.org/security-report/).
+as per [instructions on the AXIA Foundation website](https://AXIA.org/security-report/).
 Disclosure to any third parties disqualifies bug bounty eligibility.
 
 ## Eligibility
@@ -45,4 +45,4 @@ isn't limited to, the following:
 ## How to report a bug
 
 Please follow the instructions at
-[axiacoin.org/security-report/](https://axiacoin.org/security-report/).
+[AXIA.org/security-report/](https://AXIA.org/security-report/).

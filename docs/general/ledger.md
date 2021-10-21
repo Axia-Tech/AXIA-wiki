@@ -1,6 +1,6 @@
 ---
 id: ledger
-title: Using the AXIACoin Ledger Application
+title: Using the AXIA Ledger Application
 sidebar_label: Ledger Application
 slug: ../ledger
 ---
@@ -8,19 +8,19 @@ slug: ../ledger
 > Note: Because of required WebUSB support, Ledger wallets currently only work on Chromium-based
 > browsers like Brave and Chrome.
 
-The AXIACoin [Ledger][] application is compatible with both the Ledger Nano S and the Ledger Nano X
+The AXIA [Ledger][] application is compatible with both the Ledger Nano S and the Ledger Nano X
 devices. Ledger devices are hardware wallets that keep your secret secured on a physical device that
 does not expose it to your computer or the internet.
 
-The AXIACoin Ledger application allows you to manage AXIACoin's native token, the SOLAR. It supports
+The AXIA Ledger application allows you to manage AXIA's native token, the AXC. It supports
 most of the transaction types of the network (a notable exception is the "Batch" transaction from
 the Utility pallet).
 
 If you have trouble using Ledger or following the directions below, you can try searching for your
-issue on the [AXIACoin Knowledge Base](https://support.axiacoin.network/).
+issue on the [AXIA Knowledge Base](https://support.AXIA.network/).
 
 > Please check out our
-> [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIACoin).
+> [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIA).
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Here is a list of what you will need before starting:
   the Nano X).
 - Ledger Live is installed and at version 2.1 or newer (see settings -> about to find out if you're
   up to date).
-- A Chromium-based web browser is installed that you can use to access [AXIACoin-JS Apps][].
+- A Chromium-based web browser is installed that you can use to access [AXIA-JS Apps][].
 
 ## Installing the Ledger Application
 
@@ -40,11 +40,11 @@ Here is a list of what you will need before starting:
 - Open the "Manager" tab in Ledger Live.
 - Connect and unlock your Ledger device.
 - If asked, allow the manager on your device by pressing both buttons on the YES screen.
-- Find AXIACoin in the app catalog and install it.
+- Find AXIA in the app catalog and install it.
 
-![The AXIACoin App in the Ledger Manager](../assets/ledger/manager-app-axiasolar.png)
+![The AXIA App in the Ledger Manager](../assets/ledger/manager-app-AXIA.png)
 
-Please proceed to the [usage instructions](#using-on-axiasolar-js-apps) below.
+Please proceed to the [usage instructions](#using-on-AXIA-js-apps) below.
 
 ### Using the Developer Release
 
@@ -52,7 +52,7 @@ Please proceed to the [usage instructions](#using-on-axiasolar-js-apps) below.
 > application from Ledger Live unless you _know exactly what you're doing_.
 
 Instructions for downloading the prerelease binary from the GitHub releases are written [in the
-README][prerelease instructions] for the AXIACoin Ledger application GitHub repository.
+README][prerelease instructions] for the AXIA Ledger application GitHub repository.
 
 On the [releases page][] you can download the shell script `install_app.sh` and then make it
 executable in your shell by typing the command `chmod +x install_app.sh`.
@@ -61,10 +61,10 @@ Using `install_app.sh` `help` command will show you the available options:
 
 ```zsh
 $ ./install_app.sh --help
-Zondax Installer [AXIACoin-1.2011.1] [Warning: use only for test/demo apps]
-  load    - Load AXIACoin app
-  delete  - Delete AXIACoin app
-  version - Show AXIACoin app version
+Zondax Installer [AXIA-1.2011.1] [Warning: use only for test/demo apps]
+  load    - Load AXIA app
+  delete  - Delete AXIA app
+  version - Show AXIA app version
 ```
 
 Next, you must make sure your Ledger device is plugged in and unlocked and you're using the latest
@@ -74,39 +74,39 @@ firmware (1.6.1 at the time of writing). If everything is prepared, then type
 First it will prompt you to allow an unsafe manager - confirm this by switching the screen to the
 allow screen and pressing the corresponding buttons.
 
-After some processing time, the screen of your device will update to say "Install app AXIACoin".
+After some processing time, the screen of your device will update to say "Install app AXIA".
 Navigate all the way to the right, verify the Identifier hash matches the one that is printed in
 your terminal. Click both buttons on "Perform Installation" to install the application. It will ask
 again for your PIN code.
 
-At the end of the process you should have the newly installed AXIACoin application on the device.
+At the end of the process you should have the newly installed AXIA application on the device.
 
-## Using on AXIACoin-JS Apps
+## Using on AXIA-JS Apps
 
-> Note: Ledger Live should be off while using Ledger with AXIACoin JS Apps as it can interfere with
+> Note: Ledger Live should be off while using Ledger with AXIA JS Apps as it can interfere with
 > normal operation.
 
 ### Loading Your Account
 
-[AXIACoin-JS Apps][] already has an integration with the Ledger application so that your device will
+[AXIA-JS Apps][] already has an integration with the Ledger application so that your device will
 work with the browser interface after installation. The functionality is currently gated behind a
 feature setting that you will need to turn on.
 
-In order to turn on the interoperability with the AXIACoin Ledger application, go to the "Settings"
-tab in AXIACoin-JS Apps. Find the option for attaching Ledger devices and switch the option from the
+In order to turn on the interoperability with the AXIA Ledger application, go to the "Settings"
+tab in AXIA-JS Apps. Find the option for attaching Ledger devices and switch the option from the
 default "Do not attach Ledger devices" to "Attach Ledger via WebUSB". Be aware: if you are not
 seeing this it is because there is
-[no Ledger support](https://github.com/axiasolar-js/apps/issues/3771) on FireFox.
+[no Ledger support](https://github.com/AXIA-js/apps/issues/3771) on FireFox.
 
-![Dropdown selector for allowing Ledger connections in AXIACoinJS Settings](../assets/ledger.png)
+![Dropdown selector for allowing Ledger connections in AXIAJS Settings](../assets/ledger.png)
 
 Click "Save" to keep your settings.
 
 Now when you go to the "Accounts" tab you will see a new button that says "Add Ledger". Ensure that
-your Ledger device is unlocked and you have navigated into the AXIACoin application, then click this
+your Ledger device is unlocked and you have navigated into the AXIA application, then click this
 button.
 
-![Add Ledger button in AXIACoinJS](../assets/ledger/query-ledger.png)
+![Add Ledger button in AXIAJS](../assets/ledger/query-ledger.png)
 
 A popup will appear asking you to select an account and derivation path.
 
@@ -130,7 +130,7 @@ You should now be able to scroll down and find a new account on the page with th
 
 ![Displaying the Ledger account in the list](../assets/ledger/ledger-balance.png)
 
-You can now use this account to interact with AXIACoin on AXIACoin-JS Apps and it will prompt your
+You can now use this account to interact with AXIA on AXIA-JS Apps and it will prompt your
 ledger for confirmation when you initiate a transaction.
 
 ### Confirming the Address on your Device
@@ -139,20 +139,20 @@ On the "Accounts" tab, find your Ledger-connected account. Click on the three ve
 end of the row. This will open a new menu, here you can click the "Show address on hardware device"
 option to display the address on your device.
 
-![Options menu of an account in the Accounts screen of AXIACoinJS](../assets/ledger-4.png)
+![Options menu of an account in the Accounts screen of AXIAJS](../assets/ledger-4.png)
 
-Here you can scroll through and make sure the address matches to what is displayed on AXIACoin-JS
+Here you can scroll through and make sure the address matches to what is displayed on AXIA-JS
 Apps.
 
 ### Checking the Balance of Your Account
 
-There are a few methods to check the balance of your account. You can use AXIACoin-JS Apps or you
+There are a few methods to check the balance of your account. You can use AXIA-JS Apps or you
 can use a block explorer like [AXIAscan][] or [Subscan][].
 
-#### Using AXIACoin-JS Apps
+#### Using AXIA-JS Apps
 
 Once you have your account loaded on the "Accounts" tab it should show a row with your Ledger
-account. At the far right of the row is located your account's SOLAR balance. If you expand the
+account. At the far right of the row is located your account's AXC balance. If you expand the
 balance arrow, it will show details of your balance such as locks or reserved amounts.
 
 ![Account row showing empty balance](../assets/ledger/ledger-balance.png)
@@ -197,17 +197,17 @@ want to stake using an account stored on a Ledger device.
 Since Ledger does not support batch transactions, you must issue several extrinsics manually when you
 want remove expired democracy locks on an account stored on a Ledger device.
 
-- Go to https://axiasolar.js.org/apps/#/accounts. Look at your expired locks and note which referenda
+- Go to https://AXIA.js.org/apps/#/accounts. Look at your expired locks and note which referenda
   they were for.
-- Go to https://axiasolar.js.org/apps/#/extrinsics
+- Go to https://AXIA.js.org/apps/#/extrinsics
 - For each referendum with an expired lock, issue a "democracy.removeVote(X)" extrinsic, where X =
   the referendum you voted on and has an expired lock. Make sure you do it from the account with the
   expired locks - you can't do it from another account.
 - Once you have removed all of the votes, issue a "democracy.unlock(ACCOUNT)" extrinsic, where
   ACCOUNT is the account you just removed the votes from.
-- Go back to https://axiasolar.js.org/apps/#/accounts. You'll see that the locks are now removed.
+- Go back to https://AXIA.js.org/apps/#/accounts. You'll see that the locks are now removed.
 
-**NOTE**: Despite the AXIACoin ledger application being compatible with both the Ledger Nano S and the
+**NOTE**: Despite the AXIA ledger application being compatible with both the Ledger Nano S and the
 Ledger Nano X, none of the [Democracy](../maintain/maintain-guides-democracy.md) extrinsics are available in the
 light version. The following [repo by Zondax][] lists the currently supported Democracy extrinsics on
 the full ledger.
@@ -215,13 +215,13 @@ the full ledger.
 ## Support
 
 If you need support please send an email to
-[support@axiacoin.network](mailto:support@axiacoin.network) or visit our
-[Support Page](https://support.axiacoin.network).
+[support@AXIA.network](mailto:support@AXIA.network) or visit our
+[Support Page](https://support.AXIA.network).
 
 [ledger]: https://www.ledger.com/
-[repo by zondax]: https://github.com/Zondax/ledger-axiasolar#democracy
-[axiasolar-js apps]: https://axiasolar.js.org/apps
-[prerelease instructions]: https://github.com/Zondax/ledger-axiasolar#download-and-install
-[releases page]: https://github.com/Zondax/ledger-axiasolar/releases
-[axiascan]: https://axiascan.io/axiasolar
-[subscan]: https://axiasolar.subscan.io/
+[repo by zondax]: https://github.com/Zondax/ledger-AXIA#democracy
+[AXIA-js apps]: https://AXIA.js.org/apps
+[prerelease instructions]: https://github.com/Zondax/ledger-AXIA#download-and-install
+[releases page]: https://github.com/Zondax/ledger-AXIA/releases
+[axiascan]: https://axiascan.io/AXIA
+[subscan]: https://AXIA.subscan.io/

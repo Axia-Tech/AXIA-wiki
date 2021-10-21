@@ -29,7 +29,7 @@ of deployment.
   > interpretations under some systems or will be intentionally unsupported.
 
 - Still, XCM offers a format for _general_ systems, including gas-metered smart contract platform and community
-  parachains - all the way to trusted interactions between system parachains and their relay chain.
+  allychains - all the way to trusted interactions between system allychains and their relay chain.
   > Although, the format should not bake elements, such as fee payment, too deep and irreversibly in the protocol.
 
 ### General Use-Cases
@@ -50,9 +50,9 @@ of deployment.
 An ultra-high level non-Turing-complete computer whose instructions are designed in a way to be roughly at
 the same level as transactions.
 
-A _message_ in XCM is simply just a programme that runs on the `XCVM`: in other words, one or more XCM instructions. To learn more about the XCVM and the XCM Format, see the latest [blog post](https://medium.com/axiacoin.network/xcm-the-cross-consensus-message-format-3b77b1373392) by Dr. Gavin Wood.
+A _message_ in XCM is simply just a programme that runs on the `XCVM`: in other words, one or more XCM instructions. To learn more about the XCVM and the XCM Format, see the latest [blog post](https://medium.com/AXIA.network/xcm-the-cross-consensus-message-format-3b77b1373392) by Dr. Gavin Wood.
 
-      AXIACoin comes with three distinct systems for actually communicating XCM messages between
+      AXIA comes with three distinct systems for actually communicating XCM messages between
       its constituent chains.
 
 The following diagram shows the XCM tech stack:
@@ -63,22 +63,22 @@ The following diagram shows the XCM tech stack:
 
 There are two kinds of vertical message-passing transport protocols:
 
-- **UMP (Upward Message Passing)**: allows parachains to send messages to their relay chain.
+- **UMP (Upward Message Passing)**: allows allychains to send messages to their relay chain.
 - **DMP (Downward Message Passing)**: allows the relay chain to pass messages down to one of their
-  parachains.
+  allychains.
 
-Messages that are passed via `DMP` may originate from a parachain. In which case, first `UMP` is used to
-communicate the message to the Relay Chain and `DMP` is used to move it down to another parachain.
+Messages that are passed via `DMP` may originate from a allychain. In which case, first `UMP` is used to
+communicate the message to the Relay Chain and `DMP` is used to move it down to another allychain.
 
 ### XCMP (Cross-Chain Message Passing)
 
 The cross-chain message-passing transport protocol:
 
-- **XCMP** (Cross-Chain Message Passing): allows the parachains to send messages between themselves.
+- **XCMP** (Cross-Chain Message Passing): allows the allychains to send messages between themselves.
 
 Cross-chain transactions are resolved using a simple queuing mechanism based around a Merkle tree to
 ensure fidelity. It is the task of the Relay Chain validators to move transactions on the output
-queue of one parachain into the input queue of the destination parachain. However, only the
+queue of one allychain into the input queue of the destination allychain. However, only the
 associated metadata is stored as a hash in the Relay Chain storage.
 
 The input and output queue are sometimes referred to in the codebase and associated documentation as
@@ -93,21 +93,21 @@ architecture and design decisions are as follows:
 
 - Cross-chain messages will _not_ go on to the Relay Chain.
 - Cross-chain messages will be constrained to a maximum size in bytes.
-- Parachains are allowed to block messages from other parachains, in which case the dispatching
-  parachain would be aware of this block.
+- Allychains are allowed to block messages from other allychains, in which case the dispatching
+  allychain would be aware of this block.
 - Collator nodes are responsible for routing messages between chains.
 - Collators produce a list of "egress" messages and will receive the "ingress" messages from other
-  parachains.
-- On each block, parachains are expected to route messages from some subset of all other parachains.
+  allychains.
+- On each block, allychains are expected to route messages from some subset of all other allychains.
 - When a collator produces a new block to hand off to a validator, it will collect the latest
   ingress queue information and process it.
-- Validators will check the proof that the new candidate for the next parachain block includes the
-  processing of the expected ingress messages to that parachain.
+- Validators will check the proof that the new candidate for the next allychain block includes the
+  processing of the expected ingress messages to that allychain.
 
-XCMP queues must be initiated by first opening a channel between two parachains. The channel is
-identified by both the sender and recipient parachains, meaning that it's a one-way channel. A pair
-of parachains can have at most two channels between them, one for sending messages to the other
-chain and another for receiving messages. The channel will require a deposit in SOLAR to be opened,
+XCMP queues must be initiated by first opening a channel between two allychains. The channel is
+identified by both the sender and recipient allychains, meaning that it's a one-way channel. A pair
+of allychains can have at most two channels between them, one for sending messages to the other
+chain and another for receiving messages. The channel will require a deposit in AXC to be opened,
 which will get returned when the channel is closed.
 
 #### `XCMP-Lite (HRMP)`
@@ -127,39 +127,39 @@ For a description of the XCMP message format please see the [xcm-format][] repos
 
 #### How To Make `Cross-Chain Transfers`
 
-You can try out cross-chain transfers on the the [BetaNet](../build/build-parachains.md##testing-a-parachains:-betanet-testnet) testnet. A
+You can try out cross-chain transfers on the the [BetaNet](../build/build-allychains.md##testing-a-allychains:-betanet-testnet) testnet. A
 tutorial on downward, upward, and lateral transfers can be found
-[here](../build/build-parachains.md###how-to-make-cross-chain-transfers).
+[here](../build/build-allychains.md###how-to-make-cross-chain-transfers).
 
 #### `High-Level XCMP`
 
-A smart contract that exists on parachain A will route a message to parachain B in which another
+A smart contract that exists on allychain A will route a message to allychain B in which another
 smart contract is called that makes a transfer of some assets within that chain.
 
-Charlie executes the smart contract on parachain A, which initiates a new cross-chain message for
-the destination of a smart contract on parachain B.
+Charlie executes the smart contract on allychain A, which initiates a new cross-chain message for
+the destination of a smart contract on allychain B.
 
-The collator node of parachain A will place this new cross-chain message into its outbound messages
+The collator node of allychain A will place this new cross-chain message into its outbound messages
 queue, along with a `destination` and a `timestamp`.
 
-The collator node of parachain B routinely pings all other collator nodes asking for new messages
-(filtering by the `destination` field). When the collator of parachain B makes its next ping, it
-will see this new message on parachain A and add it into its own inbound queue for processing into
+The collator node of allychain B routinely pings all other collator nodes asking for new messages
+(filtering by the `destination` field). When the collator of allychain B makes its next ping, it
+will see this new message on allychain A and add it into its own inbound queue for processing into
 the next block.
 
-Validators for parachain A will also read the outbound queue and know the message. Validators for
-parachain B will do the same. This is so that they will be able to verify the message transmission
+Validators for allychain A will also read the outbound queue and know the message. Validators for
+allychain B will do the same. This is so that they will be able to verify the message transmission
 happened.
 
-When the collator of parachain B is building the next block in its chain, it will process the new
+When the collator of allychain B is building the next block in its chain, it will process the new
 message in its inbound queue as well as any other messages it may have found/received.
 
-During processing, the message will execute the smart contract on parachain B and complete the asset
+During processing, the message will execute the smart contract on allychain B and complete the asset
 transfer like intended.
 
 The collator now hands this block to the validator, which itself will verify that this message was
 processed. If the message was processed and all other aspects of the block are valid, the validator
-will include this block for parachain B into the Relay Chain.
+will include this block for allychain B into the Relay Chain.
 
 Check out our animated video below that explores how XCMP works.
 
@@ -174,12 +174,12 @@ doesn't support embedded videos. </video>
 
 ## Resources
 
-- [XCM: The Cross-Consensus Message Format](https://medium.com/axiacoin.network/xcm-the-cross-consensus-message-format-3b77b1373392) - Detailed blog post by Dr. Gavin Wood about the XCM Format.
+- [XCM: The Cross-Consensus Message Format](https://medium.com/AXIA.network/xcm-the-cross-consensus-message-format-3b77b1373392) - Detailed blog post by Dr. Gavin Wood about the XCM Format.
 - [XCM Format](https://github.com/axia-tech/xcm-format) - Description of the high-level XCM format
   sent via XCMP.
-- [XCMP Scheme](https://research.axiacoin.org/en/latest/axiasolar/XCMP.html) - Full technical
-  description of cross-chain communication on the AXIACoin Foundation research wiki.
-- [Messaging Overview](https://w3f.github.io/parachain-implementers-guide/messaging.html) - An
-  overview of the messaging schemes from the Parachain Implementor's guide.
+- [XCMP Scheme](https://research.AXIA.org/en/latest/AXIA/XCMP.html) - Full technical
+  description of cross-chain communication on the AXIA Foundation research wiki.
+- [Messaging Overview](https://w3f.github.io/allychain-implementers-guide/messaging.html) - An
+  overview of the messaging schemes from the Allychain Implementor's guide.
 
 [xcm-format]: https://github.com/axia-tech/xcm-format

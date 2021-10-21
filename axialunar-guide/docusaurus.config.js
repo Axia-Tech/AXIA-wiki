@@ -10,7 +10,7 @@ module.exports = {
   title: "Guide",
   titleDelimiter: "·",
   tagline: "One-stop-shop for AXIALunar information.",
-  url: "https://lunar.wiki.axiacoin.network",
+  url: "https://lunar.wiki.AXIA.network",
   baseUrl: "/",
   projectName: isPub ? "axialunar-guide-hosting" : "",
   organizationName: "w3f",
@@ -24,7 +24,7 @@ module.exports = {
       defer: true,
     },
     {
-      src: "https://apisa.axiacoin.org/latest.js",
+      src: "https://apisa.AXIA.org/latest.js",
       async: true,
       defer: true,
     },
@@ -49,12 +49,12 @@ module.exports = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           editUrl: ({ docPath }) => {
-            const githubDocPath = `https://github.com/axia-tech/axiasolar-wiki/edit/master/docs/`;
+            const githubDocPath = `https://github.com/axia-tech/AXIA-wiki/edit/master/docs/`;
             return githubDocPath + docPath.replace("mirror-", "");
           },
           path: "../docs",
           sidebarPath: "./sidebars.js",
-          remarkPlugins: [injectPlugin({ isAXIASolar: false })],
+          remarkPlugins: [injectPlugin({ isAXIA: false })],
         },
         theme: {
           customCss: [
@@ -111,7 +111,7 @@ module.exports = {
           dropdownItemsBefore: [],
           dropdownItemsAfter: [
             {
-              to: "https://crowdin.com/project/axiasolar-wiki",
+              to: "https://crowdin.com/project/AXIA-wiki",
               label: "Help us translate",
             },
           ],
@@ -120,7 +120,7 @@ module.exports = {
     },
     footer: {
       links: [],
-      copyright: `© ${new Date().getFullYear()} AXIACoin Foundation`,
+      copyright: `© ${new Date().getFullYear()} AXIA Foundation`,
       logo: {
         src: "img/AXIALunar_Canary_white.png",
       },

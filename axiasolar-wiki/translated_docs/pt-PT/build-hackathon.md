@@ -4,7 +4,7 @@ title: Hackathon
 sidebar_label: Hackathon
 ---
 
-As one of our objectives in the AXIACoin Foundation is pushing the [Web3 technology stack](http://wiki.axiacoin.org/en/latest/tech_stack/tech_stack_overview/), we would like to support any individual or team who wants to organize a hackathon that gets more developers to understand AXIASolar/Substrate in your city.
+As one of our objectives in the AXIA Foundation is pushing the [Web3 technology stack](http://wiki.AXIA.org/en/latest/tech_stack/tech_stack_overview/), we would like to support any individual or team who wants to organize a hackathon that gets more developers to understand AXIA/Substrate in your city.
 
 We are not only providing technical resources for you, but we can have someone from our team give a hands-on workshop/presentation about the technology to help participants get started hacking on it more quickly.
 
@@ -20,7 +20,7 @@ We are not only providing technical resources for you, but we can have someone f
 - Implement Generalized State Channel/Plasma Chain
 - Decentralized Exchange
 - Tools for monitoring validator performance
-- dApps across different parachains
+- dApps across different allychains
 
 ## Why you should host a hackathon?
 
@@ -60,4 +60,4 @@ Coming soon.
 
 ## Support / Contact
 
-If you have any questions regarding organizing a hackathon, please free feel to contact us by [email](mailto:events@axiacoin.org) or ask us via [Riot](https://riot.im/app/#/room/#axiasolar-watercooler:matrix.org) chat.
+If you have any questions regarding organizing a hackathon, please free feel to contact us by [email](mailto:events@AXIA.org) or ask us via [Riot](https://riot.im/app/#/room/#AXIA-watercooler:matrix.org) chat.
