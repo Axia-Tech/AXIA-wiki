@@ -135,7 +135,7 @@ There is an additional factor to consider in terms of rewards. While there is no
 of nominators a validator may have, a validator does have a limit to how many nominators to which it
 can pay rewards.
 
-In AXIA and AXIALunar, this limit is currently {{ AXIA\_max\_nominators }}, although this can be
+In AXIA , this limit is currently {{ AXIA\_max\_nominators }}, although this can be
 modified via runtime upgrade. A validator with more than {{ AXIA\_max\_nominators }} nominators is
 _oversubscribed_. When payouts occur, only the top {{ AXIA\_max\_nominators }} nominators as
 measured by amount of stake allocated to that validator will receive rewards. All other nominators
@@ -249,7 +249,7 @@ Once a validator gets slashed, it goes into the state as an "unapplied slash". Y
 via
 [AXIA-JS Apps](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/staking/slashes).
 The UI shows it per validator and then all the affected nominators along with the amounts. While
-unapplied, a governance proposal can be made to reverse it during this period (7 days on AXIALunar, 28
+unapplied, a governance proposal can be made to reverse it during this period (28
 days on AXIA). After the grace period, the slashes are applied.
 
 The following levels of offence are
@@ -386,12 +386,10 @@ already maxed out.
 
 ## Reward Distribution
 
-Note that AXIALunar runs approximately 4x as fast as AXIA, except for block production times.
-AXIA will also produce blocks at approximately six second intervals.
 
-Rewards are recorded per session (approximately one hour on AXIALunar and four hours on AXIA) and
-calculated per era (approximately six hours on AXIALunar and twenty-four hours on AXIA). Thus,
-rewards will be calculated four times per day on AXIALunar and once per day on AXIA.
+Rewards are recorded per session (approximately four hours on AXIA) and
+calculated per era (approximately twenty-four hours on AXIA). Thus,
+rewards will be calculated once per day on AXIA.
 
 Rewards are calculated based on era points, which have a probabilistic component. In other words,
 there may be slight differences in your rewards from era to era, and even amongst validators in the
@@ -400,8 +398,8 @@ page on [Validator Payout Guide](../maintain/maintain-guides-validator-payout.md
 these are calculated.
 
 In order to be paid your staking rewards, someone must claim them for each validator that you
-nominate. Staking rewards are kept available for 84 eras, which is approximately 84 days on AXIA
-and 21 days on AXIALunar. For more information on why this is so, see the page on
+nominate. Staking rewards are kept available for 84 eras, which is approximately 84 days on AXIA. 
+For more information on why this is so, see the page on
 [simple payouts](learn-simple-payouts.md).
 
 > WARNING: If nobody claims your staking rewards by this time, then you will not be able to claim
@@ -476,7 +474,7 @@ the distribution of the inflation to validators/nominators versus the treasury w
 dynamically to provide incentives to participate (or not participate) in staking.
 
 For instance, assuming that the ideal staking rate is 50%, all of the inflation would go to the
-validators/nominators if 50% of all LUNAR / AXC are staked. Any deviation from the 50% - positive or
+validators/nominators if 50% of all AXC are staked. Any deviation from the 50% - positive or
 negative - sends the proportional remainder to the treasury and effectively reduces staking rewards.
 
 For those who are interested in knowing more about the design of inflation model for the network,
@@ -491,7 +489,7 @@ please see
 
 ## Why not stake?
 
-- Tokens will be locked for about 28 days on AXIA after unbonding, seven days on AXIALunar.
+- Tokens will be locked for about 28 days on AXIA after unbonding.
 - Punishment in case of validator found to be misbehaving (see [#slashing](#slashing)).
 - You want to use the tokens for a allychain slot.
 
@@ -500,8 +498,7 @@ please see
 AXIA started with 20 open validator positions and has increased gradually to 297. The top bound
 on the number of validators has not been determined yet, but should only be limited by the bandwidth
 strain of the network due to peer-to-peer message passing. The estimate of the number of validators
-that AXIA will have at maturity is around 1000. AXIALunar, AXIA's canary network, currently has
-900 validator slots in the active set.
+that AXIA will have at maturity is around 1000.
 
 ## Motion #103: New Minimum Nomination Bond
 

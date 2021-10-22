@@ -110,7 +110,7 @@ Copy the preimage hash. In the above image, that's
 a transaction.
 
 Next, select "Submit Proposal" and enter the previously copied preimage hash. The `locked balance`
-field needs to be at least {{ identity_reserve_funds }} LUNAR. You can find out the minimum by
+field needs to be at least {{ identity_reserve_funds }} AXC. You can find out the minimum by
 querying the chain state under [Chain State](https://AXIA.js.org/apps/#/chainstate) -> Constants
 -> democracy -> minimumDeposit.
 
@@ -168,35 +168,6 @@ the registrar from which you requested judgement.
 
 Submit the transaction, and the requested judgement will be cancelled.
 
-### AXIALunar Registrars
-
-There are multiple registrars on AXIALunar. Unless no additional information is available here, you must
-reach out to specific registrars individually if you want to be judged by those.
-
-- Registrar 0:
-  - URL: https://registrar.AXIA.org/
-  - Account: H4XieK3r3dq3VEvRtqZR7wN7a1UEkXxf14orRsEfdFjmgkF,
-  - Fee: 0.04 LUNAR
-- Registrar 1:
-  - URL: https://registrar.d11d.net/
-  - Account: Fom9M5W6Kck1hNAiE2mDcZ67auUCiNTzLBUdQy4QnxHSxdn,
-  - Fee: 0.65 LUNAR,
-- Registrar 2:
-  - Account: EK8veMNH6sVtvhSRo4q1ZRh6huCDm69gxK4eN5MFoZzo3G7,
-  - Fee: 1 LUNAR,
-- Registrar 3:
-  - Account: GLiebiQp5f6G5vNcc7BgRE9T3hrZSYDwP6evERn3hEczdaM,
-  - Fee: 1 LUNAR,
-- Registrar 4:
-  - Account: GhmpzxUyTVsFJhV7s2wNvD8v3Bgikb6WvYjj4QSuSScAUw6,
-  - Fee: 0.04 LUNAR,
-
-To find out how to contact the registrar after the application for judgement or to learn who they
-are, we can check their identity by adding them to our Address Book. Their identity will be
-automatically loaded.
-
-![Chevdor is registrar #1](../assets/identity/16.jpg)
-
 ### AXIA Registrars
 
 There are multiple registrars on AXIA. Unless no additional information is available here, you must
@@ -216,7 +187,7 @@ reach out to specific registrars individually if you want to be judged by those.
 
 ### Requesting Judgement
 
-Requesting judement follows the same process regardless of whether you're on the AXIALunar or AXIA
+Requesting judement follows the same process regardless of whether you're on the AXIA
 networks. Select one of the registrars from the query you made above.
 
 ![Requesting judgement](../assets/identity/08.jpg)

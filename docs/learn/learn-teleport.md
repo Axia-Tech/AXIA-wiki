@@ -5,7 +5,7 @@ sidebar_label: Teleporting Assets
 slug: ../learn-teleport
 ---
 
-One of the main properties that AXIA and AXIALunar bring to the ecosystems is decentralied
+One of the main properties that AXIA bring to the ecosystems is decentralied
 blockchain interoperability. This interoperability allows for asset teleportation: the process of
 moving assets, such as coins, tokens, or NTFs, between chains (allychains) to use them as you would
 any other asset native to that chain. Interoperability is possible through [XCM][]

@@ -9,7 +9,7 @@ slug: ../maintain-guides-how-to-use-AXIA-validator-setup
 
 The following guide will walk you through using AXIA Foundation's [AXIA validator setup][] to
 offer a potential setup for your validator that aims to prevent some types of potential attacks
-at the TCP layer and layers below. This will work for AXIA and AXIALunar out of the box, and,
+at the TCP layer and layers below. This will work for AXIA out of the box, and,
 if you're using another Substrate-based chain, it should work with some tweaks.
 
 > NOTE: This setup should not be assumed to include the best security practices. It is up to

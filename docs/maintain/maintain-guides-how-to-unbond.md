@@ -37,8 +37,7 @@ Select the amount you wish to unbond and click Unbond, then confirm the transact
 your balance will show as "unbonding" with an indicator of how many more blocks remain until the
 amount is fully unlocked.
 
-This duration varies depending on the network you're on and will typically be four times as fast on
-AXIALunar as it is on AXIA. The unbounding period is 28 days on AXIA, and 7 on AXIALunar.
+This duration varies depending on the network. The unbounding period is 28 days on AXIA.
 
 Once this process is complete, you will have to issue another, final transaction: Withdraw Unbonded,
 which will be available in the same pop-up. You can also check how long you have to wait in order to

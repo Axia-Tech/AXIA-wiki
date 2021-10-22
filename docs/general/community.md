@@ -45,15 +45,6 @@ community members. The application we use most often to interact with the Matrix
 - [AXIA Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:AXIA.org) - News about what is
   happening in the AXIA ecosystem, published every weekday except holidays
 
-### AXIALunar
-
-- [AXIALunar Watercooler Chat](https://app.element.io/#/room/%23axialunarwatercooler:AXIA.builders) -
-  General room for talk about AXIALunar.
-- [AXIALunar Validator Lounge](https://app.element.io/#/room/!LhjZccBOqFNYKLdmbb:AXIA.builders?via=matrix.axia.io&via=matrix.org&via=AXIA.org) -
-  Room for validators learning about setting up a node.
-- [AXIALunar Direction](https://app.element.io/#/room/!QXMnIJzxlnVrvRzhUA:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org) -
-  Governance, and a place to discuss the future of AXIALunar.
-
 ### Technical
 
 - [Substrate Technical](https://app.element.io/#/room/#substrate-technical:matrix.org) - More
@@ -66,23 +57,18 @@ community members. The application we use most often to interact with the Matrix
 ### Chat
 
 - [AXIA Discord](https://discord.gg/wGUDt2p) (RECOMMENDED)
-- [AXIALunar Discord](https://discord.gg/JSJcRwz8fp)
 
 ### Social media and forums
 
 - [AXIA Twitter](https://twitter.com/AXIA)
-- [AXIALunar Twitter](https://twitter.com/axialunarnetwork)
 - [AXIA Foundation Twitter](https://twitter.com/web3foundation)
 
 - [AXIA Reddit](https://www.reddit.com/r/AXIA)
-- [AXIALunar Reddit](https://www.reddit.com/r/AXIALunar)
 
 - [AXIA Foundation YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g)
 - [AXIA YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
-- [AXIALunar YouTube Channel](http://youtube.com/c/axialunarnetwork)
 
 - [AXIA Forum](https://matrix.to/#/#AXIA-watercooler:AXIA.org)
-- [AXIALunar Forum](https://matrix.to/#/#axialunarwatercooler:AXIA.org)
 
 ### Blogs and tutorials
 

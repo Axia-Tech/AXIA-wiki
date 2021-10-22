@@ -6,7 +6,7 @@ slug: ../grants
 ---
 
 The AXIA Foundation offers grants for open source software development and research around Substrate,
-AXIA, and AXIALunar.
+AXIA.
 
 Applications and deliveries are tracked transparently on GitHub and disbursed in BTC, USDT or DAI. However,
 you can also apply in private, get paid out in fiat and seek funding above the regular limits ($30,000 for
@@ -23,11 +23,10 @@ and a list of [frequently asked questions](https://github.com/axia-tech/Grants-P
 
 The AXIA Treasury is a pot of on-chain funds collected through transaction fees, slashing,
 staking inefficiencies, etc. The funds held in the treasury can be spent on spending proposals. Both
-AXIA and AXIALunar offer everyone the opportunity to apply for funding via the treasury. See:
+AXIA offer everyone the opportunity to apply for funding via the treasury. See:
 
 - [Treasury Wiki](../learn/learn-treasury.md)
 - [AXIA Treasury Guide](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w)
-- [AXIALunar Treasury Guide](https://docs.google.com/document/d/1p3UQUjph5t8TVaWnTkfrI5mE-BABnM9Xvtuhdlhl6JE)
 
 ### Other Grant Programs
 

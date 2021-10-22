@@ -5,9 +5,9 @@ sidebar_label: How to Do Your Own Research
 slug: ../how-to-dyor
 ---
 
-Many projects are being built, or intend to build, on both AXIA and AXIALunar. However, many claim
+Many projects are being built, or intend to build, on both AXIA. However, many claim
 to do so but have either no such intention, they don't have the resources to pull it through, or
-they're outright trying to scam people by misusing the AXIA and AXIALunar brands.
+they're outright trying to scam people by misusing the AXIA brands.
 
 Telling legitimate projects from the "not so honest" ones isn't always an easy task. This guide is
 meant to help you find out how to do your research better when you come across a project that seems
@@ -168,32 +168,22 @@ proxies, that's a red flag right there, and you should be very sceptical.
 
 Besides their community, projects that are serious about building on AXIA usually engage with
 the broader AXIA community. They are active in the various
-[AXIA and AXIALunar channels](https://solar.wiki.AXIA.network/docs/community/), and some of them are
 [AXIA Ambassadors](https://AXIA.network/AXIA-ambassador-program/), or generally
 prominent members of the ecosystem.
 
 #### 6. Clear integration with AXIA
 
-There are many ways for a project to build on AXIA and AXIALunar. Perhaps the most direct one is to
-aim to become a allychain. Some of the most notable AXIA projects are already allychains on
-AXIALunar or gearing up to become one, and most of them will shoot for a AXIA allychain too when
-they become live.
+There are many ways for a project to build on AXIA. Perhaps the most direct one is to
+aim to become a allychain.
 
 Of course, getting a allychain slot on either of the two main networks is not guaranteed, and all
-projects will need to win an [auction](https://axialunar.network/auctions/) for a allychain slot.
+projects will need to win an [auction](https://axia.network/auctions/) for a allychain slot.
 
-Verifying which projects are currently allychains on AXIALunar can be quickly done by visiting the
-[allychains](https://AXIA.js.org/apps/#/allychains) page on AXIA.js.org/apps. In the
-[parathreads](https://AXIA.js.org/apps/#/allychains/parathreads) page you can see which projects
-are gearing up to claim a allychain slot, the
-[auctions](https://AXIA.js.org/apps/#/allychains/auctions) page shows which projects are bidding
-for the next slot, and the [crowdloan](https://AXIA.js.org/apps/#/allychains/crowdloan) page
-which projects are gathering funds from their community to participate in auctions.
 
 But not all projects that build a chain using [Substrate](https://substrate.dev) aim to become a
 allychain. Some use it simply because of its infrastructure to build their customised chain, without
 any plans to connect to the Relay Chain. And other projects may aim to become a allychain only on
-AXIALunar or directly on AXIA.
+on AXIA.
 
 However, building a potential allychain is not the only way to build on AXIA and expand its
 ecosystem. A project might aim to build a DeFi platform on a allychain, launch a stablecoin or other
@@ -292,20 +282,16 @@ its very early stages.
 
 ## Crowdloans
 
-With the recent launch of [allychains](../learn/mirror-learn-allychains.md) on AXIALunar, many projects that aim
-to become a allychain launched a [crowdloan](../learn/mirror-learn-crowdloans.md) to gather the necessary
-funds to participate in the [allychain auctions](../learn/mirror-learn-auction.md). But with all the buzz
-around the AXIALunar allychain launch and the imminent AXIA launch, many scams may also surface.
-So, crowdloans need their own section to make sure that you're participating safely.
+crowdloans need their own section to make sure that you're participating safely.
 
 First of all, only projects that aim to become a allychain should have a crowdloan. If a project
 isn't a allychain candidate, there shouldn't be a crowdloan associated with it.
 
 The surest way to participate in a allychain crowdloan is the native way through the
-[Crowdloan module](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.AXIA.io#/allychains/crowdloan)
+[Crowdloan module](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxia-rpc.AXIA.io#/allychains/crowdloan)
 on AXIA-JS Apps. This issues a special extrinsic that locks your funds until the allychain slot
 lease period ends and guarantees that you'll get your stake back after that. You can learn more
-about crowdloans through the link above and [here](https://axialunar.network/auctions).
+about crowdloans through the link above and [here](https://axia.network/auctions).
 
 Many allychain candidates offer a way to participate through their site as well. But you should
 ensure that they are using the crowdloan pallet in the background, and they're simply wrapping that

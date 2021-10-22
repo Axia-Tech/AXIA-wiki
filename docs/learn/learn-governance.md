@@ -44,8 +44,7 @@ Referenda can be started in one of several ways:
 
 All referenda have an _enactment delay_ associated with them. This is the period between the
 referendum ending and, assuming the proposal was approved, the changes being enacted. For the first
-two ways that a referendum is launched, this is a fixed time. For AXIALunar, it is 8 days; in AXIA,
-it is 28 days. For the third type, it can be set as desired.
+two ways that a referendum is launched, this is a fixed time. For AXIA, it is 28 days. For the third type, it can be set as desired.
 
 Emergency proposals deal with major problems with the network that need to be "fast-tracked". These
 will have a shorter enactment time.
@@ -80,7 +79,7 @@ referendum in progress.
 
 #### Voting Timetable
 
-Every 28 days on AXIA or 7 days on AXIALunar, a new referendum will come up for a vote, assuming
+Every 28 days on AXIA, a new referendum will come up for a vote, assuming
 there is at least one proposal in one of the queues. There is a queue for Council-approved proposals
 and a queue for publicly submitted proposals. The referendum to be voted upon alternates between the
 top proposal in the two queues.
@@ -231,7 +230,7 @@ double.
 |      32      |        6        |
 
 The maximum number of "doublings" of the lock period is set to 6 (and thus 32 lock periods in
-total), and one lock period equals 28 days on AXIA and 8 days on AXIALunar. Only doublings are
+total), and one lock period equals 28 days on AXIA. Only doublings are
 allowed; you cannot lock for, say, 24 periods and increase your conviction by 5.5, for instance.
 
 While a token is locked, you can still use it for voting and staking; you are only prohibited from
@@ -280,7 +279,7 @@ To represent passive stakeholders, AXIA introduces the idea of a "council". The 
 on-chain entity comprising several actors, each represented as an on-chain account. On AXIA, the
 council currently consists of 13 members. This is expected to increase over the next few months to
 24 seats. In general, the council will end up having a fixed number of seats. On AXIA, this will
-be 24 seats while on AXIALunar it is 19 seats.
+be 24 seats.
 
 Along with [controlling the treasury](learn-treasury.md), the council is called upon primarily for
 three tasks of governance: proposing sensible referenda, cancelling uncontroversially dangerous or
@@ -332,11 +331,11 @@ All stakeholders are free to signal their approval of any of the registered cand
 Council elections are handled by the same [Phragmén election](learn-phragmen.md) process that
 selects validators from the available pool based on nominations. However, token holders' votes for
 councillors are isolated from any of the nominations they may have on validators. Council terms last
-for one day on AXIALunar and one week on AXIA.
+for one week on AXIA.
 
 At the end of each term, [Phragmén election algorithm](learn-phragmen.md) runs and the result will
 choose the new councillors based on the vote configurations of all voters. The election also chooses
-a set number of runners up (currently 19 on AXIALunar and 20 on AXIA) that will remain in the queue
+a set number of runners up (currently 20 on AXIA) that will remain in the queue
 with their votes intact.
 
 As opposed to a "first-past-the-post" electoral system, where voters can only vote for a single
@@ -392,13 +391,6 @@ prime.
 
 ## Technical Committee
 
-The Technical Committee was introduced in the
-[AXIALunar rollout and governance post](https://AXIA.network/axialunar-rollout-and-governance/) as one
-of the three chambers of AXIALunar governance (along with the Council and the Referendum chamber). The
-Technical Committee is composed of the teams that have successfully implemented or specified either
-a AXIA/AXIALunar runtime or AXIA Host. Teams are added or removed from the Technical Committee
-via a simple majority vote of the [Council](#council).
-
 The Technical Committee can, along with the Council, produce emergency referenda, which are
 fast-tracked for voting and implementation. These are used for emergency bug fixes or rapid
 implementation of new but battle-tested features into the runtime.
@@ -439,7 +431,7 @@ is your responsibility to make a strong case for why the change should be made.
 - [Governance Demo](https://www.youtube.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734) - Dr.
   Gavin Wood presents the initial governance structure for AXIA. (Video)
 - [Governance on AXIA](https://www.crowdcast.io/e/governance-on-AXIA--) - A webinar
-  explaining how governance works in AXIA and AXIALunar.
+  explaining how governance works in AXIA.
 
 [AXIA direction]: https://matrix.to/#/!OwgojQyBzTlUQGGLhq:matrix.axia.io
 [axiassembly]: https://AXIA.axiassembly.io/

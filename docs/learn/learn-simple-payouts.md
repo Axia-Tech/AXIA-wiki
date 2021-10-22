@@ -5,7 +5,7 @@ sidebar_label: Simple Payouts
 slug: ../learn-simple-payouts
 ---
 
-AXIA and AXIALunar make stakers claim their rewards for past eras by submitting a transaction. This
+AXIA make stakers claim their rewards for past eras by submitting a transaction. This
 naturally leads to spreading out reward distribution, as people make transactions at disparate
 times, rather than updating the accounts of all stakers in a single block.
 
@@ -64,8 +64,7 @@ transaction.
 
 ## F.A.Q. and Cautionary Notes
 
-1. Rewards expire after 84 eras. On AXIA, that's about 84 days. On AXIALunar, it is approximately
-   21 days. Validators should claim all pending rewards before killing their stash in the event the
+1. Rewards expire after 84 eras. On AXIA, that's about 84 days .Validators should claim all pending rewards before killing their stash in the event the
    validator decides to `chill` -> `unbonds all` -> `withdraws unbonded`. Nominators will not miss
    out on rewards if they claim the pending rewards for a validator within 28 days. Essentially, the
    deadline to ensure you get staking rewards is 28 eras. If the validator verifies its intent and

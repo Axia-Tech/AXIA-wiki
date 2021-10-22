@@ -44,7 +44,6 @@ There is no central authority that decides on validators, so there is not per se
 that you can fill out. Registering as a validator is permissionless; in order to become one you must
 only set up a validator node and mark your intention to validate on chain. For detailed instruction
 on how to do this you can consult the
-[AXIALunar validator guide](../maintain/axialunar/maintain-guides-how-to-validate-axialunar.md) on validating for AXIALunar or the
 [AXIA validator guide](../maintain/maintain-guides-how-to-validate-AXIA.md) for validating on AXIA.
 
 However, once you've set up a validator and have registered your intention it does not mean that you
@@ -84,9 +83,6 @@ You can also use some tools some to perform estimations.
   can provide exact results of running an election on the current set of validators using the same
   Rust code that is ran in AXIA.
 
-- [Validator stats script](https://github.com/ansonla3/axialunar-validator-stats) can give you an
-  estimate that is based on the currently elected set, as well as some statistics about AXIALunar
-  validators.
 
 ### Why will AXIA have only 1000 validators while other projects have hundreds of thousands?
 
@@ -118,7 +114,7 @@ still share in staking rewards.
 
 ### What is the block time of the Relay Chain?
 
-Both the AXIALunar and AXIA networks are currently operating at a rate of one block every six
+The AXIA networks are currently operating at a rate of one block every six
 seconds.
 
 This may be changed in the future. It may go as low as two to three seconds after optimizations, or
@@ -173,7 +169,7 @@ based on the amount of AXC that are staked. Please see the article on
 
 AXIA's governance has already been shown to work. Examples can be found in the runtime upgrades
 that have successfully taken place through on the testnets as well as in a real economic environment
-on [AXIALunar](https://lunar.wiki.AXIA.network) and AXIA itself.
+on AXIA itself.
 
 It is fair to say that the field of on-chain blockchain governance is still new, and no one can
 claim to know exactly what the optimal version of on-chain governance is yet. However, AXIA
@@ -267,21 +263,7 @@ the technology stack. Although both IPFS and Substrate use libp2p, it cannot be 
 "uses" IPFS since besides sharing the underlying library for networking there is no native
 integration between the two applications.
 
-## AXIALunar
 
-### What is the minimum amount of LUNAR / AXC I can have in my account?
-
-Please see information about [Existential Deposits](../build/build-protocol-info.md).
-
-### What are the transfer fees for AXIALunar?
-
-It is important to note that the cost of transferring LUNAR is dynamic. Currently, the minimum cost of
-transferring LUNAR is 0.01 LUNAR (the base fee), although this can be changed via governance. However,
-actual transaction fees will vary based on a variety of factors. Specifically, fee calculation
-follows the following formula:
-
-```
-base_fee + (tx_length * length_fee) + WeightToFee(weight)
 ```
 
 Please see the [fee calculation](https://substrate.dev/docs/en/knowledgebase/runtime/fees) page in

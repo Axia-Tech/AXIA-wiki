@@ -159,7 +159,7 @@ VPNs, network segmentation, proxies, or other layers separation.
 
 #### Upgrading
 
-Both AXIA and AXIALunar releases are published
+The AXIA releases are published
 [here](https://github.com/axia-tech/AXIA/releases). Validators are expected to upgrade their
 nodes as soon as a new release comes out. Although not every release is mandatory to upgrade to,
 each new release usually has bug fixes, optimizations, new features, or other beneficial changes.

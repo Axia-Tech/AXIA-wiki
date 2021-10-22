@@ -7,7 +7,7 @@ slug: ../contributors
 
 ## Current Contributors
 
-The following is a list of regular contributors to the AXIA Wiki and AXIALunar Guide. Each
+The following is a list of regular contributors to the AXIA Wiki Guide. Each
 contributor's contact information is listed as a precaution - if one of these people ever contacts
 you directly, first check the contact information to see that it matches the origin of the message,
 and then feel free to get in touch with someone else on this list to verify the legitimacy of the

@@ -31,16 +31,9 @@ contact the developers of that wallet.
 
 ### Treasury Funded Wallets
 
-These are wallets which have been supported by either the AXIA or AXIALunar Treasury via Treasury Proposal. Links in the Proposals section go to the AXIAssembly post where the Treasury Proposal was discussed.
+These are wallets which have been supported by either the AXIA Treasury via Treasury Proposal.
 
-| Wallet Name                                   | Proposals                                                                                                                                                                                           | Development State | Team Name      | Description  | Custody       | Supports |
-| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------------- | ------------ | ------------- | -------- |
-| [Fearless Wallet](https://fearlesswallet.io/) | [1](https://axialunar.axiassembly.io/treasury/23), [2](https://axialunar.axiassembly.io/treasury/34), [3](https://axialunar.axiassembly.io/treasury/74), [4](https://axialunar.axiassembly.io/treasury/102) | Live              | SORAMITSU      | iOS, Android | Non-custodial | Staking  |
-| [Klever](https://klever.io/)                  | [1](https://axialunar.axiassembly.io/treasury/91)                                                                                                                                                     | Live              | Klever         | iOS, Android | Non-custodial | Staking  |
-| [AXIAwallet](https://axiawallet.io/)        | [1](https://axialunar.axiassembly.io/treasury/32), [2](https://axialunar.axiassembly.io/treasury/41)                                                                                                    | Live              | AXIAwallet    | iOS, Android | Non-custodial | Staking  |
-| [Stylo](https://stylo-app.com/)               | [1](https://AXIA.axiassembly.io/treasury/39)                                                                                                                                                   | Live              | Thibaut Sardan | Android      | Non-custodial | Staking  |
-
-> NOTE: these third-party wallets have been funded by the community through either the AXIA or AXIALunar [Treasury](learn-treasury). **Web 3.0 Technologies Foundation does not endorse these wallets, and you should use your own due diligence in researching them.** The official AXIA Support cannot provide support for issues with these wallets or other non-AXIA developed wallets.
+> NOTE: these third-party wallets have been funded by the community through either the AXIA  [Treasury](learn-treasury). **Web 3.0 Technologies Foundation does not endorse these wallets, and you should use your own due diligence in researching them.** The official AXIA Support cannot provide support for issues with these wallets or other non-AXIA developed wallets.
 
 ## Encryption Enhancement
 

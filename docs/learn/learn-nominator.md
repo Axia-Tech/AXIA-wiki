@@ -20,7 +20,7 @@ While your AXC are staked by nominating a validator, they are 'locked' (bonded).
 AXC in your account but you cannot stake as validator or transfer AXC away from your account. You
 can [un-nominate at any time](../maintain/maintain-guides-how-to-unbond.md) to stop staking your funds. Keep in
 mind that the un-nomination is effective in the next era, and that un-nominating does not
-automatically unbond your funds. There is an unbonding period of 7 days on AXIALunar and 28 days on
+automatically unbond your funds. There is an unbonding period of 28 days on
 AXIA before bonded funds can be transferred after issuing an unbond transaction.
 
 ### Active vs. Inactive Nomination
@@ -28,7 +28,7 @@ AXIA before bonded funds can be transferred after issuing an unbond transaction.
 When you go to the [Account actions](https://AXIA.js.org/apps/#/staking/actions) under staking
 page, you should see your bonded accounts and nomination status. If not, you can follow
 [this](../maintain/maintain-guides-how-to-nominate-AXIA.md) guide to configure it first. Your nominations
-will be effective in the next era; eras are roughly 6 hours on AXIALunar and 24 hours on AXIA.
+will be effective in the next era; eras are roughly 24 hours on AXIA.
 
 ![Nominations](../assets/staking/AXIAjs_nominator_account.png)
 
@@ -186,16 +186,10 @@ your nomination earn you rewards. You can read the blog post
 ["AXIA Staking: An Update"](https://AXIA.network/AXIA-staking-an-update/) for more
 details.
 
-> These concepts have been further explained in the
-> [Why Nominate on AXIA & AXIALunar video](https://www.youtube.com/watch?v=weG_uzdSs1E&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=4)
-> and
-> [What to Consider when Nominating Validators on AXIA and AXIALunar](https://www.youtube.com/watch?v=K-a4CgVchvU&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=9)
-> and
-> [Nominating/Staking on AXIA and AXIALunar](https://www.youtube.com/watch?v=NYs9oWAbzbE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=14)
 
 ### Guides
 
 - [Be a Nominator (AXIA)](../maintain/maintain-guides-how-to-nominate-AXIA.md) - Guide on nominating on
-  the AXIALunar canary network.
+  the AXIA network.
 - [Stop Being a Nominator (all networks)](../maintain/maintain-guides-how-to-unbond.md) - Guide on stopping
   nominations and withdrawing tokens.

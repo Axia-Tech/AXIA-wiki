@@ -80,7 +80,7 @@ with anonymous proxies; once you remove the proxy relationship, the account will
 ### Time Delayed Proxies
 
 We can add an additional layer of security to proxies by giving them a delay time. The delay will be
-quantified in number of blocks (blockNumber). AXIA and AXIALunar both have
+quantified in number of blocks (blockNumber). AXIA has
 {{ block_target_in_seconds }} second blocks, hence a delay value of 10 will mean 10 blocks which
 will equal 1 minute of delay. The proxy will announce it's intended action and wait for the number
 of blocks defined in the delay time before executing it. The proxy will include the hash of the
@@ -195,7 +195,7 @@ The following steps can be used to remove your proxy:
 
 To view your proxy, head over to the Chain State (underneath "Developer") page on
 [AXIA-JS Apps](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/chainstate). If
-you've created your proxy on a AXIALunar account, it is required to change your network accordingly
+you've created your proxy on a AXIA account, it is required to change your network accordingly
 using the top left navigation button. On this page, the proxy pallet should be selected, returning
 the announcements and proxies functions. The proxies function will allow you to see your created
 proxies for either one account or for all accounts (using the toggle will enable this). Proxy
@@ -228,7 +228,7 @@ participate in a network.
 
 ## Proxy Deposits
 
-Proxies require deposits in the native currency (i.e. AXC or LUNAR) in order to be created. The
+Proxies require deposits in the native currency (i.e. AXC) in order to be created. The
 deposit is required because adding a proxy requires some storage space on-chain, which must be
 replicated across every peer in the network. Due to the costly nature of this, these functions could
 open up the network to a Denial-of-Service attack. In order to defend against this attack, proxies

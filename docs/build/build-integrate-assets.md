@@ -5,9 +5,8 @@ sidebar_label: Integrating Assets
 slug: ../build-integrate-assets
 ---
 
-The AXIA Relay Chain does not natively support assets beyond AXC (likewise, LUNAR for AXIALunar).
-This functionality exists in allychains. On AXIA, this allychain is called Statemint, and on
-AXIALunar it is called Statemine. All information in this guide applies equally to AXIALunar/Statemine.
+The AXIA Relay Chain does not natively support assets beyond AXC.
+This functionality exists in allychains. On AXIA, this allychain is called Statemint.
 
 Statemint provides a first-class interface for creating, managing, and using both fungible and
 non-fungible assets. The fungible interface is similar to Ethereum's ERC-20 standard. However, the
@@ -28,7 +27,7 @@ Statemint will use AXC as its native currency. Users can transfer AXC from the R
 Statemint and use it natively. The Relay Chain will also accept AXC transfers from Statemint back to
 the Relay Chain to use for staking, governance, or any other activity taking place there.
 
-Using Statemint for AXC/LUNAR balance transfers will be much more efficent than the Relay Chain and is
+Using Statemint for AXC balance transfers will be much more efficent than the Relay Chain and is
 highly recommended. Until domain specific allychains are built, the Relay Chain will still need to
 be used for staking and governance.
 
@@ -43,9 +42,9 @@ Additionally, the asset owner can register metadata like the name, symbol, and n
 for representation.
 
 Some assets, as determined by on-chain governance, are regarded as “sufficient”. Sufficiency means
-that the asset balance is enough to create the account on-chain, with no need for the AXC/LUNAR
+that the asset balance is enough to create the account on-chain, with no need for the AXC
 existential deposit. Likewise, you cannot send a non-sufficient asset to an account that does not
-exist. Sufficient assets can be used to pay transaction fees (i.e. there is no need to hold AXC/LUNAR
+exist. Sufficient assets can be used to pay transaction fees (i.e. there is no need to hold AXC
 on the account).
 
 Assets do have a minimum balance (set by the creator), and if an account drops below that balance,
@@ -71,25 +70,19 @@ Note that you can use the same addresses (except anonymous proxies!) on Statemin
 the Relay Chain. The SS58 encodings are the same, only the chain information (genesis hash, etc.)
 will change on transaction construction.
 
-### Transferring Assets
-
-Using Statemine, assets can be easily created and also transacted with.
-
-> Statemine has an existential deposit equal to 1/10th of AXIALunar's, so you'll need to teleport `0.000003333 LUNAR` (+ tx fees) to Statemine.
-
 #### Receiving:
 
 You can use the same account on both networks and both will use the same `pubkey`.
 The network IDs change, so your address will look different. At the moment, assets are not
-visible on the Accounts page; you will need to visit the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) under the `Network` tab on Statemine to receive assets.
+visible on the Accounts page; you will need to visit the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxia-statemine-rpc.axia-tech.net#/assets) under the `Network` tab on Statemine to receive assets.
 
 ![statemine asset examples](../assets/statemine-asset-examples.png)
 
 #### Sending:
 
-Similarly, head over to the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
+Similarly, head over to the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxia-statemine-rpc.axia-tech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
 
-> Sending the asset follows the same transaction scheme as sending LUNAR (or AXC).
+> Sending the asset follows the same transaction scheme as sending AXC.
 
 ## Integration
 

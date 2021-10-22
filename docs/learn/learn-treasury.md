@@ -17,9 +17,7 @@ without running out of funds.
 If the Treasury ends a budget period without spending all of its funds, it suffers a burn of a
 percentage of its funds -- thereby causing deflationary pressure.
 {{ AXIA: This percentage is currently at 1%
-on AXIA. :AXIA }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to
-[Society](https://lunar.wiki.AXIA.network/docs/maintain-guides-society-axialunar) rather than being
-burned. :axialunar }}
+on AXIA. :AXIA }}.
 
 When a stakeholder wishes to propose a spend from the Treasury, they must reserve a deposit of at
 least 5% of the proposed spend (see below for variations). This deposit will be slashed if the
@@ -74,7 +72,6 @@ proposal, they will probably need to find an off-chain way to explain the propos
 takes place on the following platforms:
 
 - Many community members participate in discussion in the
-  [AXIALunar Element (previously Riot)](https://matrix.to/#/#axialunar:matrix.axia.io) chat or
   [AXIA Element](https://matrix.to/#//#AXIA:matrix.axia.io).
 - The [AXIAssembly](https://axiassembly.io) discussion platform that allows users to log in with
   their Web3 address and automatically reads proposals from the chain, turning them into discussion
@@ -85,9 +82,6 @@ Spreading the word about the proposal's explanation is ultimately up to the prop
 recommended way is using official Element channels like {{ AXIA: the
 [AXIA Watercooler](https://matrix.to/#/#AXIA-watercooler:AXIA.org) and
 [AXIA Direction room](https://matrix.to/#/#AXIA-direction:matrix.axia.io) :AXIA }}
-{{ axialunar: the
-[AXIALunar Direction room](https://matrix.to/#/#axialunar:matrix.axia.io) or the
-[AXIALunar Watercooler](https://matrix.to/#/#axialunarwatercooler:AXIA.builders) :axialunar }}.
 
 ### Creating the Proposal
 
@@ -145,15 +139,14 @@ To better understand the process a tip goes through until it is paid out, let's 
 
 ### Example
 
-Bob has done something great for {{ AXIA: AXIA :AXIA }} {{ axialunar: AXIALunar :axialunar }}.
+Bob has done something great for {{ AXIA: AXIA :AXIA }}.
 Alice has noticed this and decides to report Bob as deserving a tip from the Treasury. The Council
 is composed of three members Charlie, Dave, and Eve.
 
 Alice begins the process by issuing the `report_awesome` extrinsic. This extrinsic requires two
 arguments, a reason and the address to tip. Alice submits Bob's address with the reason being a
 UTF-8 encoded URL to a post on
-{{ AXIA: [axiassembly](https://AXIA.axiassembly.io) :AXIA }}
-{{ axialunar: [axiassembly](https://axialunar.axiassembly.io) :axialunar }} that explains her reasoning for
+{{ AXIA: [axiassembly](https://AXIA.axiassembly.io) :AXIA }} that explains her reasoning for
 why Bob deserves the tip.
 
 As mentioned above, Alice must also lock up a deposit for making this report. The deposit is the
@@ -167,12 +160,10 @@ tippers.
 Since the tipper group is the same as the Council, the Council must now collectively (but also
 independently) decide on the value of the tip that Bob deserves.
 
-Charlie, Dave, and Eve all review the report and make tips according to their personal valuation of
-the benefit Bob has provided to AXIALunar.
 
-Charlie tips {{ AXIA: 10 AXC :AXIA }} {{ axialunar: 1 LUNAR :axialunar }}. Dave tips
-{{ AXIA: 30 AXC :AXIA }} {{ axialunar: 3 LUNAR :axialunar }}. Eve tips
-{{ AXIA: 100 AXC :AXIA }} {{ axialunar: 10 LUNAR :axialunar }}.
+Charlie tips {{ AXIA: 10 AXC :AXIA }}. Dave tips
+{{ AXIA: 30 AXC :AXIA }}. Eve tips
+{{ AXIA: 100 AXC :AXIA }}.
 
 The tip could have been closed out with only two of the three tippers. Once more than half of the
 tippers group have issued tip valuations, the countdown to close the tip will begin. In this case,
@@ -180,7 +171,7 @@ the third tipper issued their tip before the end of the closing period, so all t
 make their tip valuations known.
 
 Now the actual tip that will be paid out to Bob is the median of these tips, so Bob will be paid out
-{{ AXIA: 30 AXC :AXIA }} {{ axialunar: 3 LUNAR :axialunar }} from the Treasury.
+{{ AXIA: 30 AXC :AXIA }} from the Treasury.
 
 In order for Bob to be paid his tip, some account must call the `close_tip` extrinsic at the end of
 the closing period for the tip. This extrinsic may be called by anyone.
@@ -249,10 +240,8 @@ requested allocation (including curator's fee) and confirm the call.
 After this, a Council member will need to assist you to pass the bounty proposal for vote as a
 motion. You can contact the Council by joining the
 {{ AXIA: AXIA Direction [channel](https://matrix.to/#/#AXIA-direction:matrix.axia.io) :AXIA }}
-{{ axialunar: AXIALunar Direction [channel](https://matrix.to/#/#axialunar:matrix.axia.io) :axialunar }} in
 Element or joining our
 {{ AXIA: AXIA Discord [server](https://axia.link/AXIA-discord) :AXIA }}
-{{ axialunar: AXIALunar Discord [server](https://axia.link/axialunar-discord) :axialunar }} and publishing a
 short description of your bounty, with a link to one of the [forums](#announcing-the-proposal) for
 contextual information.
 
@@ -272,8 +261,6 @@ important to note that those who received a reward after the bounty is completed
 specific amount of the payout from the payout address, by calling `Claim_bounty` after the curator
 closed the allocation.
 
-To understand more about Bounties and how this new mechanism works, read this
-[AXIA Blog post](https://AXIA.network/axialunar-and-AXIA-now-reward-curators-helping-to-scale-councils-functions-join-the-force-moving-the-community-forward/).
 
 ## FAQ
 
@@ -286,17 +273,8 @@ large financial incentive would present itself.
 
 For one, the Treasury has deflationary pressure due to the burn that is suffered every spend period.
 The burn aims to incentivize the complete spend of all treasury funds at every burn period, so
-ideally the treasury pot doesn't have time to accumulate mass amounts of wealth. However, it is the
-case that the burn on the Treasury could be so little that it does not matter - as is the case
-currently on AXIALunar with a 0.2% burn.
+ideally the treasury pot doesn't have time to accumulate mass amounts of wealth.
 
-However, it is the case on AXIALunar that the Council is composed of mainly well-known members of the
-community. Remember, the Council is voted in by the token holders, so they must do some campaigning
-or otherwise be recognized to earn votes. In the scenario of an attack, the Council members would
-lose their social credibility. Furthermore, members of the Council are usually externally motivated
-by the proper operation of the chain. This external motivation is either because they run businesses
-that depend on the chain, or they have direct financial gain (through their holdings) of the token
-value remaining steady.
 
 Concretely, there are a couple on-chain methods that resist this kind of attack. One, the Council
 majority may not be the token majority of the chain. This means that the token majority could vote

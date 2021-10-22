@@ -11,7 +11,7 @@ it will be useful to any infrastructure provider such as validators or chain ind
 
 ## Structure
 
-The guide focuses on AXIA and AXIALunar, but the principles will apply to allychains and other
+The guide focuses on AXIA, but the principles will apply to allychains and other
 Substrate-based chains. The guide contains four sections:
 
 1. [Protocol Info](build-protocol-info.md): The entry point to the guide. Please read it carefully

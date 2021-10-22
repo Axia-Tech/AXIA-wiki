@@ -5,19 +5,16 @@ sidebar_label: Allychain Crowdloans
 slug: ../learn-crowdloans
 ---
 
-{{ AXIA: AXIA :AXIA }} {{ axialunar: AXIALunar :axialunar }} allows allychains to source tokens
+{{ AXIA: AXIA :AXIA }} allows allychains to source tokens
 for their allychain bids in a decentralized crowdloan.
 
 > Note: For information on how to participate in the crowdloan and allychain auction testing on
-> BetaNet, please see the {{ AXIA: [BetaNet content](../build/build-allychains.md##testing-a-allychains:-betanet-testnet) :AXIA }} >
-> {{ axialunar: [BetaNet content](../build/mirror-build-allychains.md##testing-a-allychains:-betanet-testnet) :axialunar }}.
+> BetaNet, please see the {{ AXIA: [BetaNet content](../build/build-allychains.md##testing-a-allychains:-betanet-testnet) :AXIA }}.
 
 ## Starting a crowdloan campaign
 
-Anyone who has registered a allychain can create a new crowdloan campaign for a slot
-{{ axialunar:  by depositing a specified number of tokens :axialunar }}. A campaign is configured as a
-range of slots (i.e. the duration of the {{ AXIA: [allychain](learn-allychains.md) :AXIA }}
-{{ axialunar: [allychain](mirror-learn-allychains.md) :axialunar }} will bid for), a cap, and a duration.
+Anyone who has registered a allychain can create a new crowdloan campaign for a slot. A campaign is configured as a
+range of slots (i.e. the duration of the {{ AXIA: [allychain](learn-allychains.md) :AXIA }} will bid for), a cap, and a duration.
 The duration can last over several auctions, meaning that the team will not need to restart the
 campaign just because they do not secure a slot on their first attempt.
 
@@ -76,11 +73,8 @@ owners. All contributions must be returned before the crowdloan is fully deleted
 
 Many projects will have dashboards available that allow users to participate in their crowdloans.
 AXIAJS apps also offers a breakdown of ongoing crowdloans on the
-[Apps page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxialunar-rpc.AXIA.io#/allychains/crowdloan).
+[Apps page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxia-rpc.AXIA.io#/allychains/crowdloan).
 
-Here is an example of the crowdloans in play during the very first AXIALunar auction.
-
-![crowdloan dashboard](../assets/axialunar-crowdloans.png)
 
 Furthermore, check out this video on
 [How to Participate in Crowdloans](https://www.youtube.com/watch?v=YrTxDufrcQM) for steps on how to

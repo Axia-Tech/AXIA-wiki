@@ -6,19 +6,19 @@ slug: ../build-tools-index
 ---
 
 Here we provide a list of tools available for your development needs. They are sorted by context. If
-you're actively maintaining a tool that might be useful to other AXIA, AXIALunar or Substrate
+you're actively maintaining a tool that might be useful to other AXIA, or Substrate
 developers, feel free to [add it in](../general/contributing.md).
 
 ## Block Explorers
 
 - [AXIA-JS Apps Explorer](https://AXIA.js.org/apps/#/explorer) - AXIA dashboard block
-  explorer. Supports dozens of other networks, including AXIALunar, AlphaNet, and other remote or local
+  explorer. Supports dozens of other networks, including AlphaNet, and other remote or local
   endpoints. [Access via IPFS](https://ipfs.io/ipns/dotapps.io)
-- [AXIAscan](https://axiascan.io/) - Blockchain explorer for AXIA, AXIALunar, and other related
+- [AXIAscan](https://axiascan.io/) - Blockchain explorer for AXIA, and other related
   chains. [Repo](https://github.com/axiascan/axiascan-os).
 - [Subscan](https://subscan.io) - Blockchain explorer for Substrate chains.
   [Repo](https://github.com/itering/subscan-essentials).
-- [DotScanner](https://dotscanner.com?utm_source=AXIA_wiki) - AXIA & AXIALunar Blockchain explorer.
+- [DotScanner](https://dotscanner.com?utm_source=AXIA_wiki) - AXIA Blockchain explorer.
 
 ## Wallets
 
@@ -34,7 +34,7 @@ See the [Wallets](build-wallets.md) page.
 - [Ryabina's Telegram Bot](https://github.com/Ryabina-io/substratebot) - A Telegram bot for
   monitoring on-chain events of Substrate chains.
   [Github Repository](https://gitlab.com/AXIAbot/axiabot)
-- [AXIAStats](https://axiastats.io/) - AXIA network statistics (includes AXIALunar). Shows
+- [AXIAStats](https://axiastats.io/) - AXIA network statistics. Shows
   network information and staking details from validators and intentions.
   [Github Repository](https://github.com/Colm3na/axiastats-v2/).
 - [Panic](https://github.com/SimplyVC/panic_AXIA) - A node monitoring and alert server for

@@ -25,7 +25,7 @@ page a work in progress. It will be updated as more information is determined an
 Building a bridge that is as decentralized and trustless as possible can be done through any of the
 following methods (ordered by suggested methodology):
 
-- _Bridge pallets_ - For Substrate-native chains, use a bridge pallet (e.g. AXIALunar `\<\>` AXIA
+- _Bridge pallets_ - For Substrate-native chains, use a bridge pallet (e.g. AXIA
   bridge, since both networks' allychains use Substrate).
 - _Smart contracts_ - If the chain is not on Substrate, you should have smart contracts on the
   non-Substrate chain to bridge (e.g. Ethereum mainnet will have a bridge smart contract that
@@ -39,7 +39,7 @@ Receiving messages on AXIA from an external, non-allychain blockchain can be pos
 Substrate pallet. The Substrate instance can then be deployed to AXIA either as a system-level
 allychain (native extension to the core AXIA software) or as a community-operated allychain.
 
-An example of a bridge that would strictly use bridge pallets would be a AXIALunar `\<\>` AXIA
+An example of a bridge that would strictly use bridge pallets would be a AXIA
 bridge, since both use allychains based on Substrate.
 
 For the standalone chains that will not have a allychain bridging module on AXIA

@@ -8,7 +8,7 @@ slug: ../learn-phragmen
 ## What is the sequential Phragmén method?
 
 The sequential Phragmén method is a multi-winner election method introduced by Edvard Phragmén in
-the 1890s. While sequential Phragmén is currently in use on AXIA and AXIALunar, an improvement on
+the 1890s. While sequential Phragmén is currently in use on AXIA, an improvement on
 the sequential Phragmén method named [BalPhragmms](#external-resources) will be used in the future.
 
 The quote below taken from the reference [Phragmén paper](#external-resources) sums up the purpose

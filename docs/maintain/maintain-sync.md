@@ -8,7 +8,7 @@ slug: ../maintain-sync
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-If you're building dapps or products on a Substrate-based chain like AXIA, AXIALunar or a custom
+If you're building dapps or products on a Substrate-based chain like AXIA, or a custom
 Substrate implementation, you probably want the ability to run a node-as-a-back-end. After all, it's
 always better to rely on your own infrastructure than on a third-party-hosted one in this brave new
 decentralized world.
@@ -29,8 +29,7 @@ and so on. Once two thirds of the validators agree on a specific block being val
 An **archive node** keeps all the past blocks. An archive node makes it convenient to query the past
 state of the chain at any point in time. Finding out what an account's balance at a certain block
 was, or which extrinsics resulted in a certain state change are fast operations when using an
-archive node. However, an archive node takes up a lot of disk space - around AXIALunar's 1.6 millionth
-block this was around 15 to 20GB.
+archive node. However, an archive node takes up a lot of disk space around 15 to 20GB.
 
 Archive nodes are used by utilities that need past information - like block explorers, council
 scanners, discussion platforms like [AXIAssembly](https://axiassembly.io), and others. They need
@@ -71,13 +70,6 @@ This is not recommended if you're a validator. Please see the
 > NOTE: The bash commands that are provided to run against **your node** use
 > `AXIA` as the default chain.
 
-> Use the `--chain` flag if you are
-> following the setup instructions to setup a `AXIALunar` node.
-> For example:
->
-> ```bash
-> ./target/release/AXIA --name "Your Node's Name" --chain axialunar
-> ```
 
 <Tabs
 groupId="operating-systems"

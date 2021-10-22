@@ -89,7 +89,7 @@ signature field, and send the transaction (or just return the serialized transac
 
 If you do not want to use the CLI for signing operations, AXIA provides an SDK called
 [TxWrapper Core](https://github.com/axia-tech/txwrapper-core) to generate and sign transactions
-offline. For AXIA, AXIALunar, and select allychains, use the `txwrapper-AXIA` package. Other
+offline. For AXIA, and select allychains, use the `txwrapper-AXIA` package. Other
 Substrate-based chains will have their own `txwrapper-{chain}` implementations. See the
 [examples](https://github.com/axia-tech/txwrapper-core/blob/main/packages/txwrapper-examples/README.md)
 for a guide.

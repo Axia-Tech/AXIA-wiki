@@ -18,23 +18,22 @@ using a similar OS, and that you have nginx installed (if not, run `sudo apt-get
 
 ## Set up a node
 
-Whether it's a generic Substrate node, a AXIALunar node, or your own private blockchain, they all
-default to the same websocket connection: port 9944 on localhost. For this example, we'll set up a
-AXIALunar sync node (non-validator).
+Whether it's a generic Substrate node, or your own private blockchain, they all
+default to the same websocket connection: port 9944 on localhost.
 
 Create a new server on your provider of choice or locally at home (preferred). We'll assume you're
 using Ubuntu 18.04. Then install Substrate and build the node.
 
 ```bash
 curl https://getsubstrate.io -sSf | bash
-git clone https://github.com/axia-tech/AXIA axialunar
-cd axialunar
+git clone https://github.com/axia-tech/AXIA
+cd AXIA
 ./scripts/init.sh
 cargo build --release
 ./target/release/AXIA --name "DigitalOcean 10 USD droplet ftw" --rpc-cors all
 ```
 
-This will start the syncing process with AXIALunar's mainnet.
+This will start the syncing process with AXIA mainnet.
 
 _Note: the `--rpc-cors` mode needs to be set to all so that all external connections are allowed._
 

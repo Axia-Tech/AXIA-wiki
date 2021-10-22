@@ -78,33 +78,6 @@ class HomeFooter extends React.Component {
       </section>
     );
 
-    const LearnAXIALunar = () => (
-      <Col
-        lg={6}
-        className="d-flex align-items-end flex-column pb-5 mb-5 mb-lg-0"
-      >
-        <Col xs={12}>
-          <img src="/img/axialunar_canary_white.svg" height={41} />
-          <h3 className="h2 font-weight-bold mt-2">
-            Learn about AXIA’s canary network AXIALunar
-          </h3>
-          <p className="mb-5">
-            AXIALunar is AXIA’s “canary network”, a scalable, multi-chain
-            network for radical innovation and early stage AXIA deployments.
-            For developers, AXIALunar is a proving ground for all things AXIA
-            I.e runtime upgrades, on-chain governance, allychains, parathreads,
-            etc.
-          </p>
-        </Col>
-        <Col>
-          <a href="https://lunar.wiki.AXIA.network">
-            <button className="btn btn-lg btn-primary btn-bg-primary">
-              Discover AXIALunar
-            </button>
-          </a>
-        </Col>
-      </Col>
-    );
 
     const ImproveWiki = () => (
       <Col lg={6} className="d-flex align-items-end flex-column pb-5">
@@ -140,7 +113,6 @@ class HomeFooter extends React.Component {
 
     return (
       <FooterContainer>
-        <LearnAXIALunar />
         <ImproveWiki />
       </FooterContainer>
     );

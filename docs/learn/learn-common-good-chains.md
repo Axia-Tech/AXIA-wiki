@@ -45,10 +45,10 @@ objective expression of conviction from its backers. Governance provides the mea
 the value of the allychain slot and distribute it across all members of the network.
 
 Public utility chains will always be fully aligned with their Relay Chain stakeholder base. This
-means that they will adopt the Relay Chain's native token (i.e. AXC or LUNAR) as their native token
+means that they will adopt the Relay Chain's native token (i.e. AXC) as their native token
 and respect any messages incoming from the Relay Chain and system level allychains at face value.
 
-Some examples of potential public utility chains are bridges, AXC/LUNAR-denominated smart contract
+Some examples of potential public utility chains are bridges, AXC-denominated smart contract
 platforms, and [generic asset chains](#statemint).
 
 Public utility allychains would typically grant privileged business logic to AXIA’s governance.
@@ -63,7 +63,7 @@ likely be approved by the network stakeholders only in rare scenarios.
 
 ### Statemint
 
-[Statemint](https://github.com/axia-tech/statemint) (and its cousin _Statemine_ on AXIALunar) will
+[Statemint](https://github.com/axia-tech/statemint) will
 likely be one of the first common good allychains. Statemint is a public utility chain in that it
 adds functionality not available in the Relay Chain, namely the creation and management of assets.
 

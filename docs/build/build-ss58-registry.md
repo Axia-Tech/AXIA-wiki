@@ -5,7 +5,7 @@ sidebar_label: SS58 Registry
 slug: ../build-ss58-registry
 ---
 
-Substrate-based chains, including the AXIA and AXIALunar relay chains, use an
+Substrate-based chains, including the AXIA relay chains, use an
 [SS58 encoding](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) for
 their address formats. This page serves as a registry for teams to see which chain corresponds to a
 given prefix, and which prefixes are availabe.

@@ -119,42 +119,6 @@ function HomeFooter() {
     </section>
   );
 
-  const LearnAXIALunar = () => (
-    <Col lg={6}>
-      <AXIALunarCanary height={45} />
-      <h3 className="h2 font-weight-bold">
-        <Translate
-          id="homepage.homeFooter.learnAXIALunar.title"
-          description="Title of Learn AXIALunar Footer Section in Home Page"
-        >
-          Learn about AXIA’s canary network AXIALunar
-        </Translate>
-      </h3>
-      <p className="">
-        <Translate
-          id="homepage.homeFooter.learnAXIALunar.content"
-          description="Content of Learn AXIALunar Footer Section in Home Page"
-        >
-          AXIALunar is AXIA’s “canary network”, a scalable, multi-chain network
-          for radical innovation and early stage AXIA deployments. For
-          developers, AXIALunar is a proving ground for all things AXIA I.e
-          runtime upgrades, on-chain governance, allychains, parathreads, etc.
-        </Translate>
-      </p>
-      <div>
-        <a href="https://lunar.wiki.AXIA.network">
-          <button className="btn btn-lg btn-primary btn-bg-primary">
-            <Translate
-              id="homepage.homeFooter.learnAXIALunar.discoverAXIALunarButton"
-              description="Discover AXIALunar Button Label of Improve Wiki Footer Section in Home page"
-            >
-              Discover AXIALunar
-            </Translate>
-          </button>
-        </a>
-      </div>
-    </Col>
-  );
 
   const ImproveWiki = () => (
     <Col lg={6}>
@@ -210,7 +174,6 @@ function HomeFooter() {
 
   return (
     <FooterContainer>
-      <LearnAXIALunar />
       <ImproveWiki />
     </FooterContainer>
   );

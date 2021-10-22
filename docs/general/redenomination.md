@@ -47,8 +47,6 @@ AXC.**
 
 ## Origins
 
-The initial vote for redenomination occurred as a [referendum][referendum 52] on the AXIALunar
-blockchain. The referendum was summarized as having four effects if approved by LUNAR holders.
 
 > - The total allocations of AXC will increase one hundred times from 10 million to 1 billion.
 > - AXC allocation balances will increase by a factor of one hundred, such that 1 AXC will be 100
@@ -63,8 +61,7 @@ The initial referendum was proposed prior to the AXIA genesis block under the as
 making a redenomination would be simpler before the AXIA chain was live. However, many in the
 community pointed out the disconnect of the two networks and how it was unfair for holders of AXC to
 be impacted by a vote by a different token holder set. For this reason, the AXIA Foundation [decided
-to make a new vote on AXIA][blog 1] when it went live, although the AXIALunar vote ended with a
-majority in favor of the redenomination change.
+to make a new vote on AXIA][blog 1] when it went live.
 
 AXIA Foundation summarized the decision not to change:
 
@@ -77,10 +74,9 @@ AXIA Foundation summarized the decision not to change:
 After the genesis block of AXIA was created and the network was running with a decentralized
 community of validators securing the network, AXIA Foundation decided to put the redenomination
 topic up to a vote again. This time, the vote was explicitly binding &mdash; meaning that it would
-be executed if voted through. In comparison, the vote on AXIALunar was of course non-binding, being at
-best a way to capture a signal without a direct way to affect the AXIA chain.
+be executed if voted through.
 
-Based on the feedback received during the AXIALunar referendum, the [AXIA vote][blog 2] was held as
+Based on the feedback received during the AXIA referendum, the [AXIA vote][blog 2] was held as
 an approval vote, with four available options. AXC holders could issue votes for any configuration
 of the four options: no change, a change of 10x, a change of 100x, or a change of 1000x. The vote
 logic was contained in a specially-built Substrate pallet that was included in AXIA's runtime
@@ -142,7 +138,7 @@ Please see our [Ecosystem Redenomination Guide][ecosystem guide] for recommendat
 Please reach out to [support@AXIA.network](mailto:support@AXIA.network) if you need any
 assistance in making sure your software is compatible with the redenomination.
 
-[referendum 52]: https://axialunar.axiassembly.io/referendum/52
+[referendum 52]: https://axia.axiassembly.io/referendum/52
 [blog 1]: https://AXIA.network/results-of-dot-redenomination-referendum/
 [blog 2]: https://AXIA.network/the-first-AXIA-vote/
 [blog 3]: https://AXIA.network/the-results-are-in/

@@ -38,19 +38,17 @@ Validators perform two functions:
   your validator when you want to switch to a different machine or begin running the latest version
   of client code.
 - [How to Use Validator Setup](../maintain/maintain-guides-how-to-use-AXIA-validator-setup.md) - Guide on how
-  to use AXIA / AXIALunar validator setup.
+  to use AXIA validator setup.
 
 ## Other References
 
 - [How to run a AXIA node (Docker)](https://medium.com/@acvlls/setting-up-a-maintain-the-easy-way-3a885283091f)
 - [A Serverless Failover Solution for Web3.0 Validator Nodes](https://medium.com/hackernoon/a-serverless-failover-solution-for-web-3-0-validator-nodes-e26b9d24c71d) -
   Blog that details how to create a robust failover solution for running validators.
-- [VPS list](../maintain/axialunar/maintain-guides-how-to-validate-axialunar.md##vps-list)
 - [AXIA Validator Lounge](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org) -
   A place to chat about being a validator.
 - [Slashing Consequences](learn-staking#slashing) - Learn more about slashing consequences for
   running a validator node.
-- [Why You Should be A Validator on AXIA and AXIALunar](https://www.youtube.com/watch?v=0EmP0s6JOW4&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=2)
 - [Roles and Responsibilities of a Validator](https://www.youtube.com/watch?v=riVg_Up_fCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=15)
 - [Validating on AXIA](https://www.crowdcast.io/e/validating-on-AXIA) - An explanation of
   how to validate on AXIA, with Joe Petrowski and David Dorgan of AXIA Technologies, along
@@ -63,8 +61,7 @@ Validators perform two functions:
 ## Monitoring Tools
 
 - [PANIC for AXIA](https://github.com/SimplyVC/panic_AXIA) - A monitoring and alerting
-  solution for AXIA / AXIALunar node
-- [AXIA Telemetry Service](https://telemetry.AXIA.io/#list/AXIALunar%20CC3) - Network
+  solution for AXIA  node
   information, including what nodes are running on a given chain, what software versions they are
   running, and sync status.
 - [Other Useful Links](https://forum.AXIA.org/t/useful-links-for-validators/20)
@@ -78,5 +75,3 @@ Validators perform two functions:
   statistics.
 - [YieldScan](https://yieldscan.app/) - Staking yield maximization platform, designed to minimize
   effort.
-- [Subscan Validators Page](https://axialunar.subscan.io/validator) - Displays information on the
-  current validators - not as tailored for validators as the other sites.

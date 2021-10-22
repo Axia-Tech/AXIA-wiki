@@ -27,24 +27,9 @@ AXIA
 
 and you will connect and start syncing to AXIA.
 
+
 Check your node is connected by viewing it on
 [Telemetry](https://telemetry.AXIA.io/#/AXIA%20CC3) (you can set a custom name by specifying
-`--name "my custom name"`)
-
-### AXIALunar Canary Network
-
-AXIALunar is a canary network and holds real economic value.
-
-Run the AXIA binary and specify `axialunar` as the chain:
-
-```bash
-AXIA --chain=axialunar
-```
-
-and you will connect and start syncing to AXIALunar.
-
-Check your node is connected by viewing it on
-[Telemetry](https://telemetry.AXIA.io/#/AXIALunar%20CC3) (you can set a custom name by specifying
 `--name "my custom name"`)
 
 ### AlphaNet Test Network

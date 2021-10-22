@@ -6,20 +6,19 @@ slug: ../maintain-guides-how-to-join-council
 ---
 
 The council is an elected body of on-chain accounts that are intended to represent the passive
-stakeholders of AXIA and/or AXIALunar. The council has two major tasks in governance: proposing
+stakeholders of AXIA. The council has two major tasks in governance: proposing
 referenda and vetoing dangerous or malicious referenda. For more information on the council, see the
 [governance page](../learn/learn-governance.md#council). This guide will walk you through entering your
 candidacy to the council.
 
 ## Submit Candidacy
 
-Submitting your candidacy for the council requires a small bond of AXC / LUNAR. Unless your candidacy
+Submitting your candidacy for the council requires a small bond of AXC. Unless your candidacy
 wins, the bond will be forfeited. You can receive your bond back if you manually renounce your
 candidacy before losing. Runners-up are selected after every round and are reserved members in case
 one of the winners gets forcefully removed.
 
-> Currently the bond for submitting a council candidacy on AXIA is 100 AXC, and 0.0033 LUNAR on
-> AXIALunar.
+> Currently the bond for submitting a council candidacy on AXIA is 100 AXC.
 
 It is a good idea to announce your council intention before submitting your candidacy so that your
 supporters will know when they can start to vote for you. You can also vote for yourself in case no

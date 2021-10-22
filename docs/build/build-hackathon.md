@@ -74,10 +74,9 @@ Here are a few examples of hackathons W3F has facilitated and supported:
   as well as stand-alone blockchain project submissions.
 
 - [Hello World! by AXIA](https://gitcoin.co/hackathon/AXIA/onboard) - A collaborative
-  hackathon celebrating the integration of AXIA and AXIALunar into the Gitcoin platform. Has many
-  sets of smaller challenges that will reward in either AXC or LUNAR.
+  hackathon celebrating the integration of AXIA into the Gitcoin platform. Has many
+  sets of smaller challenges that will reward in either AXC.
 
-- [Hacaxialunar](https://hacaxialunar.devpost.com/) - A 7-week online hackathon for
   developers to "Build a Blockchain" and submit your wildest tools, visualizations, and ideas to the
   "Open Hack" category.
 

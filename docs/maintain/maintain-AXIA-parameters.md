@@ -12,9 +12,6 @@ at the [chain state](https://AXIA.js.org/apps/#/chainstate/constants) and/or
 
 ### Periods of common actions and attributes
 
-_NOTE: AXIA generally runs at &frac14;th the speed of AXIALunar, except in the time slot duration
-itself. See [AXIALunar Parameters](../general/axialunar/axialunar-parameters) for more details on how AXIA's parameters
-differ from AXIALunar's._
 
 - Slot: 6 seconds \*(generally one block per slot, although see note below)
 - Epoch: 4 hours (2_400 slots x 6 seconds)

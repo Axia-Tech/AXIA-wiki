@@ -12,9 +12,8 @@ guides to set up a node and run the network.
 
 - [Networks Guide](maintain-networks.md) - A list of the available AXIA networks that you can
   connect to with a node.
-- [Set up a Full Node](maintain-sync.md) - Get up and started by syncing a full node for the AXIALunar
-  network. The steps in the guide will broadly apply also to any Substrate-based network (like
-  AXIA).
+- [Set up a Full Node](maintain-sync.md) - Get up and started by syncing a full node for the AXIA
+  network. The steps in the guide will broadly apply also to any Substrate-based network.
 - [Set up WSS using Nginx](maintain-wss.md) - Set up a Secure WebSockets server for your node's
   WebSockets connection.
 
@@ -28,8 +27,6 @@ guides to set up a node and run the network.
   links.
 - [Nomination Guide (AXIA)](maintain-guides-how-to-nominate-AXIA.md) - Walkthrough on how to
   nominate on the AXIA network.
-- [Nomination Guide (AXIALunar)](axialunar/maintain-guides-how-to-nominate-axialunar.md) - Walkthrough on how to
-  nominate on the AXIALunar canary network.
 - [How to stop being a Nominator](maintain-guides-how-to-unbond.md) - Guide on how to stop
   nominating.
 
@@ -40,8 +37,6 @@ guides to set up a node and run the network.
   calculated and paid.
 - [Validation Guide (AXIA)](maintain-guides-how-to-validate-AXIA.md) - Walkthrough on how to
   validate on the AXIA network.
-- [Validation Guide (AXIALunar)](axialunar/maintain-guides-how-to-validate-axialunar.md) - Walkthrough on how to
-  validate on the AXIALunar canary network.
 - [Using systemmd for the Validator Node](maintain-guides-how-to-systemd.md) - Configuring systemmd
   with the Validator node.
 - [Secure Validator](maintain-guides-secure-validator.md) - Best tips and practices for validating.

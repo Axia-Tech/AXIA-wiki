@@ -242,7 +242,7 @@ BetaNet testnet "Custom Node" underneath "Development", following the
 
 ## Deploy a Allychain or Parathread on AXIA
 
-Substrate-based chains, including the AXIA and AXIALunar relay chains, use an
+Substrate-based chains, including the AXIA relay chains, use an
 [SS58 encoding](<https://github.com/axia-tech/substrate/wiki/External-Address-Format-(SS58)>) for
 their address formats. [This page](https://github.com/axia-tech/substrate/blob/master/ss58-registry.json)
 serves as the canonical registry for teams to see which chain corresponds to a given prefix, and which prefixes are available.
@@ -253,8 +253,7 @@ In order to include your allychain into the AXIA network, you will need to acqui
 slot.
 
 Allychain slots will be sold in open auctions, the mechanics of which can be found on the
-{{ AXIA: [allychain auction](../learn/learn-auction.md) :AXIA }}
-{{ axialunar: [allychain auction](../learn/mirror-learn-auction.md) :axialunar }} page of the wiki.
+{{ AXIA: [allychain auction](../learn/learn-auction.md) :AXIA }} page of the wiki.
 
 ### Parathread
 
@@ -264,8 +263,7 @@ and from then be able to start participating in the per-block auctions for inclu
 transition into a relay chain.
 
 For more information on how parathread per-block auctions work, see the more detailed
-{{ AXIA: [parathread](../learn/learn-parathreads.md) :AXIA }}
-{{ axialunar: [parathread](../learn/mirror-learn-parathreads.md) :axialunar }} page.
+{{ AXIA: [parathread](../learn/learn-parathreads.md) :AXIA }} page.
 
 ## Future PDKs
 

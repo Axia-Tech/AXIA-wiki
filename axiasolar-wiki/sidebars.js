@@ -93,7 +93,6 @@ module.exports = {
             "learn/learn-comparisons",
           ],
         },
-        "learn/learn-video-tutorials",
       ],
     },
     {
@@ -131,11 +130,6 @@ module.exports = {
           type: "category",
           label: "Tools",
           items: ["build/build-tools-index"],
-        },
-        {
-          type: "category",
-          label: "Resources",
-          items: ["build/build-hackathon"],
         },
       ],
     },

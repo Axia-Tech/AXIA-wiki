@@ -8,8 +8,7 @@ slug: ../learn-auction
 For a [allychain](learn-allychains.md) to be added to AXIA it must inhabit one of the available
 allychain slots. A allychain slot is a scarce resource on AXIA and only a limited number will be
 available. As allychains ramp up, there may only be a few slots that are unlocked every few months.
-The goal is to eventually have 100 allychain slots available on {{ AXIA: AXIA :AXIA }}
-{{ axialunar: AXIALunar :axialunar }} (these will be split between allychains and the
+The goal is to eventually have 100 allychain slots available on {{ AXIA: AXIA :AXIA }} (these will be split between allychains and the
 [parathread pool](learn-parathreads.md)). If a allychain wants to have guaranteed block inclusion at
 every Relay Chain block, it must acquire a allychain slot.
 
@@ -77,8 +76,7 @@ AXIA will use a _random beacon_ based on the VRF that's used also in other place
 protocol. The VRF will provide the base of the randomness, which will retroactively determine the
 end-time of the auction.
 
-The slot durations are capped to {{ AXIA: 2 years and divided into 3-month periods :AXIA }}
-{{ axialunar: 1 year and divided into 6-week periods :axialunar }}; Allychains may lease a slot for any
+The slot durations are capped to {{ AXIA: 2 years and divided into 3-month periods :AXIA }}; Allychains may lease a slot for any
 combination of periods of the slot duration. Allychains may lease more than one slot over time,
 meaning that they could extend their lease to AXIA past the maximum duration by leasing a
 contiguous slot.
@@ -110,12 +108,11 @@ Slot E |__________|___________|     1     |     2     |     3     |     4    |  
 ```
 
 _Each period of the range 1 - 4 represents a
-{{ AXIA: 3-month duration for a total of 2 years :AXIA }}
-{{ axialunar: 6-week duration for a total of 1 year :axialunar }} _
+{{ AXIA: 3-month duration for a total of 2 years :AXIA }}_
 
 Bidders will submit a configuration of bids specifying the token amount they are willing to bond and
 for which periods. The slot ranges may be any of the periods 1 - `n`, where `n` is the number of
-periods available for a slot (`n` will be 8 for both AXIA and AXIALunar).
+periods available for a slot (`n` will be 8 in AXIA).
 
 > Please note: If you bond tokens with a allychain slot, you cannot stake with those tokens. In this
 > way, you pay for the allychain slot by forfeiting the opportunity to earn staking rewards.
@@ -195,8 +192,7 @@ Relay Chain.
 The method for dividing the allychain slots into intervals was partly inspired by the desire to
 allow for a greater amount of allychain diversity, and prevent particularly large and well-funded
 allychains from hoarding slots. By making each period a {{ AXIA: three-month duration but the
-overall slot a 2-year duration :AXIA }} {{ axialunar: 6-week duration but the overall slot a 1-year
-duration :axialunar }}, the mechanism can cope with well-funded allychains that will ensure they secure
+overall slot a 2-year duration :AXIA }}, the mechanism can cope with well-funded allychains that will ensure they secure
 a slot at the end of their lease, while gradually allowing other allychains to enter the ecosystem
 to occupy the durations that are not filled. For example, if a large, well-funded allychain has
 already acquired a slot for range 1 - 8, they would be very interested in getting the next slot that

@@ -18,9 +18,6 @@ may be better suited for your application over the other).
 ## AXIA Ecosystem Networks
 
 - Mainnet: **AXIA**
-- Canary network: **AXIALunar**
-  - [AXIALunar](https://axialunar.network/) is a value-bearing canary network that gets features before
-    AXIA does... _expect chaos_...
 - Official testnets:
   - **AlphaNet** - Functionality equal to the current AXIA mainnet, with possible next-generation
     testing of features from time to time that will eventually migrate onto AXIA. Perma-testnet (is not reset back to genesis block).
@@ -220,8 +217,7 @@ In order to include your allychain into the AXIA network, you will need to acqui
 slot.
 
 Allychain slots will be sold in open auctions, the mechanics of which can be found on the
-{{ AXIA: [allychain auction](../learn/learn-auction.md) :AXIA }}
-{{ axialunar: [allychain auction](../learn/mirror-learn-auction.md) :axialunar }} page of the wiki.
+{{ AXIA: [allychain auction](../learn/learn-auction.md) :AXIA }} page of the wiki.
 
 #### Parathread
 
@@ -231,8 +227,7 @@ and from then be able to start participating in the per-block auctions for inclu
 transition into the relay chain.
 
 For more information on how parathread per-block auctions work, see the more detailed
-{{ AXIA: [parathread](../learn/learn-parathreads.md) :AXIA }}
-{{ axialunar: [parathread](../learn/mirror-learn-parathreads.md) :axialunar }} page.
+{{ AXIA: [parathread](../learn/learn-parathreads.md) :AXIA }} page.
 
 ## So you want to build a smart contract...
 
@@ -305,11 +300,11 @@ the latest resources. You should also keep up to date with the following links:
 - [Acala](https://acala.network/)
 - [Phala](https://phala.network)
 
-There are many smart contract platforms being built with the intent of becoming a allychain on the AXIA and/or AXIALunar networks. A community created and maintained list of different smart contract platforms building on AXIA can be found at [AXIAProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
+There are many smart contract platforms being built with the intent of becoming a allychain on the AXIA networks. A community created and maintained list of different smart contract platforms building on AXIA can be found at [AXIAProjects](https://www.axiaproject.com/#/projects?cateID=1&tagID=6).
 
 ### Edgeware
 
-[Edgeware][edgeware] is a permissionless smart contract platform. It is an option for smart contract developers and want to deploy to a live environment. Users can deploy both EVM and WASM smart contracts on Edgeware. Edgeware intends to connect to AXIA and AXIALunar as a smart contract allychain.
+[Edgeware][edgeware] is a permissionless smart contract platform. It is an option for smart contract developers and want to deploy to a live environment. Users can deploy both EVM and WASM smart contracts on Edgeware. Edgeware intends to connect to AXIA as a smart contract allychain.
 
 Try deploying a smart contract on Edgeware by following their [documentation][edgeware contracts documentation].
 
@@ -318,25 +313,24 @@ Try deploying a smart contract on Edgeware by following their [documentation][ed
 [Moonbeam][] is another project that is planning to deploy to AXIA as a allychain and will
 support Ethereum compatible smart contracts. Since Moonbeam uses [Frontier][], an interoperability layer with existing Ethereum tooling, it will support all applications that are written to target the EVM environment with little friction.
 
-[Moonriver](https://docs.moonbeam.network/networks/moonriver/), a companion network to Moonbeam, launched as a allychain on AXIALunar. Allychain functionality is live, and features are being incrementally released. The final phase of the launch will include EVM functionality and balance transfers.
 
 Try deploying a smart contract to Moonbeam by following their [documentation][moonbeam docs].
 
 ### Astar
 
-[Astar](https://astar.network/) (formerly Plasm) is built on Substrate as a smart contract platform and intends to integrate with AXIA as a allychain. [Shiden](https://shiden.astar.network/) is the sister network to Astar, is currently live on AXIALunar, and supports EVM, WASM, and Layer 2 solutions. Astar aims to house all layer 2 scaling solutions and support all layer 2 protocols through the [OVM](https://docs.astar.network/learn/layer2/optimistic-virtual-machine) (Optimistic Virtual Machine).
+[Astar](https://astar.network/) (formerly Plasm) is built on Substrate as a smart contract platform and intends to integrate with AXIA as a allychain. Astar aims to house all layer 2 scaling solutions and support all layer 2 protocols through the [OVM](https://docs.astar.network/learn/layer2/optimistic-virtual-machine) (Optimistic Virtual Machine).
 
 Try deploying an Ethereum or ink! smart contract by following their [documentation](https://docs.astar.network/build/smart-contracts).
 
 ### Acala
 
-[Acala](https://acala.network/) is a decentralized finance consortium and DeFi infrastructure chain delivering a set of protocols to serve as the DeFi hub on AXIA. [Karura](https://acala.network/karura), Acala's canary network, is live as a allychain on AXIALunar. Interested teams are now able to deploy DApps and smart contracts on Karura's platform. Acala is also implementing the [Acala EVM](https://wiki.acala.network/learn/acala-evm/why-acala-evm).
+[Acala](https://acala.network/) is a decentralized finance consortium and DeFi infrastructure chain delivering a set of protocols to serve as the DeFi hub on AXIA. Interested teams are now able to deploy DApps and smart contracts on Karura's platform. Acala is also implementing the [Acala EVM](https://wiki.acala.network/learn/acala-evm/why-acala-evm).
 
 Try deploying an Acala EVM smart contract by following their [documentation](https://wiki.acala.network/build/development-guide/smart-contracts).
 
 ### Phala
 
-[Phala](https://phala.network) is a privacy-preserving cloud compute platform and aims to provide strong guarantees of confidentiality as a cross-chain platform. As a smart contract platform, Phala will enable the use of confidential smart contracts on AXIA. [Khala](https://phala.network/en/khala) is Phala's canary network and is live as a allychain on AXIALunar.
+[Phala](https://phala.network) is a privacy-preserving cloud compute platform and aims to provide strong guarantees of confidentiality as a cross-chain platform. As a smart contract platform, Phala will enable the use of confidential smart contracts on AXIA.
 
 Try deploying a confidential smart contract by following their [documentation](https://wiki.phala.network/en-us/docs/developer/your-first-confidential-contract/).
 
@@ -352,7 +346,7 @@ the [AXIA Watercooler](https://matrix.to/#/#AXIA-watercooler:matrix.org) to talk
 Developers may be interested in joining the
 [AXIA Beginners Lounge](https://matrix.to/#/#AXIAnoobs:matrix.org) or
 [Substrate Technical](https://matrix.to/#/#substrate-technical:matrix.org) to ask their questions.
-As always, keep up to date with AXIA and AXIALunar by following the
+As always, keep up to date with AXIA by following the
 [social channels](../general/community.md).
 
 Good luck!

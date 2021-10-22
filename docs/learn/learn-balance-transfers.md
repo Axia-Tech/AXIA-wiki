@@ -12,8 +12,8 @@ transferred.
 
 ## AXIA-JS Apps
 
-> NOTE: In this walkthrough we will be using the AXIA network, but this is the same process for
-> AXIALunar. If you would like to switch to a different network, you can change it by clicking the top
+> NOTE: In this walkthrough we will be using the AXIA network.
+> If you would like to switch to a different network, you can change it by clicking the top
 > left navigation dropdown and selecting a different network.
 
 Let's begin by opening [AXIA-JS Apps][]. There are two ways to make a balance transfer:
@@ -49,7 +49,7 @@ send AXCs regardless of the consequence; `transfer_keep_alive` will not allow yo
 that would allow the sending account to be removed due to it going below the existential deposit.
 
 By default, AXIA-JS Apps will use `transfer_keep_alive`, ensuring that the account you send from
-cannot drop below the existential deposit (1 AXC or 0.001666 LUNAR). However, it may be that you do
+cannot drop below the existential deposit (1 AXC). However, it may be that you do
 not want to keep this account alive (for example, because you are moving all of your funds to a
 different address). In this case, click on the "keep-alive" toggle at the bottom of the modal
 window. The label should switch from "Transfer with account keep-alive checks"(`transfer_keep_alive`
@@ -110,16 +110,14 @@ see why by hovering over the information icon next to it.
 
 #### Existing Recovery Info
 
-Currently, {{ AXIA: AXIA :AXIA }} {{ axialunar: AXIALunar :axialunar }} does not use the
+Currently, {{ AXIA: AXIA :AXIA }} does not use the
 [Recovery Pallet](https://substrate.dev/docs/en/knowledgebase/runtime/frame#recovery), so this is
 probably not the reason for your tokens having existing references.
 
-{{ axialunar: On AXIALunar, you can check if recovery has been set up by checking the `recovery.recoverable(AccountId)`
-chain state. This can be found under `Developer > Chain state` in [AXIAJS Apps][AXIA-js apps]. :axialunar }}
 
-#### Existing {{ AXIA: Non-AXC :AXIA }} {{ axialunar: Non-LUNAR :axialunar }} Assets
+#### Existing {{ AXIA: Non-AXC :AXIA }} Assets
 
-Currently, {{ AXIA: AXIA :AXIA }} {{ axialunar: AXIALunar :axialunar }} does not use the
+Currently, {{ AXIA: AXIA :AXIA }} does not use the
 [Assets Pallet](https://substrate.dev/docs/en/knowledgebase/runtime/frame#assets), so this is
 probably not the reason for your tokens having existing references.
 

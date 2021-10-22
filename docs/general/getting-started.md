@@ -237,15 +237,13 @@ This is recommended for users with backgrounds of all levels, and the course is 
 
 <br />
 
-For brand-new learners of AXIALunar, AXIA's canary cousin network: To learn more about how to build
-and maintain on the AXIALunar network, please head over to our [AXIALunar Guide][axialunar guide].
 
 ## Resources
 
 - [AXIA Crowdcast](https://www.crowdcast.io/AXIA) - List of all Crowdcast webinars that the
   AXIA Foundation has done.
 - [AXIA Explorer](https://AXIA.js.org/apps/#/explorer) - Browser for the AXIA network;
-  can be used for AXIA, AXIALunar, or any Substrate-based chain.
+  can be used for AXIA, or any Substrate-based chain.
 - [AXIAscan](http://axiascan.io/) \- Real-time multi-chain data for AXIA Relay Chain and
   AXIA Substrate chains.
 - [Subscan.io](https://subscan.io) - Explorer for Substrate based chains.
@@ -284,4 +282,3 @@ and maintain on the AXIALunar network, please head over to our [AXIALunar Guide]
 [council]: ../maintain/maintain-guides-how-to-join-council.md
 [council voting]: ../maintain/maintain-guides-how-to-vote-councillor.md
 [treasury]: ../learn/learn-treasury.md
-[axialunar guide]: https://lunar.wiki.AXIA.network/

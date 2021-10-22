@@ -5,10 +5,7 @@ sidebar_label: How to Nominate on AXIA
 slug: ../maintain-guides-how-to-nominate-AXIA
 ---
 
-> The following information applies to the AXIA network. If you want to nominate on AXIALunar,
-> check out the
-> [AXIALunar guide](https://lunar.wiki.AXIA.network/docs/mirror-maintain-guides-how-to-nominate-axialunar)
-> instead.
+> The following information applies to the AXIA network.
 
 Nominators are one type of participant in the staking subsystem of AXIA. They are responsible
 for appointing their stake to the validators who are the second type of participant. By appointing

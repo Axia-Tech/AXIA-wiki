@@ -10,11 +10,10 @@ slug: ../learn-AXC
 AXC is the native token of the AXIA network in a similar way that BTC is the native token of
 Bitcoin or Ether is the native token of the Ethereum blockchain.
 
-The smallest unit of account in a Substrate network (AXIA, AXIALunar, etc.) is the Planck (a
+The smallest unit of account in a Substrate network (AXIA, etc.) is the Planck (a
 reference to [Planck Length](https://en.wikipedia.org/wiki/Planck_length), the smallest possible
 distance in the physical Universe). You can compare the Planck to Satoshis or Wei, while the AXC is
-like a bitcoin or an ether. AXIALunar tokens (LUNAR) are equal to 1e12 Planck, and AXIA mainnet AXC
-is equal to 1e10 Planck.
+like a bitcoin or an ether. AXIA mainnet AXC is equal to 1e10 Planck.
 
 ### AXIA
 
@@ -26,19 +25,10 @@ is equal to 1e10 Planck.
 | Dot (AXC)       | 10             | 1.0000000000 |
 | Million (MAXC)  | 16             | 1,000,000.00 |
 
-> Note: This changed at block #1*248_328. Previously, AXC was denominated as equal to 1e12 Planck,
-> just like AXIALunar. This denomination is deprecated, and, if necessary, referred to as "AXC (old)".
+> Note: This changed at block #1*248_328. Previously, AXC was denominated as equal to 1e12 Planck.
+> This denomination is deprecated, and, if necessary, referred to as "AXC (old)".
 > See [Redenomination of AXC](../general/redenomination.md) for more details.*
 
-### AXIALunar
-
-| Unit            | Decimal Places | Example        |
-| --------------- | -------------- | -------------- |
-| Planck          | 0              | 0.000000000001 |
-| Point           | 3              | 0.000000001000 |
-| MicroLUNAR (uLUNAR) | 6              | 0.000001000000 |
-| MilliLUNAR (mLUNAR) | 9              | 0.001000000000 |
-| LUNAR             | 12             | 1.000000000000 |
 
 ## What are the uses of AXC?
 
@@ -51,8 +41,6 @@ AXC serves three key functions in AXIA:
 AXC can also serve ancillary functions by virtue of being a transferrable token. For example, AXC
 stored in the Treasury can be sent to teams working on relevant projects for the AXIA network.
 
-> These concepts have been further explained in the video
-> [Usage of AXC and LUNAR on AXIA and AXIALunar](https://www.youtube.com/watch?v=POfFgrMfkTo&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=7).
 
 ### AXC for Governance
 
@@ -95,7 +83,7 @@ since locks are [lazy](#lazy-vesting) and require an extrinsic to update.
 
 There are two ways that vesting schedules can be created.
 
-- One way is as part of the genesis configuration of the chain. In the case of AXIA and AXIALunar,
+- One way is as part of the genesis configuration of the chain. In the case of AXIA,
   the chain specification genesis script reads the state of the AXIA Claims contract that exists
   on the Ethereum blockchain and creates vesting schedules in genesis for all the allocations
   registered as being vested.
@@ -174,12 +162,6 @@ obtain ROC by posting `!drip <BETANET_ADDRESS>` in the Matrix chatroom
 [#betanet-faucet:matrix.org](https://matrix.to/#/#betanet-faucet:matrix.org).
 
 Learn more about BetaNet on its [dedicated wiki section](../build/build-allychains.md##testing-a-allychains:-betanet-testnet).
-
-## AXIALunar Tokens
-
-Unlike testnet AXC, AXIALunar tokens are not freely given away. AXIALunar tokens are available via the
-[claims process](https://claim.axialunar.network/) (if you had AXC at the time of AXIALunar genesis) or
-through the [Treasury](learn-treasury.md). Alternatively, they can be obtained on the open market.
 
 ## AXIA Mainnet AXC
 

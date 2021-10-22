@@ -7,7 +7,7 @@ slug: ../maintain-guides-validator-payout
 
 ## Era Points
 
-For every era (a period of time approximately 6 hours in length in AXIALunar, and 24 hours in
+For every era (a period of time approximately 24 hours in
 AXIA), validators are paid proportionally to the amount of _era points_ they have collected. Era
 points are reward points earned for payable actions like:
 
@@ -35,8 +35,7 @@ totals over a large number of eras.
 Validators may also receive "tips" from senders as an incentive to include transactions in their
 produced blocks. Validators will receive 100% of these tips directly.
 
-Validators will receive staking rewards in the form of the native token of that chain (LUNAR for
-AXIALunar and AXC for AXIA).
+Validators will receive staking rewards in the form of the native token of that chain (AXC for AXIA).
 
 For simplicity, the examples below will assume all validators have the same amount of era points,
 and received no tips.
@@ -68,9 +67,7 @@ will result in a higher return than running a single validator.
 For the following example, assume you have 18 AXC to stake. For simplicity's sake, we will ignore
 nominators. Running a single validator, as in the example above, would net you 2 AXC in this era.
 
-Note that while AXC is used as an example, this same formula would apply to LUNAR when running a
-validator on AXIALunar.
-
+Note that while AXC is used as an example.
 ```
 Validator Set Size (v): 4
 Validator 1 Stake (v1): 18 AXC <- Your validator
@@ -155,7 +152,7 @@ nominator may stake different validators.
 
 Each validator in the example has selected a different validator payment (that is, a percentage of
 the reward set aside directly for the validator before sharing with all bonded stake). The
-validator's payment percentage (in AXC, although the same calculations work for LUNAR) is listed in
+validator's payment percentage is listed in
 brackets (`[]`) next to each validator. Note that since the validator payment is public knowledge,
 having a low or non-existent validator payment may attract more stake from nominators, since they
 know they will receive a larger reward.

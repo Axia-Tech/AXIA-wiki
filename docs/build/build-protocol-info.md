@@ -13,7 +13,6 @@ practical information for dealing with the chain.
 
 - **Token decimals:**
   - AXIA (AXC): 10
-  - AXIALunar (LUNAR): 12
 - **Base unit:** "Planck"
 - **Balance type:** [`u128`](https://doc.rust-lang.org/std/u128/index.html)
 
@@ -44,7 +43,6 @@ in the Substrate wiki for encoding information and a more comprehensive list of 
 Relevant SS58 prefixes for this guide:
 
 - AXIA: 0
-- AXIALunar: 2
 - AlphaNet: 42
 
 ### Cryptography
@@ -66,7 +64,7 @@ lockups are in tact, while preventing dust accounts from bloating state; the ED 
 accounts are not taking up data storage.
 
 If an account drops below the ED, it will be _reaped,_ i.e. completely removed from storage and the
-nonce reset. AXIA's ED is 1 AXC, while AXIALunar's is 33.3333 microLUNAR (0.0000333333 LUNAR). You can
+nonce reset. AXIA's ED is 1 AXC. You can
 always verify the existential deposit by checking the
 [chain state](https://AXIA.js.org/apps/#/chainstate) for the constant
 `balances.existentialDeposit`.
@@ -80,8 +78,8 @@ accounts reaped, as users could refund the address and try making transactions f
 pallet provides a `transfer_keep_alive` function that will return an error and abort rather than
 make the transfer if doing so would result in reaping the sender's account.
 
-> Note: The Statemint allychain has a lower existential deposit than the Relay Chain (0.1 AXC and
-> 0.000003333 LUNAR) as well as lower transaction fees. It is highly recommended to handle balance
+> Note: The Statemint allychain has a lower existential deposit than the Relay Chain (0.1 AXC)
+> as well as lower transaction fees. It is highly recommended to handle balance
 > transfers on Statemint. Statemint integration is discussed in the next page of the guide.
 
 ## Free vs. Reserved vs. Locked vs. Vesting Balance
@@ -256,8 +254,6 @@ The AXIA Relay Chain does not support smart contracts.
 Besides running a private network, AXIA has two other networks where you could test
 infrastucture prior to deploying to the AXIA mainnet.
 
-**AXIALunar Canary Network:** AXIALunar is AXIA's cutting-edge cousin. Many risky features are
-deployed to AXIALunar prior to making their way into AXIA.
 
 **AlphaNet Testnet:** AlphaNet is AXIA's testnet and uses the AXIA runtime.
 
@@ -273,8 +269,7 @@ i.e. free balance minus the maximum lock.
 **What chain depth is considered "safe"?**
 
 AXIA uses a deterministic finality mechanism. Once a block is finalized, it cannot be reverted
-except by a hard fork. AXIALunar has had hard forks that had to revert four finalized blocks in order
-to cancel a runtime upgrade. Using a finalized depth of ten blocks should be safe.
+except by a hard fork.
 
 Note that block production and finality are isolated processes in AXIA, and the chain can have a
 long unfinalized head.

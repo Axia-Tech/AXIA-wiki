@@ -5,10 +5,7 @@ sidebar_label: How to run a Validator on AXIA
 slug: ../maintain-guides-how-to-validate-AXIA
 ---
 
-> The following information applies to the AXIA network. If you want to set up a validator on
-> AXIALunar, check out the
-> [AXIALunar guide](axialunar/mirror-maintain-guides-how-to-validate-axialunar.md)
-> instead.
+> The following information applies to the AXIA network.
 
 This guide will instruct you how to set up a validator node on the AXIA network.
 
@@ -227,8 +224,7 @@ code available in the **v0.9** branch.
 You should generally use the latest **0.9.x** tag. You should either review the output from the "git
 tag" command or visit the [Releases](https://github.com/axia-tech/AXIA/releases) to see a list
 of all the potential 0.9 releases. You should replace `VERSION` below with the latest build (i.e.,
-the highest number). You can also find the latest AXIALunar version on the
-[release](https://github.com/axia-tech/AXIA/releases) tab.
+the highest number).
 
 > Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the below with
 > `git clone git@github.com:axia-tech/AXIA.git`.
@@ -379,8 +375,7 @@ First, go to the [Staking](https://AXIA.js.org/apps/#/staking/actions) section. 
   need a small amount of AXC in order to start and stop validating.
 - **Value bonded** - How much AXC from the Stash account you want to bond/stake. Note that you do
   not need to bond all of the AXC in that account. Also note that you can always bond _more_ AXC
-  later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On
-  AXIALunar, the unbonding period is 7 days. On AXIA, the planned unbonding period is 28 days.
+  later. However, _withdrawing_ any bonded amount requires the duration of the unbonding period. On AXIA, the planned unbonding period is 28 days.
 - **Payment destination** - The account where the rewards from validating are sent. More info
   [here](../learn/learn-staking.md/#reward-distribution). Starting with runtime version v23 natively included
   in client version [0.9.3](https://github.com/axia-tech/AXIA/releases/tag/v0.9.3), payouts can

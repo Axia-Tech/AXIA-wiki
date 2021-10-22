@@ -6,7 +6,7 @@ slug: ../maintain-guides-democracy
 ---
 
 The public referenda chamber is one of the three bodies of on-chain governance as it's instantiated
-in AXIA and AXIALunar. The other two bodies are the
+in AXIA. The other two bodies are the
 [council](maintain-guides-how-to-join-council.md) and the
 [technical committee](../learn/learn-governance.md#technical-committee).
 
@@ -18,7 +18,7 @@ tokens for a greater duration of time can do so and get their vote amplified. Fo
 the governance system please see [here](../learn/learn-governance.md).
 
 This guide will instruct token holders how to propose and vote on public referenda using the
-Democracy module as it's implemented in AXIALunar.
+Democracy module as it's implemented in AXIA.
 
 ## Important Parameters
 
@@ -174,9 +174,8 @@ means withdrawing your AXC that was used in staking. To know more about it, plea
 You can do this from the "Accounts" page in
 [AXIA-JS Apps](https://AXIA.js.org/apps/#/accounts), unless you use Ledger (see below).
 First check that your account has a "democracy" lock by opening the details on your balance. In the
-example below the account has 150 LUNAR locked in democracy.
+example below the account has 150 AXC locked in democracy.
 
-![democracy balance details](../assets/democracy_balance_details.png)
 
 Now you can click the menu button on Apps and find the option that says "Clear expired democracy
 locks". After selecting this option you may confirm the transaction and your locks will be cleared
