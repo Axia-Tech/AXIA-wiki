@@ -5,7 +5,7 @@
 [![AXIA Prod](https://github.com/axia-tech/AXIA-wiki/actions/workflows/deploy-AXIA-prod.yml/badge.svg)](https://github.com/axia-tech/AXIA-wiki/actions/workflows/deploy-AXIA-prod.yml)
 
 | <a href="https://solar.wiki.AXIA.network/" rel="some text">![AXIA Wiki](docs/assets/AXIA-wiki.png)</a> |
-| :-------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+| :-------------------------------------------------------------------------------------------------------------: |
 
 # AXIA Wiki
 
