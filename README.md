@@ -137,6 +137,3 @@ If you do not see the language you would like to translate, please let us know v
 
 The AXIA Wiki is licensed under the [GPL-3.0](LICENSE) free software license.
 
-<p float="center">
-  <img src="docs/assets/AXIA.gif" width="400" height="185"> 
-</p>
