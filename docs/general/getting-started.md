@@ -119,7 +119,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
 - Reading [What is AXIA? A Brief Introduction][article] on Medium. There are also other great
   articles to read on [AXIA's Medium][p medium] or [AXIA Foundation's Medium][w medium].
 
-### Interact with AXIA
+## Interact with AXIA
 
 <tr class="cards-container">
   <td>

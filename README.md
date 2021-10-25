@@ -3,9 +3,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/general/contributing.md)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=page.id)
 [![AXIA Prod](https://github.com/axia-tech/AXIA-wiki/actions/workflows/deploy-AXIA-prod.yml/badge.svg)](https://github.com/axia-tech/AXIA-wiki/actions/workflows/deploy-AXIA-prod.yml)
-[![AXIALunar Prod](https://github.com/axia-tech/AXIA-wiki/actions/workflows/deploy-axialunar-prod.yml/badge.svg)](https://github.com/axia-tech/AXIA-wiki/actions/workflows/deploy-axialunar-prod.yml)
 
-| <a href="https://solar.wiki.AXIA.network/" rel="some text">![AXIA Wiki](docs/assets/AXIA-wiki.png)</a> | <a href="https://lunar.wiki.AXIA.network/" rel="some text">![AXIALunar Guide](docs/assets/axialunar-guide.png)</a> |
+| <a href="https://solar.wiki.AXIA.network/" rel="some text">![AXIA Wiki](docs/assets/AXIA-wiki.png)</a> |
 | :-------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
 
 # AXIA Wiki
@@ -28,7 +27,7 @@ It is generally preferable to create a pull request over an issue to propose a c
 
 ### Running Locally
 
-Both the AXIA Wiki and the AXIALunar Guide are built from the source files in this repository.
+The AXIA Wiki Guide is built from the source files in this repository.
 After cloning the source locally, you can start the websites with each of these respective commands
 (ensure you run `yarn` at the root of the repository first to install dependencies):
 
@@ -38,18 +37,14 @@ After cloning the source locally, you can start the websites with each of these 
 ```zsh
 # For the AXIA Wiki:
 yarn AXIA:start
-# For the AXIALunar Guide:
-yarn axialunar:start
 ```
 
 #### Building IPFS
 
-- Run `yarn axialunar:build`
 - Run `yarn AXIA:build`
 
 #### Running GitHub Pages
 
-- Run `yarn axialunar:publish-gh-pages`
 - Run `yarn AXIA:publish-gh-pages`
 
 ### Style Guide
@@ -87,15 +82,6 @@ for lookup is located in another repository that's maintained by Algolia DocSear
 We have enabled searching on the Wiki by declaring the `algolia` section in the `siteConfig.js`
 file in `scripts`, and defining an API key and index name that are provided by DocSearch.
 
-```js
-  algolia: {
-    apiKey: "53c6a4ab0d77c0755375a971c9b7cc3d",
-    indexName: "axialunar_guide",
-    algoliaOptions: {
-      facetFilters: ["language:LANGUAGE"],
-    }, // Optional, if provided by Algolia
-  }
-```
 
 If you would like to access and modify this, you can re-submit the documentation url via
 [DocSearch Program](https://docsearch.algolia.com/apply/), where they will send
@@ -105,18 +91,15 @@ one shown above.
 ### Automated Deployments
 
 The AXIA wiki is built on the `gh-pages` branch and automatically deployed to GitHub Pages.
-The AXIALunar wiki is also deployed to GitHub Pages (via a separate repository).
 
-Development servers exist at `https://staging.AXIA.network` and `https://staging.axialunar.network`.
+Development servers exist at `https://staging.AXIA.network`.
 The servers will reflect the latest `master` commit or PR put up against the master branch by a member of the Technical Education team.
 The latest version of `master` is staged and checked by the team. If all is well, the new commits on `master` are transferred into the production branch,`prod`, by rebasing `master` on `prod`. The CICD production workflow will deploy `prod` to the public sites:
-[AXIA Wiki](https://solar.wiki.AXIA.network) and [AXIALunar Guide](https://lunar.wiki.AXIA.network), respectively.
+[AXIA Wiki](https://solar.wiki.AXIA.network), respectively.
 
 ### Mirror Pages
 
 A limitation of Docusaurus is that pages can only be included in one sidebar at any given time.
-Thus, our AXIALunar section will either hijack some content it shares with the rest of the wiki, or
-lack that content.
 
 To solve this, the repo mirrors some pages and includes them in additional sidebars. The `scripts`
 folder contains a `mirror.js` script that creates a copy of the pages to duplicate across sidebars.
@@ -127,30 +110,19 @@ the relevant sidebar section. To run the script:
 yarn mirror
 ```
 
-> Note: This command runs automatically when using `AXIA:start` or `axialunar:start` development
+> Note: This command runs automatically when using `AXIA:start` development
 > scripts, so you don't need to worry about running it manually if you start the development site
 > with one of these commands.
 
 ### Conditional Rendering
 
-The two wikis support conditional rendering depending on which wiki is being deployed. This is
-useful for mirrored pages that have most content in common, but some minor differences. To use this
-functionality, surround AXIALunar specific content with {{ axialunar: :axialunar }}, and AXIA specific
+The wiki support conditional rendering depending on which wiki is being deployed. This is
+useful for mirrored pages that have most content in common.
 content with {{ AXIA: :AXIA }}. Example:
 
-```md
-If the treasury ends a budget period without spending all of its funds, it suffers a burn of a
-percentage of its funds -- thereby causing deflationary pressure.
-{{ AXIA: This percentage is currently at 1%
-on AXIA. :AXIA }} {{ axialunar: This percentage is currently 0.2% on AXIALunar, with the amount currently going to
-[Society](https://lunar.wiki.AXIA.network/docs/en/maintain-guides-society-axialunar) rather than being
-burned. :axialunar }}
-```
 
-To test the resolution, run `AXIA:build` and `axialunar:build`, then `AXIA:inject` and
-`axialunar:inject`, respectively.
-Inspect the built files in the corresponding `build` folder under `website` or
-`axialunar-guide`.
+To test the resolution, run `AXIA:build`, then `AXIA:inject`, respectively.
+Inspect the built files in the corresponding `build` folder under `website`.
 
 ## Internationalization
 
@@ -167,5 +139,4 @@ The AXIA Wiki is licensed under the [GPL-3.0](LICENSE) free software license.
 
 <p float="center">
   <img src="docs/assets/AXIA.gif" width="400" height="185"> 
-  <img src="docs/assets/axialunar.gif" width="400" height="185"> 
 </p>
