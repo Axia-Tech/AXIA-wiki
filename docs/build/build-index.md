@@ -47,17 +47,14 @@ integrate AXIA into their systems.
   (PSPs) are standards for the AXIA ecosystem.
 - [Examples](#) - Example projects sourced from the community -- see what others are building.
 
-### Grants
+## Grants
 
 - [Grants](../general/grants.md) - A list of all AXIA-related projects given grants by the AXIA Foundation.
 
-### PSPs
+## PSPs
 
 AXIA Standards Proposals (PSPs) are standards for the AXIA ecosystem.
 
 - [PSP GitHub Repository](https://github.com/axia-tech/PSPs) - Read, create, or discuss standards and
   proposals.
 
-### Hackathon
-
-- [Resources For Running a Hackathon](build-hackathon.md)

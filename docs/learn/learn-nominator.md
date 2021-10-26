@@ -30,7 +30,6 @@ page, you should see your bonded accounts and nomination status. If not, you can
 [this](../maintain/maintain-guides-how-to-nominate-AXIA.md) guide to configure it first. Your nominations
 will be effective in the next era; eras are roughly 24 hours on AXIA.
 
-![Nominations](../assets/staking/AXIAjs_nominator_account.png)
 
 Suppose you have nominated five validator candidates, and three out of five were elected to the
 active validator set, then you should see two of your nominations as "waiting", and most likely one
@@ -108,7 +107,6 @@ continue operation. Independent validators that rely on the commission to cover 
 help to keep the network decentralized. Commission is just one piece of the puzzle that you should
 consider when picking validators to nominate.
 
-![Staking Returns](../assets/staking/AXIAjs_nominators_target.png)
 
 As a nominator, if you only want to know the profit each validator made for each era, you can go to
 the [Targets](https://AXIA.js.org/apps/#/staking/targets) section under the staking page by
@@ -151,7 +149,6 @@ likely would get fewer rewards than others. More importantly, when many validato
 [unreachable](learn-staking.md#unresponsiveness), those nominators who staked with them will be
 slashed.
 
-![Validator Stats](../assets/staking/AXIAjs_validator_stats.png)
 
 Thus, to be a smart nominator, it would be better to query their
 [histories](https://AXIA.js.org/apps/#/staking/query/) to see statistics such as blocks
