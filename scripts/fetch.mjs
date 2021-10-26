@@ -10,19 +10,19 @@ const argv = yargs(process.argv)
     description: "Dry run - check values before replacing",
     type: "boolean",
   })
-  .option("isaxiasolar", {
+  .option("isAXIA", {
     alias: "p",
-    description: "Is axiasolar - build dict values for axiasolar or axiasolarLunar",
+    description: "Is AXIA - build dict values for AXIA or AXIALunar",
     type: "boolean",
   })
   .help()
   .alias("help", "h").argv;
 
-if (argv.isaxiasolar === undefined) {
-  throw new Error("Must pass a --isaxiasolar option.");
+if (argv.isAXIA === undefined) {
+  throw new Error("Must pass a --isAXIA option.");
 }
 
-const node = argv.isaxiasolar ? "wss://wss.stage.axiacoin.network/" : "wss://kusama-rpc.axiadot.io/";
+const node = argv.isAXIA ? "wss://wss.stage.axiacoin.network/" : "wss://kusama-rpc.axiadot.io/";
 console.log("Connecting to node " + node);
 
 let filledDict = {};
@@ -34,11 +34,11 @@ ApiPromise.create({ provider: wsProvider })
     console.log("Connected");
 
     let wiki;
-    if (argv.isaxiasolar) {
-      console.log("Working on the axiasolar wiki");
-      wiki = "axiasolar";
+    if (argv.isAXIA) {
+      console.log("Working on the AXIA wiki");
+      wiki = "AXIA";
     } else {
-      console.log("Working on axiasolarLunar Guide");
+      console.log("Working on AXIALunar Guide");
       wiki = "axialunar";
     }
 
@@ -81,8 +81,8 @@ ApiPromise.create({ provider: wsProvider })
       if (!chainValue) {
         console.log("No value found, seeking default for " + replacement.tpl);
         if (typeof replacement.default === "object") {
-          if (wiki === "axiasolar") {
-            chainValue = replacement.default.axiasolar;
+          if (wiki === "AXIA") {
+            chainValue = replacement.default.AXIA;
           } else {
             chainValue = replacement.default.axialunar;
           }
@@ -138,7 +138,7 @@ function applyFilter(value, filter, wiki) {
   console.log(`Applying ${filter} to ${wiki} value ${value}`);
 
   const values = {
-    axiasolar: {
+    AXIA: {
       precision: 1e10,
       symbol: "AXC",
     },
