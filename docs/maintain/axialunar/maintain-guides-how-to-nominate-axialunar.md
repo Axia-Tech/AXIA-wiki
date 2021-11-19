@@ -134,13 +134,13 @@ Apart from using the AXIA-JS UI to participate in the staking, you can do all th
 CLI instead. The CLI approach allows you to interact with the AXIA / AXIALunar network without
 going to the AXIAdoJS dashboard.
 
-### Step 1: Install @AXIA-js/api-cli
+### Step 1: Install @axia-js/api-cli
 
 We assume you have installed [NodeJS with npm](https://nodejs.org). Run the following command to
-install the `@AXIA-js/api-cli` globally:
+install the `@axia-js/api-cli` globally:
 
 ```bash
-npm install -g @AXIA-js/api-cli
+npm install -g @axia-js/api-cli
 ```
 
 ### Step 2. Bond your LUNAR

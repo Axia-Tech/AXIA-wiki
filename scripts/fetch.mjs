@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import yargs from "yargs";
-import { ApiPromise, WsProvider } from "@axiasolar-js/api";
+import { ApiPromise, WsProvider } from "@axia-js/api";
 import replacements from "./inject-dict.json";
 import * as computed from "./computed.mjs";
 

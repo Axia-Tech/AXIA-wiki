@@ -60,15 +60,15 @@ Here we provide a list of tools available for your development needs. They are s
 
 AXIA-JS Common provides various utility functions that are used across all projects in the `@AXIA` namespace and is split into a number of internal utility packages. The documentation and usage instructions are provided at [AXIA-JS/Common API Documentation](https://AXIA.js.org/common/).
 
-- [@AXIA-js/keyring](https://AXIA.js.org/common/keyring/) This allows you to create and load accounts in JavaScript. It is helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://AXIA.js.org/docs/keyring/start/create).
-- [@AXIA-js/util](https://AXIA.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
-- [@AXIA-js/util-crypto](https://AXIA.js.org/common/util-crypto/) Useful cryptographic utilities for developing with AXIA.
+- [@axia-js/keyring](https://AXIA.js.org/common/keyring/) This allows you to create and load accounts in JavaScript. It is helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://AXIA.js.org/docs/keyring/start/create).
+- [@axia-js/util](https://AXIA.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
+- [@axia-js/util-crypto](https://AXIA.js.org/common/util-crypto/) Useful cryptographic utilities for developing with AXIA.
 
 ### CLI Tools
 
-- [@AXIA-js/api-cli](https://github.com/AXIA-js/tools/tree/master/packages/api-cli) Command line interface for the AXIA API. [Documentation](https://AXIA.js.org/docs/api/start).
-- [@AXIA-js/monitor-rpc](https://github.com/AXIA-js/tools/tree/master/packages/monitor-rpc) An RPC monitor for AXIA. See the RPC tools below for additional information.
-- [@AXIA-js/signer-cli](https://github.com/AXIA-js/tools/tree/master/packages/signer-cli) A Tool to construct, sign, and broadcast transactions. Signing can be done offline.
+- [@axia-js/api-cli](https://github.com/AXIA-js/tools/tree/master/packages/api-cli) Command line interface for the AXIA API. [Documentation](https://AXIA.js.org/docs/api/start).
+- [@axia-js/monitor-rpc](https://github.com/AXIA-js/tools/tree/master/packages/monitor-rpc) An RPC monitor for AXIA. See the RPC tools below for additional information.
+- [@axia-js/signer-cli](https://github.com/AXIA-js/tools/tree/master/packages/signer-cli) A Tool to construct, sign, and broadcast transactions. Signing can be done offline.
 - [AXIA API Cpp](https://github.com/usetech-llc/AXIA_api_cpp) - A С++ API for AXIA, can build `clip`, a command line tool.
 
 ### WASM
@@ -82,7 +82,7 @@ Webassembly related tools and projects.
 
 ### RPC and API Tools
 
-- [@AXIA-js/api/rpc-provider](https://github.com/AXIA-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
+- [@axia-js/api/rpc-provider](https://github.com/AXIA-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
 - [RPC documentation](https://AXIA.js.org/docs/substrate/rpc) - Documentation of Substrate RPC methods.
 - [AXIA API Server by SimplyVC](https://github.com/SimplyVC/AXIA_api_server) - A wrapper around the AXIA API which makes it easier to make AXIA API calls from any programming language.
 - [Go: Subscan API](https://github.com/itering/substrate-api-rpc) - Go API for AXIA.

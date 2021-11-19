@@ -1,4 +1,4 @@
-import { ApiPromise, WsProvider } from "@AXIA-js/api";
+import { ApiPromise, WsProvider } from "@axia-js/api";
 
 // A big string to put all of the output.
 let output = `

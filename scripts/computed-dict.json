@@ -14,5 +14,5 @@
   "{{ AXIA_max_nominators }}": "256",
   "{{ dot_ipfs_pdf_url }}": "https://ipfs.io/ipfs/undefined?filename=AXIA-wiki.pdf",
   "{{ num_validators }}": 2,
-  "{{ treasury_proposal_total }}": 10
+  "{{ treasury_proposal_total }}": 1
 }

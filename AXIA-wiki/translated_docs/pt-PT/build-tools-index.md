@@ -64,17 +64,17 @@ Once you've configured and started to run a local node, you can interact with it
 
 AXIA-JS Common provides various utility functions that are used across all projects in the `@AXIA` namespace and is split into a number of internal utility packages. The documentation and usage instructions are provided at [AXIA-JS/Common API Documentation](https://AXIA.js.org/common/).
 
-- [@AXIA-js/keyring](https://AXIA.js.org/common/keyring/) To create / load accounts in JavaScript, helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://AXIA.js.org/common/examples/keyring/)
-- [@AXIA-js/util](https://AXIA.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
-- [@AXIA-js/util-crypto](https://AXIA.js.org/common/util-crypto/) Crypto utilities that will come in handy while developing with AXIA.
+- [@axia-js/keyring](https://AXIA.js.org/common/keyring/) To create / load accounts in JavaScript, helpful for creating wallets or any application that will require the user to write to chain. [Examples](https://AXIA.js.org/common/examples/keyring/)
+- [@axia-js/util](https://AXIA.js.org/common/util/) Utility functions like checking if a string is hex-encoded.
+- [@axia-js/util-crypto](https://AXIA.js.org/common/util-crypto/) Crypto utilities that will come in handy while developing with AXIA.
 
 ### CLI Tools
 
-- [@AXIA-js/api-cli](https://github.com/AXIA-js/tools/tree/master/packages/api-cli) Command line interface for the AXIA API. [Documentation](https://AXIA.js.org/api/api/)
-- [@AXIA-js/monitor-rpc](https://github.com/AXIA-js/tools/tree/master/packages/monitor-rpc) RPC monitor for AXIA. See the RPC tools below for additional information.
-- [@AXIA-js/signer-cli](https://github.com/AXIA-js/tools/tree/master/packages/signer-cli) Tool to construct, sign, and broadcast transactions. Signing can be done offline.
+- [@axia-js/api-cli](https://github.com/AXIA-js/tools/tree/master/packages/api-cli) Command line interface for the AXIA API. [Documentation](https://AXIA.js.org/api/api/)
+- [@axia-js/monitor-rpc](https://github.com/AXIA-js/tools/tree/master/packages/monitor-rpc) RPC monitor for AXIA. See the RPC tools below for additional information.
+- [@axia-js/signer-cli](https://github.com/AXIA-js/tools/tree/master/packages/signer-cli) Tool to construct, sign, and broadcast transactions. Signing can be done offline.
 
 ### RPC Tools
 
-- [@AXIA-js/api/rpc-provider](https://github.com/AXIA-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
+- [@axia-js/api/rpc-provider](https://github.com/AXIA-js/api/tree/master/packages/rpc-provider) Demonstrates how the JS tools interact with the node over RPC.
 - [RPC documentation](https://AXIA.js.org/api/substrate/rpc.html)

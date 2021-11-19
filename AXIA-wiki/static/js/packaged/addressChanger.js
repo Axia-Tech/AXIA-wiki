@@ -22059,7 +22059,7 @@
             );
           });
         var g = i(A("bs58")),
-          r = A("@AXIA-js/util"),
+          r = A("@axia-js/util"),
           n = i(A("./checkChecksum")),
           B = i(A("./defaults"));
       },
@@ -22067,7 +22067,7 @@
         "./checkChecksum": 201,
         "./defaults": 203,
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@AXIA-js/util": 246,
+        "@axia-js/util": 246,
         bs58: 317,
       },
     ],
@@ -22107,7 +22107,7 @@
             );
           });
         var g = i(A("bs58")),
-          r = A("@AXIA-js/util"),
+          r = A("@axia-js/util"),
           n = i(A("./decode")),
           B = i(A("./defaults")),
           I = i(A("./sshash"));
@@ -22117,7 +22117,7 @@
         "./defaults": 203,
         "./sshash": 206,
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@AXIA-js/util": 246,
+        "@axia-js/util": 246,
         bs58: 317,
       },
     ],
@@ -22138,14 +22138,14 @@
           (t.default = function (A) {
             return (0, r.default)((0, g.u8aConcat)(n, A), 512);
           });
-        var g = A("@AXIA-js/util"),
+        var g = A("@axia-js/util"),
           r = i(A("../blake2/asU8a"));
         const n = (0, g.stringToU8a)("SS58PRE");
       },
       {
         "../blake2/asU8a": 207,
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@AXIA-js/util": 246,
+        "@axia-js/util": 246,
       },
     ],
     207: [
@@ -22160,13 +22160,13 @@
               : g.default.blake2b((0, r.u8aToU8a)(A), t, B);
           });
         var g = i(A("blakejs")),
-          r = A("@AXIA-js/util"),
-          n = A("@AXIA-js/wasm-crypto");
+          r = A("@axia-js/util"),
+          n = A("@axia-js/wasm-crypto");
       },
       {
         "@babel/runtime/helpers/interopRequireDefault": 200,
-        "@AXIA-js/util": 246,
-        "@AXIA-js/wasm-crypto": 301,
+        "@axia-js/util": 246,
+        "@axia-js/wasm-crypto": 301,
         blakejs: 314,
       },
     ],
@@ -25070,12 +25070,12 @@
     ],
     300: [
       function (A, e, t) {
-        const { assert: i } = A("@AXIA-js/util");
+        const { assert: i } = A("@axia-js/util");
         e.exports = function (A) {
           const e =
             (e) =>
             (...t) =>
-              i(A.isReady(), "@AXIA-js/wasm-crypto has not been initialized"),
+              i(A.isReady(), "@axia-js/wasm-crypto has not been initialized"),
               e(...t);
           return {
             bip39Generate: e(A.ext_bip39_generate),
@@ -25102,7 +25102,7 @@
           };
         };
       },
-      { "@AXIA-js/util": 246 },
+      { "@axia-js/util": 246 },
     ],
     301: [
       function (A, e, t) {
@@ -25114,7 +25114,7 @@
     302: [
       function (A, e, t) {
         e.exports = {
-          name: "@AXIA-js/wasm-crypto",
+          name: "@axia-js/wasm-crypto",
           version: "1.2.1",
           author: "Jaco Greeff <jacogr@gmail.com>",
           files: [
@@ -25132,8 +25132,8 @@
           "react-native": { "./wasm_asm_stub.js": "./wasm_asm.js" },
           main: "index.js",
           types: "index.d.ts",
-          devDependencies: { "@AXIA-js/dev": "^0.50.8" },
-          peerDependencies: { "@AXIA-js/util": "*" },
+          devDependencies: { "@axia-js/dev": "^0.50.8" },
+          peerDependencies: { "@axia-js/util": "*" },
         };
       },
       {},
@@ -25351,7 +25351,7 @@
               i.__wbindgen_free(t, 1 * g);
             }
           });
-        const { u8aToString: c } = A("@AXIA-js/util");
+        const { u8aToString: c } = A("@axia-js/util");
         function h(A, e) {
           return c(n().subarray(A, A + e));
         }
@@ -25364,7 +25364,7 @@
             n = h(g, r).slice();
           return i.__wbindgen_free(g, 1 * r), n;
         };
-        const { stringToU8a: f } = A("@AXIA-js/util");
+        const { stringToU8a: f } = A("@axia-js/util");
         let E;
         (E =
           "function" == typeof stringToU8aInto
@@ -25565,7 +25565,7 @@
             i = A;
           });
       },
-      { "./wasm_promise": 305, "@AXIA-js/util": 246, crypto: 73 },
+      { "./wasm_promise": 305, "@axia-js/util": 246, crypto: 73 },
     ],
     304: [
       function (A, e, t) {
@@ -29507,8 +29507,8 @@
     ],
     323: [
       function (A, e, t) {
-        const i = A("@AXIA-js/util-crypto/address/decode").default,
-          g = A("@AXIA-js/util-crypto/address/encode").default;
+        const i = A("@axia-js/util-crypto/address/decode").default,
+          g = A("@axia-js/util-crypto/address/encode").default;
         globalThis.addressChanger = () => {
           const A = document.getElementById("input"),
             e = document.getElementById("prefix-select"),
@@ -29524,8 +29524,8 @@
         };
       },
       {
-        "@AXIA-js/util-crypto/address/decode": 202,
-        "@AXIA-js/util-crypto/address/encode": 204,
+        "@axia-js/util-crypto/address/decode": 202,
+        "@axia-js/util-crypto/address/encode": 204,
       },
     ],
   },

@@ -1,7 +1,5 @@
-const decodeAddress =
-  require("@AXIA-js/util-crypto/address/decode").default;
-const encodeAddress =
-  require("@AXIA-js/util-crypto/address/encode").default;
+const decodeAddress = require("@axia-js/util-crypto/address/decode").default;
+const encodeAddress = require("@axia-js/util-crypto/address/encode").default;
 
 const addressChanger = () => {
   const inEl = document.getElementById("input");

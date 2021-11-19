@@ -6,11 +6,11 @@ updates:
       interval: daily
     open-pull-requests-limit: 10
     ignore:
-      - dependency-name: "@AXIA-js/api"
+      - dependency-name: "@axia-js/api"
         versions:
           - 3.10.1
           - 4.6.2
-      - dependency-name: "@AXIA-js/keyring"
+      - dependency-name: "@axia-js/keyring"
         versions:
           - 5.6.1
           - 5.7.1

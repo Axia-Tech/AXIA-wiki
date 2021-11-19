@@ -13,7 +13,7 @@ When interacting with the [AXIALunar network](https://axialunar.network) via [AX
 To connect to the Axia node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@AXIA-js/api')
+const{ ApiPromise, WsProvider } = require('@axia-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://axialunar-rpc.AXIA.io/')
@@ -32,7 +32,7 @@ The AXIA Foundation maintains an archive node at endpoint `wss://cc3-5.axialunar
 To connect to this node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@AXIA-js/api')
+const{ ApiPromise, WsProvider } = require('@axia-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://cc3-5.axialunar.network/')

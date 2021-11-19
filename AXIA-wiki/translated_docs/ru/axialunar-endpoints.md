@@ -13,7 +13,7 @@ When interacting with the [AXIALunar network](https://axialunar.network) via [AX
 Чтобы подключиться к узлу Axia, используйте конечную точку в приложениях JavaScript например так:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@AXIA-js/api')
+const{ ApiPromise, WsProvider } = require('@axia-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://axialunar-rpc.AXIA.io/')
@@ -32,7 +32,7 @@ or in AXIA-JS Apps by clicking the top-left corner of the screen and selecting t
 To connect to this node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@AXIA-js/api')
+const{ ApiPromise, WsProvider } = require('@axia-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://cc3-5.axialunar.network/')

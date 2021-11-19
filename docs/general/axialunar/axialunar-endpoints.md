@@ -20,7 +20,7 @@ endpoint `wss://axialunar-rpc.AXIA.io/`.
 To connect to the AXIA node, use the endpoint in your JavaScript apps like so:
 
 ```javascript
-const{ ApiPromise, WsProvider } = require('@AXIA-js/api')
+const{ ApiPromise, WsProvider } = require('@axia-js/api')
 
 (async () => {
     const provider = new WsProvider('wss://axialunar-rpc.AXIA.io/')
