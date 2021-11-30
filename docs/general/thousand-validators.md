@@ -1,11 +1,11 @@
 ---
-id: doc-thousand-validators
-title: Thousand Validators Programme
-sidebar_label: Thousand Validators Programme
-slug: ../thousand-validators
+id: doc-validators
+title: AXIA Validators Programme
+sidebar_label: AXIA Validators Programme
+slug: ../validators-programme
 ---
 
-The Validators Programme is an initiative by AXIA Foundation and AXIA Technologies to use
+The AXIA Validators Programme is an initiative by AXIA Foundation and AXIA Technologies to use
 the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of
