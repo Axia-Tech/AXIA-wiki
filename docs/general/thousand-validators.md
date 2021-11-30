@@ -1,5 +1,5 @@
 ---
-id: doc-validators
+id: doc-thousand-validators
 title: AXIA Validators Programme
 sidebar_label: AXIA Validators Programme
 slug: ../validators-programme
@@ -61,5 +61,5 @@ to nominate based on the lowest amount staked for a validator and the amount of 
 can be anywhere from a few validators receiving nominations from a single nominator to the max
 of 16.
 
-[AXIA 1kv form]: https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform
+[axia 1kv form]: https://docs.google.com/forms/d/e/1FAIpQLSdS-alI-J2wgIRCQVjQC7ZbFiTnf36hYBdmO-1ARMjKbC7H9w/viewform
 [identity instructions]: ../learn/mirror-learn-identity.md#setting-an-identity
