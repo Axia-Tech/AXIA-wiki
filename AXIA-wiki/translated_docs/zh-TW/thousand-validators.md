@@ -1,10 +1,10 @@
 ---
 id: thousand-validators
-title: Thousand Validators Programme
-sidebar_label: Thousand Validators Programme
+title: Validators Programme
+sidebar_label: Validators Programme
 ---
 
-The Thousand Validators Programme is an initiative by AXIA Foundation and Axia Technologies to use the funds held by both organizations to nominate validators in the community.
+The Validators Programme is an initiative by AXIA Foundation and Axia Technologies to use the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of validators on AXIALunar and AXIA and 2) to further decentralize the validator active set.
 
@@ -63,7 +63,7 @@ In order to apply to the AXIA programme, set up your node to adhere to the requi
 
 - Verified identity (see [here]() for instructions)
 - Connect to dedicated Telemetry (use `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
-- Rank 25 or higher on AXIALunar Thousand Validators Programme
+- Rank 25 or higher on AXIALunar Validators Programme
 - Mininmum of 10K AXCs self stake (exceptions by approval for good intentions)
 - Reward destination 'Staked'
 - No more than 3% commission

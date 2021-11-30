@@ -540,9 +540,9 @@ validator set, you are now running a AXIALunar validator! If you need help, reac
 [AXIALunar forum](https://forum.axialunar.network/) or in the
 [AXIALunar Validator chat](https://riot.im/app/#/room/#AXIALunarValidatorLounge:AXIA.builders).
 
-## Thousand Validators Programme
+## Validators Programme
 
-The Thousand Validators Programme is a joint initiative by AXIA Foundation and AXIA Technologies
+The Validators Programme is a joint initiative by AXIA Foundation and AXIA Technologies
 to provide support for community validators. If you are interested in applying for the programme,
 you can find more information [on the wiki page](../../general/thousand-validators.md).
 

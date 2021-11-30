@@ -498,8 +498,8 @@
         "sidebar_label": "How to run a Validator on AXIALunar"
       },
       "mirror-thousand-validators": {
-        "title": "Thousand Validators Programme",
-        "sidebar_label": "Thousand Validators Programme"
+        "title": "Validators Programme",
+        "sidebar_label": "Validators Programme"
       },
       "redenomination": {
         "title": "Redenomination of AXC",
@@ -510,8 +510,8 @@
         "sidebar_label": "Research Pages"
       },
       "thousand-validators": {
-        "title": "Thousand Validators Programme",
-        "sidebar_label": "Thousand Validators Programme"
+        "title": "Validators Programme",
+        "sidebar_label": "Validators Programme"
       }
     },
     "links": {

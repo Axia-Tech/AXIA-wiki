@@ -542,9 +542,9 @@ validator set.
 validator set, you are now running a AXIA validator! If you need help, reach out on the
 [AXIA Validator chat](https://matrix.to/#/!NZrbtteFeqYKCUGQtr:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org).
 
-## Thousand Validators Programme
+## Validators Programme
 
-The Thousand Validators Programme is a joint initiative by AXIA Foundation and AXIA Technologies
+The Validators Programme is a joint initiative by AXIA Foundation and AXIA Technologies
 to provide support for community validators. If you are interested in applying for the programme,
 you can find more information [on the wiki page](../general/thousand-validators.md).
 
