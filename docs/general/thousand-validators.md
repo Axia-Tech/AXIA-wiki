@@ -5,7 +5,7 @@ sidebar_label: Thousand Validators Programme
 slug: ../thousand-validators
 ---
 
-The Thousand Validators Programme is an initiative by AXIA Foundation and AXIA Technologies to use
+The Validators Programme is an initiative by AXIA Foundation and AXIA Technologies to use
 the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of
@@ -32,8 +32,7 @@ as well as additional information on [validator secure](../maintain/maintain-gui
 
 > NOTE: Entrance to the AXIA programme requires usually takes about a month.
 
-In order to apply to the AXIA programme, set up your node to adhere to the requirements below
-and fill in the [application form][AXIA 1kv form]. You will hear back from the team shortly.
+In order to apply to the AXIA programme, set up your node to adhere to the requirements below:
 
 #### Requirements
 
@@ -49,7 +48,7 @@ and fill in the [application form][AXIA 1kv form]. You will hear back from the t
 #### Nominators
 
 The below addresses are the stash / controller pairs for the nominators involved in the AXIA
-Thousand Validators programme. They are formatted like "`stash` / `controller`".
+Validators programme. They are formatted like "`stash` / `controller`".
 
 - `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` / `16XJHQ58dEPnZn5J5YqmRcJmKtvVFFMoMrXgj6fWJfeGGkQw`
 - `12RYJb5gG4hfoWPK3owEYtmWoko8G6zwYpvDYTyXFVSfJr8Y` / `13GLXK1TZKKDM9aRBBK3VYZymHjKChtQjJznsRqaR9dwwrQU`
