@@ -20,7 +20,7 @@ Please see the wiki page for [setting up a validator](maintain-guides-how-to-val
 
 ### AXIALunar
 
-In order to apply to the AXIALunar programme, set up your node to adhere to the requirements below and fill in the [application form][axialunar 1kv form]. You will hear back from the team shortly.
+In order to apply to the AXIALunar programme, set up your node to adhere to the requirements below:
 
 #### Requirements
 
