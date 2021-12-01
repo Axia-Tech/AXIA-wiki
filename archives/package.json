@@ -1,7 +1,7 @@
 {
   "scripts": {
     "AXIA:clean": "shx rm -rf node_modules/.cache; docusaurus clear AXIA-wiki",
-    "start": "yarn generateRegistryTable; docusaurus start AXIA-wiki --port 3000",
+    "AXIA:start": "yarn generateRegistryTable; docusaurus start AXIA-wiki --port 3401",
     "preAXIA:build": "npm-run-all -ln AXIA:clean -p fetch generateRegistryTable mirror AXIA:copy-assets:* --aggregate-output",
     "AXIA:build": "cross-env BUILDING=true docusaurus build AXIA-wiki; node AXIA-wiki/postprocess",
     "AXIA:inject": "node --experimental-json-modules scripts/inject.mjs --rootDir AXIA-wiki/build/AXIA-wiki --node wss://rpc.AXIA.io",
