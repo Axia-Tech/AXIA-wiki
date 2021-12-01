@@ -38,7 +38,7 @@ The leaderboard is available at https://thousand-validators.axialunar.network/#/
 
 #### Nominators
 
-The below addresses are the stash / controller pairs for the nominators involved in the AXIALunar Thousand Validators programme. They are formatted like "`stash` / `controller`".
+The below addresses are the stash / controller pairs for the nominators involved in the AXIALunar AXIA Validators programme. They are formatted like "`stash` / `controller`".
 
 - `G1rrUNQSk7CjjEmLSGcpNu72tVtyzbWdUvgmSer9eBitXWf` / `H9BFvNPTqDEmWZ63M82ohrFmvEFASm25ErUMzmXDrbAr1kq`
 - `HgTtJusFEn2gmMmB5wmJDnMRXKD6dzqCpNR7a99kkQ7BNvX` / `H4UgNEEN92YXz96AyQgwkJQSpXGdptYLkj9jXVKrNXjQHRJ`
@@ -72,7 +72,7 @@ In order to apply to the AXIA programme, set up your node to adhere to the requi
 
 #### Nominators
 
-The below addresses are the stash / controller pairs for the nominators involved in the AXIA Thousand Validators programme. They are formatted like "`stash` / `controller`".
+The below addresses are the stash / controller pairs for the nominators involved in the AXIA AXIA Validators programme. They are formatted like "`stash` / `controller`".
 
 - `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` / `16XJHQ58dEPnZn5J5YqmRcJmKtvVFFMoMrXgj6fWJfeGGkQw`
 - `12RYJb5gG4hfoWPK3owEYtmWoko8G6zwYpvDYTyXFVSfJr8Y` / `13GLXK1TZKKDM9aRBBK3VYZymHjKChtQjJznsRqaR9dwwrQU`
