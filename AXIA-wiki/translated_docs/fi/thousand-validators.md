@@ -1,10 +1,10 @@
 ---
 id: thousand-validators
-title: Thousand Validators Programme
-sidebar_label: Thousand Validators Programme
+title: Validators Programme
+sidebar_label: Validators Programme
 ---
 
-The Thousand Validators Programme is an initiative by AXIA Foundation and Axia Technologies to use the funds held by both organizations to nominate validators in the community.
+The Validators Programme is an initiative by AXIA Foundation and Axia Technologies to use the funds held by both organizations to nominate validators in the community.
 
 It serves two major purposes: 1) to give validators a structured on-ramp to join the active set of validators on AXIALunar and AXIA and 2) to further decentralize the validator active set.
 
@@ -20,8 +20,7 @@ Please see the wiki page for [setting up a validator](maintain-guides-how-to-val
 
 ### AXIALunar
 
-In order to apply to the AXIALunar programme, set up your node to adhere to the requirements below and fill in the [application form][axialunar 1kv form]. You will hear back from the team shortly.
-
+In order to apply to the AXIALunar programme, set up your node to adhere to the requirements below:
 #### Requirements
 
 - Verified identity (see [here]() for instructions)
@@ -38,7 +37,7 @@ The leaderboard is available at https://thousand-validators.axialunar.network/#/
 
 #### Nominators
 
-The below addresses are the stash / controller pairs for the nominators involved in the AXIALunar Thousand Validators programme. They are formatted like "`stash` / `controller`".
+The below addresses are the stash / controller pairs for the nominators involved in the AXIALunar AXIA Validators programme. They are formatted like "`stash` / `controller`".
 
 - `G1rrUNQSk7CjjEmLSGcpNu72tVtyzbWdUvgmSer9eBitXWf` / `H9BFvNPTqDEmWZ63M82ohrFmvEFASm25ErUMzmXDrbAr1kq`
 - `HgTtJusFEn2gmMmB5wmJDnMRXKD6dzqCpNR7a99kkQ7BNvX` / `H4UgNEEN92YXz96AyQgwkJQSpXGdptYLkj9jXVKrNXjQHRJ`
@@ -63,7 +62,7 @@ In order to apply to the AXIA programme, set up your node to adhere to the requi
 
 - Verified identity (see [here]() for instructions)
 - Connect to dedicated Telemetry (use `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
-- Rank 25 or higher on AXIALunar Thousand Validators Programme
+- Rank 25 or higher on AXIALunar Validators Programme
 - Mininmum of 10K AXCs self stake (exceptions by approval for good intentions)
 - Reward destination 'Staked'
 - No more than 3% commission
@@ -72,7 +71,7 @@ In order to apply to the AXIA programme, set up your node to adhere to the requi
 
 #### Nominators
 
-The below addresses are the stash / controller pairs for the nominators involved in the AXIA Thousand Validators programme. They are formatted like "`stash` / `controller`".
+The below addresses are the stash / controller pairs for the nominators involved in the AXIA AXIA Validators programme. They are formatted like "`stash` / `controller`".
 
 - `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` / `16XJHQ58dEPnZn5J5YqmRcJmKtvVFFMoMrXgj6fWJfeGGkQw`
 - `12RYJb5gG4hfoWPK3owEYtmWoko8G6zwYpvDYTyXFVSfJr8Y` / `13GLXK1TZKKDM9aRBBK3VYZymHjKChtQjJznsRqaR9dwwrQU`
