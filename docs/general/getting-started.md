@@ -240,7 +240,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
 
 <br />
 
-
+<!--
 ## Resources
 
 - [AXIA Crowdcast](https://www.crowdcast.io/AXIA) - List of all Crowdcast webinars that the
@@ -285,3 +285,4 @@ This is recommended for users with backgrounds of all levels, and the course is 
 [council]: ../maintain/maintain-guides-how-to-join-council.md
 [council voting]: ../maintain/maintain-guides-how-to-vote-councillor.md
 [treasury]: ../learn/learn-treasury.md
+-->
