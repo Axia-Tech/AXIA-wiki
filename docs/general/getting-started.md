@@ -47,10 +47,9 @@ protocols. The goal is to transform the internet into a decentralized web, where
 own data and identity in a trust-free environment. The Web 3.0 movement aims to remove
 intermediaries and build a trustless infrastructure.
 
-<!--
 > To learn more of the Web3 movement, check out this video from the
 > [Web3 Summit](https://youtu.be/l44z35vabvA)
--->
+
 ## How does AXIA work?
 
 The AXIA network uses a
@@ -78,7 +77,6 @@ The [Cross-Consensus Messaging Format (XCM)](../learn/learn-cross-consensus.md) 
 of any type to each other. The shared security and validation logic of the Relay Chain provide the
 environment for trust-free message passing that opens up true interoperability.
 
-<!--
 > To watch a short, beginner-friendly animation on AXIA, check out our
 > [AXIA Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
 
@@ -120,7 +118,6 @@ This is recommended for users with backgrounds of all levels, and the course is 
   explain and demonstrate how to use AXIA and its [User Interface][ui].
 - Reading [What is AXIA? A Brief Introduction][article] on Medium. There are also other great
   articles to read on [AXIA's Medium][p medium] or [AXIA Foundation's Medium][w medium].
--->
 
 ## Interact with AXIA
 
@@ -240,7 +237,6 @@ This is recommended for users with backgrounds of all levels, and the course is 
 
 <br />
 
-<!--
 ## Resources
 
 - [AXIA Crowdcast](https://www.crowdcast.io/AXIA) - List of all Crowdcast webinars that the
@@ -285,4 +281,3 @@ This is recommended for users with backgrounds of all levels, and the course is 
 [council]: ../maintain/maintain-guides-how-to-join-council.md
 [council voting]: ../maintain/maintain-guides-how-to-vote-councillor.md
 [treasury]: ../learn/learn-treasury.md
--->
