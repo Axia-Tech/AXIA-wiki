@@ -20,7 +20,7 @@
     ],
     "Guide": ["AXIA-guide"],
     "Learn": [
-      "learn-launch",
+      "learn-architecture",
       {
         "type": "subcategory",
         "label": "Basics",

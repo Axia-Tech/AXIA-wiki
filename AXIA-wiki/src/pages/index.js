@@ -50,13 +50,14 @@ function HomeNav() {
 
   return (
     <NavContainer>
-      <NavItem href={useDocUrl("learn-launch")} aosDelay="0">
+      <NavItem href={useDocUrl("learn-architecture")} aosDelay="0">
+        <h3>For</h3>
         <NavItemTitle>
           <Translate
             id="homePage.navContainer.learn.title"
             description="Title of Learn Navigator in Home page"
           >
-            Learn
+             Everyone
           </Translate>
         </NavItemTitle>
         <NavItemContent>
@@ -70,12 +71,13 @@ function HomeNav() {
         </NavItemContent>
       </NavItem>
       <NavItem href={useDocUrl("build-index")} aosDelay="200">
+      <h3>For</h3>
         <NavItemTitle>
           <Translate
             id="homePage.navContainer.build.title"
             description="Title of Build Navigator in Home page"
           >
-            Build
+            Developers
           </Translate>
         </NavItemTitle>
         <NavItemContent>
@@ -89,12 +91,13 @@ function HomeNav() {
         </NavItemContent>
       </NavItem>
       <NavItem href={useDocUrl("maintain-index")} aosDelay="400">
+      <h3>For</h3>
         <NavItemTitle>
           <Translate
             id="homePage.navContainer.maintain.title"
             description="Title of Maintain Navigator in Home page"
           >
-            Maintain
+            Admins
           </Translate>
         </NavItemTitle>
         <NavItemContent>
@@ -112,63 +115,13 @@ function HomeNav() {
 
 function HomeFooter() {
   const FooterContainer = ({ children }) => (
-    <section className="homeFooterContainer text-white text-left">
-      <Container>
-        <Row className="">{children}</Row>
-      </Container>
+    <section>
     </section>
   );
 
 
   const ImproveWiki = () => (
-    <Col lg={6}>
-      <span className="material-icons" style={{ fontSize: 50 + "px" }}>
-        language
-      </span>
-      <h3 className="h2 font-weight-bold">
-        <Translate
-          id="homepage.homeFooter.improveWiki.title"
-          description="Title of Improve Wiki Footer Section in Home page"
-        >
-          Help improve this wiki
-        </Translate>
-      </h3>
-      <p className="">
-        <Translate
-          id="homepage.homeFooter.improveWiki.content"
-          description="Content of Improve Wiki Footer Section in Home page"
-        >
-          This wiki was started by and is maintained by AXIA Foundation. It is
-          an open-source-ish project and aims to be the most extensive resource
-          of knowledge on AXIA and the AXIA ecosystem.
-        </Translate>
-      </p>
-      <div>
-        <a href={useDocUrl("general/contributing")}>
-          <button className="btn btn-lg btn-primary btn-bg-primary mr-3">
-            <Translate
-              id="homepage.homeFooter.improveWiki.contributeButton"
-              description="Contribute Button Label of Improve Wiki Footer Section in Home page"
-            >
-              Contribute
-            </Translate>
-          </button>
-        </a>
-        <a
-          href="https://crowdin.com/project/AXIA-wiki"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <button className="btn btn-lg btn-primary btn-bg-primary">
-            <Translate
-              id="homepage.homeFooter.improveWiki.helpTranslateButton"
-              description="Help Translate Button Label of Improve Wiki Footer Section in Home page"
-            >
-              Help Translate
-            </Translate>
-          </button>
-        </a>
-      </div>
+    <Col>
     </Col>
   );
 

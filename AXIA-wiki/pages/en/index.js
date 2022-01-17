@@ -47,19 +47,19 @@ class HomeNav extends React.Component {
       <NavContainer>
         <NavItem
           href={this.props.docUrl("build-index")}
-          title="Build"
+          title="For Developers"
           content="Most up-to-date information on the status of the development tools in the AXIA ecosystem."
           aosDelay="0"
         />
         <NavItem
           href={this.props.docUrl("learn-launch")}
           content="AXIA is a sharded protocol that enables blockchain networks to operate together seamlessly."
-          title="Learn"
+          title="For Everyone"
           aosDelay="300"
         />
         <NavItem
           href={this.props.docUrl("maintain-index")}
-          title="Maintain"
+          title="For Admins"
           content="Information and guides on how to deploy a node and run the network."
           aosDelay="600"
         />
