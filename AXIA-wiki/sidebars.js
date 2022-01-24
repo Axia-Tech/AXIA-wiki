@@ -26,7 +26,7 @@ module.exports = {
       type: "category",
       label: "Learn",
       items: [
-        "learn/learn-launch",
+        "learn/learn-architecture",
         {
           type: "category",
           label: "Basics",

@@ -6,11 +6,11 @@ const isBuilding = process.env.BUILDING === "true";
 const isPublishing = process.env.PUBLISHING === "true";
 
 module.exports = {
-  title: "AXIA Wiki",
+  title: "AXIA Network Wiki",
   tagline:
-    "The hub for those interested in learning, building, or running a node on AXIA.",
+    "Complete source of truth for AXIA network.",
   titleDelimiter: "·",
-  url: "https://solar.wiki.AXIA.network",
+  url: "https://wiki.axiacoin.network",
   baseUrl: "/",
   projectName: "AXIA-wiki",
   organizationName: "w3f",
@@ -116,39 +116,35 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/learn-launch",
-          label: "Learn",
+          to: "docs/learn-architecture",
+          label: "Everyone",
           position: "right",
         },
         {
           to: "docs/build-index",
-          label: "Build",
+          label: "Developers",
           position: "right",
         },
         {
           to: "docs/maintain-index",
-          label: "Maintain ",
+          label: "Admins",
           position: "right",
         },
-        {
-          type: "search",
-          position: "right",
-        },
+
+      /**
+       * Uncomment following when algolia api key is available
+       *
+       *  {
+       *   type: "search",
+       *   position: "right",
+       * },
+       * 
+       **/
         {
           to: "docs/contributing",
           label: "Contribute",
           position: "right",
-        },
-        {
-          type: "localeDropdown",
-          position: "right",
-          dropdownItemsAfter: [
-            {
-              to: "https://crowdin.com/project/AXIA-wiki",
-              label: "Help us translate",
-            },
-          ],
-        },
+        }
       ],
     },
     footer: {
@@ -158,7 +154,7 @@ module.exports = {
       },
     },
     algolia: {
-      apiKey: "8bfa06b56bb8f33e5698c7f40b00b38f",
+      apiKey: "API_KEY_HERE",
       indexName: "AXIA",
       algoliaOptions: {
         facetFilters: ["language:LANGUAGE"],
