@@ -18,7 +18,7 @@ Ethereum contracts. Some of the projects using this approach are [Edgeware](http
 [Moonbeam](https://moonbeam.network/) and [Frontier](https://github.com/axia-tech/frontier).
 
 A video version of the recap of the smart contract situation on AXIA is available
-[here](https://www.youtube.com/watch?v=fKHkFBXaUxQ).
+[here](https://www.video_url_here.com/watch?v=fKHkFBXaUxQ).
 
 ## Resources
 

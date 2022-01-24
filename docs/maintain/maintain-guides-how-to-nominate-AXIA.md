@@ -23,8 +23,8 @@ as well as the risk that they bear of being slashed if the validator gets slashe
 
 > If you prefer a video format, the following videos related to staking are available:
 >
-> - [Staking with a Ledger and AXIAJS Apps](https://www.youtube.com/watch?v=VN4S8MofEW8)
-> - [Staking with a Ledger and Ledger Live](https://www.youtube.com/watch?v=obZyGeHrm_M&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=43)
+> - [Staking with a Ledger and AXIAJS Apps](https://www.video_url_here.com/watch?v=VN4S8MofEW8)
+> - [Staking with a Ledger and Ledger Live](https://www.video_url_here.com/watch?v=obZyGeHrm_M&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=43)
 
 Nominators are recommended to set up separate stash and controller accounts. Explanation and
 reasoning for generating distinct accounts for this purpose is elaborated in the [keys][] section of
@@ -92,7 +92,7 @@ earn compound interest.
 ![Payout account selection dropdown with the custom account option highlighted](../assets/payout/01.png)
 
 > These concepts have been further explained in AXIA's
-> [UI Walkthrough Video](https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8)
+> [UI Walkthrough Video](https://www.video_url_here.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8)
 
 ### Step 2: Nominate a validator
 

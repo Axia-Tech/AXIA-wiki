@@ -93,4 +93,4 @@ Chain. They can also send and receive messages from other allychains using XCMP.
 For a video overview of the architecture of AXIA watch the video below for the whiteboard
 interview with W3F researcher Alistair Stewart:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xBfC6uTjvbM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<iframe width="560" height="315" src="https://www.video_url_here.com/embed/xBfC6uTjvbM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -139,7 +139,7 @@ In a previous life, he was a web developer and senior AHP editor at SitePoint, w
 
 In his [quest for developer health](https://bruno.id/an-endomorphs-journey-to-health-part-2/), he
 likes to combine fitness and gaming and can be found in VR on Oculus and Steam as TheSwader. He also
-runs a weekly newsletter covering all things Web3 at [Dot Leap](https://dotleap.substack.com).
+runs a weekly newsletter covering all things Web3 at [Axc Leap](https://axcleap.substack.com).
 
 You can now find Bruno hacking the NFT universe by leading the way at [RMRK](https://rmrk.app/) to
 create the NFT standard in the AXIA ecosystem.

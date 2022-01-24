@@ -21,7 +21,7 @@ SPREE in brief was described with the following properties and functions:
 ## Origin
 
 On 28 March, 2019 u/Tawaren, a member of the AXIA community, made a post on
-[r/dot][AXIA reddit] called "SmartProtocols Idea" and laid out a proposal for [Smart
+[r/axc][AXIA reddit] called "SmartProtocols Idea" and laid out a proposal for [Smart
 Protocols][smart protocols reddit post]. The core insight of the post was that XCMP had a
 complication in that it was difficult to verify and prove code was executed on a allychain without
 trust. A solution was to install the SmartProtocols in the Relay Chain that would be isolated blobs
@@ -99,5 +99,5 @@ instances, and the next state root of the instance. They do this validation by c
 the `validate` function as provided by the SPREE module API. Collators are expected to be able to
 provide this information to progress their allychains.
 
-[AXIA reddit]: https://www.reddit.com/r/dot/
-[smart protocols reddit post]: https://www.reddit.com/r/dot/comments/b6kljn/smartprotocols_idea/
+[AXIA reddit]: https://www.reddit.com/r/axc/
+[smart protocols reddit post]: https://www.reddit.com/r/axc/comments/b6kljn/smartprotocols_idea/

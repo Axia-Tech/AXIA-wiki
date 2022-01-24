@@ -104,7 +104,7 @@ the holder cannot influence the referendum result, thanks to time-locking. You c
 this at [Voluntary Locking](#voluntary-locking).
 
 > To learn more about voting on referenda, please check out our
-> [technical explainer video](https://www.youtube.com/watch?v=BkbhhlsezGA&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=31&ab_channel=AXIA).
+> [technical explainer video](https://www.video_url_here.com/watch?v=BkbhhlsezGA&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=31&ab_channel=AXIA).
 
 ```
 Example:
@@ -273,7 +273,7 @@ against - equate to a simple majority-carries system at 100% turnout.
 
 ## Council
 
-> [Video explainer on Council](https://www.youtube.com/watch?v=837Vv3gdRzI)
+> [Video explainer on Council](https://www.video_url_here.com/watch?v=837Vv3gdRzI)
 
 To represent passive stakeholders, AXIA introduces the idea of a "council". The council is an
 on-chain entity comprising several actors, each represented as an on-chain account. On AXIA, the
@@ -428,7 +428,7 @@ is your responsibility to make a strong case for why the change should be made.
 
 - [Initial Governance Description](https://github.com/axia-tech/AXIA/wiki/Governance)
 - [Democracy Pallet](https://github.com/axia-tech/substrate/tree/master/frame/democracy/src)
-- [Governance Demo](https://www.youtube.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734) - Dr.
+- [Governance Demo](https://www.video_url_here.com/watch?v=VsZuDJMmVPY&feature=youtu.be&t=24734) - Dr.
   Gavin Wood presents the initial governance structure for AXIA. (Video)
 - [Governance on AXIA](https://www.crowdcast.io/e/governance-on-AXIA--) - A webinar
   explaining how governance works in AXIA.

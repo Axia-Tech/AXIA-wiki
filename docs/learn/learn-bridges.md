@@ -60,7 +60,7 @@ denominated in ERC-20 tokens on `side`. Conversely, ERC-20 tokens deposited back
 on `side` can free up Ether on `main`.
 
 > To learn more on how Bitcoin and Ethereum can Cooperate and Collaborate Through AXIA, check
-> out this explainer video [here](https://www.youtube.com/watch?v=rvoFUiOR3cM)
+> out this explainer video [here](https://www.video_url_here.com/watch?v=rvoFUiOR3cM)
 
 ### via Higher-Order Protocols
 

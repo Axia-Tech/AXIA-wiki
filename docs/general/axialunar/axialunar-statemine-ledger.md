@@ -20,7 +20,7 @@ If you have trouble using Ledger or following the directions below, you can try 
 issue on the [AXIA Knowledge Base](https://support.AXIA.network/).
 
 > Please check out our
-> [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIA).
+> [intro to Ledger video on Youtube for more information](https://www.video_url_here.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIA).
 
 ## Requirements
 
@@ -137,7 +137,7 @@ prompt your ledger for confirmation when you initiate a transaction.
 
 ### Confirming the Address on your Device
 
-On the "Accounts" tab, find your Ledger-connected account. Click on the three vertical dots at the
+On the "Accounts" tab, find your Ledger-connected account. Click on the three vertical axcs at the
 end of the row. This will open a new menu, here you can click the "Show address on hardware device"
 option to display the address on your device.
 
@@ -222,6 +222,6 @@ If you need support please send an email to [support@axialunar.network](mailto:s
 or visit [our Support page](https://support.AXIA.network).
 
 [ledger]: https://www.ledger.com/
-[apps]: https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/explorer
+[apps]: https://cloudflare-ipfs.com/ipns/axcapps.io/?rpc=wss%3A%2F%2Faxialunar-statemine-rpc.axia-tech.net#/explorer
 [prerelease instructions]: https://github.com/Zondax/ledger-statemine
 [releases page]: https://github.com/Zondax/ledger-statemine/releases

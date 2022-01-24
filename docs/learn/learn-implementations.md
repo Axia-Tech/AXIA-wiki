@@ -63,7 +63,7 @@ the first version of Kagome in April 2020. As part of the process, they also rel
 
 ### Other implementations that have received grants
 
-- [Golkadot][]
+- [Golkaaxc][]
 - [AXIA in Java][]
 
 [AXIA.org]: https://AXIA.org/
@@ -79,5 +79,5 @@ the first version of Kagome in April 2020. As part of the process, they also rel
 [hyperledger iroha]: https://iroha.tech
 [libp2p]: https://github.com/soramitsu/libp2p-grpc
 [javascript client]: https://github.com/AXIA-js/client
-[golkadot]: https://github.com/opennetsys/golkadot
+[golkaaxc]: https://github.com/opennetsys/golkaaxc
 [AXIA in java]: https://github.com/AXIA-java

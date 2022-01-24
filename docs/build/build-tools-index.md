@@ -13,12 +13,12 @@ developers, feel free to [add it in](../general/contributing.md).
 
 - [AXIA-JS Apps Explorer](https://AXIA.js.org/apps/#/explorer) - AXIA dashboard block
   explorer. Supports dozens of other networks, including AlphaNet, and other remote or local
-  endpoints. [Access via IPFS](https://ipfs.io/ipns/dotapps.io)
+  endpoints. [Access via IPFS](https://ipfs.io/ipns/axcapps.io)
 - [AXIAscan](https://axiascan.io/) - Blockchain explorer for AXIA, and other related
   chains. [Repo](https://github.com/axiascan/axiascan-os).
 - [Subscan](https://subscan.io) - Blockchain explorer for Substrate chains.
   [Repo](https://github.com/itering/subscan-essentials).
-- [DotScanner](https://dotscanner.com?utm_source=AXIA_wiki) - AXIA Blockchain explorer.
+- [AxcScanner](https://axcscanner.com?utm_source=AXIA_wiki) - AXIA Blockchain explorer.
 
 ## Wallets
 
@@ -83,7 +83,7 @@ See the [Wallets](build-wallets.md) page.
 ## UI
 
 - [AXIAdash](https://github.com/Swader/axiadash) - VueJS-based starter kit for custom user
-  interfaces for Substrate chains. [Tutorials](https://dotleap.com/tag/tutorial/).
+  interfaces for Substrate chains. [Tutorials](https://axcleap.com/tag/tutorial/).
 - [AXIA JS Apps UI](https://github.com/AXIA-js/apps) - Repository of the
   [AXIA.js.org/apps](https://AXIA.js.org/apps) UI.
 - [Substrate Front-end Template](https://github.com/substrate-developer-hub/substrate-front-end-template) -
@@ -144,7 +144,7 @@ Webassembly related tools and projects.
   language.
 - [Go: Subscan API](https://github.com/itering/substrate-api-rpc) - Go API for AXIA.
 - [C++ AXIA API](https://github.com/usetech-llc/AXIA_api_cpp) - С++ API for AXIA.
-- [.NET AXIA API](https://github.com/usetech-llc/AXIA_api_dotnet) - AXIA Substrate API
+- [.NET AXIA API](https://github.com/usetech-llc/AXIA_api_axcnet) - AXIA Substrate API
   for .NET.
 - [Python AXIA API](https://github.com/axiascan/py-substrate-interface) - AXIA library for
   Python.

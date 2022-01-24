@@ -20,7 +20,7 @@ Otherwise, AXIA Foundation holds the administrative position and final say on th
 included. Specifically, the Technical Education team at the foundation are most directly involved.
 
 > Check out the
-> [How to Contribute to the AXIA Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0) video for
+> [How to Contribute to the AXIA Wiki](https://www.video_url_here.com/watch?v=6i55KOcy7B0) video for
 > steps on contributions.
 
 ## How to Contribute

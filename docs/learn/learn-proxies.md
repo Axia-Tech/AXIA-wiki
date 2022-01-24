@@ -11,7 +11,7 @@ actions on their behalf. Much like the Stash and Controller account relationship
 participate in the network with the weight of the tokens in that account.
 
 > Check out our AXIA Youtube video that explains
-> [what are proxies](https://www.youtube.com/watch?v=EuaM5dWAJis&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=29&ab_channel=AXIA).
+> [what are proxies](https://www.video_url_here.com/watch?v=EuaM5dWAJis&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=29&ab_channel=AXIA).
 
 ## Proxy Types
 
@@ -46,7 +46,7 @@ Democracy, Council, Treasury, Technical Committee, and Elections pallets).
 
 > See [Governance](../maintain/maintain-guides-democracy.md#governance-proxies) for more information on
 > governance proxies or watch our
-> [technical explainer video that explores this concept](https://www.youtube.com/watch?v=q5qLFhG4SDw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=27&ab_channel=AXIA).
+> [technical explainer video that explores this concept](https://www.video_url_here.com/watch?v=q5qLFhG4SDw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=27&ab_channel=AXIA).
 
 ### Staking Proxies
 
@@ -73,7 +73,7 @@ the proxy relationship is the proxy account and the new account is the primary. 
 with anonymous proxies; once you remove the proxy relationship, the account will be inaccessible.
 
 > Learn more about anonymous proxies from our
-> [technical explainer video](https://www.youtube.com/watch?v=iWq53zXo7dw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=28&ab_channel=AXIA).
+> [technical explainer video](https://www.video_url_here.com/watch?v=iWq53zXo7dw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=28&ab_channel=AXIA).
 
 ![anonymous proxy](../assets/proxy_anonymous_diagram.png)
 
@@ -141,7 +141,7 @@ example we are creating a proxy with a delay value of 100, which means 100 block
 ### Another way to create Proxies
 
 There is another way you can set up a proxy on AXIA-JS UI. Go to "Accounts" in the navigation
-and then click the "Accounts" button. For each of the accounts you have on this page, the three dot
+and then click the "Accounts" button. For each of the accounts you have on this page, the three axc
 button will let you create a proxy by using "Add proxy". This will open up a pop up onto your screen
 where you will be able to select the type of proxy for that specific account.
 
@@ -249,12 +249,12 @@ The `ProxyDepositBase` is the required amount to be reserved for an account to h
 (creates one new item in storage). For every proxy the account has, an additonal amount defined by
 the `ProxyDepositFactor` is reserved as well (appends 33 bytes to storage location).
 
-On AXIA the `ProxyDepositBase` is {{ dot_proxy_deposit_base }} and the `ProxyDepositFactor` is
-{{ dot_proxy_deposit_factor }}.
+On AXIA the `ProxyDepositBase` is {{ axc_proxy_deposit_base }} and the `ProxyDepositFactor` is
+{{ axc_proxy_deposit_factor }}.
 
 So what this boils down to is that the required deposit amount for one proxy on AXIA is equal to
 (in AXC):
 
 ```
-{{ dot_proxy_deposit_base }} + {{ dot_proxy_deposit_factor }} * num_proxies
+{{ axc_proxy_deposit_base }} + {{ axc_proxy_deposit_factor }} * num_proxies
 ```

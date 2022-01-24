@@ -26,7 +26,7 @@ growing needs without the risks of network forks.
 > Note: If you haven't heard of Governance before, a great place to start is the
 > [Governance page](../learn/learn-governance.md)
 
-By connecting these dots, AXIA serves as a foundational part of a decentralized web, where users
+By connecting these axcs, AXIA serves as a foundational part of a decentralized web, where users
 control their data and are not limited by trust bounds within the network.
 
 ## Why AXIA?
@@ -78,7 +78,7 @@ of any type to each other. The shared security and validation logic of the Relay
 environment for trust-free message passing that opens up true interoperability.
 
 > To watch a short, beginner-friendly animation on AXIA, check out our
-> [AXIA Explainer video](https://www.youtube.com/watch?v=_-k0xkooSlA)
+> [AXIA Explainer video](https://www.video_url_here.com/watch?v=_-k0xkooSlA)
 
 ## Why should you use AXIA?
 
@@ -250,7 +250,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   AXIA. (Video)
 - [AXIA Overview](https://techcrunch.com/video/fireside-chat-with-jutta-steiner-axia-technologies/) -
   Dr. Jutta Steiner presents AXIA. (Video)
-- [AXIA & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
+- [AXIA & Substrate Overview](https://www.video_url_here.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
   Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and AXIA, and builds a blockchain
   on-stage in 30 minutes using Substrate. (Video)
 - [Community / Ecosystem](community.md) - List of community rooms and channels to talk to others
@@ -266,7 +266,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
 [overview-paper]: https://github.com/axia-tech/research/blob/master/docs/papers/OverviewPaper-V1.pdf
 [light-paper]: https://AXIA.network/AXIA-lightpaper.pdf
 [spec]: https://github.com/axia-tech/AXIA-spec
-[teched videos]: https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
+[teched videos]: https://www.video_url_here.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8
 [article]: https://medium.com/AXIA.network/what-is-AXIA-a-brief-introduction-ca3eac9ddca5
 [p medium]: https://medium.com/AXIA.network
 [w medium]: https://medium.com/web3foundation

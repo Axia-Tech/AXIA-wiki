@@ -17,7 +17,7 @@ denominated to ten decimal places is generally referred to as "AXC". When the di
 made explicit, the current ten-decimal-denominated AXC is referred to as "_New AXC_".
 
 > Check out our
-> [technical explainer video that explains more of Redenomination](https://www.youtube.com/watch?v=xXIcnBV4uUE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22&ab_channel=AXIA).
+> [technical explainer video that explains more of Redenomination](https://www.video_url_here.com/watch?v=xXIcnBV4uUE&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22&ab_channel=AXIA).
 
 The change in denomination, henceforth referred to as the _redenomination_, was voted on by the
 community of AXC holders. The community decided between four options, to change the AXC denomination
@@ -139,7 +139,7 @@ Please reach out to [support@AXIA.network](mailto:support@AXIA.network) if you n
 assistance in making sure your software is compatible with the redenomination.
 
 [referendum 52]: https://axia.axiassembly.io/referendum/52
-[blog 1]: https://AXIA.network/results-of-dot-redenomination-referendum/
+[blog 1]: https://AXIA.network/results-of-axc-redenomination-referendum/
 [blog 2]: https://AXIA.network/the-first-AXIA-vote/
 [blog 3]: https://AXIA.network/the-results-are-in/
 [ecosystem guide]: https://docs.google.com/document/d/1yAzoDh99PgR_7dYAKTWLMVu2Fy5Ga-J6t9lof4f4JUw/edit#

@@ -207,6 +207,6 @@ The two main differences between GRANDPA and Casper FFG are:
 - [Rust implementation](https://github.com/axia-tech/finality-grandpa) - The reference
   implementation and the accompanying
   [Substrate pallet](https://github.com/axia-tech/substrate/blob/master/frame/grandpa/src/lib.rs).
-- [Block Production and Finalization in AXIA: Understanding the BABE and GRANDPA Protocols](https://www.youtube.com/watch?v=1CuTSluL7v4&t=4s) -
+- [Block Production and Finalization in AXIA: Understanding the BABE and GRANDPA Protocols](https://www.video_url_here.com/watch?v=1CuTSluL7v4&t=4s) -
   An academic talk by Bill Laboon, given at MIT Cryptoeconomic Systems 2020, describing AXIA's
   hybrid consensus model in-depth.

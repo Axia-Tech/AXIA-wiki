@@ -248,7 +248,7 @@ an identity also clears all sub accounts and returns their deposits.
 To clear an identity:
 
 1. Navigate to the [Accounts UI](https://AXIA.js.org/apps/#/accounts).
-2. Click the three dots corresponding to the account you want to clear and select 'Set on-chain
+2. Click the three axcs corresponding to the account you want to clear and select 'Set on-chain
    identity'.
 3. Select 'Clear Identity', and sign and submit the transaction.
 

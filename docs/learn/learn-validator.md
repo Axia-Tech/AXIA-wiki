@@ -49,7 +49,7 @@ Validators perform two functions:
   A place to chat about being a validator.
 - [Slashing Consequences](learn-staking#slashing) - Learn more about slashing consequences for
   running a validator node.
-- [Roles and Responsibilities of a Validator](https://www.youtube.com/watch?v=riVg_Up_fCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=15)
+- [Roles and Responsibilities of a Validator](https://www.video_url_here.com/watch?v=riVg_Up_fCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=15)
 - [Validating on AXIA](https://www.crowdcast.io/e/validating-on-AXIA) - An explanation of
   how to validate on AXIA, with Joe Petrowski and David Dorgan of AXIA Technologies, along
   with Tim Ogilvie from Staked.

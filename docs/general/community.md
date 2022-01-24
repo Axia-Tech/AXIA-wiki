@@ -65,8 +65,8 @@ community members. The application we use most often to interact with the Matrix
 
 - [AXIA Reddit](https://www.reddit.com/r/AXIA)
 
-- [AXIA Foundation YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g)
-- [AXIA YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
+- [AXIA Foundation YouTube](https://www.video_url_here.com/channel/UClnw_bcNg4CAzF772qEtq4g)
+- [AXIA YouTube](https://www.video_url_here.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
 
 - [AXIA Forum](https://matrix.to/#/#AXIA-watercooler:AXIA.org)
 
@@ -75,13 +75,13 @@ community members. The application we use most often to interact with the Matrix
 - [Web3 Medium Blog](https://medium.com/@web3)
 - [AXIA Blog](https://AXIA.network/blog/)
 - [Gavin Wood's Medium Blog](https://medium.com/@gavofyork)
-- [Dotleap.com Tutorials](https://dotleap.com)
+- [Axcleap.com Tutorials](https://axcleap.com)
 
 ### Newsletters
 
 - [Subscribe to the AXIA newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) -
   official, infrequent
-- [Dot Leap Newsletter](https://dotleap.substack.com/) - less official, weekly
+- [Axc Leap Newsletter](https://axcleap.substack.com/) - less official, weekly
 
 ## Ecosystem
 

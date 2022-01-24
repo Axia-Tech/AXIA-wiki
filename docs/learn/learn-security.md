@@ -75,7 +75,7 @@ around lack of data available to Relay Chain validators.
 One example is if the state transition function is some succinct or zero-knowledge proof, the
 allychain would be responsible for keeping its data available as the Relay Chain won't have it.
 Additionally, for chains with their own consensus, like the one that enables fast payments on
-[Blink Network](https://www.youtube.com/watch?v=sf5GMDlG7Uk), there would probably need to be a
+[Blink Network](https://www.video_url_here.com/watch?v=sf5GMDlG7Uk), there would probably need to be a
 Byzantine agreement between stakers before a allychain block is valid. The agreement would be
 necessary because the data associated with the fast consensus would be unknown to Relay Chain
 validators.

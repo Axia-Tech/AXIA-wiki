@@ -72,7 +72,7 @@ be found below:
 - [Twitter](https://twitter.com/AXIA)
 - [Reddit](https://www.reddit.com/r/AXIA)
 - [Discord](https://discord.gg/wGUDt2p)
-- [AXIA YouTube](https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
+- [AXIA YouTube](https://www.video_url_here.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
 - [AXIA Medium](https://medium.com/AXIA.network)
 - [Our Community Page](../general/community.md) also lists more social media accounts that AXIA Foundation,
   AXIA, has.
@@ -137,7 +137,7 @@ Of course, many projects building on AXIA that use similar names. If, however, a
 poses as AXIA, AXIA Foundation, or AXIA on a domain not listed above, then it's most
 likely a scam.
 
-Besides those, there are also `AXIA.js.org` and `dotapps.io` that host our web wallet and other
+Besides those, there are also `AXIA.js.org` and `axcapps.io` that host our web wallet and other
 tools.
 
 ## I Got Scammed - What Can I Do?

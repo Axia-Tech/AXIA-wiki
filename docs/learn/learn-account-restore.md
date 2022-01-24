@@ -19,7 +19,7 @@ and AXIA Signer. For other wallet applications, please see their specific docume
 ## AXIA{.js} Browser Plugin
 
 To back up an account using the AXIA{.js} browser plugin, open the extension and select the
-desired account to back up. Click on the three dots beside the address to open up the account
+desired account to back up. Click on the three axcs beside the address to open up the account
 options menu.
 
 ![list-accounts-plugin](../assets/accounts/AXIA.js_list_accounts.png)

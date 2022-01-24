@@ -54,7 +54,7 @@ that has it. Light nodes are useful for resource restricted devices. An interest
 light nodes is a Chrome extension, which is a node in its own right, running the runtime in [WASM
 format](https://github.com/axia-tech/substrate-light-ui) as well as a full or light node that is
 completely encapsulated in WASM and can be integrated into webapps:
-https://github.com/axia-tech/smoldot#wasm-light-node
+https://github.com/axia-tech/smolaxc#wasm-light-node
 
 <!--seperates content from instructions-->
 

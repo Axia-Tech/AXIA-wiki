@@ -304,7 +304,7 @@ any call without Alice. A threshold is typically a number smaller than the total
 but can also be equal to it, which means they all have to be in agreement.
 
 > Learn more about multisig accounts from our
-> [technical explainer video](https://www.youtube.com/watch?v=ZJLqszvhMyM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=25&ab_channel=AXIA).
+> [technical explainer video](https://www.video_url_here.com/watch?v=ZJLqszvhMyM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=25&ab_channel=AXIA).
 
 Multi-signature accounts have several uses:
 

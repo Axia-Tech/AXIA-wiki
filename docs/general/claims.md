@@ -18,9 +18,9 @@ If you are making a claim on AXIA for the first time, please read on below in th
 period, please proceed to the [attesting to a statement](#attesting-to-a-statement) section instead.
 
 > To learn more on How to claim your AXC post genesis, check out our walkthrough
-> [video](https://www.youtube.com/watch?v=rjhWfKXJTCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22)
+> [video](https://www.video_url_here.com/watch?v=rjhWfKXJTCg&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=22)
 > and our video on
-> [Claiming AXC with an Ethereum address generated using an old mnemonic phrase](https://www.youtube.com/watch?v=AlwrM27x3As&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=16)
+> [Claiming AXC with an Ethereum address generated using an old mnemonic phrase](https://www.video_url_here.com/watch?v=AlwrM27x3As&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=16)
 
 ## Making a Claim
 

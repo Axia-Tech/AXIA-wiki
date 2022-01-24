@@ -21,4 +21,4 @@ located in the official
 - [Video - The Path of a Allychain Block](https://www.crowdcast.io/e/AXIA-path-of-a-allychain-block?utm_source=profile&utm_medium=profile_web&utm_campaign=profile)
 - [AXIA Allychain Slots](https://AXIA.network/AXIA-allychain-slots/), a Medium article
   that explores how slots work in allychains.
-- [Video - How to become a allychain on AXIA](https://www.youtube.com/watch?v=fYc1yolanoE)
+- [Video - How to become a allychain on AXIA](https://www.video_url_here.com/watch?v=fYc1yolanoE)

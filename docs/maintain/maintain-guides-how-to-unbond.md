@@ -28,7 +28,7 @@ need to unbond.
 
 ### Step 2: Unbonding an amount
 
-To unbond the amount, click the three dots next to the account you want to unbond tokens for, and
+To unbond the amount, click the three axcs next to the account you want to unbond tokens for, and
 select "Unbond funds".
 
 ![Unbonding](../assets/NPoS/unbond2.png)

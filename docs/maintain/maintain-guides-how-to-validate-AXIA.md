@@ -27,7 +27,7 @@ Since security is so important to running a successful validator, you should tak
 factors to consider when constructing your infrastructure. The AXIA Foundation also maintains a
 [reference implementation for a validator set-up](https://github.com/axia-tech/AXIA-validator-setup)
 that you can use by deploying yourself (video walkthrough is available
-[here](https://www.youtube.com/watch?v=tTn8P6t7JYc)). As you progress in your journey as a
+[here](https://www.video_url_here.com/watch?v=tTn8P6t7JYc)). As you progress in your journey as a
 validator, you will likely want to use this repository as a _starting point_ for your own
 modifications and customizations.
 

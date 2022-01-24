@@ -77,5 +77,5 @@ AXIAJS apps also offers a breakdown of ongoing crowdloans on the
 
 
 Furthermore, check out this video on
-[How to Participate in Crowdloans](https://www.youtube.com/watch?v=YrTxDufrcQM) for steps on how to
+[How to Participate in Crowdloans](https://www.video_url_here.com/watch?v=YrTxDufrcQM) for steps on how to
 access available crowdloans on AXIAJS apps.

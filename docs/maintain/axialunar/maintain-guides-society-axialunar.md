@@ -54,7 +54,7 @@ any questions if anything is unclear.
 ### 1. Bid Phase
 
 To submit a bid, click the Submit Bid button on the
-[Society page](https://ipfs.io/ipns/axialunar.dotapps.io/#/society).
+[Society page](https://ipfs.io/ipns/axialunar.axcapps.io/#/society).
 
 Anyone can submit a bid to join the society by reserving a deposit or finding an existing member to
 create a bid on their behalf by vouching for them. At every rotation period, as many bids as the
@@ -68,7 +68,7 @@ declare the bid amount (1 LUNAR in this case) that they will receive for joining
 ![Society Dashboard](../../assets/society/test_bid.jpg)
 
 Once you have submitted the transaction, your bid will be shown on the
-[Society page](https://ipfs.io/ipns/axialunar.dotapps.io/#/society) under the bids section. You can
+[Society page](https://ipfs.io/ipns/axialunar.axcapps.io/#/society) under the bids section. You can
 cancel the bidding if you changed your mind about joining the society by calling `unbid` on the same
 page.
 

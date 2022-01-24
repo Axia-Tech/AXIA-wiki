@@ -23,7 +23,7 @@ If you are trying to run a validator, refer to this tutorial
 
 Use the `--chain <chainspec>` option to select the chain. Can be `AXIA`, `alphanet`,
 `betanet`, or a custom chain spec. By default, the client will start AXIA. Watch
-[How a single codebase can power four different blockchains](https://www.youtube.com/watch?v=i9vNCHz6wO4)
+[How a single codebase can power four different blockchains](https://www.video_url_here.com/watch?v=i9vNCHz6wO4)
 to learn more about how the chain selection works internally.
 
 **Archive node**
@@ -34,7 +34,7 @@ types of nodes like validators must run in archive mode. Likewise, all
 store events then you will need an archive node.
 
 > To upgrade a node, please refer to this
-> [video](https://www.youtube.com/watch?v=5LtcdBR9F40&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=5)
+> [video](https://www.video_url_here.com/watch?v=5LtcdBR9F40&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=5)
 
 **Exporting blocks**
 

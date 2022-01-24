@@ -118,7 +118,7 @@ Interested in building a PDK? See the [future PDKs](##future-pdks) section for d
 
 ### Cumulus
 
-> "Cumulus clouds are shaped sort of like dots; together they form an intricate system;
+> "Cumulus clouds are shaped sort of like axcs; together they form an intricate system;
 > beautiful and functional."
 
 [Cumulus](https://github.com/axia-tech/cumulus) is an extension to Substrate that makes it easy to

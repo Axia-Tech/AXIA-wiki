@@ -321,7 +321,7 @@ that we come across daily on the internet. If you're interested in learning more
 facts and verify claims, have a look at the following material.
 
 1. A very nice YouTube series on the art of fact-checking that covers a lot of ground can be found
-   [here](https://www.youtube.com/watch?v=L4aNmdL3Hr0&list=PL8dPuuaLjXtN07XYqqWSKpPrtNDiCHTzU).
+   [here](https://www.video_url_here.com/watch?v=L4aNmdL3Hr0&list=PL8dPuuaLjXtN07XYqqWSKpPrtNDiCHTzU).
 2. Another great resource on fact-checking, for those who prefer to read, can be found
    [here](https://webliteracy.pressbooks.com).
 3. Wikipedia article on [fact-checking](https://en.wikipedia.org/wiki/Fact-checking)

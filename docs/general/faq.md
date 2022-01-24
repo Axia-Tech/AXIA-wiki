@@ -73,7 +73,7 @@ size of the active set and how many validators are waiting in the pool.
 There are a few ways to estimate the minimum stake.
 
 One way can be to navigate to the
-[AXIA Apps Targets tab](https://ipfs.io/ipns/AXIA.dotapps.io/#/staking/targets). The value
+[AXIA Apps Targets tab](https://ipfs.io/ipns/AXIA.axcapps.io/#/staking/targets). The value
 at the top of the screen saying "Lowest" is the least staked validator. You need at least this
 much + 1 to enter the set.
 
@@ -274,10 +274,10 @@ the Substrate documentation for more detailed information.
 The "Answered by Gav" series is a collection of posts uploaded to Reddit of questions that have been
 asked in the AXIA Watercooler Riot channel and answered by AXIA founder Gavin Wood.
 
-- [Reason for using asynchronous rather than synchronous communication? Difference in terms of TPS?](https://www.reddit.com/r/dot/comments/b87d96/answered_by_gav_reason_for_using_asynchronous/)
-- [How exactly do validators in an ETH allychain keep moving around and how is communication between zones trustless?](https://www.reddit.com/r/dot/comments/b87awr/answered_by_gav_how_exactly_do_validators_in_an/)
-- [What are the main issues with Bitcoin integration and will it ever be possible? Same problem with other POW chains? Is AXIA only going to work with POS chains? How is it trust-less in comparison to Cosmos though?](https://www.reddit.com/r/dot/comments/b87bua/answered_by_gav_what_are_the_main_issues_with/)
-- [What are the current thoughts around governance especially since projects have to be voted in to receive the allychains security?](https://www.reddit.com/r/dot/comments/b87cjz/answered_by_gav_what_are_the_current_thoughts/)
-- [Also is there any detailed overview of how exactly a token transfer from ETH could be exchanged with another chain's currency?](https://www.reddit.com/r/dot/comments/b87ds8/answered_by_gav_also_is_there_any_detailed/)
-- [Can I run multiple Validators with the same Session Key?](https://www.reddit.com/r/dot/comments/bcqrx9/answered_by_gav_can_i_run_multiple_validators/)
-- [How to tackle the concentration risk of Validators in data centers?](https://www.reddit.com/r/dot/comments/bcqwit/answered_by_gav_how_to_tackle_the_concentration/)
+- [Reason for using asynchronous rather than synchronous communication? Difference in terms of TPS?](https://www.reddit.com/r/axc/comments/b87d96/answered_by_gav_reason_for_using_asynchronous/)
+- [How exactly do validators in an ETH allychain keep moving around and how is communication between zones trustless?](https://www.reddit.com/r/axc/comments/b87awr/answered_by_gav_how_exactly_do_validators_in_an/)
+- [What are the main issues with Bitcoin integration and will it ever be possible? Same problem with other POW chains? Is AXIA only going to work with POS chains? How is it trust-less in comparison to Cosmos though?](https://www.reddit.com/r/axc/comments/b87bua/answered_by_gav_what_are_the_main_issues_with/)
+- [What are the current thoughts around governance especially since projects have to be voted in to receive the allychains security?](https://www.reddit.com/r/axc/comments/b87cjz/answered_by_gav_what_are_the_current_thoughts/)
+- [Also is there any detailed overview of how exactly a token transfer from ETH could be exchanged with another chain's currency?](https://www.reddit.com/r/axc/comments/b87ds8/answered_by_gav_also_is_there_any_detailed/)
+- [Can I run multiple Validators with the same Session Key?](https://www.reddit.com/r/axc/comments/bcqrx9/answered_by_gav_can_i_run_multiple_validators/)
+- [How to tackle the concentration risk of Validators in data centers?](https://www.reddit.com/r/axc/comments/bcqwit/answered_by_gav_how_to_tackle_the_concentration/)

@@ -20,9 +20,9 @@ like a bitcoin or an ether. AXIA mainnet AXC is equal to 1e10 Planck.
 | Unit            | Decimal Places | Example      |
 | --------------- | -------------- | ------------ |
 | Planck          | 0              | 0.0000000001 |
-| Microdot (uAXC) | 4              | 0.0000010000 |
-| Millidot (mAXC) | 7              | 0.0010000000 |
-| Dot (AXC)       | 10             | 1.0000000000 |
+| Microaxc (uAXC) | 4              | 0.0000010000 |
+| Milliaxc (mAXC) | 7              | 0.0010000000 |
+| Axc (AXC)       | 10             | 1.0000000000 |
 | Million (MAXC)  | 16             | 1,000,000.00 |
 
 > Note: This changed at block #1*248_328. Previously, AXC was denominated as equal to 1e12 Planck.

@@ -20,7 +20,7 @@ If you have trouble using Ledger or following the directions below, you can try 
 issue on the [AXIA Knowledge Base](https://support.AXIA.network/).
 
 > Please check out our
-> [intro to Ledger video on Youtube for more information](https://www.youtube.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIA).
+> [intro to Ledger video on Youtube for more information](https://www.video_url_here.com/watch?v=p24yOcLLFmI&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=33&ab_channel=AXIA).
 
 ## Requirements
 
@@ -135,7 +135,7 @@ ledger for confirmation when you initiate a transaction.
 
 ### Confirming the Address on your Device
 
-On the "Accounts" tab, find your Ledger-connected account. Click on the three vertical dots at the
+On the "Accounts" tab, find your Ledger-connected account. Click on the three vertical axcs at the
 end of the row. This will open a new menu, here you can click the "Show address on hardware device"
 option to display the address on your device.
 

@@ -56,18 +56,18 @@ application we use most often to interact with the Matrix protocol is the
 
 - Twitter: [@axialunarnetwork](https://twitter.com/axialunarnetwork)
 - Reddit: [r/axialunar](https://reddit.com/r/axialunar)
-- [AXIALunar YouTube Channel](http://youtube.com/c/axialunarnetwork)
+- [AXIALunar YouTube Channel](http://video_url_here.com/c/axialunarnetwork)
 
 ## Blogs and tutorials
 
 - [Web3 Medium Blog](https://medium.com/@web3)
 - [AXIA Blog](https://AXIA.network/blog/)
 - [Gavin Wood's Medium Blog](https://medium.com/@gavofyork)
-- [Dotleap.com Tutorials](https://dotleap.com)
+- [Axcleap.com Tutorials](https://axcleap.com)
 
 ## Newsletters
 
 - [Subscribe to the AXIA newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) -
   official, infrequent, includes AXIALunar.
-- [Dot Leap Newsletter](https://dotleap.substack.com/) - less official, weekly.
+- [Axc Leap Newsletter](https://axcleap.substack.com/) - less official, weekly.
 - [NFT Review](https://news.nft.review) - Covering the evolution of the NFT ecosystem on AXIALunar

@@ -19,7 +19,7 @@ There are several ways to generate a AXIA account:
 - [Ledger Hardware Wallet](../general/ledger.md)
 
 > If you prefer video instructions for creating an account using AXIA JS, we have an easy to follow guide for beginners
-> [on YouTube](https://www.youtube.com/watch?v=sy7lvAqyzkY)
+> [on YouTube](https://www.video_url_here.com/watch?v=sy7lvAqyzkY)
 
 ## DISCLAIMER: Key Security
 
