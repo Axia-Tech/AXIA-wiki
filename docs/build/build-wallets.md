@@ -1,44 +1,16 @@
 ---
 id: build-wallets
-title: AXIA Wallets
-sidebar_label: AXIA Wallets
+title: Telemetry Dashboard
+sidebar_label: Telemetry
 slug: ../build-wallets
 ---
 
-## AXIA Wallets
+### Dashboard
+If you connect to the public networks, the default configuration for your node will connect it to the public [Telemetry](https://telemetry.test.axiacoin.network/#list/0x126b92044352297671d205a7af92a3109bba3a7bc2d97c75060751776ee93922) service.
 
-The integration of a [wallet](../general/glossary.md#wallet) with AXIA allows for simple and easy access to
-private keys and signing transactions. Below are some wallets that support AXIA along with their
-development statuses.
+You can verify that your node is connected by navigating to the correct network on the dashboard and finding the name of your node.
 
-### Supported Wallets
+There is a built-in search function on the nodes page. Simply start typing keystrokes in the main window to make it available.
 
-| Wallet Name                                                         | Development State | Team Name | Description       | Custody       | Supports |
-| ------------------------------------------------------------------- | ----------------- | --------- | ----------------- | ------------- | -------- |
-| [AXIA Signer](https://www.axia.io/signer/) (see warning below)  | Live              | AXIA    | iOS and Android   | Non-custodial | Staking  |
-| [AXIA-js Desktop](https://github.com/AXIA-js/apps/releases) | Live              | AXIA    | Win, Mac, Linux   | Non-custodial | Staking  |
-| [AXIA-js extension](https://github.com/AXIA-js/extension)   | Live              | AXIA    | Browser extension | Non-custodial | Staking  |
-| [AXIA-js apps](https://AXIA.js.org/apps/#/accounts)         | Live              | AXIA    | Browser           | Non-Custodial | Staking  |
-
-[AXIA support](https://support.AXIA.network/) can provide assistance with issues related to
-AXIA-JS, the AXIA{.js} extension, or AXIA Signer. For other wallet software, you should
-contact the developers of that wallet.
-
-> Warning: AXIA Signer currently does not allow you to see the transaction you are signing. This
-> means that you are at risk if connected to a compromised version of AXIA-JS. A fix is being
-> worked on; please see [this GitHub issue](https://github.com/axia-tech/axia-signer/issues/724)
-> for more details.
-
-### Treasury Funded Wallets
-
-These are wallets which have been supported by either the AXIA Treasury via Treasury Proposal.
-
-> NOTE: these third-party wallets have been funded by the community through either the AXIA  [Treasury](learn-treasury). **Web 3.0 Technologies Foundation does not endorse these wallets, and you should use your own due diligence in researching them.** The official AXIA Support cannot provide support for issues with these wallets or other non-AXIA developed wallets.
-
-## Encryption Enhancement
-
-Some newly generated `JSON` account files cannot be imported (restored) into older wallet software.
-This is due to an enhanced encryption method, which is also noticeable in a slight delay when
-encrypting/decrypting your wallet. If you are unable to load a `JSON` file, please ensure that you
-are using the latest version of the wallet software. If you are still unable to load it, ensure that
-the wallet software is using the latest version of the [AXIA API](https://AXIA.js.org/api/).
+### Here you can see how our local AXIA node is shown in the Telemetry:
+![test node](../assets/telemetry/telemetry.png)
