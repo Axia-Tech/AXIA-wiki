@@ -9,10 +9,6 @@ slug: ../build-integrate-assets
 Balance transfers are used to send balance from one account to another account. To start transferring balances, we will begin by using [AXIA-JS Apps](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts). This guide assumes that you've already created an account and have some funds that are ready to be transferred.
 ## AXIA-JS Apps
 
-> NOTE: In this walkthrough we will be using the AXIA network.
-> If you would like to switch to a different network, you can change it by clicking the top
-> left navigation dropdown and selecting a different network.
-
 Let's begin by opening [AXIA-JS Apps](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts). There are two ways to make a balance transfer:
 
 1. By using the "Transfer" tab in the "Accounts" dropdown (located on the top navigational menu).
@@ -32,11 +28,14 @@ Now a modal window will appear on the page. The modal asks you to enter 3 inputs
 
 The "existential deposit" box shows you the **minimum amount of funds you must keep in the account
 for it to remain active.**
+
 ![bal_transfer](../assets/explorer/transfer/transfer_bal.png)
 
 After setting your inputs correctly, click the "Make Transfer" button and confirm. Once the transfer
 is included in a block you will see a green notification in the top-right corner of your screen.
+
 ![qued](../assets/explorer/transfer/authorize_trans.png)
+
 After that you have to give the password of your account to authorize the transaction. Then click on "Sign and Submit". Within few second the amount will be transferred from your account to another account.
 
 ![final](../assets/explorer/transfer/transfer4.png)
