@@ -12,9 +12,9 @@ This section of the wiki is divided into the following parts:
 
 
 
-- [AXIA RPC](build-pdk) -  Here you can find out AXIA's all RPC methods.
-- [Peer Node Setup](build-build-with-AXIA) - Here you can find How to setup the AXIA peer node in your Linux system.
-- [Wallet Usage](build-storage) -  A short overview of the AXwallet usage.
-- [Faucet Usage](build-smart-contracts) - Faucet is a Node.js app, which connects to AXchat server and listens for incoming messages in a specific group chat.
-- [AXIA Explorer](build-oracle) - General information about the Explorer.
-- [Telemetry](build-wallets) - A short overview of the AXIA Telemetry Service.
+- [AXIA RPC](use-rpc) -  Here you can find out AXIA Ntwork's RPC methods.
+- [Peer Node Setup](setup-peer-node) - Here you can find How to setup the AXIA Network peer node in your Linux system.
+- [Wallet Usage](use-wallet) -  A short overview of the AXwallet usage.
+- [Testnet Faucet](use-testnet-faucet) - How to get Testnet tokens using AXchat faucet.
+- [AXscan](AXscan-explorer) - Learn to use the AXscan, an AXIA network explorer utility.
+- [Telemetry](view-telemetry) - A short overview of the AXIA Telemetry Service.
