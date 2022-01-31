@@ -1,107 +1,50 @@
 ---
 id: learn-account-restore
-title: Backing up and Restoring Accounts
-sidebar_label: Backing up and Restoring Accounts
+title: The AXIA Network
+sidebar_label:  AXIA Network
 description: Step-by-step guides on backing up and restoring a AXIA account.
 slug: ../learn-account-restore
 ---
 
-Depending on what software you are using to access your account, there are various ways to back up
-and restore your account. It is a good idea to back your information up and keep it in a secure
-place.. Note that in order to recover an account, you should create your account according to the
-instructions [here](learn-account-generation.md). In general, however, as long as you know how you
-created your account, and have the seed phrase (mnemonic phrase) or JSON file (and password) stored
-securely, you will be able to restore your account.
+## The Most Inclusive Hyper-Deflationary Blockchain Network
+The Blockchains of today do not address the challenges of sound tokenomics and usability. In some cases, their value simply erodes over time. In other cases, the transaction costs increase with the growing network activity. The interoperability challenges are being met with short term mechanisms which don't provide a true solution that cannot be sustained over time. What is required is a Blockchain that not only addresses these challenges but will regularly evolve through development and advancement in technology while always being resilient and at all times consistently generating growing value for the ecosystem and stakeholders.
+AXIA is the first-ever hyper-deflationary network. It is a next generation Blockchain that provides far superior tokenomics for its users, a decentralized ecosystem, the true facilitation of interoperable blockchains, that is more energy-efficient, supports mobile staking thus bringing blockchain technology to the mainstream all while maintaining low gas fees and fast throughput.
+AXIA Network has been designed to offer more value for stakeholders with greater scalability, security and availability for people around the world. It can be defined as the network of networks. The core blockchain is the CoreChain that empowers the shared security for the Network and inclusive consensus. In addition, there are AllyChains that are connected to the CoreChain and inherit the shared security. The AllyChains are application-specific Blockchains with their own governance, native token, and business processes each of which will benefit from all the strategic advantages that the AXIA Network offers.         
+The AXIA Network deploys cutting-edge Substrate Based Blockchain and smart contract technology to solve the challenges in the existing 1st and 2nd generation blockchain networks. It enables a robust infrastructure and superior tokenomics to design the decentralized financial apps as well as DApps in other domains. Its architecture provides a strong framework consisting of the main CoreChain and the affiliated AllyChains combined with features like energy-efficient inclusive consensus, mobile staking and cross-chain transaction routing, all based on the hyper-deflationary economics forming the AXIA Network, a sophisticated, participatory Blockchain.        
+AXIA Network will have a native coin called AXIA Coin. It will use the inclusive Proof-of-Participation (PoP), the AXIA version of proof-of-stake (PoS) protocol. Consensus protocols with deterministic finality, such as the one in AXIA, require a set of registered Validators of bonded size. Validators stake AXIA Coin and help secure the AXIA Blockchain by validating the transaction proofs. The Validators receive AXIA Coin with the unrivaled staking rewards for each block that is published on the chain. The security and inclusiveness of the AXIA Network is further enhanced through Nominators. Nominators play a vital role in the mobile staking and security process as they can stake their AXIA Coin in order to select and nominate trustworthy Validators. 
+As such, the AXIA PoP is not only much more efficient than regular proof-of-work (PoW), but also considerably more secure than conventional forms of PoS such as DPoS (Delegated proof of Stake), PPoS (Pure proof of Stake) and BPoS (Bonded Proof of Stake). This will increase the level of decentralization and is unmatched by any other PoS-based blockchain. 
+## Why is AXIA Network superior?
+### 1. Economics 
+An integral part of the design of AXIA is its unique hyper-deflationary monetary policy. AXIA is powered with one-of-a-kind economics  for the benefit of the entire ecosystem and its participants in a consistent manner. The network coin, AXIA Coin, establishes a better store of value through its unique tokenomics. The constantly decreasing total supply, as a function of network participation and activity, creates scarcity of the network coin, while the connected AXIA Treasury can increase in concert, hence augmenting and supporting the hyper-deflationary policy to not only provide a safe haven for participants but deliver ongoing and growing value in a sustainable manner.
+All the transaction fees accrued within the ecosystem and across the network are burned to reduce the Total Supply in a consistent fashion. This will ensure that the AXIA network Coin is constantly providing value to the AXIA Coin holders, making it the ultimate store of value.
+The scarcity-creating effect of the reduction of total supply is  further compounded as not only network activity triggers the burning  of AXIA coin  but also any new form of participation and/or staking  decreases the total supply by an equivalent amount of coin being removed from existence at the time either takes place.
+Furthermore to the advantage of network users, a unique algorithm has been designed to balance total token supply and  gas prices providing more certainty to users along with a more stable, secure and scalable network.
+### 2. Inclusiveness and Mobile Staking
+A major deficiency beside the detrimental impact to the environment of PoW and PoS blockchains is that the mining protocols are not inclusive and can lead to more wealth concentration due to a number of barriers of entry to many. The crypto mining blockchains is highly energy-intensive as it requires the machine to resolve extraordinarily hard equations. This requirement of the high hashpower allows only a larger and limited number of players to mine the blockchain leading to a lesser degree of decentralization while creating a major obstacle to entry for most. The AXIA Network, a PoP network, supports mobile staking enabling anyone who has a  smartphone or electronic devices to download the AXIA mobile wallet app, and participate in staking as nominators. This will enable billions of users to participate in the consensus, resulting in both better security and more inclusiveness.      
+With the AXIA Network, Validators and Nominators are able to easily contribute and participate with staking, always ensuring the highest level of security and decentralization.
+Validators are rewarded for good performance with AXIA Coin .Theys can analyze their own performance through extensive graphs and data. In line with the design of the PoP consensus algorithm, the validators are punished for abdication of their duties. Punitive action is exercised by removal of some or all the staked coins.
+Nominators on the other hand need to perform due diligence and keep conducting continual analysis prior to bonding assets to a Validator. The system facilitates selection of validators by nominators on the basis of their track record in validation. Nominators share the AXIA Coin rewards from the validator pool whom they have nominated. The PoP protocol allows for an unlimited number of AXIA holders to participate as nominators, who help maintain high levels of security by putting more value at stake. 
+To support Validators and Nominators in their respective roles, AXIA Network has developed a wide range of features that will be needed to fulfil their respective roles efficiently including reward types, payouts, nominates, bond/unbond. Owing to these features, the users are able to manage a full range of staking operations via the AXIA wallet.
+All staking related operations can be viewed via the displayed transaction history on the dashboard. 
+### 3. Interoperability
+The AXIA network’s architecture of CoreChains and AllyChains enables multiple ecosystems to communicate with one another. This interoperability substantially enhances the efficiencies of the protocol.
+Blockchain ecosystems functioning in silos has been a huge limitation in the real-world deployment of Blockchain technology. For an application to deliver on its promise, different networks should be able to inter-communicate and exchange data. Single chain blockchains severely hinder the adoption of Blockchain technology at a larger scale.
+The architecture of the AXIA Network implements true interoperability, resulting in easy innovation and transactional scalability. It connects the various blockchains not only in terms of the respective native tokens but also enables the desired data exchange between chains to create a completely interoperable environment. Rather than various blockchains functioning as individual networks, the architecture facilitates the coming together of several chains and functions as a single network, thus delivering on a spectrum of use cases.
+AXIA Network will bring interoperability through its intrinsic design that facilitates the capability for an AllyChain to operate between solidity based ERC smart contracts and other blockchains on EVMs  (Ethereum Virtual Machine) while communicating with the AXIA CoreChain simultaneously. This can be executed without a requirement to make alterations.
+### 4. Energy-efficient consensus mechanism
+Early Blockchains use Proof of Work (PoW) to validate transactions and mine new tokens. In PoW, a decentralized consensus mechanism uses the SHA-256 hashing algorithm to present a complex mathematical puzzle to members to try and resolve it and, in the process, deter anybody from exploiting the system.
+PoW allows cryptocurrencies like Bitcoin to process P2P transactions securely without the need for a trusted third party. There are serious issues though, POW at scale consumes voluminous amounts of energy. It increases exponentially as the number of miners in the network increases. Not only does it become a huge drag on the energy resources but also kills the purpose of decentralization – to connect all people to decision-making in projects. According to a Business Insider report, Bitcoin mining takes up 0.5% of all electricity used globally and 7 times Google's total usage.
+The alternative to the PoW consensus algorithm is Proof of Stake (PoS). The PoS allows cryptocurrency miners to mine or validate block transactions based on the number of digital coins a miner holds in the protocol.
+AXIA uses Proof-of-Participation (PoP), a variant of PoS consensus mechanism, to select validators for participation in the consensus protocol. It consists of two actors – the Validators and the Nominators. The role of validators is to produce new AllyChain blocks and guarantee finality of transactions. The validators have AXIA Coins backing them and if they are found to be in violation of rules, a part of these coins could be forfeited by the system.
+The nominators are responsible for backing up the validators with coins. In other words, they stake coins and nominate up to 16 validators of their choice. They receive a part of the unparalleled staking rewards earned by the validators for their services. In case a validator misbehaves, the nominator backing them is also subject to punitive action. Both nominators and validators get paid in AXIA Coin, the native coin of the platform.
+The PoP consensus mechanism eliminates the need to resolve elaborate computational challenges, thus getting rid of the issue of excessive energy consumption at faster speed and at much lower cost.
+### 5. Throughput and speed
+AXIA offers higher throughput for transactions across the network at low cost. Taking the decentralized finance industry to the next level and building the foundation for the AXIA ecosystem.
+AXIA ensures fees remain low due to the hyper-deflationary tokenomics but the added advantage of the network  to be designed to alleviate concerns over future congestion allowing for greater scalability and adoption over the long term.
+AXIA Network supports operating multiple blockchains in parallel. This architecture means that the tasks aren’t added to the queue and a string of processes can be executed in tandem, resulting in higher throughput. With the AXIA architecture, several sets of validators are up validating different processes at any given time. Block generation second is 6 seconds and TPS (transactions per second) is 1365.5.
+Block size: 4 * 1024 * 1024 + 512 = 4194816 Bytes
+DEFAULT_MAX_BLOCK_TRANSACTIONS = 512 Bytes
+ TPS =   (Block size / DEFAULT_MAX_BLOCK_TRANSACTIONS)/ Block generation time
+    	=   (4*1024*1024+512)/512/6
+    	=   1365.5
 
-This page covers backing up and restoring accounts in AXIA{.js} Browser Plugin, AXIA-JS UI,
-and AXIA Signer. For other wallet applications, please see their specific documentation.
-
-## AXIA{.js} Browser Plugin
-
-To back up an account using the AXIA{.js} browser plugin, open the extension and select the
-desired account to back up. Click on the three axcs beside the address to open up the account
-options menu.
-
-![list-accounts-plugin](../assets/accounts/AXIA.js_list_accounts.png)
-
-Click on the Export Account button, which will then ask you for the password for that specific
-account. Once you enter the correct password, the browser will automatically download a `.json` file
-that will hold all the account restoration details that will be used when you restore your account.
-You should store this file securely. Note that you will need the password for this account to
-restore it.
-
-![enter-password-plugin](../assets/accounts/AXIA.js_enter_password.png)
-
-To restore the account from this JSON file, once again open the AXIA{.js} browser plugin. Click
-on the + button at the top. This will open up a menu wih several choices - select "Restore account
-from backup JSON file". The program then prompts you for the `.json` file which was download earlier
-and the password for that account.
-
-![restore-account-plugin](../assets/accounts/AXIA.js_restore_account.png)
-
-Once these are filled out, and the "Restore" button has been pressed, you'll be taken back to the
-main page of the plugin. This account will now be listed with the rest of your accounts.
-
-## AXIA-JS
-
-If you're using the main AXIA-JS UI, restoring an account will feel similar to restoring an
-account on AXIA-JS browser plugin. Navigate to the
-[Accounts page](https://AXIA.js.org/apps/#/accounts) of AXIA-JS.
-
-![click-account-restore-AXIA](../assets/accounts/AXIA_click_restore.png)
-
-Click on the "Restore JSON" button, which will let you upload your `.json` file that you downloaded
-and enter your password for that account. This `.json` file holds all relevant data about the
-account to be used in account restoration. Note that you will need to enter your password here; the
-file cannot be unencrypted without it.
-
-![restore-account-AXIA](../assets/accounts/AXIA_restore_account.png)
-
-After you press the "Restore" button, you should see a green notification letting you know that your
-account has been restored. It will now be included in your accounts list on this browser.
-
-![restore-complete-AXIA](../assets/accounts/AXIA_restore_complete.png)
-
-### Using an Existing Mnemonic Seed to Restore an Account
-
-You can also always restore an account by using the mnemonic phrase (seed words).
-
-To do this with AXIA-JS, navigate to the
-[AXIA-JS Accounts Page](https://AXIA.js.org/apps/#/accounts). Click on the "Add Account"
-button, and enter a name and password for the account. The name and the password of this added
-account can be set to whatever you'd like, it does not need to be the same name and password as when
-this account was initially created.
-
-After this, delete the generated mnemonic phrase (seed words) and replace them with your _existing
-seed words_. When you replace the generated mnemonic seed with your existing one, you are not
-creating a new account, rather adding that account onto the AXIA-JS UI. Any account using the
-same seed words will have control over that account on-chain. This is why it is so important to keep
-your seed words secret and safe.
-
-![restore-using-json](../assets/accounts/AXIA-js-existing-json.png)
-
-Finally, click the "Save" button, then click the "Create and backup account" button. This will
-download the `.json` file which contains the data to be used in account restoration. You can use
-this JSON file to restore this account in the future using the instructions above, or simply delete
-the file and continue to use the mnemonic phrase to restore the account if necessary.
-
-## AXIA Signer
-
-If you've created an account with AXIA Signer, you can recover that account with your seed words.
-If you generated the account with another wallet, there may be additional steps necessary, including
-setting the derivation path: see
-[this document](https://github.com/axia-tech/axia-signer/blob/master/docs/tutorials/Recover-Account-AXIAjs.md)
-for details.
-
-On AXIA Signer, click on the top-right user icon on the screen. Proceed to "+ Add Identity". On
-this screen, tap on the "recover existing identity" button.
-
-![restore-using-axia](../assets/axia_Signer_restore1.PNG)
-
-Enter in the identity name and the mnemonic seed phrase from the account you'd like to restore.
-
-Set an identity PIN that will be used to unlock this account when you need to.
-
-![restore-using-axia](../assets/axia_Signer_restore2.PNG)
-
-The identity has now been recovered and you can select a network to create the first account.

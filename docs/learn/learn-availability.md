@@ -1,98 +1,24 @@
 ---
 id: learn-availability
-title: Availability and Validity
-sidebar_label: Availability and Validity
+title: AXIA Foundation
+sidebar_label: AXIA Foundation
 slug: ../learn-availability
 ---
 
-The Availability and Validity (AnV) protocol of AXIA is what allows for the network to be
-efficiently sharded among allychains while maintaining strong security guarantees.
+The AXIA Foundation is neither a market, nor a state. It is neither the embodiment of capitalism, nor socialism. It is not trapped by history, mythology or any of the standard paradigms that people reflexively attach to blockchain projects. The mission of the AXIA Foundation is to birth and foster the development of the most trusted and secure, ever-expanding ecosystem, and the creation of a digital currency (AXIA Coin) that is the preeminent medium of exchange around the world. As such, the AXIA Foundation operates as a non-profit organization, with the guiding principle that all activities and operations undertaken by the AXIA Foundation are in place to support AXIA Coin, the AXIA Network, AXIA Ecosystem and the community. The core values of the AXIA Foundation as follows:
+### Transparency
+The AXIA Foundation recognizes that its preeminent goal is the establishment of public trust between AXIA and the global citizens. It is therefore a necessity that AXIA provide complete and total transparency surrounding its operations in order to fulfill its mission of supplanting traditional forms of currency and destructive corporate structures. 
+### Inclusion
+AXIA is for all people everywhere, regardless of socio-economic status, nationality, race, gender, creed, religion, political affiliation or system of beliefs. All activities associated with the usage of AXIA Coin will be public to the community. 
+### Value
+The AXIA Foundation will seek to create an operating model that always maintains scarcity of AXIA Coin and provides value back to the AXIA Ecosystem and community. The Foundation will not seek to build empires for the sake of power or influence, the power resides in the hands of the community members. Its core decree will be to ensure and uphold trust within the AXIA community, while remaining committed to consistently delivering value back to AXIA Coin holders and creating positive social impact on the world.
+### Partnership
+While the design of AXIA Coin is unique within the blockchain industry, the AXIA Foundation will not be an isolated island unto itself. It will seek to partner and participate with other projects, corporations, institutions, organizations and individuals that share the same values. The AXIA Foundation will continuously seek opportunities to work with global partners to integrate in the AXIA Ecosystem and utilize AXIA Coin as a preferred medium of exchange, as well as into a wide variety of financial, technological and social applications, to support the AXIA community.
 
-## Phases of the AnV protocol
+The AXIA Foundation is committed to providing complete operational transparency, and will publicly report all network activity and project information in real-time to strengthen trust between AXIA and the community. As such, the AXIA Foundation has entered into agreements with trusted third parties to meet the following organizational requirements: 
+1. A public reviewablereporting structure is in place for both the operations and holdings of the AXIA Treasury 
+2. Independent third parties are running master nodes on the blockchain so as to confirm the validity of the transactions taking place therein and that these transactions are publicly disclosed to the AXIA community. 
 
-There are five phases of the Availability and the Validity protocol.
+The AXIA Foundation will act as stewards of the decentralized framework that has been established. It will ensure the transparency, utility and security that AXIA Coin holders will desire for their currency and an ecosystem of innovative services, offerings, applications, resources, operations and endeavors that will continue to grow over time. The AXIA Foundation has formed – and will continue to establish – connections with leading technology and security experts to ensure the technological architecture of the AXIA Network, AXIA Ecosystem and AXIA Coin evolve as everyday requirements change. 
 
-1. Allychain phase.
-2. Relay chain submission phase.
-3. Availability and unavailability subprotocols.
-4. Secondary GRANDPA approval validity checks.
-5. Invocation of a Byzantine fault tolerant _finality gadget_ to cement the chain.
 
-### Allychain phase
-
-The allychain phase of AnV is when the _collator_ of a allychain proposes a _candidate block_ to the
-validators that are currently assigned to the allychain.
-
-> A **candidate block** is a new block from a allychain collator that may or may not be valid and
-> must go through validity checks before being included into the Relay Chain.
-
-### Relay chain submission phase
-
-The validators then check the candidate block against the verification function exposed by that
-allychain's registered code. If the verification succeeds, then the validators will pass the
-candidate block to the other validators in the gossip network. However, if the verification fails,
-the validators immediately reject the candidate block as invalid.
-
-When more than half of the allychain validators agree that a particular allychain block candidate is
-a valid state transition, they prepare a _candidate receipt_. The candidate receipt is what will
-eventually be included into the Relay Chain state. It includes:
-
-- The allychain ID.
-- The collator's ID and signature.
-- A hash of the parent block's candidate receipt.
-- A Merkle root of the block's erasure-coded pieces.
-- A Merkle root of any outgoing messages.
-- A hash of the block.
-- The state root of the allychain before block execution.
-- The state root of the allychain after block execution.
-
-This information is **constant size** while the actual PoV block of the allychain can be variable
-length. It is enough information for anyone that obtains the full PoV block to verify the state
-transition contained inside of it.
-
-### Availability and unavailability subprotocols
-
-During the availability and unavailability phases, the validators gossip the
-[erasure coded](#erasure-codes) pieces among the network. At least 1/3 + 1 validators must report
-that they possess their piece of the code word. Once this threshold of validators has been reached,
-the network can consider the PoV block of the allychain _available_.
-
-## Erasure Codes
-
-Erasure coding transforms a message into a longer _code_ that allows for the original message to be
-recovered from a subset of the code and in absence of some portion of the code. A code is the
-original message padded with some extra data that enables the reconstruction of the code in the case
-of erasures.
-
-The type of erasure codes used by AXIA's availability scheme are [Reed-Solomon][reed solomon]
-codes, which already enjoys a battle-tested application in technology outside the blockchain
-industry. One example is found in the compact disk industry. CDs use Reed-Solomon codes to correct
-any missing data due to inconsistencies on the disk face such as dust particles or scratches.
-
-In AXIA, the erasure codes are used to keep allychain state available to the system without
-requiring all validators to keep tabs on all the allychains. Instead, validators share smaller
-pieces of the data and can later reconstruct the entire data under the assumption that 1/3+1 of the
-validators can provide their pieces of the data.
-
-**Note:** The 1/3+1 threshold of validators that must be responsive in order to construct the full
-allychain state data corresponds to AXIA's security assumption in regard to Byzantine nodes.
-
-## Fishermen: Deprecated
-
-The idea of Fishermen is that they are full nodes of allychains, like collators, but perform a different role in relation to the AXIA network. Instead of packaging the state transitions and producing the next allychain blocks as collators do, fishermen will watch this process and ensure no invalid state transitions are included.
-
-**Fishermen are not available on AXIA and are not planned for formal implementation, despite previous proposals in the [AnV protocol](https://w3f-research.readthedocs.io/en/latest/AXIA/Availability_and_Validity.html).**
-
-To address the motivation behind the Fishermen design consideration, the current secondary backing checkers perform a similar role in relation to the AXIA network. From a security standpoint, security is based on having at least one honest validator either among allychain validators or secondary checker.
-
-## Further Resources
-
-- [Path of a Allychain Block][life of] - Article by AXIA analyst Joe Petrowski expounding on the
-  validity checks that a allychain block must pass in order to progress the allychain.
-- [Availability and Validity][anv paper] - Paper by the W3F Research Team that specifies the
-  availability and validity protocol in detail.
-
-[reed solomon]: https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction
-[pruning]: https://example.org
-[life of]: https://AXIA.network/the-path-of-a-allychain-block/
-[anv paper]: https://github.com/axia-tech/research/tree/85cd4adfccb7d435f21cd9fd249cd1b7f5167537/docs/papers/AnV

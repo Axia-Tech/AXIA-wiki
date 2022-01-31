@@ -1,192 +1,72 @@
 ---
 id: learn-nominator
-title: Nominator
-sidebar_label: Nominator
+title: AXIA ECOSYSTEM SERVICES AND PRODUCTS
+sidebar_label: Services and Products
 slug: ../learn-nominator
 ---
 
-Nominators secure the Relay Chain by selecting good validators and staking AXC.
+There are a variety of services and products available for which participants can take advantage right away. These services and products offer greater convenience, efficiency, autonomy along with favorable benefits and rewards; while providing even greater real-world utility for AXIA Coin in the ever expanding ecosystem.
+### THE AXIA WALLET  
+The AXIA Wallet will be embedded in all applications in the AXIA Ecosystem.
 
-You may have an account with AXC and want to earn fresh AXC. You could do so as validator, which
-requires a node running 24/7. If you do not have such node or do not want to bother, you can still
-earn AXC by nominating one or more validators.
+The wallet is a free and secure tool that offers the ability to transact, exchange, buy, sell, hold, store, send and receive AXIA Coins. The wallet is also the means through which users of AXIA Coin receive unparalleled benefits and rewards just for participating.  
 
-By doing so, you become a nominator for the validator(s) of your choice. Pick your validators
-carefully - if they do not behave properly, they will get slashed and you will lose AXC as well.
-However, if they do follow the rules of the network, then you can share in staking rewards that they
-generate.
+Once a person registers for their AXIA Wallet, those credentials can be conveniently used for every application in the AXIA Ecosystem. Once the profile is created, the wallet is generated. From there, participants will have access to each application. This profile can be synced across all their hardware devices such as a phone, computer or tablet.
+ 
+AXIA is providing greater efficiency and more upside potential along with favorable rewards and benefits for all people who come into the ecosystem who have generated an AXIA Wallet. 
 
-While your AXC are staked by nominating a validator, they are 'locked' (bonded). You can receive new
-AXC in your account but you cannot stake as validator or transfer AXC away from your account. You
-can [un-nominate at any time](../maintain/maintain-guides-how-to-unbond.md) to stop staking your funds. Keep in
-mind that the un-nomination is effective in the next era, and that un-nominating does not
-automatically unbond your funds. There is an unbonding period of 28 days on
-AXIA before bonded funds can be transferred after issuing an unbond transaction.
+The AXIA Wallet can also be used to empower people to develop income for themselves. An AXIA Ecosystem participant can easily utilize the AXIA Wallet as a tool to generate additional earnings and rewards from their own followers, subscribers, users, attendees, services and products they offer depending on the application within the AXIA Ecosystem. They can leverage any of the apps to their advantage to pursue their own entrepreneurial goals just by maximizing the additional utility offered by having the AXIA Wallet embedded in all the applications.
 
-### Active vs. Inactive Nomination
+All activity taking place in the AXIA Wallet within the AXIA Ecosystem can be settled instantaneously, and completed in a more cost-efficient manner than if conducted outside the AXIA Network. Moreover, there is the simultaneous added advantage that this activity will direct value back to strengthening AXIA Coin itself through the mechanism of coin burning leading to the reduction in Total Supply.
+### AXIA SECURE KEY STORAGE AND TOKEN CUSTODY SERVICE
+The self-management and recovery of a user’s public and private wallet keys is a clear challenge slowing the widespread adoption of cryptocurrencies. Some of the main concerns of using cryptocurrencies relate to  the ease of use of wallet applications, and overall security of funds. If a user’s keys are lost, forgotten, or in some cases, stolen, their cryptocurrencies and funds are gone forever.
 
-When you go to the [Account actions](https://AXIA.js.org/apps/#/staking/actions) under staking
-page, you should see your bonded accounts and nomination status. If not, you can follow
-[this](../maintain/maintain-guides-how-to-nominate-AXIA.md) guide to configure it first. Your nominations
-will be effective in the next era; eras are roughly 24 hours on AXIA.
+This is why the AXIA Key Storage and Token Custody Service, connected into the “hot” and “cold” wallet application, is invaluable. AXIA has implemented its very own key storage model that incorporates state-of-the-art data encryption to protect a user at all times from potential system attacks that could jeopardize their keys, and stops them from falling into the wrong hands. Additionally, AXIA has implemented an account creation mechanism where a user’s public and private keys are tied to a self-selected email address and their system password can always be re-generated if needed ensuring they will never lose access to their funds. Now, AXIA Coin holders can recover their existing key(s) if lost or forgotten.
 
+Registering within the AXIA public blockchain ecosystem offers a user the ability to securely store their AXIA Coins in both hot and cold storage wallets. A hot wallet account will allow users to immediately send, transfer, exchange and spend their digital AXIA Coins directly out of their wallet, while a “cold” wallet will enable users to securely store their AXIA Coins in an offline storage vault, locking AXIA Coins away until such time as a user wishes to move it into hot status. 
 
-Suppose you have nominated five validator candidates, and three out of five were elected to the
-active validator set, then you should see two of your nominations as "waiting", and most likely one
-as "active" and the rest as "inactive". Active or inactive nomination means your nominated
-validators have been elected to be in the validator set, whereas waiting means they did not get
-elected. Generally, you will only have a single validator have an active nomination, which means
-that you are directly supporting it with your stake this era and thus potentially receiving staking
-rewards. Inactive nominators were validators that were elected for this era but which you are not
-actively supporting. Every era, a new election will take place and you may be assigned a different
-active nomination from among the validators you have selected.
+The AXIA custody solution meets and exceeds enterprise-scale custody services that are typically only offered to digital exchanges, investment funds or other institutional-sized clients who pass along the costs for third party management to the individual users. AXIA has specifically integrated its own custody service to allow all AXIA participants – irrespective of wealth or status – to utilize this advanced infrastructure seamlessly for free. The AXIA Foundation will incur any associated custody costs on behalf of the user directly, while the user is in control of their own spendable or vaulted AXIA Coins. 
 
-If you are committing a very large amount of stake, then you may have more than one active
-nomination. However, the election algorithm attempts to minimize this situation, and it should not
-occur often, so you should almost always see only a single active nomination per era. See the
-[section on Phragmén optimization](learn-phragmen.md#optimizations) for more details.
+By utilizing cold storage, a user is designating their own AXIA Coins to be stored and managed offline in a vault. This vault structure is unhackable. All transfers require coordinated actions with multiple factors of authentication to protect users, even if someone were to steal their phone or compromise their desktop application. 
 
-### Required Minimum Stake
+Participants can take advantage of the storage model at the AXIA Capital Bank. 
+### AXIA CAPITAL BANK
 
-Due to the way the [Phragmen algorithm](learn-phragmen.md) generates the solution set, and due to
-the fact that the solution set must fit in a single block, in some eras, a minimum number of AXC
-will be required to nominate with in order to receive staking rewards.
+Currently, the ability to hold a bank account is a privilege. AXIA Capital bank can lead the path towards making this a human right. AXIA Capital Bank was brought into existence to provide a more inclusionary bank for people around the globe. One of the main objectives of AXIA Capital Bank is to bring an end to the unbanked. But the bank goes well beyond that one goal.
 
-This parameter can be updated via on-chain governance and the most recent and up to date version can
-be found on [chain state](https://AXIA.js.org/apps/#/chainstate) (select **state query >
-staking > minimumNominatorBond**)
+AXIA Capital Bank is redefining banking. It offers a decentralized portal, providing all required financial services, but with no balance sheet risk. There are no loans against the deposits. Capital held at the bank are not considered capital Treasurys. AXIA Coin held at the bank is in complete and total control of the depositor at all times. The depositor has use of their AXC at all times with complete liquidity. 
 
-### Oversubscribed Validators
+Furthermore, AXIA Capital Bank offers better technical security. A traditional bank is a centralized system, where if their bank is hacked, clients and individual depositors can also get hacked. With the available custodial services, AXIA Capital Bank is able to offer free cold storage. So deposits are taken offline and cannot be hacked as they could be on a centralized bank, even if a phone gets stolen or a computer gets hacked. With the AXIA cold storage system offered at the AXIA Capital Bank, funds are secured in one’s own personal vault and in their control at all times. AXIA Capital Bank ensures all AXIA Coin holders always have visibility, access and control of their custodied coins. With AXIA Capital Bank the money is more safe and secure in cold storage, kept offline and always in the complete control of the depositor.
+ 
+AXIA Capital Bank is offering many of the same financial services as traditional banks, but with much more favourable rewards. This includes usage of payment cards along with the ability to earn rewards at two thousand brand name stores in 150 countries around the world. These are the same name-brand stores that people frequent already, but now they can use AXIA Coin to complete their purchases providing benefits for themselves and others who are part of the AXIA community through the collective economy and structure offered by AXIA.
+ 
+AXIA Capital Bank on launch will offer a  highly competitive staking program to all bank members. .  Bank participants can choose staking terms ranging from a minimum of 3 months to a maximum of 24. The longer you stake your AXIA Coin, the larger the reward you will receive with a maximum APY of up to 192%. The daily rewards are compounded making longer terms much more advantageous. 
 
-Validators can only pay out to a certain number of nominators per era. This is currently set to
-{{ AXIA_max_nominators }}, but can be modified via governance. If more than
-{{ AXIA_max_nominators }} nominators nominate the same validator, it is "oversubscribed", and
-only the top {{ AXIA_max_nominators }} staked nominators (ranked by amount of stake) are paid
-rewards. Other nominators will receive no rewards for that era, although their stake will still be
-used to calculate entry into the active validator set.
+At AXIA Capital Bank your AXIA Coin funds are always in your control. There is also the benefit of no balance sheet risk along with all the technical security features. At the same time, they are provided with a platform for potential upside allowing them to help advance themselves by receiving industry-leading staking rewards as well as one of a kind rewards that are not available anywhere else.
+### AXIA TELECOM
+AXIA will offer the AXIA encrypted smartphone through AXIA Telecom for global users. The smartphone will feature all of the AXIA applications as well as those of project partners.
 
-Although it is difficult to determine exactly how many nominators will nominate a given validator in
-the next era, one can estimate based on the current number of nominators. A validator with only 5
-nominators in this era, for instance, is unlikely to have more than {{ AXIA_max_nominators }} in
-the next era. An already-oversubscribed validator with 1000 nominators this era, however, is very
-likely to be oversubscribed in the next era as well.
+The AXIA smartphone will offer a higher level of privacy and security as all activity within the phone is fully encrypted. Plus as each smartphone will automatically be furnished with all the AXIA applications by default. This means the user will have the ability to earn ongoing rewards and will communicate in a more private and secure manner.  
 
-### The Election Solution Set
+The phone has high speed connectivity, e-SIM functionality and near field communication (NFC) capability. Phone users will be able to take advantage of a long battery life with rapid charging capability, a display with ultra-high (and fast) refresh rate, as well as the comfort of knowing the phone is more safe and secure due to its encryption features.  
 
-Determining which validators are in the active set and which nominators are nominating them creates
-a very large graph mapping nominators to their respective validators. This "solution set" is
-computed off-chain and submitted to the chain, which means it must fit in a single block. If there
-are a large number of nominators, this means that some nominators must be eliminated. Currently,
-nominators are sorted by amount of AXC staked and those with more AXC are prioritized. This means
-that if you are staking with a small amount of AXC, you may not receive rewards. This minimal amount
-is dynamic based on the number of validators, number of nominators, amount nominated, and other
-factors.
+AXIA Telecom will also give participants the opportunity to use AXIA International SIM cards. These SIM cards can offer significant savings on phone calls, data and SMS for AXIA community members. This means, AXIA Telecom can provide an all-in-one mobile solution that ensures there is always the best coverage available at the best price. 
 
-### Receiving Rewards
+Roaming charges will either be vastly reduced or eliminated altogether. One will be able to roam with their pre-existing phone number or create a local number. These services will be offered without any contractual obligation. In future, mobile hotspot services and wireless routers will enable internet connection virtually anywhere in the world to ensure the most favorable rates can be offered via the AXIA SIM card for the users. 
 
-As long as you have nominated more than one validator candidate, at least one of them got elected,
-and you are nominating with enough stake to get into the solution set, your bonded stake will be
-fully distributed to one or more validators. That being said, you may not receive rewards if you
-nominated very few validator candidates and no one got elected, or your stake is small and you only
-selected oversubscribed validators, or the validator you are nominating has 100% commission. It is
-generally wise to choose as many trustworthy validators as you can (up to 16) to reduce the risk of
-none of your nominated validators being elected.
+AXIA provides the opportunity to distribute mobile phones in less-developed areas; the device acts as a portal to the AXIA world, promoting financial literacy and providing users with immediate access to financial services.
 
-Rewards are _lazy_ - somebody must trigger a payout for a validator for rewards to go all of the
-validator's nominators. Any account can do this, although in practice validator operators often do
-this as a service to their nominators. See the page on [Simple Payouts](learn-simple-payouts.md) for
-more information and instructions for claiming rewards.
+AXIA Telecom aims to give people better access not only to telecommunications and the internet, but financial services as well. Knowing that the AXIA mobile phone has all the AXIA applications as default will help expedite adoption of all the tools that are needed to institute all forms of communication, social and business networking and banking services. 
 
-### What to Take Into Consideration When Nominating
+With that in mind, AXIA Telecom can position itself as one of the organizations in the AXIA Ecosystem to work with governments and humanitarian aid organizations to provide countless opportunities for economic development and growth as well as other opportunities that would never otherwise be available.
+### AXIA LOYALTY PROGRAM
+Traditional Loyalty Programs function based on a one-to-one relationship between a customer and a business. The value of the “points” never goes up, they are completely static. There are expenses associated with running the program and also the potential of liability on a balance sheet.
 
-One thing to keep in mind as a nominator is the validator's commission. The commission is the
-percentage of the validator reward which is taken by the validator before the rewards are split
-among the nominators. As a nominator, you may think that the lowest commission is best. However,
-this is not always true. Validators must be able to run at break-even in order to sustainably
-continue operation. Independent validators that rely on the commission to cover their server costs
-help to keep the network decentralized. Commission is just one piece of the puzzle that you should
-consider when picking validators to nominate.
+The AXIA Loyalty Program offers unprecedented incentives that boost customer engagement,
+spend and business revenue in an innovative and unique manner. It is dynamic, not static. AXIA
+accomplishes this in an entirely new way. Instead of the one-to-one relationship between the customer and business, both benefit from the power of the crowd. The customer benefits not just from all the other shoppers at that store, but all activity across the AXIA Ecosystem – activity that is completely
+unrelated to themselves and the store. This can generate greater purchasing power for the customer.
 
+The business gains from the crowd even more with the AXIA Loyalty Program, because without investing time or additional expense, the business can now gain revenue, improve margins and increase profitability from activity that they have nothing to do with. AXIA can also assist with more efficient and cost effective transaction processing.
 
-As a nominator, if you only want to know the profit each validator made for each era, you can go to
-the [Targets](https://AXIA.js.org/apps/#/staking/targets) section under the staking page by
-inputting the number of tokens you would like to stake to check it. Then, nominate those who have a
-higher profit. However, that does not guarantee the right way to evaluate the validators' overall
-performance.
-
-It is worth taking into consideration "own stake" of a validator. This refers to the quantity of AXC
-the validator has put up at stake themselves. A higher "own stake" amount can be considered
-as having more "skin in the game". This can imply increased trustworthiness. However, a validator not
-having a large amount of "own stake" is not automatically untrustworthy, as the validator could be
-nominating from a different address.
-
-### Filter Out Validators With Undesirable Traits
-
-On the Targets page, you can filter out validators that have traits that may indicate an issue with
-you nominating them. You can turn these filters off and on to help narrow down which validators you
-should nominate. It is important to note that none of these traits are necessarily "bad"; however,
-depending on your validator selection methodology, they may be characteristics that you would be
-interested in filtering out.
-
-- **Single from operator** - Do not show groups of validators run by a single operator.
-- **No 20%+ comm** - Do not show any validators with a commission of 20% or higher.
-- **No at capacity** - Do not show any validators who are currently operating
-  [at capacity](../general/glossary.md#capacity) (i.e., could potentially be oversubscribed).
-- **Recent payouts** - Only show validators that have recently caused a
-  [payout to be issued](learn-simple-payouts.md). Note that anyone can cause a payout to occur; it
-  does not have to be the operator of a validator.
-- **Only elected** - Only show validators that are currently in the active set (i.e., they have been
-  elected to produce blocks this era).
-- **Only with an identity** - Only show validators that have set an [identity](learn-identity.md).
-  Note that this identity does not have to be verified by a registrar for the validator to show up
-  in the list.
-
-### Review Your Validators' History
-
-How the validator acted in the past may be a good indicator of how they will act in the future. An
-example of problematic behavior would be if a validator is regularly offline, their nominators most
-likely would get fewer rewards than others. More importantly, when many validators are
-[unreachable](learn-staking.md#unresponsiveness), those nominators who staked with them will be
-slashed.
-
-
-Thus, to be a smart nominator, it would be better to query their
-[histories](https://AXIA.js.org/apps/#/staking/query/) to see statistics such as blocks
-produced, rewards and slashes, and [identity](learn-identity.md) (if they have it set). Moreover, a
-nominator should do comprehensive research on their validator candidates - they should go over the
-validators' websites to see who they are, what kind of infrastructure setup they are using,
-reputation, the vision behind the validator, and more.
-
-### Be Aware of The Risks of Single Operators with Multiple Validators
-
-Recall that slashing is an additive function; the more validators that are offline or equivocate in
-a given session, the harsher the penalties. Since validators that are controlled by a single entity
-are more at risk of a "synchronized" failure, nominating them implies a greater risk of having a
-large slash of your nominated funds. Generally, it is safer to nominate validators whose behavior is
-independent from others in as many ways as possible (different hardware, geographic location, owner,
-etc.).
-
-### Avoiding Oversubscribed Validators
-
-If you are not nominating with a large number of AXCs, you should try to avoid
-[oversubscribed](../general/glossary.md#oversubscribed) validators. It is not always easy to calculate if the
-validator selected will be oversubscribed in the next session; one way to avoid choosing potentially
-oversubscribed validators is to filter out any that are [at capacity](../general/glossary.md#capacity) on the
-Targets page.
-
-Finally, if you have a very small amount of AXCs, you may not be able to have your nomination fit
-into the election set. The nominator to validator mapping has to fit in a single block, and if there
-are too many nominators, the lowest-staked nominations will be dropped. This value is obviously
-dynamic and will vary over time. If you review the lowest amount of nominations that are occurring
-on current validators, you can get a good idea of how many AXCs will likely be necessary to have
-your nomination earn you rewards. You can read the blog post
-["AXIA Staking: An Update"](https://AXIA.network/AXIA-staking-an-update/) for more
-details.
-
-
-### Guides
-
-- [Be a Nominator (AXIA)](../maintain/maintain-guides-how-to-nominate-AXIA.md) - Guide on nominating on
-  the AXIA network.
-- [Stop Being a Nominator (all networks)](../maintain/maintain-guides-how-to-unbond.md) - Guide on stopping
-  nominations and withdrawing tokens.
+AXIA Loyalty partners are also listed online as a preferred partner and/or adopter of AXIA. This can create greater awareness and exposure for the businesses globally.

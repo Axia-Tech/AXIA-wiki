@@ -1,260 +1,40 @@
 ---
 id: learn-proxies
-title: Proxy Accounts
-sidebar_label: Proxy Accounts
+title: Applications
+sidebar_label: AXIA Applications
 slug: ../learn-proxies
 ---
 
-AXIA provides a module that allows users to set proxy accounts to perform a limited number of
-actions on their behalf. Much like the Stash and Controller account relationship in
-[staking](learn-staking.md), proxies allow users to keep one account in cold storage and actively
-participate in the network with the weight of the tokens in that account.
-
-> Check out our AXIA Youtube video that explains
-> [what are proxies](https://www.video_url_here.com/watch?v=EuaM5dWAJis&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=29&ab_channel=AXIA).
-
-## Proxy Types
-
-You can set a proxy account via the Proxy module. When you set a proxy, you must choose a type of
-proxy for the relationship. AXIA offers:
-
-- Any
-- Non-transfer
-- Governance
-- Staking
-- Identity Judgement
-
-When a proxy account makes a `proxy` transaction, AXIA filters the desired transaction to ensure
-that the proxy account has the appropriate permission to make that transaction on behalf of the cold
-account.
-
-### Any Proxies
-
-As implied by the name, a proxy type of "Any" allows the proxy account to make any transaction,
-incuding balance transfers. In most cases, this should be avoided as the proxy account is used more
-frequently than the cold account and is therefore less secure.
-
-### Non-transfer Proxies
-
-Proxies that are of the type "non-transfer" are accounts that allow any type of transaction except
-balance transfers (including vested transfers).
-
-### Governance Proxies
-
-The "Governance" type will allow proxies to make transactions related to governance (i.e., from the
-Democracy, Council, Treasury, Technical Committee, and Elections pallets).
-
-> See [Governance](../maintain/maintain-guides-democracy.md#governance-proxies) for more information on
-> governance proxies or watch our
-> [technical explainer video that explores this concept](https://www.video_url_here.com/watch?v=q5qLFhG4SDw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=27&ab_channel=AXIA).
-
-### Staking Proxies
-
-The "Staking" type allows staking-related transactions, but do not confuse a staking proxy with the
-Controller account. Within the Staking pallet, some transactions must come from the Stash, while
-others must come from the Controller. The Stash account is meant to stay in cold storage, while the
-Controller account makes day-to-day transactions like setting session keys or deciding which
-validators to nominate. The Stash account still needs to make some transactions, though, like
-bonding extra funds or designating a new Controller. A proxy doesn't change the _roles_ of Stash and
-Controller accounts, but does allow the Stash to be accessed even less frequently.
-
-### Identity Judgement Proxies
-
-"Identity Judgement" proxies are in charge of allowing registars to make judgement on an account's
-identity. If you are unfamiliar with judgements and identities on chain, please refer to
-[this page](learn-identity.md#judgements).
-
-### Anonymous Proxies
-
-AXIA includes a function to create an anonymous proxy, an account that can only be accessed via
-proxy. That is, it generates an address but no corresponding private key. Normally, a primary
-account designates a proxy account, but anonymous proxies are the opposite. The account that creates
-the proxy relationship is the proxy account and the new account is the primary. Use extreme care
-with anonymous proxies; once you remove the proxy relationship, the account will be inaccessible.
-
-> Learn more about anonymous proxies from our
-> [technical explainer video](https://www.video_url_here.com/watch?v=iWq53zXo7dw&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=28&ab_channel=AXIA).
-
-![anonymous proxy](../assets/proxy_anonymous_diagram.png)
-
-### Time Delayed Proxies
-
-We can add an additional layer of security to proxies by giving them a delay time. The delay will be
-quantified in number of blocks (blockNumber). AXIA has
-{{ block_target_in_seconds }} second blocks, hence a delay value of 10 will mean 10 blocks which
-will equal 1 minute of delay. The proxy will announce it's intended action and wait for the number
-of blocks defined in the delay time before executing it. The proxy will include the hash of the
-intended function call in the announcement. Within this time window, the intended action may be
-cancelled by accounts that control the proxy. Now we can use proxies knowing that any malicious
-actions can be noticed and reverted within a delay period.
-
-## Why use a Proxy?
-
-Proxies are great to use for specific purposes because they add in a layer of security. Rather than
-using funds in one sole account, smaller accounts with unique roles complete tasks for the main
-stash account. This drives attention away from the main account and to proxies.
-
-Anonymous proxies, in particular, can be used for permissionless management. In this example below,
-there is a multisig with four different accounts inside. Two of the accounts, Alice and Bob, have an
-anonymous proxy attached to them. In the case that the multisig account wanted to add or remove
-Alice or Bob or even add in a new account into the anonymous proxy, the anonymous proxy would take
-care of that change. If a multisig wanted to modify itself without an anonymous proxy, a whole new
-multisig would be created.
-
-![anonymous mutlisig proxy](../assets/multisig_proxy_diagram.png)
-
-## How to set up a Proxy
-
-### Using the AXIA-JS UI
-
-To set up a proxy, navigate to the [AXIA-JS UI](https://AXIA.js.org/apps/#/extrinsics) and
-click on "Developer" > "Extrinsics". Here we will see a page that looks similar to this:
-
-![proxy generation](../assets/AXIA_generating_proxy.png)
-
-To add a proxy, click on the pallet selection dropdown menu. The dropdown is labeled "submit the
-following extrinsic". Select the `proxy` pallet, then the `addProxy` extrinsic (in the dropdown menu
-next to it). The `addProxy(proxy, proxy_type)` function will need to be selected in order to add in
-a proxy. The chosen proxy account that you set will be the account that has the proxy on it. The
-selected account at the top is the account that will be the primary account.
-
-> Note: If you see an "unused" option when adding in a proxy, this is not a proxy type. This is an
-> empty enum, and if you try to add this in as a proxy, nothing will happen. No new proxy will be
-> created.
-
-### Creating Anonymous Proxies on AXIA-JS UI
-
-For anonymous proxies, a different function will need to be called, the
-`anonymous(proxy_type, index)`. This will let you select which kind of anonymous proxy you would
-like to set up if you choose, as well as the index.
-
-![proxy generation](../assets/AXIA_anon_proxy.png)
-
-### Using Time Delayed Proxies
-
-When creating a proxy through the AXIAJS application, we are provided a delay field. In this
-example we are creating a proxy with a delay value of 100, which means 100 blocks. 100 \* 6(minutes)
-= 600 minutes, or 10 hours.
-
-![creating a time delayed proxy](../assets/time_delay_proxy_screenshot.png)
-
-### Another way to create Proxies
-
-There is another way you can set up a proxy on AXIA-JS UI. Go to "Accounts" in the navigation
-and then click the "Accounts" button. For each of the accounts you have on this page, the three axc
-button will let you create a proxy by using "Add proxy". This will open up a pop up onto your screen
-where you will be able to select the type of proxy for that specific account.
-
-![proxy generation part 2](../assets/AXIA_add_another_proxy.png)
-
-> Note: You cannot create an anonymous function from the Accounts page, you must be on the
-> Extrinsics page.
-
-### Removing Proxies
-
-If you want to remove a proxy, there are a few functions on the extrinsic page that will help do
-this.
-
-For non-anonymous proxies, you can use `removeProxy` or `removeProxies`, but must use the `killAnonymous` function for anonymous proxies. This must be called **from** the _anonymous_ proxy. This means that the anonymous proxy must be added as an account to AXIA-JS accounts.
-
-The following steps can be used to remove your proxy:
-
-> WARNING: there is no way to get access to the proxy after deleting it.
-
-- **Step 0**: You need to know the following information:
-
-  - the **account** you created the anonymous proxy from
-  - **type of proxy**, index (almost always 0)
-  - **block height** it was created at
-  - the **extrinsic index** in the block (on most block explorers, you will see the extrinsic ID listed as something along the lines of "9000-2" -> 9000 is the block height (block number) and 2 is the extrinsic index. You can find this information by looking up your account in a block explorer.
-
-  ![anon proxy info](../assets/kill-proxy-1.png)
-
-- **Step 1**: Go to https://AXIA.js.org/apps/#/accounts (make sure you are on correct network).
-- **Step 2**: Click `Proxied` and add your address, name it `ANON PROXY`. You should now see this address
-  in accounts. Now you need to call `killAnonymous` from the anonymous proxy. It is important to note that anonymous proxies _work backwards_; the original account acts as the proxy.
-
-  ![add proxy to delete](../assets/kill-proxy-2.png)
-
-- **Step 3**: Go to https://AXIA.js.org/apps/#/extrinsics
-- **Step 4**: Call extrinsic `proxy.killAnonymous` using the selected account ANON PROXY and the following parameters:
-
-  - Spawner: (original account)
-  - Proxy type (kind of proxy)
-  - Index 0 (almost always, but can be seen in creating extrinsic)
-  - Block number x
-  - Extrinsic index y
-
-  ![call extrinsic](../assets/kill-proxy-3.png)
-
-- **Step 5**: Submit and sign extrinsic
-
-  ![sign extrinsic](../assets/kill-proxy-3.png)
-
-## How to view your Proxies
-
-To view your proxy, head over to the Chain State (underneath "Developer") page on
-[AXIA-JS Apps](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Frpc.AXIA.io#/chainstate). If
-you've created your proxy on a AXIA account, it is required to change your network accordingly
-using the top left navigation button. On this page, the proxy pallet should be selected, returning
-the announcements and proxies functions. The proxies function will allow you to see your created
-proxies for either one account or for all accounts (using the toggle will enable this). Proxy
-announcements are what time lock proxies do to announce they are going to conduct an action.
-
-![view proxies](../assets/AXIA_view_proxies.png)
-
-## Putting It All Together
-
-If the idea of proxy types and their application seems abstract, it is. Here is an example of how
-you might use these accounts. Imagine you have one account as your primary token-holding account,
-and don't want to access it very often, but you do want to participate in governance and staking.
-You could set Governance and Staking proxies.
-
-![proxies](../assets/regular_proxy_diagram.png)
-
-In this example, the primary account A would only make two transactions to set account B as its
-governance proxy and account C as its staking proxy. Now, account B could participate in governance
-activity on behalf of A.
-
-Likewise, account C could perform actions typically associated with a stash account, like bonding
-funds and setting a Controller, in this case account D. Actions that normally require the Stash,
-like bonding extra tokens or setting a new Controller, can all be handled by its proxy account C. In
-the case that account C is compromised, it doesn't have access to transfer-related transactions, so
-the primary account could just set a new proxy to replace it.
-
-By creating multiple accounts that act for a single account, it lets you come up with more granular
-security practices around how you protect private keys while still being able to actively
-participate in a network.
-
-## Proxy Deposits
-
-Proxies require deposits in the native currency (i.e. AXC) in order to be created. The
-deposit is required because adding a proxy requires some storage space on-chain, which must be
-replicated across every peer in the network. Due to the costly nature of this, these functions could
-open up the network to a Denial-of-Service attack. In order to defend against this attack, proxies
-require a deposit to be reserved while the storage space is consumed over the life time of the
-proxy. When the proxy is removed, so is the storage space, and therefore the deposit is returned.
-
-The deposits are calculated in the runtime, and the function can be found in the runtime code. For
-example, the deposits are calculated in AXIA with the following functions:
-
-```rust
-// One storage item; key size 32, value size 8; .
-pub const ProxyDepositBase: Balance = deposit(1, 8);
-// Additional storage item size of 33 bytes.
-pub const ProxyDepositFactor: Balance = deposit(0, 33);
-```
-
-The `ProxyDepositBase` is the required amount to be reserved for an account to have a proxy list
-(creates one new item in storage). For every proxy the account has, an additonal amount defined by
-the `ProxyDepositFactor` is reserved as well (appends 33 bytes to storage location).
-
-On AXIA the `ProxyDepositBase` is {{ axc_proxy_deposit_base }} and the `ProxyDepositFactor` is
-{{ axc_proxy_deposit_factor }}.
-
-So what this boils down to is that the required deposit amount for one proxy on AXIA is equal to
-(in AXC):
-
-```
-{{ axc_proxy_deposit_base }} + {{ axc_proxy_deposit_factor }} * num_proxies
-```
+AXIA created a suite of free, ready-to-use applications all incorporating an embedded wallet for the AXIA Coin enabling monetization, commercialization and reward possibilities in our day to day use making them superior to existing competition. 
+### AXplorer
+AXplorer is a free private and secure online web browser where individuals can confidently surf the Internet without being tracked. AXplorer also makes it easy for users to earn rewards while visiting all of their favourite websites by opting into a benefits program where they are able to monetize their browsing data. Users can decide for themselves whether they want to turn data sharing off and browse in private mode or activate the AXplorer data sharing rewards system, which will result in AXC being deposited directly into their integrated AXIA Wallet after hitting certain browsing volumes. Furthermore, users have the potential to earn additional rewards by watching selected videos and ads, visiting suggested websites and responding to short questionnaires. AXplorer has all the same characteristics as the most commonly used browsers and provides the same access to all public websites that users can visit online, but gives them the ability to be in control of their own data. An individual can sync AXplorer across all their devices including phones, computers and tablets.
+### AXchat
+AXchat is a free messaging app that can also be used for global exchange with people all around the world. AXchat makes communicating and transacting cost efficient, simple and secure in this all in one application. Users can send and receive messages, photos, videos, files and voice notes along with their AXC freely, easily and securely. Individuals can also make voice and video calls to people all around the world at no cost. Users can connect one-on-one or create groups. Users can import contacts from their phone, or find people who are already using AXchat automatically. They can sync AXchat across all their devices whether they be a phone, computer or tablet. This allows users to use multiple devices at the same time. Security is of the highest priority, so AXchat supports end-to-end encryption for messaging, voice notes as well as both voice and video calls.
+### AXemble
+AXemble is a free meeting audio and video app for both personal and professional use. Users have the additional benefit of using  AXemble for cost-efficient, simple and secure exchange with all the participants in a given meeting. AXemble offers screen sharing, whiteboarding, instant messaging, file-sharing etc. Users can also record meetings to be saved for later. An individual can sync AXemble across all their devices whether they be a phone, computer or tablet. This allows users to use multiple devices at the same time.Security is of the highest priority, so AXemble supports end-to-end encryption for all activities in a meeting whether they be via message, voice and/or video.
+### AXpress
+AXpress is a free social networking app that allows individuals to communicate with people all over the world easily and efficiently. Users can express themselves through public and private messages or status updates and engage with others worldwide to discuss anything and everything from current events, politics, technology, business or sports - any topic that is important to them. Users can post news from around the world, broadcast their interests, ideas and be rewarded for building a following with the additional ability to transact in a cost efficient, secure, simple manner with this multi-functional application. In this first-of-its-kind app, people can communicate globally while being able to monetize their content in a variety of ways. An individual can sync AXpress across all their devices whether they be a phone, computer or tablet. This allows them to use multiple devices at the same time. Security is of the highest priority, so AXpress supports end-to-end encryption for all users.
+### AXconnect
+AXconnect is a free social networking app that can also be used for global exchange with people all around the world. Users can keep up with friends, family and colleagues freely, easily and securely by watching and sharing videos and photos, posting stories and playing interactive games with everyone in their network. People can share videos, photos and posts as 24 hour stories in their profile. Notifications will be received when the people in their network comment on their posts or share their posts with others. Individuals will be able to not only communicate with everyone in their network via instant message, but also transact for free in this simple and secure all-in-one application via the AXIA Wallet. People will have full control over their privacy settings. Users will be able to choose what posts they want to see and control what others see of their own activity. An individual can sync AXconnect across all their devices whether they be a phone, computer or tablet. This allows users to use multiple devices at the same time. Security is of the highest priority, so AXconnect supports end-to-end encryption for all activities in the app.
+### AXbox 
+AXbox allows users to upload, view, rate, share, comment and report on videos. Users can livestream, video blog, or subscribe to other AXbox users. AXbox allows users to also charge for subscription services, and to connect to a live stream via the AXIA Wallet. Users can transact in a cost efficient, simple, secure instant manner directly in the app. Unregistered users will be able to watch, but not upload videos. Registered users will be able to upload unlimited content or stream live as well as add comments. An individual can sync AXbox across all their devices whether they be a phone, computer or tablet. This allows users to use multiple devices at the same time. Security is of the highest priority, so AXbox supports end-to-end encryption for all activities in the app. 
+### AXmail
+AXmail is a free encrypted email application that allows users to instantly send and receive emails safely and securely. Users also enjoy the additional benefit of using AXmail as a cost-efficient, simple way to transact with anyone they correspond with via email. Users can easily sort their emails and messages into specific categories so that they can read over the emails they want first. AXmail can also protect against unneeded spam before it even hits their inbox. AXmail provides its users with significant storage space so they do not need to worry about having to copy emails or attachments out of the app on a frequent basis. An individual can sync AXmail across all their devices whether they be a phone, computer or tablet. This allows them to use multiple devices at the same time. Security is of the highest priority, so AXmail offers end-to-end encryption for all of its users.
+### AXperience
+AXperience is a free social networking app that allows users to connect with their friends and followers all around the world. People can add photos and videos directly to their feed, send messages and securely transact with this cost efficient, simple multi-functional application. At the same time, users are able to monetize their content in a variety of ways. An individual can sync AXperience across all their devices whether they be a phone, computer or tablet. This allows users to use multiple devices at the same time. Security is of the highest priority, so AXperience supports end-to-end encryption for messaging, as well as both voice and video calls. 
+### AXstore
+AXstore makes buying and selling any kind of item all around the world easy and safe. Regardless of whether a business is a sole proprietor or a multinational organization, the AXstore removes barriers to entry and puts everyone on a level playing field. Users can browse daily across the platform searching for special offers and discounts no matter what category they choose from. People can transact with confidence in a simple, cost efficient, secure manner knowing that all the transactions are done using the AXIA Wallet. Businesses also have the ability to opt-in for the innovative and dynamic AXIA Loyalty Program giving them the opportunity to not only improve customer retention, but increase revenues across the board. Users can feel free to message directly with a seller or merchant, giving them the opportunity to ask any question they may have prior to purchase. People can rate their experience with a seller on the platform while sellers have the opportunity to leave their feedback on buyers. AXstore offers a truly decentralized ecommerce platform where everything is right at their fingertips.
+### AXshare
+AXshare is a free file-sharing platform where individuals can share digital files with one another containing everything from videos to text files and with the possibility of earning rewards for doing so. The majority of actions on AXshare allow users to generate rewards and truly receive value for being an active community member. People can now more easily monetize the content they create or share on this unique multi-functional application. They can also transact in a cost efficient, simple, secure way. An individual can sync AXshare across all their devices whether they be a phone, computer or tablet, allowing them to use multiple devices at the same time. Security is of the highest priority, so, AXshare supports full end-to-end encryption for all users. 
+### AXdepot
+AXdepot is a first-of-its-kind cloud-based file storage app that allows people to save and share large digital files that cannot be stored locally on their computer or mobile device. The innovative participatory model distributes rewards for a number of actions on the platform from uploading and storing files to sharing them with others through the cloud. This app also allows users to create and edit documents, spreadsheets and more. Individuals can also monetize files, upload and create them using this multi-functional application. Transactions are executed in a cost-efficient, simple and secure manner using the AXIA Wallet. Once a person performs actions in the system, they can earn rewards that will be automatically generated and deposited into their Wallet. Plus, individuals can sync AXdepot across all their devices whether they be a phone, computer or tablet. allowing them to use the app on multiple devices at the same time. Security is of the highest priority, so AXdepot supports end-to-end encryption for all its users.
+### AXblog
+AXblog is an innovative free blogging application that allows users to get rewarded for participation on the platform. Users can receive rewards in a variety of ways using AXblog, from interacting with posts to posting original content and more. Users can transact with this cost efficient, simple, secure multi-functional application through their embedded AXIA Wallets. Users can now not only take real ownership of their content, but monetize the content they self-publish in a manner in which they are in complete control. An individual can sync AXblog across all their devices whether they be a phone, computer or tablet. This allows them to use multiple devices at the same time. Security is of the highest priority, so AXblog supports end-to-end encryption for all users. 
+### AXforum
+AXforum is a free discussion-based and news aggregation app where users can freely share information and engage with one another's posts and content, which can be published in the form of text, links, images, videos, discussion threads, forums, and more. Through the innovative participatory model of AXforum, users can also generate rewards for being a part of the community, getting paid for a wide variety of actions on the platform from posting to commenting. Security is of the highest priority, so AXforum supports end-to-end encryption for all users.  
+### AXtraxx
+AXtraxx is a free music and podcast streaming app where users can share original music, podcasts or other audio content and engage with one another’s posts and content. Through AXtraxx, users can explore playlists, enjoy top artists, discover up-and-coming stars and podcast hosts, share their favorite tracks with friends and family, and enjoy a seamless audio experience. Users can also generate rewards through their use of AXtraxx by getting paid for a wide variety of actions from sharing music to creating original playlists. Security is of the highest priority, so AXforum supports end-to-end encryption for all users.  
+### AXgenda
+AXgenda is a free calendar and organization app where users can neatly maintain schedules, timelines and projects, set meetings, alarms and reminders, prioritize their most important tasks, share calendar information and schedule links with contacts. With AXgenda, users can also earn rewards by getting paid for their participation in the community via networking with new contacts and other tasks. AXgenda can be synced across all devices whether they be a phone, computer or tablet. Security is of the highest priority, so AXgenda protects its users' data rather than selling it to third-party advertisers.
+### AXshops
+AXshops is an e-commerce platform where users can buy, sell and trade goods in AXIA Coin (AXC). From individuals to businesses, AXshops can be used as a one-stop-shop when it comes to all their e-commerce needs from simple one-time purchases to setting up vast online stores and retail experiences. Through the community-based model of AXshops, users can also earn rewards through their use of the platform for participatory tasks like purchasing goods from a new online vendor or selling goods of their own. Security is of the highest priority, so AXshops supports end-to-end encryption for all users.  

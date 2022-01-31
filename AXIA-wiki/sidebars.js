@@ -7,26 +7,33 @@ module.exports = {
         "general/getting-started",
         "general/claims",
         "general/redenomination",
-        "general/grants",
-        "general/ambassadors",
-        "general/research",
-        "general/community",
-        "general/contributing",
-        "general/contributors",
-        "general/glossary",
-        "general/ens",
-        "general/ledger",
-        "general/scams",
-        "general/how-to-dyor",
-        "general/doc-thousand-validators",
-        "general/faq",
+        {
+             type: "category",
+             label: "Why AXIA?",
+             items:[            
+
+            "general/grants",
+            "general/ambassadors",
+            "general/community",
+            "general/contributing",
+            "general/contributors",
+            "general/glossary",
+            "general/ens",
+            "general/ledger",
+            "general/research",
+]},
+         
+          "general/scams",
+        //"general/how-to-dyor",
+        //"general/doc-thousand-validators",
+        //"general/faq",
       ],
     },
     {
       type: "category",
       label: "Learn",
       items: [
-        "learn/learn-architecture",
+        //"learn/learn-architecture",
         {
           type: "category",
           label: "Basics",
@@ -39,16 +46,17 @@ module.exports = {
             "learn/learn-security",
             "learn/learn-consensus",
             "learn/learn-nominator",
-            "learn/learn-validator",
-            "learn/learn-collator",
-            "learn/learn-governance",
-            "learn/learn-identity",
-            "learn/learn-balance-transfers",
-            "learn/learn-transaction-fees",
-            "learn/learn-AXIA-host",
-            "learn/learn-treasury",
-            "learn/learn-registrar",
-            "learn/learn-runtime-upgrades",
+            "learn/learn-auction",
+            //"learn/learn-validator",
+            //"learn/learn-collator",
+            //"learn/learn-governance",
+            //"learn/learn-identity",
+            //"learn/learn-balance-transfers",
+            //"learn/learn-transaction-fees",
+            //"learn/learn-AXIA-host",
+            //"learn/learn-treasury",
+            //"learn/learn-registrar",
+            //"learn/learn-runtime-upgrades",
           ],
         },
         {
@@ -59,9 +67,9 @@ module.exports = {
             "learn/learn-parathreads",
             "learn/learn-bridges",
             "learn/learn-common-goods",
-            "learn/learn-auction",
-            "learn/learn-crowdloans",
-            "learn/learn-teleport",
+            //"learn/learn-auction",
+            //"learn/learn-crowdloans",
+            //"learn/learn-teleport",
           ],
         },
         {
@@ -73,10 +81,15 @@ module.exports = {
             "learn/learn-availability",
             "learn/learn-randomness",
             "learn/learn-cross-consensus",
+            {
+             type: "category",
+             label: "Benefits",
+             items:[            
+
             "learn/learn-spree",
             "learn/learn-wasm",
             "learn/learn-phragmen",
-            "learn/learn-simple-payouts",
+            "learn/learn-simple-payouts",]}
           ],
         },
         {
@@ -84,7 +97,7 @@ module.exports = {
           label: "Cryptography",
           items: ["learn/learn-cryptography", "learn/learn-keys"],
         },
-        {
+       /* {
           type: "category",
           label: "AXIA Comparisons",
           items: [
@@ -92,24 +105,47 @@ module.exports = {
             "learn/learn-comparisons-cosmos",
             "learn/learn-comparisons",
           ],
-        },
+        },*/
       ],
     },
     {
       type: "category",
       label: "Build",
       items: [
+            "build/build-index",
             "build/build-allychains",
             "build/build-guide",
             //"learn/learn-implementers-guide",
-            "build/build-storage",
-            "build/build-smart-contracts",
-            "build/build-oracle",
+            
+            
+            {
+            type: "category",
+            label: "AXIA Wallet",
+            items:[
+            //TO DO
+                "build/build-storage",
+                //"build/build-transaction-construction",
+"build/build-node-interaction","build/build-protocol-info",
+                ],
+},
+           "build/build-smart-contracts",
+            
+               {
+                type: "category",
+                label: "AXIA Explorer ",
+                items: [
+ "build/build-oracle",
+//"build/build-node-management",
+            "build/build-integration",
+                "build/build-integrate-assets",
+            
+],
+},
             //"build/build-ss58-registry",
             "build/build-wallets",
              ],
     },
-        //"build/build-index",
+        //
         //{
          // type: "category",
          // label: "Development Guide",
@@ -128,12 +164,11 @@ module.exports = {
           //type: "category",
          // label: "Integration Guide",
           //items: [
-           // "build/build-integration",
-           // "build/build-protocol-info",
-           // "build/build-integrate-assets",
-           // "build/build-node-management",
-           // "build/build-node-interaction",
-           // "build/build-transaction-construction",
+           // 
+           // 
+           // 
+           // 
+           // 
          // ],
       //  },
        // {

@@ -1,228 +1,65 @@
 ---
 id: learn-auction
-title: Allychain Slots Auction
-sidebar_label: Allychain Slots Auction
+title: The AXC
+sidebar_label: AXC
 slug: ../learn-auction
 ---
 
-For a [allychain](learn-allychains.md) to be added to AXIA it must inhabit one of the available
-allychain slots. A allychain slot is a scarce resource on AXIA and only a limited number will be
-available. As allychains ramp up, there may only be a few slots that are unlocked every few months.
-The goal is to eventually have 100 allychain slots available on {{ AXIA: AXIA :AXIA }} (these will be split between allychains and the
-[parathread pool](learn-parathreads.md)). If a allychain wants to have guaranteed block inclusion at
-every Relay Chain block, it must acquire a allychain slot.
+The monetary policy of AXIA is controlled by code, not a few people in a boardroom. Unlike fiat currencies, AXIA has a limited total supply that has already been established which can only reduce over time.. There will never be more AXIA Coins minted than the Total Supply. And the Total Supply can only decrease, never increase. 
 
-The allychain slots will be sold according to an unpermissioned
-[candle auction](https://en.wikipedia.org/wiki/Candle_auction) that has been slightly modified to be
-secure on a blockchain.
 
-## Mechanics of a Candle auction
+In addition to offering a more efficient and cost effective ability to move their AXIA Coins from wallet-to-wallet, across the globe, individual community members will be able to exchange their AXIA Coins for other global currencies should they wish to do so. In supporting these integration and partnership opportunities, the AXIA Foundation maintains a commitment to actively support a variety of use cases through innovative services, products and platforms so that global participants, businesses and projects continue to flourish within the community. 
 
-Candle auctions are a variant of open auctions where bidders submit bids that are increasingly
-higher and the highest bidder at the conclusion of the auction is considered the winner.
+### AXIA Coin INFORMATION (as of this date of this document):
+* Digital Currency Name/ Market Symbol: AXC
+* AXC Initial Total Supply: 72,560,000,000.00000
+* AXC Total Supply: 72,244,370,739.00000 AXC
+* AXC Total Circulating Supply:  AXC
+* AXC Total Staked Supply: AXC
+* AXC Total Burned Supply: AXC
 
-Candle auctions were originally employed in 16th century for the sale of ships and get their name
-from the "inch of a candle" that determined the open period of the auction. When the flame
-extinguished and the candle went out, the auction would suddenly terminate and the standing bid at
-that point would win.
 
-When candle auctions are used online, they require a random number to decide the moment of
-termination.
 
-Allychain slot auctions will differ slightly from a normal candle auction in that it does not use
-the random number to decide the duration of its opening phase. Instead, it has a known open phase
-and will be retroactively determined (at the normal close) to have ended at some point in the past
-during the ending phase. So during the open phase, bids will continue to be accepted, but later bids
-have higher probability of losing since the retroactively determined close moment may be found to
-have preceded the time that a bid was submitted.
+### Anyone with a connection to the Internet will have a real-time view of 
+* AXIA Coin Circulating Supply, AXIA Coin Total Supply
+* AXIA Coin Staked Supply, 
+* AXIA Coin Burned  Supply, 
+* AXIA Coin Market Capitalization, 
+* The net asset value (NAV) of the AXIA Treasury, 
+* AXIA Coin price
+* AXIA Ecosystem Participants along with all network activity 
 
-## Rationale
+all in real time. 
 
-The open and transparent nature of blockchain systems opens attack vectors that are non-existent in
-traditional auction formats. Normal open auctions in particular can be vulnerable to _auction
-sniping_ when implemented over the internet or on a blockchain.
+## Standard Method of Calculating Market Capitalization
+While the Circulating Supply, Total Supply, Staked Supply and Burned Supply may vary at any one time, what is unequivocal, indisputable and immutable is that the Total Supply will never go up, only down. There will never be more coins minted than the Initial Total Supply.
 
-Auction sniping takes place when the end of an auction is known and bidders are hesitant to bid
-their true price early, in hopes of paying less than they actually value the item.
+Based on the Tokenomics of AXIA, the Market Capitalization is calculated based on the **Market Price x Circulating Supply**.
 
-For example, Alice may value an item at auction for 30 USD. She submits an initial bid of 10 USD in
-hopes of acquiring the items at a lower price. Alice's strategy is to place incrementally higher
-bids until her true value of 30 USD is exceeded. Another bidder Eve values the same item at 11 USD.
-Eve's strategy is to watch the auction and submit a bid of 11 USD at the last second. Alice will
-have no time to respond to this bid before the close of the auction and will lose the item. The
-auction mechanism is sub-optimal because it has not discovered the true price of the item and the
-item has not gone to the actor who valued it the most.
+This calculation is the market standard method of calculating Market Capitalization.
 
-On blockchains this problem may be even worse, since it potentially gives the producer of the block
-an opportunity to snipe any auction at the last concluding block by adding it themselves and/or
-ignoring other bids. There is also the possibility of a malicious bidder or a block producer trying
-to _grief_ honest bidders by sniping auctions.
+So Total Supply, Staked Supply and Burned Supply do not contribute to the market capitalization calculation.
 
-For this reason, [Vickrey auctions](https://en.wikipedia.org/wiki/Vickrey_auction), a variant of
-second price auction in which bids are hidden and only revealed in a later phase, have emerged as a
-well-regarded mechanic. For example, it is implemented as the mechanism to auction human readable
-names on the [ENS](../general/ens.md). The Candle auction is another solution that does not need the two-step
-commit and reveal schemes (a main component of Vickrey auctions), and for this reason allows smart
-contracts to participate.
+When a participant acquires AXIA Coin it can be taken from Total Supply. 
 
-Candle auctions allow everyone to always know the states of the bid, but not when the auction will
-be determined to have ended. This helps to ensure that bidders are willing to bid their true bids
-early. Otherwise, they might find themselves in the situation that the auction was determined to
-have ended before they even bid.
+The total AXIA Coin exchanged will be determined based on this calculation:
 
-## AXIA Implementation
+Asset Value/AXIA Coin Market Price = Total AXIA Coin exchanged 
 
-AXIA will use a _random beacon_ based on the VRF that's used also in other places of the
-protocol. The VRF will provide the base of the randomness, which will retroactively determine the
-end-time of the auction.
+Any asset(s) that are exchanged for AXIA Coins are then transferred into the AXIA Treasury.
 
-The slot durations are capped to {{ AXIA: 2 years and divided into 3-month periods :AXIA }}; Allychains may lease a slot for any
-combination of periods of the slot duration. Allychains may lease more than one slot over time,
-meaning that they could extend their lease to AXIA past the maximum duration by leasing a
-contiguous slot.
+At the same time an equivalent amount of AXIA Coin is burned, thus increasing the Total Burned Supply.  Additionally should a participant choose to stake AXIA Coin this will increase the Total Staked Supply and raise the Total Burned Supply even more with a commensurate amount of AXIA Coin permanently removed from Total Supply. 
 
-> Note: Individual allychain slots are fungible. This means that allychains do not need to always
-> inhabit the same slot, but as long as a allychain inhabits any slot it can continue as a
-> allychain.
+Individuals will be able to easily assess AXIA Coin data relative to alternatives. This is due to the overall transparency of information displayed to the market. It will simplify the capability to make informed decisions in the fraction of the time that it might take to draw conclusions about other projects. The fundamentals will speak for themselves.
+## AXIA aims to remove the speculative nature of cryptocurrencies
 
-## Bidding
+AXIA Early Adopter AXIA Coins have been pre-committed to founding team members, strategic advisors and project funding participants prior to the AXIA Network Launch. AXIA aims to remove the speculative nature of cryptocurrencies by releasing clear-cut, real-time based figures to the world. AXIA is a project that is supported by a diverse international team that has professionalhas diverse professional backgrounds and experience in:such as: application development, blockchain and software engineering, finance, and marketing. AXIA is a self-funded project from the contributions of the early adopters. The funds contributed by early participants have been utilized to develop the network and the ever expanding AXIA Ecosystem consisting of applications and platforms available today and into the future. AXIA Coins from this pool will also be used for the upgrades, maintenance, administration and development of existing and new use cases, services and applications along with the implementation of the strategic partnerships and awareness campaigns that will assist to ensure the widespread adoption of the AXIA Network and AXIA Coin. AXIA will continue to promote a participatory inclusionary model inviting new participants to assist with new developments and the strategic direction of the overall AXIA Network.
 
-Allychains, or allychain teams, can bid in the auction by specifying the slot range that they want
-to lease as well as the number of tokens they are willing to reserve. Bidders can be either ordinary
-accounts, or use the [crowdloan functionality](learn-crowdloans.md) to source tokens from the
-community.
+The early adopters also ensured that any new participant is entering into a fully built and functioning network and ecosystem of ready to use applications for the advantage of everyone. Therefore, each new participant entering the AXIA Network will immediately work within the decentralized hyper-deflationary economic model that creates value for themselves and others.
 
-```
-Allychain slots at genesis
+The initial AXIA Treasury contributors, have a strong belief in the project vision and share the desire to create significant value and provide positive social impact around the world. Knowing the potential AXIA Coin can unleash, their motivation from the outset was to make AXIA Coin the most secure form of currency that has ever come into existence. Due to the commitment of the AXIA team and early adopters all have removed their allotment of AXIA Coins from circulation for the long-term staking program.
+With a deep understanding of the participatory, inclusionary economic model, the individuals involved agreed to proceed with the development of the AXIA Real-Time Reporting Platform to have assets in the AXIA Treasury validated by third party accounting professionals. 
+ 
+This represented a significant milestone towards the AXIA Treasury, already an established, verifiable, calculable value that would immediately support the project. 
 
-       --3 months--
-       v          v
-Slot A |     1    |     2     |     3     |     4     |     5     |     6    |     7     |     8     |     9     |...
-Slot B |     1    |     2     |     3     |     4     |     5     |     6    |     7     |     8     |     9     |...
-Slot C |__________|     1     |     2     |     3     |     4     |     5    |     6     |     7     |     8     |     9     |...
-Slot D |__________|     1     |     2     |     3     |     4     |     5    |     6     |     7     |     8     |     9     |...
-Slot E |__________|___________|     1     |     2     |     3     |     4    |     5     |     6     |     7     |     8     |     9     |...
-       ^                                                                                             ^
-       ---------------------------------------------max lease-----------------------------------------
-
-```
-
-_Each period of the range 1 - 4 represents a
-{{ AXIA: 3-month duration for a total of 2 years :AXIA }}_
-
-Bidders will submit a configuration of bids specifying the token amount they are willing to bond and
-for which periods. The slot ranges may be any of the periods 1 - `n`, where `n` is the number of
-periods available for a slot (`n` will be 8 in AXIA).
-
-> Please note: If you bond tokens with a allychain slot, you cannot stake with those tokens. In this
-> way, you pay for the allychain slot by forfeiting the opportunity to earn staking rewards.
-
-A bidder configuration for a single bidder may look like the following pseudocode example:
-
-```js
-const bids = [
-  {
-    range: [1, 2, 3, 4, 5, 6, 7, 8],
-    bond_amount: 300,
-  },
-  {
-    range: [1, 2, 3, 4],
-    bond_amount: 777,
-  },
-  {
-    range: [2, 3, 4, 5, 6, 7],
-    bond_amount: 450,
-  },
-];
-```
-
-The important concept to understand from this example is that bidders may submit different
-configurations at different prices (`bond_amount`). However, only one of these bids would be
-eligible to win exclusive of the others.
-
-The winner selection algorithm will pick bids that may be non-overlapping in order to maximize the
-amount of tokens held over the entire lease duration of the allychain slot. This means that the
-highest bidder for any given slot lease period might not always win (see the
-[example below](#examples)).
-
-A random number, which is based on the VRF used by AXIA, is determined at each block.
-Additionally, each auction will have a threshold that starts at 0 and increases to 1. The random
-number produced by the VRF is examined next to the threshold to determine if that block is the end
-of the auction within the so-called _ending period_. Additionally, the VRF will pick a block from
-the last epoch to take the state of bids from (to mitigate some types of attacks from malicious
-validators).
-
-### Examples
-
-There is one allychain slot available.
-
-Charlie bids `75` for the range 1 - 8.
-
-Dave bids `100` for the range 5 - 8.
-
-Emily bids `40` for the range 1 - 4.
-
-Let's calculate each bidder's valuation according to the algorithm. We do this by multiplying the
-bond amount by the number of periods in the specified range of the bid.
-
-Charlie - 75 \* 8 = 600 for range 1 - 8
-
-Dave - 100 \* 4 = 400 for range 5 - 8
-
-Emily - 40 \* 4 = 160 for range 1 - 4
-
-Although Dave had the highest bid in accordance to token amount, when we do the calculations we see
-that since he only bid for a range of 4, he would need to share the slot with Emily who bid much
-less. Together Dave's and Emily's bids only equals a valuation of `560`.
-
-Charlie's valuation for the entire range is `600`. Therefore Charlie is awarded the complete range of
-the allychain slot.
-
-## FAQ
-
-### Why doesn't everyone bid for the max length?
-
-For the duration of the slot the tokens bid in the auction will be locked up. This means that there
-are opportunity costs from the possibility of using those tokens for something else. For allychains
-that are beneficial to AXIA, this should align the interests between allychains and the AXIA
-Relay Chain.
-
-### How does this mechanism help ensure allychain diversity?
-
-The method for dividing the allychain slots into intervals was partly inspired by the desire to
-allow for a greater amount of allychain diversity, and prevent particularly large and well-funded
-allychains from hoarding slots. By making each period a {{ AXIA: three-month duration but the
-overall slot a 2-year duration :AXIA }}, the mechanism can cope with well-funded allychains that will ensure they secure
-a slot at the end of their lease, while gradually allowing other allychains to enter the ecosystem
-to occupy the durations that are not filled. For example, if a large, well-funded allychain has
-already acquired a slot for range 1 - 8, they would be very interested in getting the next slot that
-would open for 2 - 9. Under this mechanism that allychain could acquire just the period 9 (since that is the
-only one it needs) and allow range 2 - 8 of the second allychain slot to be occupied by another.
-
-### Why is randomness difficult on blockchains?
-
-Randomness is problematic for blockchain systems. Generating a random number trustlessly on a
-transparent and open network in which other parties must be able to verify opens the possibility for
-actors to attempt to alter or manipulate the randomness. There have been a few solutions that have
-been put forward, including hash-onions like [RANDAO](https://github.com/randao/randao) and
-[verifiable random functions](https://en.wikipedia.org/wiki/Verifiable_random_function) (VRFs). The
-latter is what AXIA uses as a base for its randomness.
-
-### Are there other ways of acquiring a slot besides the candle auction?
-
-Another way, besides the candle auction, to acquire a allychain slot is through a secondary market
-where an actor who has already won a allychain slot can resell the slot along with the associated
-deposit of tokens that is locked up to another buyer. This would allow the seller to get liquid
-tokens in exchange for the allychain slot and the buyer to acquire the slot as well as the deposited
-tokens.
-
-A number of system or common-good allychains may be granted slots by the
-[governing bodies](learn-governance.md) of the Relay Chain. System allychains can be recognized by a
-allychain ID lower than 1_000, and common-good allychains by a allychain ID between 1_000 and 1_999.
-Other allychains will have IDs 2_000 or higher. Such allychains would not have to bid for or renew
-their slots as they would be considered essential to the ecosystem's future.
-
-## Resources
-
-- [Allychain Allocation](https://w3f-research.readthedocs.io/en/latest/AXIA/overview/3-allychain-allocation.html) -
-  W3F research page on allychain allocation that goes more in depth to the mechanism
+This structure further fulfills the collective goal of bringing an even more favorable alternative to the market to encourage people from all over the world to participate, continually building the community and expanding the ecosystem. The more the community builds and its ecosystem expands, the more value stands to be created for everyone. 

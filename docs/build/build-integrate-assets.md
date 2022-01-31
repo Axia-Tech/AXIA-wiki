@@ -1,128 +1,43 @@
 ---
 id: build-integrate-assets
-title: Assets on AXIA
-sidebar_label: Integrating Assets
+title: Balance Transfer
+sidebar_label: Balance Transfer
 slug: ../build-integrate-assets
 ---
 
-The AXIA Relay Chain does not natively support assets beyond AXC.
-This functionality exists in allychains. On AXIA, this allychain is called Statemint.
+# **Balance Transfers**
+Balance transfers are used to send balance from one account to another account. To start transferring balances, we will begin by using [AXIA-JS Apps](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts). This guide assumes that you've already created an account and have some funds that are ready to be transferred.
+## AXIA-JS Apps
 
-Statemint provides a first-class interface for creating, managing, and using both fungible and
-non-fungible assets. The fungible interface is similar to Ethereum's ERC-20 standard. However, the
-data structures and stateful operations are encoded directly into the chain's runtime, making
-operations fast and fee-efficient.
+> NOTE: In this walkthrough we will be using the AXIA network.
+> If you would like to switch to a different network, you can change it by clicking the top
+> left navigation dropdown and selecting a different network.
 
-Beyond merely supporting assets, integrating Statemint into your systems has several benefits for
-infrastructure providers and users:
+Let's begin by opening [AXIA-JS Apps](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts). There are two ways to make a balance transfer:
 
-- Support for on-chain assets.
-- Significantly lower transaction fees (about 1/10) than the Relay Chain.
-- Significantly lower deposits (1/10) than the Relay Chain. This includes the existential deposit
-  and deposits for proxy/multisig operations.
-- Ability to pay transaction fees in certain assets. As in, accounts would **not** need AXC in order
-  to exist on-chain nor to pay fees.
+1. By using the "Transfer" tab in the "Accounts" dropdown (located on the top navigational menu).
+2. Clicking the "send" button while in the "Accounts" page.
 
-Statemint will use AXC as its native currency. Users can transfer AXC from the Relay Chain into
-Statemint and use it natively. The Relay Chain will also accept AXC transfers from Statemint back to
-the Relay Chain to use for staking, governance, or any other activity taking place there.
+### Using the Transfer Tab
 
-Using Statemint for AXC balance transfers will be much more efficent than the Relay Chain and is
-highly recommended. Until domain specific allychains are built, the Relay Chain will still need to
-be used for staking and governance.
+Click on the "Transfer" tab in the "Accounts" dropdown.
 
-## Assets Basics
+![transfer](../assets/explorer/transfer/transfer.png)
 
-See the [Assets pallet](https://github.com/axia-tech/substrate/blob/master/frame/assets/src/lib.rs)
-for the most up-to-date info and reference documentation.
+Now a modal window will appear on the page. The modal asks you to enter 3 inputs:
 
-Assets are stored as a map from an ID to information about the asset, including a management team,
-total supply, total number of accounts, its sufficiency for account existence, and more.
-Additionally, the asset owner can register metadata like the name, symbol, and number of decimals
-for representation.
+- "send from account": Your account with funds that you will send from.
+- "send to address": The address of the account that will receive the funds.
+- "amount": The amount of tokens you will transfer.
 
-Some assets, as determined by on-chain governance, are regarded as “sufficient”. Sufficiency means
-that the asset balance is enough to create the account on-chain, with no need for the AXC
-existential deposit. Likewise, you cannot send a non-sufficient asset to an account that does not
-exist. Sufficient assets can be used to pay transaction fees (i.e. there is no need to hold AXC
-on the account).
+The "existential deposit" box shows you the **minimum amount of funds you must keep in the account
+for it to remain active.**
+![bal_transfer](../assets/explorer/transfer/transfer_bal.png)
 
-Assets do have a minimum balance (set by the creator), and if an account drops below that balance,
-the dust is lost.
+After setting your inputs correctly, click the "Make Transfer" button and confirm. Once the transfer
+is included in a block you will see a green notification in the top-right corner of your screen.
+![qued](../assets/explorer/transfer/authorize_trans.png)
+After that you have to give the password of your account to authorize the transaction. Then click on "Sign and Submit". Within few second the amount will be transferred from your account to another account.
 
-### Asset Operations
+![final](../assets/explorer/transfer/transfer4.png)
 
-The Assets pallet has its own interface for dealing with assets. See the [Integration](#integration)
-section below for how to fetch information and construct transactions.
-
-The main functions you will probably interact with are `transfer` and `transfer_keep_alive`. These
-functions transfer some `amount` (balance) of an `AssetId` (a `u32`, not a contract address) to
-another account.
-
-The Assets pallet also provides an `approve_transfer`, `cancel_approval`, and `transfer_approved`
-interface for non-custodial operations.
-
-Asset transfers will result in an `assets.transferred` event. The same instructions for
-[monitoring events and **not** transactions](build-protocol-info.md#events) applies to asset
-transfers.
-
-Note that you can use the same addresses (except anonymous proxies!) on Statemint that you use on
-the Relay Chain. The SS58 encodings are the same, only the chain information (genesis hash, etc.)
-will change on transaction construction.
-
-#### Receiving:
-
-You can use the same account on both networks and both will use the same `pubkey`.
-The network IDs change, so your address will look different. At the moment, assets are not
-visible on the Accounts page; you will need to visit the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxia-statemine-rpc.axia-tech.net#/assets) under the `Network` tab on Statemine to receive assets.
-
-![statemine asset examples](../assets/statemine-asset-examples.png)
-
-#### Sending:
-
-Similarly, head over to the [Assets Page](https://AXIA.js.org/apps/?rpc=wss%3A%2F%2Faxia-statemine-rpc.axia-tech.net#/assets) on Statemine and select the ID of the asset(s) you would like to send.
-
-> Sending the asset follows the same transaction scheme as sending AXC.
-
-## Integration
-
-Statemint will come with the same tooling suite that AXIA Technologies provides for the Relay
-Chain, namely [API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) and
-[TxWrapper AXIA](https://github.com/axia-tech/txwrapper-core/tree/main/packages/txwrapper-AXIA).
-If you have a technical question or issue about how to use one of the integration tools please file
-a GitHub issue so a developer can help.
-
-### Allychain Node
-
-Using Statemint will require running a allychain node to sync the chain. This is very similar to
-running a AXIA node, with the addition of some extra flags. The basic format looks like this:
-
-```bash
-./statemint $STATEMINT_CLI_ARGS --collator -- $AXIA_CLI_ARGS
-```
-
-where both `$STATEMINT_CLI_ARGS` and `$AXIA_CLI_ARGS` consist of regular AXIA node flags.
-Flags can be used twice, one for the collating component and one for the Relay Chain component.
-Additional ports that will be used are (by default) 9934, 9616, and 30334 (Relay Chain RPC,
-Prometheus endpoint, and libp2p respectively). As usual, any of these ports can be adjusted through
-flags. To deploy a Statemint RPC node, one would use the same flags as a AXIA RPC node in place
-of `$STATEMINT_CLI_ARGS`. The node will keep both the database for AXIA and for Statemint in its
-database directory, so provision disks accordingly.
-
-### Sidecar
-
-API Sidecar is a REST service for relay chain and allychain nodes; It comes with endpoints to query
-info about assets and asset balances on Statemint.
-
-- Asset lookups will always use the `AssetId` to refer to an asset class. On-chain metadata is
-  subject to change and thus not suitable as a canonical index.
-- Please refer to [docs](https://axia-tech.github.io/substrate-api-sidecar/dist/) for full usage
-  information. Details on options like how to make a historical query are not included here.
-
-### Tx Wrapper AXIA
-
-TxWrapper AXIA is a library designed to facilitate transaction construction and signing in
-offline environments; it comes with a set of asset-specific functions to use on Statemint. When
-constructing allychain transactions, you can use `txwrapper-AXIA` exactly as on the Relay Chain,
-but would construct transactions with the appropriate allychain metadata like genesis hash, spec
-version, and type registry.

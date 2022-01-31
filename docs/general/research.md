@@ -1,49 +1,24 @@
 ---
 id: research
-title: Research Pages
-sidebar_label: Research Pages
+title: Blockchain Technology
+sidebar_label: Blockchain Technology
 slug: ../research
 ---
 
-The AXIA [research pages](https://w3f-research.readthedocs.io/en/latest/Publications.html) are
-edited directly by the researchers at W3F and contain papers, articles and documents that are
-sources for the information on the wiki.
+We now live in a world where the majority of the global population scarcely remembers a time before the existence of the Internet. Similarly, there may soon come a time when people scarcely remember the interconnected digital economic world before blockchain, and the digital currency projects that blockchain and decentralized applications have enabled. A blockchain is a distributed ledger that publicly records all transactions
 
-The following papers and articles may be of special interest for those interested in exploring
-AXIA from a research or academic perspective.
+The rise of blockchain technology has revolutionized how we think about money. Money can be transferred peer-to-peer through a decentralized network without passing through a central authority. 
 
-## Research Papers
+There are a few radical differences between cryptocurrencies and fiat currencies. For example, cryptocurrency transactions are recorded in an unfalsifiable ledger that relies not on the authority of banks or governments, but on the strength of a public computer network. Blockchain technology can be programmed to give us incorruptible information. 
 
-- [`Overview of AXIA and its Design Considerations`](https://arxiv.org/pdf/2005.13456.pdf) - A
-  broad overview of the design of AXIA. Authors: Jeff Burdges, Alfonso Cevallos, Peter Czaban,
-  Rob Habermeier, Syed Hosseini, Fabio Lama, Handan Kılınç Alper, Ximin Luo, Fatemeh Shirazi,
-  Alistair Stewart, Gavin Wood
-- [`Intro to Nominated Proof of Stake`](https://research.AXIA.org/en/latest/AXIA/NPoS/index.html) -
-  A description of the NPoS scheme which selects which validators are allowed to participate in the
-  consensus protocol of AXIA. Author: Alfonso Cevallos
-- [`GRANDPA: A Byzantine Finality Gadget`](https://arxiv.org/abs/2007.01560) - GHOST-based Recursive
-  Ancestor Deriving Prefix Agreement, AXIA's finality gadget. Authors: Alistair Stewart and
-  Lefteris Kokoris Kogias
-- [`A Verifiably Secure and Proportional Committee Election Rule`](https://arxiv.org/abs/2004.12990) -
-  Validator Election in Nominated Proof of Stake. Authors: Alfonso Cevallos and Alistair Stewart
-- [`Network Time with a Consensus on Clock`](https://eprint.iacr.org/2019/1348.pdf) - Consensus on Clock
-  in Universally Composable Timing. Author: Handan Kılınç Alper
-- [`Delay Encryption`](https://eprint.iacr.org/2020/638) - Delay Encryption can roughly be described
-  as “identity based encryption with slow derived private key issuance”. Authors: Jeff Burdges and
-  Luca de Feo
+Blockchain enables us to create foolproof, guaranteed records of transactions, entirely without reliance on outside authorities such as banks or governments. Now that the transparent and decentralized power of blockchain technology has been unleashed, there is simply no going back.
 
-## Research Blogs
+Blockchain technology possesses the ability to radically change lives for the betterment of humanity. On a distributed blockchain, no single entity controls the network. Anyone with access to the internet can participate and people from all around the world hold identical copies of transaction ledgers on their computers. These computers are called nodes. Every time a transaction occurs, the node must independently update and verify it from a piece of data called a “block,” which is arranged in a chain that together consists of all the historical records of transactions that have occurred. Each block contains a collection of unconfirmed transactions, transaction time-stamps, and references for the latest transactions in the confirmed ledger. Coupling these blockchain network systems with transparent forms of blockchain-based money or cryptocurrency can deliver a currency that is not susceptible to unplanned inflation or interference by intermediaries. Independent currencies that can operate both inside and outside of the existing monetary system offer users a choice in the ways they can store and transfer value, and an alternative to the zero-sum conceit of debt-based money that must incur costs elsewhere. 
 
-- [`An Updated Overview of AXIA`](https://AXIA.network/an-updated-overview-of-AXIA/) –
-  Gives a summary of the paper “Overview of AXIA and its Design Considerations”
-- [`AXIA Research Update`](https://AXIA.network/AXIA-research-update/) – Gives a summary
-  of the papers on Validator Election in Nominated Proof of Stake, Network Time with a Consensus on
-  Clock, and Byzantine Finality Gadgets.
-- [`AXIA’s Messaging Scheme`](https://medium.com/web3foundation/AXIAs-messaging-scheme-b1ec560908b7)
-  – Gives an outline of Cross-Chain Message Passing (XCMP). Authors: Fatemeh Shirazi, Logan Saether,
-  Alistair Stewart, Rob Habermeier, Gavin Wood
-- [`How Nominated Proof of Stake Will Work in AXIA`](https://medium.com/web3foundation/how-nominated-proof-of-stake-will-work-in-AXIA-377d70c6bd43)
-  – Gives an outline of Nominated Proof of Stake in AXIA. Author: Alfonzo Cevallos
-- [`Messaging Protocol Workshop Outcomes`](https://medium.com/web3foundation/messaging-protocol-workshop-outcomes-7a827d02a81a)
-  – An initiative to design and implement a privacy-preserving communication system for
-  decentralized applications.
+There are three dimensions of currency: 
+
+1. Representation: Money can be represented in virtual form or physical form 
+2. Transaction Handling: Money can be transacted in centralized or decentralized payment systems 
+3. Money Creation: Some monies are created by a monopoly, while others are issued under competition
+
+Cryptocurrency has the potential to disrupt the current payment infrastructure and the financial system. In general, it could affect all businesses and government agencies that are involved in recordkeeping. The special feature of cryptocurrencies is that they combine the transactional advantages of virtual money with the systemic independence of decentralized transaction processing. 

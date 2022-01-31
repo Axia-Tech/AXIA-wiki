@@ -1,93 +1,30 @@
 ---
 id: community
-title: Community
-sidebar_label: Community
+title: Inherent Weakness of Fiat Currency
+sidebar_label: Inherent Weakness of Fiat Currency
 slug: ../community
 ---
 
-The AXIA community is expanding every day. Below are the most essential links to the community
-channels. Keep in mind that no admin or moderator will ever DM you for any reason whatsoever without
-prior contact and anyone doing so is likely trying to scam you.
+In order to understand the destabilizing effect that debt accumulation has on a domestic economy, it is first important to understand contemporary money: Fiat currency is a legislatively established and legally enforced form of payment that differs significantly from the historical use of gold and silver as currency. These standards also include previous examples of so-called “private money,” which was a non-government currency that was limited by location, supply and purpose. 
 
-## General
+Unlike these historical forms of sovereign or private currency, today’s dominant fiat currency order enables governments and their central banks to utilize monetary policy levers for the expansion and contraction of a nation’s money supply. In the modern era, those policy levers exist without any of the previous connections between the increase in money supply and the issuer’s ability in the near or long-term to “back,” or essentially underwrite, these promissory notes. Fiat currency is therefore best understood as debt that is issued by central banks, with the foundational balance of account structure in a state of perpetual negative balance. When fiat currency is printed, debt is issued; when debt is paid off, currency is removed from circulation. 
 
-- [AXIA GitHub](https://github.com/axia-tech/AXIA/) - AXIA maintained repository that
-  houses the Rust implementation of the AXIA Host.
-- [AXIA Meetup Hub](https://www.notion.so/web3foundation/AXIA-Meetup-Hub-4511c156770e4ba9936386d8be5fe5be) -
-  Information on hosting meetups, applying for funding, and materials for running it.
-- [AXIA Support Knowledgebase](https://support.AXIA.network/support/home) and
-  [AXIA Support Email](mailto:support@AXIA.network)
-- [AXIA's Latest Research](https://research.AXIA.org/en/latest/AXIA/)
+The increase in fiat money supply, also understood as the loosening of credit access restrictions – and the basis upon which banks lend out money to individuals and businesses – can create price inflation of goods and services that devalue the currency itself. Conversely, when fiat money is removed from circulation or access to credit is tightened, this contraction creates deflation. Whether through the expansion or contraction of the money supply and underlying credit system, the world’s debts, therefore, can never be fully repaid without the possibility of continued global economic expansion and growth. In such a system, sovereign nations and common currency markets are left to establish the relative value of currencies by comparing the strength of their economies and debt obligations. But this does not happen in a vacuum. 
 
-### Events
+With the interconnected nature of the global economy, the decisions made by the world’s leading monetary authorities can have wide-ranging effects on the economies of other nations. Many central banks  instigate inflation targeting as a monetary policy, where the objective is to have a specific inflation rate. One of the goals is to spur the economy by making people believe that prices will continue to rise so they will buy things now before they cost more. More importantly though, inflation reduces the burden of the existing debt. The real value of debt, or an inflation adjusted debt load, decreases the debt amount in real dollars. With the continued accumulation of debt, central banks and governments are encouraged to avoid deflation at all costs as it will only work to increase the debt burden which, in turn, could lead to increased defaults and bankruptcies by individuals, companies and governments. 
 
-The AXIA Foundation hosts many events online and in-person. To check out our current and past
-events, please refer to our public
-[Notion page here](https://www.notion.so/Public-Events-Database-fdd2df4c29d04818a5dd403e2b85920d).
+However, the obvious result is that inflation then erodes the long-term value of money for savers. It exaggerates normal market cycles and fuels a boom-and-bust economy in which periodic recession and financial instability become the price of growth. Its very existence entails a transfer of wealth from the everyday users of money to those who create and manage it – primarily the commercial banks – because the debts that back it must be repaid with interest. 
 
-## Matrix Chats
+In a low interest rate environment, savers receive meager benefits as interest earnings cannot even keep up with even low levels of inflation. These low interest rates support excessive risk-taking and leverage, causing far more financial instability, volatility and eventual contraction. 
 
-We primarily use [Matrix](https://matrix.org) across the organization and to communicate with
-community members. The application we use most often to interact with the Matrix protocol is the
-[Element](https://app.element.io) messenger.
+Holders of fiat currency, therefore, lose every which way.
 
-- This wiki's public Matrix room is
-  [here](https://app.element.io/#/room/!nAtXmWUBTeFqgSKGgp:AXIA.org?via=AXIA.org).
+The constant devaluation of money, and its purchasing power, without an easy outlet to hedge the loss of value creates an all-consuming need to collect more and more of this continually depreciating paper. It creates a culture of complete and total self-interest, where people engage in extreme individualism and competition with one another. It pushes us to fight, mistrust and fear each other. Economic activity becomes only about doing for oneself, often to the detriment of others, due to the fear that one will get left further and further behind. 
 
-### AXIA
+The conditions have been met to produce a zero-sum game of winners and losers, where the very few winners at the top have rigged the system against the losers, and then blame the losers for their misfortune. What has become clear over time as these policies have expanded globally is that the removal of an asset-backed safety valve has had significant negative global effects beyond just the financial implications. 
 
-- [AXIA Watercooler Chat](https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:AXIA.org?via=matrix.axia.io&via=matrix.org&via=AXIA.org) -
-  General room for talk about AXIA.
-- [AXIA Validator Lounge](https://app.element.io/#/room/#AXIA-validator-lounge:matrix.org) -
-  Room for validators learning about setting up a node.
-- [AXIA Direction](https://app.element.io/#/room/!OwgojQyBzTlUQGGLhq:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org) -
-  Governance, and a place to discuss the future of AXIA.
-- [AXIA Digest](https://matrix.to/#/!vMpYyTkvjXcevxSdsQ:AXIA.org) - News about what is
-  happening in the AXIA ecosystem, published every weekday except holidays
+One of the outcomes following the shift from gold-backed currencies, and corresponding historic rise in credit expansion and global debt accumulation, are the severe consequences that result from sudden spikes in inflation and blunt central bank attempts at containment policy. In this sense, fiscal and monetary policy are not working in concert and the results can be calamitous. 
 
-### Technical
+The value of today’s money is entirely dependent on the masses of people who continue to have confidence in the debt-based system, perpetuating the cycle. It is a self-fulfilling system so fragile that even a small crack in confidence (as witnessed today as the world fights a global pandemic and central banks lower interest rates) can bring down an entire bank, economy and/or nation, causing tragic loss of this perceived “wealth” for account holders and citizens. The only way to truly own and protect wealth and to safely store its value is to transfer wealth into something that has intrinsic value and no debt or loan attached.
 
-- [Substrate Technical](https://app.element.io/#/room/#substrate-technical:matrix.org) - More
-  advanced room for technical questions on building with Substrate.
-- [Smart Contracts & AXIA Ink!](https://app.element.io/#/room/!tYUCYdSvSYPMjWNDDD:matrix.axia.io?via=matrix.axia.io&via=matrix.org&via=AXIA.org) -
-  A room to discuss developing Substrate smart contracts using AXIA Ink!
-
-## Socials
-
-### Chat
-
-- [AXIA Discord](https://discord.gg/wGUDt2p) (RECOMMENDED)
-
-### Social media and forums
-
-- [AXIA Twitter](https://twitter.com/AXIA)
-- [AXIA Foundation Twitter](https://twitter.com/web3foundation)
-
-- [AXIA Reddit](https://www.reddit.com/r/AXIA)
-
-- [AXIA Foundation YouTube](https://www.video_url_here.com/channel/UClnw_bcNg4CAzF772qEtq4g)
-- [AXIA YouTube](https://www.video_url_here.com/channel/UCB7PbjuZLEba_znc7mEGNgw)
-
-- [AXIA Forum](https://matrix.to/#/#AXIA-watercooler:AXIA.org)
-
-### Blogs and tutorials
-
-- [Web3 Medium Blog](https://medium.com/@web3)
-- [AXIA Blog](https://AXIA.network/blog/)
-- [Gavin Wood's Medium Blog](https://medium.com/@gavofyork)
-- [Axcleap.com Tutorials](https://axcleap.com)
-
-### Newsletters
-
-- [Subscribe to the AXIA newsletter](https://share.hsforms.com/1LL1CBwiASxC5pJUYZAiDVw4752a) -
-  official, infrequent
-- [Axc Leap Newsletter](https://axcleap.substack.com/) - less official, weekly
-
-## Ecosystem
-
-- [Teams Building on AXIA](https://axiaproject.com/) - Community maintained list of teams
-  building on AXIA and/or Substrate. (Note that this may contain inaccuracies, as it's
-  unofficial)
-- [AXIA Stack](https://github.com/axia-tech/General-Grants-Program/blob/master/grants/AXIA_stack.md) -
-  if you're interested in seeing what's under development and where there's room for your
-  contributions.
+With the confiscation of money becoming a real possibility, now more than ever before, it is necessary that people safeguard their wealth by placing it into assets which offer a true store of value, where the individual has full control and complete ownership.

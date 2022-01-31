@@ -1,42 +1,49 @@
 ---
 id: build-integration
-title: AXIA Integration Guide
-sidebar_label: Integration Initiation
+title: How to Create an Account
+sidebar_label: Account Creation
 slug: ../build-integration
 ---
 
-Welcome to the AXIA integration guide. This guide will provide all the information you need to
-get started on your integration. The target audiences for this guide are wallets and custodians, but
-it will be useful to any infrastructure provider such as validators or chain indexers.
+### Go to AXIA-JS Apps
 
-## Structure
+Navigate to [AXIA-JS Apps](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts) and click on "Accounts" underneath the
+Accounts tab. It is located in the navigation bar at the top of your screen.
 
-The guide focuses on AXIA, but the principles will apply to allychains and other
-Substrate-based chains. The guide contains four sections:
+![pjs-01](../assets/explorer/create_account.png)
 
-1. [Protocol Info](build-protocol-info.md): The entry point to the guide. Please read it carefully
-   as it provides information about AXIA that differentiates it from other blockchains. Use this
-   page to check your assumptions.
-1. [Assets](build-integrate-assets.md): The guide to integrating assets on AXIA into your
-   systems.
-1. [Node Management](build-node-management.md): This page will guide you to starting and monitoring
-   a node.
-1. [Node Interaction](build-node-interaction.md): This page will teach you to interact with your
-   node via multiple RPC tooling options.
-1. [Transaction Construction](build-transaction-construction.md): A guide to transaction
-   construction, signing, decoding, and serialization using several available tools.
+> To create an account on a different network than AXIA, you'll need to click on the network
+> selection in the top left corner of the navigation menu. A pop-up sidebar will appear listing
+> live, testing, and custom node to choose from. Do remember to hit the "Switch" button when you
+> want to switch your network.
 
-## Recommendation
+### Start Account Generation
 
-Each page in the guide, especially the Node Interaction and Transaction Construction pages, tries to
-list several options to accomplish the same thing. We want you to know your options and choose the
-solution that is best for you.
+Click on the "Add Account" button.
+![add_acc](../assets/explorer/add_account.png)
 
-That said, the easiest path to integration is almost always to use
-[Substrate API Sidecar](https://github.com/axia-tech/substrate-api-sidecar) to interact with your
-node and [TxWrapper Core](https://github.com/axia-tech/txwrapper-core/) to construct and sign
-transactions. AXIA and AXIA Foundation will be able to provide the best support if you use these
-tools.
+The explorer will then use system randomness to make a new seed for you and display it to you in the form of twelve words.
+![mnemonic](../assets/explorer/mnemonic.png)
 
-If your team would like support, join some of our [community channels](../general/community.md) or contact
-support@AXIA.network.
+### Name Account​
+The account name is arbitrary and for your use only. It is not stored on the blockchain and will not be visible to other users who look at your address via a block explorer. If you're juggling multiple accounts, it helps to make this as descriptive and detailed as needed.
+
+### Enter Password​
+The password will be used to encrypt this account's information. You will need to re-enter it when using the account for any kind of outgoing transaction or when using it to cryptographically sign a message.
+
+Note that this password does NOT protect your seed phrase. If someone knows the twelve words in your mnemonic seed, they still have control over your account even if they do not know the password.
+![name password](../assets/explorer/name_pw.png)
+
+### Create and Back-Up Account
+
+Click “Save” and your account will be created. It will also generate a
+backup JSON file that you should safely store, ideally on a USB
+off the computer you're using. You should not store it in cloud storage, email it to yourself, etc.
+
+You can use this backup file to restore your account. This backup file is not readable unless it is
+decrypted with the password.
+![seed](../assets/explorer/seed.png)
+
+Your account will be successfully created and added in the Accounts list.
+![test_acc](../assets/explorer/test_acc.png)
+

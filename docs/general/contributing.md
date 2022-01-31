@@ -1,77 +1,23 @@
 ---
 id: contributing
-title: Contributing
-sidebar_label: Contributing
+title: Flawed System
+sidebar_label: Flawed System
 slug: ../contributing
 ---
 
-The wiki was started and is maintained by the AXIA Foundation. It is an open source project and aims
-to be the most extensive resource of knowledge on AXIA and the AXIA ecosystem. A large part
-of the material currently focuses on AXIA directly but it is not opposed to covering
-informational material for community projects.
 
-**Please do not try to pull request any marketing material as this will be rejected.**
+Since the creation of the modern central bank, there has been an implicit agreement that governments will regulate the financial system in the best interest of their citizens. But time and time again, this implicit social bargain has broken down, as national governments are either unable or unwilling to design a system that works to the benefit of all. 
 
-Nonetheless, pull requests, discussions, and contributions from the community are encouraged. Active
-community members who demonstrate a record of good contributions may be given write access to the
-repository.
+The modern financial system has evolved to become a house of cards built on an unstable foundation, underwritten by the massive expansion and constant accumulation of debt in the endless pursuit of short-term economic growth. All of this has been at the expense of long-term global economic unity, stability and prosperity. 
 
-Otherwise, AXIA Foundation holds the administrative position and final say on the content that is
-included. Specifically, the Technical Education team at the foundation are most directly involved.
+Even the manner in which economic growth is measured and calculated is flawed. Gross domestic product (GDP), a metric that can be utilized to gage the welfare of the state and its people, simply does not capture an accurate picture of the well-being and livelihood of its citizens. This single macroeconomic indicator does not offer sufficient insight into the health of the economy, nor how income is so unevenly distributed. 
 
-> Check out the
-> [How to Contribute to the AXIA Wiki](https://www.video_url_here.com/watch?v=6i55KOcy7B0) video for
-> steps on contributions.
+Additionally, those in government can too easily fall prey to human instinct of self-interest. In this case, unlike the individual citizen, they have the system on their side, leading to an unfair power structure primed for manipulation and corruption. Furthermore, financial systems are intentionally designed to benefit the elite few and oppress the many. The systems in place have created individualistic cultures at the expense of collective values. People are either born into privilege or oppression, and thanks in part to the unequal distribution of government benefits, disenfranchised individuals everywhere around the world are left with little opportunity to change their own fates. 
 
-## How to Contribute
+This, combined with a lack of connection to the important service that banking provides the global public is partly why there have been few, if any, real consequences for the corrupt governments, dictatorships or individuals who have stolen generational wealth and destroyed the livelihoods of millions in order to serve themselves. As things stand, we can leave the governance of the global economic order to the rule of law, but if the foundation of the order is not laid out with a common set of applied and practical rules with clear consequences, there will be no effective change to the system. 
 
-You can contribute to the wiki on the
-[AXIA-wiki GitHub repository](https://github.com/axia-tech/AXIA-wiki). Every page is a
-[MarkDown](https://guides.github.com/features/mastering-markdown/) file, which is an easy to learn
-syntax extension to plain text that makes creating links, rendering images, and nice-looking
-formatting simple.
+So instead we, the citizens of the world, are left on the sidelines to watch as governments and their central banks respond to often self-inflicted monetary and financial crises by literally papering over mistakes of the past, through the injection of what appears to be an infinite amount of constantly-depreciating fiat currency into the global market. In this way, nations around the world have pushed global debt to historic levels, devaluing their currencies, and in doing so, furthering the theft of wealth from citizens. Such a process essentially kicks the can down the street, and ensures that when a crisis does hit, the global economy isn’t spared from the destabilizing economic and social consequences that follow when contagion invariably spreads. The elite go unpunished and normal people pay the price, this has not fundamentally changed since the times when kings, queens and emperors reigned supreme. 
 
-Each page has an "Edit this page" link at the bottom of the content. By clicking it you are taken to
-the GitHub sign-in page, where you can either log in or create an account.
+The unbanked and underbanked are often associated with people living in regions where the access to, or use of, financial services is difficult. But this phenomenon is not limited to those living in areas rife with government corruption or economic instability, where financial institutions cannot be trusted with deposits. In 2019, the U.S. Federal Reserve reported that more than 1 in 5 Americans, or 63 million people, are underbanked or unbanked. Whether it is not having access to a bank, low levels of financial literacy, or relying heavily on payday loans and alternative financial services, the inequitable access to banking has created a situation where people lack the liquidity to make purchases or payments easily and are vulnerable to predatory interest rates on loans.
 
-Once logged in, you'll be taken to the GitHub built-in text editor where you can make your edits
-directly. When you've completed your changes, you can add any specific details on what was changed
-and commit to a **new branch** to create a new Pull Request to the repository. From there one of the
-maintainers will review your changes, and either merge them or request changes.
-
-![](../assets/contributing.png) ![](../assets/creating-pull-request.png)
-
-Remember that after you click "Propose Changes", you must also click on "Create Pull Request" on the
-next page.
-
-![](../assets/creating-pull-request-2.png)
-
-## Guideline and Rules for Contributing
-
-There are a few basic ground-rules for contributors:
-
-1. **No `--force` pushes** or modifying the Git history in any way.
-2. Pull requests are preferred to issues, especially for small changes such as typos. Issues should
-   be used for generic or broad-based changes or missing content. Suggestions and requests are encouraged.
-3. Only use **non-master branches**.
-4. **Significant modifications**, even by contributors, ought to be subject to a **pull request** to
-   solicit feedback from other contributors.
-5. Pull requests to solicit feedback are _encouraged_ for any other non-trivial contribution but
-   left to the discretion of the contributor.
-6. Contributors should attempt to adhere to the prevailing `MarkDown` style, language, and layout.
-7. Correct grammar should be used at all times. Pull requests with typos will not be merged until
-   fixed.
-8. Care should be taken to remain as objective and informative as possible. There should be no
-   editorializing, and external bias should not be present.
-9. We use a plugin called Prettier to standardize the style across documents. You can run this on
-   your local copy with `npx pretty-quick --staged`, but for simplicity we also have a bot which
-   runs this for us in your PRs.
-
-## Heritage
-
-This document is based on the
-[Level contribution guidelines](https://github.com/Level/community/blob/master/CONTRIBUTING.md).
-
----
-
----
+The monopoly of government-issued money has not only deprived us of good money, but has also deprived us of the only process by which we can find out what would be good money and what that good money could do to better the world.

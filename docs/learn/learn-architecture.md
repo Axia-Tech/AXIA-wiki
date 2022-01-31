@@ -5,92 +5,35 @@ sidebar_label: Architecture
 slug: ../learn-architecture
 ---
 
-AXIA is a heterogeneous multichain with shared security and interoperability.
+## Network design
+On first generation blockchains, broadcasting of transactions is synchronic. Root of logic is in the peer strategy and not in the protocol itself. Second-generation protocols like Ethereum 2.0 addressed this gap by facilitating the amalgamation of several subprotocols over a single peer connection. This structure, however, also remains quite simple. Therefore, the P2P protocol on these blockchains lacks vital functionalities such as Quality of Service support and many more.
+The AXIA Network stands out for having a design that has several types of participants with different requirements regarding their peer makeup. There are several network avenues where participants communicate specific data formats. Leading to a more structured data overlay supported by a robust protocol. 
+Network participants can broadly be segregated into two sets -  CoreChain and AllyChains each of these having three subsets, validators, nominators and collators. Members of each AllyChain interact among themselves rather than conversing with participants in the other AllyChains. 
+For a well-scaled out multi-chain, the strategy of peer make-up for each class of participant will differ. Collators will need to be continuously in touch with the set of elected validators. Alternatively, they will need to have on-going agreements with a subset of the validators. 
+The CoreChain is the main chain which serves as the communication layer for all AllyChains. This communication layer further facilitates the interoperability between multiple AllyChains with each of them being part of the same CoreChain. There is not an intrinsic requirement for CoreChainfor the CoreChain to support the smart contracts of AllyChains. This is due to the fact that the AllyChains on the AXIA Network have complete freedom and autonomy to enable their own token and token standards as well as the economics as they so choose. This provides an even higher level of decentralization.
 
-# Components
 
-## Relay Chain
+## Network Architecture
+### CoreChain
+The AXIA CoreChain is state-based, where the state maps address to account information, including the balances and a transaction counter. 
+For contract deployment on the CoreChain it needs to be noted that deployment of contracts through transactions is not feasible as the system does not support public deployment of contracts on the CoreChain which avoids any application functionality on the CoreChain.
+However, the system supports listed contracts facilitating auto-execution and network message outputs.	
 
-The Relay Chain is the central chain of AXIA. All validators of AXIA are staked on the Relay
-Chain in AXC and validate for the Relay Chain. The Relay Chain is composed of a relatively small
-number of transaction types that include ways to interact with the governance mechanism, allychain
-auctions, and participating in NPoS. The Relay Chain has deliberately minimal functionality - for
-instance, smart contracts are not supported. The main responsibility is to coordinate the system as
-a whole, including allychains. Other specific work is delegated to the allychains, which have
-different implementations and features.
+### Validators
+AXIA validators are selected by the PoP consensus. Proof-of-Participation  is the AXIA  adaptation of PoS where an unlimited number of AXIA Coin holders can participate as nominators, backing with their stake with a limited set of validators. This paradigm simultaneously achieves high levels of security and scalability, as well as an unprecedented level of decentralization by ensuring a property known in voting theory as a proportional justified representation.
+### Nominators
+Nominators are economically vested in the security of the network, acting as watchdogs over the performance of the validators. Once the nominators determine their validator node candidates, for each era, the system utilized for staking will then select the validators with the highest staking balance and with the most fair distribution of percentage. 
+An era is a time span during which there is a set of validators actively participating in the block authoring. Each era will have six sessions, or epochs, equating to four hours in the real world. Before the last epoch the active set of validators for the next era are then elected.  At the completion r  of each era the total rewards are then calculated and will be distributed to the validators and nominators. 
+Nominators are also economically disincentivized from concentrating their votes on too few validators, which assists in keeping the AXIA Networks decentralized over time. Furthermore, the election process is highly adaptive to any sudden changes, including an instance when a validator may be removed after a slashing. 
+To ensure there is always fairness on the AXIA Network should there ever be an instance that a validator is removed there will be no need for the nominator to change their vote as this will be done automatically. 
+### Collators
+Collator's main goal is to maintain all of the AXIA AllyChains, to do so they collect user transactions and also the proof of this transition on CoreChain. They run a full node of the CoreChain alongside a full node of the AllyChain(s) they provide for. Hence, having the capability to not just produce new blocks but execute transactions as well. Collators are not responsible to decide to reject any block, only validators are tasked to do that. If there is any wrong block on any AllyChain then the validators will reject it directly having more than one Collators will have no part to play in its success but slowing down the entire network.
+### Validator election
+A new set of validators is elected at the beginning of every era – a period during roughly one day – to serve for that era, according to the preferences of the nominators. More precisely, any AXIA Coin holder may choose to become a validator candidate or a nominator. Each candidate indicates the amount of stake and the desired commission fee for operational costs. In turn, each nominator stakes and publishes a list with any number of trusted candidates. Then a public protocol takes the lists as an input and elects the candidates with the highest backing to serve as validators for the next era.
+Nominators share the rewards, or eventual slashings, with the validators they nominated on a per-staked-AXIA basis.. This allows for the system to elect validators with large amounts of aggregate stake and thus helps turn the validator election process into a meritocracy rather than a plutocracy. In fact, at any given moment there will be a considerable amount of AXIA Supply that is staked in PoP. This makes it very difficult for an adversarial entity to get validators elected since it either needs a large amount of AXIA Coin or a high enough reputation to get the required backing by nominators, making it virtually impossible to attack.
+AXIA elects validators via a decentralized protocol with carefully selected, simple and publicly known rules, taking the lists from nominators of the trusted candidates as input. The AXIA election process will remain fair as it does not allow the nominators to have voting power in equal proportion to their stake, in turn solving the multi winner problem on an approval ballot basis.
+### Minimization of latency
+As the validators selected to verify the AllyChain transactions are randomly chosen in the basic protocol proposal, each of the above-mentioned subsets change with each block. When disparate nodes need to exchange data, this may create a problem. The dApp or Blockchain architect has to rely on a fairly-distributed and well-linked peer network to determine that the worst-case latency goes up only with the logarithm of the network size. Otherwise, longer block times have to be introduced to pave the way for the necessary connection negotiation so that a peer-set reflecting the current communication needs takes shape. However, this does not solve the current latency issue as to the extent needed.
+Long block times render a network useless. Forcing uninterested nodes to forward data, which results in the creation of substantial wastage of bandwidth. 
+The architect may combine both directions to arrive at a solution. Minimization of latency will help water down the volatility of these AllyChain validator sets. Placing tabs on the amount of peer churn and providing for the partial predictability of AllyChain sets can help keep latency at the minimum possible level at all times
 
-## [Allychain](learn-allychains.md) and [Parathread](learn-parathreads.md) Slots
-
-AXIA can support a number of execution slots. These slots are like cores on a computer's
-processor (a modern laptop's processor may have eight cores, for example). Each one of these cores
-can run one process at a time. AXIA allows these slots using two subscription models: allychains
-and parathreads. Allychains have a dedicated slot (core) for their chain and are like a process that
-runs constantly. Parathreads share slots amongst a group, and are thus more like processes that need
-to be woken up and run less frequently.
-
-Most of the computation that happens across the AXIA network as a whole will be delegated to
-specific allychain or parathread implementations that handle various use cases. AXIA places no
-constraints over what allychains can do besides that they must be able to generate a proof that can
-be validated by the validators assigned to the allychain. This proof verifies the state transition
-of the allychain. Some allychains may be specific to a particular application, others may focus on
-specific features like smart contracts, privacy, or scalability &mdash; still, others might be
-experimental architectures that are not necessarily blockchain in nature.
-
-AXIA provides many ways to secure a slot for a allychain slot for a particular length of time.
-Parathreads are part of a pool that shares slots and must-win auctions for individual blocks.
-Parathreads and allychains have the same API; their difference is economic. Allychains will have to
-reserve AXC for the duration of their slot lease; parathreads will pay on a per-block basis.
-Parathreads can become allychains, and vice-versa.
-
-### [Shared Security](learn-security.md)
-
-Allychains connected to the AXIA Relay Chain all share in the security of the Relay Chain.
-AXIA has a shared state between the Relay Chain and all of the connected allychains. If the
-Relay Chain must revert for any reason, then all of the allychains would also revert. This is to
-ensure that the validity of the entire system can persist and no individual part is corruptible.
-
-The shared state makes it so that the trust assumptions when using AXIA allychains are only
-those of the Relay Chain validator set and no other. Since the validator set on the Relay Chain is
-expected to be secure with a large amount of stake put up to back it, allychains should benefit from
-this security.
-
-## [Bridges](learn-bridges.md)
-
-A blockchain [bridge](../general/glossary.md##bridge) is a connection that allows for arbitrary data to
-transfer from one network to another. These chains are interoperable through the bridge but can
-exist as standalone chains with different protocols, rules, and governance models. In AXIA,
-bridges connect to the relay chain and are secured through the AXIA consensus mechanism,
-maintained by [collators](##collators).
-
-AXIA uses bridges to bridge the future of Web 3.0, as bridges are fundamental to AXIA's
-interoperable architecture by acting as a [secure and robust] communication channel for chains in
-isolation.
-
-# Main Actors
-
-## Validators
-
-[Validators](../general/glossary.md##validator), if elected to the validator set, produce blocks on the Relay
-Chain. They also accept proofs of valid state transition from collators. In return, they will
-receive staking rewards.
-
-## Nominators
-
-[Nominators](../general/glossary.md##nominator) bond their stake to particular validators in order to help them
-get into the active validator set and thus produce blocks for the chain. In return, nominators are
-generally rewarded with a portion of the staking rewards from that validator.
-
-## Collators
-
-[Collators](../general/glossary.md##collator) are full nodes on both a allychain and the Relay Chain. They
-collect allychain transactions and produce state transition proofs for the validators on the Relay
-Chain. They can also send and receive messages from other allychains using XCMP.
-
----
-
-## Whiteboard Series
-
-For a video overview of the architecture of AXIA watch the video below for the whiteboard
-interview with W3F researcher Alistair Stewart:
-
-<iframe width="560" height="315" src="https://www.video_url_here.com/embed/xBfC6uTjvbM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

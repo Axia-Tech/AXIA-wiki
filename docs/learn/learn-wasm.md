@@ -1,43 +1,8 @@
 ---
 id: learn-wasm
-title: WebAssembly (Wasm)
-sidebar_label: WebAssembly (Wasm)
+title: Time Banking
+sidebar_label: Time Banking
 slug: ../learn-wasm
 ---
 
-WebAssembly is used in AXIA and Substrate as the compilation target for the runtime.
-
-## What is WebAssembly?
-
-WebAssembly, shortened to simply _Wasm_, is a binary instruction format for a stack-based virtual
-machine. Wasm is designed as a portable target for compilation of high-level languages like
-C/C++/Rust, enabling deployment on the web for client and server applications.
-
-## Why WebAssembly?
-
-WebAssembly is a platform agnostic binary format, meaning that it will run the same instructions
-across whatever machine it is operating on. Blockchains need determinancy in order to have reliable
-state transition updates across all nodes in the peer-to-peer network without forcing every peer to
-run the same exact hardware. Wasm is a nice fit for reliability among the possibly diverse set of
-machines. Wasm is both efficient and fast. The efficiency means that it can be uploaded onto the
-chain as a blob of code without causing too much state bloat while keeping its ability to execute at
-near-native speeds.
-
-### Forkless Upgrades
-
-By using Wasm in Substrate, the framework powering AXIA, and many connecting chains, the
-chains are given the ability to upgrade their runtime logic without hard forking. Hard forking is a
-standard method of upgrading a blockchain that is slow, inefficient, and error prone due to the
-levels of offline coordination required, and thus, the propensity to bundle many upgrades into one
-large-scale event. By deploying Wasm on-chain and having nodes auto-enact the new logic at a certain
-block height, upgrades can be small, isolated, and very specific.
-
-## Resources
-
-- [WebAssembly.org](https://webassembly.org/) - WebAssembly homepage that contains a link to the
-  spec.
-- [Wasmi](https://github.com/axia-tech/Wasmi) - WebAssembly interpreter written in Rust.
-- [AXIA Wasm](https://github.com/axia-tech/axia-Wasm) - WebAssembly
-  serialization/deserialization in Rust.
-- [Wasm utils](https://github.com/axia-tech/Wasm-utils) - Collection of Wasm utilities used in
-  AXIA and Wasm contract development.
+Understanding that time is a limited and precious resource, time banking allows any organization to effectively reward individuals for their contributions to social or organizational good. When AXIA Coin is used as remuneration for volunteer work for a charitable organization, it would be usable as currency or could be donated back to charities. AXIA Coin can be used as a reward for volunteer work to incentivize people to give back through donating their time and receive a financial benefit for doing so. AXIA Time Banking functions as a peer-to-peer platform connecting philanthropists, charities and willing volunteers around the world. AXIA Time Banking can assist with increasing adoption and transaction volume by bringing some that may not otherwise be not be in the position to join the community to do so by providing their own time and creating a positive social impact. Similar to the child birth benefit feature, donations for this feature will be accepted, with the potential for corporate sponsorships and partnerships.
