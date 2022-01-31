@@ -64,7 +64,7 @@ module.exports = {
           label: "Allychains",
           items: [
             "learn/learn-allychains",
-            "learn/learn-parathreads",
+            //"learn/learn-parathreads",
             "learn/learn-bridges",
             "learn/learn-common-goods",
             //"learn/learn-auction",
@@ -177,7 +177,7 @@ module.exports = {
        //   items: ["build/build-tools-index"],
        // },
      
-    {
+    /*{
       type: "category",
       label: "Maintain",
       items: [
@@ -228,6 +228,6 @@ module.exports = {
           ],
         },
       ],
-    },
+    },*/
   ],
 };

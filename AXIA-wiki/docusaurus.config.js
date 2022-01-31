@@ -125,11 +125,11 @@ module.exports = {
           label: "Developers",
           position: "right",
         },
-        {
+        /*{
           to: "docs/maintain-index",
           label: "Admins",
           position: "right",
-        },
+        },*/
 
       /**
        * Uncomment following when algolia api key is available
