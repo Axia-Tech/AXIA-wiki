@@ -5,20 +5,20 @@ sidebar_label: AXIA Wallets
 slug: ../build-storage
 ---
 
-### AXIA Wallets
-Wallet is a program that allows one to store private keys and sign transactions for AXIA or other blockchain networks. The integration of a wallet with AXIA allows for simple and easy access to private keys and signing transactions. Below are some wallets that support AXIA along with their development statuses.
+### AXwallet
+AXwallet is aan application that allows one to store private keys and sign transactions for AXIA Network. The integration of a AXwallet with AXIA network allows for simple and easy access to private keys and signing transactions. Following are the official AXwallet applications we can find on the Android: 
 
 ### Supported Wallets
-| Wallet Name                                                         | Development State | Description       |  Supports |
+| AXwallet                                                         | Development State | Description       |  Supports |
 | ------------------------------------------------------------------- | -----------------| ----------------- |  -------- |
-| [AXwallet](https://play.google.com/store/apps/details?id=com.axia.wallet) |Early Access              | iOS and Android   |  Staking  |
-| [AXIA-js apps](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts)         | Live                  | Browser           | Staking  |
+| [AXwallet](https://play.google.com/store/apps/details?id=com.axia.wallet) |Testnet Access              | iOS and Android   |  Staking  |
+| [AXwallet Web](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts)         | Live                  | Browser           | Staking  |
 
 ### AXwallet
 
 The AXwallet will be embedded in all applications in the AXIA Ecosystem.
 
-The wallet is a free and secure tool that offers the ability to transact, exchange, buy, sell, hold, store, send and receive AXIA Coins. The wallet is also the means through which users of AXIA Coin receive unparalleled benefits and rewards just for participating.
+The AXwallet is a free and secure tool that offers the ability to transact, exchange, buy, sell, hold, store, send and receive AXIA Coins. AXwallet is also the means through which users of AXIA Coin receive unparalleled benefits and rewards just for participating.
 
 Once a person registers for their AXwallet, those credentials can be conveniently used for every application in the AXIA Ecosystem. Once the profile is created, the wallet is generated. From there, participants will have access to each application. This profile can be synced across all their hardware devices such as a phone, computer or tablet.
 
