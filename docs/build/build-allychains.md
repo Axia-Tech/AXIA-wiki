@@ -1,7 +1,7 @@
 ---
 id: build-allychains
-title: AXIA RPC
-sidebar_label: AXIA RPC
+title: AXIA Network RPC
+sidebar_label: AXIA Network RPC
 slug: ../build-pdk
 ---
 
