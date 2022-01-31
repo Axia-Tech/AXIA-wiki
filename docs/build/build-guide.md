@@ -1,5 +1,5 @@
 ---
-id: build-guide
+id: setup-peer-node
 title: Peer Node Setup
 sidebar_label: Peer Node Setup
 slug: ../build-build-with-AXIA
