@@ -1,3 +1,4 @@
+
 ---
 id: build-smart-contracts
 title: Faucet Usage
@@ -6,7 +7,7 @@ slug: ../build-smart-contracts
 ---
 
 ### Overview
-AXchat bot/faucet is a Node.js app, which connects to AXchat server and listens for incoming messages in a specific group chat.
+AXchat is the Testnet Faucet to get token on the AXIA test network, it listens for incoming messages in a specific group chat.
 
 The bot listens for the 2 following commands:
 ```bash
@@ -17,14 +18,7 @@ All other messages in all other chats including p2p are ignored.
 
 In order to test the **!drip** command - a user needs to install the AXwallet app and get a wallet address. 
 
-### Bot setup
- 1. create an AXchat user/bot
- 2. In AXchat - create a group Chat and add a bot user into it using standard ‘Add member’ feature.
- 3. download node js app
- 4. Provide .env file using the .env.example as a basis. Provide all the required credentials and settings.
- 5. Run Node.js app
+### Download AXchat
 
-### Production Demo
-
-Currently we have a working test/demo chat with the bot setup, where you can play with the bot.
-![AXchat](../assets/faucet/faucet.png)
+iOS - https://apps.apple.com/us/app/axchat/id1488557383
+Android - https://play.google.com/store/apps/details?id=com.axia&hl=en_IN&gl=US
