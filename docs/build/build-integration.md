@@ -12,11 +12,6 @@ Accounts tab. It is located in the navigation bar at the top of your screen.
 
 ![pjs-01](../assets/explorer/create_account.png)
 
-> To create an account on a different network than AXIA, you'll need to click on the network
-> selection in the top left corner of the navigation menu. A pop-up sidebar will appear listing
-> live, testing, and custom node to choose from. Do remember to hit the "Switch" button when you
-> want to switch your network.
-
 ### Start Account Generation
 
 Click on the "Add Account" button.
