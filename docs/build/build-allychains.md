@@ -1,5 +1,5 @@
 ---
-id: use-rpc
+id: build-pdk
 title: AXIA Network RPC
 sidebar_label: AXIA Network RPC
 slug: ../build-pdk

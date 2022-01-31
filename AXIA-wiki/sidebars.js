@@ -113,7 +113,7 @@ module.exports = {
       label: "Build",
       items: [
             "build/build-index",
-            "build/build-allychains",
+            "build/build-pdk",
             "build/build-guide",
             //"learn/learn-implementers-guide",
             
