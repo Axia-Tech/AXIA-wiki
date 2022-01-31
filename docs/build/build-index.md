@@ -12,7 +12,7 @@ This section of the wiki is divided into the following parts:
 
 
 
-- [AXIA RPC](use-rpc) -  Here you can find out AXIA Ntwork's RPC methods.
+- [AXIA RPC](use-rpc) -  Here you can find out AXIA Network's RPC methods.
 - [Peer Node Setup](setup-peer-node) - Here you can find How to setup the AXIA Network peer node in your Linux system.
 - [Wallet Usage](use-wallet) -  A short overview of the AXwallet usage.
 - [Testnet Faucet](use-testnet-faucet) - How to get Testnet tokens using AXchat faucet.
