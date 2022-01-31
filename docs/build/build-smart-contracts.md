@@ -5,6 +5,7 @@ sidebar_label: Faucet Usage
 slug: ../build-smart-contracts
 ---
 
+
 ### Overview
 AXchat is the Testnet Faucet to get token on the AXIA test network, it listens for incoming messages in a specific group chat.
 
