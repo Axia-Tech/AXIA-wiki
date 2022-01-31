@@ -1,4 +1,3 @@
-
 ---
 id: build-smart-contracts
 title: Faucet Usage
