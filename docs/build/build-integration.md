@@ -7,7 +7,7 @@ slug: ../build-integration
 
 ### Go to AXIA-JS Apps
 
-Navigate to [AXIA-JS Apps](https://apps.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/accounts) and click on "Accounts" underneath the
+Navigate to [AXIA-JS Apps](https://axscan.test.axiacoin.network/?rpc=wss%3A%2F%2Fwss.test.axiacoin.network#/explorer) and click on "Accounts" underneath the
 Accounts tab. It is located in the navigation bar at the top of your screen.
 
 ![pjs-01](../assets/explorer/create_account.png)
