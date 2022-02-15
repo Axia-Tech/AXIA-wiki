@@ -140,11 +140,13 @@ module.exports = {
        * },
        * 
        **/
+        /**
         {
           to: "docs/contributing",
           label: "Contribute",
           position: "right",
         }
+        **/
       ],
     },
     footer: {
