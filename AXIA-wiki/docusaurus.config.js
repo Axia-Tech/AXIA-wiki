@@ -155,6 +155,7 @@ module.exports = {
         src: "img/AXIA-blue-logo.svg",
       },
     },
+    /**
     algolia: {
       apiKey: "API_KEY_HERE",
       indexName: "AXIA",
@@ -162,6 +163,7 @@ module.exports = {
         facetFilters: ["language:LANGUAGE"],
       },
     },
+    **/
     docsSideNavCollapsible: true,
   },
 };
