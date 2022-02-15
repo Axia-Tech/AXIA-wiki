@@ -142,7 +142,7 @@ module.exports = {
 ],
 },
             //"build/build-ss58-registry",
-            "build/build-wallets",
+            //"build/build-wallets",
              ],
     },
         //
