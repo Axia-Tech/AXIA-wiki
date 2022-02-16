@@ -120,7 +120,7 @@ module.exports = {
             
             {
             type: "category",
-            label: "AXIA Wallet",
+            label: "AXwallet",
             items:[
             //TO DO
                 "build/build-storage",
@@ -132,7 +132,7 @@ module.exports = {
             
                {
                 type: "category",
-                label: "AXIA Explorer ",
+                label: "AXscan ",
                 items: [
  "build/build-oracle",
 //"build/build-node-management",
