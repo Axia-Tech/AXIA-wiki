@@ -1,7 +1,7 @@
 ---
 id: build-storage
 title: AXwallet
-sidebar_label: AXIA Wallets
+sidebar_label: AXwallet
 slug: ../build-storage
 ---
 
