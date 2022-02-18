@@ -2,7 +2,8 @@
 id: learn-simple-payouts
 title: Distributed Stakeholders
 sidebar_label: Distributed Stakeholders
-slug: ../DistributedStakeholders
+slug: ../learn-simple-payouts
+
 ---
 
 AXIA is designed to be a distributed stakeholder model. Individuals who participate in AXIA do not just have the possession of AXIA Coin, but a stake in the network and the economy itself. The ecosystem is distributed for individuals and companies anywhere to reap the benefits. 
