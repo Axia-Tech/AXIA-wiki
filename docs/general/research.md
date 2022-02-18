@@ -2,7 +2,7 @@
 id: research
 title: Blockchain Technology
 sidebar_label: Blockchain Technology
-slug: ../BlockchainTechnology
+slug: ../research
 ---
 
 We now live in a world where the majority of the global population scarcely remembers a time before the existence of the Internet. Similarly, there may soon come a time when people scarcely remember the interconnected digital economic world before blockchain, and the digital currency projects that blockchain and decentralized applications have enabled. A blockchain is a distributed ledger that publicly records all transactions
