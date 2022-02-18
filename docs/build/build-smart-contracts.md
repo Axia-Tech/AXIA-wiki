@@ -23,3 +23,8 @@ In order to test the **!drip** command - a user needs to install the AXwallet ap
 iOS - https://apps.apple.com/us/app/axchat/id1488557383
 
 Android - https://play.google.com/store/apps/details?id=com.axia&hl=en_IN&gl=US
+
+
+
+
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
