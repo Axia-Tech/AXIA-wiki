@@ -2,7 +2,7 @@
 id: ambassadors
 title: Fractional Banking
 sidebar_label: Fractional Banking
-slug: ../FractionalBanking
+slug: ../ambassadors
 ---
 
  “It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning.” - Henry Ford
