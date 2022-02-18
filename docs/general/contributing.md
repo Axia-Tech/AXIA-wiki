@@ -2,7 +2,7 @@
 id: contributing
 title: Flawed System
 sidebar_label: Flawed System
-slug: ../FlawedSystem
+slug: ../contributing
 ---
 
 
