@@ -8,7 +8,7 @@ slug: ../PeerNodeSetup
 
 ## How to setup the AXIA Network peer node in your Linux system: 
 ### System Requirements :
-* For this guide we will be using `Linux Mint 20.1 Cinnamon` but the instructions should be similar for `Ubuntu 16.04` or higher versions.
+* For this guide we will be using Linux Mint 20.1 Cinnamon but the instructions should be similar for Ubuntu 16.04 or higher versions.
 * CPU- Intel Core i5-7200U CPU @ 2.50GHz x 2
 * Storage- 1 TB
 * Memory- 8 GB
