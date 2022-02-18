@@ -2,7 +2,7 @@
 id: community
 title: Inherent Weakness of Fiat Currency
 sidebar_label: Inherent Weakness of Fiat Currency
-slug: ../community
+slug: ../InherentWeaknessofFiatCurrency
 ---
 
 In order to understand the destabilizing effect that debt accumulation has on a domestic economy, it is first important to understand contemporary money: Fiat currency is a legislatively established and legally enforced form of payment that differs significantly from the historical use of gold and silver as currency. These standards also include previous examples of so-called “private money,” which was a non-government currency that was limited by location, supply and purpose. 
