@@ -3,7 +3,7 @@ id: learn-common-goods
 title: AXtend - a Bridge of Possibilities
 sidebar_label: AXtend
 description: Common Good Allychains
-slug: ../learn-common-goods
+slug: ../AXtend
 ---
 
 AXtend is a bridge that supports Ethereum compatibility with the AXIA Network AllyChain environment. This enables projects and developers to continue to use the programming languages and tools they have become accustomed to but within a fast-growing, scalable Layer 1 chain, with far superior economics and technology. AXtend is another element that fullfiles the goal of establishing true interoperability among multi-chain. This provides a valuable addition to the AXIA Network and Ecosystem due to the fact there is the cross-chain smart contract capabilities. AXtend not only provides a new level of convenience for users and assets to exist across multiple blockchains but establishes more favourable options for existing projects.
