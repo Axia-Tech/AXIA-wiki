@@ -2,7 +2,7 @@
 id: learn-cross-consensus
 title: Coin Supply and Management
 sidebar_label: Coin Supply and Management
-slug: ../learn-crosschain
+slug: ../CoinSupplyandManagement
 ---
 
 ## AXIA Tokenomics
