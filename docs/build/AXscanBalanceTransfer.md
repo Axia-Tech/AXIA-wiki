@@ -2,7 +2,7 @@
 id: build-integrate-assets
 title: Balance Transfer
 sidebar_label: Balance Transfer
-slug: ../BalanceTransfer
+slug: ../AXscanBalanceTransfer
 ---
 
 # **Balance Transfers**
