@@ -2,7 +2,7 @@
 id: learn-availability
 title: AXIA Foundation
 sidebar_label: AXIA Foundation
-slug: ../AXIAFoundation
+slug: ../learn-availability
 ---
 
 The AXIA Foundation is neither a market, nor a state. It is neither the embodiment of capitalism, nor socialism. It is not trapped by history, mythology or any of the standard paradigms that people reflexively attach to blockchain projects. The mission of the AXIA Foundation is to birth and foster the development of the most trusted and secure, ever-expanding ecosystem, and the creation of a digital currency (AXIA Coin) that is the preeminent medium of exchange around the world. As such, the AXIA Foundation operates as a non-profit organization, with the guiding principle that all activities and operations undertaken by the AXIA Foundation are in place to support AXIA Coin, the AXIA Network, AXIA Ecosystem and the community. The core values of the AXIA Foundation as follows:
