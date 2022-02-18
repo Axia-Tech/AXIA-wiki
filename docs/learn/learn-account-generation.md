@@ -3,7 +3,7 @@ id: learn-account-generation
 title: AXIA Ecosystem
 sidebar_label: AXIA Ecosystem
 description: Step-by-step guides on generating a AXIA account.
-slug: ../AXIAEcosystem
+slug: ../learn-account-generation
 ---
 
 The AXIA Ecosystem is a true representation of the whole being greater than the sum of its parts. The AXIA Ecosystem is the fusion of all the AXIA related applications and platforms, as well as services and how they interact with each other using blockchain technology, both within the network and out in the world. The ecosystem goes well beyond just one application. The interrelated applications and services each play a separate, but similarly important role in the overall operation of AXIA and AXIA Coin itself.
