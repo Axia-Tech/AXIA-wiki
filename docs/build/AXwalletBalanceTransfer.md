@@ -2,7 +2,7 @@
 id: build-protocol-info
 title: How to Transfer Balance
 sidebar_label:  How to Transfer Balance
-slug: ../build-protocol-info
+slug: ../AXwalletBalanceTransfer.md
 ---
 
 
