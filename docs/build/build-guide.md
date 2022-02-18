@@ -43,4 +43,4 @@ wget -c https://releases.axiacoin.network/stable/testnet.raw.json -O ${HOME}/.te
 ```
 ![peernode](../assets/peernode/peer_node_setup.png)
 
-### You can then check your node on [telemetry](https://telemetry.test.axiacoin.network) URL or play with RPC/WSS switches for local API's
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
