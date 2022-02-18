@@ -1,5 +1,5 @@
 ---
-id: BuilderGuides
+id: build-index
 title: Builder's Guides
 sidebar_label: Builder's Guides
 slug: ../BuilderGuides
