@@ -2,7 +2,7 @@
 id: build-integrate-assets
 title: Balance Transfer
 sidebar_label: Balance Transfer
-slug: ../build-integrate-assets
+slug: ../BalanceTransfer
 ---
 
 # **Balance Transfers**
@@ -39,4 +39,6 @@ is included in a block you will see a green notification in the top-right corner
 After that you have to give the password of your account to authorize the transaction. Then click on "Sign and Submit". Within few second the amount will be transferred from your account to another account.
 
 ![final](../assets/explorer/transfer/transfer4.png)
+
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
 
