@@ -3,7 +3,7 @@ id: learn-account-restore
 title: The AXIA Network
 sidebar_label:  AXIA Network
 description: Step-by-step guides on backing up and restoring a AXIA account.
-slug: ../AXIANetwork
+slug: ../learn-account-restore
 ---
 
 ## The Most Inclusive Hyper-Deflationary Blockchain Network
