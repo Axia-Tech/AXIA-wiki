@@ -3,7 +3,7 @@ id: learn-accounts
 title: Network key components and features
 sidebar_label: Network Components
 description: An explanation of accounts, indices, identity, and reaping
-slug: ../learn-accounts
+slug: ../NetworkComponents
 ---
 
 
