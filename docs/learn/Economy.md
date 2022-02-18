@@ -2,7 +2,7 @@
 id: learn-AXC
 title: AXIA Economy
 sidebar_label: Economy
-slug: ../learn-AXC
+slug: ../Economy
 ---
 
 # AXIA COIN - THE NEW RESERVE CURRENCY FOR THE WORLD
