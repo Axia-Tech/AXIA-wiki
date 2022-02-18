@@ -76,3 +76,5 @@ You can go and check the change will be reflected.
 ![17](../assets/wallet/BalanceTransfer/17.jpeg)
 
 
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
+
