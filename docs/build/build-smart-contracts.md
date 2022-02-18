@@ -19,12 +19,14 @@ All other messages in all other chats including p2p are ignored.
 In order to test the **!drip** command - a user needs to install the AXwallet app and get a wallet address. 
 
 ### Download AXchat
+| [iOS](https://apps.apple.com/us/app/axchat/id1488557383)                                                         | [Android](https://play.google.com/store/apps/details?id=com.axia&hl=en_IN&gl=US)| Description       |  [AXchat](https://axchat.io/login) |
+| ------------------------------------------------------------------- | -----------------| ----------------- |  -------- |
 
-[iOS](https://apps.apple.com/us/app/axchat/id1488557383)
 
-[Android](https://play.google.com/store/apps/details?id=com.axia&hl=en_IN&gl=US)
 
-[AXchat](https://axchat.io/login)
+
+
+
 
 
 
