@@ -59,3 +59,6 @@ You can also import your account by the Keystore(json) in this option you have t
 
 ![import_complete](../assets/wallet/import_complete.png)
 
+
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
+
