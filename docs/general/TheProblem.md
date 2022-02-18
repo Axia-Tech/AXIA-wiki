@@ -2,7 +2,7 @@
 id: claims
 title: The Problem
 sidebar_label: The Problem
-slug: ../claims
+slug: ../TheProblem
 ---
 
 Around the world rising general economic inequality within countries can be traced back to the 1970’s. In 1971, the Nixon administration, burdened by international debt, broke the Bretton Woods commitment to redeem dollars for gold. This gave birth to the modern monetary system.This monetary system created the greatest wealth transfer in history. At the same time it has also destroyed ninety seven percent (97%) of purchasing power of the US dollar since 1913 - our current reserve currency. This also brought about an enormous amount of deficits for individuals, companies and governments alike and set the world on a course to complete and total economic devastation.
