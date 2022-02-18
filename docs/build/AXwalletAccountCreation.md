@@ -2,7 +2,7 @@
 id: build-node-interaction
 title: How to create an account
 sidebar_label: How to create an account
-slug: ../build-node-interaction
+slug: ../AXwalletAccountCreation.md
 ---
 
 
