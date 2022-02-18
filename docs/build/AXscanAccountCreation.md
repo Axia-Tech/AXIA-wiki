@@ -2,7 +2,7 @@
 id: build-integration
 title: How to Create an Account
 sidebar_label: Account Creation
-slug: ../AccountCreation
+slug: ../AXscanAccountCreation
 ---
 
 ### Go to AXscan
