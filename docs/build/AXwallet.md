@@ -2,7 +2,7 @@
 id: build-storage
 title: AXwallet
 sidebar_label: AXwallet
-slug: ../build-storage
+slug: ../AXwallet
 ---
 
 AXwallet is aan application that allows one to store private keys and sign transactions for AXIA Network. The integration of a AXwallet with AXIA network allows for simple and easy access to private keys and signing transactions. Following are the official AXwallet applications we can find on the Android: 
