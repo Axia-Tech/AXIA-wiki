@@ -2,7 +2,7 @@
 id: redenomination
 title: Bitcoin Not The Answer
 sidebar_label: Bitcoin Not The Answer
-slug: ../BitcoinNotTheAnswer
+slug: ../redenomination
 ---
 
 # Bitcoin - Asset than a Currency
