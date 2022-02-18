@@ -3,7 +3,7 @@ id: learn-common-goods
 title: AXtend - a Bridge of Possibilities
 sidebar_label: AXtend
 description: Common Good Allychains
-slug: ../learn-common-goods
+slug: ../learn-common-goods-chains
 
 ---
 
