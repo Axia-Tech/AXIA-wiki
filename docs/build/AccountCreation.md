@@ -42,3 +42,4 @@ decrypted with the password.
 Your account will be successfully created and added in the Accounts list.
 ![test_acc](../assets/explorer/test_acc.png)
 
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
