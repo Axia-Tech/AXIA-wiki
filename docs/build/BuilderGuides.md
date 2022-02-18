@@ -2,7 +2,7 @@
 id: build-index
 title: Builder's Guides
 sidebar_label: Builder's Guides
-slug: ../Builder'sGuides
+slug: ../BuilderGuides
 ---
 
 Welcome to the developers section of the AXIA wiki.
