@@ -2,7 +2,7 @@
 id: build-smart-contracts
 title: Faucet Usage
 sidebar_label: Faucet Usage
-slug: ../build-smart-contracts
+slug: ../Faucet
 ---
 
 
