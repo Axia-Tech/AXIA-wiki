@@ -2,7 +2,7 @@
 id: glossary
 title: Central Bank Digital Currencies
 sidebar_label: Central Bank Digital Currencies
-slug: ../CentralBankDigitalCurrencies
+slug: ../glossary
 ---
 
 Should central banks issue their own digital currency, it would be a complete game changer in how markets can be manipulated.
