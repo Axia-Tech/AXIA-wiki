@@ -2,7 +2,7 @@
 id: ledger
 title: Need for Change
 sidebar_label: Need for Change
-slug: ../ledger
+slug: ../NeedforChange
 ---
 
 Central banks have distorted the ability to send clear signals out to markets with their practice of constantly increasing the supply of money. True price discovery does not exist. Any hope for a free self-regulating economy faded long ago.
