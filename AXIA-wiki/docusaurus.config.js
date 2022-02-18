@@ -36,7 +36,7 @@ module.exports = {
   stylesheets: [
     "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
     "https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap",
-    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+    "https://raw.githubusercontent.com/Axia-Tech/AXIA-wiki/master/website/static/css/bootstrap.min.css",
     "https://unpkg.com/aos@next/dist/aos.css",
     "https://fonts.googleapis.com/icon?family=Material+Icons",
   ],
