@@ -2,7 +2,7 @@
 id: contributors
 title: Inflation/Deflation
 sidebar_label: Inflation/Deflation
-slug: ../contributors
+slug: ../InflationDeflation
 ---
 
 
