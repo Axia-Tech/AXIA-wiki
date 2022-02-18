@@ -2,7 +2,7 @@
 id: learn-proxies
 title: Applications
 sidebar_label: AXIA Applications
-slug: ../learn-proxies
+slug: ../AXIAApplications
 ---
 
 AXIA created a suite of free, ready-to-use applications all incorporating an embedded wallet for the AXIA Coin enabling monetization, commercialization and reward possibilities in our day to day use making them superior to existing competition. 
