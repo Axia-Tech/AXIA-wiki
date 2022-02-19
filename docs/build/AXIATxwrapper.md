@@ -186,8 +186,8 @@ const txHash = getTxHash(signedTx);
 ## Submitting a Signed Payload
 
 There are several ways to submit a signed payload:
-
-1. Signer CLI ("yarn run:signer submit --tx <signed-transaction> --ws <endpoint>")
+'
+1. Signer CLI (‘yarn run:signer submit --tx <signed-transaction> --ws <endpoint>‘).
 2. RPC with author_submitExtrinsic or
    author_submitAndWatchExtrinsic, the latter of which will subscribe you to events to be notified
    as a transaction gets validated and included in the chain.
