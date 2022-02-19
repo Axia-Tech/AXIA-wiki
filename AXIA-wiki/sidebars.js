@@ -124,7 +124,7 @@ module.exports = {
             items:[
             //TO DO
                 "build/build-storage",
-                //"build/build-transaction-construction",
+                "build/build-transaction-construction",
 "build/build-node-interaction","build/build-protocol-info",
                 ],
 },
