@@ -30,7 +30,7 @@ AXIA network has some basic transaction information that is common to all transa
 \*The nonce queried from the System module does not account for pending transactions. You must track
 and increment the nonce manually if you want to submit multiple valid transactions at the same time.
 
-Each transaction will have its own (or no) parameters to add. For example, the transferKeepAlive
+Each transaction will have its own (or no) parameters to add. For example, the `transferKeepAlive`
 function from the Balances pallet will take:
 
 - dest: Destination address
@@ -67,8 +67,8 @@ Signing:
 yarn run:signer sign --account <from-account-ss58> --seed <seed> --type <sr25519|ed25519> <payload>
 ```
 
-For example, let's send 0.5 AXC from 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2` to
-`15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y.
+For example, let's send 0.5 AXC from `121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2` to
+`15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y`.
 
 ```bash
 yarn run:signer submit --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --ws ws://127.0.0.1:9944 balances.transferKeepAlive 15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y 5000000000
@@ -81,9 +81,9 @@ your normal signing environment (e.g. airgapped machine, VM, etc.). Sign the pay
 yarn run:signer sign --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --seed "pulp gaze fuel ... mercy inherit equal" --type sr25519 0x040300ff4a83f1...a8239139ff3ff7c3f6
 ```
 
-Save the output and bring it to the machine that you will broadcast from, enter it into submit's
+Save the output and bring it to the machine that you will broadcast from, enter it into `submit`'s
 signature field, and send the transaction (or just return the serialized transaction if using
-sendOffline).
+`sendOffline`).
 
 ## AXIA Transaction wrapper (txwrapper)
 
