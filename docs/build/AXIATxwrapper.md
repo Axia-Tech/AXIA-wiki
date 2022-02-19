@@ -30,7 +30,7 @@ AXIA network has some basic transaction information that is common to all transa
 \*The nonce queried from the System module does not account for pending transactions. You must track
 and increment the nonce manually if you want to submit multiple valid transactions at the same time.
 
-Each transaction will have its own (or no) parameters to add. For example, the `transferKeepAlive`
+Each transaction will have its own (or no) parameters to add. For example, the transferKeepAlive
 function from the Balances pallet will take:
 
 - dest: Destination address
@@ -52,7 +52,7 @@ AXIA provides the following tools to help perform these steps.
 interacting with a Axlib client, including one called "Signer CLI" to create, sign, and
 broadcast transactions.
 
-This example will use the `signer submit` command, which will create and submit the transaction. The
+This example will use the signer submit command, which will create and submit the transaction. The
 signer sendOffline command has the exact same API, but will not broadcast the transaction.
 submit and sendOffline must be connected to a node to fetch the current metadata and construct a
 valid transaction. Their API has the format:
@@ -187,7 +187,7 @@ const txHash = getTxHash(signedTx);
 
 There are several ways to submit a signed payload:
 
-1. Signer CLI (`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`)
+1. Signer CLI (yarn run:signer submit --tx <signed-transaction> --ws <endpoint>)
 1. RPC with author_submitExtrinsic or
    author_submitAndWatchExtrinsic, the latter of which will subscribe you to events to be notified
    as a transaction gets validated and included in the chain.
