@@ -30,11 +30,11 @@ AXIA network has some basic transaction information that is common to all transa
 \*The nonce queried from the System module does not account for pending transactions. You must track
 and increment the nonce manually if you want to submit multiple valid transactions at the same time.
 
-Each transaction will have its own (or no) parameters to add. For example, the `transferKeepAlive`
+Each transaction will have its own (or no) parameters to add. For example, the transferKeepAlive
 function from the Balances pallet will take:
 
-- `dest`: Destination address
-- `#[compact] value`: Number of tokens (compact encoding)
+- dest: Destination address
+- #[compact] value: Number of tokens (compact encoding)
 
 Once you have all the necessary information, you will need to:
 
@@ -52,9 +52,9 @@ AXIA provides the following tools to help perform these steps.
 interacting with a Axlib client, including one called "Signer CLI" to create, sign, and
 broadcast transactions.
 
-This example will use the `signer submit` command, which will create and submit the transaction. The
+This example will use the signer submit command, which will create and submit the transaction. The
 `signer sendOffline` command has the exact same API, but will not broadcast the transaction.
-`submit` and `sendOffline` must be connected to a node to fetch the current metadata and construct a
+submit and `sendOffline` must be connected to a node to fetch the current metadata and construct a
 valid transaction. Their API has the format:
 
 ```bash
@@ -81,7 +81,7 @@ your normal signing environment (e.g. airgapped machine, VM, etc.). Sign the pay
 yarn run:signer sign --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --seed "pulp gaze fuel ... mercy inherit equal" --type sr25519 0x040300ff4a83f1...a8239139ff3ff7c3f6
 ```
 
-Save the output and bring it to the machine that you will broadcast from, enter it into `submit`'s
+Save the output and bring it to the machine that you will broadcast from, enter it into submit's
 signature field, and send the transaction (or just return the serialized transaction if using
 `sendOffline`).
 
@@ -189,5 +189,5 @@ There are several ways to submit a signed payload:
 
 1. Signer CLI (`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`)
 1. RPC with `author_submitExtrinsic` or
-   `author_submitAndWatchExtrinsic`, the latter of which will subscribe you to events to be notified
+   author_submitAndWatchExtrinsic, the latter of which will subscribe you to events to be notified
    as a transaction gets validated and included in the chain.
