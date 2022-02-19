@@ -33,8 +33,8 @@ and increment the nonce manually if you want to submit multiple valid transactio
 Each transaction will have its own (or no) parameters to add. For example, the `transferKeepAlive`
 function from the Balances pallet will take:
 
-- `dest`: Destination address
-- `#[compact] value`: Number of tokens (compact encoding)
+- dest: Destination address
+- #[compact] value: Number of tokens (compact encoding)
 
 Once you have all the necessary information, you will need to:
 
@@ -53,8 +53,8 @@ interacting with a Axlib client, including one called "Signer CLI" to create, si
 broadcast transactions.
 
 This example will use the `signer submit` command, which will create and submit the transaction. The
-`signer sendOffline` command has the exact same API, but will not broadcast the transaction.
-`submit` and `sendOffline` must be connected to a node to fetch the current metadata and construct a
+signer sendOffline command has the exact same API, but will not broadcast the transaction.
+submit and sendOffline must be connected to a node to fetch the current metadata and construct a
 valid transaction. Their API has the format:
 
 ```bash
@@ -67,8 +67,8 @@ Signing:
 yarn run:signer sign --account <from-account-ss58> --seed <seed> --type <sr25519|ed25519> <payload>
 ```
 
-For example, let's send 0.5 AXC from `121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2` to
-`15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y`.
+For example, let's send 0.5 AXC from 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 to
+15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y.
 
 ```bash
 yarn run:signer submit --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --ws ws://127.0.0.1:9944 balances.transferKeepAlive 15vrtLsCQFG3qRYUcaEeeEih4JwepocNJHkpsrqojqnZPc2y 5000000000
@@ -81,9 +81,9 @@ your normal signing environment (e.g. airgapped machine, VM, etc.). Sign the pay
 yarn run:signer sign --account 121X5bEgTZcGQx5NZjwuTjqqKoiG8B2wEAvrUFjuw24ZGZf2 --seed "pulp gaze fuel ... mercy inherit equal" --type sr25519 0x040300ff4a83f1...a8239139ff3ff7c3f6
 ```
 
-Save the output and bring it to the machine that you will broadcast from, enter it into `submit`'s
+Save the output and bring it to the machine that you will broadcast from, enter it into submit's
 signature field, and send the transaction (or just return the serialized transaction if using
-`sendOffline`).
+sendOffline).
 
 ## AXIA Transaction wrapper (txwrapper)
 
@@ -188,6 +188,6 @@ const txHash = getTxHash(signedTx);
 There are several ways to submit a signed payload:
 
 1. Signer CLI (`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`)
-1. RPC with `author_submitExtrinsic` or
-   `author_submitAndWatchExtrinsic`, the latter of which will subscribe you to events to be notified
+1. RPC with author_submitExtrinsic or
+   author_submitAndWatchExtrinsic, the latter of which will subscribe you to events to be notified
    as a transaction gets validated and included in the chain.
