@@ -87,7 +87,7 @@ sendOffline).
 
 ## AXIA Transaction wrapper (txwrapper)
 
-If you do not want to use the CLI for signing operations, AXIA provides an SDK called txwrapper-axia-core to generate and sign transactions 
+If you do not want to use the CLI for signing operations, AXIA provides an SDK called [txwrapper-axia-core](https://www.npmjs.com/package/@axia-core/txwrapper-axia-core) to generate and sign transactions 
 offline.
 
 **Import a private key**
@@ -191,3 +191,6 @@ There are several ways to submit a signed payload:
 2. RPC with author_submitExtrinsic or
    author_submitAndWatchExtrinsic, the latter of which will subscribe you to events to be notified
    as a transaction gets validated and included in the chain.
+
+
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
