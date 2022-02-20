@@ -1,6 +1,6 @@
 ---
 id: build-transaction-construction
-title: Transaction Construction and Signing
+title: Transaction Structure
 sidebar_label: Transaction Structure
 slug: ../TransactionStructure
 ---
