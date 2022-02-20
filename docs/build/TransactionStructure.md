@@ -1,8 +1,8 @@
 ---
 id: build-transaction-construction
 title: Transaction Construction and Signing
-sidebar_label: AXIA Txwrapper
-slug: ../AXIATxwrapper
+sidebar_label: Transaction Structure
+slug: ../TransactionStructure
 ---
 
 <!-- no updates -->
