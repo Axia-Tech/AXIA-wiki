@@ -23,9 +23,9 @@ AXIA network has some basic transaction information that is common to all transa
 - Nonce: The nonce for this transaction.\*
 - Spec Version: The current spec version for the runtime.
 - Transaction Version: The current version for transaction format.
-- Optional fee: The [optional fee](https://wiki.axiacoin.network/docs/learn-consensus#fees-on-the-axia-network-corechain-are-calculated-based-on-the-following) to increase transaction priority.
+- Optional fee(tip) : The [optional fee](https://wiki.axiacoin.network/docs/learn-consensus#fees-on-the-axia-network-corechain-are-calculated-based-on-the-following) to increase transaction priority.
 - Era Period: Optional, the number of blocks after a block hash for which a transaction is valid.
-  If zero, the transaction is forever.
+  If zero, the transaction is vaild forever.
 
 \*The nonce queried from the System module does not account for pending transactions. You must track
 and increment the nonce manually if you want to submit multiple valid transactions at the same time.
@@ -129,7 +129,7 @@ const unsigned = methods.balances.transferKeepAlive(
     nonce: 2,
     specVersion: 1019,
     tip: 0,
-    eraPeriod: 64, // number of blocks from checkpoint that transaction is valid
+    eraPeriod: 64, // number of blocks from block hash that transaction is valid
     transactionVersion: 1,
   },
   {
