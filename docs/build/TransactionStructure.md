@@ -17,15 +17,15 @@ AXIA network has some basic transaction information that is common to all transa
 
 - Address: The SS58-encoded address of the sending account.
 - Block Hash: The hash of the block.
-- Block Number: The number of the checkpoint block.
+- Block Number: The number of the block.
 - Genesis Hash: The genesis hash of the chain.
 - Metadata: The [SCALE-encoded](https://cocoapods.org/pods/ScaleCodec) metadata for the runtime when submitted.
 - Nonce: The nonce for this transaction.\*
 - Spec Version: The current spec version for the runtime.
 - Transaction Version: The current version for transaction format.
 - Optional fee: The [optional fee](https://wiki.axiacoin.network/docs/learn-consensus#fees-on-the-axia-network-corechain-are-calculated-based-on-the-following) to increase transaction priority.
-- Era Period: Optional, the number of blocks after the checkpoint for which a transaction is valid.
-  If zero, the transaction is immortal.
+- Era Period: Optional, the number of blocks after a block hash for which a transaction is valid.
+  If zero, the transaction is forever.
 
 \*The nonce queried from the System module does not account for pending transactions. You must track
 and increment the nonce manually if you want to submit multiple valid transactions at the same time.
