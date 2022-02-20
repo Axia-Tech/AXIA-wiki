@@ -48,7 +48,7 @@ AXIA provides the following tools to help perform these steps.
 
 ## AXscan Tools
 
-[AXscan Tools](https://axscan.test.axiacoin.network/#/js) contains a set of javascript tools for
+[AXscan Tools](https://github.com/AxiaCoin/Axia-Network-tools) contains a set of javascript tools for
 interacting with a Axlib client, including one called "Signer CLI" to create, sign, and
 broadcast transactions.
 
