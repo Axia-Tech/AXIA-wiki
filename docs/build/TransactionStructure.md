@@ -128,7 +128,7 @@ const unsigned = methods.balances.transferKeepAlive(
     metadataRpc, // must import from client RPC call state_getMetadata
     nonce: 2,
     specVersion: 1019,
-    tip: 0,
+    tip: 0,      // The optional fee to increase transaction priority.
     eraPeriod: 64, // number of blocks from block hash that transaction is valid
     transactionVersion: 1,
   },
