@@ -34,7 +34,7 @@ Each transaction will have its own (or no) parameters to add. For example, the t
 function from the Balances pallet will take:
 
 - dest: Destination address
-- value: Number of tokens (compact encoding)
+- value: Number of tokens ([compact encoding](https://www.npmjs.com/package/compact-encoding))
 
 Once you have all the necessary information, you will need to:
 
