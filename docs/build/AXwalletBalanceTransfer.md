@@ -15,7 +15,7 @@ Select a account which have some funds
 
 ![2](../assets/wallet/BalanceTransfer/2.jpeg)
 
-Click the `AXC` under the Assets
+Click the AXC under the Assets
 
 ![3](../assets/wallet/BalanceTransfer/3.jpeg)
 
