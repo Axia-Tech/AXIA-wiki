@@ -17,7 +17,7 @@ Here you can see two options
 
 ### Create Account
 
-In order to create a new account you can click on the `Create Account` button.
+In order to create a new account you can click on the Create Account button.
 
 ![create_account](../assets/wallet/create_account.png)
 
@@ -25,11 +25,11 @@ Then it will give some information about the application.
 
 ![walletInfo](../assets/wallet/wallet_info.png)
 
-By pressing on the `Next` button it will generate a Twelve words Backup mnemonic.
+By pressing on the Next button it will generate a Twelve words Backup mnemonic.
 
 ![backup](../assets/wallet/backup.png)
 
-On the next page you have to confirm the mnemonic and press `Next`. 
+On the next page you have to confirm the mnemonic and press Next. 
 
 ![confirm_mnemonic](../assets/wallet/confirm_mnemonic.png)
 
