@@ -43,11 +43,11 @@ Your account will be added in the AXwallet application.
 
 ## Import Account
 
-In order to Import an existing account click on the `Import Account` button.
+In order to Import an existing account click on the Import Account button.
 
 ![import_account](../assets/wallet/import.png)
 
-In the next screen you can select Mnemonic as the Source Type and give the `Twelve words Mnemonic` or You can select Raw Seed as the Source Type and put the `Raw Seed` that you have already generated during your account generation.
+In the next screen you can select Mnemonic as the Source Type and give the Twelve words Mnemonic or You can select Raw Seed as the Source Type and put the Raw Seed that you have already generated during your account generation.
 
 ![import_opts](../assets/wallet/import_opts.png)
 
