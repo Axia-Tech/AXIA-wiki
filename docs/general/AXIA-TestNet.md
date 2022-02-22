@@ -1,5 +1,5 @@
 ---
-id: build-index
+id: AXIA-TestNet
 title: Developer Guides
 sidebar_label: AXIA-TestNet
 slug: ../AXIA-TestNet
