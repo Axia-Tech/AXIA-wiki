@@ -19,7 +19,7 @@ Click the AXC under the Assets
 
 ![3](../assets/wallet/BalanceTransfer/3.jpeg)
 
-It will show an interface like this. In the down below there are two options `Receive` and `Transfer`.
+It will show an interface like this. In the down below there are two options Receive and Transfer.
 
 ![4](../assets/wallet/BalanceTransfer/4.jpeg)
 
