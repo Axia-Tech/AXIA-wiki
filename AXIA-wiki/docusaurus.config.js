@@ -111,7 +111,7 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/getting-started",
+          to: "docs/AXIAOverview",
           label: "Get Started",
           position: "right",
         },
