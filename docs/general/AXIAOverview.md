@@ -1,3 +1,9 @@
+---
+id: AXIAOverview
+title: AXIA Overview
+sidebar_label: AXIA Overview 
+slug: ../AXIAOverview
+---
 ## Welcome to the New Frontier - AXIA is Here
 
 We are trapped in a broken economic model that threatens our welfare and that of our descendants. We lose control of our destiny due to the significant structural and foundational flaws in the global financial market. We are at the mercy of an unfair system that produces ever-expanding debt loads, all while our currency and purchasing power is devalued. Increasing levels of debt among governments, businesses and individuals contribute to increasing risk factors and vulnerabilities across the economy. The accumulation of risk factors and vulnerabilities reduces resilience and can produce extreme volatility. We are living in a time of constantly increasing economic fragility.
