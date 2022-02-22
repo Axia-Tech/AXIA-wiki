@@ -29,9 +29,9 @@ In addition to offering a more efficient and cost effective ability to move thei
 * AXIA Coin price
 * AXIA Ecosystem Participants along with all network activity 
 
-all in real time. 
+[AXC Dashboard](https://axia.global/) all in real time. 
 
-[AXC Dashboard](https://axia.global/)
+
 
 ## Standard Method of Calculating Market Capitalization
 While the Circulating Supply, Total Supply, Staked Supply and Burned Supply may vary at any one time, what is unequivocal, indisputable and immutable is that the Total Supply will never go up, only down. There will never be more coins minted than the Initial Total Supply.
