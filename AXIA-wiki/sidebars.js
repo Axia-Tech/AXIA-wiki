@@ -4,7 +4,7 @@ module.exports = {
       type: "category",
       label: "Introduction",
       items: [
-        "general/AXIA-Overview",
+        "general/AXIAOverview",
         "general/AXIATestNet",
         //"general/getting-started",
         //"general/claims",
