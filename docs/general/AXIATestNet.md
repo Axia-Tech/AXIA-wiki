@@ -1,7 +1,7 @@
 ---
 id: build-index
 title: Developer Guides
-sidebar_label: AXIA TestNet
+sidebar_label: AXIATestNet
 slug: ../AXIATestNet
 ---
 The AXIA project with its vision to create an inclusive economy commenced several years ago, with the founding project team developing a suite of  ready-to-use ecosystem of applications, platforms and businesses. 
