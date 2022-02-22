@@ -1,6 +1,6 @@
 ---
 id: AXIA-TestNet
-title: Developer Guides
+title: AXIA TestNet
 sidebar_label: AXIA-TestNet
 slug: ../AXIA-TestNet
 ---
