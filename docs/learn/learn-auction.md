@@ -1,7 +1,7 @@
 ---
 id: learn-auction
-title: The AXC
-sidebar_label: AXC
+title: AXIA Coin (AXC)
+sidebar_label: AXIA Coin (AXC)
 slug: ../learn-auction
 ---
 
