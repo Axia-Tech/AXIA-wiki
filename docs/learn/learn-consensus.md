@@ -1,6 +1,6 @@
 ---
 id: learn-consensus
-title: AXIA Consensus
+title: Transaction Fees
 sidebar_label: Transaction Fees
 description: An explanation of the consensus model used in AXIA
 slug: ../learn-consensus
