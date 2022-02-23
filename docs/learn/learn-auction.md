@@ -27,7 +27,7 @@ All AXC related supply information is displayed in real-time on :
 * AXIA Coin price
 * AXIA Ecosystem Participants along with all network activity 
 
-[AXC Dashboard](https://axia.global/) all in real time. 
+all in real time. 
 
 
 
