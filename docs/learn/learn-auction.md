@@ -14,7 +14,7 @@ In addition to offering a more efficient and cost effective ability to move thei
 
 All AXC related supply information is displayed in real-time on :
 
-AXIA.global
+[AXIA.global](https://axia.global/)
 
 
 
