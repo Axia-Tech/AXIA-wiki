@@ -5,7 +5,7 @@ sidebar_label: The AXIA Economy
 slug: ../TheAXIAEconomy
 ---
 
-AXIA Tokenomics
+## AXIA Tokenomics
 
 AXIA is introducing a proprietary monetary model that combines a number of economic features that provide unique benefits to participants and holders of the AXIA Coin. 
 
