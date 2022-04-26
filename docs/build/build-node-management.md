@@ -1,161 +1,142 @@
 ---
 id: build-node-management
-title: Node Management
-sidebar_label: Node Management
+title: AXIA - How to run a validator node
+sidebar_label: Run a Validator Node
 slug: ../build-node-management
 ---
 
-This page contains basic information about running a AXIA AXIA client. There are a lot of ways
-to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This
-guide will always refer to the executable as `AXIA`.
+AXIA network allows one to become a validator on AXIA Mainnet. The prerequisite for becoming a validator is to complete the process at the **AXIA Capital Bank** first and then follow these instructions carefully. For Bank related instructions, one can reach out to bank support over the appropriate support channels.
 
-**Always refer to the client's help `AXIA --help` for the most up-to-date information.**
+The steps mentioned below will cover all of the processes one has to follow to become a validator. However, with **Zeeve** as a preferred partner for the AXIA network, you can set up the validator nodes in an automated way and in no time without any complexity involved.
 
-> Other client implementation teams: Feel free to make a PR to this page with instructions (or a
-> link to instructions) for your client.
+## Manual setup Requirements
+Running a validator node isn't just running a machine but comes attached with a lot of responsibility and accountability towards the network, its security, and decentralization. While you will also be putting your own stake, the stake of all the nominators will be your accountability as well. Any mistake or downtime can result in slashing, in turn loss to not only you, your reputations as a validator but significant loss to the nominators as well.
 
-If you are trying to run a validator, refer to this tutorial
-[here](../maintain/maintain-guides-how-to-validate-AXIA.md).
+:::info WARNING!
 
-## Basic Node Operations
+Before you proceed to set up a validator manually, we recommend that you are well versed with system administration level operations, knowledgeable on Linux as an operating system as well.
 
-**Selecting a chain**
+You must be equipped with know-how on technical issues on the machine, cloud or for the node, that you will be able to handle and solve on your own.
 
-Use the `--chain <chainspec>` option to select the chain. Can be `AXIA`, `alphanet`,
-`betanet`, or a custom chain spec. By default, the client will start AXIA. Watch
-[How a single codebase can power four different blockchains](https://www.video_url_here.com/watch?v=i9vNCHz6wO4)
-to learn more about how the chain selection works internally.
+:::
 
-**Archive node**
+## How to get started
+To continue to set up manually, you would need a machine available to start. Most easy way is to procure a cloud VM from the choice of your cloud provider i.e. AWS or GCP etc. Next you would be required to install or get a pre-installed version of Linux operating system, we recommend using Ubuntu 20.04.4 LTS (Focal Fossa) or higher.
 
-An archive node does not prune any block or state data. Use the `--pruning archive` flag. Certain
-types of nodes like validators must run in archive mode. Likewise, all
-[events](build-protocol-info.md/#events) are cleared from state in each block, so if you want to
-store events then you will need an archive node.
+## DesiredHardware Specifications:
+* CPU: Atleast, 8 Cores
+* RAM: Atleast, 32 GB
+* DISK: Atleast, a 256 GB NVMe SSD to start with may  require upgrade after 3-6 months.
 
-> To upgrade a node, please refer to this
-> [video](https://www.video_url_here.com/watch?v=5LtcdBR9F40&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=5)
+You can always use more powerful machines if it's overloaded or a less powerful one, if it's underutilized. The above mentioned are standard specifications to start with, post setup one must continuously monitor its performance as it directly will impact you as a . However, in the automated deployments using Zeeve, monitoring is fairly easy as the system keeps the things monitored all the time, even when you are sleeping.
 
-**Exporting blocks**
+## Installing Dependencies
+Once your new server is ready with a running stable linux operations system which you must have access to then you can start installing other packages and dependencies. First we will install RUST.
 
-To export blocks to a file, use `export-blocks`. Export in JSON (default) or binary
-(`--binary true`).
+### To check if you already have RUST installed, run the following command:
+```ts
+rustc --version
+```
+### If the output is a valida RUST version then you will have to update it in order to proceed using the following command:
+```ts
+rustup update
+```
+### If you don't have rust installed then please run  the following command to initiate the installation for the latest version of RUST:
+```
+sudo apt install curl (only if you don't have curl already installed)
 
-```bash
-AXIA export-blocks --from 0 <output_file>
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+
+Run the following to configure your shell
+
+source $HOME/.cargo/env
+```
+### Finally run the following to ensure you have the required dependencies installed:
+```
+sudo apt-get install -y git clang curl libssl-dev llvm libudev-dev expect net-tools wget librust-openssl-dev python3-dev python3 python3-pip
+```
+### Download the latest version of AXIA binary and configuration
+
+Next, you will have to get the latest version of AXIA node binary and the configuration file. Follow the instructions as given below to download the binary and configuration file. Please ensure that you run these instructions inside the desired directory on the same machine.
+
+```
+RELEASE_URL="https://releases.axiacoin.network/stable/axia"
+
+wget -c ${RELEASE_URL} ; chmod +x ./axia
+
+wget -c https://releases.axiacoin.network/stable/mainnet.raw.json -O ${HOME}/.mainnet.raw.json
 ```
 
-**RPC ports**
-
-Use the `--rpc-external` flag to expose RPC ports and `--ws-external` to expose websockets. Not all
-RPC calls are safe to allow and you should use an RPC proxy to filter unsafe calls. Select ports
-with the `--rpc-port` and `--ws-port` options. To limit the hosts who can access, use the
-`--rpc-cors` option.
-
-**Execution**
-
-The AXIA AXIA client implements a [AXIA Host](../learn/learn-AXIA-host.md) and a native
-runtime. The runtime must compile to WebAssembly and is stored on-chain. If the client's runtime is
-the same spec as the runtime that is stored on-chain, then the client will execute blocks using the
-client binary. Otherwise, the client will execute the Wasm runtime from the chain.
-
-Therefore, when syncing the chain, the client will execute blocks from past runtimes using their
-associated Wasm binary. This feature also allows forkless upgrades: the client can execute a new
-runtime without updating the client.
-
-AXIA's AXIA client has two Wasm execution methods, interpreted (default) and compiled. Set the
-preferred method to use when executing Wasm with `--wasm-execution <Interpreted|Compiled>`. Compiled
-execution will run much faster, especially when syncing the chain, but is experimental and may use
-more memory/CPU. A reasonable tradeoff would be to sync the chain with compiled execution and then
-restart the node with interpreted execution.
-
-## File Structure
-
-The node stores a number of files in: `/home/$USER/.local/share/AXIA/chains/<chain name>/`. You
-can set a custom path with `--base-path <path>`.
-
-**`keystore`**
-
-The keystore stores session keys, which are important for validator operations.
-
-- [AXIA documentation](../learn/learn-keys.md/#session-keys)
-- [Substrate documentation](https://substrate.dev/docs/en/knowledgebase/learn-substrate/session-keys)
-
-**`db`**
-
-The database stores blocks and the state trie. If you are running a validator node, it also stores
-GRANDPA pre-votes and pre-commits and the offchain-worker DB. Use caution when
-[migrating validator nodes](../maintain/maintain-guides-how-to-upgrade.md) to avoid equivocation. If you want to
-start a new machine without resyncing, you can stop your node, back up the DB, and move it to a new
-machine.
-
-To delete your DB and re-sync from genesis, run:
-
-```bash
-AXIA purge-chain
+### Start the node
+Use the following command with the exact arguments and the configuration downloaded in the previous step to start your node. As soon as your node will start, it will connect to the networks and will start syncing. Please see the screenshot below to understand what the desired output should look like.
+```
+./axia --chain ${HOME}/.mainnet.raw.json --validator --name "Your Node Name"
 ```
 
-> **Note:** Validators should sync using the RocksDb backend. This is implicit by default, but can
-> be explicit by passing the `--database RocksDb` flag. In the future, it is recommended to switch
-> to using the faster and more efficient AXIADb option. Switching between database backends will
-> require a resync.
->
-> If you want to test out AXIADB you can add the flag `--database axiadb`.
+![localNode](../assets/Node-running.png)
 
-## Deployment Tools
 
-AXIA Foundation maintains [AXIA Deployer](https://github.com/axia-tech/AXIA-deployer), which
-allows you to create local or remote cloud deployments of AXIA nodes. See the README for
-instructions.
+:::info WARNING!
 
-Validators, see the [validator setup guide](../maintain/maintain-guides-how-to-use-AXIA-validator-setup.md)
-for information specific to deploying validator nodes.
 
-## Monitoring and Telemetry
+We must ensure that the node is appropriately in sync using the network time protocol as this will ensure that the validator will be able to send proper heartbeat on the network and also will not miss block authoring chances. Even a small error in time sync can cause the same.
 
-**Node status**
+:::
 
-You can check the node's health via RPC with:
+Wait for the node to complete the sync. Once the sync is complete, you have a validator node running and now you can proceed with registering this node on the chain and bond your stash and controller account as well.
 
-```bash
-curl -H "Content-Type: application/json" --data '{ "jsonrpc":"2.0", "method":"system_health", "params":[],"id":1 }' localhost:9933 
+
+
+### Creating Stash and Controller Accounts
+Stash account is used very less frequently once the bonding is done, you will be able to change the controller account even while staking but will not be able to change your stash account until unbonded. It is recommended that you use two different accounts for Stash and Controller. However, the staking will still work using the same account. Stash account will be the account from which the staking of coins will take place while the controller account will help decide in starting or stopping the staking. Please ensure you have two different accounts created already before proceeding forward else do create two unique accounts using the AXscan Account menu on the top.
+
+To start, navigate to Staking on the AXscan and click Account Actions and click Add Stash [+ Stash] button on the right top of the screen. Please ensure that you will be able to see the following popup, start filling the Stash and Controller keys against the Stash and Controller account respectively.
+
+The third option is to set the coins you would like to bond por stake out of your available stash balance. You will not be able to unbond these tokens before 28 days from the day you will initiate unbonding.
+
+![bonding](../assets/Bonding-preferences.png)
+
+Last option on the wizard is to select the payout destination, this is the account where you would like the rewards to be given post claim.
+
+Once you are assured that every detail is filled appropriately then you can proceed to bond by signing the transaction using your Stash account. Please ensure you have enough coins left to pay the fee for the transaction.
+
+![authoriseTransaction](../assets/Authorise-transaction.png)
+
+Once submitted, the transaction will be complete in a few seconds and you will see the success confirmation notification on the top right corner of AXscan. Also, your stash account will be available under the stashes as well.
+
+
+### Register Session keys
+Please ensure your node is fully synched before you proceed with these steps. To generate the session keys you will need to make an RPC call to the new node you are preparing. Please ensure you are on the same machine and never execute this from a remote location. You can initiate the key generation using the following command on your node:
+
 ```
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:3102
+```
+ 
+Once the above command is complete, you will receive a hex response, please save this response as it is required to complete your set session key transaction.
 
-**Logs**
+:::info WARNING!
 
-The AXIA client has a number of log targets. The most interesting to users may be:
+Session keys are the most critical bit for any validator node. If these are setup wrong the node will not work properly.
 
-- `afg` (Al's Finality Gadget - GRANDPA consensus)
-- `babe`
-- `telemetry`
-- `txpool`
-- `usage`
+Please navigate to Staking - Account Action from the top menu of AXscan. This transaction will attach your validator node with your controller account.
 
-Other targets include:
-`db, gossip, peerset, state-db, state-trace, sub-libp2p, trie, wasm-executor, wasm-heap`.
+:::
 
-The log levels, from least to most verbose, are:
+![stashes](../assets/Stashes.png)
 
-- `error`
-- `warn`
-- `info`
-- `debug`
-- `trace`
+Click the Session key in front of your newly created stash account. The following wizard will open up:
+![setSessionKeys](../assets/Set-session-keys.png)
 
-All targets are set to `info` logging by default. You can adjust individual log levels using the
-`--log (-l short)` option, for example `-l afg=trace,sync=debug` or globally with `-ldebug`.
+Fill in the hex output from the curl RPC command you saved earlier and click the set session key to complete the transaction. Click the Validate in front of your newly created stash account. The following wizard will open up:
+![setValidator](../assets/Set-validator-preferences.png)
 
-**Telemetry & Metrics**
+Select, Stash account, Controller account as created previously and also select the commission for your validator. 100% commission means you won't be paying any nominator at all. And in the end, you can choose if you want nominators to be able to nominate you as a validator on the Network. On clicking Validate you will be put to the pending state until the next session triggers. You will also be able to see your validator under the Staking tab on AXscan top menu.
 
-The AXIA AXIA client connects to telemetry by default. You can disable it with
-`--no-telemetry`, or connect only to specified telemetry servers with the `--telemetry-url` option
-(see the help options for instructions). Connecting to public telemetry may expose information that
-puts your node at higher risk of attack. You can run your own, private
-[telemetry server](https://github.com/axia-tech/substrate-telemetry) or deploy a
-`substrate-telemetry` instance to a Kubernetes cluster using
-[this Helm chart](https://github.com/axia-tech/substrate-telemetry-chart).
+Alternatively you can also click on + Validator button on Staking - Account Action navigation from the top menu. Fill in your Stash and controller account, fill in the coins to be staked/bonded. Also select the payout destination when the rewards are to be claimed.
 
-The node also exposes a Prometheus endpoint by default (disable with `--no-prometheus`). Substrate
-has a
-[vizualizing node metrics tutorial](https://substrate.dev/docs/en/tutorials/visualize-node-metrics/)
-which uses this endpoint.
+Next will take you to the second step which is to fill the hex output from the curl RPC command, the commission for your validator. 100% commission means you won't be paying any nominator at all. And in the end, you can choose if you want nominators to be able to nominate you as a validator on the Network. On clicking Bond and Validate you will be put to the pending state until the next session triggers. You will also be able to see your validator under the Staking tab on AXscan top menu.
+
+If you are reading this then you have successfully completed all the required steps to set up a va;idator node. For more information and support, Please reachout to the support team.
+
+
+[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
