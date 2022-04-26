@@ -28,7 +28,7 @@ The AXwallet can also be used to empower people to develop income for themselves
 All activity taking place in the AXwallet within the AXIA Ecosystem can be settled instantaneously, and completed in a more cost-efficient manner than if conducted outside the AXIA Network. Moreover, there is the simultaneous added advantage that this activity will direct value back to strengthening AXIA Coin itself through the mechanism of coin burning leading to the reduction in Total Supply.
 
 
-[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
+[AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
 
 
 

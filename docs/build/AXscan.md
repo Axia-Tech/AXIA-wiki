@@ -25,5 +25,5 @@ You should **not store your seed on any kind of computer that has or may have ac
 The JSON file is encrypted with a password, which means you can import it into any wallet which supports JSON imports, but to then use it, you need the password. You don't have to be as careful with your JSON file's storage as you would with your seed (i.e. it can be on a USB drive near you), but remember that in this case, your account is only as secure as the password you used to encrypt it. Do not use easy to guess or hard to remember passwords. It is good practice to use a mnemonic password of four to five words. These are nearly impossible for computers to guess due to the number of combinations possible, but much easier for humans to remember.
 
 
-[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
+[AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
 

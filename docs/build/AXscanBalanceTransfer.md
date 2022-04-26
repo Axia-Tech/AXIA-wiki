@@ -40,5 +40,5 @@ After that you have to give the password of your account to authorize the transa
 
 ![final](../assets/explorer/transfer/transfer4.png)
 
-[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
+[AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
 

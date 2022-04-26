@@ -193,4 +193,4 @@ There are several ways to submit a signed payload:
    as a transaction gets validated and included in the chain.
 
 
-[AXIA Support](https://discord.gg/ebjsN9ByMb) - Connect with our community of experts to learn or ask.
+[AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
