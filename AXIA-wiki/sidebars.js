@@ -136,7 +136,7 @@ module.exports = {
             "build/build-pdk",
             "build/build-transaction-construction",
             "build/build-guide",
-            "build/build-node-management",
+            //"build/build-node-management",
             //"learn/learn-implementers-guide",
             
             
