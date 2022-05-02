@@ -1,19 +1,19 @@
 ---
 id: build-guide
-title: How to run a peer node
+title: How to run a node
 sidebar_label: Peer Node Setup
 slug: ../PeerNodeSetup
 ---
 
-AXIA network allows one to run a peer node or archive node on AXIA network. The steps mentioned below will cover all of the processes one has to follow to run a full node or archive node. However, with [Zeeve](https://www.zeeve.io) as a preferred partner for the AXIA network, you can set up a full node or archive node in an automated way and in no time without any complexity involved.
+AXIA network allows one to run a full node or archive node on AXIA network. The steps mentioned below will cover all of the processes one has to follow to run a full node or archive node. However, with [Zeeve](https://www.zeeve.io) as a preferred partner for the AXIA network, you can set up a full node or archive node in an automated way and in no time without any complexity involved.
 
 ## Manual setup Requirements
 To continue to set up manually, you would need a machine available to start. Most easy way is to procure a cloud VM from the choice of your cloud provider i.e. AWS or GCP etc. Next you would be required to install or get a pre-installed version of Linux operating system, we recommend using Ubuntu 20.04.4 LTS (Focal Fossa) or higher.
 
 ### Desired Hardware Specifications:
-* **CPU**: Atleast, 4 Cores
-* **RAM**: Atleast, 16 GB
-* **DISK**: Atleast, a 256 GB NVMe SSD to start with may  require upgrade after 3-6 months.
+* **CPU**: Atleast, 2-4 Cores
+* **RAM**: Atleast, 8-16 GB
+* **DISK**: Atleast, a 180-256 GB NVMe SSD to start with may  require upgrade after 3-6 months.
 
 You can always use more powerful machines if it's overloaded or a less powerful one, if it's underutilized. The above mentioned are standard specifications to start with, post setup one must continuously monitor its performance.
 
@@ -52,21 +52,40 @@ RELEASE_URL="https://releases.axiacoin.network/stable/axia"
 ```
 wget -c ${RELEASE_URL} ; chmod +x ./axia
 ```
+**For Testnet**
 ```
 wget -c https://releases.axiacoin.network/stable/testnet.raw.json -O ${HOME}/.testnet.raw.json
+```
+**For Mainnet**
+```
+wget -c https://releases.axiacoin.network/stable/mainnet.raw.json -O ${HOME}/.mainnet.raw.json
 ```
 
 ### Start the node
 Use the following command with the exact arguments and the configuration downloaded in the previous step to start your node. As soon as your node will start, it will connect to the networks and will start syncing. Please see the screenshot below to understand what the desired output should look like.
 
+**For Full node on testnet**
+
 ```
 ./axia --chain ${HOME}/.testnet.raw.json --name "Your Node Name"
 ```
+**For Full node on mainnet**
+```
+./axia --chain ${HOME}/.mainnet.raw.json --name "Your Node Name"
+```
+**For Archive node on testnet**
+```
+./axia --chain ${HOME}/.testnet.raw.json --name "Your Node Name" --pruning archive
+```
 
+**For Archive node on mainnet**
+```
+./axia --chain ${HOME}/.mainnet.raw.json --name "Your Node Name" --pruning archive
+```
 
 ![peernode](../assets/peernode/peer_node_setup.png)
 
-If you are reading this then you have successfully completed all the required steps to set up a peer node. For more information and support, Please reach out to the support team.
+If you are reading this then you have successfully completed all the required steps to set up a peer node. For more information and support, Please reachout to the support team.
 
 
 [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
