@@ -132,7 +132,7 @@ module.exports = {
       type: "category",
       label: "Develop",
       items: [
-            //"build/Developer-Guides",
+           "build/Developer-Guides",
             //"build/AXIA-Network-RPC",
             //"build/Transaction-Structure",
             //"build/Peer-Node-Setup",

@@ -70,7 +70,7 @@
          </NavItemContent>
          
         </NavItem>
-       <NavItem href={useDocUrl("BuilderGuides")} aosDelay="200">
+       <NavItem href={useDocUrl("Developer-Guides")} aosDelay="200">
        <h3>For</h3>
          <NavItemTitle>
            <Translate

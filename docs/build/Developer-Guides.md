@@ -12,11 +12,9 @@ This section of the wiki is divided into the following parts:
 
 
 
-- [AXIA RPC](AXIANetworkRPC) -  Here you can find out AXIA Network's RPC methods.
-- [Transaction Structure](TransactionStructure) - This page will discuss the transaction format in AXIA network and how to create, sign, and broadcast transactions. Like the other pages in this guide, this page demonstrates some of the available tools.
-- [Peer Node Setup](PeerNodeSetup) - Here you can find How to setup the AXIA Network peer node in your Linux system.
-- [Wallet Usage](AXwallet) -  A short overview of the AXwallet usage.
-- [Faucet Usage](Faucet) - How to get Testnet tokens using AXchat faucet.
-- [AXscan](AXscan) - Learn to use the AXscan, an AXIA network explorer utility.
-- [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
-
+- [Nomination](../docs/Nomination-Process) -  Here you can find out How to be a Nominator in AXIA Network and earn rewards.
+- [Web Wallet](../docs/About-Wallet) - This guide will give more insights about AXIA Web Wallet and work through some of it's important functionalities.
+- [AXIA APIs](../docs/AXIA-APIs-Overview) - This is the documentation on AXIA APIs.
+- [Add AXIA to MetaMask](../docs/Metamask-Support) - Add AXIA Network to your existing Metamask wallet and be a part of our ecosystem.
+- [Deploy a Smart Contract on AXIA](../docs/Deploy-SmartContract) - How to Deploy Smart Contracts in AXIA with Remix and Metamask.
+- [Create an ERC-20 Token Using Solidity](../docs/ERC20-AXIA) - Learn to Deploy ERC20 Tokens in AXIA Network.

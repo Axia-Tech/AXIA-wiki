@@ -121,7 +121,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/BuilderGuides",
+          to: "docs/Developer-Guides",
           label: "Developers",
           position: "right",
         },
