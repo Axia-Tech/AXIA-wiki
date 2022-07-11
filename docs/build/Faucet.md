@@ -1,5 +1,5 @@
 ---
-id: build-smart-contracts
+id: Faucet
 title: Faucet Usage
 sidebar_label: Faucet Usage
 slug: ../Faucet

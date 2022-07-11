@@ -4,8 +4,8 @@ module.exports = {
       type: "category",
       label: "Introduction",
       items: [
-        "general/AXIAOverview",
-        "general/AXIATestNet",
+        "general/AXIA-Overview",
+        "general/AXIA-TestNet",
         //"general/getting-started",
         //"general/claims",
         //"general/redenomination",
@@ -44,7 +44,7 @@ module.exports = {
             "learn/The-AXIA-Economy",
             "learn/The-AXIA-Treasury",
             //"learn/AXIA-Coin-(AXC)",
-            "learn/learn-auction",
+            "learn/AXIA-Coin",
             "learn/AXIA-Foundation",
 
             //"learn/learn-architecture",
@@ -78,7 +78,7 @@ module.exports = {
             "learn/AXIA-Services",
             "learn/AXIA-Applications",
             "learn/AXIA-Staking",
-            "learn/learn-consensus",
+            "learn/Transaction-Fees",
             //"learn/learn-cross-consensus",
             //"learn/Coin-Supply-and-Management",
             //"learn/TransactionFees",
@@ -102,9 +102,9 @@ module.exports = {
         {
           type: "category",
           label: "Cryptography",
-          items: ["learn/learn-cryptography", "learn/learn-keys"],
+          items: ["learn/Security-And-Cryptography", "learn/learn-keys"],
         },
-        {
+      /* {
           type: "category",
           label: "Allychains",
           items: [
@@ -116,7 +116,7 @@ module.exports = {
             //"learn/learn-crowdloans",
             //"learn/learn-teleport",
           ],
-        },
+        },*/
        /* {
           type: "category",
           label: "AXIA Comparisons",
@@ -132,39 +132,67 @@ module.exports = {
       type: "category",
       label: "Develop",
       items: [
-            "build/build-index",
-            "build/build-pdk",
-            "build/build-transaction-construction",
-            "build/build-guide",
+            //"build/Developer-Guides",
+            //"build/AXIA-Network-RPC",
+            //"build/Transaction-Structure",
+            //"build/Peer-Node-Setup",
+            "build/Nomination-Process",
             //"build/build-node-management",
             //"learn/learn-implementers-guide",
             
-            
+           /* 
             {
             type: "category",
             label: "AXwallet",
             items:[
             //TO DO
-                "build/build-storage",
-                "build/build-node-interaction","build/build-protocol-info",
+                "build/AXwallet",
+                "build/AXwallet-Account-Creation",
+                "build/AXwallet-Balance-Transfer",
                 ],
+},*/
+{
+  type: "category",
+  label: "Web Wallet",
+  items:[
+  //TO DO
+      "build/About-Wallet",
+      "build/Import-Account",
+      "build/Create-Account",
+      "build/Export-Key",
+      "build/Balance-Transfer",
+      "build/Crosschain"
+      ],
 },
-           "build/build-smart-contracts",
+          // "build/Faucet",
             
-               {
+             {
                 type: "category",
-                label: "AXscan ",
+                label: "AXIA APIs",
                 items: [
- "build/build-oracle",
-//"build/build-node-management",
-            "build/build-integration",
-                "build/build-integrate-assets",
+ "build/AXIA-APIs-Overview",
+ "build/HealthAPI",
+"build/InfoAPI"
+            //"build/AXscan-Account-Creation",
+                //"build/AXscan-Balance-Transfer",
             
 ],
-},
+            
+},         
+            "build/Metamask-Support",
+            "build/Deploy-SmartContract",
+            "build/ERC20-AXIA"
+
+            
             //"build/build-ss58-registry",
             //"build/build-wallets",
+
+            
+
              ],
+             
+
+             
     },
         //
         //{

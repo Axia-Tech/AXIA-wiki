@@ -1,5 +1,5 @@
 ---
-id: build-storage
+id: AXwallet
 title: AXwallet
 sidebar_label: AXwallet
 slug: ../AXwallet

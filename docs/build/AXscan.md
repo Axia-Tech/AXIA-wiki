@@ -1,5 +1,5 @@
 ---
-id: build-oracle
+id: AXscan
 title: Using AXscan
 sidebar_label: AXscan
 slug: ../AXscan
