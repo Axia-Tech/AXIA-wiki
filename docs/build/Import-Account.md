@@ -28,3 +28,5 @@ After it select the 'Access Wallet' section, it will take you to another wizard 
 3. Also you can upload the Keystore JSON file to access your old account.
 
 ![pjs-01](../assets/webWallet/w31.png)
+
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.

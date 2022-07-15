@@ -167,6 +167,8 @@ The explorer will show the necessary details about the Transaction.
 
 ![remix](../assets/metamask/mmsupport10.png)
 
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
+
 
 
 

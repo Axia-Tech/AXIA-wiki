@@ -17,3 +17,5 @@ It will ask for a password to export the wallet key and select "EXPORT WALLET" o
 ![pjs-01](../assets/webWallet/w15.png)
 Right after that a JSON file will be downloaded in your system. Place this in a safe folder. Remember this will be required in the case of restoring the wallet.
 ![pjs-01](../assets/webWallet/w16.png)
+
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.

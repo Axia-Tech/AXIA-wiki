@@ -122,3 +122,4 @@ In this example response, the AX Chain’s health check is failing.
 }
 ```
 
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.

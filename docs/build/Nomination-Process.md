@@ -95,3 +95,6 @@ If the transaction is accepted your tokens will be locked for staking. You will 
  You will receive your locked tokens plus the rewards once your staking period is over. You can see a new nominator is added to your selected Validator.
 
 ![nom](../assets/nominators/nom7.png)
+
+
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.

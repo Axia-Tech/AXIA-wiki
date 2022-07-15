@@ -39,3 +39,5 @@ After confirming you will see the amount will first Export from the Source Chain
 ![pjs-01](../assets/webWallet/w21.png)
 Within few seconds the transaction will be complited and the balance will be reflected in that specific chain.
 ![pjs-01](../assets/webWallet/w22.png)
+
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.

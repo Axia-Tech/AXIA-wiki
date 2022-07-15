@@ -96,6 +96,9 @@ Congratulations your smart contract is deployed in the AXIA network, Once the co
 It's that easy! Once the contract is deployed, you'll see the address and all available read/write methods to interact with it.
 
 
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
+
+
 
 
 

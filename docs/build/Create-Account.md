@@ -35,3 +35,5 @@ This is the **Core Chain** address of the wallet. The Core Chain coordinates net
 Lastly you can see the **AX Chain** address. The AX Chain allows users to create smart contracts and interact with DApps and DeFi services.
 
 ![pjs-01](../assets/webWallet/w12.png)
+
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.

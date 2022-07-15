@@ -137,7 +137,7 @@ The Transferred ERC20 Token will be send to that address.
 ![interface](../assets/ERC20/t4.png)
 
 
-
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
 
 
 

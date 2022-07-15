@@ -28,3 +28,4 @@ Your transaction is confirmed and a Transaction Hash is generated.
 
 In the case of Swan Chain transaction you can check the transaction from [AXscan Explorer](https://axscan-v2.testnet.axiacoin.network/) and for AX Chain transaction you can navigate to [AXChain Explorer](https://appchain-v2.testnet.axiacoin.network/) for transaction details.
 
+ [AXIA Support](https://discord.gg/axianetwork) - Connect with our community of experts to learn or ask.
