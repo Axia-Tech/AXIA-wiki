@@ -102,7 +102,7 @@ module.exports = {
         {
           type: "category",
           label: "Cryptography",
-          items: ["learn/Security-And-Cryptography", "learn/learn-keys"],
+          items: ["learn/Security-And-Cryptography", "learn/AXIA-Keys"],
         },
       /* {
           type: "category",
