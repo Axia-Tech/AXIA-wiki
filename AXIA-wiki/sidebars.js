@@ -178,7 +178,8 @@ module.exports = {
             
 ],
             
-},         
+},          
+            "build/AXwallet",
             "build/Metamask-Support",
             "build/Deploy-SmartContract",
             "build/ERC20-AXIA"
